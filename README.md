@@ -71,7 +71,11 @@ dim(k) flat                  dim(k) steps UP toward fine k, then holds
 more samples -> same rank    finer SCALE -> higher rank
 ```
 
-The discriminator is not sample count. It is whether local intrinsic dimension varies with **scale** while sample density is held fixed. `RankDetector.detect(points)` keeps the point set fixed, sweeps a neighbourhood radius `k`, estimates local dimension at each `k` by the PCA participation ratio of the neighbourhood covariance (median over seeded centers; stdlib Jacobi eigen-solver), and reads the resulting `dim(k)` curve:
+The discriminator is not sample count. It is whether local intrinsic dimension varies with **scale** while sample density is held fixed.
+
+**Density control (load-bearing).** One fixed record is used at every scale. Scale is a radius, not a neighbour count, so `ρ = N / volume` is a constant of the sweep; a k-nearest-neighbour window would let density set the scale. Scales whose median neighbourhood falls below `min_neighbors` are marked invalid, never widened. Sample count is a separate axis, `density_sweep()`, and never enters the dim(k) curve. Every result carries this statement in `density_control`.
+
+**Measurement.** `RankDetector.detect(points)` sweeps a neighbourhood radius `k`, estimates local dimension at each `k` by the PCA participation ratio of the neighbourhood covariance (hand-rolled Jacobi eigen-solver; median and interquartile dispersion over seeded centers), and reads the curve:
 
 | Curve | Outcome | Return class |
 |---|---|---|
@@ -81,20 +85,28 @@ The discriminator is not sample count. It is whether local intrinsic dimension v
 | step + plateau, coarse side higher | `coarse_rise` (curvature / fold) | `UNKNOWN_measurable` |
 | monotone drift | `ambiguous` | `UNKNOWN_measurable`, never scored |
 | noisy, no plateau, or too few valid scales | `blocked` | `BLOCKED(sample_floor)` |
+| null construction fails for the regime | `blocked` | `BLOCKED(null_construction)` |
 
-Every result carries the `rule` that fired and the full curve. On `activation` the result carries an `ActivatedDimension`: `scale_of_appearance`, `direction` (the eigenvector in the coarse-scale null space that gains variance), `prior_variance` (its coarse-scale variance fraction, expected near zero), `consistency` across centers and `null_space_isotropy`. `DetectionResult.to_criterion_result()` is the seam into `preference_free_rank`; a named activated dimension is a previously-collapsed variable entering the record.
+The output is always an enum-classed `CriterionResult`, never a bare float. Every result carries the `rule` that fired, naming the declared tolerance. On `activation` the result carries an `ActivatedDimension`: `scale_of_appearance`, `direction` (the eigenvector that gained variance share between the coarse and fine plateaus), `prior_variance` (its coarse-scale variance fraction; declared 0, admitted up to a tolerance), `consistency` across centers and `null_space_isotropy`. `to_criterion_result()` is the seam into `preference_free_rank`; a named activated dimension is a previously-collapsed variable entering the record.
 
-**Null construction.** `null_suite()` generates manifolds of known rank with no activation under anisotropic noise, curvature and nonuniform density, each of which can fake a step, and reports the detector's own false-positive rate alongside a positive control. Run it before real use:
+**Null construction is not optional.** `detect()` runs `null_suite()` for the data's regime (rank estimate, ambient dimension, sample count) before releasing any reading, prints the report, and refuses to score the regime if any confound reads `activation` under the current thresholds. Confounds are run alone and combined: anisotropic noise, curvature, nonuniform density. The report states the false-positive rate per confound, the step magnitude each produced, the threshold required to clear the worst one, and a positive control so a zero rate is not mistaken for a detector that never fires.
 
 ```sh
-python3 rank_detector.py null
+python3 rank_detector.py null              # rank 1 in ambient 3, 3000 points, seed 0
+python3 rank_detector.py null --rank 2     # prints the positive-control limit for rank 2
 ```
 
-Known limit: with only one normal direction, off-manifold noise and a real activation are the same geometry. With two or more normal directions the isotropy of the null-space gain separates them.
+Every threshold is declared in the constructor and the module docstring records the null run that set it. Opting out (`require_null=False`) is recorded on the result.
 
-**Order test.** `order_test(points, k_in, k_out)` compares zoom-in-then-out (`crop` then `coarse_grain`) against zoom-out-then-in on one record and returns the commutator of the recovered dimension reading. Zero is a real result; on the synthetic manifolds it is zero within tolerance whenever the coarse-grain scale sits below the reading scale.
+**What the file cannot distinguish** is stated in its docstring: with exactly one normal direction, off-manifold noise and an activation at the same scale are the same geometry; two activations at different scales read `ambiguous`; structure below the sample floor is `blocked`, not absent; rank-2 activations at pure-Python sample sizes are `ambiguous` because the coarse plateau is contaminated by patch-boundary anisotropy.
 
-**Output to F.** `mechanism_branch_set()` files the three mechanisms behind "more visible structure" as one `BranchSet` with a shared origin pattern and the `dim(k)` curve as the discriminator:
+**Order test.** `order_test(points, k_in, k_out)` compares zoom-in-then-out (`crop` then `coarse_grain`) against zoom-out-then-in on one record and returns the commutator of the recovered dimension reading, with a `finding` string. Zero is a real result. On flat and thick synthetic manifolds the commutator is 0.004 to 0.007 against a tolerance of 0.1: the asserted noncommutativity is not supported for these operators.
+
+```sh
+python3 rank_detector.py order --synthetic flat 0.3 0.03
+```
+
+**Output to F.** `mechanism_branch_set()` files the three mechanisms behind "more visible structure" as one `BranchSet` with a shared origin pattern and the dim(k) curve as the discriminator, cost low, no data required:
 
 ```text
 undersampled            dim rises with sample count at fixed scale
@@ -102,7 +114,7 @@ scale_suppressed        dim(k) steps up toward fine scale; sample-count invarian
 dimensionally_collapsed dim(k) flat and sample-count invariant; appears only in a new record
 ```
 
-`eliminate_from_outcome(branch_set, detection, density_sweep(...))` records eliminations from one reading; ambiguous, blocked and coarse-rise readings eliminate nothing.
+`eliminate_from_outcome(branch_set, detection, density_sweep(...))` records eliminations from one reading; ambiguous, blocked, noise-floor and coarse-rise readings eliminate nothing.
 
 Scope-out (zoom out as connection density to neighbouring structures) is a graph measurement, not a manifold one. It is flagged in `SCOPE_OUT_NOTE` and not started.
 
@@ -207,12 +219,10 @@ print(ranking.fronts)
 Detecting rank from a point cloud instead of declaring it:
 
 ```python
-from rank_detector import RankDetector, null_suite, thick_manifold
-
-print(null_suite().format())  # false-positive rate first
+from rank_detector import RankDetector, thick_manifold
 
 points = thick_manifold(3000, 1, 3, thickness=0.1, seed=2)
-result = RankDetector().detect(points)
+result = RankDetector().detect(points)         # prints the null construction first
 print(result.outcome.value, result.rule)       # activation, step ... at k_step≈0.1
 print(result.activated.direction)              # the activated direction
 print(result.to_criterion_result().return_class)  # ReturnClass.VARIABLE_UNIDENT
