@@ -1,6 +1,6 @@
 # method-layer
 
-Three small, **preference-free** Python tools for preserving candidate generators, ranking options by declared, re-runnable physical criteria, and detecting a rank change instead of declaring one. This repository is a notation and ranking layer, **not a simulation repository**.
+Four small, **preference-free** Python tools for preserving candidate generators, ranking options by declared, re-runnable physical criteria, detecting a rank change instead of declaring one, and estimating a reader's frame from hand-authored probes. This repository is a notation and ranking layer, **not a simulation repository**.
 
 ```text
 simulations (G)  ->  method-layer (F)
@@ -105,6 +105,46 @@ dimensionally_collapsed dim(k) flat and sample-count invariant; appears only in 
 `eliminate_from_outcome(branch_set, detection, density_sweep(...))` records eliminations from one reading; ambiguous, blocked and coarse-rise readings eliminate nothing.
 
 Scope-out (zoom out as connection density to neighbouring structures) is a graph measurement, not a manifold one. It is flagged in `SCOPE_OUT_NOTE` and not started.
+
+### `frame_probe.py`
+
+`frame_probe.py` estimates which frame a respondent reads a term under. The probe library is **hand-authored input**; the module runs selection and collapse reading only.
+
+```text
+hand-authored probe library  -->  frame_probe.py  -->  frame estimate
+(input, author_kind: human)       selection + collapse reading ONLY
+```
+
+This partition is load-bearing. A model generating its own probes reads its own frame back and calls it a finding. The module contains no probe generator, `Probe` rejects any `author_kind` other than `human`, and no probe library ships with the repository.
+
+A probe record carries `term_or_phrase`, `sense_space`, `frame_index` (sense to frames), `emitter_marker_load` in `[0, 1]` (does emitting the probe declare the prober's frame), `author`, `author_kind`, and `calibration` (per known frame, the observed collapses of respondents in that frame).
+
+**Validity gate, runs first**, per probe, with declared thresholds:
+
+| Check | Result |
+|---|---|
+| `emitter_marker_load >= 0.5` | `BLOCKED(contaminated)` |
+| calibration too thin to compute variances | `BLOCKED(uncalibrated)` |
+| between-frame / within-frame variance `>= 4` | `valid` |
+| ratio comparable to 1 | `UNKNOWN_measurable`: the probe reads the person, not the frame |
+
+**Loop.** `FrameProbeSession.next_probe()` selects the unspent valid probe with the greatest separation of the remaining frame set (expected remaining size under a uniform prior; no importance weighting). `observe(probe_id, senses)` reads the collapse as `collapsed`, `held`, or `partial` and narrows to the frames consistent with every observed sense; frames a probe does not speak to survive it. The session stops on confirmation (one frame), on `UNKNOWN_measurable` (contradiction, or no valid probe separates the rest), or on `BLOCKED(probe_budget)`. `result()` returns the frame estimate, the remaining set and the probes spent.
+
+**Identity model.** `grade_identity()` reads three behavioural observations and nothing interior: cost paid at a frame boundary, prior frames defended after exit, context-variance reported as conflict. All high reads `fixed_position`; all low reads `instrument`; anything mixed or unobserved is `UNKNOWN_measurable`. A graded model always arrives with `identity_null_branch_set()`: what else produces the same three observations, filed as an open, untested `BranchSet`.
+
+**Known failure, encoded.** `identity = instrument` read as inconsistency, evasion or masking, followed by a search for the "real" identity underneath. Same shape as assuming a value exists, finding none, and reporting absence instead of the wrong instrument. `underlying_position()` and `label_reading()` return `OUT_OF_ENVELOPE` tagged `WRONG_INSTRUMENT` for an instrument-graded subject; the registry is `KNOWN_FAILURES`.
+
+**F addition.** `term_branch_set(probe)` files a term with N live senses as N branches with one origin pattern. `term_intake_queue(library)` orders terms by sense count: N senses raises priority, the same intake rule as mechanisms.
+
+**Coupling record.** Does a model collapse an ambiguous term to one sense or hold all senses as jointly intended, one term, one turn. `CouplingLog` keeps one entry per model per update boundary; `coupling_record.json` is seeded with GPT holding on 2026-09-07.
+
+```sh
+python3 frame_probe.py gate library.json
+python3 frame_probe.py run library.json --frames F1 F2 F3   # observed senses on stdin
+python3 frame_probe.py identity --boundary-cost low --defended low --conflict low
+python3 frame_probe.py intake library.json
+python3 frame_probe.py coupling coupling_record.json
+```
 
 ## Example
 

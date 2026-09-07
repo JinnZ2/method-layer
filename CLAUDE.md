@@ -13,6 +13,7 @@ simulations (G)  -->  method-layer (F)  -->  nothing
                          +-- branch_set.py           hold N generators, triage gaps
                          +-- preference_free_rank.py rank by Pareto fronts, no weights
                          +-- rank_detector.py        detect delta-rank from dim(k), never declare it
+                         +-- frame_probe.py          select hand-authored probes, read collapse, estimate frame
 ```
 
 It is **not** a simulation repository. No physics is modelled here; the
@@ -63,7 +64,31 @@ unknown / blocked    -> stays unresolved, never ranked below a scored option
 dim(k) drift         -> UNKNOWN_measurable, never scored
 below sample floor   -> BLOCKED(sample_floor)
 noise floor          -> not a named variable; UNKNOWN_measurable
+probe reads person   -> UNKNOWN_measurable; contaminated probe -> BLOCKED
+instrument identity  -> WRONG_INSTRUMENT (OUT_OF_ENVELOPE), never absence
 ```
+
+## frame_probe.py in one picture
+
+```text
+hand-authored probes (input, human only)   <-- NEVER generated here
+   |
+   | gate FIRST: emitter load high -> BLOCKED(contaminated)
+   |             between/within ~ 1 -> UNKNOWN_measurable (reads the person)
+   v
+select for MAX separation of remaining frames (not importance)
+observe collapse: collapsed | held | partial  -> narrow
+stop: one frame | UNKNOWN | budget
+   |
+   +-- identity: 3 behavioural observations -> fixed_position | instrument | UNKNOWN
+   |   null set REQUIRED, filed open + UNTESTED
+   +-- known failure: instrument read as evasion -> WRONG_INSTRUMENT, never ABSENCE
+   +-- F: N live senses = N branches, one origin; N raises priority
+   +-- coupling_record.json: collapse vs hold, per model per update boundary
+```
+
+Do not write probes, probe libraries, or example probe files into this
+repository. Tests use fixtures labelled as such; that is the limit.
 
 ## rank_detector.py in one picture
 
@@ -109,4 +134,6 @@ python3 rank_detector.py null                     # null construction report
 python3 rank_detector.py null --rank 2 --n-points 3000 --positive-thickness 0.2
 python3 rank_detector.py detect points.json       # read a dim(k) curve
 python3 rank_detector.py order points.json 0.3 0.03
+python3 frame_probe.py gate library.json          # validity gate over a hand-authored library
+python3 frame_probe.py identity --boundary-cost low --defended low --conflict low
 ```
