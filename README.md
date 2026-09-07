@@ -1,6 +1,6 @@
 # method-layer
 
-Four small, **preference-free** Python tools for preserving candidate generators, ranking options by declared, re-runnable physical criteria, detecting a rank change instead of declaring one, and estimating a reader's frame from hand-authored probes. This repository is a notation and ranking layer, **not a simulation repository**.
+Five small, **preference-free** Python tools for preserving candidate generators, ranking options by declared, re-runnable physical criteria, detecting a rank change instead of declaring one, estimating a reader's frame from hand-authored probes, and testing whether a label tracks the describer's position rather than the behaviour. This repository is a notation and ranking layer, **not a simulation repository**.
 
 ```text
 simulations (G)  ->  method-layer (F)
@@ -156,6 +156,38 @@ python3 frame_probe.py run library.json --frames F1 F2 F3   # observed senses on
 python3 frame_probe.py identity --boundary-cost low --defended low --conflict low
 python3 frame_probe.py intake library.json
 python3 frame_probe.py coupling coupling_record.json
+```
+
+### `observer_position_control.py`
+
+`observer_position_control.py` asks whether the maladaptive / adaptive label is set by the behaviour described or by whether the describer stands inside the population described. It is label extraction over a published corpus, not new observation, and the module ships **no corpus and no source list**: coding records are hand-authored input, coded blind. A synthetic corpus generator with planted structure exists only to check the arithmetic.
+
+```text
+behaviour, held fixed:   high-cost avoidance of neutral novelty + no test phase + arousal that does not clear
+positions:               1 human → non-human species   2 human → out-group humans   3 human → own population
+per source:              label class · attributed cause · adaptive account supplied/assumed/absent ·
+                         null offered · test proposed · decade · literature type · intensity · blind behaviour code
+```
+
+The prediction is registered in the module before any run (position 1 → pathology / artifact, position 2 → pathology or deficit, position 3 → need / adaptation with the account supplied retroactively) and is reported against the result, never returned as it.
+
+**Nulls, in order.** (a) The main null runs first: if the blind behaviour code differs across positions beyond a declared spread, the label difference is justified and the control returns nothing; records not matching the full pattern are excluded from every later step. Then the effect (pathologising rate in position 1 minus position 3) is stratified by (b) decade, (c) literature type and (d) coded intensity, each with Mantel-Haenszel weights, and jointly. The residual is what survives all four; when the joint strata are too thin the weakest single stratification stands in and is labelled as such.
+
+| Outcome | Meaning | Return class |
+|---|---|---|
+| `observer_indexed` | residual effect survives nulls a to d | `SCORED(residual)` |
+| `no_effect` | raw effect below `effect_min` | `SCORED(0)` |
+| `confounded` | a stratifier removes the effect, or position does not overlap it enough to compare within | `UNKNOWN_measurable` |
+| `behavior_differs` | null a fired; nothing returned | `UNKNOWN_measurable` |
+| `UNKNOWN_measurable` | source count too thin somewhere | `UNKNOWN_measurable` |
+
+Every threshold is declared on `ObserverPositionControl`; the docstring states what the file cannot distinguish (position from competence, coding bias in the input, an observer effect from a selection effect in how sources reached the corpus).
+
+```sh
+python3 observer_position_control.py prediction
+python3 observer_position_control.py synthetic --effect 0.6              # planted effect survives
+python3 observer_position_control.py synthetic --literature 1.0          # planted confound is caught
+python3 observer_position_control.py run corpus.json                     # a hand-coded corpus
 ```
 
 ## Example

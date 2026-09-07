@@ -14,6 +14,7 @@ simulations (G)  -->  method-layer (F)  -->  nothing
                          +-- preference_free_rank.py rank by Pareto fronts, no weights
                          +-- rank_detector.py        detect delta-rank from dim(k), never declare it
                          +-- frame_probe.py          select hand-authored probes, read collapse, estimate frame
+                         +-- observer_position_control.py  does a label track the describer's position? nulls first
 ```
 
 It is **not** a simulation repository. No physics is modelled here; the
@@ -67,6 +68,8 @@ null run fails       -> BLOCKED(null_construction); regime not scored
 noise floor          -> not a named variable; UNKNOWN_measurable
 probe reads person   -> UNKNOWN_measurable; contaminated probe -> BLOCKED
 instrument identity  -> WRONG_INSTRUMENT (OUT_OF_ENVELOPE), never absence
+behaviour differs    -> label difference justified; J returns nothing
+confound inseparable -> UNKNOWN_measurable, never a score
 ```
 
 ## frame_probe.py in one picture
@@ -90,6 +93,27 @@ stop: one frame | UNKNOWN | budget
 
 Do not write probes, probe libraries, or example probe files into this
 repository. Tests use fixtures labelled as such; that is the limit.
+
+## observer_position_control.py in one picture
+
+```text
+hand-coded source records (input; blind behaviour code REQUIRED)   <-- no corpus ships here
+   |
+   | null a FIRST: behaviour-match spread across positions >= 0.30 -> BEHAVIOR_DIFFERS, nothing
+   | restrict to full-pattern matches
+   v
+label x position -> p(pathologising) per position; effect = p1 - p3; Cramer's V
+   |
+   +-- null b decade | c literature | d intensity   MH-weighted within strata
+   +-- residual: joint strata, else weakest single (labelled)
+         survives >= 0.20  -> OBSERVER_INDEXED  SCORED(residual)
+         removed / no overlap -> CONFOUNDED     UNKNOWN_measurable
+         thin              -> UNKNOWN_measurable
+prediction registered in the module; reported against the result, never returned as it.
+```
+
+Do not add sources, citations, or a corpus to this repository. The synthetic
+generator is an instrument check and says so in every record.
 
 ## rank_detector.py in one picture
 
@@ -153,4 +177,6 @@ python3 rank_detector.py detect points.json       # null first, then the dim(k) 
 python3 rank_detector.py order --synthetic flat 0.3 0.03   # commutator as a finding
 python3 frame_probe.py gate library.json          # validity gate over a hand-authored library
 python3 frame_probe.py identity --boundary-cost low --defended low --conflict low
+python3 observer_position_control.py synthetic --effect 0.6    # instrument check
+python3 observer_position_control.py run corpus.json           # hand-coded corpus
 ```
