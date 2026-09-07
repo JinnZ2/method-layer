@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "date": "2026-09-07",
+      "model": "GPT",
+      "note": "held all senses as jointly intended; term not recorded in the work order, date used as update boundary",
+      "observed": [],
+      "reading": "held",
+      "term": null,
+      "update_boundary": "2026-09-07"
+    }
+  ],
+  "schema_version": "1.0"
+}
