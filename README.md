@@ -190,6 +190,33 @@ python3 observer_position_control.py synthetic --literature 1.0          # plant
 python3 observer_position_control.py run corpus.json                     # a hand-coded corpus
 ```
 
+### `register_map.py`
+
+`register_map.py` holds declared claims as **layers** and refuses to combine layers whose declarations do not permit it. The pattern is ported from GIS, where a layer will not load without projection and datum, blank is a value, and a map that coarsens silently is the failure mode. The tool does not rank, judge truth, or infer.
+
+```text
+required on every layer:   measurand · range · instrument (including scaffold / harness, the datum) · grade · resolution
+grades (6):                MEASURED_PRESENT · MEASURED_ABSENT · MEASURED_DISCARDED (needs discard_rule) ·
+                           UNMEASURED · UNDERPOWERED · IMPOSED (needs reason)
+blanks are values:         NODATA (region exists, not measured)   NOTFOUND (region measured, nothing there)
+```
+
+A layer missing any required field raises `LayerDeclarationError` naming **every** missing field. A field may instead carry the sentinel `UNDECLARED`, which is a declared absence and is kept as data. `MEASURED_DISCARDED` without a `discard_rule`, or `IMPOSED` without a `reason`, loads but is flagged: handling occurred and was not declared, which the reader should treat as worse than `UNMEASURED`.
+
+| Function | Returns | Rule |
+|---|---|---|
+| `load_layer(dict)` | `Layer` or raise | no default, no guess, no warn-and-continue |
+| `can_join(a, b)` | `COMMENSURABLE` · `INCOMMENSURABLE(field)` · `UNDECLARED(field)` | measurand, range, grade, then **instrument last**; the two non-joins never collapse into one; the full field table is returned |
+| `project(layer, target)` | `Layer` graded `MEASURED_DISCARDED` | coarsen only, integer factor only; every dropped cell is a `Discard` with its rule attached |
+
+Every return is a structured record so a later directionality tool can read discards and blanks; directionality itself is not implemented here.
+
+```sh
+python3 register_map.py load layer.json                 # refuse or render; NODATA blank, NOTFOUND '-'
+python3 register_map.py join a.json b.json --json       # structured join verdict
+python3 register_map.py project layer.json --to 4       # coarsen; discards listed with rules
+```
+
 ## Example
 
 ```python

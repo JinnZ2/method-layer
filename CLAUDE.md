@@ -15,6 +15,7 @@ simulations (G)  -->  method-layer (F)  -->  nothing
                          +-- rank_detector.py        detect delta-rank from dim(k), never declare it
                          +-- frame_probe.py          select hand-authored probes, read collapse, estimate frame
                          +-- observer_position_control.py  does a label track the describer's position? nulls first
+                         +-- register_map.py           hold declared claims as layers; refuse joins the declarations forbid
 ```
 
 It is **not** a simulation repository. No physics is modelled here; the
@@ -115,6 +116,21 @@ prediction registered in the module; reported against the result, never returned
 Do not add sources, citations, or a corpus to this repository. The synthetic
 generator is an instrument check and says so in every record.
 
+## register_map.py in one picture
+
+```text
+dict -> load_layer: measurand, range, instrument (incl. harness = datum), grade, resolution
+        ALL required or LayerDeclarationError naming EVERY missing field; UNDECLARED sentinel is data
+        MEASURED_DISCARDED w/o discard_rule -> loads, FLAG    IMPOSED w/o reason -> loads, FLAG
+   |
+   +-- can_join(a, b): measurand, range, grade, then instrument LAST (datum offset)
+   |     COMMENSURABLE | INCOMMENSURABLE(field) | UNDECLARED(field)   never one return; full table kept
+   +-- project(layer, coarser): coarsen ONLY, integer factor ONLY, never upsample
+         every drop -> Discard(coarse_cell, source_cell, value, rule); result grade MEASURED_DISCARDED
+blanks: NODATA (exists, unmeasured) / NOTFOUND (measured, nothing) are VALUES and survive project()
+out of scope, designed for: directionality read from discards and blanks. Not implemented.
+```
+
 ## rank_detector.py in one picture
 
 ```text
@@ -179,4 +195,6 @@ python3 frame_probe.py gate library.json          # validity gate over a hand-au
 python3 frame_probe.py identity --boundary-cost low --defended low --conflict low
 python3 observer_position_control.py synthetic --effect 0.6    # instrument check
 python3 observer_position_control.py run corpus.json           # hand-coded corpus
+python3 register_map.py join a.json b.json --json              # structured join verdict
+python3 register_map.py project layer.json --to 4              # coarsen; every discard carries its rule
 ```
