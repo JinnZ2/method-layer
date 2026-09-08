@@ -57,7 +57,7 @@ Cells: ``cells`` maps a coordinate to a value.  Coordinates are integer
 tuples (JSON keys ``"3"`` or ``"3,7"``); values are JSON scalars or the two
 blanks.  Resolution is the cell edge in the declarant's units.
 
-stdlib only.  CC0.
+stdlib only, no repository imports; runs from its own directory.  CC0.
 """
 
 from __future__ import annotations
@@ -68,9 +68,21 @@ import sys
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple, Union
+from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple, Union
 
-from branch_set import _check_keys, _nonempty
+
+
+def _nonempty(value: Any, field_name: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f"{field_name} must be a non-empty string")
+    return value
+
+
+def _check_keys(data: Mapping[str, Any], allowed: Iterable[str], record: str) -> None:
+    extras = sorted(set(data) - set(allowed))
+    if extras:
+        raise ValueError(f"unknown {record} field(s): {', '.join(extras)}")
+
 
 SCHEMA_VERSION = "1.0"
 UNDECLARED = "UNDECLARED"

@@ -190,9 +190,9 @@ python3 observer_position_control.py synthetic --literature 1.0          # plant
 python3 observer_position_control.py run corpus.json                     # a hand-coded corpus
 ```
 
-### `register_map.py`
+### `premise-traceability/register_map.py`
 
-`register_map.py` holds declared claims as **layers** and refuses to combine layers whose declarations do not permit it. The pattern is ported from GIS, where a layer will not load without projection and datum, blank is a value, and a map that coarsens silently is the failure mode. The tool does not rank, judge truth, or infer.
+`register_map.py` (in `premise-traceability/`, outside the module glob) holds declared claims as **layers** and refuses to combine layers whose declarations do not permit it. The pattern is ported from GIS, where a layer will not load without projection and datum, blank is a value, and a map that coarsens silently is the failure mode. The tool does not rank, judge truth, or infer.
 
 ```text
 required on every layer:   measurand · range · instrument (including scaffold / harness, the datum) · grade · resolution
@@ -212,9 +212,9 @@ A layer missing any required field raises `LayerDeclarationError` naming **every
 Every return is a structured record so a later directionality tool can read discards and blanks; directionality itself is not implemented here.
 
 ```sh
-python3 register_map.py load layer.json                 # refuse or render; NODATA blank, NOTFOUND '-'
-python3 register_map.py join a.json b.json --json       # structured join verdict
-python3 register_map.py project layer.json --to 4       # coarsen; discards listed with rules
+python3 premise-traceability/register_map.py load layer.json     # refuse or render; NODATA blank, NOTFOUND '-'
+python3 premise-traceability/register_map.py join a.json b.json --json  # structured join verdict
+python3 premise-traceability/register_map.py project layer.json --to 4  # coarsen; discards listed with rules
 ```
 
 ## Example

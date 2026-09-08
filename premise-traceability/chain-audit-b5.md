@@ -206,3 +206,5 @@ L7  BECAUSE L6, black hole information loss is a crisis.
        equivalent to CP violation, and that the two are "often used
        interchangeably." That substitution is licensed BY A THEOREM,
        and the theorem is a premise. Register
+
+CONTENT PENDING

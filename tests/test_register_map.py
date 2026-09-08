@@ -2,17 +2,22 @@
 
 Every layer here is a TEST FIXTURE.  Names such as Astra, Opus, Sol and the
 numbers attached to them are fixture labels taken from the work order, not
-measurements of anything.
+measurements of anything.  Harness names ("provider adapter", "standard
+harness") and task sets ("ARC-AGI-3 task set") in cases 1 and 2 are
+CONSTRUCTED for the regression set, not records of any real run.
 """
 
 import io
 import json
+import sys
 import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 
-from register_map import (
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "premise-traceability"))
+
+from register_map import (  # noqa: E402
     UNDECLARED,
     Blank,
     Discard,

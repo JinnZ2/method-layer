@@ -826,24 +826,6 @@ OBSERVER_POSITION_CONTROL_EVIDENCE = Evidence(
     lineage="[obs]",
 )
 
-REGISTER_MAP_EVIDENCE = Evidence(
-    source="JinnZ2/method-layer register_map.py",
-    claim=(
-        "load_layer refuses any layer missing measurand, range, instrument, "
-        "grade or resolution and names every missing field; the sentinel "
-        "UNDECLARED is accepted as a declared absence; Grade has six members "
-        "and two carry a mandatory second field whose absence loads with a "
-        "flag (DISCARD_RULE_UNDECLARED, REASON_UNDECLARED); NODATA and "
-        "NOTFOUND are distinct cell values; can_join compares measurand, "
-        "range, grade then instrument last and returns COMMENSURABLE / "
-        "INCOMMENSURABLE(field) / UNDECLARED(field) with the full comparison "
-        "table; project() coarsens only, integer factor only, and records "
-        "every dropped cell as a Discard with its rule; the docstring states "
-        "the module does not rank, judge truth, or infer."
-    ),
-    lineage="[obs]",
-)
-
 PROVENANCE_COLUMN_HELD_OPEN = (
     "the provenance interface between measurement lineage and candidate "
     "lineage is the question this matrix holds open "
@@ -1236,81 +1218,6 @@ METHOD_LAYER_INSTRUMENTS: tuple[Instrument, ...] = (
              "confound rejected) but is not mandatory per run; thresholds "
              "were set on the check corpus.",
     ),
-
-    # register_map: rows added with the module (WORK ORDER M). No prior tag.
-    Instrument(
-        domain="method-layer",
-        instrument="register_map",
-        axis=Axis.REPRESENTATION,
-        status=Status.COVERED,
-        evidence=REGISTER_MAP_EVIDENCE,
-        lineage="[obs]",
-        lineage_reason=(
-            "Layer, Discard, Flag and JoinResult are explicit records with "
-            "to_dict; blanks are values; representation is read directly."
-        ),
-        note="Declared layers, blanks (NODATA / NOTFOUND), flags and discards "
-             "are all explicit records.",
-    ),
-    Instrument(
-        domain="method-layer",
-        instrument="register_map",
-        axis=Axis.DISCRIMINABILITY,
-        status=Status.PARTIAL,
-        evidence=REGISTER_MAP_EVIDENCE,
-        lineage="[obs]",
-        lineage_reason=(
-            "can_join separates commensurable from incommensurable from "
-            "undeclared, by field, and the module states it makes no truth "
-            "judgement and no inference.  It discriminates declarations, not "
-            "hypotheses; PARTIAL is the module's own scope statement."
-        ),
-        note="Discriminates whether two layers may be combined and names the "
-             "field; declines by design to discriminate what is true.",
-    ),
-    Instrument(
-        domain="method-layer",
-        instrument="register_map",
-        axis=Axis.PROVENANCE,
-        status=Status.PARTIAL,
-        evidence=REGISTER_MAP_EVIDENCE,
-        lineage="[open]",
-        lineage_reason=PROVENANCE_COLUMN_HELD_OPEN,
-        note="The instrument field carries the harness (the datum) and every "
-             "coarsening discard is retrievable with its rule and source "
-             "grade; the link to an external measurement provenance chain is "
-             "not modelled.",
-    ),
-    Instrument(
-        domain="method-layer",
-        instrument="register_map",
-        axis=Axis.TRANSFORMATION,
-        status=Status.COVERED,
-        evidence=REGISTER_MAP_EVIDENCE,
-        lineage="[obs]",
-        lineage_reason=(
-            "project() is a declared scope operator: coarsen only, integer "
-            "factor only, every drop recorded.  Transformation is the "
-            "module's own vocabulary."
-        ),
-        note="Coarsening is explicit, one-directional, and leaves a record of "
-             "what it dropped.",
-    ),
-    Instrument(
-        domain="method-layer",
-        instrument="register_map",
-        axis=Axis.VALIDATION,
-        status=Status.PARTIAL,
-        evidence=REGISTER_MAP_EVIDENCE,
-        lineage="[obs]",
-        lineage_reason=(
-            "the loader validates declarations (refuses missing fields, flags "
-            "undeclared handling) and validates nothing about the measurement "
-            "itself; the module says so (no truth judgement).  PARTIAL is read "
-            "from that statement."
-        ),
-        note="Validates that a claim is traceable, not that it is right.",
-    ),
 )
 
 
@@ -1360,7 +1267,6 @@ MODULE_INSTRUMENT_NAMES: dict[str, str] = {
     "rank_detector": "rank_detector",
     "frame_probe": "frame_probe",
     "observer_position_control": "observer_position_control",
-    "register_map": "register_map",
 }
 
 METHOD_LAYER_DOMAIN = "method-layer"

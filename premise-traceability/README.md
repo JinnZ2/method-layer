@@ -35,6 +35,16 @@ and locally validated, and no role spans the chain.
   instruments.md       methods that fell out of the work
   GRADES.md            the epistemic grade legend, reusable across
                        domains
+  sweep-reversibility.md
+                       what reversibility claims were checked across which
+                       fields, and where the term changes meaning between
+                       them
+  information-decoupling.md
+                       why specialization scopes get declared in some fields
+                       and not others, and what that costs downstream
+  scope-declaration-spec.md
+                       the four required fields for any transported claim,
+                       plus the grade enum and what each grade means
 
 ## COLUMN DEFINITIONS
 

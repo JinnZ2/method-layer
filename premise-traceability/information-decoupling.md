@@ -83,6 +83,8 @@ published paper.
       Same structure, arriving as an afterthought. Fields publish
       without scope declarations; the receiving field SIDEL
 
+CONTENT PENDING
+
 ## THE OBJECT — ORDERING MATTERS
 
   INFORMATION DECOUPLING IS THE MECHANISM.
