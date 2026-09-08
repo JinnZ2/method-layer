@@ -205,6 +205,51 @@ L7  BECAUSE L6, black hole information loss is a crisis.
        The literature notes that assuming CPT symmetry, T violation is
        equivalent to CP violation, and that the two are "often used
        interchangeably." That substitution is licensed BY A THEOREM,
-       and the theorem is a premise. Register
+       and the theorem is a premise. Register row candidate.
+       OPEN: what is the measured bound on CPT itself, and what
+       depends on the substitution that would not survive its
+       loosening?
+       STATUS: NOT CHECKED.
 
-CONTENT PENDING
+  G-c  GRAVITY HAS NO T TEST — AND THAT IS WHERE THE SECOND BRANCH
+       LIVES.
+       B5's branch L6-L7 (unitarity, black hole information loss) sits
+       entirely in the gravitational sector. The sector with no
+       reversibility measurement in it is the sector whose
+       reversibility crisis is being argued about.
+       This is the finding. Everything else in this correction is
+       scope bookkeeping.
+       OPEN: is there any proposed instrument, even in principle, for
+       T symmetry in a gravitational regime?
+       STATUS: NOT CHECKED.
+
+  G-d  HISTORICAL PRECEDENT FOR INSTRUMENTING A HELD ASSUMPTION.
+       Before 1964, no T violation had been found even in systems
+       exhibiting MAXIMAL parity violation, so a non-zero neutron EDM
+       was regarded as highly unlikely. Ramsey emphasised the need to
+       check T invariance experimentally regardless. The check was
+       right and the expectation was wrong.
+       Filed as a worked case: "regarded as highly unlikely" is not a
+       measurement, and the field has been here before on this exact
+       premise.
+
+## WHAT DID NOT CHANGE
+
+  L3 is still [CONV]. L4 is still [INF]. The falsification of L1 does
+  not touch them, because they were never supported by L1 — only
+  triggered by it. A premise can be false and its downstream chain
+  still stand on convention.
+
+## THE PROMOTION ERROR, RESTATED WITH TEETH
+
+  The original chain audit called the promotion of L1 from [INF-I] to
+  [FP] an error of grading. It is worse than that. L1 was FALSIFIED IN
+  ONE SUB-FIELD IN 2012 while two downstream literatures continued
+  building on the unfalsified version, because the falsification is
+  sector-scoped and the premise was being used unscoped.
+
+  GENERALISED: an equivocation across sectors is how a falsified
+  premise keeps working. The word survived; the scope did not travel
+  with it.
+  This belongs in instruments.md as a check: FOR ANY PREMISE, LIST THE
+  SECTORS/REGIMES SEPARATELY AND GRADE EACH. Never grade the word.

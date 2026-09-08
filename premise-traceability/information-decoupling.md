@@ -81,9 +81,50 @@ published paper.
 
   C5  INFORMATION AND SCIENCE
       Same structure, arriving as an afterthought. Fields publish
-      without scope declarations; the receiving field SIDEL
+      without scope declarations; the receiving field SIDELOADS —
+      loads the formal machinery and generates the scope from its own
+      defaults.
+      WORKED INSTANCE IN HAND: chemistry restated the microscopic
+      reversibility justification VERBATIM while its RANGE did not
+      travel. The reason crossed the boundary; the sector did not.
+      See cross-field-reversibility.md.
 
-CONTENT PENDING
+## THE ANCHOR QUESTION — open, mechanical
+
+  An anchor to WHAT, exactly?
+
+  Metrology gives the shape: a magnitude traces back to a DEFINED
+  STANDARD. The premise equivalent would trace back to a STATED
+  MEASURAND AND RANGE.
+
+  Which makes it checkable rather than rhetorical:
+    DOES THE TERM, AS USED HERE, CARRY A DECLARATION OF THE SECTOR IT
+    WAS MEASURED IN?
+  Yes/no, per use. No interpretation required.
+
+## STRONGEST CHECKABLE FORM OF THE TRAJECTORY CLAIM
+
+  Failure rate should track COUPLING GROWTH, not COMPONENT CONDITION.
+
+  PREDICTION IT MAKES: maintenance spending on components can RISE
+  while failure rates ALSO RISE, and the two numbers do not
+  contradict each other. Anyone reading condition data alone would
+  find the pattern inexplicable.
+
+  STATUS: NOT CHECKED. Requires infrastructure failure data that
+  separates coupling-driven from condition-driven failure. Whether any
+  dataset does separate them is itself NOT CHECKED.
+
+## LIMITS — do not remove
+
+  - Coupling density and environmental rate are BOTH UNQUANTIFIED
+    here. The structure is buildable; the rates are not graded.
+  - This is NOT an argument against specialization or depth. The claim
+    is that the SCOPE MUST BE KNOWN. Every case above features a
+    specialist who was CORRECT INSIDE THEIR FIELD.
+  - C3 shows the fix is possible and cheap (training an
+    outward-facing edge). Any framing that treats the problem as
+    unsolvable contradicts the case series.
 
 ## THE OBJECT — ORDERING MATTERS
 
