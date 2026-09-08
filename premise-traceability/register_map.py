@@ -24,12 +24,17 @@ Flow::
       v
     Layer
       |
-      +-- can_join(a, b) -> JoinResult
+      +-- can_join(a, b, relations=()) -> JoinResult
       |     measurand, range, grade, then instrument LAST and reported explicitly
       |       COMMENSURABLE
-      |       INCOMMENSURABLE(field)   values disagree on the named field
+      |       UNJOINED(measurand)      different measurands, no declared relation
+      |                                between them: join NOT YET possible, closable
+      |                                when the bridging measurement arrives
+      |       INCOMMENSURABLE(field)   values disagree on the named field: do NOT join
       |       UNDECLARED(field)        the named field is the sentinel UNDECLARED
-      |     the two are never one return.  Different problems.
+      |     three non-joins, three different next actions, never one return.
+      |     A Relation(measurand_a, measurand_b, via) closes an UNJOINED pair.
+      |     UNJOINED is a property of the layer SET; it is never a grade.
       |
       +-- project(layer, target_resolution) -> Layer
             coarsen ONLY; never upsample; integer factor only (no resampling)
@@ -113,8 +118,9 @@ class FlagCode(str, Enum):
 
 class JoinVerdict(str, Enum):
     COMMENSURABLE = "COMMENSURABLE"
-    INCOMMENSURABLE = "INCOMMENSURABLE"
-    UNDECLARED = "UNDECLARED"
+    UNJOINED = "UNJOINED"                # join not yet possible; closable by a Relation
+    INCOMMENSURABLE = "INCOMMENSURABLE"  # do not join
+    UNDECLARED = "UNDECLARED"            # a field is declared absent
 
 
 class LayerDeclarationError(ValueError):
@@ -302,15 +308,38 @@ class Layer:
 
 
 @dataclass(frozen=True)
+class Relation:
+    """A declared bridge between two measurands, naming the measurement or
+    result that relates them.  Order-insensitive.  This is the thing whose
+    absence makes a pair UNJOINED and whose arrival closes it."""
+
+    measurand_a: str
+    measurand_b: str
+    via: str
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "measurand_a", _nonempty(self.measurand_a, "measurand_a"))
+        object.__setattr__(self, "measurand_b", _nonempty(self.measurand_b, "measurand_b"))
+        object.__setattr__(self, "via", _nonempty(self.via, "via"))
+
+    def bridges(self, x: str, y: str) -> bool:
+        return {x, y} == {self.measurand_a, self.measurand_b}
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {"measurand_a": self.measurand_a, "measurand_b": self.measurand_b, "via": self.via}
+
+
+@dataclass(frozen=True)
 class JoinResult:
     """Structured.  ``comparisons`` holds every field even when an early field blocks."""
 
     verdict: JoinVerdict
     field: Optional[str]
-    comparisons: Dict[str, str]        # field -> match | differ | undeclared
+    comparisons: Dict[str, str]        # field -> match | bridged | unrelated | differ | undeclared
     instrument_checked: bool
     resolution_match: bool
     rule: str
+    relation_used: Optional[str] = None   # Relation.via when a bridge closed the measurand gap
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -319,6 +348,7 @@ class JoinResult:
             "comparisons": dict(self.comparisons),
             "instrument_checked": self.instrument_checked,
             "resolution_match": self.resolution_match,
+            "relation_used": self.relation_used,
             "rule": self.rule,
         }
 
@@ -424,15 +454,25 @@ def load_layer_file(path: Union[str, Path]) -> Layer:
 # --------------------------------------------------------------------------
 
 
-def can_join(a: Layer, b: Layer) -> JoinResult:
+def can_join(a: Layer, b: Layer, relations: Iterable[Relation] = ()) -> JoinResult:
     """Compare declarations in JOIN_ORDER; instrument LAST and reported explicitly.
+
+    measurand:  equal -> match; different with a declared Relation -> bridged;
+                different with none -> UNJOINED(measurand).  UNJOINED is not
+                INCOMMENSURABLE: the join is not yet possible, and the arrival
+                of the bridging measurement closes it.  It is a property of
+                the pair, never of a layer.
+    other fields: differ -> INCOMMENSURABLE(field); UNDECLARED on either side
+                -> UNDECLARED(field).
 
     Every field is compared and recorded even when an earlier field blocks, so
     the result is a full table, not just the first problem.
     """
 
+    rels = tuple(relations)
     comparisons: Dict[str, str] = {}
     blocking: Optional[Tuple[JoinVerdict, str]] = None
+    relation_used: Optional[str] = None
     for name in JOIN_ORDER:
         va, vb = getattr(a, name), getattr(b, name)
         if name == "grade":
@@ -441,11 +481,23 @@ def can_join(a: Layer, b: Layer) -> JoinResult:
             state = "undeclared"
         elif va == vb:
             state = "match"
+        elif name == "measurand":
+            bridge = next((r for r in rels if r.bridges(va, vb)), None)
+            if bridge is not None:
+                state = "bridged"
+                relation_used = bridge.via
+            else:
+                state = "unrelated"
         else:
             state = "differ"
         comparisons[name] = state
-        if blocking is None and state != "match":
-            blocking = (JoinVerdict.UNDECLARED if state == "undeclared" else JoinVerdict.INCOMMENSURABLE, name)
+        if blocking is None and state not in ("match", "bridged"):
+            verdict = {
+                "undeclared": JoinVerdict.UNDECLARED,
+                "unrelated": JoinVerdict.UNJOINED,
+                "differ": JoinVerdict.INCOMMENSURABLE,
+            }[state]
+            blocking = (verdict, name)
 
     resolution_match = (a.resolution == b.resolution) and a.resolution != UNDECLARED
     inst = comparisons["instrument"]
@@ -454,20 +506,28 @@ def can_join(a: Layer, b: Layer) -> JoinResult:
         "differ": "instrument checked last: DIFFERS (datum offset)",
         "undeclared": "instrument checked last: UNDECLARED on at least one side",
     }[inst]
+    others = [f for f, st in comparisons.items() if st in ("differ", "undeclared") and f != "measurand"]
+    others_note = f"; other fields not matching: {', '.join(others)}" if others else ""
 
     if blocking is None:
+        bridged = f"measurand bridged via {relation_used}; " if relation_used else "measurand, "
         return JoinResult(
             JoinVerdict.COMMENSURABLE, None, comparisons, True, resolution_match,
-            rule=f"measurand, range, grade agree; {inst_note}; "
+            rule=f"{bridged}range, grade agree; {inst_note}; "
                  f"resolution {'matches' if resolution_match else 'differs (project() before overlay)'}",
+            relation_used=relation_used,
         )
     verdict, name_ = blocking
-    if verdict is JoinVerdict.UNDECLARED:
+    if verdict is JoinVerdict.UNJOINED:
+        rule = (f"UNJOINED(measurand): {a.measurand!r} and {b.measurand!r} have no declared Relation; "
+                f"join not yet possible, closable when a bridging measurement is declared; "
+                f"{inst_note}{others_note}")
+    elif verdict is JoinVerdict.UNDECLARED:
         rule = f"UNDECLARED({name_}): the field is declared absent on at least one side; {inst_note}"
     else:
         rule = (f"INCOMMENSURABLE({name_}): {getattr(a, name_) if name_ != 'grade' else a.grade.value!r} "
-                f"vs {getattr(b, name_) if name_ != 'grade' else b.grade.value!r}; {inst_note}")
-    return JoinResult(verdict, name_, comparisons, True, resolution_match, rule=rule)
+                f"vs {getattr(b, name_) if name_ != 'grade' else b.grade.value!r}; do not join; {inst_note}")
+    return JoinResult(verdict, name_, comparisons, True, resolution_match, rule=rule, relation_used=relation_used)
 
 
 # --------------------------------------------------------------------------
@@ -558,6 +618,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     p_join = sub.add_parser("join", help="can these two layers be combined?")
     p_join.add_argument("layer_a")
     p_join.add_argument("layer_b")
+    p_join.add_argument("--relations", help="JSON list of {measurand_a, measurand_b, via}; closes UNJOINED pairs")
     p_join.add_argument("--json", action="store_true")
     p_proj = sub.add_parser("project", help="coarsen a layer; every drop recorded")
     p_proj.add_argument("layer")
@@ -570,7 +631,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             layer = load_layer_file(args.layer)
             print(json.dumps(layer.to_dict(), indent=2, sort_keys=True) if args.json else layer.format())
         elif args.command == "join":
-            result = can_join(load_layer_file(args.layer_a), load_layer_file(args.layer_b))
+            rels: List[Relation] = []
+            if args.relations:
+                with open(args.relations, encoding="utf-8") as fh:
+                    for item in json.load(fh):
+                        _check_keys(item, ("measurand_a", "measurand_b", "via"), "relation")
+                        rels.append(Relation(item["measurand_a"], item["measurand_b"], item["via"]))
+            result = can_join(load_layer_file(args.layer_a), load_layer_file(args.layer_b), rels)
             print(json.dumps(result.to_dict(), indent=2, sort_keys=True) if args.json
                   else f"{result.verdict.value}" + (f"({result.field})" if result.field else "") + f": {result.rule}")
         else:
@@ -599,6 +666,7 @@ __all__ = [
     "Layer",
     "LayerDeclarationError",
     "ProjectionError",
+    "Relation",
     "can_join",
     "load_layer",
     "load_layer_file",

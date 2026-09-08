@@ -27,6 +27,7 @@ from register_map import (  # noqa: E402
     Layer,
     LayerDeclarationError,
     ProjectionError,
+    Relation,
     can_join,
     load_layer,
     main,
@@ -140,6 +141,47 @@ class RegressionSet(unittest.TestCase):
             self.assertIn("coarsen x2", d.rule)
             self.assertIn("kept:", d.rule)
         self.assertEqual(out.flags, ())
+
+    def test_9_unrelated_measurands_are_unjoined_not_incommensurable(self):
+        # all required fields present, range / grade / instrument identical,
+        # measurands are different quantities with no declared relation
+        a = load_layer(fixture(name="FIXTURE A", measurand="pathologising rate", range="one corpus",
+                               instrument="blind coding", cells={"0": 0.6}))
+        b = load_layer(fixture(name="FIXTURE B", measurand="behaviour-match rate", range="one corpus",
+                               instrument="blind coding", cells={"0": 0.9}))
+        r = can_join(a, b)
+        self.assertIs(r.verdict, JoinVerdict.UNJOINED)
+        self.assertEqual(r.field, "measurand")
+        self.assertEqual(r.comparisons, {"measurand": "unrelated", "range": "match",
+                                         "grade": "match", "instrument": "match"})
+        self.assertIsNone(r.relation_used)
+        self.assertIn("not yet possible", r.rule)
+        self.assertIn("closable", r.rule)
+        # the bridging measurement arrives: same pair closes to COMMENSURABLE
+        bridge = Relation("pathologising rate", "behaviour-match rate", via="FIXTURE joint table over the same records")
+        r2 = can_join(a, b, [bridge])
+        self.assertIs(r2.verdict, JoinVerdict.COMMENSURABLE)
+        self.assertEqual(r2.comparisons["measurand"], "bridged")
+        self.assertEqual(r2.relation_used, "FIXTURE joint table over the same records")
+        # order-insensitive
+        self.assertIs(can_join(b, a, [bridge]).verdict, JoinVerdict.COMMENSURABLE)
+        # UNJOINED is never a grade: the enum has six values and none is UNJOINED
+        self.assertEqual(len(Grade), 6)
+        self.assertNotIn("UNJOINED", [g.value for g in Grade])
+        with self.assertRaises(ValueError):
+            load_layer(fixture(grade="UNJOINED"))
+
+    def test_9b_unjoined_still_reports_other_mismatches(self):
+        a = load_layer(fixture(measurand="x", instrument="h1"))
+        b = load_layer(fixture(measurand="y", instrument="h2"))
+        r = can_join(a, b)
+        self.assertIs(r.verdict, JoinVerdict.UNJOINED)          # measurand blocks first
+        self.assertEqual(r.comparisons["instrument"], "differ")  # but the offset is not hidden
+        self.assertIn("other fields not matching: instrument", r.rule)
+        # a bridge alone does not rescue it: the instrument offset then blocks
+        r2 = can_join(a, b, [Relation("x", "y", via="FIXTURE bridge")])
+        self.assertIs(r2.verdict, JoinVerdict.INCOMMENSURABLE)
+        self.assertEqual(r2.field, "instrument")
 
     def test_8_missing_resolution_raises_naming_it(self):
         data = fixture()

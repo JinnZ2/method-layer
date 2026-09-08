@@ -123,8 +123,11 @@ dict -> load_layer: measurand, range, instrument (incl. harness = datum), grade,
         ALL required or LayerDeclarationError naming EVERY missing field; UNDECLARED sentinel is data
         MEASURED_DISCARDED w/o discard_rule -> loads, FLAG    IMPOSED w/o reason -> loads, FLAG
    |
-   +-- can_join(a, b): measurand, range, grade, then instrument LAST (datum offset)
-   |     COMMENSURABLE | INCOMMENSURABLE(field) | UNDECLARED(field)   never one return; full table kept
+   +-- can_join(a, b, relations): measurand, range, grade, then instrument LAST (datum offset)
+   |     COMMENSURABLE | UNJOINED(measurand) | INCOMMENSURABLE(field) | UNDECLARED(field)
+   |     UNJOINED = different measurands, no Relation declared: not yet joinable, closable by a bridge
+   |     INCOMMENSURABLE = do not join.  Three non-joins, three next actions, never one return.
+   |     UNJOINED is a property of the PAIR; grades stay six, none is UNJOINED.  Full table kept.
    +-- project(layer, coarser): coarsen ONLY, integer factor ONLY, never upsample
          every drop -> Discard(coarse_cell, source_cell, value, rule); result grade MEASURED_DISCARDED
 blanks: NODATA (exists, unmeasured) / NOTFOUND (measured, nothing) are VALUES and survive project()

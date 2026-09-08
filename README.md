@@ -206,10 +206,10 @@ A layer missing any required field raises `LayerDeclarationError` naming **every
 | Function | Returns | Rule |
 |---|---|---|
 | `load_layer(dict)` | `Layer` or raise | no default, no guess, no warn-and-continue |
-| `can_join(a, b)` | `COMMENSURABLE` · `INCOMMENSURABLE(field)` · `UNDECLARED(field)` | measurand, range, grade, then **instrument last**; the two non-joins never collapse into one; the full field table is returned |
+| `can_join(a, b, relations=())` | `COMMENSURABLE` · `UNJOINED(measurand)` · `INCOMMENSURABLE(field)` · `UNDECLARED(field)` | measurand, range, grade, then **instrument last**. `UNJOINED`: different measurands with no declared `Relation`, join not yet possible and closable when the bridging measurement is declared. `INCOMMENSURABLE`: do not join. The three non-joins never collapse into one; the full field table is returned |
 | `project(layer, target)` | `Layer` graded `MEASURED_DISCARDED` | coarsen only, integer factor only; every dropped cell is a `Discard` with its rule attached |
 
-Every return is a structured record so a later directionality tool can read discards and blanks; directionality itself is not implemented here.
+`UNJOINED` is a property of the layer pair, never of a layer: the grade enum stays at six values. Every return is a structured record so a later directionality tool can read discards and blanks; directionality itself is not implemented here.
 
 ```sh
 python3 premise-traceability/register_map.py load layer.json     # refuse or render; NODATA blank, NOTFOUND '-'
