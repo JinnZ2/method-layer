@@ -638,8 +638,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                         _check_keys(item, ("measurand_a", "measurand_b", "via"), "relation")
                         rels.append(Relation(item["measurand_a"], item["measurand_b"], item["via"]))
             result = can_join(load_layer_file(args.layer_a), load_layer_file(args.layer_b), rels)
-            print(json.dumps(result.to_dict(), indent=2, sort_keys=True) if args.json
-                  else f"{result.verdict.value}" + (f"({result.field})" if result.field else "") + f": {result.rule}")
+            head = result.verdict.value + (f"({result.field})" if result.field else "")
+            text = result.rule if result.rule.startswith(head) else f"{head}: {result.rule}"
+            print(json.dumps(result.to_dict(), indent=2, sort_keys=True) if args.json else text)
         else:
             target = int(args.to) if float(args.to).is_integer() else args.to
             layer = project(load_layer_file(args.layer), target)
