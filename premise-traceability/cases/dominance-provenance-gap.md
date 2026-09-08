@@ -340,3 +340,10 @@ P6  WORKPLACE / INSTITUTIONAL COST DENOMINATOR
 
 
 COMMIT_HASH sha256(P1-P6 block) = de419391a7fbb284ee25eb17d9dcc3c428c1eb942643d4b9a018818ae9f8647f
+HASH RULE   sha256 over the lines from the FIRST line matching /^  P1  /
+            through the first following line equal to
+            "      periphery is uninstrumented", inclusive, each line
+            newline-terminated. The Stage 3 score table also begins
+            "  P1  "; a range rule that restarts there reads past the
+            block and does not reproduce the hash. Verified with the
+            first-occurrence rule at commits 99c8eb7 and 62a4e01.
