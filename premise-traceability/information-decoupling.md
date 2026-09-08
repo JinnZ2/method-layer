@@ -82,3 +82,59 @@ published paper.
   C5  INFORMATION AND SCIENCE
       Same structure, arriving as an afterthought. Fields publish
       without scope declarations; the receiving field SIDEL
+
+## THE OBJECT — ORDERING MATTERS
+
+  INFORMATION DECOUPLING IS THE MECHANISM.
+  INFRASTRUCTURE DECAY IS THE CONSEQUENCE.
+
+  Roads, the ability to maintain roads, machines, processes — these do
+  fall apart. That is real and it is downstream. "Falling apart" was
+  never the wrong word; it was in the wrong position in the chain.
+
+  Real-world coupling density is RISING. Information coupling is
+  FALLING. Two rates, opposite directions. The gap widens on its own,
+  and the decay follows from the gap rather than from component wear.
+
+  NOBODY OWNS A JOIN. Same reason the arrow-of-time dependency chain
+  went unwalked — locally valid everywhere, unowned in between.
+
+## THE SECOND-ORDER TERM — THE WORSE ONE
+
+  It is becoming LESS VISIBLE that things are falling apart at all.
+
+  MECHANISM: when the incentive structure is decoupled from reality and
+  becomes CONCENTRATED, the PERIPHERY cannot be seen. So the failure
+  and the instrument that would detect it are removed BY THE SAME MOVE.
+  Not two problems. One move with two effects.
+
+  SELECTION EFFECT, THIRD INSTANCE — same geometry, now in an incentive
+  structure rather than a formalism:
+    GRAVITY      no measurement where the premise is load-bearing
+    BIOPHYSICS   test underpowered exactly where the premise is imposed
+    PERIPHERY    unmonitored precisely where the concentration is
+  The unmeasured region is never randomly placed. It sits where the
+  thing matters.
+
+## WITHDRAWN — an earlier line in this file was wrong
+
+  Previously stated: "failure rate should track coupling growth rather
+  than component condition, and this is testable against real
+  infrastructure data."
+
+  THE SECOND HALF IS WITHDRAWN. If the periphery is not monitored, the
+  data to run that check DOES NOT EXIST. THE ABSENCE OF THE DATA IS
+  ITSELF THE PREDICTION.
+
+  That is a stronger claim and a harder test: the check cannot be built
+  from the failing system's own reporting, because the reporting is
+  produced by the same concentration that caused the failure.
+
+  AVAILABLE INSTRUMENT INSTEAD — graded, no interiority required:
+    incentive direction
+    cost asymmetry
+    whether the aggregate steers
+  These are measurable without attributing intent to anyone, and they
+  do not depend on the periphery being monitored.
+
+  STATUS: NOT BUILT.
