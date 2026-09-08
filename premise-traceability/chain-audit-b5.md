@@ -130,3 +130,79 @@ L7  BECAUSE L6, black hole information loss is a crisis.
   not the field's. No published paper labels L3 a convention. The
   grading is therefore [INF] at the meta level, and a reader should
   re-derive it rather than cite it.
+
+---
+
+# CORRECTION 2026-09-08 — L1 IS FALSIFIED
+# Appended after the chain above was written. The chain's parent
+# premise does not survive contact with the measurement record.
+# The chain above is LEFT UNCHANGED. This correction is appended
+# rather than merged, so the promotion error stays visible.
+
+## WHAT WAS MEASURED
+
+  T violation has been DIRECTLY OBSERVED. BaBar, 2012, 468 million B
+  meson pairs from Y(4S) decays: non-zero values for T-violating
+  parameters. The measurement used entanglement between neutral B
+  mesons; a true test of time reversal symmetry with unstable particles
+  had previously been considered impossible.
+
+  Earlier: T violation was seen in neutral kaons at CPLEAR, but that
+  measurement could not distinguish T violation from CP violation, and
+  its interpretation drew criticism. BaBar is the direct result.
+
+## CONSEQUENCE FOR L1
+
+  L1 as written — "the microscopic equations are time-symmetric" — IS
+  FALSE AS STATED.
+
+  L1 REGRADES to [INST], and its CONTENT INVERTS:
+    T is violated in the weak sector, measured.
+    CPT is conserved to the limit of measurement; CPT tests have been
+    consistent with zero.
+
+  The CPT-not-T correction noted in the original L1 is therefore not a
+  technicality. It is the whole content of the link.
+
+## DOES THE SCOPE HOLD — NO
+
+  The violation is confined to ONE OF FOUR INTERACTIONS.
+
+    WEAK              T VIOLATED, measured (BaBar; CPLEAR indirect).
+                      Weak interaction is maximally antisymmetric under
+                      P and C.
+    ELECTROMAGNETIC   T symmetric. Measured absent to tight limits.
+    STRONG            T symmetric. Measured absent to tight limits.
+    GRAVITY           NO T TEST EXISTS.
+
+  Bound on the symmetric sectors: no neutron electric dipole moment has
+  been found. Best limit (0.0 +/- 1.1) x 10^-26 e.cm, after roughly six
+  orders of magnitude of experimental improvement. A permanent EDM
+  would violate both P and T. So T violation outside the weak sector is
+  MEASURED ABSENT, not unmeasured. That distinction is load-bearing.
+
+  THREE DIFFERENT GRADES NOW SIT UNDER ONE WORD:
+    measured-broken     (weak)
+    measured-intact     (electromagnetic, strong)
+    UNMEASURED          (gravity)
+  Any argument using "reversibility" without naming its sector is
+  equivocating across three grades.
+
+## GAPS THIS OPENS
+
+  G-a  THE VIOLATION IS IN THE WRONG SECTOR TO DO THE DOWNSTREAM WORK.
+       Thermodynamic irreversibility occurs in systems governed by
+       electromagnetism, where T holds to the EDM limit above. So L2's
+       deduction ("no arrow can come from the laws") SURVIVES FOR THE
+       RELEVANT SECTOR while its stated premise is false globally.
+       The chain is not rescued by the falsification and is not
+       destroyed by it. It is MIS-SCOPED, which is a third thing.
+       OPEN: has anyone attempted to derive a thermodynamic arrow from
+       weak-sector T violation, and what bounded the attempt?
+       STATUS: NOT CHECKED.
+
+  G-b  AN UNEXAMINED SUBSTITUTION.
+       The literature notes that assuming CPT symmetry, T violation is
+       equivalent to CP violation, and that the two are "often used
+       interchangeably." That substitution is licensed BY A THEOREM,
+       and the theorem is a premise. Register
