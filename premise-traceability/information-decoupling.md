@@ -87,7 +87,7 @@ published paper.
       WORKED INSTANCE IN HAND: chemistry restated the microscopic
       reversibility justification VERBATIM while its RANGE did not
       travel. The reason crossed the boundary; the sector did not.
-      See cross-field-reversibility.md.
+      See sweep-reversibility.md.
 
 ## THE ANCHOR QUESTION — open, mechanical
 

@@ -63,6 +63,32 @@ is a searchable or runnable procedure, not a position.
   WORKED EXAMPLE
     chain-audit-b5.md.
 
+## I3  SECTOR-WISE PREMISE GRADING
+
+  CHECK
+    For any premise, list the sectors or regimes separately and grade
+    each one. NEVER GRADE THE WORD.
+
+  WHY
+    A premise can be falsified in one sub-field while downstream
+    literatures keep building on the unfalsified version, because the
+    falsification is sector-scoped and the premise is used unscoped.
+    Equivocation across sectors is HOW a falsified premise keeps
+    working. The word survives; the scope does not travel with it.
+
+  WORKED CASE
+    Microscopic time-reversibility. One word, three grades —
+      weak sector             measured-broken  (BaBar 2012)
+      electromagnetic/strong  measured-intact  (nEDM limits)
+      gravity                 UNMEASURED       (no T test exists)
+    Any argument using "reversibility" without naming its sector is
+    equivocating across all three.
+    Source: chain-audit-b5.md, CORRECTION 2026-09-08.
+
+  OUTPUT
+    One grade per sector. A single grade for the premise as a whole is
+    a defect, not a summary.
+
 ---
 
 ## OPEN — SPECCED, NOT BUILT
