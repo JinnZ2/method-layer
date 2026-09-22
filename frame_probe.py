@@ -1,3 +1,10 @@
+# INSTRUMENT: frame_probe
+# INPUT: AGENT-OUTPUT|DOCUMENT
+# CATCHES: instrument absence read as evasion; a probe that reads the person, not the frame
+# RUN-COST: LINEAR (author-estimate)
+# STATUS: DERIVED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """Frame estimation by probe selection and collapse reading.
 
 Partition (load-bearing)::

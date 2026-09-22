@@ -1,3 +1,10 @@
+# INSTRUMENT: register_map
+# INPUT: CATEGORY-SET|NUMBER
+# CATCHES: two layers joined whose declarations forbid it; silent coarsening
+# RUN-COST: LINEAR (author-estimate)
+# STATUS: DERIVED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """Register map: hold declared claims as LAYERS; refuse to combine layers whose
 declarations do not permit it.
 

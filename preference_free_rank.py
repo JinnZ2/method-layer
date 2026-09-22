@@ -1,3 +1,10 @@
+# INSTRUMENT: preference_free_rank
+# INPUT: DECISION|NUMBER
+# CATCHES: an unknown converted into a score; an out-of-envelope option ranked
+# RUN-COST: QUADRATIC (author-estimate)
+# STATUS: DERIVED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """Envelope-aware, preference-free ranking by Pareto dominance.
 
 Criterion measurements and physics envelopes are supplied by callers.  The

@@ -1,3 +1,12 @@
+# INSTRUMENT: rank_detector
+# INPUT: NUMBER
+# CATCHES: a resolution artifact read as dimensional activation
+# RUN-COST: LINEAR (author-estimate)
+# STATUS: DERIVED
+# GATE: PASSED
+# (index header, read by Simulators/instrument-index/build_index.py; GATE PASSED here
+#  means the module's own null construction with a positive control, not the
+#  Simulators known-answer registry)
 """Detect a rank change from a dim(k) curve instead of declaring one.
 
 PROBLEM
