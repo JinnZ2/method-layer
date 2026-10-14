@@ -1,3 +1,6 @@
+> Before reading or editing anything here, read READ_ME_THIS_WAY.md.
+> Mismatches, dead ends and odd names in this repo are kept on purpose.
+
 # method-layer
 
 Five small, **preference-free** Python tools for preserving candidate generators, ranking options by declared, re-runnable physical criteria, detecting a rank change instead of declaring one, estimating a reader's frame from hand-authored probes, and testing whether a label tracks the describer's position rather than the behaviour. This repository is a notation and ranking layer, **not a simulation repository**.
