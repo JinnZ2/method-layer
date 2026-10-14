@@ -25,6 +25,15 @@ Run `python3 tools/fitness_bin_self_test.py --selftest` from the repository
 root; the two-world demonstration is the bare command. The original bin
 instrument links to this sibling and back.
 
+### Coupling vs border-maintenance energy yardstick (reasoning note, mirror)
+
+[`tools/coupling_vs_border_energy_yardstick.md`](tools/coupling_vs_border_energy_yardstick.md)
+reads energy routed to coupling vs to holding separations; a readout, not a
+ranking. The note is mirrored byte-identical from the Simulators repository,
+where its stdlib `yardstick.py` lives. A worked instance on care, the
+fine-tuning debate and "judge not" is appended to
+[`tools/contested_area_hidden_assumption.md`](tools/contested_area_hidden_assumption.md).
+
 ### `branch_set.py`
 
 `branch_set.py` serializes a held set of candidate generators so it survives transport to a model or a reader. Collapse to a single hypothesis happens at **measurement**, not at intake. The schema version is `1.0` and is versioned independently of the ranking layer.
