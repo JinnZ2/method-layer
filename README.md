@@ -11,6 +11,17 @@ The implementation uses only the Python standard library, has no runtime depende
 
 ## Tools
 
+### Fitness-function bin self-test (WO-7 mirror)
+
+[Instrument and verified specimens](tools/fitness_bin_self_test.md),
+[seeded stdlib toy](tools/fitness_bin_self_test.py), and
+[first observed output](tools/samples/fitness_bin_self_test.sample.txt).
+This is synthetic calibration of a missing-channel diagnostic, not a physical
+model or a new empirical corpus.
+Run `python3 tools/fitness_bin_self_test.py --selftest` from the repository
+root; the two-world demonstration is the bare command. The original bin
+instrument links to this sibling and back.
+
 ### `branch_set.py`
 
 `branch_set.py` serializes a held set of candidate generators so it survives transport to a model or a reader. Collapse to a single hypothesis happens at **measurement**, not at intake. The schema version is `1.0` and is versioned independently of the ranking layer.
