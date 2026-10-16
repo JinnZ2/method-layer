@@ -34,6 +34,14 @@ where its stdlib `yardstick.py` lives. A worked instance on care, the
 fine-tuning debate and "judge not" is appended to
 [`tools/contested_area_hidden_assumption.md`](tools/contested_area_hidden_assumption.md).
 
+### New-tech gap spec (instrument, mirror)
+
+[`tools/new_tech_gap_spec/`](tools/new_tech_gap_spec/) is a gap spec for a new
+technology read before it ships (14 standard interfaces, a 10-section
+checklist, forward trajectories, clock-rate mismatch), with two worked cases:
+a thruster road car and always-on AI wearables at work. It is an instrument,
+not a finding. The four files are byte-identical with the Simulators copy.
+
 ### `branch_set.py`
 
 `branch_set.py` serializes a held set of candidate generators so it survives transport to a model or a reader. Collapse to a single hypothesis happens at **measurement**, not at intake. The schema version is `1.0` and is versioned independently of the ranking layer.
