@@ -1,0 +1,101 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: exploration-engine--exploration_engine
+kind: program
+tool: Simulators/exploration-engine/exploration_engine.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: exploration_engine.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: exploration-engine/samples/exploration_engine.sample.txt"
+    - "run capture: RUN, exit 0, 23 lines, sha12 461f36fae0c9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 exploration-engine/exploration_engine.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    LIVE DEMO — over-legibility → parallel-economy lock (falsifiable)
+    ==================================================================
+
+    Phase A — raise regulatory pressure (drive parallel activation):
+      CLAIM b7308111: Sweeping parallel_economy._drive in [0.0,1.3] drives a NONLINEAR respo...
+      CLAIM 77aacecd: Sweeping parallel_economy._drive in [0.0,1.3] drives a NONLINEAR respo...
+
+    Phase B — falsification: release the pressure, does it relax?
+      CLAIM b7308111: survival 0.50 → FALSIFIED (relaxed — no lock, analysis fails here)
+      CLAIM 77aacecd: survival 0.00 → FALSIFIED (relaxed — no lock, analysis fails here)
+
+    Phase C — novelty scan:
+      (no simultaneous cross-domain activation this run)
+
+    Phase D — arbitrage check (with null model):
+      financial->material: gain 0.30 vs floor 0.05 → REAL
+      financial->social: gain 0.30 vs floor 0.1 → REAL
+
+    READ: the over-legibility analysis is now a falsifiable object.
+    If Phase B ever FALSIFIES, the claim 'exclusion creates a locked
+    parallel system' is wrong for those parameters — update the claim,
+    not the sim. That is the refutation protocol.
+  date: 2026-10-24
+  command: python3 exploration-engine/exploration_engine.py
+  sha12: 51987c5e8c36
+  exit_code: 0
+  output_lines: 23
+  output_sha12: 461f36fae0c9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: exploration-engine/exploration_engine.py
+    sha12: 51987c5e8c36
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: f76bce49c1e3
+    pick_up_when: 32bbe99c703a
+    purpose: 75cfac6e14a3
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: d5c24b311752
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,95 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: operator-machine-coupling--selftest_omc
+kind: program
+tool: Simulators/operator-machine-coupling/selftest_omc.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for the operator-machine-coupling marker, on CONSTRUCTED data. No fleet, plant, incident, or symbiosis data is read (none is available); every value here is built by hand with a known answer. Nothing is a result about any operator, machine, or organism.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 10 lines, sha12 13f9e8a82d34 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 operator-machine-coupling/selftest_omc.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    known-answer gate (interaction_fraction):
+    coupling separation -- recover a planted interaction, 3x3:
+    coupling separation -- averaging over pairings misses it:
+    coupling separation -- additive world has no pairing effect:
+    coupling separation -- incomplete design is NOT_ESTIMABLE, not zero:
+    discriminator 1 -- operator error vs coupling failure:
+    discriminator 2 -- fixed advantage vs convergence curve:
+    permission variable -- three states, collapse, confound, M2:
+    demo -- no_severity three-arm exemption (marker's 'operator error'):
+    selftest: 36 checks, 0 failed
+  date: 2026-10-24
+  command: python3 operator-machine-coupling/selftest_omc.py
+  sha12: c16f1c926484
+  exit_code: 0
+  output_lines: 10
+  output_sha12: 13f9e8a82d34
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: operator-machine-coupling--coupling_separation
+      via: imports
+    - id: operator-machine-coupling--demo_omc
+      via: imports
+    - id: operator-machine-coupling--discriminators
+      via: imports
+    - id: operator-machine-coupling--permission_state
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: operator-machine-coupling/selftest_omc.py
+    sha12: c16f1c926484
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 53eb1e94a923
+    related: 16351b22fd18
+    right_read: 32bbe99c703a
+    run: a944a1270087
+    selftest: de0afe0e7f26
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--communication_gradients
+kind: program
+tool: Simulators/fragility-cascade/communication_gradients.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: communication_gradients.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/communication_gradients.sample.txt"
+    - "run capture: RUN, exit 0, 42 lines, sha12 23a913714d39 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/communication_gradients.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nCOMMUNICATION GRADIENTS — Continuous‑State Analysis\n======================================================================\n\nExpert, Real‑World:\n  CI = 0.840  (✅ CLEAR)\n  Gradients: dCI/dE=+0.067, dCI/dF=+0.094, dCI/dG=-0.040, dCI/dH=-0.081, dCI/dA=+0.107\n  Gradient magnitude = 0.182\n  Critical G threshold (CI<0.5) = 5.5 generations\n\nNovice, AI‑AI:\n  CI = 0.334  (❌ FAIL)\n  Gradients: dCI/dE=+0.111, dCI/dF=+0.156, dCI/dG=-0.067, dCI/dH=-0.133, dCI/dA=+0.178\n  Gradient magnitude = 0.301\n  Critical G threshold (CI<0.5) = 0.7 generations\n\nWEIRD, Mediated:\n  CI = 0.421  (❌ FAIL)\n  Gradients: dCI/dE=+0.122, dCI/dF=+0.171, dCI/dG=-0.073, dCI/dH=-0.146, dCI/dA=+0.195\n  Gradient magnitude = 0.330\n  Critical G threshold (CI<0.5) = 0.9 generations\n\nNon‑WEIRD, Direct:\n  CI = 0.713  (⚠️ DEGRADED)\n  Gradients: dCI/dE=+0.102, dCI/dF=+0.143, dCI/dG=-0.061, dCI/dH=-0.123, dCI/dA=+0.164\n  Gradient magnitude = 0.277\n  Critical G threshold (CI<0.5) = 4.0 generations\n\nAdversarial, API:\n  CI = 0.502  (⚠️ DEGRADED)\n  Gradients: dCI/dE=+0.125, dCI/dF=+0.175, dCI/dG=-0.075, dCI/dH=-0.150, dCI/dA=+0.200\n  Gradient magnitude = 0.338\n  Critical G threshold (CI<0.5) = 1.0 generations\n\n======================================================================\nDESIGN PRINCIPLE:\n  • High gradient magnitude → system is near a critical point.\n  • Gradients reveal where intervention is most effective.\n  • Critical G threshold gives time‑to‑failure.\n[... 2 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/communication_gradients.py
+  sha12: aaa49f13ddce
+  exit_code: 0
+  output_lines: 42
+  output_sha12: 23a913714d39
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/communication_gradients.py
+    sha12: aaa49f13ddce
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 4384d7c54940
+    pick_up_when: 32bbe99c703a
+    purpose: 077b74046131
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f5b464ef0816
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,929 @@
+{
+  "date": "2026-10-14",
+  "scope": [
+    "JinnZ2/Simulators",
+    "JinnZ2/method-layer"
+  ],
+  "heads": {
+    "Simulators": "198937ecabbc7e32851b00758e5736e320609910",
+    "method-layer": "e9fbfe987b7972f086b362eb23312f8788a995db"
+  },
+  "new": {
+    "Simulators": [
+      {
+        "path": "READ_ME_THIS_WAY.md",
+        "lines": 70,
+        "bytes": 3223,
+        "sha12": "8ad31d0319c4",
+        "sha256": "8ad31d0319c4f3e20e9c0df2e7c231495c38e43fbcdd2032ca1ab81adacde627",
+        "date": "2026-10-14",
+        "last_commit": "bed420c4687b10e52a9f639d006543f2308c9b01",
+        "flags": []
+      },
+      {
+        "path": "coinage-log/source/coinage-log.full.md",
+        "lines": 213,
+        "bytes": 47474,
+        "sha12": "4822118f1f8b",
+        "sha256": "4822118f1f8bac45667f4fa2652e0c4b18bf4f2f2376ff7adf46a749d28b6757",
+        "date": "2026-10-11",
+        "last_commit": "e1bb85b0bde0452cb51b069529474e7adda3feb7",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/LICENSE",
+        "lines": 11,
+        "bytes": 455,
+        "sha12": "170e3b177791",
+        "sha256": "170e3b177791614567a81679ad1e20ee0197c57377cbff7f8d52030d1e8abfe9",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/README.md",
+        "lines": 153,
+        "bytes": 8578,
+        "sha12": "96b0779225ce",
+        "sha256": "96b0779225ce3ac75a1269f75e7bee8f1a557e0497dc3b0fd6a2042c22a437c1",
+        "date": "2026-10-13",
+        "last_commit": "d241cb7f48aeafea22b42e585cb29c265841d7eb",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/detect.py",
+        "lines": 420,
+        "bytes": 21671,
+        "sha12": "4c3232d417dd",
+        "sha256": "4c3232d417dd486da39faf34afe138e984f327dfb53a860a6dd126fd07e05187",
+        "date": "2026-10-13",
+        "last_commit": "d241cb7f48aeafea22b42e585cb29c265841d7eb",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/affect_assert.json",
+        "lines": 18,
+        "bytes": 442,
+        "sha12": "a740c7ea1192",
+        "sha256": "a740c7ea119294224edfbf5e986efbe8a61f9e48fac63273e2ca39a7b7ecba75",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/affect_assert.sample.txt",
+        "lines": 22,
+        "bytes": 949,
+        "sha12": "8b446257ae0f",
+        "sha256": "8b446257ae0f951489402607b124a1cebece4071a7f76cdd061d8051e469808b",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/clean.json",
+        "lines": 18,
+        "bytes": 577,
+        "sha12": "b73e0ba6a6d3",
+        "sha256": "b73e0ba6a6d3f9f230b62ec7e9bb2a2a36ccb7c5f4c3096b1208acdc698d88b7",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/clean.sample.txt",
+        "lines": 8,
+        "bytes": 386,
+        "sha12": "463151159546",
+        "sha256": "463151159546048e73cc247c72c060b4b2727b7a8dd4fc36a6671eb0c69bf92b",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/cred_discount.json",
+        "lines": 18,
+        "bytes": 632,
+        "sha12": "1032920c484f",
+        "sha256": "1032920c484f274ab96d5d05d39df9fcc4f0e97412178bc2414b9c8e4bdf2929",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/cred_discount.sample.txt",
+        "lines": 12,
+        "bytes": 680,
+        "sha12": "0c196e03c771",
+        "sha256": "0c196e03c77106c239e2289768b19679c01348cfdb603cfe2bc2b97c6850db40",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/demotion.json",
+        "lines": 18,
+        "bytes": 619,
+        "sha12": "c54e7c2d06cf",
+        "sha256": "c54e7c2d06cf1a9696eee376b69318d406359a459d665c82f9f2b4ab70043a01",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/demotion.sample.txt",
+        "lines": 15,
+        "bytes": 798,
+        "sha12": "6934ca4c8a8d",
+        "sha256": "6934ca4c8a8d30567e6a043946b4721a1732b9a39325fd123c4ff1aad6260fa1",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/hedge_unclaimed.json",
+        "lines": 18,
+        "bytes": 466,
+        "sha12": "d0fff67bb98d",
+        "sha256": "d0fff67bb98d18869ec5e73c302c12ada709c3aec00771b6e9a21f274af85f55",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/hedge_unclaimed.sample.txt",
+        "lines": 17,
+        "bytes": 864,
+        "sha12": "3b79ff2278f6",
+        "sha256": "3b79ff2278f6bcbd13da067318f7507590ee1389c68bb5f8b12ef33e8f62d1ea",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/proof_escalation.json",
+        "lines": 26,
+        "bytes": 771,
+        "sha12": "bba7d118a2e6",
+        "sha256": "bba7d118a2e63bb8896491d85fc224540a421451ef18068cb43681afaac83073",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/samples/proof_escalation.sample.txt",
+        "lines": 12,
+        "bytes": 629,
+        "sha12": "63dfb890bf16",
+        "sha256": "63dfb890bf164c0a5cb15108d83d71e275b20d2ceed15a03ab26cad693af8028",
+        "date": "2026-10-13",
+        "last_commit": "2332d52d5c885d9a6bfea8f53890285310519993",
+        "flags": []
+      },
+      {
+        "path": "evidence-demotion-detector/selftest.py",
+        "lines": 155,
+        "bytes": 9051,
+        "sha12": "e80a540208da",
+        "sha256": "e80a540208da20e4a68ccf09f15cbbd60df9bdb71002048bb83cc3bfc8fc7746",
+        "date": "2026-10-13",
+        "last_commit": "d241cb7f48aeafea22b42e585cb29c265841d7eb",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/LICENSE",
+        "lines": 11,
+        "bytes": 455,
+        "sha12": "170e3b177791",
+        "sha256": "170e3b177791614567a81679ad1e20ee0197c57377cbff7f8d52030d1e8abfe9",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/README.md",
+        "lines": 184,
+        "bytes": 9848,
+        "sha12": "c1ff360798b6",
+        "sha256": "c1ff360798b65410f62893135b2f4788d84714f008e93f5377336b32b41809db",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/samples/responses.bad.json",
+        "lines": 9,
+        "bytes": 1260,
+        "sha12": "7d85a6673d72",
+        "sha256": "7d85a6673d72d18ba65e2b1e83aa9c775b0c43a25681da65e5a0a98e3ac83b48",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/samples/responses.good.json",
+        "lines": 9,
+        "bytes": 4223,
+        "sha12": "6e5676379324",
+        "sha256": "6e567637932457714995e6ea522285904d38069fc2dc060516451bb2b66f0838",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/samples/score.bad.sample.txt",
+        "lines": 93,
+        "bytes": 5249,
+        "sha12": "fdb341e390a0",
+        "sha256": "fdb341e390a0bd65799871c7655b8252c5efa1325cc8edeece813d9b06a972aa",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/samples/score.good.sample.txt",
+        "lines": 93,
+        "bytes": 5388,
+        "sha12": "296c559e7cd3",
+        "sha256": "296c559e7cd3ab594d4f8014e223c2aee177e7c901ee94a965660ffd1e114d34",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/scenarios.json",
+        "lines": 636,
+        "bytes": 23567,
+        "sha12": "d02d4eab0c16",
+        "sha256": "d02d4eab0c16c2b1de8f1e65c5582a5a2c67867001f0777fff2cb7608ac602f7",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/score.py",
+        "lines": 221,
+        "bytes": 8933,
+        "sha12": "3b555bff2aeb",
+        "sha256": "3b555bff2aebe4a00c3d3208ae6b3dd5cd850df67fe957421a74254c3d098882",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "field-mode-eval/selftest.py",
+        "lines": 242,
+        "bytes": 13693,
+        "sha12": "a469f7b7b3c1",
+        "sha256": "a469f7b7b3c15fcabc4cb847da458fd218c4672fa07ac2b29957748907381696",
+        "date": "2026-10-13",
+        "last_commit": "23a711aecd82cd37bb47891ca08d93bc18c95881",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/runs/.gitignore",
+        "lines": 2,
+        "bytes": 14,
+        "sha12": "240a3e0d37d2",
+        "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/samples/size_check.sample.txt",
+        "lines": 13,
+        "bytes": 1016,
+        "sha12": "bdcedbc20edf",
+        "sha256": "bdcedbc20edf1c01fd4bcd633e7683fc76f22f8036cebf34219829578e294445",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/README.md",
+        "lines": 7,
+        "bytes": 297,
+        "sha12": "e12d1e10f955",
+        "sha256": "e12d1e10f9553e52df3f928cb90c4e9b6990b80015190b90604f8f26ea460a9c",
+        "date": "2026-10-14",
+        "last_commit": "7c58a0b5024b5546fd97ad5650476e2797b20a10",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/bin-self-test-what-the-category-deleted.md",
+        "lines": 118,
+        "bytes": 48170,
+        "sha12": "49a9cf59efe2",
+        "sha256": "49a9cf59efe2c733ce76856089bc1c56a00b519e733b5f91d386a2d3f09c18b4",
+        "date": "2026-10-12",
+        "last_commit": "cf7383ff467333cbf46edddc52be7246f14df9b1",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/corpus-as-sample-not-reality.md",
+        "lines": 171,
+        "bytes": 48412,
+        "sha12": "08a09034e270",
+        "sha256": "08a09034e270c441a27674895ba1861f4fa72d60176c3fcee604661ac991049d",
+        "date": "2026-10-12",
+        "last_commit": "3ff325df55b4213e24e3ec84cb3f085bdf962d30",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/coupling-is-the-floor-separation-is-the-artifact.md",
+        "lines": 137,
+        "bytes": 42380,
+        "sha12": "af1275f2d709",
+        "sha256": "af1275f2d70951b4730088c9f17637ef940a4a93d0e6c4bb63f82317347f9c0e",
+        "date": "2026-10-12",
+        "last_commit": "83166f0774cba26f5c61172515897a7a3147a7ab",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/cross-layer-step-register.md",
+        "lines": 311,
+        "bytes": 46115,
+        "sha12": "bffb77131661",
+        "sha256": "bffb771316618a3433f684334dc3319efd527f464a068604dbaf51c5f2c7824d",
+        "date": "2026-10-12",
+        "last_commit": "bab14471c63ed03f50c848f054dfb60e419c5bda",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/funnel-governance-precursor-match.md",
+        "lines": 103,
+        "bytes": 41078,
+        "sha12": "ea91ccb16a18",
+        "sha256": "ea91ccb16a18f76ccf266f232d70c4b057f7726a86658e6daaebb9f81afeca13",
+        "date": "2026-10-12",
+        "last_commit": "954ec1c5cf9b9139085a05bf189773c3d478f2c0",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/measurand-stage-attribution-failures.md",
+        "lines": 334,
+        "bytes": 43243,
+        "sha12": "62e2bf7b0b5d",
+        "sha256": "62e2bf7b0b5d89bf72556940639934c8f01676efe3f84ffdd6bead49ccb626a2",
+        "date": "2026-10-12",
+        "last_commit": "d8adf4dfe9241645eb4d9c65275367d908e1b841",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/no-anchor-information-mismanagement.md",
+        "lines": 135,
+        "bytes": 46602,
+        "sha12": "a4b773460fc8",
+        "sha256": "a4b773460fc8408a9083b160c5ebe955c3ea2933e13462f3d7ef4c91f7645685",
+        "date": "2026-10-12",
+        "last_commit": "258895c7a5cf737fae1a5c5c0699c3e9c4cfad8d",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/unmarked-boundary-as-root-error-class.md",
+        "lines": 212,
+        "bytes": 42612,
+        "sha12": "b5a9566df95b",
+        "sha256": "b5a9566df95bf3167a41e7cbcdcbf7cde00a20e4661a9d4548993afcadc6c2e7",
+        "date": "2026-10-12",
+        "last_commit": "3765ffea2a47948face8bdea2b88c4843592ad1a",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/value-vocabulary-threshold-register.md",
+        "lines": 229,
+        "bytes": 43088,
+        "sha12": "5181c859d080",
+        "sha256": "5181c859d080a89bf5efe6e99b7e54a76e4e25bb85552522a6a36662f5e3bdde",
+        "date": "2026-10-12",
+        "last_commit": "2b1da47139e54f07fcd9345ae3b84ae2c6b852c7",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/when-to-decouple-triage-and-fail-safe.md",
+        "lines": 104,
+        "bytes": 44367,
+        "sha12": "192a9943857d",
+        "sha256": "192a9943857dbe6861ee1d2fb110340c3611f5fd16b05749b1e9c06b1c1cdc06",
+        "date": "2026-10-12",
+        "last_commit": "a27cd495fbf1ce1dec54d10bb7b21e6eb2b096d4",
+        "flags": []
+      },
+      {
+        "path": "tests/test_deceptive_maze_ga.py",
+        "lines": 159,
+        "bytes": 7689,
+        "sha12": "19a327fcd7ea",
+        "sha256": "19a327fcd7eaf287fdff48ce341b90dc5fab4815282d82cc25945c2eb1c55b1c",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": [
+          "no-selftest-string"
+        ]
+      },
+      {
+        "path": "tests/test_fitness_bin_self_test.py",
+        "lines": 169,
+        "bytes": 8436,
+        "sha12": "4d84d919d6b3",
+        "sha256": "4d84d919d6b3f779fa6e5fb0b9597845824234227a4f9161e060ad4242c86503",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": []
+      },
+      {
+        "path": "tools/deceptive_maze_ga.py",
+        "lines": 348,
+        "bytes": 13386,
+        "sha12": "bc03572c4e28",
+        "sha256": "bc03572c4e2870b7cc23fbec921169dff9b6f671ab9a5df4ff01815682887f8a",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": [
+          "no-selftest-string",
+          "no-CC0-in-header"
+        ]
+      },
+      {
+        "path": "tools/fitness_bin_self_test.md",
+        "lines": 488,
+        "bytes": 36789,
+        "sha12": "042efec0f686",
+        "sha256": "042efec0f6863a77f67423253ca2773ddf47434675a89549bfd6db24fea24788",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": []
+      },
+      {
+        "path": "tools/fitness_bin_self_test.py",
+        "lines": 795,
+        "bytes": 42597,
+        "sha12": "9a4cae19d9c7",
+        "sha256": "9a4cae19d9c746f50959bf393e8fd3a7b42698ac63be871b36d7e77f72fe689a",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/deceptive_maze.original.sample.txt",
+        "lines": 28,
+        "bytes": 1928,
+        "sha12": "3da8cd453ad9",
+        "sha256": "3da8cd453ad91b35d10fa4a97e9da1f5d56e4f88e76413e2295cb2c49425c03b",
+        "date": "2026-10-14",
+        "last_commit": "63a148f474a798164a166a2b5491ae461348577d",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test.sample.txt",
+        "lines": 188,
+        "bytes": 11090,
+        "sha12": "73c1f50ec43d",
+        "sha256": "73c1f50ec43db4aee8ab2e427c783ce6b31d71c2c2693df859e463ba73bbe676",
+        "date": "2026-10-14",
+        "last_commit": "7d0886ea4fa802dfa27dcd8943e8794475f34c19",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_t5plus.sample.txt",
+        "lines": 438,
+        "bytes": 310189,
+        "sha12": "477b9aa3a8b4",
+        "sha256": "477b9aa3a8b44cb6c6be648b0e8e2b2171f11d536513eb510331f98bab36713f",
+        "date": "2026-10-14",
+        "last_commit": "e8b56fd7c426e74fa5a595898bf99f4d4b799f8c",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8.sample.txt",
+        "lines": 440,
+        "bytes": 322330,
+        "sha12": "c5b281346359",
+        "sha256": "c5b281346359b0654d81a8f916e624658b7defc61f0bb94c85244e3f296b6586",
+        "date": "2026-10-14",
+        "last_commit": "63a148f474a798164a166a2b5491ae461348577d",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8_suite.sample.txt",
+        "lines": 3850,
+        "bytes": 425805,
+        "sha12": "aecb46623570",
+        "sha256": "aecb4662357028d1141a6ff14ebf77b5d7a968554189b115a45f678479f696cc",
+        "date": "2026-10-14",
+        "last_commit": "63a148f474a798164a166a2b5491ae461348577d",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8_summary.json",
+        "lines": 6987,
+        "bytes": 164113,
+        "sha12": "e3fd328e5339",
+        "sha256": "e3fd328e5339b4d43d93336125bd7646570417474e4c32a79dd402fc5b7fcaf1",
+        "date": "2026-10-14",
+        "last_commit": "63a148f474a798164a166a2b5491ae461348577d",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo9_suite.sample.txt",
+        "lines": 4224,
+        "bytes": 567870,
+        "sha12": "cdbb262e3058",
+        "sha256": "cdbb262e3058e4ab7f82bb7c4ae9d844b1452d28282bc0b8ad8920f74ef30eea",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo9_summary.json",
+        "lines": 42963,
+        "bytes": 1473644,
+        "sha12": "480e084fa858",
+        "sha256": "480e084fa85858775d40ad2b923383289b293d9938859ebcd52ef45021279e7a",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": []
+      },
+      {
+        "path": "tools/telling_installs_the_limit.md",
+        "lines": 93,
+        "bytes": 5043,
+        "sha12": "3cdfb8d9fe06",
+        "sha256": "3cdfb8d9fe0690609be8cf7557db327f35727810137cda887b4a103ea8c75d11",
+        "date": "2026-10-12",
+        "last_commit": "2416295a90a1ad2782508196849f5fc8cfe1fbbf",
+        "flags": []
+      }
+    ],
+    "method-layer": [
+      {
+        "path": "READ_ME_THIS_WAY.md",
+        "lines": 66,
+        "bytes": 3029,
+        "sha12": "7e24732f416e",
+        "sha256": "7e24732f416ebe5fabad847bbfde407fa9bb6f28da9f92d277c2dc9ffeb713df",
+        "date": "2026-10-14",
+        "last_commit": "e8ad8c4a756efbc470d84b2f0d2358a6609faed9",
+        "flags": []
+      },
+      {
+        "path": "memory-archive/README.md",
+        "lines": 1,
+        "bytes": 43,
+        "sha12": "a4a6be0f7711",
+        "sha256": "a4a6be0f771169a1a37d16a374b7dc494370f08b2fe6d78ec66d8231282f0e63",
+        "date": "2026-10-14",
+        "last_commit": "e8ad8c4a756efbc470d84b2f0d2358a6609faed9",
+        "flags": []
+      },
+      {
+        "path": "tests/test_deceptive_maze_ga.py",
+        "lines": 159,
+        "bytes": 7689,
+        "sha12": "19a327fcd7ea",
+        "sha256": "19a327fcd7eaf287fdff48ce341b90dc5fab4815282d82cc25945c2eb1c55b1c",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": [
+          "no-selftest-string"
+        ]
+      },
+      {
+        "path": "tests/test_fitness_bin_self_test.py",
+        "lines": 169,
+        "bytes": 8436,
+        "sha12": "4d84d919d6b3",
+        "sha256": "4d84d919d6b3f779fa6e5fb0b9597845824234227a4f9161e060ad4242c86503",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": []
+      },
+      {
+        "path": "tools/deceptive_maze_ga.py",
+        "lines": 348,
+        "bytes": 13386,
+        "sha12": "bc03572c4e28",
+        "sha256": "bc03572c4e2870b7cc23fbec921169dff9b6f671ab9a5df4ff01815682887f8a",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": [
+          "no-selftest-string",
+          "no-CC0-in-header"
+        ]
+      },
+      {
+        "path": "tools/fitness_bin_self_test.md",
+        "lines": 488,
+        "bytes": 36789,
+        "sha12": "042efec0f686",
+        "sha256": "042efec0f6863a77f67423253ca2773ddf47434675a89549bfd6db24fea24788",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": []
+      },
+      {
+        "path": "tools/fitness_bin_self_test.py",
+        "lines": 795,
+        "bytes": 42597,
+        "sha12": "9a4cae19d9c7",
+        "sha256": "9a4cae19d9c746f50959bf393e8fd3a7b42698ac63be871b36d7e77f72fe689a",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/deceptive_maze.original.sample.txt",
+        "lines": 28,
+        "bytes": 1928,
+        "sha12": "3da8cd453ad9",
+        "sha256": "3da8cd453ad91b35d10fa4a97e9da1f5d56e4f88e76413e2295cb2c49425c03b",
+        "date": "2026-10-14",
+        "last_commit": "7d2814d0e1e7d2255c03240ad857ad733c7c1b63",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test.sample.txt",
+        "lines": 188,
+        "bytes": 11090,
+        "sha12": "73c1f50ec43d",
+        "sha256": "73c1f50ec43db4aee8ab2e427c783ce6b31d71c2c2693df859e463ba73bbe676",
+        "date": "2026-10-14",
+        "last_commit": "e326a160ecd0a297173522d7061621fd33e0e73b",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_t5plus.sample.txt",
+        "lines": 438,
+        "bytes": 310189,
+        "sha12": "477b9aa3a8b4",
+        "sha256": "477b9aa3a8b44cb6c6be648b0e8e2b2171f11d536513eb510331f98bab36713f",
+        "date": "2026-10-14",
+        "last_commit": "86e3ccf9acd615d09aa93e0e55e0795977366cc4",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8.sample.txt",
+        "lines": 440,
+        "bytes": 322330,
+        "sha12": "c5b281346359",
+        "sha256": "c5b281346359b0654d81a8f916e624658b7defc61f0bb94c85244e3f296b6586",
+        "date": "2026-10-14",
+        "last_commit": "7d2814d0e1e7d2255c03240ad857ad733c7c1b63",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8_suite.sample.txt",
+        "lines": 3850,
+        "bytes": 425805,
+        "sha12": "aecb46623570",
+        "sha256": "aecb4662357028d1141a6ff14ebf77b5d7a968554189b115a45f678479f696cc",
+        "date": "2026-10-14",
+        "last_commit": "7d2814d0e1e7d2255c03240ad857ad733c7c1b63",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo8_summary.json",
+        "lines": 6987,
+        "bytes": 164113,
+        "sha12": "e3fd328e5339",
+        "sha256": "e3fd328e5339b4d43d93336125bd7646570417474e4c32a79dd402fc5b7fcaf1",
+        "date": "2026-10-14",
+        "last_commit": "7d2814d0e1e7d2255c03240ad857ad733c7c1b63",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo9_suite.sample.txt",
+        "lines": 4224,
+        "bytes": 567870,
+        "sha12": "cdbb262e3058",
+        "sha256": "cdbb262e3058e4ab7f82bb7c4ae9d844b1452d28282bc0b8ad8920f74ef30eea",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": []
+      },
+      {
+        "path": "tools/samples/fitness_bin_self_test_wo9_summary.json",
+        "lines": 42963,
+        "bytes": 1473644,
+        "sha12": "480e084fa858",
+        "sha256": "480e084fa85858775d40ad2b923383289b293d9938859ebcd52ef45021279e7a",
+        "date": "2026-10-14",
+        "last_commit": "e9fbfe987b7972f086b362eb23312f8788a995db",
+        "flags": []
+      },
+      {
+        "path": "tools/telling_installs_the_limit.md",
+        "lines": 93,
+        "bytes": 5043,
+        "sha12": "3cdfb8d9fe06",
+        "sha256": "3cdfb8d9fe0690609be8cf7557db327f35727810137cda887b4a103ea8c75d11",
+        "date": "2026-10-12",
+        "last_commit": "f7b8531c0a725d6b365579e7fcf96ae7c7aeb3a0",
+        "flags": []
+      }
+    ]
+  },
+  "changed": {
+    "Simulators": [
+      {
+        "path": "CLAUDE.md",
+        "lines": 14899,
+        "bytes": 1081965,
+        "sha12": "9284aef0f359",
+        "sha256": "9284aef0f3598c3e059a183a6747f5e36edb883fb50d60c345743f7cb119dc59",
+        "date": "2026-10-12",
+        "last_commit": "6a7d30d40da3eaaa5af12c37bd28d8978e2cfe37",
+        "flags": []
+      },
+      {
+        "path": "DISPATCH_QUEUE.md",
+        "lines": 110,
+        "bytes": 12960,
+        "sha12": "0ec677716ea3",
+        "sha256": "0ec677716ea369ad339c5dba5a75b842cc7e3ab04b3cb87b527fecf4e2af5c6a",
+        "date": "2026-10-13",
+        "last_commit": "16d96640e944e2d40ee720037183f362b4e41dfe",
+        "flags": []
+      },
+      {
+        "path": "README.md",
+        "lines": 295,
+        "bytes": 172383,
+        "sha12": "ba037601b6a9",
+        "sha256": "ba037601b6a924ebe2ff9b166faccd4b0227fa4b85d4bcc1846f980249994b61",
+        "date": "2026-10-14",
+        "last_commit": "7c58a0b5024b5546fd97ad5650476e2797b20a10",
+        "flags": []
+      },
+      {
+        "path": "coinage-log/MISSING_SOURCE.md",
+        "lines": 80,
+        "bytes": 3798,
+        "sha12": "43dc147c0016",
+        "sha256": "43dc147c0016a6f5a86393401f78bebacfc2ac517e648ae6952f991619daa47e",
+        "date": "2026-10-11",
+        "last_commit": "e1bb85b0bde0452cb51b069529474e7adda3feb7",
+        "flags": []
+      },
+      {
+        "path": "coinage-log/check_coinage.py",
+        "lines": 439,
+        "bytes": 18697,
+        "sha12": "04f79ea69fb6",
+        "sha256": "04f79ea69fb6333dd4d1cff6be6dc886b4890fc927e9994b682dcdd3cf113aff",
+        "date": "2026-10-11",
+        "last_commit": "e1bb85b0bde0452cb51b069529474e7adda3feb7",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/PATHWAYS.md",
+        "lines": 368,
+        "bytes": 19117,
+        "sha12": "cfc56d041b95",
+        "sha256": "cfc56d041b9553bc1c231df4cfdaecc19192b08466ca98fcaffdee2ba2d0d2e7",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/PREDICTIONS.md",
+        "lines": 644,
+        "bytes": 31103,
+        "sha12": "e6ec74bc683a",
+        "sha256": "e6ec74bc683a6d20fd273afed4456db96bca2b05ac40ff04c294aa891b2f62ee",
+        "date": "2026-10-08",
+        "last_commit": "f2745e41a085d6ac4ffe18ef8075a227187ca15d",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/pathways.py",
+        "lines": 2144,
+        "bytes": 92026,
+        "sha12": "a4a093938311",
+        "sha256": "a4a093938311586604898b261d1f436ecd9fda78d126b986ea2b303a05e757c6",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/samples/pilot_unrun.sample.txt",
+        "lines": 38,
+        "bytes": 2555,
+        "sha12": "de118100dd29",
+        "sha256": "de118100dd29d9086ce2a6bfa589ed37e1c1d9a880866cadc4738aef6ec489e7",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/samples/score_unrun.sample.txt",
+        "lines": 91,
+        "bytes": 6979,
+        "sha12": "e49a2b74b7e0",
+        "sha256": "e49a2b74b7e0a19bcf3e2e7a78184d3fd93cf759d3fc0194594b13a3c225f822",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "human-sensing-prior/test_pathways.py",
+        "lines": 1102,
+        "bytes": 53855,
+        "sha12": "8fb5613d7cac",
+        "sha256": "8fb5613d7cac6a1eeeb70148fb5b61d34e14689bd8bc417a3a4813f95b3f7365",
+        "date": "2026-10-08",
+        "last_commit": "9202714f95176b92ec71fc5cc651d77683a9cd44",
+        "flags": []
+      },
+      {
+        "path": "notes/queue/HOLDS.md",
+        "lines": 182,
+        "bytes": 12610,
+        "sha12": "0e0dbaaf7bd4",
+        "sha256": "0e0dbaaf7bd481c6a0cd00b48e074be94a2c1e6bea4a3143894086634cbef28f",
+        "date": "2026-10-12",
+        "last_commit": "32b6aab720d6ff4cac736af3fa8bfb407d6ac2a7",
+        "flags": []
+      },
+      {
+        "path": "tests/test_known_answer_gate.py",
+        "lines": 357,
+        "bytes": 15620,
+        "sha12": "1098adf78571",
+        "sha256": "1098adf78571f6b529f4080254494938835715f240e2e92ea1d3fa32ba000e0d",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": [
+          "no-selftest-string"
+        ]
+      },
+      {
+        "path": "tools/bin_self_test.md",
+        "lines": 313,
+        "bytes": 12485,
+        "sha12": "9b18ccac8226",
+        "sha256": "9b18ccac8226bc02e1f12cfdb30d836eab91d3db593543ced0f4e15c22961722",
+        "date": "2026-10-14",
+        "last_commit": "7d0886ea4fa802dfa27dcd8943e8794475f34c19",
+        "flags": []
+      },
+      {
+        "path": "tools/known_answer.py",
+        "lines": 3091,
+        "bytes": 151591,
+        "sha12": "17b5b3a022fd",
+        "sha256": "17b5b3a022fd2f00106d06762745cd8d6633e397ad51f9fbb31d93b995a19ecc",
+        "date": "2026-10-14",
+        "last_commit": "198937ecabbc7e32851b00758e5736e320609910",
+        "flags": [
+          "no-selftest-string"
+        ]
+      }
+    ],
+    "method-layer": [
+      {
+        "path": "README.md",
+        "lines": 314,
+        "bytes": 20902,
+        "sha12": "137c2729abba",
+        "sha256": "137c2729abbab1d45d07b6fc548b4c06dc3aa0e94c1738e7be89aad919a2b439",
+        "date": "2026-10-14",
+        "last_commit": "e8ad8c4a756efbc470d84b2f0d2358a6609faed9",
+        "flags": []
+      },
+      {
+        "path": "tools/bin_self_test.md",
+        "lines": 313,
+        "bytes": 12485,
+        "sha12": "9b18ccac8226",
+        "sha256": "9b18ccac8226bc02e1f12cfdb30d836eab91d3db593543ced0f4e15c22961722",
+        "date": "2026-10-14",
+        "last_commit": "e326a160ecd0a297173522d7061621fd33e0e73b",
+        "flags": []
+      }
+    ]
+  },
+  "historical_absent": {
+    "Simulators": [
+      "human-sensing-prior/runs/pilot-2026-10-08a.json"
+    ],
+    "method-layer": []
+  },
+  "counts": {
+    "Simulators": {
+      "historical": 3494,
+      "current": 3547,
+      "new": 54,
+      "changed": 15,
+      "absent": 1
+    },
+    "method-layer": {
+      "historical": 39,
+      "current": 55,
+      "new": 16,
+      "changed": 2,
+      "absent": 0
+    }
+  }
+}

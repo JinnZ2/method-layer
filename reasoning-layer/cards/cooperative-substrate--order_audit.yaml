@@ -1,0 +1,95 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: cooperative-substrate--order_audit
+kind: program
+tool: Simulators/cooperative-substrate/order_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Reads the four delivered-to-spec checks against the order that asked for them. Every number in CLAIM_TABLE.md is computed here. Modifies nothing; the constructed corpora below are labelled in their own text. Refuses --selftest (checks live in selftest_csp.py).
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: cooperative-substrate/samples/order_audit.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 1fb17e9c906a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 cooperative-substrate/order_audit.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: order_audit has no selftest; run selftest_csp.py
+  date: 2026-10-24
+  command: python3 cooperative-substrate/order_audit.py --selftest
+  sha12: a273f3c0b22a
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 1fb17e9c906a
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: cooperative-substrate--selftest_csp
+      via: imported-by
+    - id: cooperative-substrate--p1_deps_extract
+      via: imports
+    - id: cooperative-substrate--p2_substrate_audit
+      via: imports
+    - id: cooperative-substrate--p3_comprehension
+      via: imports
+    - id: cooperative-substrate--p4_goal_coherence
+      via: imports
+    - id: cooperative-substrate--selftest_evidence
+      via: shares cooperative-substrate/README.md
+    - id: cooperative-substrate--evidence_audit
+      via: shares cooperative-substrate/WORK_ORDER.md
+    - id: cooperative-substrate--selftest_evidence
+      via: shares cooperative-substrate/WORK_ORDER.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: cooperative-substrate/order_audit.py
+    sha12: a273f3c0b22a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 47842349347f
+    pick_up_when: 32bbe99c703a
+    purpose: dae164807ec9
+    related: d3f18fd86a4d
+    right_read: 32bbe99c703a
+    run: 6de5174c6cea
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

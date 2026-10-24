@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: presented-binary--binary_audit
+kind: program
+tool: Simulators/presented-binary/binary_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: CC0. stdlib only.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--case: detail view for one case"
+    - "--jsonl (action=store_true)"
+    - "--template (action=store_true): emit a blank case file"
+    - "--checks (action=store_true): print the check list only"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 6 lines, sha12 6480af048365 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 presented-binary/binary_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    case                    doc   asrt   absent   doc_share
+    --------------------------------------------------------
+    ventilator-surge        0     3      8        0.00
+
+    11 checks per case. No verdict is computed. documented_share is
+    the share of the framing that has a record behind it.
+  date: 2026-10-24
+  command: python3 presented-binary/binary_audit.py
+  sha12: cdd36a0b9893
+  exit_code: 0
+  output_lines: 6
+  output_sha12: 6480af048365
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: presented-binary--presented_binary_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: presented-binary/binary_audit.py
+    sha12: cdd36a0b9893
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: ad76eee7ef89
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ad3ef647e6f4
+    related: 338769e092cf
+    right_read: 32bbe99c703a
+    run: 8e0e1e0f08cc
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

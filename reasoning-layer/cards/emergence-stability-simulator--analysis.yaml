@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: emergence-stability-simulator--analysis
+kind: program
+tool: Simulators/emergence-stability-simulator/analysis.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: analysis.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 46 lines, sha12 7a0aa34b7a19 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 emergence-stability-simulator/analysis.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    EMERGENCE-STABILITY-SIMULATOR — FULL ANALYSIS REPORT
+    ======================================================================
+
+    TRAJECTORY VISUALIZATION (single representative run)
+    Agent position trajectories (single run, seed=42)
+    -------------------------------------------------
+       0.222 |               o                                                    ooo
+       0.170 |
+       0.119 |               +                                                    +++
+       0.068 |               *                  *                         *       **
+       0.017 | ******  ****** *********** ****** ******************* *****+*******  *
+      -0.035 |   ++++**    ++ ooooooooo  *      ++++++  ++++++++oooo*     oooooooo
+      -0.086 |    oo       oo           +      +o   oo++    oooo     +++++
+      -0.137 |   o  o+   ++              +  +++  ooo    oooo        +
+      -0.188 |         ++               o ++          oo             oo  o
+      -0.240 |        +                        o                       oo
+      -0.291 |       o                        o
+      -0.342 |           oo              o  oo                      o
+      -0.394 |          o                  o
+      -0.445 |         o                  o
+      -0.496 |        o
+             +----------------------------------------------------------------------
+              t=0                                                              t=100
+
+    Legend: *=stable, o=parasitic, +=mixed
+
+    System entropy and coupling strength over time
+    ----------------------------------------------
+       0.297 |        oo                 oo
+       0.264 |          oo                 oo
+       0.231 |                               oo
+       0.198 |      oo**                 **    o                       o
+       0.165 |          **                 **         o             ooo oo
+       0.132 |      **    o            oo    ***oo     ooo             *          ooo
+       0.099 |  oooo       oo          **       **oooo*** oooo      *** **        ***
+       0.066 |  ****      ***oooooo               ****   *******oooo      oo  oooo
+       0.033 |               **********                         ****      ********
+       0.000 | *
+             +----------------------------------------------------------------------
+    [... 6 more lines]
+  date: 2026-10-24
+  command: python3 emergence-stability-simulator/analysis.py
+  sha12: 51562834751b
+  exit_code: 0
+  output_lines: 46
+  output_sha12: 7a0aa34b7a19
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: emergence-stability-simulator--run_monte_carlo
+      via: imported-by
+    - id: emergence-stability-simulator--sim_engine
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: emergence-stability-simulator/analysis.py
+    sha12: 51562834751b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f5252d2081d4
+    related: f234eacd7ddc
+    right_read: 32bbe99c703a
+    run: 5dd25d942bb0
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

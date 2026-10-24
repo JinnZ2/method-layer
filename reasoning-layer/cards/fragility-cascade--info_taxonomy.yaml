@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--info_taxonomy
+kind: program
+tool: Simulators/fragility-cascade/info_taxonomy.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "info_taxonomy.py -- a generalized taxonomy for information: types of information, ways of obtaining it, ways to know it, and how any claim's support can be read. Domain-neutral. CC0 / Public Domain. stdlib-only."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/info_taxonomy.sample.txt"
+    - "run capture: RUN, exit 0, 49 lines, sha12 de90d2787318 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/info_taxonomy.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    INFO TAXONOMY -- one structure, four domains
+    ==================================================================
+
+      [soil.bearing] ground holds 80k lb rig without rutting
+         type: measurement/embodied  about: soil
+         mode: direct_observation   source: operator (track record: 1.00)
+         support: 2 independent mode(s) ['direct_observation', 'instrument']  echoes: 0
+
+      [soil.penetrometer] 240 kPa at 0.5 m
+         type: measurement/instrument_trace  about: soil
+         mode: instrument   source: operator (track record: 1.00)
+         support: 2 independent mode(s) ['direct_observation', 'instrument']  echoes: 0
+
+      [siting.bench] never build below the second bench
+         type: teaching/oral  about: siting,water
+         mode: transmission   source: grandmother_line (track record: 1.00)
+         support: 2 independent mode(s) ['direct_observation', 'transmission']  echoes: 0
+
+      [siting.silt] silt lines on valley trees at first-bench height
+         type: observation/text  about: siting,water
+         mode: direct_observation   source: operator (track record: 1.00)
+         support: 2 independent mode(s) ['direct_observation', 'transmission']  echoes: 0
+
+      [med.aspirin] county clinic protocol: daily aspirin for all over 60
+         type: rule/text  about: medicine
+         mode: authority   source: county_office (track record: 0.50)
+         support: 1 independent mode(s) ['authority']  echoes: 0
+
+      [model.span] 4 m max clear span for that timber section
+         type: model_output/text  about: structure
+         mode: model_generated   source: assistant_model (track record: no track yet)
+         support: 1 independent mode(s) ['model_generated']  echoes: 0
+
+      [plan.waste] 24800 J avoidable under code mode
+         type: claim/numeric  about: audit
+         mode: inference   source: operator (track record: 1.00)
+         support: 1 independent mode(s) ['inference']  echoes: 0
+
+      backing of plan.waste (transitive): {'direct_observation': 1, 'instrument': 1}
+    [... 9 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/info_taxonomy.py
+  sha12: 6158a5e35314
+  exit_code: 0
+  output_lines: 49
+  output_sha12: de90d2787318
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--revalidate
+      via: imported-by
+    - id: fragility-cascade--scaffold
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/info_taxonomy.py
+    sha12: 6158a5e35314
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 434fe562607f
+    pick_up_when: 32bbe99c703a
+    purpose: 5be5409dc444
+    related: adafffe10ab3
+    right_read: 32bbe99c703a
+    run: ed6f7b75ab22
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

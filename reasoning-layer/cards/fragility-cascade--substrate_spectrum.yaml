@@ -1,0 +1,90 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--substrate_spectrum
+kind: program
+tool: Simulators/fragility-cascade/substrate_spectrum.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: substrate_spectrum.py --------------------- The substrate hierarchy as a scored model, plus the Monetary Durability Index.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/substrate_spectrum.sample.txt"
+    - "run capture: RUN, exit 0, 12 lines, sha12 f4a799f9bee9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/substrate_spectrum.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    substrate       tier   MDI       gates  cone  obsol/yr
+    ------------------------------------------------------
+    gold             T1   2910.600     1     1    0.001
+    oil              T1    882.000     1     2    0.020
+    grain            T1      8.075     1     2    0.300
+    compute_token    T2      0.004     4     8    0.450
+    sovereign_bond   T4      0.001     9    12    0.100
+    resource_token   T4      0.001    11    14    0.150
+    ai_token         T3      0.000     6    10    0.900
+
+    principle: abstraction is leverage; leverage is fragility.
+    MDI spans ~4 orders of magnitude ground -> cloud. That spread IS the claim.
+  date: 2026-10-24
+  command: python3 fragility-cascade/substrate_spectrum.py
+  sha12: 873c468c709c
+  exit_code: 0
+  output_lines: 12
+  output_sha12: f4a799f9bee9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/substrate_spectrum.py
+    sha12: 873c468c709c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 1d9a52c794ce
+    pick_up_when: 32bbe99c703a
+    purpose: 6eb86f673778
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 44c3f52d6dd6
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

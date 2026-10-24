@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--the_laboratory
+kind: program
+tool: Simulators/fragility-cascade/the_laboratory.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: the_laboratory.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 21 lines, sha12 70e11f510a40 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/the_laboratory.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nTHE LABORATORY — A Self‑Correcting AI Inquiry Space\n======================================================================\n\nResult:\n  claim_id: C001\n  status: refuted\n  coherens: 2.7999999999999994\n  experiment_result: {'experiment': 'recursive_training_simulation', 'predicted_risk': 0.973403006423134, 'outcome': 'collapsed', 'coherens': 2.7999999999999994, 'timestamp': 1792844041.6295767}\n  standing_hypothesis: None\n\nStanding Hypotheses: 0\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Claims are provisional, not final.\n  • Refutation is a loop, not a verdict.\n  • Standing hypotheses are the best current models.\n  • Unknowns are flagged, not ignored.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/the_laboratory.py
+  sha12: 745060f91a74
+  exit_code: 0
+  output_lines: 21
+  output_sha12: 70e11f510a40
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--testc29
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/the_laboratory.py
+    sha12: 745060f91a74
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 517d79892abc
+    related: caff38c900d7
+    right_read: 32bbe99c703a
+    run: 18c2b3c890b3
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

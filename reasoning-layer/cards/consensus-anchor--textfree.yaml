@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: consensus-anchor--textfree
+kind: program
+tool: Simulators/consensus-anchor/textfree.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: The text-free arm of SOURCE_DROP.md, run.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: consensus-anchor/samples/textfree.sample.txt"
+    - "run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 consensus-anchor/textfree.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: ""
+  date: 2026-10-24
+  command: python3 consensus-anchor/textfree.py --selftest
+  sha12: 003f3c536763
+  exit_code: null
+  output_lines: 0
+  output_sha12: e3b0c44298fc
+  sandbox: netns+nobody
+  reason: timeout after 60 s
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: consensus-anchor--selftest_textfree
+      via: imported-by
+    - id: consensus-anchor--selftest_textfree
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: consensus-anchor/textfree.py
+    sha12: 003f3c536763
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 68268488fffd
+    pick_up_when: 32bbe99c703a
+    purpose: ef896dfd3bb4
+    related: bc459aa484a6
+    right_read: 32bbe99c703a
+    run: 5639469db572
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

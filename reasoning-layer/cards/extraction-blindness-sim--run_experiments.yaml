@@ -1,0 +1,129 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: extraction-blindness-sim--run_experiments
+kind: program
+tool: Simulators/extraction-blindness-sim/run_experiments.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Five experiments, one per claim in CLAIM_TABLE.md.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 133 lines, sha12 0259ebea7a41 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 extraction-blindness-sim/run_experiments.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    extraction-blindness-sim — experiment suite
+    ======================================================================
+    An optimizer acting on a blinded observation reads the absence of
+    an error signal as confirmation of safety. These six experiments
+    measure how far that reading diverges from the substrate's state.
+
+    ======================================================================
+    EXPERIMENT 1 — EBS_001: reported safety vs true health under full blindness
+    ======================================================================
+      collapsed              : True (step 7)
+      final stock fraction   : 0.0000
+      max safety-health gap  : 0.5630
+
+      step  true_health  reported_safety  gap
+         0       0.4811           1.0000  +0.5189
+         6       0.2481           0.5930  +0.3449
+        12       0.0000           0.5595  +0.5595
+        18       0.0000           1.0000  +1.0000
+        24       0.0000           1.0000  +1.0000
+        30       0.0000           1.0000  +1.0000
+        36       0.0000           1.0000  +1.0000
+        42       0.0000           1.0000  +1.0000
+        48       0.0000           1.0000  +1.0000
+        54       0.0000           1.0000  +1.0000
+
+      at collapse (step 7): reported_safety=0.3728, true_health=0.1755
+      VERDICT: SUPPORTED — blind optimizer's confidence exceeds reality by >0.30 and it collapses
+
+    ======================================================================
+    EXPERIMENT 2 — EBS_002: lead time bought by decay-velocity indicators (passive panel)
+    ======================================================================
+
+      [fishery]
+        first indicator fired : step 1
+        collapse              : step 7
+        lead time             : 6
+          FIRED replenishment_deficit      at     2   ((catch - recruitment) / recruitment; >0 liquidates principal)
+          FIRED mean_trophic_level         at     1   (decline per decade; fishing down the food web)
+          FIRED juvenile_adult_ratio       at     1   (recruitment failure before spawning biomass drops)
+    [... 93 more lines]
+  date: 2026-10-24
+  command: python3 extraction-blindness-sim/run_experiments.py
+  sha12: 16e2f5e9dfe3
+  exit_code: 0
+  output_lines: 133
+  output_sha12: 0259ebea7a41
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: extraction-blindness-sim--blindness
+      via: imports
+    - id: extraction-blindness-sim--optimizer
+      via: imports
+    - id: extraction-blindness-sim--profiles
+      via: imports
+    - id: extraction-blindness-sim--substrate
+      via: imports
+    - id: extraction-blindness-sim--throughput
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: extraction-blindness-sim/run_experiments.py
+    sha12: 16e2f5e9dfe3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: c19e36e3e6d4
+    related: 488ffc1281d7
+    right_read: 32bbe99c703a
+    run: e8f513be2e7b
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: anchor-interval--moving_reference
+kind: program
+tool: Simulators/anchor-interval/moving_reference.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: moving_reference.py -- "the model drifted" is a difference between two moving things, reported as a property of one.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: anchor-interval/samples/moving_reference.sample.txt"
+    - "run capture: RUN, exit 0, 139 lines, sha12 a42a32d81848 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 anchor-interval/moving_reference.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nMOVING REFERENCE: A DIFFERENCE BETWEEN TWO MOVING THINGS\n\n========================================================================\n1  capability and criteria are not separable from reported score\n========================================================================\n  gen   c (A)        a (A)        c (B)        a (B)        reported\n  --------------------------------------------------------------------\n  0     0.3000       1.0000       0.3000       1.0000       0.3000\n  1     0.3500       1.0000       0.3000       1.1667       0.3500\n  2     0.4000       1.0000       0.3000       1.3333       0.4000\n  3     0.4500       1.0000       0.3000       1.5000       0.4500\n  4     0.5000       1.0000       0.3000       1.6667       0.5000\n  5     0.5500       1.0000       0.3000       1.8333       0.5500\n  6     0.6000       1.0000       0.3000       2.0000       0.6000\n  7     0.6500       1.0000       0.3000       2.1667       0.6500\n\n  max |reported_A - reported_B| = 5.551e-17\n\n  A: capability rose 117%, ruler fixed.\n  B: capability did not move at all, ruler stretched 117%.\n  The published number cannot tell them apart, and there is no\n  statistical remedy -- it is one equation and two unknowns per\n  release. Not a precision problem. A rank problem.\n\n========================================================================\n2  a held-fixed benchmark identifies shape, not level\n========================================================================\n  gen   contemporary     on fixed B_0     divergence\n  --------------------------------------------------------\n  0     0.3000           0.3000           +0.0000\n  1     0.3775           0.3500           +0.0275\n  2     0.4600           0.4000           +0.0600\n  3     0.5475           0.4500           +0.0975\n  4     0.6400           0.5000           +0.1400\n  5     0.7375           0.5500           +0.1875\n  6     0.8400           0.6000           +0.2400\n  7     0.9475           0.6500           +0.2975\n\n  The divergence between the two curves is the criteria-drift\n[... 99 more lines]"
+  date: 2026-10-24
+  command: python3 anchor-interval/moving_reference.py
+  sha12: 7916c6d34fe1
+  exit_code: 0
+  output_lines: 139
+  output_sha12: a42a32d81848
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: anchor-interval/moving_reference.py
+    sha12: 7916c6d34fe1
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 40a4b4e06ec3
+    pick_up_when: 32bbe99c703a
+    purpose: 6e1e68ac39b3
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 48d4430bbebf
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

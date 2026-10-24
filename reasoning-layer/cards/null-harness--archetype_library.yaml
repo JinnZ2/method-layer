@@ -1,0 +1,83 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: null-harness--archetype_library
+kind: program
+tool: Simulators/null-harness/archetype_library.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: archetype_library.py -- cross-domain shape matcher with a MANDATORY null gate. CC0.  stdlib + numpy + scipy (curve_fit only).
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: null-harness/samples/archetype_library.sample.txt"
+    - "run capture: FAILED, exit 1, 4 lines, sha12 c855a109ec89 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 null-harness/archetype_library.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-36o2rn6e/null-harness/archetype_library.py", line 46, in <module>
+        from scipy.optimize import curve_fit, OptimizeWarning
+    ModuleNotFoundError: No module named 'scipy'
+  date: 2026-10-24
+  command: python3 null-harness/archetype_library.py
+  sha12: b41e9b93ec24
+  exit_code: 1
+  output_lines: 4
+  output_sha12: c855a109ec89
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: null-harness/archetype_library.py
+    sha12: b41e9b93ec24
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 1abbf31069c5
+    pick_up_when: 32bbe99c703a
+    purpose: eb30c7ee518c
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: e07e54fabf5f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

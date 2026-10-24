@@ -1,0 +1,78 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: claim-audits--claim_audit_pasted_2026_08_05
+kind: program
+tool: Simulators/claim-audits/claim_audit_pasted_2026_08_05.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: claim_audit_pasted_2026_08_05.py -- audit of a five-piece paste from other models.  Same verdict shape as claim_audit_visibility.py.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: claim-audits/samples/claim_audit_pasted_2026_08_05.sample.txt"
+    - "run capture: RUN, exit 0, 96 lines, sha12 dc8b7f236f41 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 claim-audits/claim_audit_pasted_2026_08_05.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nclaim_audit_pasted_2026_08_05.py -- audit of a five-piece paste from\nother models.  Same verdict shape as claim_audit_visibility.py.\n\nWHAT WAS PASTED\n    1. local_scalar_drift.py     scalar-field drift of α, G from kink params\n    2. tension_geometry.py       portable obstruction-geometry engine\n                                 + muon g-2 demo\n    3. metrology_engine.py       Pyodide-friendly cosmological gate engine\n       (metrology_challenge.html) public-facing browser UI\n    4. ai_api.py                 JSON-in/out gate evaluator\n       autonomous_search.py      Bayesian scan wrapper\n    5. CROSS_DOMAIN_ARCHETYPES   35-form shape library + 5-step validation\n\nALL FIVE PIECES ARE MODEL-AUTHORED.  The K/M attribution below is\nadapted: K = the *operational* content (formula / code / algorithm as\nwritten); M = the *framing* prose around it (marketing, \"beautifully\",\noverclaims of what the piece demonstrates).  Load-bearing bugs live\nin K.  Overclaims live in M.\n\nVERDICT CODES (same as claim_audit_visibility.py)\n    VERIFIED          source checked, mechanism holds\n    SIGN_BACKWARDS    the quantity is real, the direction is inverted\n    UNGROUNDED_NUMBER threshold with no derivation, units, or calibration\n    DIMENSIONALLY_VOID the expression is not a quantity\n    GAMEABLE          metric is maximized by doing the opposite of the intent\n    IDENTITY          true but empty -- a bookkeeping relation\n    UNVERIFIED        cited source not locatable\n    SOUND             holds as stated\n\nid   who  verdict             claim\nD1   K    VERIFIED            H0_GeV = H0_km_s_Mpc * 2.133e-44   # H0 in GeV (ℏ=1)\nD2   K    UNGROUNDED_NUMBER   yr_to_GeVinv = 1.956e8      # 1 year in GeV^-1\nD3   K    UNGROUNDED_NUMBER   rho_crit = 3 * H0_GeV**2 * M_P**2 / (8 * np.pi)   # GeV^4  (\nD4   K    SIGN_BACKWARDS      drift_prefactor = phi_dot_over_M * yr_to_GeVinv   # 1/yr\nD5   M    GAMEABLE            plot title: 'Local scalar drift from the late-time kink'  --\nT1   K    SOUND               cosine matrix C_ij = J_i · J_j / (|J_i| |J_j|), Jacobian J_i\nT2   K    SOUND               obstruction_rank via SVD, count singular values > tol · S_ma\nT3   K    DIMENSIONALLY_VOID  farkas_cone(point) returns 'the negative of the mean gradien\nT4   M    IDENTITY            muon g-2 example demonstrates the geometry: 'a classic singl\n[... 56 more lines]"
+  date: 2026-10-24
+  command: python3 claim-audits/claim_audit_pasted_2026_08_05.py
+  sha12: 54288f072ce3
+  exit_code: 0
+  output_lines: 96
+  output_sha12: dc8b7f236f41
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: claim-audits/claim_audit_pasted_2026_08_05.py
+    sha12: 54288f072ce3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: b704ec4eba49
+    pick_up_when: 32bbe99c703a
+    purpose: d7d5b9590069
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 51268a5806d0
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

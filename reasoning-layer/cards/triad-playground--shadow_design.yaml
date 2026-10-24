@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: triad-playground--shadow_design
+kind: program
+tool: Simulators/triad-playground/shadow_design.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: shadow_design.py — does the shadow-sim pattern measure what it is for?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: triad-playground/samples/shadow_design.sample.txt"
+    - "run capture: RUN, exit 0, 190 lines, sha12 87ac61ec3eaf (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 triad-playground/shadow_design.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nTHE SHADOW-SIM PATTERN, TESTED\nA study of a proposed protocol. No triad experiment was run.\n\n==========================================================================\n1  step 5 forbids the design step 6 requires\n==========================================================================\n  The protocol says:\n    step 5  'Never upgrade all three simultaneously (can't\n             attribute variance).'\n    step 6  'Cross-gradient: did conclusion change with dial\n             setting?'\n\n  Step 5 is one-factor-at-a-time. Step 6 asks for an interaction.\n  OFAT cannot estimate an interaction, because no run in an OFAT\n  design varies two factors together.\n\n  Truth planted in the response: main effects P=1.0 I=0.5 R=2.0,\n  interaction P*R = 3.0\n\n  OFAT, 4 runs, baseline plus one dial each:\n    P      1.00\n    I      0.50\n    R      2.00\n    P*R     n/a   <- no run has both dials up\n\n    OFAT predicts y(P=1, R=1) = 3.0. Truth = 6.0. Error = 3.0,\n    which is the entire interaction, invisible and unattributed.\n\n  2^3 factorial, 8 runs, orthogonal +/-1 contrasts:\n    P      2.00   truth   2.00\n    I      1.00   truth   1.00\n    R      4.00   truth   4.00\n    P*R    6.00   truth   6.00\n    P*I    0.00   truth   0.00\n\n  Every effect recovered exactly, interaction included, for four\n  extra runs. The protocol's stated reason for OFAT -- 'can't\n  attribute variance' -- is exactly backwards: a factorial design\n  attributes variance to each factor AND to their interaction,\n[... 150 more lines]"
+  date: 2026-10-24
+  command: python3 triad-playground/shadow_design.py
+  sha12: 3da2b6a17415
+  exit_code: 0
+  output_lines: 190
+  output_sha12: 87ac61ec3eaf
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: triad-playground/shadow_design.py
+    sha12: 3da2b6a17415
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 7a10f4440e3c
+    pick_up_when: 32bbe99c703a
+    purpose: 93cec117d030
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: a8b139d4704f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

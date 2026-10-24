@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--bacterial_herding
+kind: program
+tool: Simulators/fragility-cascade/bacterial_herding.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: bacterial_herding.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/bacterial_herding.sample.txt"
+    - "run capture: RUN, exit 0, 30 lines, sha12 162a4ced20dc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/bacterial_herding.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nBACTERIAL HERDING — A Coherens Case Study\n======================================================================\n\nLow predation, small herd:\n  Herding efficiency: 1.00\n  Coherens (C): 2.25\n  Carbon storage impact: 0.50 units\n  Status: STABLE\n\nHigh predation, small herd:\n  Herding efficiency: 1.00\n  Coherens (C): 0.56\n  Carbon storage impact: 0.50 units\n  Status: VULNERABLE\n\nHigh predation, large herd:\n  Herding efficiency: 1.00\n  Coherens (C): 0.56\n  Carbon storage impact: 2.50 units\n  Status: VULNERABLE\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Bacteria herd to increase damping against predation.\n  • Herding preserves photosynthetic function = anchoring.\n  • The same Coherens condition applies.\n  • Carbon cycling is affected by coherence at biological scale.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/bacterial_herding.py
+  sha12: 74f45ad73e4b
+  exit_code: 0
+  output_lines: 30
+  output_sha12: 162a4ced20dc
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/bacterial_herding.py
+    sha12: 74f45ad73e4b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: e076f1b1b624
+    pick_up_when: 32bbe99c703a
+    purpose: e7aeb14818fe
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 09b8b0a4b663
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: notes--check_queue
+kind: program
+tool: Simulators/notes/check_queue.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: check_queue.py -- CC0, stdlib only, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 64 lines, sha12 83cbd7c2a2fa (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 notes/check_queue.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    -- 1 structure
+    ok    six rows parsed (got 6)
+    ok    every row head maps to a key (got ['K', 'L', 'gate_check', 'cooperative', 'move_set', 'substrate_alt'])
+    ok    the six keys are distinct
+    ok    every row carries a status line
+
+    -- 2 anchors resolve by path AND content
+    ok    enclosure-first-residual/enclosure_first_residual.py exists
+    ok    enclosure-first-residual/enclosure_first_residual.py contains 'effective_exits'
+    ok    crediting-rate/crediting_rate.py exists
+    ok    crediting-rate/crediting_rate.py contains 'insufficient_attested_ordering'
+    ok    gate-check/gate_check.py exists
+    ok    gate-check/gate_check.py contains 'HELD_RETRIEVABLE'
+    ok    gate-check/thresholds.txt exists
+    ok    gate-check/thresholds.txt contains 'check3_failure_assertions_min'
+    ok    gate-check/threshold_chain.txt exists
+    ok    gate-check/threshold_chain.txt contains '2026-09-07'
+    ok    cooperative-substrate/p1_deps_extract.py exists
+    ok    cooperative-substrate/p1_deps_extract.py contains 'verified_in_argument'
+    ok    cooperative-substrate/p2_substrate_audit.py exists
+    ok    cooperative-substrate/p2_substrate_audit.py contains 'unverified_contracts'
+    ok    cooperative-substrate/p3_comprehension.py exists
+    ok    cooperative-substrate/p3_comprehension.py contains 'cosine'
+    ok    cooperative-substrate/v2/p4_goal.py exists
+    ok    cooperative-substrate/v2/p4_goal.py contains 'stance'
+    ok    cooperative-substrate/v2/p5_lag.py exists
+    ok    cooperative-substrate/v2/p5_lag.py contains 't_visible'
+    ok    move-set/move_set_sim.py exists
+    ok    move-set/move_set_sim.py contains 'path_dependence'
+    ok    frame-token-audit/frame_audit.py exists
+    ok    frame-token-audit/frame_audit.py contains 'per_1000'
+
+    -- 2b the null: a bogus marker must refuse
+    ok    a marker that is not in the file does not resolve
+    ok    and the real one does
+
+    -- 3 the absence is established by path, not by name-grep
+    ok    substrate_alternative: no file under any directory
+
+    -- 4 verdicts are reachable and distinct
+    [... 24 more lines]
+  date: 2026-10-24
+  command: python3 notes/check_queue.py --selftest
+  sha12: 5a985c131be7
+  exit_code: 1
+  output_lines: 64
+  output_sha12: 83cbd7c2a2fa
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: gate-check--gate_check
+      via: shares gate-check/thresholds.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: notes/check_queue.py
+    sha12: 5a985c131be7
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-15
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: d7ed991f6d54
+    related: 7d571ef575d4
+    right_read: 32bbe99c703a
+    run: 95d3ae59e065
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

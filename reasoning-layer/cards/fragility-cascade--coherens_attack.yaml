@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--coherens_attack
+kind: program
+tool: Simulators/fragility-cascade/coherens_attack.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: coherens_attack.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/coherens_attack.sample.txt"
+    - "run capture: RUN, exit 0, 63 lines, sha12 8c61aecadc46 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/coherens_attack.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nCOHERENS — Stress Test Report\n======================================================================\n\nQuantum ML:\n  A = 0.90, γ = 0.80, ω = 0.20\n  Coherens: 3.60\n  Time‑to‑collapse: inf\n  Branch: DEGENERATE\n  Status: STABLE\n\nAI collapse:\n  A = 0.95, γ = 0.90, ω = 0.10\n  Coherens: 8.55\n  Time‑to‑collapse: inf\n  Branch: DEGENERATE\n  Status: STABLE\n\nSuperionic:\n  A = 0.90, γ = 0.80, ω = 0.30\n  Coherens: 2.40\n  Time‑to‑collapse: inf\n  Branch: DEGENERATE\n  Status: STABLE\n\nAnyonic:\n  A = 0.85, γ = 0.90, ω = 0.15\n  Coherens: 5.10\n  Time‑to‑collapse: inf\n  Branch: DEGENERATE\n  Status: STABLE\n\nPlastic degradation:\n  A = 0.60, γ = 0.70, ω = 0.50\n  Coherens: 0.84\n  Time‑to‑collapse: 12.50\n  Branch: DEGENERATE\n  Status: VULNERABLE\n\n[... 23 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/coherens_attack.py
+  sha12: e3a67de929bc
+  exit_code: 0
+  output_lines: 63
+  output_sha12: 8c61aecadc46
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--coherens
+      via: shares fragility-cascade/samples/coherens_attack.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/coherens_attack.py
+    sha12: e3a67de929bc
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: c6f87823860e
+    pick_up_when: 32bbe99c703a
+    purpose: a785c2107b0b
+    related: 051a5b0d12fd
+    right_read: 32bbe99c703a
+    run: 42578b4e0892
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

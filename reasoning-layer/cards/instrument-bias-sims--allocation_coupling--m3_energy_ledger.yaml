@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--allocation_coupling--m3_energy_ledger
+kind: program
+tool: Simulators/instrument-bias-sims/allocation_coupling/m3_energy_ledger.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: m3_energy_ledger.py - compensation gradient vs metabolic gradient.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/allocation_coupling/samples/m3_energy_ledger.sample.txt"
+    - "run capture: RUN, exit 0, 94 lines, sha12 1610dd6be3b8 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/allocation_coupling/m3_energy_ledger.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    M3 -- ENERGY LEDGER
+    ========================================================================
+
+      cognitive increment: 18.0 kcal/day (1800 x 0.20 x 0.05)
+
+      position             wage     kcal exp    cog share   replaced    sensory load
+      desk_professional    40.0     2018        0.0089      640         [BLANK]
+      freight_driver       22.0     2518        0.0071      352         [BLANK]
+      fabrication          18.0     3918        0.0046      288         [BLANK]
+      animal_handling      13.0     3718        0.0048      208         [BLANK]
+      farm_labor           11.0     4618        0.0039      176         [BLANK]
+
+      correlation, wage vs kcal expended: -0.883 (n=5, UNWEIGHTED)
+      the compensation gradient runs against energy draw
+
+      B3: n and UNWEIGHTED print on the same line as the number, so it
+      cannot travel without them. This is a result about which five
+      positions were typed in, not about compensation. The [BLANK] handling
+      on the sensory term below is the template the rest of this module
+      should follow.
+      cognitive share of daily total: 0.39% to 0.89%
+
+      The cognitive increment lands near one percent of the daily total,
+      which is what the spec's reference points imply and is small enough
+      to be irrelevant to the correlation. So the gradient here is set
+      almost entirely by physical expenditure.
+
+    ------------------------------------------------------------------------
+
+      ROBUSTNESS -- the sign is a property of the position list
+
+      added                      n      correlation
+      none                       5      -0.883
+      surgeon                    6      -0.541
+      professional_athlete       7      +0.396
+
+      sign flips: True
+      one high-wage high-expenditure position is enough to move the
+      correlation materially, and the second flips the sign. The population
+      weight of such positions is not represented here at all, which is
+    [... 54 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/allocation_coupling/m3_energy_ledger.py
+  sha12: 9bfca4c4229d
+  exit_code: 0
+  output_lines: 94
+  output_sha12: 1610dd6be3b8
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--allocation_coupling--run_all
+      via: imported-by
+    - id: instrument-bias-sims--allocation_coupling--m1_tenure_budget
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/allocation_coupling/m3_energy_ledger.py
+    sha12: 9bfca4c4229d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 44a185c6012b
+    pick_up_when: 32bbe99c703a
+    purpose: bfc238a48ad8
+    related: 080906e3b6bf
+    right_read: 32bbe99c703a
+    run: c9e443183224
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

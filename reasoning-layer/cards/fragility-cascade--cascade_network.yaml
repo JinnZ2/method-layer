@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--cascade_network
+kind: program
+tool: Simulators/fragility-cascade/cascade_network.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: cascade_network.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/cascade_network.sample.txt"
+    - "run capture: RUN, exit 0, 21 lines, sha12 8c9f05285474 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/cascade_network.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nCASCADE NETWORK — Coupled Collapse Dynamics\n======================================================================\nInteraction matrix eigenvalues: [ 0.        +0.j          0.        +0.j          0.72339004+0.j\n -0.3490593 +0.j         -0.25434279+0.j         -0.06119795+0.07099936j\n -0.06119795-0.07099936j -0.07867951+0.j          0.08108745+0.j        ]\nMaximum eigenvalue: 0.723\nCollapse risk: 0.000\n✅ SYSTEM IS STABLE — for now.\n\nSimulating 100 generations...\nFinal state: α=2.000, λ=2.000, δ=2.000, γ=2.000, s=2.000, hξ=2.000, L=2.000, CI=0.000, χ=1.142\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Collapse is a coupled phenomenon—not a single-axis failure.\n  • The interaction matrix eigenvalues determine stability.\n  • Linguistic, cryptographic, and semantic interference are coupled.\n  • To stabilize: reduce coupling coefficients (A_ij) between axes.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/cascade_network.py
+  sha12: d95739b4917d
+  exit_code: 0
+  output_lines: 21
+  output_sha12: 8c9f05285474
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--explorer
+      via: imported-by
+    - id: fragility-cascade--phase_space_map
+      via: imported-by
+    - id: fragility-cascade--sensitivity_analysis
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/cascade_network.py
+    sha12: d95739b4917d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 932c69b2b0bc
+    pick_up_when: 32bbe99c703a
+    purpose: b8aafdf9483a
+    related: 077d830cf3d7
+    right_read: 32bbe99c703a
+    run: f59116587b52
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

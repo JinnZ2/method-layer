@@ -1,0 +1,107 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: emergence-stability-simulator--sensitivity_analysis
+kind: program
+tool: Simulators/emergence-stability-simulator/sensitivity_analysis.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: sensitivity_analysis.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--param"
+    - "--values (default=0.0,0.25,0.5,0.75,1.0): Comma-separated parameter values (only used with --param). Default 0,0.25,0.5,0.75,1."
+    - "--scenario (choices=['stable_majority', 'mixed', 'parasitic_majority']): Scenario override (only used with --param). Default: auto-select."
+    - "--runs (default=10): Monte Carlo runs per parameter value (default 10)."
+    - "--timesteps (default=100): Timesteps per simulation (default 100)."
+    - "--output: Output JSON path. Default depends on mode."
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 20 lines, sha12 d9ba2a452852 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 emergence-stability-simulator/sensitivity_analysis.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    /tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-gduus5u8/emergence-stability-simulator/sensitivity_analysis.py:862: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.n [...]
+      'timestamp': datetime.utcnow().isoformat(),
+    Running full sensitivity analysis (10 runs per value)...
+      Sweeping stable_recovery_rate...
+      Sweeping parasitic_coupling_susceptibility (stable_majority)...
+      Sweeping parasitic_coupling_susceptibility (parasitic_majority)...
+      Sweeping parasitic_coupling_susceptibility (mixed)...
+      Sweeping parasitic_adaptation_persistence...
+      Sweeping stable_coupling_susceptibility...
+
+    Generating sensitivity claims...
+
+    Results saved to results/sensitivity_analysis.json
+
+    Generated 5 claims:
+      SENS_001: confirmed (stable_recovery_rate)
+      SENS_002: confirmed (parasitic_adaptation_persistence)
+      SENS_004: partial (stable_coupling_susceptibility)
+      SENS_003: confirmed_universal (parasitic_coupling_susceptibility)
+      EMRG_006: refuted (parasitic_coupling_susceptibility)
+  date: 2026-10-24
+  command: python3 emergence-stability-simulator/sensitivity_analysis.py
+  sha12: 21864093e3b6
+  exit_code: 0
+  output_lines: 20
+  output_sha12: d9ba2a452852
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: emergence-stability-simulator--run_monte_carlo
+      via: imported-by
+    - id: emergence-stability-simulator--sim_engine
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: emergence-stability-simulator/sensitivity_analysis.py
+    sha12: 21864093e3b6
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 8c09af8d14d5
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: cf6e2d5a289e
+    related: f234eacd7ddc
+    right_read: 32bbe99c703a
+    run: db113eaad933
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

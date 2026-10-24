@@ -1,0 +1,99 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--geometric_rag--geometric_rag
+kind: program
+tool: Simulators/relational/geometric_rag/geometric_rag.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Geometric Neuro-Symbolic RAG: The Relational Retrieval Architecture ==================================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 22 lines, sha12 82fced47b3c5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/geometric_rag/geometric_rag.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ============================================================
+    STANDARD RAG (Cartesian)
+    ============================================================
+    Retrieved: [('d4', 0.1278401337349693), ('d1', 0.08875061651113564), ('d3', 0.048090237143280784)]
+    Answer: Based on retrieved documents: Aspirin can cause stomach bleeding. Aspirin reduces fever and inflammation. Ibuprofen also reduces f...
+    Verification: None
+
+    ============================================================
+    GEOMETRIC NEURO-SYMBOLIC RAG (Relational)
+    ============================================================
+    Retrieved: [('d2', '0.225'), ('d1', '0.225'), ('d7', '0.212'), ('d5', '0.198'), ('d6', '0.170')]
+    Answer: (Verification failed: ["Contradiction between {'d1', 'd6'}"]) Partial answer from [d2] Fever is often caused by infection.
+    [d1] Aspirin reduces fever and inflammation.
+    [d7] Paracetam...
+    Verification: {'coherent': False, 'contradictions': ["Contradiction between {'d1', 'd6'}"], 'missing_relations': []}
+    Coupling: {'confusion': 0.1, 'pain': 0.0}
+
+    --- Under high confusion/pain ---
+    Retrieved: [('d1', '1.001'), ('d2', '0.904'), ('d5', '0.870'), ('d7', '0.747'), ('d6', '0.713')]
+    Answer: (Verification failed: ["Contradiction between {'d1', 'd6'}"]) Partial answer from [d1] Aspirin reduces fever and inflammation.
+    [d2] Fever is often caused by infection.
+    [d5] Infection...
+  date: 2026-10-24
+  command: python3 relational/geometric_rag/geometric_rag.py
+  sha12: f95931c76d15
+  exit_code: 0
+  output_lines: 22
+  output_sha12: 82fced47b3c5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/geometric_rag/geometric_rag.py
+    sha12: f95931c76d15
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: cd2b027faca8
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 9322edf2ee62
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

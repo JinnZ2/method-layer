@@ -1,0 +1,94 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: columbia-chain-cascade--selftest_ccc_v2
+kind: program
+tool: Simulators/columbia-chain-cascade/selftest_ccc_v2.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: selftest_ccc.py -- CC0, stdlib only, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 3 lines, sha12 9fab9593429b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 columbia-chain-cascade/selftest_ccc_v2.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    /tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-ku4c016b/columbia-chain-cascade/selftest_ccc_v2.py:261: SyntaxWarning: invalid escape sequence '\s'
+      "S1 \subseteq S2" in MF.render() or "S1 <= S2" in MF.render())
+    selftest: 102 checks, 0 failed
+  date: 2026-10-24
+  command: python3 columbia-chain-cascade/selftest_ccc_v2.py
+  sha12: 533953fa1a8f
+  exit_code: 0
+  output_lines: 3
+  output_sha12: 9fab9593429b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: columbia-chain-cascade--audit_v2
+      via: imports
+    - id: columbia-chain-cascade--eap_coverage_v2
+      via: imports
+    - id: columbia-chain-cascade--knowledge_state
+      via: imports
+    - id: columbia-chain-cascade--module_f
+      via: imports
+    - id: columbia-chain-cascade--audit
+      via: shares columbia-chain-cascade/SOURCE_DROP.md
+    - id: columbia-chain-cascade--audit_v2
+      via: shares columbia-chain-cascade/SOURCE_DROP.md
+    - id: columbia-chain-cascade--selftest_ccc
+      via: shares columbia-chain-cascade/SOURCE_DROP.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: columbia-chain-cascade/selftest_ccc_v2.py
+    sha12: 533953fa1a8f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 096401b72427
+    related: 9c5104e218a0
+    right_read: 32bbe99c703a
+    run: 4028e5ca3831
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

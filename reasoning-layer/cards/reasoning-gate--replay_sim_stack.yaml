@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: reasoning-gate--replay_sim_stack
+kind: program
+tool: Simulators/reasoning-gate/replay_sim_stack.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: replay_sim_stack.py - run the audited sim stack back through the gate.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: reasoning-gate/samples/replay_sim_stack.sample.txt"
+    - "run capture: RUN, exit 0, 38 lines, sha12 0ab8a5da34d5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 reasoning-gate/replay_sim_stack.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==============================================================
+    GATE SIM-B
+      expected : AB near 2 (space-filling), cascade below 2 (clustered)
+      observed : AB 1.889 / cascade 1.555, controls on target
+      diverged : no
+      control  : poisson                      run
+      control  : periodic lattice             run
+      control  : line                         run
+      resolve  : smallest box vs mean nearest-neighbour spacing ok
+      generator-level (no physical claim permitted): Df_cascade
+      claim    : [qualified] the two sets do not share a fractal dimension
+                 ^ physical scope claim resting on generator-level support: Df_cascade
+      finding  : [G-LAYER] untagged quantity: cannot be recorded
+                 ^ the two sets do not share a fractal dimension | physical scope claim resting on generator-level support: Df_cascade
+    -> SIM-B PASSES
+
+    ==============================================================
+    SIM-A DENIED AT PRE:
+      [G-RES] resolution not declared or instrument coarser than feature: output is not admissible | k-grid spacing vs Bragg peak width: instrument 0.39 x margin 2 > feature 0.063
+    -> never executes. the ringing spectrum is never produced.
+
+    ==============================================================
+    GATE SIM-C
+      expected : a knee, or no knee
+      observed : knee at f=0.65, splitting 0.0812
+      diverged : YES
+      control  : f=0 periodic limit           run
+      resolve  : finite-size level spacing vs splitting ok
+      generator-level (no physical claim permitted): cascade_E_split
+      VOID     : knee_over_Esplit (16x16 tight-binding model vs branching_walk output)
+      claim    : [unsupported] the two systems operate on different normalized energy scales
+      finding  : [G-DIM] ratio operands are properties of different objects: void, no interpretation permitted
+                 ^ knee_over_Esplit: 'knee_splitting' is a property of '16x16 tight-binding model', 'cascade_E_split' is a property of 'branching_walk output'
+      finding  : [G-SUP] claim has no named support
+                 ^ the two systems operate on different normalized energy scales | not recorded: knee_over_Esplit
+      finding  : [G-IND] convergence asserted across measurements with shared inputs
+                 ^ convergence across SIM-A, SIM-B, SIM-C with nothing named as shared
+    -> SIM-C runs but its ratio is void and its claim unsupported.
+  date: 2026-10-24
+  command: python3 reasoning-gate/replay_sim_stack.py
+  sha12: baa7a34a2878
+  exit_code: 0
+  output_lines: 38
+  output_sha12: 0ab8a5da34d5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: reasoning-gate--gate
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: reasoning-gate/replay_sim_stack.py
+    sha12: baa7a34a2878
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3c25aa1c5699
+    pick_up_when: 32bbe99c703a
+    purpose: 0c33084cb469
+    related: "5e2712962228"
+    right_read: 32bbe99c703a
+    run: 0c602e408316
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: cooperative-substrate-proof--scope
+kind: program
+tool: Simulators/cooperative-substrate-proof/scope.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Scope conditions C1-C4, the coding pass the order requires over any study corpus, called by P1-P5 so the conditions are IN the parts rather than beside them.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: cooperative-substrate-proof/samples/scope.sample.txt"
+    - "run capture: FAILED, exit 2, 2 lines, sha12 d9daf90985d0 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 cooperative-substrate-proof/scope.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    scope.py does not carry its own checks.
+    Run: python3 test_proof.py
+  date: 2026-10-24
+  command: python3 cooperative-substrate-proof/scope.py --selftest
+  sha12: 68204e90e461
+  exit_code: 2
+  output_lines: 2
+  output_sha12: d9daf90985d0
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: cooperative-substrate-proof--p1_records
+      via: imported-by
+    - id: cooperative-substrate-proof--p2_substrate
+      via: imported-by
+    - id: cooperative-substrate-proof--p3_comprehension
+      via: imported-by
+    - id: cooperative-substrate-proof--p4_coherence
+      via: imported-by
+    - id: cooperative-substrate-proof--p5_lag
+      via: imported-by
+    - id: cooperative-substrate-proof--p5_lag_declaration
+      via: imported-by
+    - id: cooperative-substrate-proof--run_all
+      via: imported-by
+    - id: cooperative-substrate-proof--selftest
+      via: imported-by
+    - id: cooperative-substrate-proof--selftest
+      via: sibling-selftest
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - cooperative-substrate-proof/selftest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: cooperative-substrate-proof/scope.py
+    sha12: 68204e90e461
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 9b5d2a7251a5
+    pick_up_when: 32bbe99c703a
+    purpose: 1eec81389cf3
+    related: 6b86f2a89901
+    right_read: 32bbe99c703a
+    run: e3483e69a403
+    selftest: cc82024b6acf
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

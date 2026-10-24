@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s8_recognition_to_delivery
+kind: program
+tool: Simulators/instrument-bias-sims/s8_recognition_to_delivery.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s8_recognition_to_delivery.py - time as an excuse vs time as a variable.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s8_recognition_to_delivery.sample.txt"
+    - "run capture: RUN, exit 0, 107 lines, sha12 01ce5d7fcf0c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s8_recognition_to_delivery.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S8 -- RECOGNITION TO DELIVERY
+    ========================================================================
+
+      0. FIGURES, ALL DECLARED AND NONE VERIFIED HERE
+
+        era                            days     comms d      disburse d
+        New Deal, first tranche        100      3.0000       14.0
+        Rural electrification          3650     3.0000       14.0
+        Present                        540      0.0007       1.0
+
+        Present: DECLARED PLACEHOLDER. no measured present-day interval is
+        used here, and the verdict moves with it
+
+    ------------------------------------------------------------------------
+
+      1. THE NORMALISER DECIDES THE ANSWER
+
+        normaliser               ratio      exceeds  flips below (days)
+        comms only               23142.9    YES      0.0233
+        comms + disbursement     91.7       YES      5.8865
+        none (raw interval)      5.4        YES      100.0000
+
+        verdict changes sign across normalisers: False
+        ratio spread across normalisers:         4286x
+        FLIP-POINT spread across normalisers:    4286x
+
+        CORRECTION, kept rather than smoothed. This module was drafted
+        expecting the verdict to change sign across normalisers. It does
+        not: at the declared placeholder all three agree, because 540 days
+        exceeds 100 days before any denominator is applied. The check
+        caught the prose and the prose was changed to the measurement.
+
+        What the normalisers disagree about is where the sign WOULD flip --
+        the present-day interval that counts as no worse than 1933. Under
+        the raw reading that is 100 days. Under comms-plus-disbursement it
+        is about six days. Under comms-only it is about half an hour. Three
+        defensible denominators, and a 4286x range in what would count as
+        parity.
+
+        comms only assumes: the binding constraint was moving the message
+    [... 67 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s8_recognition_to_delivery.py
+  sha12: 52013550a7e5
+  exit_code: 0
+  output_lines: 107
+  output_sha12: 01ce5d7fcf0c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s8_recognition_to_delivery.py
+    sha12: 52013550a7e5
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: c4e0d256ed28
+    pick_up_when: 32bbe99c703a
+    purpose: d2ebfd674323
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: 5d45dbeb2ac5
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

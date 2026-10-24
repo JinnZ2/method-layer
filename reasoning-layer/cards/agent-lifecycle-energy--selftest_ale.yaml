@@ -1,0 +1,93 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: agent-lifecycle-energy--selftest_ale
+kind: program
+tool: Simulators/agent-lifecycle-energy/selftest_ale.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for the GAP 4 rig, on CONSTRUCTED traces. No hardware is touched and no joule figure here is a measurement of anything -- every trace is built by hand so its integral is known in advance, which is the only way to test the machinery in an environment with no GPU and no meter (see RIG_STATUS.md).
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 12 lines, sha12 50dd2bab457c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 agent-lifecycle-energy/selftest_ale.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    known-answer gate (integrate):
+    phase integration and per-episode energies:
+    absent is not zero (three distinct states):
+    undersampling is flagged, not silently undercounted:
+    succession_loss = (N-1)(spin+teardown), exact:
+    amortization_curve falls as N rises and flattens at E_task:
+    never blend wall and card; never average cold and warm:
+    succession_loss refuses mismatched runs:
+    trace parsing:
+    hardware probe (records the gap; runs nothing):
+      (this environment: capture_runnable=False, nvidia_smi=None -- no measurement is taken and none is fabricated)
+    selftest: 42 checks, 0 failed
+  date: 2026-10-24
+  command: python3 agent-lifecycle-energy/selftest_ale.py
+  sha12: de4b3412f45a
+  exit_code: 0
+  output_lines: 12
+  output_sha12: 50dd2bab457c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: agent-lifecycle-energy--phase_energy
+      via: imports
+    - id: agent-lifecycle-energy--trace_parse
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: agent-lifecycle-energy/selftest_ale.py
+    sha12: de4b3412f45a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: b589d65d0f6f
+    related: 174b9c895ee3
+    right_read: 32bbe99c703a
+    run: bddee16002e4
+    selftest: de0afe0e7f26
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

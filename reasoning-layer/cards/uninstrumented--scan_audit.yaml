@@ -1,0 +1,97 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--scan_audit
+kind: program
+tool: Simulators/uninstrumented/scan_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: scan_audit.py -- grade the delivered scanner and its trigger set.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: uninstrumented/samples/scan_audit.sample.txt"
+    - "run capture: RUN, exit 0, 314 lines, sha12 76ce39bec095 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 uninstrumented/scan_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nGRADING scan.py + patterns.json\n8 mechanisms, 71 triggers\n\n========================================================================\n0  the delivered scanner is not the reconstructed one\n========================================================================\n  Four differences that move numbers:\n\n    unit          delivered splits into SENTENCES (>= 20 chars);\n                  the reconstruction worked line by line\n    dedup         delivered `break`s after the first matching\n                  trigger per mechanism per sentence -- at most\n                  one hit per (mechanism, sentence)\n    extensions    delivered reads .txt .md .rst .org .csv .json .jsonl .py\n                  the reconstruction read .md only\n    boundaries    delivered compiles each trigger RAW:\n                  re.compile(t, re.I), no \\b\n\n  That last one was flagged [CHOICE] in the reconstruction and\n  guessed the other way. Raw matching means `lean` matches\n  `cleaning` and `slack` matches `slacken`. The dedup pulls in\n  the opposite direction, so the two do not simply add.\n\n  Every number below is from the delivered instrument.\n\n========================================================================\n1  the drop's own worked example of BUDGET BOUNDARY\n========================================================================\n  The register's canonical BUDGET_BOUNDARY case is leaf vs\n  panel, and ../declared-frame/v2/examples/ ships both halves.\n  No corpus, no threshold, no adjudication: does the scanner\n  fire on the case its own trigger list was written for?\n\n    declared-frame/v2/examples/ -> 1 candidate(s)\n      BUDGET BOUNDARY via '22% of incident photons; leaf converts ~1-2%'\n\n  Now the same case in four phrasings:\n\n    the register's own VISIBLE AS line   BUDGET BOUNDARY ('inefficient at', candidate), SCORED AS WASTE ('inefficient', candidate)\n[... 274 more lines]"
+  date: 2026-10-24
+  command: python3 uninstrumented/scan_audit.py
+  sha12: c6eab08da118
+  exit_code: 0
+  output_lines: 314
+  output_sha12: 76ce39bec095
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--scan
+      via: imports
+    - id: uninstrumented--case_022_audit
+      via: shares uninstrumented/AUDIT_NOTES.md
+    - id: uninstrumented--case_014_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--drop_016_017_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--playground_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--playground_modules_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--specimen_c_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--scan
+      via: shares uninstrumented/patterns.json
+    - id: uninstrumented--scan
+      via: shares uninstrumented/samples/scan_audit.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/scan_audit.py
+    sha12: c6eab08da118
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 521b5c998ffb
+    pick_up_when: 32bbe99c703a
+    purpose: 991b40ce4b63
+    related: 4028e7628d9c
+    right_read: 32bbe99c703a
+    run: ab2fbd260cd9
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

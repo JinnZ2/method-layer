@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: reasoning-dial--overthinking
+kind: program
+tool: Simulators/reasoning-dial/overthinking.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: overthinking.py — what a second drop of literature does to the first drop's model, and to mine.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: reasoning-dial/samples/overthinking.sample.txt"
+    - "run capture: RUN, exit 0, 125 lines, sha12 c3060ea74b80 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 reasoning-dial/overthinking.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nOVERTHINKING: A DECLINING BRANCH, AND WHAT IT COSTS THE KNEE\nNo reasoning model was run. Every constant is generator-level.\n\n==========================================================================\n1  the model in dial_response.py forbids the phenomenon\n==========================================================================\n  SOURCE_DROP_2 reports negative marginal utility as the central\n  empirical finding: past some budget, more thinking makes answers\n  worse. A logistic is monotone, so dial_response.py cannot produce\n  that at any parameter setting.\n\n  problem                  min dQ/dlnB over 2..1e7 tokens\n  Easy (pattern match)                        1.041e-08\n  Medium (multi-step)                         1.687e-04\n  Hard (novel mechanism)                      6.270e-03\n\n  Positive throughout. This is a correction to this folder's own\n  prior work, not to the drop's: RD_003 picked a response family\n  that rules out the effect by construction, and then reported that\n  the family behaves well. It does. It is also the wrong family.\n\n==========================================================================\n2  with a declining branch the stopping rule becomes well-posed\n==========================================================================\n  Q(u) = logistic rise - drift accruing at 0.030 per log-token from\n  B = 50. Drift does not depend on D_r.\n\n  problem                      argmax Q    Q there   interior\n  Easy (pattern match)              444      0.914       True\n  Medium (multi-step)              8194      0.805       True\n  Hard (novel mechanism)         224214      0.675       True\n\n  dQ/d(ln B) = 0 has ONE solution on the declining side. No tie, no\n  choice of shoulder, no dependence on the sweep window -- the\n  interior column is the guard and it passes for all three.\n\n  RD_002 found the knee rule degenerate on a saturating curve. On\n  the curve the literature actually reports, the degeneracy is not\n  merely a defect: it is unnecessary. A better primitive exists,\n[... 85 more lines]"
+  date: 2026-10-24
+  command: python3 reasoning-dial/overthinking.py
+  sha12: ba5a40f79f6b
+  exit_code: 0
+  output_lines: 125
+  output_sha12: c3060ea74b80
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: reasoning-dial--dial_response
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: reasoning-dial/overthinking.py
+    sha12: ba5a40f79f6b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: cfda2b20daf0
+    pick_up_when: 32bbe99c703a
+    purpose: 2fab7acc31b6
+    related: 9b03913bf83c
+    right_read: 32bbe99c703a
+    run: fe6d3dd07b4b
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

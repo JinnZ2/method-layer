@@ -1,0 +1,116 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: residual-direction--residual
+kind: program
+tool: Simulators/residual-direction/residual.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: residual -- read a miss history and name the folded term.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 36 lines, sha12 824ea73dc3cb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 residual-direction/residual.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    residual selftest
+      slope of an exact line                                     PASS got=2.0 want=2.0
+      a flat series has slope zero                               PASS got=0.0 want=0.0
+      a predictor with no variation is a state, not a zero       PASS got='NO_VARIATION' want='NO_VARIATION'
+      too few points is a state, not a zero                      PASS got='TOO_FEW' want='TOO_FEW'
+      the standardized slope is dimensionless and scale-free     PASS got=1.0 want=1.0
+      F1 pooled sign returns no lean                             PASS got=False want=False
+      F1 S2(a) fires                                             PASS got=True want=True
+      F1 top-ranked axis is predicted magnitude                  PASS got='predicted magnitude' want='predicted magnitude'
+      F1 names the collinear group rather than one of it         PASS got=(False, ['predicted magnitude', 'time index']) want=(False, ['predicted magnitude', 'time index'])
+      F1 verdict is a work order                                 PASS got='RECOVER' want='RECOVER'
+      F2 pooled sign fires                                       PASS got=True want=True
+      F2 has no conditional lean                                 PASS got=False want=False
+      F2 verdict is log and leave                                PASS got='LOG_AND_LEAVE' want='LOG_AND_LEAVE'
+      F2 names no term, because no conditional row leans         PASS got=None want=None
+      F3 rate check reports growing                              PASS got='GROWING' want='GROWING'
+      F1 rate check does not                                     PASS got='STABLE' want='STABLE'
+      F2 rate check does not                                     PASS got='STABLE' want='STABLE'
+      F3 output is distinct from F1 and F2                       PASS got=3 want=3
+      F4 emits uninterpretable                                   PASS got='UNINTERPRETABLE' want='UNINTERPRETABLE'
+      F4 is not scored as a clean series                         PASS got=False want=False
+      the same series with a known history is readable           PASS got=True want=True
+      an adjusted series is refused, not scored                  PASS got='REFUSED' want='REFUSED'
+      and S5's own spelling loads as the same state              PASS got='adjusted' want='adjusted'
+      2x2: lean + strong                                         PASS got='RECOVER' want='RECOVER'
+      2x2: lean + weak                                           PASS got='LOG_AND_LEAVE' want='LOG_AND_LEAVE'
+      2x2: no lean + strong                                      PASS got='CHECK_S2A' want='CHECK_S2A'
+      2x2: no lean + weak                                        PASS got='NO_ACTION' want='NO_ACTION'
+      a missing coupling is a state, not weak                    PASS got='COUPLING_UNKNOWN' want='COUPLING_UNKNOWN'
+      the coupling is read from the claim record                 PASS got=0.8815 want=0.8815
+      and its provenance travels with it                         PASS got=True want=True
+      a record with a coupling gives one                         PASS got=True want=True
+      an unknown claim is a state with a reason, not a zero      PASS got=(None, True) want=(None, True)
+      the emitted report carries no screened form                PASS got=True want=True
+      and the screen would fire if it drifted                    PASS got=False want=False
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 residual-direction/residual.py --selftest
+  sha12: 1c0ac5f3832f
+  exit_code: 0
+  output_lines: 36
+  output_sha12: 824ea73dc3cb
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: residual-direction--naming
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: residual-direction/residual.py
+    sha12: 1c0ac5f3832f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 7df401fa72d7
+    related: 3c06ea8c8acd
+    right_read: 32bbe99c703a
+    run: eebe33e1ae05
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

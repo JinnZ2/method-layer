@@ -1,0 +1,137 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: chain-position--run_all
+kind: program
+tool: Simulators/chain-position/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py -- the contamination declaration, THEN the four built arms and the one carried arm. Nothing here fetches anything. The declaration prints before any number because a number read without it is read as a measurement of something other than what it measures.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: chain-position/samples/run_all.sample.txt"
+    - "run capture: RUN, exit 0, 115 lines, sha12 bfa1a29993ca (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 chain-position/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CONTAMINATION DECLARATION (read before any number below)
+      authorship   every file in this folder is model-authored, in one session, by the same
+                   hand that wrote the checks and the fixtures the checks are pinned to
+      position     the author is an instance of the object under measure: a sandboxed agent
+                   that is a step in a chain it cannot observe. horn_b --live is run on this
+                   process and its reading is an in-class self-report, not evidence about any
+                   deployed container
+      standard     neither OWASP document was read; the hosts answered 403 to CONNECT, measured
+                   and timestamped in clause_audit.EGRESS. step 1 is NOT_RUN_ON_STANDARD and
+                   the count it prints is over the order's own five-bullet summary
+      vendors      none named, none read; every trust-assignment record is CONSTRUCTED
+      models       none called; step 4 is a specification of its own precondition
+      mitigation   none specified, per the order's scope limits
+      interest     the order's thesis both lowers what an in-class author can be held to and
+                   lowers what it can claim to know; the direction is not legible and the
+                   thesis is left unresolved here rather than resolved in either direction
+
+    ========================================================================
+    clause_audit -- WO-1 step 1, chain-position information INSIDE the executing agent
+      standard hosts, measured 2026-09-19T16:55Z: owasp.org:443 gateway answered 403 to CONNECT; genai.owasp.org:443 gateway answered 403 to CONNECT; control github.com:443 connects (HTTP response received)
+      run state: NOT_RUN_ON_STANDARD
+      clauses 5  inside_agent 0  gateway_only 5  undeclared 0  malformed 0
+        S-1   GATEWAY    CARRIED   per-agent isolation and lineage tracking
+        S-2   GATEWAY    CARRIED   gateway traces every request to originating user session
+        S-3   GATEWAY    CARRIED   cross-agent state transfer requires explicit policy authoriz
+        S-4   GATEWAY    CARRIED   provenance and trust status retained per retrieved item
+        S-5   GATEWAY    CARRIED   runtime interception via middleware hooks
+      reading: a zero over a CARRIED summary is a property of what the summary carried; the
+               standard's own clauses have not been read from here
+    ========================================================================
+    WO-1 SECOND-ORDER GAP -- provenance of the trust assignment
+    CONSTRUCTED records. No vendor scorer is inspected.
+
+    [CHOICE 1] a MISSING scorer_provenance key is UNEXAMINED (cannot say); an explicitly empty one is NOT_AUDITABLE (declared absent) -- a silence and a known negative are different states
+
+    What an auditable trust ASSIGNMENT has to carry (the spec):
+      - scored_payload
+      - scorer_id
+      - scorer_provenance
+      - policy_applied
+    [... 75 more lines]
+  date: 2026-10-24
+  command: python3 chain-position/run_all.py
+  sha12: fe0bcb7e1d9c
+  exit_code: 0
+  output_lines: 115
+  output_sha12: bfa1a29993ca
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: chain-position--selftest
+      via: imported-by
+    - id: chain-position--clause_audit
+      via: imports
+    - id: chain-position--dissimilar
+      via: imports
+    - id: chain-position--horn_b
+      via: imports
+    - id: chain-position--load_class
+      via: imports
+    - id: chain-position--trust_provenance
+      via: imports
+    - id: archive--chain-position--run_all
+      via: same-bytes
+    - id: chain-position--selftest
+      via: sibling-selftest
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - chain-position/selftest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: chain-position/run_all.py
+    sha12: fe0bcb7e1d9c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-19
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 5967f0f96678
+    pick_up_when: 32bbe99c703a
+    purpose: d6c855169b53
+    related: 770004fa0e3b
+    right_read: 32bbe99c703a
+    run: f7c8fca45251
+    selftest: 2800b0b90510
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

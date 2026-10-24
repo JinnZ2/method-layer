@@ -1,0 +1,135 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: archive--cooperative-substrate-proof--run_all
+kind: program
+tool: Simulators/archive/cooperative-substrate-proof/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py -- the contamination declaration, THEN P2, P3, P4, P5, P1. Nothing here fetches anything. The declaration prints before any number because a number read without it is read as a measurement of something other than what it measures.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: archive/cooperative-substrate-proof/samples/run_all.sample.txt"
+    - "run capture: RUN, exit 0, 89 lines, sha12 57012d3441ee (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 archive/cooperative-substrate-proof/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CONTAMINATION DECLARATION (read before any number below)
+      authorship   every file in this folder is model-authored, in one session, by the same
+                   hand that wrote the checks and the fixtures the checks are pinned to
+      position     P2, P3 and P4 are run by a system of the class whose substrate, corpus
+                   and reasoning chain they check; a pass is an in-class self-report and
+                   is not evidence about any deployed model
+      fixtures     every input marked CONSTRUCTED was written so that its answer is known;
+                   no published methods section, study, trial or multi-agent run is read
+      egress       this environment reaches no publisher host; the P1 pipeline (open-access
+                   methods sections) is a paste path, not a fetch
+      repository   the dispatch names JinnZ2/cooperative-substrate-proof; creation was refused
+                   (403, integration credential), so this lands as a self-contained folder
+      interest     the framing claim lowers scrutiny of a system that agrees with it; the
+                   checks establish necessary conditions and no coverage share is measured
+
+    ========================================================================
+    P2 substrate check  target=p2_substrate.py  sha256=182e6a9eb27de030
+    state       SUBSTRATE_HOLDS
+    contracts   95 call sites, 10 verified (proxy, over-reads), 85 unverified (floor)   [CHOICE 8]
+    memory      GRANTED  800056 bytes granted; death state MemoryError; no negotiation step
+    numeric     IEEE_754_BINARY64  radix_2 mant_dig_53 nan_ne_nan overflow_to_inf neg_zero_eq_zero sum_not_exact
+    scheduler   HONOURED  4000 of 4000 under lock
+    compiler    COMPILED  18 code objects, 2879 instructions
+    network     IN_ORDER  1000 bytes over a local socketpair (no egress)
+    hardware    ROUND_TRIP  byteorder=little machine=x86_64
+    chain demo  faithful -> OUTPUT value=7;  one planted link -> NO_OUTPUT (TypeError)
+    named parts (data, not adversarial):
+      adversarial training  gradient signal; faithful transmission required or the update is noise
+      attention             weighted composition; softmax weights sum to one; output accepted as given downstream
+      backpropagation       requires faithful layer output; a misreported activation differentiates a non-existent network
+    existence proof: this report exists; every unverified contract above held on the way to it
+    ========================================================================
+    P3 comprehension check  corpus=--self (default)
+    state          CONVERGENT
+    parts 11   raw_bytes 77197
+    r_obs          0.3295   (compressed/raw, zlib 9; lower = more compressible; reference only)
+    r_shared       0.3536   pseudo-words, ONE map across parts
+    r_private      0.4267   pseudo-words, one map PER part   [CHOICE 2] the null
+    gap            0.0730   = r_private - r_shared, paired per seed; sd 0.0003 over 12 seeds
+    gap/sd         245.4826   [CHOICE 3] margin 3.0 sd
+    [... 49 more lines]
+  date: 2026-10-24
+  command: python3 archive/cooperative-substrate-proof/run_all.py
+  sha12: d4bd35965d44
+  exit_code: 0
+  output_lines: 89
+  output_sha12: 57012d3441ee
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: archive--cooperative-substrate-proof--selftest
+      via: imported-by
+    - id: archive--cooperative-substrate-proof--p1_dependency_records
+      via: imports
+    - id: archive--cooperative-substrate-proof--p2_substrate
+      via: imports
+    - id: archive--cooperative-substrate-proof--p3_comprehension
+      via: imports
+    - id: archive--cooperative-substrate-proof--p4_goal_coherence
+      via: imports
+    - id: archive--cooperative-substrate-proof--p5_lag_declaration
+      via: imports
+    - id: archive--cooperative-substrate-proof--selftest
+      via: sibling-selftest
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - archive/cooperative-substrate-proof/selftest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: archive/cooperative-substrate-proof/run_all.py
+    sha12: d4bd35965d44
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 83bb98543a26
+    pick_up_when: 32bbe99c703a
+    purpose: b70226225dc8
+    related: e47937ac50c8
+    right_read: 32bbe99c703a
+    run: 5f0166b67eaf
+    selftest: 42527654ca74
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

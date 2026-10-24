@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: thermal-coupling--thermal_coupling
+kind: program
+tool: Simulators/thermal-coupling/thermal_coupling.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermal_coupling.py — temperature forcing for cascading slope/flow hazards.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 51 lines, sha12 2c0d6b27eae6 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 thermal-coupling/thermal_coupling.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    DEMO A — same warming, three elevation bands
+    ======================================================================
+    band            dry    wet  total  runout    FoS  primed   COINC
+    low  1500m    0.037  0.389  0.426    1.27   1.03   0.708  0.1756
+    mid  2500m    0.248  0.000  0.248    1.00   1.16   0.555  0.0629
+    high 3500m    0.300  0.000  0.300    1.00   1.86   0.000  0.0000
+
+    ======================================================================
+    DEMO B — freeze-thaw cycles vs mean T  (non-monotone)
+    ======================================================================
+      T_mean C   cycles/yr
+           -12          98
+            -8         156
+            -5         195
+            -3         222
+            -1         172
+             0         169
+             1         172
+             3         222
+             5         195
+             8         156
+            12          98
+
+    ======================================================================
+    DEMO C — joint strength and FoS vs bedrock temperature
+    ======================================================================
+        T C  strength  FoS 55deg  FoS 65deg  creep rel
+        -10     1.000      3.720      2.478       1.00
+         -8     0.699      2.599      1.731       1.87
+         -6     0.559      2.079      1.384       3.49
+         -4     0.449      1.669      1.111       6.52
+         -3     0.400      1.487      0.990       8.91
+         -2     0.354      1.317      0.877      12.18
+         -1     0.311      1.156      0.770      16.65
+       -0.5     0.290      1.079      0.718      19.47
+
+    ======================================================================
+    DEMO D — coincidence: cold trigger on unprimed vs primed slope
+    ======================================================================
+    [... 11 more lines]
+  date: 2026-10-24
+  command: python3 thermal-coupling/thermal_coupling.py
+  sha12: 0e730bb085a4
+  exit_code: 0
+  output_lines: 51
+  output_sha12: 2c0d6b27eae6
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: thermal-coupling--coupling_audit
+      via: imported-by
+    - id: thermal-coupling--selftest_tca
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: thermal-coupling/thermal_coupling.py
+    sha12: 0e730bb085a4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: d92220d83091
+    related: a5c6eed7eab3
+    right_read: 32bbe99c703a
+    run: 93eba22fc327
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

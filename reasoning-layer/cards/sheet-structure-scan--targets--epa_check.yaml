@@ -1,0 +1,112 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--targets--epa_check
+kind: program
+tool: Simulators/sheet-structure-scan/targets/epa_check.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: epa_check -- the target workbooks, pre-registered before the data.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 34 lines, sha12 3fc13af35116 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/targets/epa_check.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    epa_check selftest
+      the two workbooks below are SYNTHETIC. They test whether the
+      criterion separates a flat table from a formula chain. Nothing
+      here is evidence about any EPA product.
+      hub shape holds every efh prediction                     PASS got=['HELD', 'HELD', 'HELD', 'HELD', 'HELD', 'HELD'] want=['HELD', 'HELD', 'HELD', 'HELD', 'HELD', 'HELD']
+      one sheet: no column group exists                        PASS got=0 want=0
+      and EFH-P4 says so rather than passing                   PASS got='NOT_DETERMINABLE' want='NOT_DETERMINABLE'
+      two sheets: the denominator exists                       PASS got=True want=True
+      chain shape does NOT hold efh-P1                         PASS got='NOT_HELD' want='NOT_HELD'
+      chain shape does NOT hold efh-P2                         PASS got='NOT_HELD' want='NOT_HELD'
+      chain shape holds every local prediction                 PASS got=['HELD', 'HELD', 'HELD', 'HELD'] want=['HELD', 'HELD', 'HELD', 'HELD']
+      hub shape does NOT hold local-P1                         PASS got='NOT_HELD' want='NOT_HELD'
+      hub shape does NOT hold local-P2                         PASS got='NOT_HELD' want='NOT_HELD'
+      hub: unit present, variance and sample absent            PASS got=(True, True, True) want=(True, True, True)
+      hub rank column carries no ordering                      PASS got=1.0 want=1.0
+      chain rank column does                                   PASS got=True want=True
+      chain: one column collision, many row rows               PASS got=(1.0, True) want=(1.0, True)
+      hub: repeated headers agree, so none is listed           PASS got=0.0 want=0.0
+      chain shape holds every local prediction                 PASS got=['HELD', 'HELD', 'HELD', 'HELD'] want=['HELD', 'HELD', 'HELD', 'HELD']
+      flat shape fails local on derived_share and rank         PASS got=['NOT_HELD', 'NOT_HELD'] want=['NOT_HELD', 'NOT_HELD']
+      chain shape holds every tcr prediction                   PASS got=['HELD', 'HELD', 'HELD'] want=['HELD', 'HELD', 'HELD']
+      flat shape fails tcr on derived_share and rank           PASS got=['NOT_HELD', 'NOT_HELD'] want=['NOT_HELD', 'NOT_HELD']
+      chain shape holds every unfccc prediction                PASS got=['HELD', 'HELD', 'HELD'] want=['HELD', 'HELD', 'HELD']
+      flat shape fails unfccc on derived_share and rank        PASS got=['NOT_HELD', 'NOT_HELD'] want=['NOT_HELD', 'NOT_HELD']
+      three arms are registered                                PASS got=3 want=3
+      the two new arms register no cross-module collision, with a reason PASS got=[True, True] want=[True, True]
+      simplified registers no threshold                        PASS got=[] want=[]
+      and says why                                             PASS got=True want=True
+      efh render carries no screened word                      PASS got=True want=True
+      local render carries no screened word                    PASS got=True want=True
+      simplified render carries no screened word               PASS got=True want=True
+      tcr render carries no screened word                      PASS got=True want=True
+      unfccc render carries no screened word                   PASS got=True want=True
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/targets/epa_check.py --selftest
+  sha12: 9be8a29c46b3
+  exit_code: 0
+  output_lines: 34
+  output_sha12: 3fc13af35116
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/targets/epa_check.py
+    sha12: 9be8a29c46b3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 6b60c263873a
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 278c76f35666
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

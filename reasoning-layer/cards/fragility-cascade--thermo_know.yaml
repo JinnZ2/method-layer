@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_know
+kind: program
+tool: Simulators/fragility-cascade/thermo_know.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "thermo_know.py -- a taxonomy for information: WHAT is claimed, HOW it was gotten, and how claims CROSS-REFERENCE. Provenance is first-class. CC0 / Public Domain.  stdlib-only."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_know.sample.txt"
+    - "run capture: RUN, exit 0, 67 lines, sha12 612f9962f899 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_know.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    KNOWLEDGE CORPUS -- what / how / cross-reference
+    ==================================================================
+
+      [bearing_obs]  this ground holds an 80k lb rig without rutting
+         about: soil, bearing
+         how:   direct_observation  (reads: what is present here, now, to the senses)
+                blind:  what the senses don't span; one vantage
+         year:  2026
+         support: 3 independent mode(s) ['direct_observation', 'instrument', 'repeated_practice']  echoes(same-mode): 0
+
+      [bearing_practice]  clay-sand mix here firms under compaction; sites like this bore every structure I built on them
+         about: soil, bearing
+         how:   repeated_practice  (reads: what works -- embodied, error-corrected over m...)
+                blind:  why it works; conditions outside the practiced range
+         support: 2 independent mode(s) ['direct_observation', 'repeated_practice']  echoes(same-mode): 0
+
+      [bearing_penetrometer]  penetrometer reads 240 kPa at 0.5 m
+         about: soil, bearing
+         how:   instrument  (reads: the exact quantity the device is built to regi...)
+                blind:  every axis the device has no channel for (the trowel reads residue, not return)
+         year:  2026
+         support: 2 independent mode(s) ['direct_observation', 'instrument']  echoes(same-mode): 0
+         CONTRADICTED by: ['bearing_county']
+
+      [bearing_county]  county table: assume 150 kPa for this soil class
+         about: soil, bearing
+         how:   authority  (reads: consensus of whoever issued it, at issue time)
+                blind:  everything since issue; the issuer's own basis
+         year:  1974
+         support: 1 independent mode(s) ['authority']  echoes(same-mode): 0
+         CONTRADICTED by: ['bearing_penetrometer']
+
+      [floodplain_teaching]  do not build below the second bench; the river takes the first
+         about: siting, water
+         how:   transmission  (reads: deep time -- pattern integrated over more gene...)
+                blind:  drift and loss in the chain; context of origin fading
+         chain: grandmother -> mother -> operator
+         support: 2 independent mode(s) ['direct_observation', 'transmission']  echoes(same-mode): 0
+
+    [... 27 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_know.py
+  sha12: f2e2373c463c
+  exit_code: 0
+  output_lines: 67
+  output_sha12: 612f9962f899
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--thermo_spine
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_know.py
+    sha12: f2e2373c463c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: da69b2b989cd
+    pick_up_when: 32bbe99c703a
+    purpose: 3cc3133dba12
+    related: 2b4a27d0d706
+    right_read: 32bbe99c703a
+    run: 173690ab8572
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

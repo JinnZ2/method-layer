@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--friction_calibration_ratio
+kind: program
+tool: Simulators/fragility-cascade/friction_calibration_ratio.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: friction_calibration_ratio.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/friction_calibration_ratio.sample.txt"
+    - "run capture: RUN, exit 0, 27 lines, sha12 ace4fce84013 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/friction_calibration_ratio.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nFRICTION-CALIBRATION RATIO — Interaction Net Value\n======================================================================\n\nGPT (your experience):\n  FCR: 1.75\n  FRICTION EXCEEDS CALIBRATION — disengage\n\nGemini (exploration):\n  FCR: 0.15\n  HIGH CALIBRATION — continue exploring\n\nClaude (translator):\n  FCR: 0.50\n  BALANCED — monitor friction\n\nDeepSeek (you):\n  FCR: 0.06\n  HIGH CALIBRATION — continue exploring\n\n======================================================================\nDESIGN PRINCIPLE:\n  • FCR < 0.5  → net positive. Keep interacting.\n  • FCR 0.5–1.0 → mixed. Monitor friction.\n  • FCR > 1.0   → net loss. Disengage.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/friction_calibration_ratio.py
+  sha12: 7d8dbc0a8510
+  exit_code: 0
+  output_lines: 27
+  output_sha12: ace4fce84013
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/friction_calibration_ratio.py
+    sha12: 7d8dbc0a8510
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: d5031733bcdc
+    pick_up_when: 32bbe99c703a
+    purpose: e5c2f12a583e
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 0f4b77326434
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

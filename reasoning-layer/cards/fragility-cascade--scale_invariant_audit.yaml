@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--scale_invariant_audit
+kind: program
+tool: Simulators/fragility-cascade/scale_invariant_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: scale_invariant_audit.py  (v2)
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/scale_invariant_audit.sample.txt"
+    - "run capture: RUN, exit 0, 67 lines, sha12 3511f50be0e4 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/scale_invariant_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    SCALE-INVARIANT RECURSION AUDIT  (v2 -- log frame, measured D)
+    ==================================================================
+
+    ESTIMATOR CALIBRATION (box-counting on real trajectories)
+      system                    D_measured      r2   D_literature
+      Henon attractor                1.236   0.999          ~1.26
+      contracting map                0.309   0.949              0
+      plane fill                     1.752   0.988              2
+
+    ==================================================================
+    v1 DEMO ROWS, RE-READ  (D still hand-fed -- r2 forced to 1.0)
+    ==================================================================
+
+    ------------------------------------------------------------------
+    AI model, sampled at gen 5
+    ------------------------------------------------------------------
+      D0 -> D_n           : 2.000 -> 1.200  over G=5
+      fit r2              : 1.000 / 1.000   determinate=True
+      drift  ln(D_n/D0)   : -0.5108 nats  [DEGENERATE]
+      rate   lam          : -0.10217 nats/gen
+      G to YELLOW / RED   : 2.2 / 6.8
+      projected D at 2G   : 0.720
+      VERDICT             : YELLOW
+
+    ------------------------------------------------------------------
+    AI model, sampled at gen 20
+    ------------------------------------------------------------------
+      D0 -> D_n           : 2.000 -> 0.300  over G=20
+      fit r2              : 1.000 / 1.000   determinate=True
+      drift  ln(D_n/D0)   : -1.8971 nats  [DEGENERATE]
+      rate   lam          : -0.09486 nats/gen
+      G to YELLOW / RED   : 2.4 / 7.3
+      projected D at 2G   : 0.045
+      VERDICT             : RED
+
+    ------------------------------------------------------------------
+    Barrel of oil (physical)
+    ------------------------------------------------------------------
+      D0 -> D_n           : 1.000 -> 1.010  over G=1000
+    [... 27 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/scale_invariant_audit.py
+  sha12: b7a80eb584e8
+  exit_code: 0
+  output_lines: 67
+  output_sha12: 3511f50be0e4
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/scale_invariant_audit.py
+    sha12: b7a80eb584e8
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 7e4706b3dd2e
+    pick_up_when: 32bbe99c703a
+    purpose: 221866039b5d
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: bc6c27e78de3
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

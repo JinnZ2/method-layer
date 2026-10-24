@@ -1,0 +1,100 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: substrate-emergence--site_substrate_map
+kind: program
+tool: Simulators/substrate-emergence/site_substrate_map.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: site_substrate_map.py CC0-1.0 / stdlib-only / re-injectable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: substrate-emergence/samples/site_substrate_map.sample.txt"
+    - "run capture: RUN, exit 0, 21 lines, sha12 c0321a63ea04 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 substrate-emergence/site_substrate_map.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================
+    SITE: N. MN Canadian Shield — summer
+    ==========================================================
+    SUBSTRATE PROFILE  (paste into substrate_emergence.py):
+      {"conducts": 0.357, "switches": 0.225, "dissipates": 0.43, "holds_heat": 0.66, "costs_extract": 0.25, "abounds": 0.843, "bears_load": 0.595, "couples": 0.722}
+    ----------------------------------------------------------
+    WHAT DRIVES EACH AXIS:
+      conducts      0.357  <- banded_iron(0.35), magnetite(0.5), quartz_silica(0.05), iron_clay(0.3)
+      switches      0.225  <- banded_iron(0.25), magnetite(0.35), quartz_silica(0.1), iron_clay(0.2)
+      dissipates    0.43   <- banded_iron(0.4), magnetite(0.4), quartz_silica(0.55), iron_clay(0.35)
+      holds_heat    0.66   <- banded_iron(0.7), magnetite(0.6), quartz_silica(0.45), iron_clay(0.65)
+      costs_extract 0.25   <- banded_iron(0.3), magnetite(0.35), quartz_silica(0.55), iron_clay(0.15)
+      abounds       0.843  <- banded_iron(0.85), magnetite(0.65), quartz_silica(0.95), iron_clay(0.9)
+      bears_load    0.595  <- banded_iron(0.75), magnetite(0.7), quartz_silica(0.85), iron_clay(0.35)
+      couples       0.722  <- banded_iron(0.55), magnetite(0.75), quartz_silica(0.25), iron_clay(0.8)
+    ----------------------------------------------------------
+    FIELD CONDITIONS APPLIED:
+      wetness        0.6
+      thermal_swing  0.5
+      energy_flux    0.5
+    ==========================================================
+  date: 2026-10-24
+  command: python3 substrate-emergence/site_substrate_map.py
+  sha12: 94fd3513059b
+  exit_code: 0
+  output_lines: 21
+  output_sha12: c0321a63ea04
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - substrate-emergence/tests/test_site_substrate_map.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: substrate-emergence/site_substrate_map.py
+    sha12: 94fd3513059b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 398059aad9aa
+    pick_up_when: 32bbe99c703a
+    purpose: c790b8424c3b
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: fcce8c427c5c
+    selftest: 25ebc172145d
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

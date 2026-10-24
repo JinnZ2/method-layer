@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: rigidification-sensor--simulator
+kind: program
+tool: Simulators/rigidification-sensor/simulator.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: simulator.py — steps the harm reader forward in time. CC0. stdlib only. phone-buildable. imports harm.py.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: rigidification-sensor/samples/simulator.sample.txt"
+    - "run capture: RUN, exit 0, 20 lines, sha12 1136a7b7ef41 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 rigidification-sensor/simulator.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ok _t_all_surplus_never_locks
+    ok _t_amplifying_chain_locks_and_sheds_dof
+    ok _t_reversal_outpaces_continuation_after_lock
+    all pass
+
+    --- demo: amplifying chain ---
+    t  dof  contin  revers  dCont  dRev
+    0  1    2.0     2.0     2.0    2.0
+    1  0    3.0     4.0     1.0    2.0
+    2  0    4.0     4.0     1.0    0.0
+    3  0    4.0     4.0     0.0    0.0
+    4  0    4.0     4.0     0.0    0.0
+    5  0    4.0     4.0     0.0    0.0
+    6  0    4.0     4.0     0.0    0.0
+    7  0    4.0     4.0     0.0    0.0
+    8  0    4.0     4.0     0.0    0.0
+    9  0    4.0     4.0     0.0    0.0
+    10 0    4.0     4.0     0.0    0.0
+    11 0    4.0     4.0     0.0    0.0
+    locked_at: 1
+  date: 2026-10-24
+  command: python3 rigidification-sensor/simulator.py
+  sha12: c3937cd30a34
+  exit_code: 0
+  output_lines: 20
+  output_sha12: 1136a7b7ef41
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: rigidification-sensor--sensor_v1
+      via: imported-by
+    - id: rigidification-sensor--harm
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: rigidification-sensor/simulator.py
+    sha12: c3937cd30a34
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: bb8325069d31
+    pick_up_when: 32bbe99c703a
+    purpose: cc495328003a
+    related: 9f5515bc98ad
+    right_read: 32bbe99c703a
+    run: 68f8ca7a0b9c
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: railcar-containment--run_all
+kind: program
+tool: Simulators/railcar-containment/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py - run the three screens in order and print them together.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: railcar-containment/samples/run_all.sample.txt"
+    - "run capture: RUN, exit 0, 82 lines, sha12 24cbae7f1693 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 railcar-containment/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    calibrated to published anchors, intercity volume, uncontained:
+      visibility 3:50 | CO dose 5:22 | thermal 6:40
+      published tenability window 3:37 - 7:08
+
+    t_available (mm:ss), cabin volume x fraction of vent gas reaching cabin
+                           100%      50%      20%       5%       1%
+    intercity 160 m3       3:50     9:19    25:45    never    never
+    subway 100 m3          1:58     6:18    14:29    never    never
+
+    volume effect, uncontained: subway t_available is 52% of intercity
+    published findings are therefore a FLOOR for subway application.
+
+    containment effect, subway: 1:58 at 100% -> never at 5%
+    the fire still happens. it is not in the air people are breathing.
+    REQUIRED CONTAINMENT HOLD TIME, by line and egress policy
+    margin multiplier applied: 1.50x
+
+    line                     sensor/RUN  sensor/STOP   visual/RUN  visual/STOP
+    --------------------------------------------------------------------------
+    metro_short_spacing            5:04        16:49         7:42        19:27
+    metro_long_tunnel              9:20        39:25        11:58        42:03
+    intercity_surface             10:27         6:11        13:04         8:48
+
+    breakdown, worst case on each line (visual detection, STOP policy):
+      metro_short_spacing    detect 120s + decide 30s + move 18.0s + door 10s + clear 600s
+      metro_long_tunnel      detect 120s + decide 30s + move 22.0s + door 10s + clear 1500s
+      intercity_surface      detect 120s + decide 30s + move 37.5s + door 15s + clear 150s
+
+    READING
+      the spread between sensor/RUN and visual/STOP is the design space.
+      detection latency and egress policy move the requirement more than
+      any property of the device does. neither is a device restriction.
+
+    === STATION EGRESS ===   P(occupants clear), 8000 trials
+    detection       cabin gas     P(clear)  median margin     p05 margin
+    --------------------------------------------------------------------
+    sensor               100%       0.718            64s          -112s
+    sensor                50%       0.997           385s           150s
+    sensor                20%       1.000          1353s           878s
+    visual               100%       0.266           -74s          -270s
+    [... 42 more lines]
+  date: 2026-10-24
+  command: python3 railcar-containment/run_all.py
+  sha12: bcdf195cfbfd
+  exit_code: 0
+  output_lines: 82
+  output_sha12: 24cbae7f1693
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: railcar-containment/run_all.py
+    sha12: bcdf195cfbfd
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 36d2e3726c98
+    pick_up_when: 32bbe99c703a
+    purpose: fa7d5743ba69
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: bfd95834d911
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

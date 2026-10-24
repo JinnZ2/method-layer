@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: criteria-drift--anchor
+kind: program
+tool: Simulators/criteria-drift/anchor.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: anchor.py -- anchor-version scoring, made first class.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: criteria-drift/samples/anchor.sample.txt"
+    - "run capture: RUN, exit 0, 190 lines, sha12 3e47404d2d6c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 criteria-drift/anchor.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nANCHOR -- the bridge, and what it buys\n\n========================================================================\n1  known-truth: what the anchor recovers, and what it does not\n========================================================================\n  gen   capability   gain       offset     contemporary   on v0\n  --------------------------------------------------------------------\n  0     0.3000       1.0000     0.0000     0.3000         0.3000\n  1     0.3500       1.0600     0.0120     0.3830         0.3500\n  2     0.4000       1.1200     0.0240     0.4720         0.4000\n  3     0.4500       1.1800     0.0360     0.5670         0.4500\n  4     0.5000       1.2400     0.0480     0.6680         0.5000\n  5     0.5500       1.3000     0.0600     0.7750         0.5500\n\n  The criteria term, isolated by subtraction:\n\n      criteria_k = contemporary_k - anchored_k\n                 = (a_k - a_0) c_k + (b_k - b_0)\n\n  gen   criteria term  true value\n  ----------------------------------------\n  0     0.000000       0.000000\n  1     0.033000       0.033000\n  2     0.072000       0.072000\n  3     0.117000       0.117000\n  4     0.168000       0.168000\n  5     0.225000       0.225000\n\n  max error: 6.939e-17 -- exact, because it is a subtraction and not\n  a fit.\n\n  What the anchor does NOT buy: the capability LEVEL. Scores on\n  v0 are a_0*c + b_0, and a_0, b_0 are unknown. Ratios of\n  differences are identified:\n\n      (v0_3 - v0_0)/(v0_last - v0_0) = 0.600000\n      (c_3  - c_0 )/(c_last  - c_0 ) = 0.600000\n      identified: True\n\n[... 150 more lines]"
+  date: 2026-10-24
+  command: python3 criteria-drift/anchor.py
+  sha12: af1c3af31ce2
+  exit_code: 0
+  output_lines: 190
+  output_sha12: 3e47404d2d6c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: criteria-drift--store
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: criteria-drift/anchor.py
+    sha12: af1c3af31ce2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 968efe9ede19
+    pick_up_when: 32bbe99c703a
+    purpose: 56b82ee7a191
+    related: 4b9266e41004
+    right_read: 32bbe99c703a
+    run: 1db79a8f8d4f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

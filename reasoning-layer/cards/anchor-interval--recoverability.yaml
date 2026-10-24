@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: anchor-interval--recoverability
+kind: program
+tool: Simulators/anchor-interval/recoverability.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: recoverability.py -- provenance, not timing, decides whether a clean reference can be re-acquired.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: anchor-interval/samples/recoverability.sample.txt"
+    - "run capture: RUN, exit 0, 152 lines, sha12 832b1a4b7a87 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 anchor-interval/recoverability.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nRECOVERABILITY: PROVENANCE FIRST, TIMING SECOND\n\n========================================================================\n1  REGIME I -- independent provenance: timing decides\n========================================================================\n  Acquisition needs t_acq consecutive stable steps. Shifts arrive\n  with mean spacing t_shift. Sampling longer buys precision and\n  costs survival probability, so there is an interior optimum.\n\n  t_shift = 20\n    t_acq      P(window)      err | success    expected err\n    ----------------------------------------------------------\n    2          0.9048         0.7071           0.7350\n    5          0.7788         0.4472           0.5695\n    10         0.6065         0.3162           0.5853\n    20         0.3679         0.2236           0.7144\n    40         0.1353         0.1581           0.8861\n    80         0.0183         0.1118           0.9837\n    160        0.0003         0.0791           0.9997\n    optimum at t_acq = 6, expected err 0.5616\n\n  t_shift = 60\n    t_acq      P(window)      err | success    expected err\n    ----------------------------------------------------------\n    2          0.9672         0.7071           0.7167\n    5          0.9200         0.4472           0.4914\n    10         0.8465         0.3162           0.4212\n    20         0.7165         0.2236           0.4437\n    40         0.5134         0.1581           0.5678\n    80         0.2636         0.1118           0.7659\n    160        0.0695         0.0791           0.9360\n    optimum at t_acq = 12, expected err 0.4176\n\n  t_shift = 200\n    t_acq      P(window)      err | success    expected err\n    ----------------------------------------------------------\n    2          0.9900         0.7071           0.7100\n    5          0.9753         0.4472           0.4609\n    10         0.9512         0.3162           0.3496\n[... 112 more lines]"
+  date: 2026-10-24
+  command: python3 anchor-interval/recoverability.py
+  sha12: 783ff7787510
+  exit_code: 0
+  output_lines: 152
+  output_sha12: 832b1a4b7a87
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: anchor-interval/recoverability.py
+    sha12: 783ff7787510
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 718ad85e43f1
+    pick_up_when: 32bbe99c703a
+    purpose: 83ed6ccbf6fb
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 1ce5b99a1ea1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

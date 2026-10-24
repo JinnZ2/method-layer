@@ -1,0 +1,91 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: notes--check_markers
+kind: program
+tool: Simulators/notes/check_markers.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: check_markers.py -- CC0, stdlib only, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: notes/samples/check_markers.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 66d225d3211c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 notes/check_markers.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "check_markers selftest: 34/34 checks pass"
+  date: 2026-10-24
+  command: python3 notes/check_markers.py --selftest
+  sha12: 851839d76563
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 66d225d3211c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: external-audit--recount
+      via: shares GAP_INDEX.md
+    - id: notes--check_postgrad
+      via: shares GAP_INDEX.md
+    - id: tools--gap_index
+      via: shares GAP_INDEX.md
+    - id: clustering-axes--style_audit
+      via: shares PROTOCOL.md
+    - id: notes--check_postgrad
+      via: shares RESEARCH_RENDER.md
+    - id: notes--check_datasets
+      via: shares notes/README.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: notes/check_markers.py
+    sha12: 851839d76563
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 62a766a646c1
+    pick_up_when: 32bbe99c703a
+    purpose: 1eb48edac9ed
+    related: 70215c9318dd
+    right_read: 32bbe99c703a
+    run: b92ce7cdbaf0
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

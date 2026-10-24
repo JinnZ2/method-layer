@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reasoning-layer/apparatus.schema.json",
+  "title": "reasoning-layer apparatus",
+  "description": "LAYER 1. name, shape, read_order, corpus_default_to_avoid are AUTHOR (literal AUTHOR until written). faces is generated from cards/ and may be reordered by hand.",
+  "type": "object",
+  "required": ["apparatus"],
+  "properties": {
+    "apparatus": {
+      "type": "object",
+      "required": ["name", "shape", "read_order", "corpus_default_to_avoid", "faces"],
+      "properties": {
+        "name": {"type": "string"},
+        "shape": {"type": "string"},
+        "corpus_default_to_avoid": {"anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+        "read_order": {"anyOf": [{"const": "AUTHOR"}, {"type": "array", "items": {"type": "string"}}]},
+        "faces": {"type": "array", "items": {
+          "type": "object", "required": ["id", "card"], "additionalProperties": false,
+          "properties": {"id": {"type": "string"}, "card": {"type": "string", "pattern": "^cards/.+\\.yaml$"}}
+        }}
+      }
+    }
+  }
+}

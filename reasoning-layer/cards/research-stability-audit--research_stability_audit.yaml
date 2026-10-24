@@ -1,0 +1,96 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: research-stability-audit--research_stability_audit
+kind: program
+tool: Simulators/research-stability-audit/research_stability_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: research_stability_audit.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 18 lines, sha12 0e9496f9592f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 research-stability-audit/research_stability_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    /tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-fslcj6ez/research-stability-audit/research_stability_audit.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.no [...]
+      self.audit_timestamp = datetime.utcnow().isoformat()
+    ============================================================
+    RESEARCH STABILITY AUDIT
+    ============================================================
+    Registered 8 falsifiable claims
+    Wrote CLAIM_TABLE.json (no measurements yet)
+    Wrote CROSS_REFERENCES.json (6 mappings)
+
+    Claims registered:
+      RES_REPRO_001: Research reproducibility failure rate exceeds 50% in fast-moving field
+      RES_RETLAG_001: Formal retractions lag failed replications by at least 2 years
+      RES_DECAY_001: Citation half-life in fast-moving fields is below 5 years
+      AI_DEGRAD_001: 91% or more of ML models degrade within one year of deployment
+      BIF_ONSET_001: Substrate knowledge transmission collapses when adoption falls below 5
+      CASCADE_METHOD_001: Falsifiable-methodology corpora replicate at higher rate than narrativ
+      AI_SCOPE_001: AI models trained on narrative-only corpora systematically misrepresen
+      AI_RECEIVER_001: An AI model trained on substrate-inclusive corpora (documented methodo
+  date: 2026-10-24
+  command: python3 research-stability-audit/research_stability_audit.py
+  sha12: 8957d177ee35
+  exit_code: 0
+  output_lines: 18
+  output_sha12: 0e9496f9592f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: research-stability-audit/research_stability_audit.py
+    sha12: 8957d177ee35
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: c0dec3c6e658
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 0ee957059f69
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

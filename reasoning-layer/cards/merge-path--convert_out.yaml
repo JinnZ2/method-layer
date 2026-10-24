@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: merge-path--convert_out
+kind: program
+tool: Simulators/merge-path/convert_out.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "convert_out.py -- OUT direction: a falsifier-format record -> a target registrar's record. §2's second direction. The likely loss is the falsifier itself where the target has no slot, the cut on the units, and the whole branch record."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 9d2d972f47f1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 merge-path/convert_out.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: convert_out has no selftest; run selftest.py
+  date: 2026-10-24
+  command: python3 merge-path/convert_out.py --selftest
+  sha12: 3774fd15be77
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 9d2d972f47f1
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: merge-path--residual
+      via: imported-by
+    - id: merge-path--selftest
+      via: imported-by
+    - id: merge-path--registrars
+      via: imports
+    - id: merge-path--selftest
+      via: sibling-selftest
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - merge-path/selftest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: merge-path/convert_out.py
+    sha12: 3774fd15be77
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 4d352e243683
+    related: d947eff50745
+    right_read: 32bbe99c703a
+    run: dae986e0c71c
+    selftest: 5d7bb40cde8a
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

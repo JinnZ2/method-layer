@@ -1,0 +1,92 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: simulation-hypothesis-budget--budget
+kind: program
+tool: Simulators/simulation-hypothesis-budget/budget.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: budget.py - what a Planck-resolution simulation of the observable universe would cost, and which of those numbers mean anything.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--selftest (action=store_true)"
+    - "--sources (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: simulation-hypothesis-budget/samples/budget.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 8868607b1cfa (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 simulation-hypothesis-budget/budget.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: 15/15 checks passed
+  date: 2026-10-24
+  command: python3 simulation-hypothesis-budget/budget.py --selftest
+  sha12: a5996cb898b6
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 8868607b1cfa
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: simulation-hypothesis-budget--consequence_frame
+      via: imported-by
+    - id: simulation-hypothesis-budget--earth_transitions
+      via: imported-by
+    - id: simulation-hypothesis-budget--era_metaphor_audit
+      via: imported-by
+    - id: simulation-hypothesis-budget--ladder_audit
+      via: imported-by
+    - id: simulation-hypothesis-budget--multiscale
+      via: imported-by
+    - id: simulation-hypothesis-budget--scaling_classes
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: simulation-hypothesis-budget/budget.py
+    sha12: a5996cb898b6
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: a7fdc37ad68c
+    output: 7fc32251aee1
+    pick_up_when: 32bbe99c703a
+    purpose: fe043982dd13
+    related: 9bde31ea118e
+    right_read: 32bbe99c703a
+    run: 195b054d5c33
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

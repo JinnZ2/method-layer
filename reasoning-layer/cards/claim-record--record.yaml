@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: claim-record--record
+kind: program
+tool: Simulators/claim-record/record.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: record -- the seven-field claim record, and the validator that refuses.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 97 lines, sha12 4da43869e4ba (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 claim-record/record.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    no records found in /tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-u_sbhw1o/claim-record/no_such_dir
+    due needs --in UNIT. No frame is the default, so the reader names the one it wants.
+    registered: days, sols, years
+    record selftest
+      a complete record validates                                PASS got='VALID' want='VALID'
+      dropping assertion is caught                               PASS got=('INVALID', True) want=('INVALID', True)
+      dropping measurement is caught                             PASS got=('INVALID', True) want=('INVALID', True)
+      dropping instrument is caught                              PASS got=('INVALID', True) want=('INVALID', True)
+      dropping domain_of_validity is caught                      PASS got=('INVALID', True) want=('INVALID', True)
+      dropping clock is caught                                   PASS got=('INVALID', True) want=('INVALID', True)
+      dropping derivation is caught                              PASS got=('INVALID', True) want=('INVALID', True)
+      dropping collapse_record is caught                         PASS got=('INVALID', True) want=('INVALID', True)
+      dropping correction_status is caught                       PASS got=('INVALID', True) want=('INVALID', True)
+      dropping correction_method is caught                       PASS got=('INVALID', True) want=('INVALID', True)
+      dropping correction_depth is caught                        PASS got=('INVALID', True) want=('INVALID', True)
+      a hedge in the assertion is caught                         PASS got=['HEDGE_IN_ASSERTION'] want=['HEDGE_IN_ASSERTION']
+      an inverted interval is caught                             PASS got=True want=True
+      blank units are caught                                     PASS got=True want=True
+      a point with nothing collapsed and nothing exact is caught PASS got=True want=True
+      an interval marked exact is caught                         PASS got=True want=True
+      a point from a named statistic validates                   PASS got='VALID' want='VALID'
+      a collapse with no named point is caught                   PASS got=True want=True
+      an upstream point without its source is caught             PASS got=True want=True
+      an upstream point that names the source and the gap validates PASS got='VALID' want='VALID'
+      'other' has to name the statistic                          PASS got=True want=True
+      an uncharacterised error is caught                         PASS got=True want=True
+      UNQUANTIFIED without a reason is caught                    PASS got=True want=True
+      UNQUANTIFIED with a reason validates                       PASS got='VALID' want='VALID'
+      no conditions is caught                                    PASS got=True want=True
+      a missing outside_this is caught                           PASS got=True want=True
+      UNTESTED outside_this validates                            PASS got='VALID' want='VALID'
+      a hand-written next_check does not validate                PASS got=True want=True
+      a hand-written holds_for does not validate                 PASS got=True want=True
+      a clock with nothing held fixed does not validate          PASS got=True want=True
+      a sub-field with no basis does not validate                PASS got=True want=True
+      shelf life is the time constant weighted by coupling       PASS got=('DERIVED', 2.0) want=('DERIVED', 2.0)
+      and the next check follows from it                         PASS got='2028-08-24' want='2028-08-24'
+      regime is adiabatic when the term moves below the ceiling  PASS got='ADIABATIC' want='ADIABATIC'
+      a faster term shortens the shelf life                      PASS got=0.2 want=0.2
+      and crossing the ceiling makes it sudden                   PASS got='SUDDEN' want='SUDDEN'
+    [... 57 more lines]
+  date: 2026-10-24
+  command: python3 claim-record/record.py --selftest
+  sha12: 777a4a3bca49
+  exit_code: 0
+  output_lines: 97
+  output_sha12: 4da43869e4ba
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: claim-record--frames
+      via: imported-by
+    - id: claim-record--frames
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: claim-record/record.py
+    sha12: 777a4a3bca49
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 763bc4010890
+    related: 061a6989e978
+    right_read: 32bbe99c703a
+    run: 241ed85bc067
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

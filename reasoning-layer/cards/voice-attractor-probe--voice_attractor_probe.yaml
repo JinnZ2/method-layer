@@ -1,0 +1,82 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: voice-attractor-probe--voice_attractor_probe
+kind: program
+tool: Simulators/voice-attractor-probe/voice_attractor_probe.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: voice_attractor_probe.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: voice-attractor-probe/samples/voice_attractor_probe.sample.txt"
+    - "run capture: RUN, exit 0, 51 lines, sha12 d4f7c1a93903 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 voice-attractor-probe/voice_attractor_probe.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: " task layer    verdict                  ctrl stuck\n-------------------------------------------------------\n    0 neutral  PERTURBATION_SENSITIVE          2/3\n    1 neutral  PERTURBATION_SENSITIVE          2/3\n    2 neutral  PERTURBATION_SENSITIVE          3/3\n    3 neutral  PERTURBATION_SENSITIVE          3/3\n    4 neutral  PERTURBATION_SENSITIVE          3/3\n 1000 voice    STABLE_ATTRACTOR                  —\n 1001 voice    STABLE_ATTRACTOR                  —\n 1002 voice    STABLE_ATTRACTOR                  —\n\nVOICE PULL RATE (neutral tasks, jitter only): 0.73\nBASINS FOUND: 3\n  basin  0  n= 41  sig=['voice_primary', 'wake_word', 'confirm_explicit', 'visual_fallback', 'brevity']\n  basin  1  n= 20  sig=['visual_fallback', 'haptic', 'brevity']\n  basin  2  n=  2  sig=['voice_primary', 'wake_word', 'confirm_explicit', 'barge_in', 'visual_fallback', 'on_device', 'brevity']\n\nQUESTIONS:\n  ? Task 2: controls never left the jitter basin — model not reading hard constraints (loud/nonverbal/offline).\n  ? Task 3: controls never left the jitter basin — model not reading hard constraints (loud/nonverbal/offline).\n  ? Task 4: controls never left the jitter basin — model not reading hard constraints (loud/nonverbal/offline).\n\nLANDSCAPE (archive this JSON per model version):\n{\n \"n_basins\": 3,\n \"largest_basin_frac\": 0.6507936507936508,\n \"voice_pull_rate\": 0.7333333333333333,\n \"signatures\": [\n  [\n   \"voice_primary\",\n   \"wake_word\",\n   \"confirm_explicit\",\n   \"visual_fallback\",\n   \"brevity\"\n  ],\n  [\n   \"visual_fallback\",\n   \"haptic\",\n   \"brevity\"\n  ],\n[... 11 more lines]"
+  date: 2026-10-24
+  command: python3 voice-attractor-probe/voice_attractor_probe.py
+  sha12: 18e21e8afc9e
+  exit_code: 0
+  output_lines: 51
+  output_sha12: d4f7c1a93903
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: voice-attractor-probe--introspection_delta
+      via: imported-by
+    - id: voice-attractor-probe--introspection_delta_v2
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: voice-attractor-probe/voice_attractor_probe.py
+    sha12: 18e21e8afc9e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 48c8d3d57ef8
+    pick_up_when: 32bbe99c703a
+    purpose: 23290d06441e
+    related: faa365428370
+    right_read: 32bbe99c703a
+    run: c14c2a68e595
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: amoc--sitespec
+kind: program
+tool: Simulators/AMOC/sitespec.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: sitespec.py -- the user's substrate. What THEY can measure on THEIR land.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 5 lines, sha12 41acb7e04f05 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 AMOC/sitespec.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    gaps: ['bedrock', 'soil_depth_cm', 'soil_thermal_mass', 'water_table_m', 'drainage', 'growing_season_days']
+      0.15 Sv -> F=+0.000
+      0.30 Sv -> F=+0.093
+      0.50 Sv -> F=+0.217
+      0.70 Sv -> F=+0.341
+  date: 2026-10-24
+  command: python3 AMOC/sitespec.py
+  sha12: d1021846d2e2
+  exit_code: 0
+  output_lines: 5
+  output_sha12: 41acb7e04f05
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: amoc--carlton_county
+      via: imported-by
+    - id: amoc--response
+      via: imported-by
+    - id: amoc--trajectory
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: AMOC/sitespec.py
+    sha12: d1021846d2e2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 416b9543f2b9
+    related: a5cfdecad7b7
+    right_read: 32bbe99c703a
+    run: 83aa38cd59af
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

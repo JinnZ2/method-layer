@@ -1,0 +1,126 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: adaptive-claim-loop--adaptive_loop
+kind: program
+tool: Simulators/adaptive-claim-loop/adaptive_loop.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: ADAPTIVE CLAIM LOOP Same architecture as an adaptive simulation framework -- provenance log, claim system, an agent that reads results and proposes a change, a loop that iterates -- with one move removed. Stdlib only, deterministic.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 55 lines, sha12 1dda0b2b3cb5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 adaptive-claim-loop/adaptive_loop.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    PASS no PARAMETER_MOVE response kind exists
+    PASS screen catches rationale
+    PASS screen catches basis
+    PASS screen catches prediction
+    PASS clean mechanism edit admitted
+    PASS settle requires a bool
+    PASS settle records a false
+    PASS epicycle guard on measurability
+    PASS epicycle guard on reach
+    PASS restatement with the same break condition refused
+    PASS clean claim update admitted
+    PASS one level refused
+    PASS duplicate levels refused
+    PASS sweep without a gradient claim refused
+    PASS sweep without a gradient predicate refused
+    PASS one-sided sweep refused without a reason
+    PASS one-sided sweep flagged as one-sided
+    PASS bracketing sweep flagged
+    PASS the callable is not serialised into the log
+    PASS a resolution claim in prose is routed to ResolutionEdit
+    PASS resolution edit refuses a non-numeric have
+    PASS resolution edit refuses a missing need
+    PASS resolution edit refuses need that is not beyond have
+    PASS a bool is not a resolution
+    PASS resolution edit admitted with both numbers
+    PASS instrument edit carries no prediction
+    PASS standing needs a stated reason
+    PASS stand admitted
+    PASS predicate error is UNDECIDED
+    PASS unmet precondition is UNDECIDED
+    PASS a false predicate is REFUTED
+    PASS not-evaluated is a distinct verdict
+    PASS session opens and closes in the log
+    PASS every row carries its session
+    PASS runs are ordinal within the session
+    PASS a refused proposal is logged
+    PASS drift is seed-determined
+    PASS threshold model collapses above the tip
+    PASS sweep evaluated at every declared level in one iteration
+    PASS the gradient predicate produced the verdict, not the point claim
+    [... 15 more lines]
+  date: 2026-10-24
+  command: python3 adaptive-claim-loop/adaptive_loop.py --selftest
+  sha12: c2cccabaf665
+  exit_code: 0
+  output_lines: 55
+  output_sha12: 1dda0b2b3cb5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: adaptive-claim-loop--adversarial_probe
+      via: imported-by
+    - id: adaptive-claim-loop--gate_null_test
+      via: imported-by
+    - id: adaptive-claim-loop--replay_delivered
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: adaptive-claim-loop/adaptive_loop.py
+    sha12: c2cccabaf665
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: d4a8f35e761f
+    related: 254f44a3cf6f
+    right_read: 32bbe99c703a
+    run: 2ad53a8dc749
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

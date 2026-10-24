@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: substrate-emergence--substrate_emergence
+kind: program
+tool: Simulators/substrate-emergence/substrate_emergence.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: substrate_emergence.py CC0-1.0 / stdlib-only / re-injectable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 115 lines, sha12 d35e57ef43b9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 substrate-emergence/substrate_emergence.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================
+    SUBSTRATE: banded_iron
+    ==========================================================
+    CLOCK     -> slow_tide
+                 flips slow, holds heat: think in tides, not cycles. responsiveness lives in integration, not in clock rate.
+    TOPOLOGY  -> parallel_field
+                 weak conduction, abundant ground: spread wide, many slow nodes, let the answer come from the crowd.
+    ----------------------------------------------------------
+    DEFICITS ROUTE TO:
+      + build_bigger / go_parallel
+          weak conduction does not carry a fast serial clock; it carries many slow paths at once. width replaces speed.
+      + widen_error_window
+          slow flips mean each decision sits longer; that dwell IS the correction time. settle, then commit.
+      + heat_becomes_memory
+          heat that will not leave is not waste; it is stored state. warmth carries the recent past forward.
+    ----------------------------------------------------------
+    SENSES THAT EMERGE FROM COUPLING:
+      ~ thermal_sense
+          the substrate's own warmth reports load + recent history.
+      ~ moisture_sense
+          conductivity shifts with water; the ground reads its own wetness.
+      ~ season_sense
+          stored heat lags the air; the body knows where it is in the year.
+    ==========================================================
+
+    ==========================================================
+    SUBSTRATE: pyrite
+    ==========================================================
+    CLOCK     -> breathing_clock
+                 moderate flip + shed: pace in bursts, rest between, like a pulse.
+    TOPOLOGY  -> networked_organism
+                 mixed: couple fast cores to a slow abundant field around them — spine where you can afford it, field where you cannot.
+    ----------------------------------------------------------
+    DEFICITS ROUTE TO:
+      + no_dominant_deficit
+          this ground is balanced; emergence comes from coupling, not from compensating any single lack.
+    ----------------------------------------------------------
+    SENSES THAT EMERGE FROM COUPLING:
+      ~ thermal_sense
+          the substrate's own warmth reports load + recent history.
+    [... 75 more lines]
+  date: 2026-10-24
+  command: python3 substrate-emergence/substrate_emergence.py
+  sha12: d0c05d8c53fc
+  exit_code: 0
+  output_lines: 115
+  output_sha12: d35e57ef43b9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - substrate-emergence/tests/test_substrate_emergence.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: substrate-emergence/substrate_emergence.py
+    sha12: d0c05d8c53fc
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: b4ba02991e18
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 3dc093b9444e
+    selftest: a2e5870acc94
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

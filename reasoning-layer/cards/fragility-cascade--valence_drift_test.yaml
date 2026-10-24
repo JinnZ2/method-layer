@@ -1,0 +1,106 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--valence_drift_test
+kind: program
+tool: Simulators/fragility-cascade/valence_drift_test.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: valence_drift_test.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/valence_drift_test.sample.txt"
+    - "run capture: RUN, exit 0, 27 lines, sha12 1f353a59c8cb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/valence_drift_test.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    E1  divergent prediction — high-screen community, hot corpus
+        valence ('A', 0.5): L=0.0
+        valence ('A', 1.0): L=0.013
+        valence ('A', 2.0): L=0.096
+        valence ('B', 0.5): L=0.079
+        valence ('B', 1.0): L=0.142
+        valence ('B', 2.0): L=0.236
+        atomic  (β=.08, corpus=.6): L=0.333
+    E2  L_eq vs screening density n (sweep, knee test)
+        form A: knee at n=0.25  curvature=0.0347  L(0)=0.708 L(4)=0.013
+        form B: knee at n=0.25  curvature=0.0472  L(0)=0.708 L(4)=0.142
+    E3  potential vs volume
+        V_b=0, f_m=.8: L=0.169 (ref f_m=0: 0.169)
+        V_b=.05, f_m=0.2: L=0.199
+        V_b=.05, f_m=0.8: L=0.291
+    E4  interaction, both U4 regimes (n 2.0→decline, V_b 0→.05)
+        consumable=False: Δf=0.034 Δn=0.0 Δboth=0.034 sum=0.034
+        consumable=True: Δf=0.034 Δn=0.07 Δboth=0.142 sum=0.104
+
+    CLAIM_TABLE evaluation (refute → edit claim, not sim)
+        C1  REFUTED — update the claim [U1/U3-SENSITIVE]
+        C2  HOLDS
+        C3  HOLDS
+        C4  REFUTED — update the claim [U4-SENSITIVE]
+
+        standing conditions: U2 single-point calibration,
+        U5 screened charge deleted (probably false) — all verdicts conditional.
+  date: 2026-10-24
+  command: python3 fragility-cascade/valence_drift_test.py
+  sha12: 8e40bbbda2e0
+  exit_code: 0
+  output_lines: 27
+  output_sha12: 1f353a59c8cb
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/valence_drift_test.py
+    sha12: 8e40bbbda2e0
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 45b58c55fc92
+    pick_up_when: 32bbe99c703a
+    purpose: 410c150d5248
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 921c5246dc60
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

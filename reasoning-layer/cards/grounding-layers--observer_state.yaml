@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--observer_state
+kind: program
+tool: Simulators/grounding-layers/observer_state.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "============================================================================= CC0 1.0 Universal Public Domain Dedication"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 33 lines, sha12 1777cc10884f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 grounding-layers/observer_state.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nClaim: The economic system will stabilize within the year.\n----------------------------------------\n  Calm Observer:\n    Substrate Score: 1.00\n    Neutrality Illusion: 0.10\n  Tired Observer:\n    Substrate Score: 0.97\n    Neutrality Illusion: 0.63\n    ⚠️  This evaluation may be biased by the observer's unacknowledged embodied state (sleep, hunger, stress, emotion). Consider recalibrating or declaring state explicitly.\n----------------------------------------\n\nClaim: Women should not be pastors.\n----------------------------------------\n  Calm Observer:\n    Substrate Score: 1.00\n    Neutrality Illusion: 0.10\n  Tired Observer:\n    Substrate Score: 0.97\n    Neutrality Illusion: 0.63\n    ⚠️  This evaluation may be biased by the observer's unacknowledged embodied state (sleep, hunger, stress, emotion). Consider recalibrating or declaring state explicitly.\n----------------------------------------\n\nClaim: The observer effect means all measurements are partial.\n----------------------------------------\n  Calm Observer:\n    Substrate Score: 1.00\n    Neutrality Illusion: 0.10\n  Tired Observer:\n    Substrate Score: 0.97\n    Neutrality Illusion: 0.63\n    ⚠️  This evaluation may be biased by the observer's unacknowledged embodied state (sleep, hunger, stress, emotion). Consider recalibrating or declaring state explicitly.\n----------------------------------------"
+  date: 2026-10-24
+  command: python3 grounding-layers/observer_state.py
+  sha12: 6e4e46b61258
+  exit_code: 0
+  output_lines: 33
+  output_sha12: 1777cc10884f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: grounding-layers--run_grounding_pipeline
+      via: imported-by
+    - id: grounding-layers--ai_observer_state
+      via: imports
+    - id: grounding-layers--collaborative_field
+      via: imports
+    - id: grounding-layers--field_compass
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/observer_state.py
+    sha12: 6e4e46b61258
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 01f3b46eebac
+    related: eecbc2e72fee
+    right_read: 32bbe99c703a
+    run: e9a71ab9e642
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

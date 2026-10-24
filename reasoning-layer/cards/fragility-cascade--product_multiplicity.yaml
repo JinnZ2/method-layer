@@ -1,0 +1,90 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--product_multiplicity
+kind: program
+tool: Simulators/fragility-cascade/product_multiplicity.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: product_multiplicity.py ----------------------- Why a barrel of oil is intrinsically hedged and a compute-hour is not.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/product_multiplicity.sample.txt"
+    - "run capture: RUN, exit 0, 12 lines, sha12 918ea34bd79d (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/product_multiplicity.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    branches   oil-like CoV (corr=0)   compute-like CoV (corr=1)
+    ------------------------------------------------------------
+         1           0.394                  0.399
+         2           0.282                  0.398
+         5           0.179                  0.398
+        10           0.126                  0.400
+        20           0.089                  0.397
+
+    Oil-like column falls ~1/sqrt(N): real diversification, an intrinsic
+    hedge baked into the substrate. Compute-like column is flat: adding menu
+    items buys you nothing, because they all die on the same trunk shock.
+    Product multiplicity is only a hedge if the branches can fail apart.
+  date: 2026-10-24
+  command: python3 fragility-cascade/product_multiplicity.py
+  sha12: 064de39459a3
+  exit_code: 0
+  output_lines: 12
+  output_sha12: 918ea34bd79d
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/product_multiplicity.py
+    sha12: 064de39459a3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 183dd6366a97
+    pick_up_when: 32bbe99c703a
+    purpose: c92cd6bc5b1e
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2654f86e9a31
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

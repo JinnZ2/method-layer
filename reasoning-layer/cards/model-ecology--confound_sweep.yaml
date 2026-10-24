@@ -1,0 +1,124 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: model-ecology--confound_sweep
+kind: program
+tool: Simulators/model-ecology/confound_sweep.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: confound_sweep.py ----------------- P1 failed. Same-family models do not correlate more than cross-family models (p = 0.42, significant in 0/12 seeds). But the inflation is real and large (N_eff = 2.48 from 15 models, 6.29x).
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 71 lines, sha12 a371ad19606a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 model-ecology/confound_sweep.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==============================================================================
+    CONFOUND SWEEP — what is actually driving the 6.29x consensus inflation?
+    ==============================================================================
+
+    [C1] THE APPARATUS TEST — same 15 estimators, no signal to agree on
+    generator                N_eff  inflation   phylo p
+    ------------------------------------------------------------------------------
+    structured signal         2.42      6.29x     0.749
+    red noise (AR1)           3.86      3.96x     0.715
+    white noise               5.97      2.53x     0.688
+
+         DECOMPOSITION (inflation is additive across these strata):
+           apparatus floor       2.53x   (white noise: NOTHING to agree about)
+           + autocorrelation    +1.43x  -> 3.96x  (red noise: memory, no events)
+           + real structure     +2.33x  -> 6.29x  (regime shift present)
+
+         C1 is NOT a binary. It is a floor. 40% of the observed
+         inflation is present with NO SIGNAL AT ALL. On pure white noise,
+         15 independent estimators collapse to N_eff = 5.97.
+         ~9 of 15 votes are manufactured by the apparatus
+         before the world contributes anything.
+         A 90-model ensemble reporting consensus has not shown that its
+         agreement exceeds this floor. Almost nobody computes the floor.
+
+    [C2/C3] DECONFOUNDING — break shared inputs, then shared preprocessing
+    condition                            N_eff  inflation   phylo p   hits
+    ------------------------------------------------------------------------------
+    baseline (shared everything)          2.42      6.29x     0.749   0/8
+    + offset jitter (inputs differ)       2.79      5.54x     0.686   0/8
+    + diverse preprocessing               2.95      5.25x     0.720   0/8
+    + both                                3.57      4.49x     0.464   1/8
+         + offset jitter (inputs differ)  delta inflation = -0.76x
+         + diverse preprocessing          delta inflation = -1.04x
+         + both                           delta inflation = -1.80x
+
+    [C4] TIMESCALE AXIS — does the window itself manufacture agreement?
+     window W   N_eff  inflation   phylo p
+    ------------------------------------------------------------------------------
+           10    5.19      2.91x     0.813
+           20    3.31      4.58x     0.744
+    [... 31 more lines]
+  date: 2026-10-24
+  command: python3 model-ecology/confound_sweep.py
+  sha12: 9151d14dfc8b
+  exit_code: 0
+  output_lines: 71
+  output_sha12: a371ad19606a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: model-ecology--core
+      via: imports
+    - id: model-ecology--models
+      via: imports
+    - id: model-ecology--phylogeny
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: model-ecology/confound_sweep.py
+    sha12: 9151d14dfc8b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 5a44297dc97b
+    related: 60e6b8693810
+    right_read: 32bbe99c703a
+    run: ad843401d4ef
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--bin_self_test.md
+kind: method_document
+tool: Simulators/tools/bin_self_test.md
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Bin self-test: what did the category delete?: CC0. A reusable reasoning move. It describes an operation a reader runs on its own reading; it is not a description of any person."
+  basis: first heading + first paragraph of the document
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: null
+  basis: method document; not a program
+output:
+  mark: DRAFT
+  value: null
+  basis: method document; not a program
+run:
+  mark: DRAFT
+  value: null
+  basis: method document; nothing to execute
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 9b18ccac8226
+  reason: "no safe run command identified: method document; nothing to execute"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: tools--coupling_and_accumulation.md
+      via: mentions tools/coupling_and_accumulation.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value: null
+  basis: method document
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: tools/bin_self_test.md
+    sha12: 9b18ccac8226
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-14
+    layer3_row: changed
+    last_commit: 7d0886ea4fa802dfa27dcd8943e8794475f34c19
+    snapshot_bytes: MATCH
+  - repo: method-layer
+    path: tools/bin_self_test.md
+    sha12: 9b18ccac8226
+    commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    last_change: 2026-10-14
+    layer3_row: changed
+    last_commit: e326a160ecd0a297173522d7061621fd33e0e73b
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 4f8ff8b69d6b
+    output: 4f8ff8b69d6b
+    pick_up_when: 32bbe99c703a
+    purpose: ae735e055d4c
+    related: b1d8becdee20
+    right_read: 32bbe99c703a
+    run: 46906abd20c3
+    selftest: d31d6a014458
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

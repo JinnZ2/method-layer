@@ -1,0 +1,94 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: crossdomain-eval--crossdomain_eval--cli
+kind: program
+tool: Simulators/crossdomain-eval/crossdomain_eval/cli.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Command-line interface ``cdeval`` for crossdomain_eval.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "subcommand eval: evaluate equations with substitutions"
+    - "subcommand solve: solve an equation for a symbol"
+    - "subcommand sweep: parameter sweep of an expression"
+    - "subcommand doe: full-factorial design of experiments plan"
+    - "equations: semicolon-separated equations, e.g. \"x+y; x*y\""
+    - "--set (nargs=*, default=[]): variable substitutions, e.g. --set x=2 y=3"
+    - "equation: equation/expression, e.g. \"x**2 - 4\""
+    - "--for: symbol to solve for"
+    - "expression: expression, e.g. \"x**2 + y\""
+    - "--range (action=append, required=True): swept parameter range; repeat for multiple params"
+    - "--plot: optional output image path"
+    - "--minimize (action=store_true): report argmin instead of argmax"
+    - "--factors (required=True): comma-separated factor names"
+    - "--levels (default=2): coded levels per factor"
+    - "--objective: objective description"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: needs arguments the source does not supply an example for
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 19a620bf1e31
+  reason: "no safe run command identified: needs arguments the source does not supply an example for"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: crossdomain-eval--crossdomain_eval--experiments
+      via: imports
+    - id: crossdomain-eval--crossdomain_eval--report
+      via: imports
+    - id: crossdomain-eval--crossdomain_eval--symbolic
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: crossdomain-eval/crossdomain_eval/cli.py
+    sha12: 19a620bf1e31
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: da182175fc4d
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 04bb3789d08e
+    related: 96562c8ac19f
+    right_read: 32bbe99c703a
+    run: 8eeb0416bce5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

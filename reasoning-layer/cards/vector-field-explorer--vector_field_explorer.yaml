@@ -1,0 +1,105 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: vector-field-explorer--vector_field_explorer
+kind: program
+tool: Simulators/vector-field-explorer/vector_field_explorer.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: vector_field_explorer.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: vector-field-explorer/samples/vector_field_explorer.sample.txt"
+    - "run capture: RUN, exit 0, 27 lines, sha12 c73b18454de6 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 vector-field-explorer/vector_field_explorer.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    VECTOR-FIELD EXPLORER — superconductor measurement space
+    channels held as vectors; watching angles & couplings, not scalars
+    ==================================================================
+
+    Sweep 1 — field magnitude 0→1.4 (field tilts phase, phase drags anisotropy)
+      [SIGN_FLIP   ] phase×gap @ 0.63: angle diff flipped +3.01→-2.77 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] phase×field @ 0.63: angle diff flipped +3.01→-2.77 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] anisotropy×gap @ 0.63: angle diff flipped +2.72→-3.09 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] anisotropy×field @ 0.63: angle diff flipped +2.72→-3.09 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] phase×gap @ 0.87: angle diff flipped -0.37→+0.32 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] phase×field @ 0.87: angle diff flipped -0.37→+0.32 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] anisotropy×gap @ 0.92: angle diff flipped -0.13→+0.58 — coherence inversion (seal-band signature).
+      [SIGN_FLIP   ] anisotropy×field @ 0.92: angle diff flipped -0.13→+0.58 — coherence inversion (seal-band signature).
+
+      relational events: 18  → falsifiable claims: 18
+
+    Sweep 2 — strain 0→1.0 (strain suppresses gap; watch gap-anisotropy)
+      events: 0
+
+    FALSIFICATION FRAME:
+      each relational event is a prediction: 'at this parameter, these
+      two channels phase-lock / decouple / flip sign.' Measure it. If the
+      real material does NOT show the predicted angle behavior, the
+      COUPLING constant is wrong — update the coupling, not the sim.
+      The SOFT couplings are placeholders; swap measured values in and
+      the same engine yields real, testable predictions.
+  date: 2026-10-24
+  command: python3 vector-field-explorer/vector_field_explorer.py
+  sha12: 494567a5f4e6
+  exit_code: 0
+  output_lines: 27
+  output_sha12: c73b18454de6
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: vector-field-explorer/vector_field_explorer.py
+    sha12: 494567a5f4e6
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 236f31ccfd69
+    pick_up_when: 32bbe99c703a
+    purpose: 0ef6acc31281
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 0cf78b79b42f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

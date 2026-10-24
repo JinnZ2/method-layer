@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--charter_signature_audit
+kind: program
+tool: Simulators/uninstrumented/charter_signature_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: charter_signature_audit.py -- CC0, stdlib only, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: uninstrumented/samples/charter_signature_audit.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 01e81c2e1fc7 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 uninstrumented/charter_signature_audit.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "charter_signature_audit selftest: 24/24 checks pass"
+  date: 2026-10-24
+  command: python3 uninstrumented/charter_signature_audit.py --selftest
+  sha12: a6bf251d7be4
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 01e81c2e1fc7
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--corpus_as_charter_audit
+      via: shares uninstrumented/CHARTER_SIGNATURE.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/charter_signature_audit.py
+    sha12: a6bf251d7be4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 979984386d49
+    pick_up_when: 32bbe99c703a
+    purpose: d92aa7248aa1
+    related: c6a5ed310da8
+    right_read: 32bbe99c703a
+    run: 0a0fa668d33a
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

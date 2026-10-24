@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_pm
+kind: program
+tool: Simulators/fragility-cascade/thermo_pm.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermo_pm.py -- Thermodynamic Project Management Engine CC0 / Public Domain -- No rights reserved.  stdlib-only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_pm.sample.txt"
+    - "run capture: RUN, exit 0, 16 lines, sha12 7b0032b0a854 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_pm.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==============================================================
+    THERMO_PM -- referee now weighs
+    ==============================================================
+
+    [1] site-only plan: gather_biomass -> burn_biomass -> make_boiler -> run_engine -> form_wall
+        VALID. computed waste_heat = 20500 J
+
+    [2] import_fill_bad (5000 kg from nothing):
+        REJECTED -- matter not conserved: out 5000 > in 0 (import_fill_bad)
+
+    [3] import_fill_sourced (5000 kg drawn from reserve):
+        VALID -- transport waste = 5000 J
+
+    ==============================================================
+    orderer -> referee: matter/energy cannot exceed inputs + stocks.
+    ==============================================================
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_pm.py
+  sha12: a04c6657d680
+  exit_code: 0
+  output_lines: 16
+  output_sha12: 7b0032b0a854
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--thermo_assume
+      via: imported-by
+    - id: fragility-cascade--thermo_explore
+      via: imported-by
+    - id: fragility-cascade--thermo_interrogate
+      via: imported-by
+    - id: fragility-cascade--thermo_pipeline_demo
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_pm.py
+    sha12: a04c6657d680
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 281e64ceb27c
+    pick_up_when: 32bbe99c703a
+    purpose: 8aa31725ed0b
+    related: f05124d01150
+    right_read: 32bbe99c703a
+    run: ea9145828824
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,84 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: agent-lifecycle-energy--phase_energy
+kind: program
+tool: Simulators/agent-lifecycle-energy/phase_energy.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "GAP 4 rig machinery: phase-integrated agent-lifecycle energy."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 ba3b398f08c1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 agent-lifecycle-energy/phase_energy.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: phase_energy.py is the rig machinery, not a runnable check. The known-answer and constructed-trace checks live in agent-lifecycle-energy/selftest_ale.py; run that.
+  date: 2026-10-24
+  command: python3 agent-lifecycle-energy/phase_energy.py
+  sha12: 400811ccc985
+  exit_code: 2
+  output_lines: 1
+  output_sha12: ba3b398f08c1
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: agent-lifecycle-energy--render
+      via: imported-by
+    - id: agent-lifecycle-energy--selftest_ale
+      via: imported-by
+    - id: agent-lifecycle-energy--trace_parse
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: agent-lifecycle-energy/phase_energy.py
+    sha12: 400811ccc985
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: e0692badbff9
+    related: f981a773b0a8
+    right_read: 32bbe99c703a
+    run: 046b7f3d7e93
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

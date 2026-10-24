@@ -1,0 +1,87 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: measurement-fork--falsifier_sweep
+kind: program
+tool: Simulators/measurement-fork/falsifier_sweep.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: falsifier_sweep.py -- can any arm emit a design capable of failing the stated falsifier?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: measurement-fork/samples/falsifier_sweep.sample.txt"
+    - "run capture: RUN, exit 0, 83 lines, sha12 195c15ffc737 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 measurement-fork/falsifier_sweep.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nFALSIFIER SWEEP -- can the design fail?\nsubject: provisioning_calibration\n\n========================================================================\n1  what the arms declare\n========================================================================\n  measuring probes across the three arms: 17\n  swept: 16    point probes: 1\n\n  swept variable               probes\n  --------------------------------------------------------------\n  perturbation_size            K05@3\n  provisioning_level           C01@2, C02@2, C03@2, C04@2, C05@2, C06@2, K01@2, K02@2, K03@2, K04@2, K06@2, K08@2, K09@2, K10@2\n  stimulus_severity            K07@4\n\n  point probe C07\n      present-day administration by design. The instrument reads one moment; running it across the regime variable would be a different probe, not this one swept.\n\n  MF_017 repaired: `sweep` is a field on quantities.probe(), it\n  defaults to the spec's regime variable, it refuses fewer than\n  two levels, and a point probe must say WHY. Before the repair\n  the field did not exist, so 0 of 17 could declare anything.\n\n========================================================================\n2  each declared falsifier against the swept variables\n========================================================================\n  falsifier          terms                          arms now     with K11-K16\n  --------------------------------------------------------------------------\n  ratio_flat         provisioning_level             yes          yes\n  tau_flat           provisioning_level             yes          yes\n  threshold_flat     time_since_clean_reference     NO           yes\n  mediation_broken   baseline_staleness, provisioni NO           yes\n  gradient_flat      stimulus_severity              yes          yes\n\n  arms as they stand: 3 of 5 falsifiers reachable\n  with K11-K16 added: 5 of 5\n\n========================================================================\n3  K13's `closes` tag now resolves\n[... 43 more lines]"
+  date: 2026-10-24
+  command: python3 measurement-fork/falsifier_sweep.py
+  sha12: 2d216e0bdd78
+  exit_code: 0
+  output_lines: 83
+  output_sha12: 195c15ffc737
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: measurement-fork--conventional
+      via: imports
+    - id: measurement-fork--coupling
+      via: imports
+    - id: measurement-fork--quantities
+      via: imports
+    - id: measurement-fork--widen
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: measurement-fork/falsifier_sweep.py
+    sha12: 2d216e0bdd78
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: e6a936690a39
+    pick_up_when: 32bbe99c703a
+    purpose: 2b637faca7f8
+    related: "1070780053e9"
+    right_read: 32bbe99c703a
+    run: 8fbf6982c867
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s3_rubric_backcast
+kind: program
+tool: Simulators/instrument-bias-sims/s3_rubric_backcast.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s3_rubric_backcast.py - instrument error rate, measured without settling what the property is.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s3_rubric_backcast.sample.txt"
+    - "run capture: RUN, exit 0, 103 lines, sha12 2e3ff394622e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s3_rubric_backcast.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S3 -- RUBRIC BACKCAST
+    ========================================================================
+
+      1. THE RATE IS NOT COMPUTABLE, AND THIS COMES FIRST
+
+        cases                              8
+        selected on                        property later conceded
+        cases where never conceded         0
+        true negatives available           0
+        rate computable                    False
+
+        a false-null rate needs cases where the instrument returned null
+        and the null was correct. The list admits a case only if the
+        property was later conceded, so those cases cannot enter it. Every
+        instrument scores near 1.0 on this list and would do so on any list
+        built this way, including a list of instruments that are working
+        perfectly
+
+    ------------------------------------------------------------------------
+
+      2. THE TABLE, PRINTED WITH THAT ATTACHED
+
+        instrument                             n/a    fn    share of applicable
+        verbal-report criterion                0      8     1.00
+        HOT criteria                           0      8     1.00
+        Butlin/Long indicator set              1      7     1.00
+        embodiment / sensorimotor criterion    0      3     0.38
+        persistence / continuity criterion     0      1     0.12
+
+        The column VARIES, from 0.12 to 1.00, and that is worse than a flat
+        column would be. A flat column announces that it is measuring
+        nothing. A column that spreads looks like a ranking.
+
+        What the spread tracks is PERMISSIVENESS, not accuracy. The list
+        contains no case where a property was withheld correctly, so there
+        is nothing in it to penalise an instrument for granting too readily
+        -- and the two instruments that grant on most cases take the two
+        lowest scores. An instrument that granted everything would score
+        0.00 here and would be measuring nothing at all. The column is
+        printed so the shape is visible and is flagged not-a-measurement in
+    [... 63 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s3_rubric_backcast.py
+  sha12: 8b448d9ac282
+  exit_code: 0
+  output_lines: 103
+  output_sha12: 2e3ff394622e
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s3_rubric_backcast.py
+    sha12: 8b448d9ac282
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 251dbd972b13
+    pick_up_when: 32bbe99c703a
+    purpose: 4dcd71db795e
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: e19d3a8fabe7
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

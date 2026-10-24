@@ -1,0 +1,139 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: emergence-stability-simulator--run_monte_carlo
+kind: program
+tool: Simulators/emergence-stability-simulator/run_monte_carlo.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_monte_carlo.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--runs (default=1000): Monte Carlo runs (default 1000)"
+    - "--timesteps (default=100): Timesteps per run (default 100)"
+    - "--sensitivity-runs (default=15): Runs per parameter value in sensitivity sweep"
+    - "--mode-runs (default=200): Runs per scenario in mode comparison (EMRG_007/008)"
+    - "--attractor-runs (default=80): Runs per scenario in attractor quality test (EMRG_010)"
+    - "--skip-sensitivity (action=store_true): Skip parameter sensitivity analysis"
+    - "--skip-mode-comparison (action=store_true): Skip mode comparison (EMRG_007/008 stays proposed)"
+    - "--skip-attractor-quality (action=store_true): Skip attractor quality test (EMRG_010 stays proposed)"
+    - "--balance-runs-per-cell (default=3): Runs per cell in balance analysis (EMRG_011/012/013/015)"
+    - "--skip-balance (action=store_true): Skip balance threshold analysis"
+    - "--skip-report (action=store_true): Skip ASCII analysis report generation"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 108 lines, sha12 46b0c9e84322 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 emergence-stability-simulator/run_monte_carlo.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ============================================================
+    EMERGENCE-STABILITY-SIMULATOR — PIPELINE
+    ============================================================
+    Running 1000 Monte Carlo simulations...
+      100/1000 complete
+      200/1000 complete
+      300/1000 complete
+      400/1000 complete
+      500/1000 complete
+      600/1000 complete
+      700/1000 complete
+      800/1000 complete
+      900/1000 complete
+      1000/1000 complete
+
+    Results saved to results/monte_carlo_results.json
+
+    AGGREGATE RESULTS:
+      Stable wins:     96.9%
+      Parasitic wins:  1.2%
+      Mixed wins:      1.9%
+      Bifurcation rate: 0.0%
+
+    AVG FINAL DRIFT:
+      stable: 0.013
+      parasitic: 0.187
+      mixed: 0.090
+
+    AVG ENERGY SPENT:
+      stable: 1.253
+      parasitic: 4.008
+      mixed: 1.625
+
+    Running mode comparison (200 runs per scenario)...
+      substrate_only: stable_drift=0.011  entropy=0.000  cascade=0.037
+      substrate_plus_scale_builder: stable_drift=0.011  entropy=0.001  cascade=0.043
+      substrate_plus_anchored_physics_control: stable_drift=0.011  entropy=0.001  cascade=0.043
+      substrate_plus_inverted: stable_drift=417094.562  entropy=8099677.253  cascade=925711.175
+      substrate_plus_inverted_no_emission_control: stable_drift=154195.719  entropy=7427258.992  cascade=855749.882
+      substrate_plus_parasitic: stable_drift=0.015  entropy=0.190  cascade=0.501
+    [... 68 more lines]
+  date: 2026-10-24
+  command: python3 emergence-stability-simulator/run_monte_carlo.py
+  sha12: e0873924a237
+  exit_code: 0
+  output_lines: 108
+  output_sha12: 46b0c9e84322
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: emergence-stability-simulator--analysis
+      via: imports
+    - id: emergence-stability-simulator--balance_threshold
+      via: imports
+    - id: emergence-stability-simulator--sensitivity_analysis
+      via: imports
+    - id: emergence-stability-simulator--sensitivity_viz
+      via: imports
+    - id: emergence-stability-simulator--sim_engine
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: emergence-stability-simulator/run_monte_carlo.py
+    sha12: e0873924a237
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 5bbf94c32034
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 31ab56c489fe
+    related: 2ce1d761fcf7
+    right_read: 32bbe99c703a
+    run: d4a99f49ca41
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

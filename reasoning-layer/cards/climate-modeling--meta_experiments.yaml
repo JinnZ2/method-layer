@@ -1,0 +1,108 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: climate-modeling--meta_experiments
+kind: program
+tool: Simulators/climate-modeling/meta_experiments.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "AI-patching loop over audits. Two entry points:"
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--audit (default=CascadeSpeedAudit): name of the audit to loop on (default: CascadeSpeedAudit)"
+    - "--max-iter (default=3): max patch attempts before giving up (default: 3)"
+    - "--openai (action=store_true): use LLMPatcher (falls back to rules if openai unavailable)"
+    - "--history (default=samples/meta_history.json): where to write the iteration history"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 22 lines, sha12 2a1631e11f7c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 climate-modeling/meta_experiments.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/meta_experiments.py", line 228, in <module>
+        _cli()
+        ~~~~^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/meta_experiments.py", line 223, in _cli
+        run_meta_experiment(audit_name=args.audit, max_iterations=args.max_iter,
+        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            use_openai=args.openai, history_path=args.history)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/meta_experiments.py", line 65, in run_meta_experiment
+        from run_audits import AUDIT_REGISTRY, run_single_audit
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/run_audits.py", line 9, in <module>
+        from audits.audit_registry import BUILT_AUDITS, FRONTIER_AUDITS, ALL_AUDITS
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/audits/audit_registry.py", line 3, in <module>
+        from .phase_change import PhaseChangeAudit
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/audits/phase_change.py", line 5, in <module>
+        from models.grass import GrassCarbonBalance
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/models/grass.py", line 4, in <module>
+        from .base import BaseModel
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-zfkkxmdm/climate-modeling/models/base.py", line 4, in <module>
+        from scipy.integrate import solve_ivp
+    ModuleNotFoundError: No module named 'scipy'
+  date: 2026-10-24
+  command: python3 climate-modeling/meta_experiments.py
+  sha12: ad9888eef303
+  exit_code: 1
+  output_lines: 22
+  output_sha12: 2a1631e11f7c
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: climate-modeling--ai_interface
+      via: imports
+    - id: climate-modeling--run_audits
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: climate-modeling/meta_experiments.py
+    sha12: ad9888eef303
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 46339049a466
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ebd84ff02598
+    related: bffc91cedc0a
+    right_read: 32bbe99c703a
+    run: e328429db9c1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

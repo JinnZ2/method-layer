@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--pain_as_sensor
+kind: program
+tool: Simulators/relational/pain_as_sensor.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Pain as Somatic Sensor: The Destruction Threshold in the Triadic Model ======================================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 131 lines, sha12 4b359d9719cb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/pain_as_sensor.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    PAIN AS SOMATIC SENSOR: THE DESTRUCTION THRESHOLD
+    ================================================================================
+
+    Pain is not an emotion. Pain is a sensor.
+
+    In the triadic model:
+      INTERNAL MODEL predicts: 'this is safe'
+      BODY STATE reports: 'damage is occurring'
+      EXTERNAL WORLD provides: 'the stimulus continues'
+
+    When all three align: contentment, curiosity, stable learning.
+    When body reports destruction WHILE internal predicts safety: PAIN.
+
+    Pain says: 'Your correlation is wrong, and the cost is real.'
+    Pain says: 'Your internal model is falsified by your own tissue.'
+    Pain says: 'Stop. Revise. Or cease to exist.'
+
+    --------------------------------------------------------------------------------
+
+    SCENARIO 0: Normal operation (no pain)
+      Internal: predicts 'warmth_safe'
+      Body: temp=37.0°C, stress=0.0, state=stable
+      External: temp=35.0°C, contact=warm_surface
+      [No pain. Body state is within tolerance.]
+      Active pains: 0
+      Total pain intensity: 0.00
+
+    SCENARIO 1: Thermal stress (pain begins)
+      Internal: predicts 'warmth_safe'
+      Body: temp=42.5°C, stress=0.0, state=overheating
+      External: temp=60.0°C, contact=hot_surface
+      >>> PAIN DETECTED <<<
+          Type: thermal
+          Intensity: 0.55
+          Location: thermal_regulation_system
+          Model falsified: True
+          Destructive: False
+          Requires stop: False
+          MEANING: The internal model 'warmth_safe'
+    [... 91 more lines]
+  date: 2026-10-24
+  command: python3 relational/pain_as_sensor.py
+  sha12: c569445feee1
+  exit_code: 0
+  output_lines: 131
+  output_sha12: 4b359d9719cb
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/pain_as_sensor.py
+    sha12: c569445feee1
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 7881bad1323c
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f0fe2ce21ea3
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

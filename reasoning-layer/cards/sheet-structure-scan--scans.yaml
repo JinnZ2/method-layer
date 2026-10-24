@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--scans
+kind: program
+tool: Simulators/sheet-structure-scan/scans.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: scans -- scan two (companion absence) and scan three (header collision), ranked by dependent count times downstream depth.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 37 lines, sha12 22ad4d89d507 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/scans.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    scans selftest
+      label row found                                      PASS got=1 want=1
+      label col found                                      PASS got=1 want=1
+      well-companioned cell reports nothing absent         PASS got=[] want=[]
+      lone cell reports all four absent                    PASS got=['unit', 'date', 'sample_size', 'variance_sibling'] want=['unit', 'date', 'sample_size', 'variance_sibling']
+      derived cell in a bare block reports all four absent PASS got=['unit', 'date', 'sample_size', 'variance_sibling'] want=['unit', 'date', 'sample_size', 'variance_sibling']
+      nothing not_searched when patterns are loaded        PASS got=[] want=[]
+      empty pattern list is NOT_SEARCHED not ABSENT        PASS got=([], ['unit', 'date', 'sample_size', 'variance_sibling']) want=([], ['unit', 'date', 'sample_size', 'variance_sibling'])
+      row band clipping reported                           PASS got=True want=True
+      a cell outside any label block says so               PASS got=True want=True
+      radius 2 does not reach the note                     PASS got=True want=True
+      radius 3 does                                        PASS got=False want=False
+      rank of a propagating input                          PASS got=3 want=3
+      rank of a terminal                                   PASS got=0 want=0
+      'total' collides across three sheets                 PASS got=True want=True
+      'total' has three occurrences                        PASS got=3 want=3
+      constructions differ across them                     PASS got=['2c', '2d', '2d'] want=['2c', '2d', '2d']
+      depth sets differ across them                        PASS got=3 want=3
+      'item' repeats and is NOT listed                     PASS got=False want=False
+      differing table heights list nothing                 PASS got=0 want=0
+      the shared headers are counted as agreeing, not dropped PASS got=True want=True
+      the printed counts differ and the kind sets do not   PASS got=('12c', '9c', True) want=('12c', '9c', True)
+      a mixed column still separates from a pure one       PASS got=False want=False
+      a same-construction group is counted, not dropped    PASS got=True want=True
+      row-axis collision found                             PASS got=True want=True
+      unit patterns, 10 hand-set cases                     PASS got=[] want=[]
+      --all: rows, absences, labels, strays, in-table      PASS got=(38, 23, 13, 2, 8) want=(38, 23, 13, 2, 8)
+      a flag list of five yields four, all in-table        PASS got=4 want=4
+      parenthetical kept distinct                          PASS got=False want=False
+      case and spacing folded                              PASS got=True want=True
+      scan two output carries no screened word             PASS got=True want=True
+      scan three output carries no screened word           PASS got=True want=True
+      the screen would fire if it drifted                  PASS got=False want=False
+      missing flag file raises                             PASS got=True want=True
+      flags parsed                                         PASS got=[('Inputs', 'B9'), ('Model', 'D2')] want=[('Inputs', 'B9'), ('Model', 'D2')]
+      unqualified flag raises                              PASS got=True want=True
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/scans.py --selftest
+  sha12: 67ec3a639f24
+  exit_code: 0
+  output_lines: 37
+  output_sha12: 22ad4d89d507
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: sheet-structure-scan--fixture
+      via: imports
+    - id: sheet-structure-scan--no_severity
+      via: imports
+    - id: sheet-structure-scan--sheetmodel
+      via: imports
+    - id: sheet-structure-scan--selection
+      via: shares sheet-structure-scan/patterns.json
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/scans.py
+    sha12: 67ec3a639f24
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 155157bdcab1
+    related: c313cb9a4b71
+    right_read: 32bbe99c703a
+    run: a81169471122
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

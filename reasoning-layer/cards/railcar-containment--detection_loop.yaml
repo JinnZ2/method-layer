@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: railcar-containment--detection_loop
+kind: program
+tool: Simulators/railcar-containment/detection_loop.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: detection_loop.py - does off-gas detection change the outcome, given real latencies?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--trials (default=20000)"
+    - "--arm (choices=['sensor', 'visual', 'both'], default=both)"
+    - "--seed (default=1)"
+    - "--json (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 33 lines, sha12 bc2f71729019 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 railcar-containment/detection_loop.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n=== STATION EGRESS ===   P(occupants clear), 20000 trials\ndetection       cabin gas     P(clear)  median margin     p05 margin\n--------------------------------------------------------------------\nsensor               100%       0.719            62s          -115s\nsensor                50%       0.996           385s           148s\nsensor                20%       1.000          1353s           874s\nvisual               100%       0.271           -72s          -272s\nvisual                50%       0.949           249s            -2s\nvisual                20%       1.000          1214s           730s\n  detection alone:   0.271 -> 0.719\n  containment alone: 0.271 -> 1.000\n  both:              0.271 -> 1.000\n\n=== TUNNEL WALKOUT ===   P(occupants clear), 20000 trials\ndetection       cabin gas     P(clear)  median margin     p05 margin\n--------------------------------------------------------------------\nsensor               100%       0.008          -601s         -1008s\nsensor                50%       0.148          -279s          -715s\nsensor                20%       0.970           689s            87s\nvisual               100%       0.002          -733s         -1148s\nvisual                50%       0.062          -411s          -854s\nvisual                20%       0.935           558s           -51s\n  detection alone:   0.002 -> 0.008\n  containment alone: 0.002 -> 0.935\n  both:              0.002 -> 0.970\n\nREADING\n  visual detection is measured from FLAMING because that is when\n  cabin smoke appears. devices smoked only seconds before igniting,\n  so the visual arm inherits that lateness by construction.\n  below ~20% cabin gas the model saturates at P=1; that is a model\n  limit, not a safety claim. do not read it as a design margin."
+  date: 2026-10-24
+  command: python3 railcar-containment/detection_loop.py
+  sha12: d76de94b3c84
+  exit_code: 0
+  output_lines: 33
+  output_sha12: bc2f71729019
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: railcar-containment--audit
+      via: imported-by
+    - id: railcar-containment--selftest_rail
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: railcar-containment/detection_loop.py
+    sha12: d76de94b3c84
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: f7ffc3429864
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 48e28ae5793c
+    related: 2c08a5307024
+    right_read: 32bbe99c703a
+    run: 23201e139ba2
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

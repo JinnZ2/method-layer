@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--run_manifest
+kind: program
+tool: Simulators/tools/run_manifest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_manifest.py -- enumerate every entry point in this tree. Execute nothing.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 66 lines, sha12 dbf0eb689f0a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 tools/run_manifest.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    -- classifier: fires on each shape, and does not fire on the others
+    ok    redirect_ok.py       -> REDIRECT (got REDIRECT)
+    ok    redirect_ok.py       contract_ok is True
+    ok    redirect_exit2.py    -> REDIRECT (got REDIRECT)
+    ok    redirect_exit2.py    contract_ok is True
+    ok    redirect_bad.py      -> REDIRECT (got REDIRECT)
+    ok    redirect_bad.py      contract_ok is False
+    ok    has_selftest.py      -> SELFTEST (got SELFTEST)
+    ok    test_thing.py        -> TEST_FILE (got TEST_FILE)
+    ok    plain_cli.py         -> CLI (got CLI)
+    ok    plain_lib.py         -> LIBRARY (got LIBRARY)
+    ok    broken.py            -> UNPARSEABLE (got UNPARSEABLE)
+    ok    elif_else_exit2.py   -> SELFTEST (got SELFTEST)
+    ok    argparse_selftest.py -> SELFTEST (got SELFTEST)
+    ok    argparse_redirect.py -> REDIRECT (got REDIRECT)
+    ok    argparse_redirect.py contract_ok is True
+    ok    unrelated_selftest_attr.py -> CLI (got CLI)
+    ok    mixed.py             -> UNCLASSIFIED (got UNCLASSIFIED)
+
+    -- the null: every declared class is reached by some fixture
+    ok    class REDIRECT reached by a fixture
+    ok    class SELFTEST reached by a fixture
+    ok    class TEST_FILE reached by a fixture
+    ok    class CLI reached by a fixture
+    ok    class LIBRARY reached by a fixture
+    ok    class UNPARSEABLE reached by a fixture
+    ok    class UNCLASSIFIED reached by a fixture
+
+    -- the planted violation is caught, and its siblings are not
+    ok    exactly one fixture violates (got 1)
+    ok    the violator is redirect_bad.py
+
+    -- redirect target extraction, and its stated limit
+    ok    target extracted from the message
+    ok    a redirect naming no .py stays REDIRECT with target None, not UNCLASSIFIED
+    ok    a message naming only the file's own basename yields target None
+    ok    a target in a subdirectory keeps its path; taking the basename resolved it beside the module and reported a live file as missing
+    ok    the own-name skip compares basenames, so a path form of the file's own name is still skipped
+
+    -- rule (c): archived redirects resolve against their own archive
+    [... 26 more lines]
+  date: 2026-10-24
+  command: python3 tools/run_manifest.py --selftest
+  sha12: 9da97b7479d9
+  exit_code: 0
+  output_lines: 66
+  output_sha12: dbf0eb689f0a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: tools--known_red_check
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - tests/test_run_manifest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: tools/run_manifest.py
+    sha12: 9da97b7479d9
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-07
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 9c928f727b9f
+    related: c9b0eec0eef8
+    right_read: 32bbe99c703a
+    run: 0ee84fead010
+    selftest: 5dea29660b16
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

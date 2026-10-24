@@ -1,0 +1,93 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: falsifier-audit--queue
+kind: program
+tool: Simulators/falsifier-audit/queue.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "queue.py -- the research queue. Every entry is a QUESTION with status OPEN (the only machine-set value). No rank, no score. Ids are stable: re-running on an unchanged tree emits the same ids, so entries can be closed by hand in a separate file and survive the next run. A coverage line reports falsifiers found / analysed and files skipped and why, so an unscanned file does not read as a clean one. Stdlib only."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv=None)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: falsifier-audit/samples/queue_head.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 283b302017eb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 falsifier-audit/queue.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: queue has no selftest; run selftest_fa.py
+  date: 2026-10-24
+  command: python3 falsifier-audit/queue.py --selftest
+  sha12: ac4c7dcb8ad0
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 283b302017eb
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: falsifier-audit--run_all
+      via: imported-by
+    - id: falsifier-audit--selftest_fa
+      via: imported-by
+    - id: falsifier-audit--checks
+      via: imports
+    - id: falsifier-audit--extract
+      via: imports
+    - id: falsifier-audit--extract
+      via: shares falsifier-audit/QUEUE.md
+    - id: falsifier-audit--selftest_fa
+      via: shares falsifier-audit/QUEUE.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: falsifier-audit/queue.py
+    sha12: ac4c7dcb8ad0
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 4b5654e67935
+    output: 92a3d82e2e67
+    pick_up_when: 32bbe99c703a
+    purpose: b1dd08fa67b6
+    related: 5ed1ccddec32
+    right_read: 32bbe99c703a
+    run: d297f7f0903b
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

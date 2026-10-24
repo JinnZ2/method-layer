@@ -1,0 +1,133 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: quiet-failure--run_all
+kind: program
+tool: Simulators/quiet-failure/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: WO-2 -- every part, declaration first.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv=None)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: quiet-failure/samples/run_all.sample.txt"
+    - "run capture: RUN, exit 0, 74 lines, sha12 3ec1d379df32 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 quiet-failure/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CONTAMINATION DECLARATION (read before any number below)
+      authorship   every file in this folder is model-authored, in one session, by the same
+                   hand that wrote the checks and the fixtures the checks are pinned to
+      position     the order places agentic AI infrastructure "at the pre-Tacoma stage:
+                   designed to calculated load, no accumulated margin"; the author is an
+                   instance of that class. The sentence is carried, not scored -- and the
+                   interest runs toward accepting it, since a claim that one's own class
+                   lacks margin is the humble reading, so it is left unresolved here
+      coding       the four codings of the order's cases are THIS SESSION'S READING of the
+                   order's own sentences, each code carrying the span it rests on; every one
+                   declares saw_decomposition True and is REFUSED by step 2's gate
+      parties      no claim is made here that any organisation neglected a duty; authored
+                   files carry the order's case (event) names as lookup keys and no company
+                   or site name -- those are parsed out of WORK_ORDER.md at call time
+      records      no accident corpus, journal or archive was read: the hosts answered 403
+                   to CONNECT, measured and timestamped in decomposition.EGRESS; every
+                   corpus, null record and regulator record is CONSTRUCTED and says so
+      evidence     the order's "(fetched, verified)" is the order's verification; here every
+                   finding and number is CARRIED_NOT_VERIFIED, extracted as written
+      rate         no base rate is computed anywhere and base_rate() refuses one: an
+                   accident corpus is selected on failure and carries no denominator over
+                   systems, which is the order's own scope limit
+
+    ========================================================================
+    decomposition -- step 1 as a coder; the order's cases coded from its own text
+      egress (measured 2026-09-20T02:58Z): www.ntsb.gov:443 CONNECT 403; www.csb.gov:443 CONNECT 403; www.gov.uk:443 CONNECT 403; onlinelibrary.wiley.com:443 CONNECT 403; github.com:443 connects (control)
+      no accident corpus was read; the codings below are THIS SESSION'S READING of the order's sentences
+      parts (parsed from the order):
+        1. The signal exists and is reported through proper channels.
+        2. It is distributed across multiple holders, each of whom is locally correct.
+        3. No one is assigned the JOIN. The aggregation step is nobody's job by construction.
+        4. The failure is then called "sudden" — which describes the observer, not the system.
+      order's cases, coded from the order's text (span = the phrase the code rests on):
+        SILVER BRIDGE                            -> REPORTED_NOWHERE       holders UNDECLARED  lead UNDECLARED  described UNDECLARED
+            signal_present   PRESENT     <- 'Fracture initiated inside a joint'
+            signal_reported  ABSENT      <- 'not inspectable without disassembly'
+            event_duration               <- 'in under a minute'
+        COLUMBIA                                 -> SIGNALLED_UNJOINED     holders UNDECLARED  lead UNDECLARED  described UNDECLARED
+            signal_present   PRESENT     <- 'Foam strike known during flight'
+            signal_reported  PRESENT     <- 'Imaging requests made and denied through proper channels'
+    [... 34 more lines]
+  date: 2026-10-24
+  command: python3 quiet-failure/run_all.py
+  sha12: 2f46ebced07f
+  exit_code: 0
+  output_lines: 74
+  output_sha12: 3ec1d379df32
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: quiet-failure--selftest
+      via: imported-by
+    - id: quiet-failure--blind_coding
+      via: imports
+    - id: quiet-failure--decomposition
+      via: imports
+    - id: quiet-failure--evidence
+      via: imports
+    - id: quiet-failure--ownability
+      via: imports
+    - id: quiet-failure--selftest
+      via: sibling-selftest
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - quiet-failure/selftest.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: quiet-failure/run_all.py
+    sha12: 2f46ebced07f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-20
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 92ea4bab8e07
+    output: 3e53a994d9a1
+    pick_up_when: 32bbe99c703a
+    purpose: 9b24fc205853
+    related: 899907d28186
+    right_read: 32bbe99c703a
+    run: bc5ffee22d75
+    selftest: 9f57d7b31d2f
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

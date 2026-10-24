@@ -1,0 +1,90 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fourd-municipal-engine--fourd_municipal_engine--cli
+kind: program
+tool: Simulators/fourd-municipal-engine/fourd_municipal_engine/cli.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Command-line interface for the 4D Municipal Intelligence Engine.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "text (nargs=?): Text to analyze (optional if --file is given)."
+    - "--file: Read the text to analyze from a file."
+    - "--genre (default=general): Genre baseline for the dynamic lens (default: general)."
+    - "--deep-analysis (action=store_true): Run the Municipal Code Translator and Advanced Analysis Pipeline."
+    - "--citation (default=): Section citation to attach to the translation result (e.g. \"Section 12.4\")."
+    - "--json (action=store_true): Emit machine-readable JSON instead of a human-readable report."
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 4 lines, sha12 19f32a7a62e9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fourd-municipal-engine/fourd_municipal_engine/cli.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-8fdc5e9d/fourd-municipal-engine/fourd_municipal_engine/cli.py", line 13, in <module>
+        from fourd_municipal_engine.analysis.pipeline import AdvancedAnalysisPipeline
+    ModuleNotFoundError: No module named 'fourd_municipal_engine'
+  date: 2026-10-24
+  command: python3 fourd-municipal-engine/fourd_municipal_engine/cli.py
+  sha12: 02951b5bf960
+  exit_code: 1
+  output_lines: 4
+  output_sha12: 19f32a7a62e9
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--cli
+      via: same-bytes
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: fourd-municipal-engine/fourd_municipal_engine/cli.py
+    sha12: 02951b5bf960
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 22364b341863
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f02ad28d0092
+    related: e49dfc24174a
+    right_read: 32bbe99c703a
+    run: a409d12ab261
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

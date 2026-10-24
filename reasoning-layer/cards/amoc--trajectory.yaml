@@ -1,0 +1,104 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: amoc--trajectory
+kind: program
+tool: Simulators/AMOC/trajectory.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: trajectory.py -- the anti-freeze core. Generates TRAJECTORY ENSEMBLES across a forcing range and an analog set. Never caches a verdict, never returns "your region will be X." Returns the spread, where it is sensitive, and what fails first -- so the keeper reads the response surface and decides.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 15 lines, sha12 d6c5b8550d45 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 AMOC/trajectory.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    spinodal F (stommel/kramers): 0.2227848101265823 0.3869346733668342
+    cliffs: [0.055, 0.109, 0.164, 0.218]
+    model disagreement at F: [0.164, 0.218, 0.273, 0.327, 0.382]
+      F=0.000 ~0.15Sv sev=0.00 pre_transition          /pre_transition       agree=True T=(-0.0, -0.0)
+      F=0.054 ~0.238Sv sev=0.24 pre_transition          /pre_transition       agree=True T=(-0.95, -0.24)
+      F=0.109 ~0.326Sv sev=0.49 pre_transition          /pre_transition       agree=True T=(-1.91, -0.49)
+      F=0.164 ~0.414Sv sev=0.73 in_transition_band      /pre_transition       agree=False T=(-2.86, -0.73)
+      F=0.218 ~0.502Sv sev=0.98 in_transition_band      /pre_transition       agree=False T=(-3.82, -0.98)
+      F=0.273 ~0.59Sv sev=1.00 past_spinodal_collapse  /in_transition_band   agree=False T=(-3.9, -1.0)
+      F=0.327 ~0.678Sv sev=1.00 past_spinodal_collapse  /in_transition_band   agree=False T=(-3.9, -1.0)
+      F=0.382 ~0.766Sv sev=1.00 past_spinodal_collapse  /in_transition_band   agree=False T=(-3.9, -1.0)
+      F=0.436 ~0.854Sv sev=1.00 past_spinodal_collapse  /past_spinodal_collapse agree=True T=(-3.9, -1.0)
+      F=0.491 ~0.942Sv sev=1.00 past_spinodal_collapse  /past_spinodal_collapse agree=True T=(-3.9, -1.0)
+      F=0.545 ~1.03Sv sev=1.00 past_spinodal_collapse  /past_spinodal_collapse agree=True T=(-3.9, -1.0)
+      F=0.600 ~1.118Sv sev=1.00 past_spinodal_collapse  /past_spinodal_collapse agree=True T=(-3.9, -1.0)
+  date: 2026-10-24
+  command: python3 AMOC/trajectory.py
+  sha12: 008c7e3125e8
+  exit_code: 0
+  output_lines: 15
+  output_sha12: d6c5b8550d45
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: amoc--carlton_county
+      via: imported-by
+    - id: amoc--baseline
+      via: imports
+    - id: amoc--divergence
+      via: imports
+    - id: amoc--forcing
+      via: imports
+    - id: amoc--response
+      via: imports
+    - id: amoc--sitespec
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: AMOC/trajectory.py
+    sha12: 008c7e3125e8
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f0fe6e8e6bbd
+    related: 9a42cd34ff47
+    right_read: 32bbe99c703a
+    run: c2175bf779d2
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

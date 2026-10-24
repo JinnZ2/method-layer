@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: photoperiod-claim-harness--harness_audit
+kind: program
+tool: Simulators/photoperiod-claim-harness/harness_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: harness_audit.py -- grade the harness, not the greenhouse.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: photoperiod-claim-harness/samples/harness_audit.sample.txt"
+    - "run capture: RUN, exit 0, 356 lines, sha12 f08e6de53818 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 photoperiod-claim-harness/harness_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nAUDITING THE HARNESS\nsubject: photoperiod_claim_harness.py, unmodified\nthis file has no bench data and neither does the harness\n\n========================================================================\n1  C1 used to pass when the sim produced nothing\n========================================================================\n  was:  signature_spread < 1.5\n  spread = max/min over cells that reproduce the signature\n         = 0.0 when there are no such cells\n\n  world                    cells    spread     pre-repair     now\n  ------------------------------------------------------------------\n  as shipped               58       4.8828     REFUTED        REFUTED\n  no shade-avoidance       0        0.0000     SUPPORTED      UNDECIDED\n\n    (min and max printed as None and None in the dead world)\n\n  C1's reads line for TRUE was:\n\n      the reported metrics are diagnostic of real efficiency\n\n  A run in which the sim reproduced the reported signature ZERO\n  times returned that verdict, with None for min and max on the\n  line above. A pass an empty result set returns is not a pass --\n  ../null-harness/ CONSTANT_SILENT one level up.\n\n  REPAIRED with the harness's own vocabulary. run_claim() already\n  emitted `UNDECIDED:` when a predicate raises, so C1's predicate\n  calls require() on a non-empty cell set first, and the empty\n  case routes to the third verdict it always had a slot for:\n\n      UNDECIDED:no cell reproduces the reported signature: the sim cannot produce the package at all, which is neither verdict\n\n  The README's own extension rule is the invariant this restores:\n  'append to CLAIM_TABLE with a predicate that can fail'.\n\n========================================================================\n2  C1's numbers are narrower than its reads line\n[... 316 more lines]"
+  date: 2026-10-24
+  command: python3 photoperiod-claim-harness/harness_audit.py
+  sha12: b5604145cedb
+  exit_code: 0
+  output_lines: 356
+  output_sha12: f08e6de53818
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: photoperiod-claim-harness--photoperiod_claim_harness
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: photoperiod-claim-harness/harness_audit.py
+    sha12: b5604145cedb
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 4830e07de6e4
+    pick_up_when: 32bbe99c703a
+    purpose: 90d3ca44078b
+    related: 530c4b8e2c24
+    right_read: 32bbe99c703a
+    run: 92e231b936c1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

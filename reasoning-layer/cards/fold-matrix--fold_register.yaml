@@ -1,0 +1,97 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fold-matrix--fold_register
+kind: program
+tool: Simulators/fold-matrix/fold_register.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: fold_register.py  -- CC0, stdlib only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 17 lines, sha12 363b033d8e35 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fold-matrix/fold_register.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    candidate capacity       <- peak force, quoted where sustained work capacity is meant
+    candidate compliance     <- whether the stated relation still holds; substituted with whether the form was filed
+    kavik     efficiency     <- output/input under an unstated boundary and horizon
+    candidate experience     <- accumulated hours + continuity + transfer, none checked
+    candidate growth         <- rate of change of an aggregate whose composition is folded
+    candidate impact         <- a counterfactual that was never run
+    candidate merit          <- a measurement chain that has lost its referent
+    kavik     money          <- skill + time + labor
+    kavik     optimization   <- a chosen objective + a trajectory + a scope, all dropped
+    candidate performance    <- score on a benchmark + the benchmark's own construction
+    kavik     procedure      <- doing
+    candidate productivity   <- output per unit input, inputs selectively counted
+    candidate quality        <- conformance to a spec that is itself unstated
+    kavik     regulation     <- enforcement of the procedure->money link
+    candidate resources      <- a stock and a flow, welded
+    candidate risk           <- probability x magnitude over an unstated denominator
+    candidate safety         <- hazard x exposure x consequence, over an unstated population
+  date: 2026-10-24
+  command: python3 fold-matrix/fold_register.py
+  sha12: a4dafcbfb742
+  exit_code: 0
+  output_lines: 17
+  output_sha12: 363b033d8e35
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fold-matrix--register_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fold-matrix/fold_register.py
+    sha12: a4dafcbfb742
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 165346505c20
+    related: a39c0bb5b40b
+    right_read: 32bbe99c703a
+    run: 3600a0e7c2c5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

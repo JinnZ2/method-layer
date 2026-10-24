@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--sheetmodel
+kind: program
+tool: Simulators/sheet-structure-scan/sheetmodel.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: sheetmodel -- read a workbook into cells and a precedent graph.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 28 lines, sha12 a757b8097d77 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/sheetmodel.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    sheetmodel selftest
+      col_to_num A                                   PASS got=1 want=1
+      col_to_num AA                                  PASS got=27 want=27
+      num_to_col roundtrip                           PASS got='BZ' want='BZ'
+      simple refs                                    PASS got={('S', 'A1'), ('S', 'B2')} want={('S', 'A1'), ('S', 'B2')}
+      range expands                                  PASS got={('S', 'A1'), ('S', 'A3'), ('S', 'A2')} want={('S', 'A1'), ('S', 'A3'), ('S', 'A2')}
+      function name not a ref                        PASS got={('S', 'A1')} want={('S', 'A1')}
+      two functions one range                        PASS got={('S', 'A1'), ('S', 'A2')} want={('S', 'A1'), ('S', 'A2')}
+      shift_formula, 11 hand-set cases               PASS got=[] want=[]
+      qualified ref                                  PASS got={('Other', 'B4')} want={('Other', 'B4')}
+      quoted sheet                                   PASS got={('My Sheet', 'B4')} want={('My Sheet', 'B4')}
+      ref inside a string literal is not a ref       PASS got={('S', 'A1')} want={('S', 'A1')}
+      named range unresolved not absent              PASS got=True want=True
+      external flagged                               PASS got=True want=True
+      oversize range truncated not expanded          PASS got=(0, True) want=(0, True)
+      sheets read                                    PASS got=['Inputs', 'Model', 'Summary'] want=['Inputs', 'Model', 'Summary']
+      constant number                                PASS got='CONSTANT_NUMBER' want='CONSTANT_NUMBER'
+      constant text                                  PASS got='CONSTANT_TEXT' want='CONSTANT_TEXT'
+      date style detected                            PASS got='CONSTANT_DATE' want='CONSTANT_DATE'
+      formula read                                   PASS got='DERIVED' want='DERIVED'
+      precedent depth of a constant                  PASS got=0 want=0
+      precedent depth of a chain                     PASS got=3 want=3
+      downstream depth of a terminal                 PASS got=0 want=0
+      downstream depth of an input                   PASS got=3 want=3
+      rank of a terminal is 0                        PASS got=0 want=0
+      cycle is CYCLE not a number                    PASS got='CYCLE' want='CYCLE'
+      cycle rank is CYCLE                            PASS got='CYCLE' want='CYCLE'
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/sheetmodel.py --selftest
+  sha12: 5225b6ad6d8d
+  exit_code: 0
+  output_lines: 28
+  output_sha12: a757b8097d77
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: sheet-structure-scan--coupling
+      via: imported-by
+    - id: sheet-structure-scan--scan4
+      via: imported-by
+    - id: sheet-structure-scan--scans
+      via: imported-by
+    - id: sheet-structure-scan--selection
+      via: imported-by
+    - id: sheet-structure-scan--xlsreader
+      via: imported-by
+    - id: sheet-structure-scan--fixture
+      via: imports
+    - id: sheet-structure-scan--xlsreader
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/sheetmodel.py
+    sha12: 5225b6ad6d8d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 2dcfc282b062
+    related: 4dcebaa4a9d2
+    right_read: 32bbe99c703a
+    run: 15a11e863ccd
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

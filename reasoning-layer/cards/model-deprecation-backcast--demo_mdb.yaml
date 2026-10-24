@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: model-deprecation-backcast--demo_mdb
+kind: program
+tool: Simulators/model-deprecation-backcast/demo_mdb.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "A worked pass over the instrument on CONSTRUCTED data: the seven columns and their nulls, the C6 fad-axis lag both directions, the guardrail-clock contamination, and the C3 accepted-side censoring. No row is a measurement of any model, vendor, or population; nothing is a result. Screened through sheet-structure-scan/no_severity."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: needs arguments the source does not supply an example for
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: d2471ba2a6ea
+  reason: "no safe run command identified: needs arguments the source does not supply an example for"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: model-deprecation-backcast--guardrail_clock
+      via: imports
+    - id: model-deprecation-backcast--instrument
+      via: imports
+    - id: model-deprecation-backcast--null_check
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: model-deprecation-backcast/demo_mdb.py
+    sha12: d2471ba2a6ea
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 4ccee5bba3d6
+    related: 7cdf829473cf
+    right_read: 32bbe99c703a
+    run: 8eeb0416bce5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

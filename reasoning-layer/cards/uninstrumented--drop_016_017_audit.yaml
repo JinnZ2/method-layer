@@ -1,0 +1,90 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--drop_016_017_audit
+kind: program
+tool: Simulators/uninstrumented/drop_016_017_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: drop_016_017_audit.py -- checks on the 016/017 drop.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: uninstrumented/samples/drop_016_017_audit.sample.txt"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: no __main__ guard (module, not a script)
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 48fc4a7e62f2
+  reason: "no safe run command identified: no __main__ guard (module, not a script)"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--drop_019_audit
+      via: shares uninstrumented/AVENUES.md
+    - id: uninstrumented--playground_audit
+      via: shares uninstrumented/AVENUES.md
+    - id: uninstrumented--case_014_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--playground_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--playground_modules_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--scan_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--specimen_c_audit
+      via: shares uninstrumented/README.md
+    - id: uninstrumented--drop_019_audit
+      via: shares uninstrumented/cases/016agreementasmode.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/drop_016_017_audit.py
+    sha12: 48fc4a7e62f2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 20e00f313e1c
+    pick_up_when: 32bbe99c703a
+    purpose: 8006da22106d
+    related: 9704861cbe5d
+    right_read: 32bbe99c703a
+    run: 3e202f07fb94
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

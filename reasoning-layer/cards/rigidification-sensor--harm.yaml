@@ -1,0 +1,96 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: rigidification-sensor--harm
+kind: program
+tool: Simulators/rigidification-sensor/harm.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: harm.py — energy_english harm reader CC0. stdlib only. phone-buildable.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: rigidification-sensor/samples/harm.sample.txt"
+    - "run capture: RUN, exit 0, 14 lines, sha12 c9f2541f2ddc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 rigidification-sensor/harm.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ok _t_amplifying_coupling_inflates
+    ok _t_dissipating_coupling_does_not_inflate
+    ok _t_local_imbalance_no_coupling_does_not_displace
+    ok _t_missing_mode_raises
+    ok _t_mode_carried_in_signature
+    ok _t_surplus_exports_nothing
+
+    modes:
+      strict                   shipped behavior; all orders including boundary must grow
+      multiplication_factor    nuclear k, epidemic R0, feedback loop gain
+      horizon_limited          propagation constant defined only within the medium
+      peak_to_source           amplifier gain reported as max_output / input
+
+    all pass
+  date: 2026-10-24
+  command: python3 rigidification-sensor/harm.py
+  sha12: 969398a92b21
+  exit_code: 0
+  output_lines: 14
+  output_sha12: c9f2541f2ddc
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: rigidification-sensor--sensor_v1
+      via: imported-by
+    - id: rigidification-sensor--simulator
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: rigidification-sensor/harm.py
+    sha12: 969398a92b21
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: d03b508bcefa
+    pick_up_when: 32bbe99c703a
+    purpose: c12f7ce0a185
+    related: 96ecab39b9f9
+    right_read: 32bbe99c703a
+    run: a93f301442ee
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

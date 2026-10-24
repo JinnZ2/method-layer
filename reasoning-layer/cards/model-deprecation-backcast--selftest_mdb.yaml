@@ -1,0 +1,91 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: model-deprecation-backcast--selftest_mdb
+kind: program
+tool: Simulators/model-deprecation-backcast/selftest_mdb.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for the Model Deprecation Backcast Instrument, on CONSTRUCTED data. No vendor calendar, poll, eval, or dataset is read (all egress-blocked); every series is built by hand with a known answer. Nothing is a result.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 8 lines, sha12 637d606677d2 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 model-deprecation-backcast/selftest_mdb.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    known-answer gate (lag_of_peak):
+    instrument -- seven columns, each carrying a NULL (required):
+    C6 -- the fad-axis lag, null-tested both directions:
+    guardrail clock -- contamination of the C6 lag:
+    C1/C2 collapse, C4, C5, C7->C4 -- null vs signal:
+    C2 unrecoverable is a state, not an estimate:
+    C3 accepted-side censoring -- the bias is a number:
+    selftest: 36 checks, 0 failed
+  date: 2026-10-24
+  command: python3 model-deprecation-backcast/selftest_mdb.py
+  sha12: 1409bc6305bb
+  exit_code: 0
+  output_lines: 8
+  output_sha12: 637d606677d2
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: model-deprecation-backcast--guardrail_clock
+      via: imports
+    - id: model-deprecation-backcast--instrument
+      via: imports
+    - id: model-deprecation-backcast--null_check
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: model-deprecation-backcast/selftest_mdb.py
+    sha12: 1409bc6305bb
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 0add3c849448
+    related: 7cdf829473cf
+    right_read: 32bbe99c703a
+    run: b53cc2b294cb
+    selftest: de0afe0e7f26
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

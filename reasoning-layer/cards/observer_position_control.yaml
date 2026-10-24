@@ -1,0 +1,92 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: observer_position_control
+kind: program
+tool: method-layer/observer_position_control.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Observer-position control: is a label set by the behaviour or by the describer?"
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "subcommand run: run the control over a hand-coded corpus JSON"
+    - "subcommand synthetic: instrument check on a corpus with known planted structure"
+    - "subcommand prediction: print the registered prediction"
+    - corpus
+    - "--json (action=store_true)"
+    - "--n (default=20)"
+    - "--effect (default=0.0)"
+    - "--decade (default=0.0)"
+    - "--literature (default=0.0)"
+    - "--severity (default=0.0)"
+    - "--mismatch (default=0.0)"
+    - "--seed (default=0)"
+    - "--json (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: needs arguments the source does not supply an example for
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 0d932097a74b
+  reason: "no safe run command identified: needs arguments the source does not supply an example for"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: branch_set
+      via: imports
+    - id: preference_free_rank
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - tests/test_observer_position_control.py
+      - tests/test_observer_position_control.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: method-layer
+    path: observer_position_control.py
+    sha12: 0d932097a74b
+    commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    last_change: 2026-09-08
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 86f2eec72d15
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: e7fd5f3d7d5f
+    related: 75d845b7df3e
+    right_read: 32bbe99c703a
+    run: 8eeb0416bce5
+    selftest: 263768f2934e
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

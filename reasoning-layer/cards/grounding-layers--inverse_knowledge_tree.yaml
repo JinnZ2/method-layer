@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--inverse_knowledge_tree
+kind: program
+tool: Simulators/grounding-layers/inverse_knowledge_tree.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: inverse_knowledge_tree.py CC0-1.0. stdlib-only. phone-buildable.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: grounding-layers/samples/inverse_knowledge_tree_demo.sample.txt"
+    - "run capture: RUN, exit 0, 57 lines, sha12 b9d43d4afee4 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 grounding-layers/inverse_knowledge_tree.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ============================================================
+    STANDING vs FALLEN — same domain, opposite margin posture
+    ============================================================
+    root          aqueduct_span
+    verdict       HOLDS
+    chain depth   4 nodes
+    failure-load  107 attempts over 4000y
+    margin spent  0   (abstraction outran stone)
+    margin held   2.34   (overbuilt reserve)
+    terminal gap  -0.62   (spend at point-of-application)
+    ------------------------------------------------------------
+    root          i35w_span
+    verdict       BORROWS
+    chain depth   7 nodes
+    failure-load  825 attempts over 5375y
+    margin spent  0.96   (abstraction outran stone)
+    margin held   0.98   (overbuilt reserve)
+    terminal gap  0.37   (spend at point-of-application)
+    spenders      i35w_span, cost_optimization, fea_modeling, stress_theory
+    ------------------------------------------------------------
+
+    ============================================================
+    FORWARD PROJECTION — 'overcome the gorge through optimization'
+    ============================================================
+
+    available margin = 2000 attempts
+    root          new_gorge_span
+    verdict       BORROWS
+    chain depth   7 nodes
+    failure-load  810 attempts over 5370y
+    margin spent  1.52   (abstraction outran stone)
+    margin held   0.98   (overbuilt reserve)
+    terminal gap  0.93   (spend at point-of-application)
+    spenders      new_gorge_span, fea_modeling, stress_theory, cost_optimization
+
+    available margin = 500 attempts
+    root          new_gorge_span
+    verdict       EXCEEDS
+    chain depth   7 nodes
+    failure-load  810 attempts over 5370y
+    [... 17 more lines]
+  date: 2026-10-24
+  command: python3 grounding-layers/inverse_knowledge_tree.py
+  sha12: 461ffaaba7eb
+  exit_code: 0
+  output_lines: 57
+  output_sha12: b9d43d4afee4
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - grounding-layers/tests/test_inverse_knowledge_tree.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/inverse_knowledge_tree.py
+    sha12: 461ffaaba7eb
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: "239875938411"
+    pick_up_when: 32bbe99c703a
+    purpose: c7f02c84f69a
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 06e63d6a8301
+    selftest: 1a35394b27bc
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

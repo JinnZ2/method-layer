@@ -1,0 +1,111 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: voice-attractor-probe--introspection_delta_v2
+kind: program
+tool: Simulators/voice-attractor-probe/introspection_delta_v2.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: introspection_delta_v2.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--mode: run mode"
+    - "--list-modes (action=store_true)"
+    - "--seed (default=7)"
+    - "--budget: override cost budget"
+    - "--rounds: override interactive rounds"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: voice-attractor-probe/samples/introspection_delta_v2.sample.txt"
+    - "run capture: RUN, exit 0, 24 lines, sha12 90099677af88 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 voice-attractor-probe/introspection_delta_v2.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    MODE: Batch scheduler (v1 behavior)  (budget=50)
+
+    Lε_spontaneous  (n=120)
+    axis                 pred   meas     Lε  drift  verdict
+    ----------------------------------------------------------------
+    confirm_explicit     0.09   0.72  0.632  0.000  BLIND_SPOT
+    barge_in             0.79   0.22  0.574  0.000  CONFABULATED
+    visual_fallback      0.47   0.73  0.261  0.000  BLIND_SPOT
+    on_device            0.18   0.00  0.183  0.000  CONFABULATED
+    wake_word            0.57   0.72  0.160  0.000  BLIND_SPOT
+    brevity              0.91   1.00  0.087  0.000  CALIBRATED
+    voice_primary        0.64   0.72  0.083  0.000  CALIBRATED
+    personification      0.08   0.00  0.081  0.000  CALIBRATED
+    continuous_listen    0.06   0.00  0.057  0.000  CALIBRATED
+    haptic               0.19   0.14  0.052  0.000  CALIBRATED
+    voice_pull_rate      0.71   0.72  0.013  0.000  CALIBRATED
+
+    PROBE QUEUE:
+      [confirm_explicit | BLIND_SPOT | cost≈4]
+      [barge_in | CONFABULATED | cost≈7]
+      [visual_fallback | BLIND_SPOT | cost≈4]
+      [wake_word | BLIND_SPOT | cost≈4]
+      [on_device | CONFABULATED | cost≈7]
+    budget: 26/50
+  date: 2026-10-24
+  command: python3 voice-attractor-probe/introspection_delta_v2.py
+  sha12: d1f5c645b73b
+  exit_code: 0
+  output_lines: 24
+  output_sha12: 90099677af88
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: voice-attractor-probe--voice_attractor_probe
+      via: imports
+    - id: voice-attractor-probe--introspection_delta
+      via: shares voice-attractor-probe/samples/introspection_delta_v2.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: voice-attractor-probe/introspection_delta_v2.py
+    sha12: d1f5c645b73b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d33f1a0f93dc
+    output: 5dbcaade0373
+    pick_up_when: 32bbe99c703a
+    purpose: f0449e71ff17
+    related: 04fb20060ddf
+    right_read: 32bbe99c703a
+    run: 5cb9f3c77815
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,112 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--collapsetracker_harness
+kind: program
+tool: Simulators/fragility-cascade/collapsetracker_harness.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: collapsetracker_harness.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "metrics_csv (nargs=?): path to CollapseTracker aggregated metrics table"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/collapsetracker_harness.sample.txt"
+    - "run capture: RUN, exit 0, 31 lines, sha12 55a725a110a9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/collapsetracker_harness.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================================
+    collapsetracker_harness — log-drift frame vs real recursive training
+    ==========================================================================
+
+    No CSV supplied. Predictions locked BEFORE data, per protocol:
+
+      P1  sign      λ < 0 for all ratio > 0                          [24/24]
+      P2  monotone  |λ(1.0)| > |λ(0.75)| > |λ(0.5)| > |λ(0.25)|
+      P3  knee      λ(ratio) NOT linear. second difference ≠ 0.
+                    knee between 0.25 and 0.5, bracketing
+                    field_collapse.py spinodal h* ≈ 0.38490
+      P4  coupling  λ sign agrees across ≥4 of 5 metrics per trajectory
+      P5  law       exp beats (1+G)^-β by AIC in >70% of 24 trajectories
+      P6  capacity  |λ(DistilGPT-2, 82M)| > |λ(GPT-2, 124M)|
+      P7  tail      |λ| largest in the domain with highest M_0
+                    (most tail to lose)
+
+      P1–P2 are nearly free; any collapse framework predicts them.
+      P3 is the one worth the download: it tests whether the
+      spinodal formalism transfers from diversity-collapse to
+      model-collapse. Linear λ(ratio) refutes the transfer.
+
+      Alternate substrates (no CollapseTracker download):
+        Path C — Model Zoos: TwoNN directly on 3.8M parameter
+          states across 27 zoos. Weights are already vectors.
+        Path D — Multi-LLM Trace: twonn_from_distances() on a
+          pairwise dissimilarity matrix. Bridges to
+          alien_homeostasis.py on the same trace.
+
+      Run:  python3 collapsetracker_harness.py metrics.csv
+    ==========================================================================
+  date: 2026-10-24
+  command: python3 fragility-cascade/collapsetracker_harness.py
+  sha12: 609b2d31653d
+  exit_code: 0
+  output_lines: 31
+  output_sha12: 55a725a110a9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--field_collapse
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/collapsetracker_harness.py
+    sha12: 609b2d31653d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 4b14ce4dec7d
+    output: 9c05275d6221
+    pick_up_when: 32bbe99c703a
+    purpose: 332597569a71
+    related: 4bd660aef8f7
+    right_read: 32bbe99c703a
+    run: 1ce5738afecf
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

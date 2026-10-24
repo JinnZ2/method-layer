@@ -1,0 +1,77 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: adaptive-claim-loop--delivered--adaptive_sim_framework
+kind: program
+tool: Simulators/adaptive-claim-loop/delivered/adaptive_sim_framework.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Adaptive Simulation Framework for Scientific Claim Testing ========================================================== A self-contained framework for running simulations, testing claims, logging provenance, and allowing an AI agent to modify experiments based on results.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--model (choices=['forest', 'fluctuating'], required=True)"
+    - "--iterations (default=5)"
+    - "--seed (default=42)"
+    - "--log (default=provenance_log.jsonl)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: needs arguments the source does not supply an example for
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 830ed0a748da
+  reason: "no safe run command identified: needs arguments the source does not supply an example for"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: adaptive-claim-loop/delivered/adaptive_sim_framework.py
+    sha12: 830ed0a748da
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: c06eed84580d
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: fb9aa74b5678
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 8eeb0416bce5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

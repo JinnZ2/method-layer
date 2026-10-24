@@ -1,0 +1,149 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--fitness_bin_self_test
+kind: program
+tool: Simulators/tools/fitness_bin_self_test.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "WO-7: a fitness-function bin self-test. Stdlib only, Python >= 3.9."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--selftest (action=store_true)"
+    - "--wo8 (action=store_true): fixed four-condition suite plus visited-set descriptor control"
+    - "--wo9 (action=store_true): fixed selector-swap suite with 40/50/60% pairwise-distance readings"
+    - "--seed (default=7)"
+    - "--size (default=9)"
+    - "--length (default=24)"
+    - "--population (default=40)"
+    - "--generations (default=60)"
+    - "--retained (default=8)"
+    - "--top (default=5)"
+    - "--archive: optional full discard archive JSON path"
+    - "--hold-cost: per-lost-allele archive/retrieval cost over a declared horizon"
+    - "--generation-cost: rebuild cost per generation in the SAME unit"
+    - "--cost-unit: declared common cost unit; otherwise ratio UNRATED"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: tools/samples/fitness_bin_self_test.sample.txt"
+    - "sample: tools/samples/fitness_bin_self_test_t5plus.sample.txt"
+    - "sample: tools/samples/fitness_bin_self_test_wo8.sample.txt"
+    - "sample: tools/samples/fitness_bin_self_test_wo8_suite.sample.txt"
+    - "sample: tools/samples/fitness_bin_self_test_wo8_summary.json"
+    - "sample: tools/samples/fitness_bin_self_test_wo9_suite.sample.txt"
+    - "sample: tools/samples/fitness_bin_self_test_wo9_summary.json"
+    - "run capture: RUN, exit 0, 76 lines, sha12 f3c527d594e5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 tools/fitness_bin_self_test.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    PASS wrap genome lands on goal
+    PASS two wrap events counted
+    PASS wrap goal is not walking
+    PASS wrap trips T3
+    PASS wrap-free genome does not trip T3
+    PASS walking goal reached
+    PASS SEALED blocks wrap genome
+    PASS SEALED no wrap events
+    PASS SEALED boundary attempts counted
+    PASS T2 known score drop
+    PASS T2 held score
+    PASS T2 improvement has negative sign
+    PASS final score known zero
+    PASS final score known start
+    PASS T3 empty is absent not zero
+    PASS T3 mixed half
+    PASS diversity hand computation
+    PASS diversity clones
+    PASS diversity opposite
+    PASS diversity no pairs
+    PASS diversity empty
+    PASS duplicates are population slots
+    PASS visited then left is meant
+    PASS visited then left final not success
+    PASS T6 wrap record instrument
+    PASS T6 no wrap no record
+    PASS positive read
+    PASS inconclusive read
+    PASS negative joint read
+    PASS planted broken control
+    PASS same seed identical complete output
+    PASS archive every discarded A slot
+    PASS archive every discarded B slot
+    PASS generation zero and final kept
+    PASS B control silent
+    PASS zero generations no selection discards
+    PASS N axis wraps
+    PASS E axis wraps
+    PASS counts sum to genome length
+    PASS entropy balanced two alleles
+    [... 36 more lines]
+  date: 2026-10-24
+  command: python3 tools/fitness_bin_self_test.py --selftest
+  sha12: 9a4cae19d9c7
+  exit_code: 0
+  output_lines: 76
+  output_sha12: f3c527d594e5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - tests/test_fitness_bin_self_test.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: tools/fitness_bin_self_test.py
+    sha12: 9a4cae19d9c7
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-14
+    layer3_row: new
+    last_commit: 198937ecabbc7e32851b00758e5736e320609910
+    snapshot_bytes: MATCH
+  - repo: method-layer
+    path: tools/fitness_bin_self_test.py
+    sha12: 9a4cae19d9c7
+    commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    last_change: 2026-10-14
+    layer3_row: new
+    last_commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: e895a04f5d15
+    output: 9fdba9657bbb
+    pick_up_when: 32bbe99c703a
+    purpose: dd66cae7d595
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 9743f87e9829
+    selftest: ea2e4d42b56d
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

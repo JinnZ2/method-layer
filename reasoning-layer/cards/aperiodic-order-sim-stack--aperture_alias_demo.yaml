@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: aperiodic-order-sim-stack--aperture_alias_demo
+kind: program
+tool: Simulators/aperiodic-order-sim-stack/aperture_alias_demo.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: aperture_alias_demo.py — the S(k) control SIM-A never ran.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: aperiodic-order-sim-stack/samples/aperture_alias_demo.sample.txt"
+    - "run capture: RUN, exit 0, 97 lines, sha12 c178e5962481 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 aperiodic-order-sim-stack/aperture_alias_demo.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nAPERTURE / ALIASING CONTROL FOR SIM-A\nN = 1000 points, k-grid dk = 0.39, 400 grid points, seed 20260815\n1D probes with analytically known spectra. See module docstring\nfor what this does and does not establish.\n\n==========================================================================\nA1  can a grid of dk = 0.39 land on the Bragg peaks?\n==========================================================================\n  periodic probe, spacing 1.381 over length 1381\n  first Bragg peak at k = 4.5499, spaced 4.5499 apart\n  finite-sample peak width 2*pi/L = 0.0045\n  grid spacing dk = 0.39 is 86x the peak width\n\n  Bragg peaks in range : 34\n  landed on by the grid: 9\n  missed entirely      : 25\n\n  S(0) = N = 1000 by construction, for every point set that exists.\n  It is the one k that is always sampled and always maximal, and\n  it carries no information about order.\n\n  NOTE: 9 peak(s) are hit, because 4.5499 / 0.39 is near a\n  rational. Whether a coarse grid hits anything is a\n  commensurability accident between two numbers nobody chose\n  together — which is the failure mode, not an exception to it.\n  Sampled max here reaches 990 of a possible 1000.\n\n==========================================================================\nA2  a pure point spectrum has a floor BELOW the random one\n==========================================================================\n  probe                         mean S(k)      floor   expected\n  Fibonacci (quasiperiodic)          2.45       0.09   pure point\n  Poisson (random)                   1.03       0.99   S(k) -> 1\n\n  quasiperiodic floor / random floor = 0.09\n\n  The quasiperiodic floor sits FAR BELOW the random one. Between\n  its peaks a pure point spectrum has almost nothing, so a coarse\n  grid that misses the peaks reads a floor near zero — lower than\n[... 57 more lines]"
+  date: 2026-10-24
+  command: python3 aperiodic-order-sim-stack/aperture_alias_demo.py
+  sha12: fe78034c3a8f
+  exit_code: 0
+  output_lines: 97
+  output_sha12: c178e5962481
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: aperiodic-order-sim-stack/aperture_alias_demo.py
+    sha12: fe78034c3a8f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 073f7144d67a
+    pick_up_when: 32bbe99c703a
+    purpose: 03d8d5fccc72
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 8abe58bc4c6a
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

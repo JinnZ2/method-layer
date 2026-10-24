@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_value
+kind: program
+tool: Simulators/fragility-cascade/thermo_value.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermo_value.py -- two ontologies of value, as LENSES not verdicts. CC0 / Public Domain.  stdlib-only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_value.sample.txt"
+    - "run capture: RUN, exit 0, 43 lines, sha12 7e6cfa1a61c7 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_value.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==================================================================
+    VALUE ONTOLOGIES -- same claim, two lenses, measure the gap
+    ==================================================================
+
+      CLAIM: day of framing labor   [bound]
+        token-primary lens   ->    100.0   a claim of 100 tokens -> wealth
+        substrate-primary    ->    100.0   100 units of labor substrate at the referent
+        discrepancy          ->      0.0   (gap = the observable)
+        pool_delta           ->      0.0   (-> 0 is balance)
+        note: reference bound: token issued against delivered labor
+
+      CLAIM: rent on owned land   [detached]
+        token-primary lens   ->    100.0   a claim of 100 tokens -> wealth
+        substrate-primary    ->      0.0   0 units of no substrate at the referent
+        discrepancy          ->    100.0   (gap = the observable)
+        pool_delta           ->    100.0   (-> 0 is balance)
+        note: detached: claim on the pool, no substrate added this cycle
+
+      CLAIM: speculative flip   [detached]
+        token-primary lens   ->    500.0   a claim of 500 tokens -> wealth
+        substrate-primary    ->      0.0   0 units of no substrate at the referent
+        discrepancy          ->    500.0   (gap = the observable)
+        pool_delta           ->    500.0   (-> 0 is balance)
+        note: detached: claim by price-bet; nothing delivered to referent
+
+      CLAIM: elder teaching land-care, unpaid   [bound]
+        token-primary lens   ->      0.0   a claim of 0 tokens -> wealth
+        substrate-primary    ->    120.0   120 units of knowledge/care substrate at the referent
+        discrepancy          ->   -120.0   (gap = the observable)
+        pool_delta           ->   -120.0   (-> 0 is balance)
+        note: token lens reads ~0; substrate lens reads real value delivered -> the discrepancy runs the OTHER way (untokenized substrate)
+
+    ==================================================================
+    is -> ought slide check (reads the reasoning move, not the person):
+        willing_to_pay   => should_build        SLIDE FLAGGED
+        is_priced        => deserves_funding    SLIDE FLAGGED
+        is_desired       => is_good             SLIDE FLAGGED
+
+      held out of scope (named, not silently crossed):
+        - whether a given desire is healthy FOR a specific person
+    [... 3 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_value.py
+  sha12: 6e0a57d3315c
+  exit_code: 0
+  output_lines: 43
+  output_sha12: 7e6cfa1a61c7
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_value.py
+    sha12: 6e0a57d3315c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 87c1bb4cc71d
+    pick_up_when: 32bbe99c703a
+    purpose: 2443f63d13f4
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f67ebf866c7c
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

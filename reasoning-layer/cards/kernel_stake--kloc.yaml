@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: kernel_stake--kloc
+kind: program
+tool: Simulators/kernel_stake/kloc.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: KLOC per (subsystem, tag).  The only step that needs blobs.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 kernel_stake/kloc.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety:
+    - deletes-files
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: python3 kernel_stake/kloc.py --selftest
+  sha12: 9ace4971111a
+  reason: "blocked by safety scan: deletes-files"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: kernel_stake--subsystems
+      via: imports
+    - id: kernel_stake--report
+      via: shares kernel_stake/kloc.json
+    - id: kernel_stake--robust
+      via: shares kernel_stake/kloc.json
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: kernel_stake/kloc.py
+    sha12: 9ace4971111a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 32514db2b103
+    related: 06fb26de1280
+    right_read: 32bbe99c703a
+    run: 88ed9de0f2e7
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

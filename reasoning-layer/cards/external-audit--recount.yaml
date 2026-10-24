@@ -1,0 +1,109 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: external-audit--recount
+kind: program
+tool: Simulators/external-audit/recount.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Recount every countable claim in the delivered deep-research report.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: external-audit/samples/recount.sample.txt"
+    - "run capture: FAILED, exit 1, 18 lines, sha12 0b794872b537 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 external-audit/recount.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 768, in <module>
+        sys.exit(main(sys.argv[1:]))
+                 ~~~~^^^^^^^^^^^^^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 758, in main
+        return selftest()
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 748, in selftest
+        res = _checks()
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 623, in _checks
+        nf = named_folders()
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 160, in named_folders
+        files = tree(BASELINE)
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 88, in tree
+        return _git(rev)
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-wtdzbpl2/external-audit/recount.py", line 82, in _git
+        raise RuntimeError("git ls-tree failed for %r: %s"
+                           % (rev, out.stderr.strip()))
+    RuntimeError: git ls-tree failed for '6633778^': fatal: not a git repository (or any of the parent directories): .git
+  date: 2026-10-24
+  command: python3 external-audit/recount.py --selftest
+  sha12: 7b16c017e884
+  exit_code: 1
+  output_lines: 18
+  output_sha12: 0b794872b537
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: external-audit--crosscheck
+      via: imported-by
+    - id: notes--check_markers
+      via: shares GAP_INDEX.md
+    - id: notes--check_postgrad
+      via: shares GAP_INDEX.md
+    - id: tools--gap_index
+      via: shares GAP_INDEX.md
+    - id: external-audit--crosscheck
+      via: shares external-audit/DEEP_RESEARCH_2026_09_14.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: external-audit/recount.py
+    sha12: 7b16c017e884
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: a8245dcfa52b
+    pick_up_when: 32bbe99c703a
+    purpose: 99a0aa97c6fc
+    related: e8d910f5941e
+    right_read: 32bbe99c703a
+    run: 7fe24840dd33
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

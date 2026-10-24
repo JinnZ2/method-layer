@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--revalidate
+kind: program
+tool: Simulators/fragility-cascade/revalidate.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "revalidate.py -- re-evaluate a decayed claim: what decayed, and what retest that actually implies. CC0 / Public Domain. stdlib-only. imports info_taxonomy."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/revalidate.sample.txt"
+    - "run capture: RUN, exit 0, 86 lines, sha12 5612e2daa0c2 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/revalidate.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    REVALIDATION -- what decayed, and what retest that implies
+    ======================================================================
+
+      [const.latent_vap] water latent heat of vaporization 2.26 MJ/kg
+         mode: measured_constant   year: 1953
+         temporal_scope         STATIC         referent is static -- does not move with time
+                                               -> any age-based staleness flag is SPURIOUS here
+         scope                  in_scope       applied within [1 atm, pure water]
+         methodology            review         mode 'measured_constant' is blind to: applicability at THIS context's conditions
+                                               -> operator judges whether that blindness touches what this claim asserts
+         updated_info           none           nothing independent has arrived since
+         physical_authenticity  PROXY_ONLY     no direct ground-truth check recorded
+                                               -> retest falls back to the mode's own refresh path
+         PLAN: NONE          cost=zero
+               method: no retest -- referent does not move
+               note: age-based staleness flag is spurious for a static referent; check the applicability range instead
+
+      [code.fill_depth] county table: 0.5 m imported fill required
+         mode: authority   year: 1974
+         temporal_scope         EXPIRED        referent is slow (scale 50yr), claim age 52yr
+                                               -> re-observe -- volatility governs, not half-life
+         scope                  DRIFTED        established over [1974 materials, equipment, risk models], applied to [2026 site, measured bearing]
+                                               -> extend the range at current conditions -- a narrower job than full re-establishment
+         methodology            review         mode 'authority' is blind to: everything since issue; the issuer's own basis
+                                               -> operator judges whether that blindness touches what this claim asserts
+         updated_info           CONTRADICTED   contradicted by ['site.penetrometer']
+                                               -> aim the retest at the contradiction, not the whole claim
+         physical_authenticity  DIRECT         direct check available: penetrometer at footing depth
+                                               -> cheapest sufficient retest -- run this first
+         PLAN: DIRECTED      cost=direct
+               method: penetrometer at footing depth
+               note: aim at the contradiction; do not re-establish the whole claim
+
+      [site.moisture] surface moisture supports compaction
+         mode: direct_observation   year: 2025
+         temporal_scope         EXPIRED        referent is seasonal (scale 0.5yr), claim age 1yr
+                                               -> re-observe -- volatility governs, not half-life
+         scope                  in_scope       applied within [autumn, post-rain]
+         methodology            review         mode 'direct_observation' is blind to: what the senses don't span; one vantage
+    [... 46 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/revalidate.py
+  sha12: a0d0fb951f93
+  exit_code: 0
+  output_lines: 86
+  output_sha12: 5612e2daa0c2
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--info_taxonomy
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/revalidate.py
+    sha12: a0d0fb951f93
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 37b0e75a9fc5
+    pick_up_when: 32bbe99c703a
+    purpose: 7fd5175a5ad2
+    related: 579586d409a9
+    right_read: 32bbe99c703a
+    run: 66a8fcce2c66
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

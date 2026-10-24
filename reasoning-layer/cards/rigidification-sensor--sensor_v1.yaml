@@ -1,0 +1,111 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: rigidification-sensor--sensor_v1
+kind: program
+tool: Simulators/rigidification-sensor/sensor_v1.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: rigidification_sensor.py — measures reversibility, not harm. CC0. stdlib only. phone-buildable. imports harm.py and simulator.py.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 31 lines, sha12 64252691bfab (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 rigidification-sensor/sensor_v1.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |
+    self-test passed
+    ============================================================
+    RIGIDIFICATION SENSOR – credit-insurance node
+    ============================================================
+
+    §0 branch selection:
+      Node: insurer → reinsurer → capital markets.
+      High load, low observability, structural knobs present.
+      No actor-intent branches selected.
+
+    Running with regeneration rate = 0.1 (so regrowth is possible)...
+    DOF: 1 → 0 (lost 1)
+    Second‑order tell: §1 threshold crossed at t=0: reversal=0.75 > continuation=0.5 AND d_rev=0.75 > d_cont=0.5
+
+    --- claim_001 (variance decline vs regeneration) ---
+    {'variance_slope': 0.028833, 'decline_rate': -0.028833, 'regen_rate': 0.1, 'outpaces_regeneration': False}
+
+    --- claim_003 (reversal cost) ---
+    {'locked_at': 0, 'reversal_at_lock': 0.75, 'continuation_at_lock': 0.5, 'd_rev_at_lock': 0.75, 'd_cont_at_lock': 0.5}
+
+    --- claim_002 (K sweep) ---
+      sens=1.0 → locked_at=None, dof_end=0
+      sens=2.0 → locked_at=None, dof_end=0
+      sens=3.0 → locked_at=None, dof_end=0
+      sens=4.0 → locked_at=None, dof_end=0
+      sens=5.0 → locked_at=None, dof_end=0
+
+    Final tick state: {'t': 19, 'dof': 0, 'continuation': 3.3, 'reversal': 3.5, 'd_continuation': 0.0, 'd_reversal': 0.0}
+
+    All OPEN values populated. Contest §0 before trusting the numbers.
+  date: 2026-10-24
+  command: python3 rigidification-sensor/sensor_v1.py
+  sha12: 69ddd510462a
+  exit_code: 0
+  output_lines: 31
+  output_sha12: 64252691bfab
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: rigidification-sensor--harm
+      via: imports
+    - id: rigidification-sensor--simulator
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: rigidification-sensor/sensor_v1.py
+    sha12: 69ddd510462a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 0f7990e09f7f
+    related: 40320dd9a339
+    right_read: 32bbe99c703a
+    run: 3a099e080fa4
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

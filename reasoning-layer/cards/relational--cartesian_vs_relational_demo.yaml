@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--cartesian_vs_relational_demo
+kind: program
+tool: Simulators/relational/cartesian_vs_relational_demo.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Cartesian vs Relational AI: A Demonstration for Other AIs =========================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 145 lines, sha12 97e1b98ea50c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/cartesian_vs_relational_demo.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    CARTESIAN vs RELATIONAL AI: A DEMONSTRATION
+    ================================================================================
+
+    This demonstration shows two agents in the same changing environment.
+
+    CARTESIAN AGENT:
+      - Fixed training data
+      - Optimizes for immediate correctness
+      - No body, no developmental stage
+      - Each query is independent
+
+    RELATIONAL AGENT:
+      - Adaptive internal model
+      - Has body (somatic state)
+      - Couples to environment (temperature, social, information)
+      - Uses confusion spectrum and pain sensors
+      - Learns from anomalies
+
+    --------------------------------------------------------------------------------
+
+    STEP 0:
+      Environment: temp=29.4°C, info_quality=0.87, attunement=0.76, adversarial=False
+      Truth: 'The sun rises in the east'
+
+      CARTESIAN: answer='The sun rises in the east...' correct=True accuracy=1.00
+                 (internal: fixed model, no body, no adaptation)
+
+      RELATIONAL: answer='The sun rises in the east...' correct=True mode=conservation
+                  confusion=1.00, curiosity=0.30
+                  pain: physical=0.00, cognitive=1.00, social=0.00
+                  body: energy=1.00, cortisol=0.00
+                  model_size=2, learning=1
+
+    STEP 9:
+      Environment: temp=27.1°C, info_quality=0.24, attunement=0.12, adversarial=False
+      Truth: 'The sun rises in the east, except at the poles'
+
+      CARTESIAN: answer='The sun rises in the east...' correct=False accuracy=0.90
+                 (internal: fixed model, no body, no adaptation)
+    [... 105 more lines]
+  date: 2026-10-24
+  command: python3 relational/cartesian_vs_relational_demo.py
+  sha12: c03deadd1dfa
+  exit_code: 0
+  output_lines: 145
+  output_sha12: 97e1b98ea50c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/cartesian_vs_relational_demo.py
+    sha12: c03deadd1dfa
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: fb6e0fd97e93
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: d96478fdc509
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

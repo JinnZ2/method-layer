@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: thermal-coupling--airblast_extension
+kind: program
+tool: Simulators/thermal-coupling/airblast_extension.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: airblast_extension.py — corrections to thermal_coupling.py forced by the Langtang 2015 reconstruction.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 75 lines, sha12 c3a730f373a1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 thermal-coupling/airblast_extension.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    LANGTANG ANCHOR — published values
+    ======================================================================
+      released ice           3.50e6 m3   (above 6000 m asl)
+      total volume          14.38e6 m3   (78% ENTRAINED en route)
+      snow share of volume     >70%
+      max core velocity        >90 m/s
+      velocity at far toe       57 m/s
+      village hit by CORE?       NO
+      deaths                   >350   (air blast)
+      village blast     mean >15 kPa, peak 28 kPa
+      far slope         mean  10 kPa, peak 18 kPa
+      tree breakage           0.8 km2, 1 km up+down valley
+
+    ======================================================================
+    F2 — snow entrainment sweep vs published (temperature fixed)
+    ======================================================================
+      snow @ release   mean kPa   peak kPa   blast km2                 published
+              0.0 m        3.9        7.5        0.20 core stops short, 2.5 kPa
+              1.0 m        6.4       12.1        0.41
+              2.0 m        9.4       17.8        0.73
+              3.0 m       13.0       24.7        1.19 matches observed, >15 kPa
+
+    ======================================================================
+    F1 — ambient air sweep (snow fixed), meltwater relative
+    ======================================================================
+     T_air @3862m  melt idx   ratio    mu_w                 published
+               -1      42.6    1.00   0.175       74,000 t, 600 mm/m3
+                4      95.8    2.25   0.114
+                9     148.9    3.50   0.097              actual event
+               14     202.1    4.75   0.092
+               19     255.3    6.00   0.091    170,000 t, >1800 mm/m3
+      published meltwater ratio -1 C -> 19 C : 2.30
+
+    ======================================================================
+    TC-08 — thermal coupling by composition
+    ======================================================================
+    composition                   coupling vs all-rock
+    all rock                                       1.0
+    rock-ice, no snow                              3.9
+    [... 35 more lines]
+  date: 2026-10-24
+  command: python3 thermal-coupling/airblast_extension.py
+  sha12: 4f5e6a21f180
+  exit_code: 0
+  output_lines: 75
+  output_sha12: c3a730f373a1
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: thermal-coupling--coupling_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: thermal-coupling/airblast_extension.py
+    sha12: 4f5e6a21f180
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 38b529b44e3a
+    related: e3967a788f51
+    right_read: 32bbe99c703a
+    run: 88d17f6dd669
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

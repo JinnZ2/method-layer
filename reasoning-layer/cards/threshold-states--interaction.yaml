@@ -1,0 +1,82 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: threshold-states--interaction
+kind: program
+tool: Simulators/threshold-states/interaction.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: interaction.py -- the two-reference interaction test, with its precedence.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 0debb7305bf1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 threshold-states/interaction.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: "interaction.py is a library; run: python3 threshold-states/test_interaction.py"
+  date: 2026-10-24
+  command: python3 threshold-states/interaction.py --selftest
+  sha12: 301e06fcdb52
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 0debb7305bf1
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: threshold-states--run_outside
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - threshold-states/test_interaction.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: threshold-states/interaction.py
+    sha12: 301e06fcdb52
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-07
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 829f50dd72d8
+    related: 65fae6e6748f
+    right_read: 32bbe99c703a
+    run: 15056b91d89b
+    selftest: 982766fa62d2
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

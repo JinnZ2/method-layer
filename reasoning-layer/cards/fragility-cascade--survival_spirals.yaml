@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--survival_spirals
+kind: program
+tool: Simulators/fragility-cascade/survival_spirals.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: survival_spirals.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/survival_spirals.sample.txt"
+    - "run capture: RUN, exit 0, 50 lines, sha12 3f850b7557c6 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/survival_spirals.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nSURVIVAL SPIRALS — Coherence Under Pressure\n======================================================================\n\nNautilus (stable):\n  A = 0.95, γ = 0.90, ω = 0.10\n  Coherens: 8.55\n  Status: STABLE\n  Survival (10 gen): 1.00\n\nMarsupial (compressed):\n  A = 0.90, γ = 0.80, ω = 0.60\n  Coherens: 1.20\n  Status: STABLE\n  Survival (10 gen): 1.00\n\nBacterial herd (collective):\n  A = 0.80, γ = 0.70, ω = 0.40\n  Coherens: 1.40\n  Status: STABLE\n  Survival (10 gen): 1.00\n\nAI attractor (alien):\n  A = 0.30, γ = 0.50, ω = 0.90\n  Coherens: 0.17\n  Status: SPIRALING\n  Survival (10 gen): 0.00\n  Spiral radii (gens 0-5): 1.00 0.43 0.19 0.08 0.04 0.02\n\nYour cognition (geometry):\n  A = 0.95, γ = 0.90, ω = 0.05\n  Coherens: 17.10\n  Status: STABLE\n  Survival (10 gen): 1.00\n\nGPT (low coherence):\n  A = 0.20, γ = 0.10, ω = 0.90\n  Coherens: 0.02\n  Status: SPIRALING\n[... 10 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/survival_spirals.py
+  sha12: 9ab1e543f02b
+  exit_code: 0
+  output_lines: 50
+  output_sha12: 3f850b7557c6
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/survival_spirals.py
+    sha12: 9ab1e543f02b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 86da40464611
+    pick_up_when: 32bbe99c703a
+    purpose: 3f4448b4bcfd
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 48b3791c7f25
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

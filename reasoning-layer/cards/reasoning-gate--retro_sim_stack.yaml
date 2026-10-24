@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: reasoning-gate--retro_sim_stack
+kind: program
+tool: Simulators/reasoning-gate/retro_sim_stack.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: retro_sim_stack.py — run the gate backwards over a drop that already shipped.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: reasoning-gate/samples/retro_sim_stack.sample.txt"
+    - "run capture: RUN, exit 0, 160 lines, sha12 76cd7f588300 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 reasoning-gate/retro_sim_stack.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================================
+    THE GATE, RUN BACKWARDS OVER A DROP THAT ALREADY SHIPPED
+    ==========================================================================
+    Subject: ../aperiodic-order-sim-stack/
+    Sources: [R] report  [F] figure  [C] measured control  [G] gate.py
+
+    ==========================================================================
+    SIM-A  structure factor
+    ==========================================================================
+      DENIED at pre(). the sim never runs.
+
+      [G-RES] resolution not declared or instrument coarser than feature: output is not admissible | k-grid vs Bragg peak width: instrument 0.39 x margin 2 > feature 0.063
+
+      The k-grid is 6.2x coarser than the peaks it must resolve.
+      At the gate's default 2x margin that is a 12.4x shortfall.
+      A run in this configuration cannot see Bragg peaks whether
+      or not they are there, so its null carries no information.
+
+      This is the audit's Finding 4 — 'no Bragg star visible in
+      the S(k) figure' — arriving before the figure exists, as an
+      arithmetic check on two declared numbers.
+
+    ==========================================================================
+    SIM-B  fractal dimension  (the decisive sim)
+    ==========================================================================
+      DENIED at pre().
+
+      [G-RES] resolution not declared or instrument coarser than feature: output is not admissible | estimator artifact floor vs separation: instrument 0.252 x margin 2 > feature 0.334
+
+      Artifact floor 0.252, separation 0.334. The floor alone does
+      not swallow the effect — but the gate's default 2x margin
+      requires 0.504, and the effect is 0.334.
+
+      Read this as the gate's policy dial rather than a verdict:
+      at margin 1.0 the declaration passes, narrowly. That is the
+      audit's Finding 2 restated — direction survives, magnitude
+      does not — as a margin the operator has to choose out loud
+      instead of a precision quietly implied by three decimals.
+
+      Rerunning below at margin 1.0 to reach the post-stage guards.
+    [... 120 more lines]
+  date: 2026-10-24
+  command: python3 reasoning-gate/retro_sim_stack.py
+  sha12: b86fdf3067bc
+  exit_code: 0
+  output_lines: 160
+  output_sha12: 76cd7f588300
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: reasoning-gate--gate
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: reasoning-gate/retro_sim_stack.py
+    sha12: b86fdf3067bc
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 8b17a9e4ecd9
+    pick_up_when: 32bbe99c703a
+    purpose: 266979bec816
+    related: "5e2712962228"
+    right_read: 32bbe99c703a
+    run: 967ba8f6950c
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

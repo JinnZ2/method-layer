@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_assume
+kind: program
+tool: Simulators/fragility-cascade/thermo_assume.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermo_assume.py -- make omissions loud. CC0 / Public Domain.  stdlib-only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_assume.sample.txt"
+    - "run capture: RUN, exit 0, 35 lines, sha12 b2fbc25563b2 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_assume.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==============================================================
+    ASSUMPTION AUDIT -- RealSite
+    ==============================================================
+
+      [energy diversity]
+         gap: only one process-energy source modeled: diesel
+         fix: add alternatives from the library (solar_pv, grid_tie, human_power, biomass_gasifier); let the referee compare them
+
+      [air quality]
+         gap: 1 combustion process(es), no air state modeled
+         fix: add air_quality_kit(threshold); combustion should emit into it, labor should gate on it, ventilation should cost energy to restore it
+
+      [emission sink]
+         gap: combustion produces no exhaust/particulate byproduct
+         fix: declare an emission byproduct so the air debt is visible, not free
+
+      [human factors]
+         gap: 4 labor process(es), none gated by air/heat/water/rest
+         fix: labor modeled as unconstrained -- gate at least air and heat where the site demands it
+
+      [temporal]
+         gap: no lifespan/decay dimension -- design life and end-of-life unmodeled
+         fix: attach intended design-life to the goal; it changes what's optimal
+    ==============================================================
+
+    >>> closing two gaps with the library (numbers still yours):
+
+    ==============================================================
+    ASSUMPTION AUDIT -- RealSite
+    ==============================================================
+
+      [temporal]
+         gap: no lifespan/decay dimension -- design life and end-of-life unmodeled
+         fix: attach intended design-life to the goal; it changes what's optimal
+    ==============================================================
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_assume.py
+  sha12: b9b7e5d94b9b
+  exit_code: 0
+  output_lines: 35
+  output_sha12: b2fbc25563b2
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--thermo_pipeline_demo
+      via: imported-by
+    - id: fragility-cascade--thermo_interrogate
+      via: imports
+    - id: fragility-cascade--thermo_pm
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_assume.py
+    sha12: b9b7e5d94b9b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: e83b9c53f4c4
+    pick_up_when: 32bbe99c703a
+    purpose: b043dd1ee028
+    related: cc706ffa1561
+    right_read: 32bbe99c703a
+    run: 27297ed9749a
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

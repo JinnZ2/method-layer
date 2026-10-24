@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: measurement-fork--residual_audit
+kind: program
+tool: Simulators/measurement-fork/residual_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: residual_audit.py -- adjudicate the RESIDUAL cell by hand, on the real spec.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: measurement-fork/samples/residual_audit.sample.txt"
+    - "run capture: RUN, exit 0, 98 lines, sha12 e4201f68c193 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 measurement-fork/residual_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nRESIDUAL, ADJUDICATED  --  provisioning_calibration\nclassifier verdicts vs reading the protocols\n\n========================================================================\n1  three counts of the same cell\n========================================================================\n  open question                                        as delivered   measuring    adjudicated\n  ----------------------------------------------------------------------------------------------\n  confidence accuracy gap                              coupling,widen coupling     REACHED\n  act consequence latency                              coupling,widen coupling     REACHED\n  response magnitude per perturbation size             coupling,widen coupling     REACHED\n  discrimination gradient across severities            coupling,widen coupling     REACHED\n  domain match between calibrating environment and t   widen          NO ARM       REACHED\n  environmental autocorrelation                        widen          NO ARM       REACHED\n  coupling bandwidth                                   widen          NO ARM       GAP\n  whether trust in own sensing is a measurement or a   widen          NO ARM       GAP\n  reversibility after regime shift                     widen          NO ARM       GAP\n\n  residual as delivered    0 of 9   widen pooled into coverage\n  residual measuring arms  5 of 9   widen excluded\n  residual adjudicated     3 of 9   protocols read\n\n========================================================================\n2  the classifier is wrong in both directions\n========================================================================\n  FALSE POSITIVE -- widen pooling. Five questions are marked\n  COVERED by widen alone. widen proposes no measurement, and the\n  canonical quantities.py will not even let it construct a\n  quantity: OBJECTS is closed and 'design' is not in it. The\n  schema refuses what the comparator then counts.\n\n  FALSE NEGATIVE -- stemming. Two questions a coupling probe was\n  written for score below threshold:\n\n    'environmental autocorrelation'  ->  K09 autocorrelation\n      2 stems, need 2, hits 1. 'environmental' does not stem to\n      'environment'; the stemmer strips -ies/-es/-s only.\n\n    'domain match between calibrating environment and test items'\n[... 58 more lines]"
+  date: 2026-10-24
+  command: python3 measurement-fork/residual_audit.py
+  sha12: b64571d80eeb
+  exit_code: 0
+  output_lines: 98
+  output_sha12: e4201f68c193
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: measurement-fork--gate_fork
+      via: imported-by
+    - id: measurement-fork--compare
+      via: imports
+    - id: measurement-fork--conventional
+      via: imports
+    - id: measurement-fork--coupling
+      via: imports
+    - id: measurement-fork--widen
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: measurement-fork/residual_audit.py
+    sha12: b64571d80eeb
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 211336b573a1
+    pick_up_when: 32bbe99c703a
+    purpose: 60ab97257824
+    related: d480d6b56102
+    right_read: 32bbe99c703a
+    run: 616c98a1c527
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

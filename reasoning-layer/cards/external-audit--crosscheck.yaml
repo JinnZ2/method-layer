@@ -1,0 +1,86 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: external-audit--crosscheck
+kind: program
+tool: Simulators/external-audit/crosscheck.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Two outside sweeps of one tree, compared.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: external-audit/samples/crosscheck.sample.txt"
+    - "sample: external-audit/samples/crosscheck_choices.sample.txt"
+    - "run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 external-audit/crosscheck.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: ""
+  date: 2026-10-24
+  command: python3 external-audit/crosscheck.py --selftest
+  sha12: 6fb3f774e114
+  exit_code: null
+  output_lines: 0
+  output_sha12: e3b0c44298fc
+  sandbox: netns+nobody
+  reason: timeout after 60 s
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: external-audit--recount
+      via: imports
+    - id: external-audit--recount
+      via: shares external-audit/DEEP_RESEARCH_2026_09_14.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: external-audit/crosscheck.py
+    sha12: 6fb3f774e114
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: c149b8a6485f
+    pick_up_when: 32bbe99c703a
+    purpose: b2c6a1f9232b
+    related: c01df1ca480a
+    right_read: 32bbe99c703a
+    run: dc8ed614b907
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

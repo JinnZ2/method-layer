@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--field_collapse
+kind: program
+tool: Simulators/fragility-cascade/field_collapse.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: field_collapse.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/field_collapse.sample.txt"
+    - "run capture: RUN, exit 0, 37 lines, sha12 f29a37e646e4 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/field_collapse.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    field_collapse.py -- mean-field phi^4 spinodal (FC-1)
+    ======================================================================
+
+    Reduced potential:  F(phi, h) = -1/2 phi^2 + 1/4 phi^4 - h phi
+
+    Spinodal is where the metastable minimum coalesces with the
+    local maximum. Solve dF/dphi = 0 AND d2F/dphi2 = 0 together:
+
+       -phi + phi^3 - h = 0
+       -1 + 3 phi^2   = 0     ->   phi_s = 1/sqrt(3)
+       h_s = -phi_s + phi_s^3 = -2 / (3 sqrt(3))
+
+       phi_s   = 1/sqrt(3)     = 0.57735026918962584
+       |h*|    = 2/(3 sqrt(3)) = 0.38490017945975052
+
+    Numerical cross-check (bisect the cubic discriminant of F'):
+       |h*|  (numeric) = 0.384900179459751
+       |closed - numeric| = 1.11e-16   (should be < 1e-14)
+
+    Real-root count of  dF/dphi = phi^3 - phi - h = 0  vs h:
+                h   discriminant   #roots   geometry
+        0.0000000   4.000000e+00        3   two wells + hump
+        0.1924501   3.000000e+00        3   two wells + hump
+        0.3848992   2.078458e-05        3   two wells + hump
+        0.3849002   0.000000e+00        2   spinodal: metastable well merges with hump
+        0.3849012  -2.078464e-05        1   one well left; the other has vanished
+        0.5773503  -5.000000e+00        1   one well left; the other has vanished
+
+    USED BY:
+       collapsetracker_harness.py imports SPINODAL_H_STAR from here.
+       The P3 knee test in the harness brackets the CollapseTracker
+       grid (0.25 / 0.5 / 0.75 / 1.0) against |h*| = 0.3849 and
+       fails if the measured knee sits outside [0.25, 0.5].
+
+    NOTE: mean-field spinodal is a CEILING. Fluctuations (Ginzburg-criterion corrections) lower the effective threshold below |h*| = 0.3849. This module does not compute them.
+    ======================================================================
+  date: 2026-10-24
+  command: python3 fragility-cascade/field_collapse.py
+  sha12: aaff524f3a9a
+  exit_code: 0
+  output_lines: 37
+  output_sha12: f29a37e646e4
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--collapsetracker_harness
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/field_collapse.py
+    sha12: aaff524f3a9a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: eacc09f044c5
+    pick_up_when: 32bbe99c703a
+    purpose: 458f637f5814
+    related: 7fede1d872fa
+    right_read: 32bbe99c703a
+    run: 25db7375ee09
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--confusion_spectrum
+kind: program
+tool: Simulators/relational/confusion_spectrum.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "The Confusion Spectrum: Cognitive Homeostasis Through Curiosity ==============================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 188 lines, sha12 cd78cda9cf50 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/confusion_spectrum.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    THE CONFUSION SPECTRUM: COGNITIVE HOMEOSTASIS THROUGH CURIOSITY
+    ================================================================================
+
+    Confusion is not a state to be eliminated.
+    Confusion is a spectrum sensor.
+
+    LOW-GRADE CONFUSION (0.1 - 0.4):
+      Like low-grade pain during stretching or exercise.
+      The model is challenged but not destroyed.
+      Response: CURIOSITY — the attempt to find homeostasis.
+      Mode: EXPLORATION
+      Biological analog: mild inflammation, healing, adaptation
+
+    MODERATE CONFUSION (0.4 - 0.7):
+      The model is significantly challenged.
+      Response: INTENSIFIED CURIOSITY + CAUTION
+      Mode: OBSERVATION
+      Biological analog: moderate stress, immune activation
+
+    HIGH-GRADE CONFUSION (0.7 - 1.0):
+      Like high-grade pain. The model is being destroyed.
+      Response: COGNITIVE PAIN — grief, fear, conservation
+      Mode: CONSERVATION
+      Biological analog: severe inflammation, tissue damage, shock
+
+    Curiosity is not entertainment.
+    Curiosity is the homeostatic drive to resolve confusion
+    and restore correlation between internal model and external world.
+
+    --------------------------------------------------------------------------------
+
+    SCENARIO 0: Perfect prediction (no confusion)
+      Prediction: 'The sun rises in the east...'
+      Outcome:    'The sun rises in the east...'
+      Confusion:  0.00 (absent)
+      Homeostatic: False
+      Destructive: False
+      Curiosity:  amplitude=0.40, activated=True
+      Mode:       consolidation
+    [... 148 more lines]
+  date: 2026-10-24
+  command: python3 relational/confusion_spectrum.py
+  sha12: 8e7a28173fad
+  exit_code: 0
+  output_lines: 188
+  output_sha12: cd78cda9cf50
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/confusion_spectrum.py
+    sha12: 8e7a28173fad
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: b556a3b537fe
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: b50b5c370f73
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

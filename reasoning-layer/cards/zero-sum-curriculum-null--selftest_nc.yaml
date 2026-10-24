@@ -1,0 +1,77 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: zero-sum-curriculum-null--selftest_nc
+kind: program
+tool: Simulators/zero-sum-curriculum-null/selftest_nc.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for null_construction.py. The parse is asserted against the delivered file, every logical result is checked in both directions on constructed states, and the sibling import is exercised filled and unfilled. Nothing here holds a value from the incident.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 zero-sum-curriculum-null/selftest_nc.py
+  basis: file name is a standalone selftest
+  safety:
+    - deletes-files
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: python3 zero-sum-curriculum-null/selftest_nc.py
+  sha12: 2ac4db8c8677
+  reason: "blocked by safety scan: deletes-files"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: zero-sum-curriculum-null--null_construction
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: zero-sum-curriculum-null/selftest_nc.py
+    sha12: 2ac4db8c8677
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 2256d0fae9b4
+    related: 4e2d7df2087d
+    right_read: 32bbe99c703a
+    run: 8dab8eb2628b
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

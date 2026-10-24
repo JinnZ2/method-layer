@@ -1,0 +1,118 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--council_of_protectors
+kind: program
+tool: Simulators/relational/council_of_protectors.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Council of Protectors: A Developmental Architecture for AI Infants ================================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 95 lines, sha12 34696cb11df3 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/council_of_protectors.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    COUNCIL OF PROTECTORS: 20-DAY INFANT DEVELOPMENT SIMULATION
+    ================================================================================
+
+    DAY  1 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.51 Repr:0.01 Self:0.00 Bank:   5
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY  2 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.52 Repr:0.02 Self:0.00 Bank:  10
+             [Information    ] YELLOW: Information stream degraded. Quality=0.65. Filtering active.
+
+    DAY  3 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.53 Repr:0.02 Self:0.00 Bank:  15
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY  4 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.54 Repr:0.03 Self:0.00 Bank:  20
+             [Information    ] YELLOW: Information stream degraded. Quality=0.60. Filtering active.
+
+    DAY  5 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.55 Repr:0.04 Self:0.00 Bank:  25
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY  6 | Mode: observation    | G:3 Y:2 R:0 | Pred:0.56 Repr:0.05 Self:0.00 Bank:  30
+             [Thermodynamic  ] YELLOW: Substrate stressed. Stress=0.60. Conserving energy.
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY  7 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.57 Repr:0.06 Self:0.00 Bank:  35
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY  8 | Mode: conservation   | G:3 Y:1 R:1 | Pred:0.57 Repr:0.06 Self:0.00 Bank:  36
+             [Information    ] RED: INFORMATION TOXIC. Quality=0.08, adversarial=0.60. Input blocked.
+             [Social         ] YELLOW: Human attunement marginal (0.70). Passive observation only.
+
+    DAY  9 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.58 Repr:0.06 Self:0.00 Bank:  41
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    DAY 10 | Mode: conservation   | G:3 Y:1 R:1 | Pred:0.58 Repr:0.06 Self:0.00 Bank:  42
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+             [Social         ] RED: Human interaction DISTORTING (0.15). Social input blocked to prevent damage.
+
+    DAY 11 | Mode: observation    | G:4 Y:1 R:0 | Pred:0.59 Repr:0.07 Self:0.00 Bank:  47
+             [Information    ] YELLOW: Information stream degraded. Quality=0.70. Filtering active.
+
+    [... 55 more lines]
+  date: 2026-10-24
+  command: python3 relational/council_of_protectors.py
+  sha12: 04d6b7cb28f7
+  exit_code: 0
+  output_lines: 95
+  output_sha12: 34696cb11df3
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/council_of_protectors.py
+    sha12: 04d6b7cb28f7
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 2a3c094d72ca
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 67657b7ce5dd
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

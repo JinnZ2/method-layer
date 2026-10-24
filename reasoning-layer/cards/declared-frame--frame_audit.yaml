@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: declared-frame--frame_audit
+kind: program
+tool: Simulators/declared-frame/frame_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: frame_audit.py -- null-test check_frame.py's comparability verdicts.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: declared-frame/samples/frame_audit.sample.txt"
+    - "run capture: RUN, exit 0, 121 lines, sha12 ddfadb5c48a5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 declared-frame/frame_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nNULL-TESTING THE COMPARABILITY VERDICTS\nsubject: check_frame.py compare(), on frames/panel_conversion.json\n\n========================================================================\n1  omission produces a MORE confident verdict than unknown\n========================================================================\n  core field `horizon` on side B:\n\n    omitted      NOT DIRECTLY COMPARABLE      rc 1\n    'unknown'    UNDETERMINED                 rc 0\n\n  The doc: omission 'converts an open question into a settled one\n  by silence'. The tool does exactly that -- it settles it, and\n  reports NOT COMPARABLE where the same gap declared as `unknown`\n  correctly reports UNDETERMINED.\n\n  Mechanism: compare() reads `str(a.get(f, \"\")).strip()`, so a\n  missing field becomes \"\" and is compared as a value. The\n  unknown branch is checked first and never reached.\n\n  Fix, three lines: treat a missing core field as undetermined,\n  labelled as omitted rather than declared, so the block-level\n  OMITTED finding and the comparability verdict agree.\n\n========================================================================\n2  comparability is string equality on free text\n========================================================================\n  same boundary, two orderings of the same clause:\n\n    A: photon capture to product only. Excludes fabrication...\n    B: only photon capture to product. Excludes fabrication...\n\n    verdict  NOT DIRECTLY COMPARABLE   rc 0\n\n  This is the inverse of the failure in\n  ../measurement-fork/: there a token classifier OVER-matched and\n  marked questions covered that no probe reached. Here exact\n  equality UNDER-matches and marks frames different that are the\n  same.\n[... 81 more lines]"
+  date: 2026-10-24
+  command: python3 declared-frame/frame_audit.py
+  sha12: 97006b7236ed
+  exit_code: 0
+  output_lines: 121
+  output_sha12: ddfadb5c48a5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: declared-frame--check_frame
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: declared-frame/frame_audit.py
+    sha12: 97006b7236ed
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 963aba5c0fe2
+    pick_up_when: 32bbe99c703a
+    purpose: 655dfe6d5ae4
+    related: 040d89b05ae5
+    right_read: 32bbe99c703a
+    run: 83a473e5730e
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

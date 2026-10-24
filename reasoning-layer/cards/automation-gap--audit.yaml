@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: automation-gap--audit
+kind: program
+tool: Simulators/automation-gap/audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: audit.py -- recompute what the six delivered documents state. CC0, stdlib only, no network. Parses the delivered files at call time; no figure from them is retyped as a literal here (asserted by the suite).
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 5 lines, sha12 b00a1d911fc3 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 automation-gap/audit.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ----------------------------------------------------------------------
+    Ran 34 tests in 0.198s
+
+    OK
+    checks: 34   failures: 0   errors: 0
+  date: 2026-10-24
+  command: python3 automation-gap/audit.py --selftest
+  sha12: 00f1aeed0d04
+  exit_code: 0
+  output_lines: 5
+  output_sha12: b00a1d911fc3
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: automation-gap--register_audit
+      via: imported-by
+    - id: automation-gap--register_audit
+      via: shares automation-gap/DEMO_CORPUS_AUDIT.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - automation-gap/test_audit.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: automation-gap/audit.py
+    sha12: 00f1aeed0d04
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-23
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: feb6da0db8e9
+    related: e08f08286125
+    right_read: 32bbe99c703a
+    run: 42aff49351bb
+    selftest: a08d78f8df8b
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

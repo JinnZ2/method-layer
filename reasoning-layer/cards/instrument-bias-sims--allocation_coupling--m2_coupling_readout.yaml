@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--allocation_coupling--m2_coupling_readout
+kind: program
+tool: Simulators/instrument-bias-sims/allocation_coupling/m2_coupling_readout.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: m2_coupling_readout.py - reading a place requires continuous presence.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/allocation_coupling/samples/m2_coupling_readout.sample.txt"
+    - "run capture: RUN, exit 0, 120 lines, sha12 365d2852ddf0 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/allocation_coupling/m2_coupling_readout.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    M2 -- COUPLING READOUT
+    ========================================================================
+
+      WINDOW REQUIRED PER OBSERVATION TYPE (stipulated, ordered)
+
+        level             4 hours unbroken
+        sequence         60 hours unbroken
+        lag             160 hours unbroken
+        threshold       320 hours unbroken
+
+    ------------------------------------------------------------------------
+
+      FRAGMENTATION SWEEP -- 400 hours, split into N blocks
+
+      blocks   mean window   C        level     sequence   lag      threshold
+      1        400.0         1.000    1.00      0.50       0.25     0.10
+      2        200.0         0.625    1.25      0.62       0.31     0.00
+      4        100.0         0.312    1.25      0.62       0.00     0.00
+      8        50.0          0.156    1.25      0.00       0.00     0.00
+      13       30.8          0.096    1.25      0.00       0.00     0.00
+      20       20.0          0.062    1.25      0.00       0.00     0.00
+      40       10.0          0.031    1.25      0.00       0.00     0.00
+
+      Total hours are constant down the table. Only the split changes, and
+      the deep observation types go to zero while level rises with the
+      block count -- more separate visits, more level readings. C is not
+      linear in total hours because total hours are not moving.
+
+    ------------------------------------------------------------------------
+
+      PREDICTION BAND over the UNMEASURED penalty exponent
+
+      exponent     level ratio    level survives   deep die         prediction holds
+      0.25         10.00          True             True             True
+      0.50         5.00           True             True             True
+      1.00         1.25           True             True             True
+      2.00         0.08           False            True             False
+      4.00         0.00           False            True             False
+
+      holds at exponents: [0.25, 0.5, 1.0]
+    [... 80 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/allocation_coupling/m2_coupling_readout.py
+  sha12: 4af28c01cb7e
+  exit_code: 0
+  output_lines: 120
+  output_sha12: 365d2852ddf0
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--allocation_coupling--run_all
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/allocation_coupling/m2_coupling_readout.py
+    sha12: 4af28c01cb7e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: d53a78d83b0b
+    pick_up_when: 32bbe99c703a
+    purpose: e1649e3005cb
+    related: 8e5f054ed1b7
+    right_read: 32bbe99c703a
+    run: 168ecaa31235
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

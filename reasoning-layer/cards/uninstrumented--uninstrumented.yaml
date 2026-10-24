@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--uninstrumented
+kind: program
+tool: Simulators/uninstrumented/uninstrumented.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: uninstrumented.py -- the registry from README.md, as code, plus three checks on the registry itself.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: uninstrumented/samples/uninstrumented.sample.txt"
+    - "run capture: RUN, exit 0, 337 lines, sha12 06693c7c9bcc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 uninstrumented/uninstrumented.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nUNINSTRUMENTED -- 8 entries, 8 mechanisms\nevery entry is a question until something measures it\n\n========================================================================\nTHE REGISTER, sorted by mechanism\n========================================================================\n\n  MODALITY -- apparatus in the wrong channel\n\n    QUANTITY       capability in a non-human configuration\n    VISIBLE AS     absence of capability\n    WOULD MEASURE  bidirectional protocol; each side sets tasks in its own\n                    modality\n    CONFIDENCE     high on the exclusion, unmeasured on magnitude\n\n  STORAGE -- medium cannot hold the shape\n\n    QUANTITY       calibration between one body and one environment (creek\n                    crossing: surface pattern -> force, at temperature, at season,\n                    plus the dry-arrival sequence)\n    VISIBLE AS     \"no literature exists\"\n    WOULD MEASURE  reconstruction-and-correction capture; the correction is the\n                    product\n    CONFIDENCE     high. The absence is a property of the medium, not of the\n                    knowledge.\n    WORKED IN      ../inverseminar/ ; ../anchor-interval/ ANC_011\n\n  SCALAR_DEMAND -- function collapsed to a number\n\n    [also, primary is MODALITY]\n                    capability in a non-human configuration\n                    the tasks are scored on a human-derived scale, so a different\n                    competence integrates to a low number rather than to no number\n\n    QUANTITY       response as a function over situations (empathy(framework,\n                    target, aspect))\n    VISIBLE AS     middling score, indistinguishable from flat moderate response\n    WOULD MEASURE  one added field: how determinate was this item for you, and\n                    what did you assume to answer it\n[... 297 more lines]"
+  date: 2026-10-24
+  command: python3 uninstrumented/uninstrumented.py
+  sha12: 0fdb0a08b69f
+  exit_code: 0
+  output_lines: 337
+  output_sha12: 06693c7c9bcc
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--case_010_audit
+      via: imported-by
+    - id: uninstrumented--case_011_audit
+      via: imported-by
+    - id: uninstrumented--case_012_audit
+      via: imported-by
+    - id: uninstrumented--case_020_audit
+      via: imported-by
+    - id: uninstrumented--case_021_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/uninstrumented.py
+    sha12: 0fdb0a08b69f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 2d070322c3f8
+    pick_up_when: 32bbe99c703a
+    purpose: bc1035c1d7f4
+    related: d09a5bf863c9
+    right_read: 32bbe99c703a
+    run: 1f5ee5587b33
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: cooperative-substrate--evidence_audit
+kind: program
+tool: Simulators/cooperative-substrate/evidence_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Reads EVIDENCE_PACK.md as a structure: every table row parsed, every locator classified by syntax, every status mark counted, the arXiv identifiers checked against the calendar, the DOI-embedded years against the stated ones, and the pack's claims mapped onto artifacts already in this tree. Opens no paper: every citation host refuses CONNECT from here (probed once, recorded below). Nothing here is a statement about any finding the pack carries."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: cooperative-substrate/samples/evidence_audit.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 a445b49206ff (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 cooperative-substrate/evidence_audit.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: evidence_audit has no selftest; run selftest_evidence.py
+  date: 2026-10-24
+  command: python3 cooperative-substrate/evidence_audit.py --selftest
+  sha12: e058a4e24880
+  exit_code: 2
+  output_lines: 1
+  output_sha12: a445b49206ff
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: cooperative-substrate--selftest_evidence
+      via: imported-by
+    - id: cooperative-substrate--scope_test
+      via: shares cooperative-substrate/EVIDENCE_PACK.md
+    - id: cooperative-substrate--selftest_evidence
+      via: shares cooperative-substrate/EVIDENCE_PACK.md
+    - id: cooperative-substrate--order_audit
+      via: shares cooperative-substrate/WORK_ORDER.md
+    - id: cooperative-substrate--selftest_evidence
+      via: shares cooperative-substrate/WORK_ORDER.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: cooperative-substrate/evidence_audit.py
+    sha12: e058a4e24880
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 70f54f9049de
+    pick_up_when: 32bbe99c703a
+    purpose: 2a67cbf91735
+    related: 34a9ed0508e0
+    right_read: 32bbe99c703a
+    run: 747a410e6d29
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

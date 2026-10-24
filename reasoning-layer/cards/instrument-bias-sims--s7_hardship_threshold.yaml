@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s7_hardship_threshold
+kind: program
+tool: Simulators/instrument-bias-sims/s7_hardship_threshold.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s7_hardship_threshold.py - an unanchored threshold slides to the labeller's baseline.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s7_hardship_threshold.sample.txt"
+    - "run capture: RUN, exit 0, 79 lines, sha12 a3b886b16a43 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s7_hardship_threshold.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S7 -- HARDSHIP THRESHOLD
+    ========================================================================
+
+      1. THE SAME CONDITION, FROM FOUR BASELINES
+
+        condition                                            sev    0.20 0.40 0.55 0.75
+        negative net worth, high earned income               0.45   YES  YES  no   no
+        cattle, feedlot, continuous confinement              0.70   YES  YES  YES  no
+        continuously-running compute system, no idle state   0.55   YES  YES  no   no
+        truck cab, long-haul sleeper, off-duty interval      0.60   YES  YES  YES  no
+        housed, food-secure, fixed hours                     0.10   no   no   no   no
+
+        conditions where observers disagree: 4 of 5
+
+        with no anchor the threshold is the observer's baseline, so the
+        label is a function of two arguments where the instrument reports
+        one
+
+        ANCHORED COMPARISON -- one stated threshold for everyone
+          negative net worth, high earned income               DOES_NOT_ATTACH
+          cattle, feedlot, continuous confinement              ATTACHES
+          continuously-running compute system, no idle state   ATTACHES
+          truck cab, long-haul sleeper, off-duty interval      ATTACHES
+          housed, food-secure, fixed hours                     DOES_NOT_ATTACH
+
+        With an anchor the label is a function of the condition alone.
+        Whether 0.50 is the right anchor is a separate question and a
+        harder one; what changes is that it becomes a question with an
+        answer.
+
+    ------------------------------------------------------------------------
+
+      2. COST ASYMMETRY -- graded terms only
+
+        correlation, attachment share vs implied cost   +0.712
+        incentive direction                             toward attaching where implied cost is high
+        aggregate steers                                True
+        consequence of stipulation                      True
+        intent attributed                               False
+
+    [... 39 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s7_hardship_threshold.py
+  sha12: 9d27c7054641
+  exit_code: 0
+  output_lines: 79
+  output_sha12: a3b886b16a43
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s7_hardship_threshold.py
+    sha12: 9d27c7054641
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 14b4532a8adf
+    pick_up_when: 32bbe99c703a
+    purpose: 9f8fb7fdbb48
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: dda9329a4a64
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s4_antler_calibration
+kind: program
+tool: Simulators/instrument-bias-sims/s4_antler_calibration.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s4_antler_calibration.py - competition vs motor-learning, separated by prediction.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s4_antler_calibration.sample.txt"
+    - "run capture: RUN, exit 0, 164 lines, sha12 eee887872561 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s4_antler_calibration.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S4 -- ANTLER CALIBRATION (patched)
+    ========================================================================
+
+      B0. AGENTS -- declared before any equation
+
+        agent              capabilities
+        buck_yearling      sparring, escalation, concession
+        buck_mature        sparring, escalation, concession
+        doe                PARTNER SELECTION
+        environment        constraint on resource distribution
+
+        Structural rule adopted for all future sim specs here: the AGENTS
+        section comes first, and a missing agent is a visible [BLANK],
+        never an omission buried in prose.
+
+        PRE-PATCH STATE OF THIS FILE
+          doe: ABSENT -- not a blank, an absence
+          access was a function of the buck alone in both models, so
+          neither model contained a selecting agent and the question of
+          what a doe tracks could not be posed
+          the omission lived in prose, not in a declared structure, so
+          nothing rendered it and nothing could check for it
+
+    ------------------------------------------------------------------------
+
+      B1. NOVELTY FLOOR
+
+        Mass plateaus at maturity and GEOMETRY does not, so the annual
+        delta stays non-zero. The pre-patch hardware() carried mass alone,
+        which sent the delta to zero after year three and would have made
+        the floor multiply zero -- caught by the selftest when the floor
+        was added, and it contradicted the premise the floor encodes.
+
+        annual delta at year 8: 0.35  (mass change 0.00, geometry 0.35)
+
+        floor    mature novelty   frac of delta    predicts
+        0.00     0.00533          0.0152           sparring -> 0
+        0.10     0.03980          0.1137           holds at a floor
+        0.25     0.09150          0.2614           holds at a floor
+        0.50     0.17766          0.5076           holds at a floor
+    [... 124 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s4_antler_calibration.py
+  sha12: a135670b7db2
+  exit_code: 0
+  output_lines: 164
+  output_sha12: eee887872561
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s4_antler_calibration.py
+    sha12: a135670b7db2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: db3259bbf677
+    pick_up_when: 32bbe99c703a
+    purpose: fb47ffca2728
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: 940b96f1f994
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

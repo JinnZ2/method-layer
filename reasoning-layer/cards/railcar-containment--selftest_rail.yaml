@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: railcar-containment--selftest_rail
+kind: program
+tool: Simulators/railcar-containment/selftest_rail.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for audit.py against the delivered scripts, which are imported and never edited. Known answers first, both directions. Writes samples/.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 2 lines, sha12 55a4424d3dd7 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 railcar-containment/selftest_rail.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    selftest_rail
+    selftest: 31 checks, 0 failed
+  date: 2026-10-24
+  command: python3 railcar-containment/selftest_rail.py
+  sha12: 5f6580065cad
+  exit_code: 0
+  output_lines: 2
+  output_sha12: 55a4424d3dd7
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: railcar-containment--audit
+      via: imports
+    - id: railcar-containment--detection_loop
+      via: imports
+    - id: railcar-containment--t_hold
+      via: imports
+    - id: railcar-containment--tenability
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+status: RUN
+integrity:
+  - repo: Simulators
+    path: railcar-containment/selftest_rail.py
+    sha12: 5f6580065cad
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 4dade4257522
+    related: e8a7e74209e6
+    right_read: 32bbe99c703a
+    run: 86cdf28efadc
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a
