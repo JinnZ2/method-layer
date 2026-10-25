@@ -92,6 +92,7 @@ selftest:
       - thermal-sensor-degradation-audit/tests/test_thermal_sensor_degradation_audit.py
     is_selftest: false
   basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
 status: RUN
 integrity:
   - repo: Simulators

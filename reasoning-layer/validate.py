@@ -15,7 +15,12 @@ run_claim             RUN without captured output; status RUN while          run
                       run_result is not RUN; RUN capture for other bytes
 author_provenance     an AUTHOR field holds a value generate.py wrote        _provenance.written
 references            read_order / faces / related name a missing card       cards/
+check_record          a problem run where any card has no entry or           problem_runs.yaml
+                      checked: no; a skip with empty because; an entry
+                      for a run the registry does not list
 author_gaps           never fails: count of AUTHOR fields still empty        cards/, APPARATUS
+disuse                never fails: cards skipped in every recorded run       check_record
+                      (reported, not acted on; nothing is removed)
 ```
 
 Exit 0 = no FAIL, 1 = FAIL, 3 = cannot run.
@@ -61,7 +66,8 @@ def expected_locations(l3: rl.Layer3) -> Dict[Tuple[str, str], rl.Row]:
 def validate(base: Path, l3: rl.Layer3, pin_problems: List[str]) -> List[Check]:
     cards_dir = base / "cards"
     checks = {n: Check(n) for n in ("layer3_pin", "schema", "integrity", "coverage", "orphan",
-                                    "run_claim", "author_provenance", "references", "author_gaps")}
+                                    "run_claim", "author_provenance", "references", "check_record",
+                                    "author_gaps", "disuse")}
     checks["layer3_pin"].fails += pin_problems
 
     card_schema = rl.load_schema("card.schema.json", base / "schema")
@@ -192,6 +198,51 @@ def validate(base: Path, l3: rl.Layer3, pin_problems: List[str]) -> List[Check]:
             if rid not in cards:
                 checks["references"].fails.append("%s: related names missing card %s" % (cid, rid))
 
+    # check_record: every card checked against every problem run
+    runs: List[str] = []
+    pr_path = base / "problem_runs.yaml"
+    if pr_path.exists():
+        try:
+            pr = rl.read_yaml(pr_path) or {}
+            for e in rl.schema_errors(pr, rl.load_schema("problem_runs.schema.json", base / "schema")):
+                checks["schema"].fails.append("problem_runs.yaml: %s" % e)
+            runs = [r.get("id") for r in (pr.get("runs") or []) if isinstance(r, dict)]
+        except rl.YamlError as e:
+            checks["schema"].fails.append("problem_runs.yaml: %s" % e)
+    if len(runs) != len(set(runs)):
+        checks["check_record"].fails.append("problem_runs.yaml lists a run id twice")
+    cr = checks["check_record"]
+    for cid, c in cards.items():
+        recs = [r for r in c.get("check_record") or [] if isinstance(r, dict)]
+        by_run: Dict[str, List[Dict[str, Any]]] = {}
+        for r in recs:
+            by_run.setdefault(r.get("run"), []).append(r)
+            if r.get("run") not in runs:
+                cr.fails.append("%s: check_record for run %r, which problem_runs.yaml does not list" % (cid, r.get("run")))
+        for run_id in runs:
+            entries = by_run.get(run_id, [])
+            if not entries:
+                cr.fails.append("run %s: card %s not checked (no entry; defaulted slot)" % (run_id, cid))
+                continue
+            if len(entries) > 1:
+                cr.fails.append("run %s: card %s has %d entries" % (run_id, cid, len(entries)))
+            for r in entries:
+                if r.get("checked") != "yes":
+                    cr.fails.append("run %s: card %s checked: %s" % (run_id, cid, r.get("checked")))
+                elif r.get("result") not in ("picked_up", "skipped"):
+                    cr.fails.append("run %s: card %s checked but result is %r" % (run_id, cid, r.get("result")))
+                elif r.get("result") == "skipped" and not str(r.get("because") or "").strip():
+                    cr.fails.append("run %s: card %s skipped with empty because (unrecorded skip)" % (run_id, cid))
+    cr.info.append("problem runs registered: %d" % len(runs))
+    if runs:
+        never = sorted(cid for cid, c in cards.items()
+                       if not any(isinstance(r, dict) and r.get("result") == "picked_up" for r in c.get("check_record") or []))
+        checks["disuse"].info.append("cards never picked up across %d runs: %d (kept; disuse is reported, not acted on)"
+                                     % (len(runs), len(never)))
+        checks["disuse"].info.append("never_picked_up " + json.dumps(never))
+    else:
+        checks["disuse"].info.append("no problem runs registered yet")
+
     # author gaps (report only)
     gaps = checks["author_gaps"]
     per = {cid: sum(1 for f in rl.CARD_AUTHOR_FIELDS if rl.is_author_empty(c.get(f))) for cid, c in cards.items()}
@@ -228,10 +279,10 @@ def main(argv: Optional[List[str]] = None) -> int:
         print(json.dumps([c.to_dict() for c in checks], indent=2, ensure_ascii=False))
     else:
         for c in checks:
-            state = "REPORT" if c.name == "author_gaps" else c.state
+            state = "REPORT" if c.name in ("author_gaps", "disuse") else c.state
             print("%-18s %s" % (c.name, state))
             for line in c.info:
-                if not line.startswith("per_card "):
+                if not line.startswith(("per_card ", "never_picked_up ")):
                     print("    " + line)
             for line in c.fails[: a.limit]:
                 print("    FAIL " + line)

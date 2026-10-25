@@ -441,6 +441,15 @@ def extract_doc(path: str, data: bytes, files: Set[str]) -> Dict[str, Any]:
 # card set
 # ---------------------------------------------------------------------------
 
+PROBLEM_RUNS_HEADER = (
+    "Problem runs.  One entry per run: {id, problem, date}.  For every run listed here,\n"
+    "EVERY card carries a check_record entry {run, checked: yes, result: picked_up | skipped,\n"
+    "because, date}.  validate.py fails a run where any card is missing or checked: no,\n"
+    "and a skip with an empty because (unrecorded skip = E3, defaulted slot).\n"
+    "generate.py creates this file once and never edits it."
+)
+
+
 class Report:
     def __init__(self) -> None:
         self.lines: List[str] = []
@@ -540,6 +549,7 @@ def merge_card(old: Optional[Dict[str, Any]], plan: Dict[str, Any], gen: Dict[st
         loc["snapshot_bytes"] = snap_ok.get((r.repo, r.path), "NOT_CHECKED")
         integrity.append(loc)
     card["integrity"] = integrity
+    card["check_record"] = old.get("check_record", [])  # written by problem runs, never by generate
 
     run = card["run"]
     cmd = run.get("value") if rl.is_draft(run) else run
@@ -699,6 +709,12 @@ def build(l3: rl.Layer3, snaps: Dict[str, Snapshot], cards_dir: Path, apparatus_
         changed += 1
         if not check:
             apparatus_path.write_text(ap_text, encoding="utf-8")
+
+    pr_path = apparatus_path.parent / rl.PROBLEM_RUNS_PATH.name
+    if not pr_path.exists():
+        changed += 1
+        if not check:
+            pr_path.write_text(rl.dump_yaml({"runs": []}, PROBLEM_RUNS_HEADER), encoding="utf-8")
 
     rf_text = rl.render_read_first(apparatus, cards)
     if not read_first_path.exists() or read_first_path.read_text(encoding="utf-8") != rf_text:

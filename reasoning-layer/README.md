@@ -43,8 +43,8 @@ run_examples.py   python3 <card's own path> [plain args] only
   60 s, process group killed; first 40 lines captured; exit 0 -> RUN, else FAILED
   v
 validate.py       FAIL: pin, schema, integrity, coverage, orphan, run_claim,
-                        author_provenance, references
-                  REPORT: AUTHOR gaps per card
+                        author_provenance, references, check_record
+                  REPORT: AUTHOR gaps per card, disuse
 ```
 
 Refusals that are deliberate:
@@ -104,6 +104,7 @@ right_read     AUTHOR
 related        DRAFT          [{id, via}]: imports, imported-by, sibling-selftest,
                               selftest-of, mentions <file>, shares <file> (<= 8 users), same-bytes
 selftest       DRAFT          {in_file, sibling, is_selftest}
+check_record   problem run    [{run, checked yes|no, result picked_up|skipped, because, date}]
 status         run_examples   RUN only with run_result RUN; PROPOSED kept if set by hand
 integrity      layer 3        LIST of {repo, path, sha12, commit, last_change, ...}:
                               two entries when the same bytes sit in both repos
@@ -118,6 +119,25 @@ Cards are written in a YAML subset (block mappings and lists, plain /
 quoted / `|` scalars, `[a, b]` flow lists, comments). A hand edit outside
 that subset makes `validate.py` fail with the line number, so nothing
 is silently misread.
+
+## Problem runs (patch 2026-10-25)
+
+```text
+problem_runs.yaml   {runs: [{id, problem, date}]}       registered by whoever runs a problem
+     |
+     v  for EVERY run id, EVERY card carries one check_record entry:
+        run: <id>   checked: yes   result: picked_up | skipped   because: <matched condition>   date
+     |
+validate.py FAIL    a run with any card missing or checked: no       (unrecorded = E3, defaulted slot)
+                    skipped with empty because
+                    an entry for a run the registry does not list
+validate.py REPORT  disuse: cards never picked up across the recorded runs
+                    reported only; no card is ever removed for disuse
+generate.py         keeps check_record and problem_runs.yaml as found; creates the registry once
+```
+
+`because` should name the `pick_up_when` / `skip_when` condition that matched.
+While those fields are still AUTHOR, nothing can check that link, so it is not enforced.
 
 ## Decisions taken where the work order left room
 

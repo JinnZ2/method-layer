@@ -340,6 +340,79 @@ class Validate(unittest.TestCase):
         self.assertTrue(any("6 empty -> 9 cards" in ln for ln in gaps.info))
 
 
+class CheckRecord(unittest.TestCase):
+    """Patch 2026-10-25: every card checked against every problem run."""
+
+    def setUp(self):
+        self.ws = Workspace()
+        self.text, self.snaps = fixture()
+        self.l3, _, _ = self.ws.build(self.text, self.snaps)
+        (self.ws.dir / "problem_runs.yaml").write_text(
+            rl.dump_yaml({"runs": [{"id": "r1", "problem": "fixture problem", "date": "2026-10-25"}]}),
+            encoding="utf-8")
+        self.ids = sorted(p.stem for p in (self.ws.dir / "cards").glob("*.yaml"))
+
+    def tearDown(self):
+        self.ws.close()
+
+    def record(self, cid, **kw):
+        c = self.ws.card(cid)
+        entry = {"run": "r1", "checked": "yes", "result": "skipped", "because": "fixture condition",
+                 "date": "2026-10-25"}
+        entry.update(kw)
+        c["check_record"] = [entry]
+        self.ws.put(c)
+
+    def fails(self):
+        return self.ws.checks(self.l3)["check_record"].fails
+
+    def test_all_checked_passes(self):
+        for cid in self.ids:
+            self.record(cid)
+        self.assertEqual(self.fails(), [])
+        self.assertEqual({n: c.fails for n, c in self.ws.checks(self.l3).items() if c.fails}, {})
+
+    def test_unchecked_card_fails(self):
+        for cid in self.ids[1:]:
+            self.record(cid)
+        self.assertTrue(any("not checked" in f and self.ids[0] in f for f in self.fails()))
+
+    def test_checked_no_fails(self):
+        for cid in self.ids:
+            self.record(cid)
+        self.record(self.ids[0], checked="no", result=None, because=None)
+        self.assertTrue(any("checked: no" in f for f in self.fails()))
+
+    def test_skip_without_because_fails(self):
+        for cid in self.ids:
+            self.record(cid)
+        self.record(self.ids[0], because="")
+        self.assertTrue(any("unrecorded skip" in f for f in self.fails()))
+
+    def test_picked_up_and_unknown_run(self):
+        for cid in self.ids:
+            self.record(cid, result="picked_up", because="")
+        self.assertEqual(self.fails(), [])
+        self.record(self.ids[0], run="r9")
+        self.assertTrue(any("does not list" in f for f in self.fails()))
+
+    def test_generate_preserves_record_and_registry(self):
+        for cid in self.ids:
+            self.record(cid)
+        before = (self.ws.dir / "problem_runs.yaml").read_text(encoding="utf-8")
+        self.ws.build(self.text, self.snaps)
+        self.assertEqual((self.ws.dir / "problem_runs.yaml").read_text(encoding="utf-8"), before)
+        self.assertEqual(self.ws.card(self.ids[0])["check_record"][0]["because"], "fixture condition")
+        self.assertEqual(self.fails(), [])
+
+    def test_disuse_reported_not_failed(self):
+        for cid in self.ids:
+            self.record(cid)
+        d = self.ws.checks(self.l3)["disuse"]
+        self.assertEqual(d.fails, [])
+        self.assertTrue(any("never picked up across 1 runs: %d" % len(self.ids) in ln for ln in d.info))
+
+
 class RunExamples(unittest.TestCase):
     def test_command_form(self):
         ok, _ = run_examples.parse_command("python3 a/b.py --selftest", ["a/b.py"])

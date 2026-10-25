@@ -110,6 +110,7 @@ selftest:
       - chain-position/selftest.py
     is_selftest: false
   basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
 status: RUN
 integrity:
   - repo: Simulators

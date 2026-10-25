@@ -43,6 +43,7 @@ selftest:
   mark: DRAFT
   value: null
   basis: method document
+check_record: []
 status: UNRUN
 integrity:
   - repo: Simulators

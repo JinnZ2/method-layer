@@ -113,6 +113,7 @@ selftest:
       - tests/test_fitness_bin_self_test.py
     is_selftest: false
   basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
 status: RUN
 integrity:
   - repo: Simulators

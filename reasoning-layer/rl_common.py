@@ -27,6 +27,7 @@ Ownership of card fields (enforced by generate.py and validate.py):
 AUTHOR      face_of forces_step pick_up_when skip_when wrong_read right_read
 GENERATED   purpose input output run related selftest     (DRAFT until replaced)
 run_examples.py   run_result, status (RUN only with a captured run)
+problem run check_record: one entry per card per run in problem_runs.yaml
 layer 3     integrity
 ```
 """
@@ -47,6 +48,7 @@ LAYER3_META = LAYER3_DIR / "inventory_update_metadata.json"
 LAYER3_PIN = HERE / "layer3.sha256"
 CARDS_DIR = HERE / "cards"
 APPARATUS_PATH = HERE / "APPARATUS.yaml"
+PROBLEM_RUNS_PATH = HERE / "problem_runs.yaml"
 READ_FIRST_PATH = HERE / "READ_FIRST.md"
 SCHEMA_DIR = HERE / "schema"
 
@@ -66,7 +68,7 @@ APPARATUS_AUTHOR_FIELDS = ("name", "shape", "read_order", "corpus_default_to_avo
 CARD_FIELD_ORDER = (
     "id", "kind", "tool", "face_of", "purpose", "forces_step", "pick_up_when",
     "skip_when", "input", "output", "run", "run_result", "wrong_read",
-    "right_read", "related", "selftest", "status", "integrity", "_provenance",
+    "right_read", "related", "selftest", "check_record", "status", "integrity", "_provenance",
 )
 
 # Work order section 4, "Card priority": the eight tools/*.md method documents
@@ -857,11 +859,19 @@ def render_read_first(apparatus: Dict[str, Any], cards: Dict[str, Dict[str, Any]
     out.append("")
     out.append("Choose from the problem's conditions; not picking a tool is a choice.")
     out.append("")
-    out.append("| card | pick_up_when | skip_when |")
-    out.append("|---|---|---|")
+    out.append("Every problem run checks every card and records `check_record` "
+               "{run, checked, result, because, date}; an unrecorded skip is a defaulted slot. "
+               "Cards are never removed for disuse.")
+    out.append("")
+    out.append("| card | pick_up_when | skip_when | picked_up / skipped |")
+    out.append("|---|---|---|---|")
     for cid in order:
         c = cards[cid]
-        out.append("| `%s` | %s | %s |" % (cid, _cell(c.get("pick_up_when")), _cell(c.get("skip_when"))))
+        recs = [r for r in c.get("check_record") or [] if isinstance(r, dict)]
+        out.append("| `%s` | %s | %s | %d / %d |" % (
+            cid, _cell(c.get("pick_up_when")), _cell(c.get("skip_when")),
+            sum(1 for r in recs if r.get("result") == "picked_up"),
+            sum(1 for r in recs if r.get("result") == "skipped")))
     out.append("")
     out.append("## Cards")
     for cid in order:
@@ -901,6 +911,10 @@ def render_read_first(apparatus: Dict[str, Any], cards: Dict[str, Dict[str, Any]
         out.append("purpose: %s  " % _txt(c.get("purpose")))
         out.append("input: %s  " % _txt(c.get("input")))
         out.append("output: %s  " % _txt(c.get("output")))
+        recs = [r for r in c.get("check_record") or [] if isinstance(r, dict)]
+        n_pick = sum(1 for r in recs if r.get("result") == "picked_up")
+        n_skip = sum(1 for r in recs if r.get("result") == "skipped")
+        out.append("check_record: %d entries, picked_up %d, skipped %d  " % (len(recs), n_pick, n_skip))
         rel = c.get("related")
         if is_draft(rel):
             ids = ["%s (%s)" % (r.get("id"), r.get("via")) for r in rel.get("value") or []]

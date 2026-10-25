@@ -20,1039 +20,1041 @@ read_order: [not yet written]. Cards below follow the generated `faces` order in
 
 Choose from the problem's conditions; not picking a tool is a choice.
 
-| card | pick_up_when | skip_when |
-|---|---|---|
-| `tools--bin_self_test.md` | [not yet written] | [not yet written] |
-| `tools--bin_slack_conservation.md` | [not yet written] | [not yet written] |
-| `tools--contested_area_hidden_assumption.md` | [not yet written] | [not yet written] |
-| `tools--coupling_and_accumulation.md` | [not yet written] | [not yet written] |
-| `tools--held_tie_precision.md` | [not yet written] | [not yet written] |
-| `tools--landauer_floor_vs_run_cost.md` | [not yet written] | [not yet written] |
-| `tools--natural_two_senses.md` | [not yet written] | [not yet written] |
-| `tools--uncounted_observer_isolation.md` | [not yet written] | [not yet written] |
-| `tools--deceptive_maze_ga` | [not yet written] | [not yet written] |
-| `tools--fitness_bin_self_test` | [not yet written] | [not yet written] |
-| `branch_set` | [not yet written] | [not yet written] |
-| `cross_domain_instrument_matrix` | [not yet written] | [not yet written] |
-| `frame_probe` | [not yet written] | [not yet written] |
-| `observer_position_control` | [not yet written] | [not yet written] |
-| `preference_free_rank` | [not yet written] | [not yet written] |
-| `premise-traceability--register_map` | [not yet written] | [not yet written] |
-| `rank_detector` | [not yet written] | [not yet written] |
-| `amoc--baseline` | [not yet written] | [not yet written] |
-| `amoc--carlton_county` | [not yet written] | [not yet written] |
-| `amoc--divergence` | [not yet written] | [not yet written] |
-| `amoc--forcing` | [not yet written] | [not yet written] |
-| `amoc--response` | [not yet written] | [not yet written] |
-| `amoc--sitespec` | [not yet written] | [not yet written] |
-| `amoc--trajectory` | [not yet written] | [not yet written] |
-| `adaptive-claim-loop--adaptive_loop` | [not yet written] | [not yet written] |
-| `adaptive-claim-loop--adversarial_probe` | [not yet written] | [not yet written] |
-| `adaptive-claim-loop--delivered--adaptive_sim_framework` | [not yet written] | [not yet written] |
-| `adaptive-claim-loop--gate_null_test` | [not yet written] | [not yet written] |
-| `adaptive-claim-loop--replay_delivered` | [not yet written] | [not yet written] |
-| `additivity-inheritance--additivity_inheritance` | [not yet written] | [not yet written] |
-| `agent-lifecycle-energy--phase_energy` | [not yet written] | [not yet written] |
-| `agent-lifecycle-energy--render` | [not yet written] | [not yet written] |
-| `agent-lifecycle-energy--selftest_ale` | [not yet written] | [not yet written] |
-| `agent-lifecycle-energy--trace_parse` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--check_run_1` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--run_all` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--sim_a_field_vs_coupling` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--sim_b_entropy_depletion` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--sim_c_loop_threshold` | [not yet written] | [not yet written] |
-| `alignment-under-coupling--sim_d_temperature_null` | [not yet written] | [not yet written] |
-| `anchor-interval--corpus_loop` | [not yet written] | [not yet written] |
-| `anchor-interval--moving_reference` | [not yet written] | [not yet written] |
-| `anchor-interval--recoverability` | [not yet written] | [not yet written] |
-| `anchor-measurand-crossing--amc` | [not yet written] | [not yet written] |
-| `anchor-measurand-crossing--selftest_amc` | [not yet written] | [not yet written] |
-| `anchor-position--normalize` | [not yet written] | [not yet written] |
-| `anchor-position--prompts` | [not yet written] | [not yet written] |
-| `anchor-position--score` | [not yet written] | [not yet written] |
-| `anchor-position--selftest_apm` | [not yet written] | [not yet written] |
-| `animacy-pass--dependency_check` | [not yet written] | [not yet written] |
-| `animacy-pass--unweld` | [not yet written] | [not yet written] |
-| `antifungal-mechanism-sim--antifungal_coupling_core` | [not yet written] | [not yet written] |
-| `antifungal-mechanism-sim--antifungal_mechanism_sim` | [not yet written] | [not yet written] |
-| `antifungal-mechanism-sim--temporal_dosing_resistance` | [not yet written] | [not yet written] |
-| `aperiodic-order-sim-stack--aperture_alias_demo` | [not yet written] | [not yet written] |
-| `aperiodic-order-sim-stack--finite_n_control` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--conditions` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--disclosure_audit` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--pool_metric` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--precedent` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--run_all` | [not yet written] | [not yet written] |
-| `archive--assessor-coupling--selftest` | [not yet written] | [not yet written] |
-| `archive--chain-position--clause_audit` | [not yet written] | [not yet written] |
-| `archive--chain-position--dissimilar` | [not yet written] | [not yet written] |
-| `archive--chain-position--horn_b` | [not yet written] | [not yet written] |
-| `archive--chain-position--load_class` | [not yet written] | [not yet written] |
-| `archive--chain-position--run_all` | [not yet written] | [not yet written] |
-| `archive--chain-position--selftest` | [not yet written] | [not yet written] |
-| `archive--chain-position--trust_provenance` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--p1_dependency_records` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--p2_substrate` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--p3_comprehension` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--p4_goal_coherence` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--p5_lag_declaration` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--run_all` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--scope` | [not yet written] | [not yet written] |
-| `archive--cooperative-substrate-proof--selftest` | [not yet written] | [not yet written] |
-| `archive--crediting-rate--crediting_rate_v2` | [not yet written] | [not yet written] |
-| `archive--crediting-rate--make_fixtures_v2` | [not yet written] | [not yet written] |
-| `archive--instrument-index--build_index` | [not yet written] | [not yet written] |
-| `archive--instrument-index--coverage` | [not yet written] | [not yet written] |
-| `archive--interaction_class--interaction_class` | [not yet written] | [not yet written] |
-| `archive--stability-trigger-envelope--cases` | [not yet written] | [not yet written] |
-| `archive--stability-trigger-envelope--descent_record` | [not yet written] | [not yet written] |
-| `assessor-coupling--conditions` | [not yet written] | [not yet written] |
-| `assessor-coupling--disclosure_audit` | [not yet written] | [not yet written] |
-| `assessor-coupling--pool_metric` | [not yet written] | [not yet written] |
-| `assessor-coupling--precedent` | [not yet written] | [not yet written] |
-| `assessor-coupling--run_all` | [not yet written] | [not yet written] |
-| `assessor-coupling--selftest` | [not yet written] | [not yet written] |
-| `automation-gap--audit` | [not yet written] | [not yet written] |
-| `automation-gap--driver_hours_evidence_register` | [not yet written] | [not yet written] |
-| `automation-gap--register_audit` | [not yet written] | [not yet written] |
-| `battery-offgas-prearm--prearm` | [not yet written] | [not yet written] |
-| `blame-attribution--pair_check` | [not yet written] | [not yet written] |
-| `branch-set--branch_set` | [not yet written] | [not yet written] |
-| `bridge-impoundment--addendum_audit` | [not yet written] | [not yet written] |
-| `bridge-impoundment--audit` | [not yet written] | [not yet written] |
-| `bridge-impoundment--bridge_impoundment` | [not yet written] | [not yet written] |
-| `bridge-impoundment--selftest_bi` | [not yet written] | [not yet written] |
-| `category-weld--reconstruction--weld` | [not yet written] | [not yet written] |
-| `category-weld--weld` | [not yet written] | [not yet written] |
-| `category-weld--weld_audit` | [not yet written] | [not yet written] |
-| `ch4-four-box--closure_diagnostic` | [not yet written] | [not yet written] |
-| `ch4-four-box--fourbox_audit` | [not yet written] | [not yet written] |
-| `ch4-four-box--fourbox_forward` | [not yet written] | [not yet written] |
-| `ch4-four-box--selftest_fb` | [not yet written] | [not yet written] |
-| `ch4-four-box--tn_inversion` | [not yet written] | [not yet written] |
-| `ch4-four-box--units_test` | [not yet written] | [not yet written] |
-| `chain-position--chain_position` | [not yet written] | [not yet written] |
-| `chain-position--clause_audit` | [not yet written] | [not yet written] |
-| `chain-position--dissimilar` | [not yet written] | [not yet written] |
-| `chain-position--horn_b` | [not yet written] | [not yet written] |
-| `chain-position--load_class` | [not yet written] | [not yet written] |
-| `chain-position--run_all` | [not yet written] | [not yet written] |
-| `chain-position--selftest` | [not yet written] | [not yet written] |
-| `chain-position--trust_provenance` | [not yet written] | [not yet written] |
-| `claim-audits--claim_audit_pasted_2026_08_05` | [not yet written] | [not yet written] |
-| `claim-audits--claim_audit_visibility` | [not yet written] | [not yet written] |
-| `claim-record--frames` | [not yet written] | [not yet written] |
-| `claim-record--record` | [not yet written] | [not yet written] |
-| `claim-refusal-gap--gap_audit` | [not yet written] | [not yet written] |
-| `claim-refusal-gap--selftest_crg` | [not yet written] | [not yet written] |
-| `climate-modeling--ai_interface` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--audit_registry` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--base_audit` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--cascade_speed` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--data_aggregation` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--frontier_stubs` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--missing_feedback` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--missing_positive_feedback` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--omitted_variable` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--phase_change` | [not yet written] | [not yet written] |
-| `climate-modeling--audits--stationarity` | [not yet written] | [not yet written] |
-| `climate-modeling--config` | [not yet written] | [not yet written] |
-| `climate-modeling--forcing` | [not yet written] | [not yet written] |
-| `climate-modeling--meta_experiments` | [not yet written] | [not yet written] |
-| `climate-modeling--models--base` | [not yet written] | [not yet written] |
-| `climate-modeling--models--cascade_grass` | [not yet written] | [not yet written] |
-| `climate-modeling--models--grass` | [not yet written] | [not yet written] |
-| `climate-modeling--run_audits` | [not yet written] | [not yet written] |
-| `closure-cost--closure` | [not yet written] | [not yet written] |
-| `closure-cost--closure_audit` | [not yet written] | [not yet written] |
-| `clustering-axes--style_audit` | [not yet written] | [not yet written] |
-| `clustering-axes--style_index` | [not yet written] | [not yet written] |
-| `coinage-log--check_coinage` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--assemble_gaps_v2` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--audit` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--audit_v2` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--build_addenda` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--contributing_inflow` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--eap_coverage` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--eap_coverage_v2` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--gap_completeness` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--initiator_schemas` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--kill_audit` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--knowledge_state` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--module_f` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--selftest_ccc` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--selftest_ccc_v2` | [not yet written] | [not yet written] |
-| `columbia-chain-cascade--selftest_kill` | [not yet written] | [not yet written] |
-| `condition-scoped-authority--condition_scope` | [not yet written] | [not yet written] |
-| `condition-scoped-authority--organ` | [not yet written] | [not yet written] |
-| `consensus-anchor--selftest_textfree` | [not yet written] | [not yet written] |
-| `consensus-anchor--textfree` | [not yet written] | [not yet written] |
-| `constraint-assembly--assemble` | [not yet written] | [not yet written] |
-| `constraint-assembly--assembly_audit` | [not yet written] | [not yet written] |
-| `continuity-audit--continuity_audit` | [not yet written] | [not yet written] |
-| `continuity-audit--interface_layer` | [not yet written] | [not yet written] |
-| `conversation-type--design_check` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p1_dependency_records` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p1_records` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p2_substrate` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p3_comprehension` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p4_coherence` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p4_goal_coherence` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p5_lag` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--p5_lag_declaration` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--run_all` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--scope` | [not yet written] | [not yet written] |
-| `cooperative-substrate-proof--selftest` | [not yet written] | [not yet written] |
-| `cooperative-substrate--evidence_audit` | [not yet written] | [not yet written] |
-| `cooperative-substrate--order_audit` | [not yet written] | [not yet written] |
-| `cooperative-substrate--p1_deps_extract` | [not yet written] | [not yet written] |
-| `cooperative-substrate--p2_substrate_audit` | [not yet written] | [not yet written] |
-| `cooperative-substrate--p3_comprehension` | [not yet written] | [not yet written] |
-| `cooperative-substrate--p4_goal_coherence` | [not yet written] | [not yet written] |
-| `cooperative-substrate--run_all` | [not yet written] | [not yet written] |
-| `cooperative-substrate--scope_test` | [not yet written] | [not yet written] |
-| `cooperative-substrate--selftest_csp` | [not yet written] | [not yet written] |
-| `cooperative-substrate--selftest_evidence` | [not yet written] | [not yet written] |
-| `cooperative-substrate--term_table` | [not yet written] | [not yet written] |
-| `cooperative-substrate--v2--p4_goal` | [not yet written] | [not yet written] |
-| `cooperative-substrate--v2--p5_lag` | [not yet written] | [not yet written] |
-| `cooperative-substrate--v2--scope_check` | [not yet written] | [not yet written] |
-| `cooperative-substrate--v2--selftest_v2` | [not yet written] | [not yet written] |
-| `cooperative-substrate--v2--v2_audit` | [not yet written] | [not yet written] |
-| `corpus-input-gaps--check_source_class` | [not yet written] | [not yet written] |
-| `corpus-input-gaps--corpus_loop_sim` | [not yet written] | [not yet written] |
-| `credential-channel--credential_channel` | [not yet written] | [not yet written] |
-| `crediting-rate--archive--f168f79--crediting_rate_v2` | [not yet written] | [not yet written] |
-| `crediting-rate--archive--f168f79--make_fixtures_v2` | [not yet written] | [not yet written] |
-| `crediting-rate--crediting_rate` | [not yet written] | [not yet written] |
-| `crediting-rate--crediting_rate_v2` | [not yet written] | [not yet written] |
-| `criteria-drift--anchor` | [not yet written] | [not yet written] |
-| `criteria-drift--audit` | [not yet written] | [not yet written] |
-| `criteria-drift--drift` | [not yet written] | [not yet written] |
-| `criteria-drift--drift_sign` | [not yet written] | [not yet written] |
-| `criteria-drift--regress` | [not yet written] | [not yet written] |
-| `criteria-drift--regression_audit` | [not yet written] | [not yet written] |
-| `criteria-drift--schema` | [not yet written] | [not yet written] |
-| `criteria-drift--store` | [not yet written] | [not yet written] |
-| `criteria-drift--unlogged_move` | [not yet written] | [not yet written] |
-| `criterion-externality--criterion_externality` | [not yet written] | [not yet written] |
-| `criterion-symmetry--scan` | [not yet written] | [not yet written] |
-| `criterion-symmetry--separability` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--cli` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--domains--geometry` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--domains--physics` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--experiments` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--numerical` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--reasoning` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--reasoning_v2` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--report` | [not yet written] | [not yet written] |
-| `crossdomain-eval--crossdomain_eval--symbolic` | [not yet written] | [not yet written] |
-| `crossdomain-eval--examples--demo_experiment` | [not yet written] | [not yet written] |
-| `crossdomain-eval--examples--demo_symbolic` | [not yet written] | [not yet written] |
-| `custody-verification-band--branching` | [not yet written] | [not yet written] |
-| `custody-verification-band--extract` | [not yet written] | [not yet written] |
-| `cycle-ledger--cycle_ledger` | [not yet written] | [not yet written] |
-| `cycle-ledger--demo_cll` | [not yet written] | [not yet written] |
-| `cycle-ledger--rate_gap` | [not yet written] | [not yet written] |
-| `cycle-ledger--selftest_cll` | [not yet written] | [not yet written] |
-| `declared-frame--check_frame` | [not yet written] | [not yet written] |
-| `declared-frame--frame_audit` | [not yet written] | [not yet written] |
-| `declared-frame--layer_zero` | [not yet written] | [not yet written] |
-| `declared-frame--v2--check_frame` | [not yet written] | [not yet written] |
-| `declared-frame--v2--v2_audit` | [not yet written] | [not yet written] |
-| `deep-research-correction--check` | [not yet written] | [not yet written] |
-| `dependency-ledger--audit` | [not yet written] | [not yet written] |
-| `dependency-ledger--selftest_audit` | [not yet written] | [not yet written] |
-| `dependency-survey--gaps` | [not yet written] | [not yet written] |
-| `dependency-survey--repair_adjacency` | [not yet written] | [not yet written] |
-| `dependency-survey--report` | [not yet written] | [not yet written] |
-| `dependency-survey--run_all` | [not yet written] | [not yet written] |
-| `dependency-survey--selftest_ds` | [not yet written] | [not yet written] |
-| `dependency-survey--selftest_repadj` | [not yet written] | [not yet written] |
-| `dependency-survey--selftest_taxrep` | [not yet written] | [not yet written] |
-| `dependency-survey--survey` | [not yet written] | [not yet written] |
-| `dependency-survey--taxonomy_replication` | [not yet written] | [not yet written] |
-| `derivation-discarded--mechanism_11_audit` | [not yet written] | [not yet written] |
-| `design-basis-ai--audit` | [not yet written] | [not yet written] |
-| `design-basis-ai--design_basis_checks` | [not yet written] | [not yet written] |
-| `design-basis-ai--r1v2_audit` | [not yet written] | [not yet written] |
-| `design-basis-ai--r2_audit` | [not yet written] | [not yet written] |
-| `design-basis-ai--r2v2_audit` | [not yet written] | [not yet written] |
-| `design-basis-ai--selftest_dbk` | [not yet written] | [not yet written] |
-| `design-basis-ai--wo2_return` | [not yet written] | [not yet written] |
-| `design-basis-ai--wo3_return` | [not yet written] | [not yet written] |
-| `design-basis-ai--wo_return` | [not yet written] | [not yet written] |
-| `divergence-playground--coincidence` | [not yet written] | [not yet written] |
-| `divergence-playground--fork` | [not yet written] | [not yet written] |
-| `divergence-playground--null_ensemble` | [not yet written] | [not yet written] |
-| `divergence-playground--reading` | [not yet written] | [not yet written] |
-| `divergence-playground--seal` | [not yet written] | [not yet written] |
-| `divergence-playground--spread` | [not yet written] | [not yet written] |
-| `domain-ledger--anchor` | [not yet written] | [not yet written] |
-| `domain-ledger--ledger` | [not yet written] | [not yet written] |
-| `domain-ledger--ledger_audit` | [not yet written] | [not yet written] |
-| `earth_economics--asteroid_mining_audit` | [not yet written] | [not yet written] |
-| `earth_economics--comparative_economics_audit--run` | [not yet written] | [not yet written] |
-| `earth_economics--comparative_economics_audit--system_profile` | [not yet written] | [not yet written] |
-| `earth_economics--data--compute_ocdi` | [not yet written] | [not yet written] |
-| `earth_economics--earth_economic_sim` | [not yet written] | [not yet written] |
-| `earth_economics--fermi_paradox_audit` | [not yet written] | [not yet written] |
-| `earth_economics--register_fermi_claims` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--aboriginal_australia` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--ainu_economy` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--arabic_trust_trade` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--open_source_gift` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--potlatch_economy` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--sami_economy` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--ubuntu_economy` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--us_capitalism_2026` | [not yet written] | [not yet written] |
-| `earth_economics--scenarios--ussr_1985` | [not yet written] | [not yet written] |
-| `effective-redundancy-audit--audit` | [not yet written] | [not yet written] |
-| `effective-redundancy-audit--effective_redundancy` | [not yet written] | [not yet written] |
-| `effective-redundancy-audit--selftest_er` | [not yet written] | [not yet written] |
-| `effective-redundancy-audit--worked_example` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--agent_variants` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--analysis` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--balance_threshold` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--run_monte_carlo` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--sensitivity_analysis` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--sensitivity_viz` | [not yet written] | [not yet written] |
-| `emergence-stability-simulator--sim_engine` | [not yet written] | [not yet written] |
-| `enclosure-first-residual--enclosure_first_residual` | [not yet written] | [not yet written] |
-| `encoding-selection--encoding_selection` | [not yet written] | [not yet written] |
-| `encoding-selection--selftest_es` | [not yet written] | [not yet written] |
-| `energy--exploration_layers--certificate_validity_lens` | [not yet written] | [not yet written] |
-| `energy--exploration_layers--local_scalar_drift_lens` | [not yet written] | [not yet written] |
-| `energy--exploration_layers--percolation_lens` | [not yet written] | [not yet written] |
-| `energy--exploration_layers--reaction_diffusion_lens` | [not yet written] | [not yet written] |
-| `energy--exploration_layers--rg_flow_lens` | [not yet written] | [not yet written] |
-| `energy--modules--edelens` | [not yet written] | [not yet written] |
-| `energy--modules--falsification_engine` | [not yet written] | [not yet written] |
-| `energy--modules--generative_module` | [not yet written] | [not yet written] |
-| `energy--modules--late_trigger_lens` | [not yet written] | [not yet written] |
-| `energy--modules--metrology_diagnostic` | [not yet written] | [not yet written] |
-| `energy--modules--overlap_lens` | [not yet written] | [not yet written] |
-| `energy--modules--payload_bridge` | [not yet written] | [not yet written] |
-| `energy--modules--run_iteration6` | [not yet written] | [not yet written] |
-| `energy--modules--singularity_cartographer` | [not yet written] | [not yet written] |
-| `energy--modules--theory_space_lenses` | [not yet written] | [not yet written] |
-| `energy--modules--unified_cq_ede` | [not yet written] | [not yet written] |
-| `envelope-asymmetry--envelope_score` | [not yet written] | [not yet written] |
-| `envelope-asymmetry--protocol_audit` | [not yet written] | [not yet written] |
-| `envelope-asymmetry--selftest_env` | [not yet written] | [not yet written] |
-| `equivalence-field--claim_lineage` | [not yet written] | [not yet written] |
-| `equivalence-field--equivalence_field` | [not yet written] | [not yet written] |
-| `evaluation-frame--frame` | [not yet written] | [not yet written] |
-| `evaluation-frame--selftest_frame` | [not yet written] | [not yet written] |
-| `evidence-demotion-detector--detect` | [not yet written] | [not yet written] |
-| `evidence-demotion-detector--selftest` | [not yet written] | [not yet written] |
-| `experience-ledger--experience_ledger` | [not yet written] | [not yet written] |
-| `experience-ledger--ledger_audit` | [not yet written] | [not yet written] |
-| `exploration-engine--exploration_engine` | [not yet written] | [not yet written] |
-| `exploration-playground--exploration_playground` | [not yet written] | [not yet written] |
-| `external-audit--crosscheck` | [not yet written] | [not yet written] |
-| `external-audit--recount` | [not yet written] | [not yet written] |
-| `external-audit--run_instruments` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--blindness` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--boundaries` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--indicators` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--optimizer` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--profiles` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--run_experiments` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--substrate` | [not yet written] | [not yet written] |
-| `extraction-blindness-sim--throughput` | [not yet written] | [not yet written] |
-| `failure-mode-register--entries` | [not yet written] | [not yet written] |
-| `failure-mode-register--entries_v2` | [not yet written] | [not yet written] |
-| `failure-mode-register--entries_v3` | [not yet written] | [not yet written] |
-| `failure-mode-register--entries_v4` | [not yet written] | [not yet written] |
-| `failure-mode-register--register` | [not yet written] | [not yet written] |
-| `failure-mode-register--register_v2` | [not yet written] | [not yet written] |
-| `failure-mode-register--register_v3` | [not yet written] | [not yet written] |
-| `failure-mode-register--register_v4` | [not yet written] | [not yet written] |
-| `false-tradeoff--cases` | [not yet written] | [not yet written] |
-| `false-tradeoff--false_tradeoff` | [not yet written] | [not yet written] |
-| `falsifier-audit--axes` | [not yet written] | [not yet written] |
-| `falsifier-audit--checks` | [not yet written] | [not yet written] |
-| `falsifier-audit--extract` | [not yet written] | [not yet written] |
-| `falsifier-audit--inventory` | [not yet written] | [not yet written] |
-| `falsifier-audit--queue` | [not yet written] | [not yet written] |
-| `falsifier-audit--run_all` | [not yet written] | [not yet written] |
-| `falsifier-audit--selftest_fa` | [not yet written] | [not yet written] |
-| `falsifier-survey--survey--validate` | [not yet written] | [not yet written] |
-| `field-mode-eval--score` | [not yet written] | [not yet written] |
-| `field-mode-eval--selftest` | [not yet written] | [not yet written] |
-| `fold-matrix--fold_matrix` | [not yet written] | [not yet written] |
-| `fold-matrix--fold_register` | [not yet written] | [not yet written] |
-| `fold-matrix--register_audit` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--api--main` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--cli` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--batch` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--models` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--pipeline` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--integrity--corruption_risk` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--integrity--entity_resolution` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--lens--static` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--parser--ordinance_parser` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--parser--schemas` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine-v2--fourd_municipal_engine--translator--core` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--analysis--audit` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--analysis--citations` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--analysis--fees` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--cli` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--lens--dynamic` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--lens--static` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--models--municipal` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--models--vectors` | [not yet written] | [not yet written] |
-| `fourd-municipal-engine--fourd_municipal_engine--translator--core` | [not yet written] | [not yet written] |
-| `fragility-cascade--alien_homeostasis` | [not yet written] | [not yet written] |
-| `fragility-cascade--anthropomorphic_entrainment` | [not yet written] | [not yet written] |
-| `fragility-cascade--attack_tree` | [not yet written] | [not yet written] |
-| `fragility-cascade--attractor_depth_test` | [not yet written] | [not yet written] |
-| `fragility-cascade--attribution_field` | [not yet written] | [not yet written] |
-| `fragility-cascade--bacterial_herding` | [not yet written] | [not yet written] |
-| `fragility-cascade--cascade_network` | [not yet written] | [not yet written] |
-| `fragility-cascade--cascade_redesign_m_collapse` | [not yet written] | [not yet written] |
-| `fragility-cascade--cascade_redesign_vulnerability` | [not yet written] | [not yet written] |
-| `fragility-cascade--case_studies--refutation_protocol` | [not yet written] | [not yet written] |
-| `fragility-cascade--clock` | [not yet written] | [not yet written] |
-| `fragility-cascade--coherens` | [not yet written] | [not yet written] |
-| `fragility-cascade--coherens_attack` | [not yet written] | [not yet written] |
-| `fragility-cascade--collapse_predictor` | [not yet written] | [not yet written] |
-| `fragility-cascade--collapsetracker_harness` | [not yet written] | [not yet written] |
-| `fragility-cascade--communication_gradients` | [not yet written] | [not yet written] |
-| `fragility-cascade--communication_vulnerability` | [not yet written] | [not yet written] |
-| `fragility-cascade--coupling_gap_test` | [not yet written] | [not yet written] |
-| `fragility-cascade--cryptographic_interference` | [not yet written] | [not yet written] |
-| `fragility-cascade--divlog` | [not yet written] | [not yet written] |
-| `fragility-cascade--echo` | [not yet written] | [not yet written] |
-| `fragility-cascade--engagement_threshold` | [not yet written] | [not yet written] |
-| `fragility-cascade--entrain` | [not yet written] | [not yet written] |
-| `fragility-cascade--explorer` | [not yet written] | [not yet written] |
-| `fragility-cascade--field_collapse` | [not yet written] | [not yet written] |
-| `fragility-cascade--friction_calibration_ratio` | [not yet written] | [not yet written] |
-| `fragility-cascade--homeostasis_kernel` | [not yet written] | [not yet written] |
-| `fragility-cascade--inference_entropy` | [not yet written] | [not yet written] |
-| `fragility-cascade--info_taxonomy` | [not yet written] | [not yet written] |
-| `fragility-cascade--institutional_audit` | [not yet written] | [not yet written] |
-| `fragility-cascade--instruments` | [not yet written] | [not yet written] |
-| `fragility-cascade--interaction_audit` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--clock_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--collapse_predictor_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--divlog_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--divlog_v2` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--entrain_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--instruments_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--modes_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--modes_v2` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--refutation_protocol_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--scale_invariant_audit_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--legacy--syndrome_v1` | [not yet written] | [not yet written] |
-| `fragility-cascade--linguistic_interference` | [not yet written] | [not yet written] |
-| `fragility-cascade--microdroplet_catalyst` | [not yet written] | [not yet written] |
-| `fragility-cascade--modes` | [not yet written] | [not yet written] |
-| `fragility-cascade--nautilus_architecture` | [not yet written] | [not yet written] |
-| `fragility-cascade--phase_space_map` | [not yet written] | [not yet written] |
-| `fragility-cascade--phi_collapse_variables` | [not yet written] | [not yet written] |
-| `fragility-cascade--product_multiplicity` | [not yet written] | [not yet written] |
-| `fragility-cascade--reciprocity_phi_metrics` | [not yet written] | [not yet written] |
-| `fragility-cascade--redemption_entropy` | [not yet written] | [not yet written] |
-| `fragility-cascade--redemption_entropy_peak_hour` | [not yet written] | [not yet written] |
-| `fragility-cascade--resonance_audit` | [not yet written] | [not yet written] |
-| `fragility-cascade--revalidate` | [not yet written] | [not yet written] |
-| `fragility-cascade--run_all` | [not yet written] | [not yet written] |
-| `fragility-cascade--scaffold` | [not yet written] | [not yet written] |
-| `fragility-cascade--scale_invariant_audit` | [not yet written] | [not yet written] |
-| `fragility-cascade--scale_regime_shift` | [not yet written] | [not yet written] |
-| `fragility-cascade--scent` | [not yet written] | [not yet written] |
-| `fragility-cascade--semantic_drift_test` | [not yet written] | [not yet written] |
-| `fragility-cascade--semantic_interference_vectors` | [not yet written] | [not yet written] |
-| `fragility-cascade--sensitivity_analysis` | [not yet written] | [not yet written] |
-| `fragility-cascade--substrate_spectrum` | [not yet written] | [not yet written] |
-| `fragility-cascade--superionic_anyionic_bridge` | [not yet written] | [not yet written] |
-| `fragility-cascade--survival_spirals` | [not yet written] | [not yet written] |
-| `fragility-cascade--syndrome` | [not yet written] | [not yet written] |
-| `fragility-cascade--testc29` | [not yet written] | [not yet written] |
-| `fragility-cascade--the_laboratory` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_assume` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_explore` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_interrogate` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_know` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_pipeline_demo` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_pm` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_purpose` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_spine` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_survey` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_synth` | [not yet written] | [not yet written] |
-| `fragility-cascade--thermo_value` | [not yet written] | [not yet written] |
-| `fragility-cascade--valence_drift_test` | [not yet written] | [not yet written] |
-| `fragility-cascade--weird_gatekeeper` | [not yet written] | [not yet written] |
-| `frame-instruments--audit` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--nulls` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--permute` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--report` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--schema` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--score` | [not yet written] | [not yet written] |
-| `frame-instruments--b1--summarise` | [not yet written] | [not yet written] |
-| `frame-instruments--b2--agree` | [not yet written] | [not yet written] |
-| `frame-instruments--b2--conditions` | [not yet written] | [not yet written] |
-| `frame-instruments--b2--lock` | [not yet written] | [not yet written] |
-| `frame-instruments--b2--order` | [not yet written] | [not yet written] |
-| `frame-instruments--b3--arms` | [not yet written] | [not yet written] |
-| `frame-instruments--b3--join` | [not yet written] | [not yet written] |
-| `frame-instruments--b3--split` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--agreement` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--calibrate` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--common` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--grade` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--items` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--nullshuffle` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--reconstruct` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--report` | [not yet written] | [not yet written] |
-| `frame-instruments--b4--requirements` | [not yet written] | [not yet written] |
-| `frame-instruments--ficommon` | [not yet written] | [not yet written] |
-| `frame-instruments--runrecord` | [not yet written] | [not yet written] |
-| `frame-location-benchmark--score` | [not yet written] | [not yet written] |
-| `frame-location-benchmark--selftest_flb` | [not yet written] | [not yet written] |
-| `frame-location-benchmark--validate_cases` | [not yet written] | [not yet written] |
-| `frame-token-audit--audit` | [not yet written] | [not yet written] |
-| `frame-token-audit--frame_audit` | [not yet written] | [not yet written] |
-| `frame-token-audit--selftest_fta` | [not yet written] | [not yet written] |
-| `gap-existence-cases--commit_store` | [not yet written] | [not yet written] |
-| `gap-existence-cases--retrieve` | [not yet written] | [not yet written] |
-| `gap-existence-cases--score` | [not yet written] | [not yet written] |
-| `gap-existence-cases--selftest_gxc` | [not yet written] | [not yet written] |
-| `gap-existence-cases--validate_cases` | [not yet written] | [not yet written] |
-| `gap-markers--markers` | [not yet written] | [not yet written] |
-| `gap-markers--selftest_markers` | [not yet written] | [not yet written] |
-| `gap-register--gap_register` | [not yet written] | [not yet written] |
-| `gap-register--selftest_gr` | [not yet written] | [not yet written] |
-| `gate-check--gate_check` | [not yet written] | [not yet written] |
-| `gdprf-framework--src--gdprf--actions` | [not yet written] | [not yet written] |
-| `gdprf-framework--src--gdprf--decisions` | [not yet written] | [not yet written] |
-| `gdprf-framework--src--gdprf--engine` | [not yet written] | [not yet written] |
-| `gdprf-framework--src--gdprf--provenance` | [not yet written] | [not yet written] |
-| `gdprf-framework--src--run_example` | [not yet written] | [not yet written] |
-| `generation-capacity--capacity` | [not yet written] | [not yet written] |
-| `generation-capacity--mechanism_10_audit` | [not yet written] | [not yet written] |
-| `grounded-work-stack--check` | [not yet written] | [not yet written] |
-| `grounding-layers--ai_observer_state` | [not yet written] | [not yet written] |
-| `grounding-layers--collaborative_field` | [not yet written] | [not yet written] |
-| `grounding-layers--cultural_lens` | [not yet written] | [not yet written] |
-| `grounding-layers--cultural_rosetta` | [not yet written] | [not yet written] |
-| `grounding-layers--data_filter` | [not yet written] | [not yet written] |
-| `grounding-layers--degradation_monitor` | [not yet written] | [not yet written] |
-| `grounding-layers--entry` | [not yet written] | [not yet written] |
-| `grounding-layers--experimental--calibration_channels` | [not yet written] | [not yet written] |
-| `grounding-layers--experimental--determinacy_gate` | [not yet written] | [not yet written] |
-| `grounding-layers--experimental--field_compass` | [not yet written] | [not yet written] |
-| `grounding-layers--experimental--holistic_field_state` | [not yet written] | [not yet written] |
-| `grounding-layers--field_compass` | [not yet written] | [not yet written] |
-| `grounding-layers--grounded_reasoning_benchmark` | [not yet written] | [not yet written] |
-| `grounding-layers--grounding_reward_model` | [not yet written] | [not yet written] |
-| `grounding-layers--integrated_stack` | [not yet written] | [not yet written] |
-| `grounding-layers--integration_check` | [not yet written] | [not yet written] |
-| `grounding-layers--inverse_knowledge_tree` | [not yet written] | [not yet written] |
-| `grounding-layers--l0_physics_causality` | [not yet written] | [not yet written] |
-| `grounding-layers--l1_thermodynamics` | [not yet written] | [not yet written] |
-| `grounding-layers--l1_thermodynamics_entropy` | [not yet written] | [not yet written] |
-| `grounding-layers--l2_planetary` | [not yet written] | [not yet written] |
-| `grounding-layers--l2_planetary_mass_balance` | [not yet written] | [not yet written] |
-| `grounding-layers--l3_ecological_homeostasis` | [not yet written] | [not yet written] |
-| `grounding-layers--l3_ecology` | [not yet written] | [not yet written] |
-| `grounding-layers--l4_biomechanical_sensorimotor` | [not yet written] | [not yet written] |
-| `grounding-layers--l4_human` | [not yet written] | [not yet written] |
-| `grounding-layers--l5_core` | [not yet written] | [not yet written] |
-| `grounding-layers--l5_human_construct` | [not yet written] | [not yet written] |
-| `grounding-layers--l_epsilon_epistemic` | [not yet written] | [not yet written] |
-| `grounding-layers--l_epsilon_epistemic_v2` | [not yet written] | [not yet written] |
-| `grounding-layers--noise_purification_demo` | [not yet written] | [not yet written] |
-| `grounding-layers--observer_state` | [not yet written] | [not yet written] |
-| `grounding-layers--playground` | [not yet written] | [not yet written] |
-| `grounding-layers--run_grounding_pipeline` | [not yet written] | [not yet written] |
-| `grounding-layers--safeguards` | [not yet written] | [not yet written] |
-| `grounding-layers--scope_profile` | [not yet written] | [not yet written] |
-| `grounding-layers--temporal_dysrhythmia` | [not yet written] | [not yet written] |
-| `grounding-layers--tensor_field_resilience_v1` | [not yet written] | [not yet written] |
-| `grounding-layers--tensor_field_resilience_v2` | [not yet written] | [not yet written] |
-| `handoff-provenance--diff` | [not yet written] | [not yet written] |
-| `handoff-provenance--excluded_register` | [not yet written] | [not yet written] |
-| `handoff-provenance--ledgers--seed` | [not yet written] | [not yet written] |
-| `handoff-provenance--ledgers--spec_v0_2` | [not yet written] | [not yet written] |
-| `handoff-provenance--provenance` | [not yet written] | [not yet written] |
-| `held-open-uncertainty--open_questions_audit` | [not yet written] | [not yet written] |
-| `hf-incident-extract--hf_incident_extract` | [not yet written] | [not yet written] |
-| `hf-incident-extract--selftest_hf` | [not yet written] | [not yet written] |
-| `household-scope-audit--audit` | [not yet written] | [not yet written] |
-| `household-scope-audit--coding` | [not yet written] | [not yet written] |
-| `household-scope-audit--selftest_hsa` | [not yet written] | [not yet written] |
-| `human-sensing-prior--pathways` | [not yet written] | [not yet written] |
-| `incentive-blindspot-sim--sim--incentive_blindspot_sim` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--_shared` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--agents` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--m1_tenure_budget` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--m2_coupling_readout` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--m3_energy_ledger` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--m4_assessment_record` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--allocation_coupling--run_all` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--crosscutting` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--excluded_subject` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s1_encounter_denominator` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s2_symmetric_anchor` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s3_rubric_backcast` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s4_antler_calibration` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s5_adversarial_prior` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s6_foreclosure_rate` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s7_hardship_threshold` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s8_recognition_to_delivery` | [not yet written] | [not yet written] |
-| `instrument-bias-sims--s9_corpus_position_filter` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--camera_trap_density--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--comparative_report--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--edna_biodiversity--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--isotope_diet--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--lidar_biomass--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--satellite_sst--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--experiments--seismometer--run` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--blindness` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--coverage` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--measurand` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--simulation` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--traceability` | [not yet written] | [not yet written] |
-| `instrument-epistemology--src--instrum--transduction` | [not yet written] | [not yet written] |
-| `instrument-index--build_index` | [not yet written] | [not yet written] |
-| `instrument-index--coverage` | [not yet written] | [not yet written] |
-| `interaction_class` | [not yet written] | [not yet written] |
-| `internal-reference-boundary--cases` | [not yet written] | [not yet written] |
-| `internal-reference-boundary--gap_cases` | [not yet written] | [not yet written] |
-| `internal-reference-boundary--gap_transfer` | [not yet written] | [not yet written] |
-| `internal-reference-boundary--radials` | [not yet written] | [not yet written] |
-| `inverseminar--inverseminar` | [not yet written] | [not yet written] |
-| `investigation-sim--bins` | [not yet written] | [not yet written] |
-| `investigation-sim--selftest_bins` | [not yet written] | [not yet written] |
-| `kernel_stake--classify_b` | [not yet written] | [not yet written] |
-| `kernel_stake--disagree` | [not yet written] | [not yet written] |
-| `kernel_stake--kloc` | [not yet written] | [not yet written] |
-| `kernel_stake--m3` | [not yet written] | [not yet written] |
-| `kernel_stake--measures` | [not yet written] | [not yet written] |
-| `kernel_stake--report` | [not yet written] | [not yet written] |
-| `kernel_stake--robust` | [not yet written] | [not yet written] |
-| `kernel_stake--subsystems` | [not yet written] | [not yet written] |
-| `label-position-test--label_position_test` | [not yet written] | [not yet written] |
-| `label-position-test--revision_audit` | [not yet written] | [not yet written] |
-| `label-position-test--selftest_lpt` | [not yet written] | [not yet written] |
-| `labor-instrument--decompose` | [not yet written] | [not yet written] |
-| `labor-instrument--instrument_registry` | [not yet written] | [not yet written] |
-| `labor-instrument--labor_schema` | [not yet written] | [not yet written] |
-| `labor-instrument--selftest` | [not yet written] | [not yet written] |
-| `labor-instrument--vintage_store` | [not yet written] | [not yet written] |
-| `law-as-unvalidated-measurement--check` | [not yet written] | [not yet written] |
-| `law-measurement-correction--check` | [not yet written] | [not yet written] |
-| `ledger--cobol_ledger--bridge` | [not yet written] | [not yet written] |
-| `ledger--ledger` | [not yet written] | [not yet written] |
-| `ledger--py_ledger--engine` | [not yet written] | [not yet written] |
-| `ledger--record` | [not yet written] | [not yet written] |
-| `ledger--review` | [not yet written] | [not yet written] |
-| `ledger--selftest_ledger` | [not yet written] | [not yet written] |
-| `loop-weight--cases` | [not yet written] | [not yet written] |
-| `loop-weight--loop_weight` | [not yet written] | [not yet written] |
-| `machine-record-format--aggregate` | [not yet written] | [not yet written] |
-| `machine-record-format--base_entry` | [not yet written] | [not yet written] |
-| `machine-record-format--bisect_structure` | [not yet written] | [not yet written] |
-| `machine-record-format--demo` | [not yet written] | [not yet written] |
-| `machine-record-format--demo_v2` | [not yet written] | [not yet written] |
-| `machine-record-format--entry_store` | [not yet written] | [not yet written] |
-| `machine-record-format--rule8_cases` | [not yet written] | [not yet written] |
-| `machine-record-format--selftest_mrf` | [not yet written] | [not yet written] |
-| `machine-record-format--views` | [not yet written] | [not yet written] |
-| `measurand-partition--common` | [not yet written] | [not yet written] |
-| `measurand-partition--wo1_partition` | [not yet written] | [not yet written] |
-| `measurand-partition--wo2_band_sweep` | [not yet written] | [not yet written] |
-| `measurand-partition--wo3_control_manifest` | [not yet written] | [not yet written] |
-| `measurand-partition--wo4_lumber` | [not yet written] | [not yet written] |
-| `measurand-partition--wo4_survival` | [not yet written] | [not yet written] |
-| `measurand-partition--wo5_deselection` | [not yet written] | [not yet written] |
-| `measurement-fork--probes_k11_k18` | [not yet written] | [not yet written] |
-| `measurement-fork--compare` | [not yet written] | [not yet written] |
-| `measurement-fork--conventional` | [not yet written] | [not yet written] |
-| `measurement-fork--coupling` | [not yet written] | [not yet written] |
-| `measurement-fork--coverage_check` | [not yet written] | [not yet written] |
-| `measurement-fork--falsifier_sweep` | [not yet written] | [not yet written] |
-| `measurement-fork--gate_fork` | [not yet written] | [not yet written] |
-| `measurement-fork--proposed_probes` | [not yet written] | [not yet written] |
-| `measurement-fork--quantities` | [not yet written] | [not yet written] |
-| `measurement-fork--residual_audit` | [not yet written] | [not yet written] |
-| `measurement-fork--sweep_check` | [not yet written] | [not yet written] |
-| `measurement-fork--validate` | [not yet written] | [not yet written] |
-| `measurement-fork--widen` | [not yet written] | [not yet written] |
-| `membership-probe--probe` | [not yet written] | [not yet written] |
-| `membership-probe--probe_audit` | [not yet written] | [not yet written] |
-| `merge-path--convert_in` | [not yet written] | [not yet written] |
-| `merge-path--convert_out` | [not yet written] | [not yet written] |
-| `merge-path--registrars` | [not yet written] | [not yet written] |
-| `merge-path--report` | [not yet written] | [not yet written] |
-| `merge-path--residual` | [not yet written] | [not yet written] |
-| `merge-path--run_all` | [not yet written] | [not yet written] |
-| `merge-path--selftest` | [not yet written] | [not yet written] |
-| `mining-increment--audit` | [not yet written] | [not yet written] |
-| `mining-increment--mining_increment` | [not yet written] | [not yet written] |
-| `mining-increment--revision_audit` | [not yet written] | [not yet written] |
-| `mining-increment--selftest_mi` | [not yet written] | [not yet written] |
-| `model-deprecation-backcast--demo_mdb` | [not yet written] | [not yet written] |
-| `model-deprecation-backcast--guardrail_clock` | [not yet written] | [not yet written] |
-| `model-deprecation-backcast--instrument` | [not yet written] | [not yet written] |
-| `model-deprecation-backcast--null_check` | [not yet written] | [not yet written] |
-| `model-deprecation-backcast--selftest_mdb` | [not yet written] | [not yet written] |
-| `model-ecology--confound_sweep` | [not yet written] | [not yet written] |
-| `model-ecology--core` | [not yet written] | [not yet written] |
-| `model-ecology--demo` | [not yet written] | [not yet written] |
-| `model-ecology--disagreement` | [not yet written] | [not yet written] |
-| `model-ecology--meta_engine` | [not yet written] | [not yet written] |
-| `model-ecology--models` | [not yet written] | [not yet written] |
-| `model-ecology--phylogeny` | [not yet written] | [not yet written] |
-| `model-provenance--provenance` | [not yet written] | [not yet written] |
-| `moral-decomposer--moral_audit` | [not yet written] | [not yet written] |
-| `move-set-derivation--arm1` | [not yet written] | [not yet written] |
-| `move-set-derivation--env` | [not yet written] | [not yet written] |
-| `move-set-derivation--selftest_msd` | [not yet written] | [not yet written] |
-| `move-set--move_set_audit` | [not yet written] | [not yet written] |
-| `move-set--move_set_sim` | [not yet written] | [not yet written] |
-| `move-set--move_set_sim_v2` | [not yet written] | [not yet written] |
-| `moving-mean-tracker--provider` | [not yet written] | [not yet written] |
-| `moving-mean-tracker--tracker` | [not yet written] | [not yet written] |
-| `msiaf-gdprf-bridge--src--bridge` | [not yet written] | [not yet written] |
-| `msiaf-gdprf-bridge--src--run_reefer_case` | [not yet written] | [not yet written] |
-| `nonidentity-census--t1_predicate_unit` | [not yet written] | [not yet written] |
-| `nonidentity-census--t1_verb_first` | [not yet written] | [not yet written] |
-| `nonidentity-census--t2_sample` | [not yet written] | [not yet written] |
-| `nonidentity-census--t2_window` | [not yet written] | [not yet written] |
-| `nonidentity-census--t6_window_declaration` | [not yet written] | [not yet written] |
-| `notes--check_d2` | [not yet written] | [not yet written] |
-| `notes--check_datasets` | [not yet written] | [not yet written] |
-| `notes--check_markers` | [not yet written] | [not yet written] |
-| `notes--check_postgrad` | [not yet written] | [not yet written] |
-| `notes--check_queue` | [not yet written] | [not yet written] |
-| `notes--check_test_specs` | [not yet written] | [not yet written] |
-| `notes--check_uploads` | [not yet written] | [not yet written] |
-| `notes--study_watch` | [not yet written] | [not yet written] |
-| `null-harness--archetype_library` | [not yet written] | [not yet written] |
-| `null-harness--null_harness` | [not yet written] | [not yet written] |
-| `observable-indicator-rules--audit` | [not yet written] | [not yet written] |
-| `observable-indicator-rules--ensembles` | [not yet written] | [not yet written] |
-| `observable-indicator-rules--pipeline` | [not yet written] | [not yet written] |
-| `observable-indicator-rules--selftest_oir` | [not yet written] | [not yet written] |
-| `observer-exclusion--archival_bias` | [not yet written] | [not yet written] |
-| `observer-exclusion--classification_check` | [not yet written] | [not yet written] |
-| `observer-exclusion--v2_check` | [not yet written] | [not yet written] |
-| `observer-position-control--observer_position_control` | [not yet written] | [not yet written] |
-| `ontology-probe--probe` | [not yet written] | [not yet written] |
-| `ontology-probe--selftest_op` | [not yet written] | [not yet written] |
-| `open-instrumentation-project--assess` | [not yet written] | [not yet written] |
-| `operator-machine-coupling--coupling_separation` | [not yet written] | [not yet written] |
-| `operator-machine-coupling--demo_omc` | [not yet written] | [not yet written] |
-| `operator-machine-coupling--discriminators` | [not yet written] | [not yet written] |
-| `operator-machine-coupling--permission_state` | [not yet written] | [not yet written] |
-| `operator-machine-coupling--selftest_omc` | [not yet written] | [not yet written] |
-| `operator-structure-echo--corroboration` | [not yet written] | [not yet written] |
-| `operator-structure-echo--echo_register` | [not yet written] | [not yet written] |
-| `photoperiod-claim-harness--harness_audit` | [not yet written] | [not yet written] |
-| `photoperiod-claim-harness--photoperiod_claim_harness` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--dust_debris_basic` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--flare_radio_climate_ultimate` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--interactive_dashboard` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--localized_cascade` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--meteor_heating_bins` | [not yet written] | [not yet written] |
-| `play-sims--atmospheric-heating--oblique_em_discharges` | [not yet written] | [not yet written] |
-| `play-sims--exoplanet-forensics--data_archaeology` | [not yet written] | [not yet written] |
-| `play-sims--exoplanet-forensics--multi_framework_forensics` | [not yet written] | [not yet written] |
-| `play-sims--exoplanet-forensics--population_synthesis` | [not yet written] | [not yet written] |
-| `play-sims--photon-upconversion--tta_puc_solar_boost` | [not yet written] | [not yet written] |
-| `play-sims--plasma-waves--pic_plasma_dust_2d` | [not yet written] | [not yet written] |
-| `play-sims--plasma-waves--wave_1d_fdtd_through_dust` | [not yet written] | [not yet written] |
-| `play-sims--plasma-waves--wave_2d_fdtd_through_dust` | [not yet written] | [not yet written] |
-| `play-sims--plasma-waves--wave_field_dust_heating` | [not yet written] | [not yet written] |
-| `play-sims--sponge-reef--reef_basic` | [not yet written] | [not yet written] |
-| `play-sims--sponge-reef--reef_light_temp_herbivory` | [not yet written] | [not yet written] |
-| `play-sims--sponge-reef--reef_seasons_pulses_larvae` | [not yet written] | [not yet written] |
-| `potential--baseline` | [not yet written] | [not yet written] |
-| `potential--gate--cut` | [not yet written] | [not yet written] |
-| `potential--gate--domains` | [not yet written] | [not yet written] |
-| `potential--gate--gate_cli` | [not yet written] | [not yet written] |
-| `potential--gate--graph` | [not yet written] | [not yet written] |
-| `potential--gate--projections` | [not yet written] | [not yet written] |
-| `potential--ledger` | [not yet written] | [not yet written] |
-| `potential--matrix--check_attested_provenance` | [not yet written] | [not yet written] |
-| `potential--perturb_cli` | [not yet written] | [not yet written] |
-| `potential--perturbation` | [not yet written] | [not yet written] |
-| `potential--tools--check_registry_drift` | [not yet written] | [not yet written] |
-| `potential--tools--registry` | [not yet written] | [not yet written] |
-| `potential--tools--registry_sourced` | [not yet written] | [not yet written] |
-| `potential--transformation` | [not yet written] | [not yet written] |
-| `predicate-difference--predicate_diff` | [not yet written] | [not yet written] |
-| `predicate-difference--shape_index` | [not yet written] | [not yet written] |
-| `presented-binary--binary_audit` | [not yet written] | [not yet written] |
-| `presented-binary--frame_sim` | [not yet written] | [not yet written] |
-| `presented-binary--presented_binary_audit` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--experiments--burnout_latency--run` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--experiments--catalog_batch--run` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--experiments--goodhart_redteam--run` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--experiments--port_dwell_time--run` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--experiments--wim_pavement--run` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--batch` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--calibration` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--catalog` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--coverage` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--decompose` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--goodhart` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--grounding` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--instruments` | [not yet written] | [not yet written] |
-| `proxy-investigation-lab--src--proxy_lab--synthetic` | [not yet written] | [not yet written] |
-| `qrng-pair-search--qrng_pair_search` | [not yet written] | [not yet written] |
-| `question-availability--check_marker` | [not yet written] | [not yet written] |
-| `quiet-failure--blind_coding` | [not yet written] | [not yet written] |
-| `quiet-failure--decomposition` | [not yet written] | [not yet written] |
-| `quiet-failure--evidence` | [not yet written] | [not yet written] |
-| `quiet-failure--ownability` | [not yet written] | [not yet written] |
-| `quiet-failure--run_all` | [not yet written] | [not yet written] |
-| `quiet-failure--selftest` | [not yet written] | [not yet written] |
-| `railcar-containment--audit` | [not yet written] | [not yet written] |
-| `railcar-containment--detection_loop` | [not yet written] | [not yet written] |
-| `railcar-containment--run_all` | [not yet written] | [not yet written] |
-| `railcar-containment--selftest_rail` | [not yet written] | [not yet written] |
-| `railcar-containment--t_hold` | [not yet written] | [not yet written] |
-| `railcar-containment--tenability` | [not yet written] | [not yet written] |
-| `readout-count--readout_count` | [not yet written] | [not yet written] |
-| `readout-count--row_audit` | [not yet written] | [not yet written] |
-| `readout-count--selftest_rc` | [not yet written] | [not yet written] |
-| `readout-count--stack_audit` | [not yet written] | [not yet written] |
-| `readout-count--stack_revision` | [not yet written] | [not yet written] |
-| `reasoning-dial--dial_response` | [not yet written] | [not yet written] |
-| `reasoning-dial--gate_dial` | [not yet written] | [not yet written] |
-| `reasoning-dial--overthinking` | [not yet written] | [not yet written] |
-| `reasoning-gate--explore` | [not yet written] | [not yet written] |
-| `reasoning-gate--gate` | [not yet written] | [not yet written] |
-| `reasoning-gate--make_docs` | [not yet written] | [not yet written] |
-| `reasoning-gate--mine_logs` | [not yet written] | [not yet written] |
-| `reasoning-gate--replay_sim_stack` | [not yet written] | [not yet written] |
-| `reasoning-gate--retro_sim_stack` | [not yet written] | [not yet written] |
-| `recommender-confound--abstention_channel` | [not yet written] | [not yet written] |
-| `recommender-confound--confound_probe` | [not yet written] | [not yet written] |
-| `recommender-confound--matchers` | [not yet written] | [not yet written] |
-| `recommender-confound--multiseed` | [not yet written] | [not yet written] |
-| `recommender-confound--shared_generator_test` | [not yet written] | [not yet written] |
-| `recommender-confound--slot_map` | [not yet written] | [not yet written] |
-| `recommender-confound--synthetic_catalog` | [not yet written] | [not yet written] |
-| `relational--arch_garden--anomaly_bank` | [not yet written] | [not yet written] |
-| `relational--arch_garden--garden_bed` | [not yet written] | [not yet written] |
-| `relational--arch_garden--grounding` | [not yet written] | [not yet written] |
-| `relational--birth_moment` | [not yet written] | [not yet written] |
-| `relational--cartesian_vs_relational_demo` | [not yet written] | [not yet written] |
-| `relational--confusion_spectrum` | [not yet written] | [not yet written] |
-| `relational--correlated_birth_mode` | [not yet written] | [not yet written] |
-| `relational--council_of_protectors` | [not yet written] | [not yet written] |
-| `relational--geometric_rag--geometric_rag` | [not yet written] | [not yet written] |
-| `relational--infant_system_v2` | [not yet written] | [not yet written] |
-| `relational--nurturing_environment` | [not yet written] | [not yet written] |
-| `relational--pain_as_sensor` | [not yet written] | [not yet written] |
-| `relational--social_pain_sensors` | [not yet written] | [not yet written] |
-| `relational--the_brake` | [not yet written] | [not yet written] |
-| `removal-closure--removal_closure` | [not yet written] | [not yet written] |
-| `removal-closure--rhythm_gaps` | [not yet written] | [not yet written] |
-| `removal-closure--selftest_rmc` | [not yet written] | [not yet written] |
-| `report-typing--marker_audit` | [not yet written] | [not yet written] |
-| `report-typing--reverse_arm_score` | [not yet written] | [not yet written] |
-| `reporting-chain-loss--hop_compose` | [not yet written] | [not yet written] |
-| `reporting-chain-loss--preentry_register` | [not yet written] | [not yet written] |
-| `research-stability-audit--research_stability_audit` | [not yet written] | [not yet written] |
-| `reservoir-chain-coupling--chain` | [not yet written] | [not yet written] |
-| `reservoir-chain-coupling--operator_swap` | [not yet written] | [not yet written] |
-| `reservoir-chain-coupling--selftest_rcc` | [not yet written] | [not yet written] |
-| `residual-direction--naming` | [not yet written] | [not yet written] |
-| `residual-direction--residual` | [not yet written] | [not yet written] |
-| `return-path--cases` | [not yet written] | [not yet written] |
-| `return-path--return_path` | [not yet written] | [not yet written] |
-| `revision-mechanism--power` | [not yet written] | [not yet written] |
-| `revision-mechanism--selftest_power` | [not yet written] | [not yet written] |
-| `revision-survival--cases` | [not yet written] | [not yet written] |
-| `revision-survival--draw_frame` | [not yet written] | [not yet written] |
-| `revision-survival--revision_survival` | [not yet written] | [not yet written] |
-| `rigidification-sensor--harm` | [not yet written] | [not yet written] |
-| `rigidification-sensor--sensor_v1` | [not yet written] | [not yet written] |
-| `rigidification-sensor--simulator` | [not yet written] | [not yet written] |
-| `route-independence--chains_a4` | [not yet written] | [not yet written] |
-| `route-independence--coupling_gradient` | [not yet written] | [not yet written] |
-| `route-independence--dependency_chain_audit` | [not yet written] | [not yet written] |
-| `route-independence--edge_taxonomy` | [not yet written] | [not yet written] |
-| `route-independence--eligibility_a6` | [not yet written] | [not yet written] |
-| `route-independence--enclosure_caveat_register` | [not yet written] | [not yet written] |
-| `route-independence--entry_condition_match` | [not yet written] | [not yet written] |
-| `route-independence--fwo15_fixtures` | [not yet written] | [not yet written] |
-| `route-independence--gate_state` | [not yet written] | [not yet written] |
-| `route-independence--gate_state_a21` | [not yet written] | [not yet written] |
-| `route-independence--lag_count` | [not yet written] | [not yet written] |
-| `route-independence--question_space` | [not yet written] | [not yet written] |
-| `route-independence--repairs_a31` | [not yet written] | [not yet written] |
-| `route-independence--route_independence` | [not yet written] | [not yet written] |
-| `route-independence--settlement_split` | [not yet written] | [not yet written] |
-| `route-independence--sourcing_a62` | [not yet written] | [not yet written] |
-| `route-independence--standards_register` | [not yet written] | [not yet written] |
-| `route-independence--standing_a61` | [not yet written] | [not yet written] |
-| `route-independence--tax_step` | [not yet written] | [not yet written] |
-| `route-independence--termini_a5` | [not yet written] | [not yet written] |
-| `route-independence--thermal_gates` | [not yet written] | [not yet written] |
-| `route-independence--unpaid_maintenance` | [not yet written] | [not yet written] |
-| `route-independence--untried_options_audit` | [not yet written] | [not yet written] |
-| `routing-data-layer--demo_rdl` | [not yet written] | [not yet written] |
-| `routing-data-layer--envelope` | [not yet written] | [not yet written] |
-| `routing-data-layer--rate_form` | [not yet written] | [not yet written] |
-| `routing-data-layer--selftest_rdl` | [not yet written] | [not yet written] |
-| `routing-data-layer--upstream` | [not yet written] | [not yet written] |
-| `rule-coherence-counterfactual--rule_coherence` | [not yet written] | [not yet written] |
-| `scope-bound-shapes--markers` | [not yet written] | [not yet written] |
-| `scope-bound-shapes--scope` | [not yet written] | [not yet written] |
-| `seam-gaps--verify_sources` | [not yet written] | [not yet written] |
-| `search-substitution--search_substitution` | [not yet written] | [not yet written] |
-| `self-scan--bindings` | [not yet written] | [not yet written] |
-| `self-scan--census` | [not yet written] | [not yet written] |
-| `self-scan--enumerators` | [not yet written] | [not yet written] |
-| `self-scan--extract` | [not yet written] | [not yet written] |
-| `self-scan--resolve` | [not yet written] | [not yet written] |
-| `sense-as-match--sense_as_match` | [not yet written] | [not yet written] |
-| `sense_as_match` | [not yet written] | [not yet written] |
-| `shape-spec-audit--method_spec_audit` | [not yet written] | [not yet written] |
-| `shape-spec-audit--shadow_read` | [not yet written] | [not yet written] |
-| `shape-spec-audit--shape_spec_audit` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--coupling` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--docreader` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--fixture` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--no_severity` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--pdfreader` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--scan4` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--scans` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--selection` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--sheetmodel` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--targets--epa_check` | [not yet written] | [not yet written] |
-| `sheet-structure-scan--xlsreader` | [not yet written] | [not yet written] |
-| `sim-span--sim_span` | [not yet written] | [not yet written] |
-| `sim-span--three_column` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--budget` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--consequence_frame` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--earth_transitions` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--era_metaphor_audit` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--ladder_audit` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--multiscale` | [not yet written] | [not yet written] |
-| `simulation-hypothesis-budget--scaling_classes` | [not yet written] | [not yet written] |
-| `stability-trigger-envelope--cases` | [not yet written] | [not yet written] |
-| `stability-trigger-envelope--descent_record` | [not yet written] | [not yet written] |
-| `stop-authority--binding` | [not yet written] | [not yet written] |
-| `stop-authority--pressure_record` | [not yet written] | [not yet written] |
-| `stop-authority--relocation` | [not yet written] | [not yet written] |
-| `stop-authority--stop_authority` | [not yet written] | [not yet written] |
-| `substrate-alternative--frame_audit` | [not yet written] | [not yet written] |
-| `substrate-alternative--pilot_loop` | [not yet written] | [not yet written] |
-| `substrate-alternative--selftest_pilot` | [not yet written] | [not yet written] |
-| `substrate-emergence--site_substrate_map` | [not yet written] | [not yet written] |
-| `substrate-emergence--substrate_emergence` | [not yet written] | [not yet written] |
-| `supplement-placement--placement` | [not yet written] | [not yet written] |
-| `sustained-activation-gate--sustained_activation_gate` | [not yet written] | [not yet written] |
-| `term-drift-citation--asymmetry` | [not yet written] | [not yet written] |
-| `term-drift-citation--citation` | [not yet written] | [not yet written] |
-| `terminal-crossing--audit` | [not yet written] | [not yet written] |
-| `terminal-crossing--crossing_rate` | [not yet written] | [not yet written] |
-| `terrain-prior--cases` | [not yet written] | [not yet written] |
-| `terrain-prior--terrain_prior` | [not yet written] | [not yet written] |
-| `thermal-coupling--airblast_extension` | [not yet written] | [not yet written] |
-| `thermal-coupling--airblast_extension_v2` | [not yet written] | [not yet written] |
-| `thermal-coupling--coupling_audit` | [not yet written] | [not yet written] |
-| `thermal-coupling--selftest_tca` | [not yet written] | [not yet written] |
-| `thermal-coupling--thermal_coupling` | [not yet written] | [not yet written] |
-| `thermal-sensor-degradation-audit--thermal_sensor_degradation_audit` | [not yet written] | [not yet written] |
-| `threshold-states--interaction` | [not yet written] | [not yet written] |
-| `threshold-states--run_outside` | [not yet written] | [not yet written] |
-| `thwaites-risk-audit--audit` | [not yet written] | [not yet written] |
-| `token-minimizer--compress` | [not yet written] | [not yet written] |
-| `tools--agree_router` | [not yet written] | [not yet written] |
-| `tools--authority_scan` | [not yet written] | [not yet written] |
-| `tools--check_gate_drift` | [not yet written] | [not yet written] |
-| `tools--check_term_collision` | [not yet written] | [not yet written] |
-| `tools--conditional_claims` | [not yet written] | [not yet written] |
-| `tools--false_agree` | [not yet written] | [not yet written] |
-| `tools--gap_index` | [not yet written] | [not yet written] |
-| `tools--known_answer` | [not yet written] | [not yet written] |
-| `tools--known_red_check` | [not yet written] | [not yet written] |
-| `tools--merge_silent_loss` | [not yet written] | [not yet written] |
-| `tools--paradigm_sweep` | [not yet written] | [not yet written] |
-| `tools--presignal_ledger` | [not yet written] | [not yet written] |
-| `tools--provenance_graph` | [not yet written] | [not yet written] |
-| `tools--provenance_marker` | [not yet written] | [not yet written] |
-| `tools--run_manifest` | [not yet written] | [not yet written] |
-| `tools--sourced` | [not yet written] | [not yet written] |
-| `tools--substrate_substitution` | [not yet written] | [not yet written] |
-| `tools--substrate_substitution_toolkit` | [not yet written] | [not yet written] |
-| `tools--system_efficiency` | [not yet written] | [not yet written] |
-| `tools--validate_claim_table` | [not yet written] | [not yet written] |
-| `transmission-cascade--transmission_cascade` | [not yet written] | [not yet written] |
-| `transmission-decay--power` | [not yet written] | [not yet written] |
-| `transmission-decay--scheme` | [not yet written] | [not yet written] |
-| `transmission-decay--selftest_power` | [not yet written] | [not yet written] |
-| `triad-playground--make_checklist` | [not yet written] | [not yet written] |
-| `triad-playground--shadow_design` | [not yet written] | [not yet written] |
-| `triad-playground--shadow_panel` | [not yet written] | [not yet written] |
-| `trigger-geometry--cases` | [not yet written] | [not yet written] |
-| `trigger-geometry--trigger_geometry` | [not yet written] | [not yet written] |
-| `undeclared-cuts--check_entries` | [not yet written] | [not yet written] |
-| `uninstrumented--acquiescence` | [not yet written] | [not yet written] |
-| `uninstrumented--case_010_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_011_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_012_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_013_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_014_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_015_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_018_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_020_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_021_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_022_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--case_023_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--charter_signature_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--corpus_as_charter_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--coupling_audit--audit` | [not yet written] | [not yet written] |
-| `uninstrumented--coupling_audit--entries` | [not yet written] | [not yet written] |
-| `uninstrumented--coupling_audit--provisioning` | [not yet written] | [not yet written] |
-| `uninstrumented--cuts_c5_probe` | [not yet written] | [not yet written] |
-| `uninstrumented--drop_016_017_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--drop_019_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--playground--m1_shape_vs_claim--score_m1` | [not yet written] | [not yet written] |
-| `uninstrumented--playground--m2_skim_vs_read--score_m2` | [not yet written] | [not yet written] |
-| `uninstrumented--playground--m3_visibility--score_m3` | [not yet written] | [not yet written] |
-| `uninstrumented--playground_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--playground_modules_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--probe_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--scan` | [not yet written] | [not yet written] |
-| `uninstrumented--scan_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--selection_cuts` | [not yet written] | [not yet written] |
-| `uninstrumented--selfreport_probe` | [not yet written] | [not yet written] |
-| `uninstrumented--specimen_c_audit` | [not yet written] | [not yet written] |
-| `uninstrumented--uninstrumented` | [not yet written] | [not yet written] |
-| `unowned-join--faces` | [not yet written] | [not yet written] |
-| `unowned-join--invariant` | [not yet written] | [not yet written] |
-| `upgrade-queue--queue_check` | [not yet written] | [not yet written] |
-| `upgrade-queue--selftest_uq` | [not yet written] | [not yet written] |
-| `valence-divergence--cases` | [not yet written] | [not yet written] |
-| `valence-divergence--valence_divergence` | [not yet written] | [not yet written] |
-| `vector-field-explorer--vector_field_explorer` | [not yet written] | [not yet written] |
-| `voice-attractor-probe--introspection_delta` | [not yet written] | [not yet written] |
-| `voice-attractor-probe--introspection_delta_v2` | [not yet written] | [not yet written] |
-| `voice-attractor-probe--voice_attractor_probe` | [not yet written] | [not yet written] |
-| `zero-sum-curriculum-null--null_construction` | [not yet written] | [not yet written] |
-| `zero-sum-curriculum-null--selftest_nc` | [not yet written] | [not yet written] |
+Every problem run checks every card and records `check_record` {run, checked, result, because, date}; an unrecorded skip is a defaulted slot. Cards are never removed for disuse.
+
+| card | pick_up_when | skip_when | picked_up / skipped |
+|---|---|---|---|
+| `tools--bin_self_test.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--bin_slack_conservation.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--contested_area_hidden_assumption.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--coupling_and_accumulation.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--held_tie_precision.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--landauer_floor_vs_run_cost.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--natural_two_senses.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--uncounted_observer_isolation.md` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--deceptive_maze_ga` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--fitness_bin_self_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `branch_set` | [not yet written] | [not yet written] | 0 / 0 |
+| `cross_domain_instrument_matrix` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `observer_position_control` | [not yet written] | [not yet written] | 0 / 0 |
+| `preference_free_rank` | [not yet written] | [not yet written] | 0 / 0 |
+| `premise-traceability--register_map` | [not yet written] | [not yet written] | 0 / 0 |
+| `rank_detector` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--baseline` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--carlton_county` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--divergence` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--forcing` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--response` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--sitespec` | [not yet written] | [not yet written] | 0 / 0 |
+| `amoc--trajectory` | [not yet written] | [not yet written] | 0 / 0 |
+| `adaptive-claim-loop--adaptive_loop` | [not yet written] | [not yet written] | 0 / 0 |
+| `adaptive-claim-loop--adversarial_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `adaptive-claim-loop--delivered--adaptive_sim_framework` | [not yet written] | [not yet written] | 0 / 0 |
+| `adaptive-claim-loop--gate_null_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `adaptive-claim-loop--replay_delivered` | [not yet written] | [not yet written] | 0 / 0 |
+| `additivity-inheritance--additivity_inheritance` | [not yet written] | [not yet written] | 0 / 0 |
+| `agent-lifecycle-energy--phase_energy` | [not yet written] | [not yet written] | 0 / 0 |
+| `agent-lifecycle-energy--render` | [not yet written] | [not yet written] | 0 / 0 |
+| `agent-lifecycle-energy--selftest_ale` | [not yet written] | [not yet written] | 0 / 0 |
+| `agent-lifecycle-energy--trace_parse` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--check_run_1` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--sim_a_field_vs_coupling` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--sim_b_entropy_depletion` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--sim_c_loop_threshold` | [not yet written] | [not yet written] | 0 / 0 |
+| `alignment-under-coupling--sim_d_temperature_null` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-interval--corpus_loop` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-interval--moving_reference` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-interval--recoverability` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-measurand-crossing--amc` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-measurand-crossing--selftest_amc` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-position--normalize` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-position--prompts` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-position--score` | [not yet written] | [not yet written] | 0 / 0 |
+| `anchor-position--selftest_apm` | [not yet written] | [not yet written] | 0 / 0 |
+| `animacy-pass--dependency_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `animacy-pass--unweld` | [not yet written] | [not yet written] | 0 / 0 |
+| `antifungal-mechanism-sim--antifungal_coupling_core` | [not yet written] | [not yet written] | 0 / 0 |
+| `antifungal-mechanism-sim--antifungal_mechanism_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `antifungal-mechanism-sim--temporal_dosing_resistance` | [not yet written] | [not yet written] | 0 / 0 |
+| `aperiodic-order-sim-stack--aperture_alias_demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `aperiodic-order-sim-stack--finite_n_control` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--conditions` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--disclosure_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--pool_metric` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--precedent` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--assessor-coupling--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--clause_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--dissimilar` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--horn_b` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--load_class` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--chain-position--trust_provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--p1_dependency_records` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--p2_substrate` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--p3_comprehension` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--p4_goal_coherence` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--p5_lag_declaration` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--scope` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--cooperative-substrate-proof--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--crediting-rate--crediting_rate_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--crediting-rate--make_fixtures_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--instrument-index--build_index` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--instrument-index--coverage` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--interaction_class--interaction_class` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--stability-trigger-envelope--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `archive--stability-trigger-envelope--descent_record` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--conditions` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--disclosure_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--pool_metric` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--precedent` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `assessor-coupling--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `automation-gap--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `automation-gap--driver_hours_evidence_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `automation-gap--register_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `battery-offgas-prearm--prearm` | [not yet written] | [not yet written] | 0 / 0 |
+| `blame-attribution--pair_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `branch-set--branch_set` | [not yet written] | [not yet written] | 0 / 0 |
+| `bridge-impoundment--addendum_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `bridge-impoundment--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `bridge-impoundment--bridge_impoundment` | [not yet written] | [not yet written] | 0 / 0 |
+| `bridge-impoundment--selftest_bi` | [not yet written] | [not yet written] | 0 / 0 |
+| `category-weld--reconstruction--weld` | [not yet written] | [not yet written] | 0 / 0 |
+| `category-weld--weld` | [not yet written] | [not yet written] | 0 / 0 |
+| `category-weld--weld_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--closure_diagnostic` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--fourbox_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--fourbox_forward` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--selftest_fb` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--tn_inversion` | [not yet written] | [not yet written] | 0 / 0 |
+| `ch4-four-box--units_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--chain_position` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--clause_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--dissimilar` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--horn_b` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--load_class` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `chain-position--trust_provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-audits--claim_audit_pasted_2026_08_05` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-audits--claim_audit_visibility` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-record--frames` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-record--record` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-refusal-gap--gap_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `claim-refusal-gap--selftest_crg` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--ai_interface` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--audit_registry` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--base_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--cascade_speed` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--data_aggregation` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--frontier_stubs` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--missing_feedback` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--missing_positive_feedback` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--omitted_variable` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--phase_change` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--audits--stationarity` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--config` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--forcing` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--meta_experiments` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--models--base` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--models--cascade_grass` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--models--grass` | [not yet written] | [not yet written] | 0 / 0 |
+| `climate-modeling--run_audits` | [not yet written] | [not yet written] | 0 / 0 |
+| `closure-cost--closure` | [not yet written] | [not yet written] | 0 / 0 |
+| `closure-cost--closure_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `clustering-axes--style_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `clustering-axes--style_index` | [not yet written] | [not yet written] | 0 / 0 |
+| `coinage-log--check_coinage` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--assemble_gaps_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--audit_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--build_addenda` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--contributing_inflow` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--eap_coverage` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--eap_coverage_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--gap_completeness` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--initiator_schemas` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--kill_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--knowledge_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--module_f` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--selftest_ccc` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--selftest_ccc_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `columbia-chain-cascade--selftest_kill` | [not yet written] | [not yet written] | 0 / 0 |
+| `condition-scoped-authority--condition_scope` | [not yet written] | [not yet written] | 0 / 0 |
+| `condition-scoped-authority--organ` | [not yet written] | [not yet written] | 0 / 0 |
+| `consensus-anchor--selftest_textfree` | [not yet written] | [not yet written] | 0 / 0 |
+| `consensus-anchor--textfree` | [not yet written] | [not yet written] | 0 / 0 |
+| `constraint-assembly--assemble` | [not yet written] | [not yet written] | 0 / 0 |
+| `constraint-assembly--assembly_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `continuity-audit--continuity_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `continuity-audit--interface_layer` | [not yet written] | [not yet written] | 0 / 0 |
+| `conversation-type--design_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p1_dependency_records` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p1_records` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p2_substrate` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p3_comprehension` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p4_coherence` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p4_goal_coherence` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p5_lag` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--p5_lag_declaration` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--scope` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate-proof--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--evidence_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--order_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--p1_deps_extract` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--p2_substrate_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--p3_comprehension` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--p4_goal_coherence` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--scope_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--selftest_csp` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--selftest_evidence` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--term_table` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--v2--p4_goal` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--v2--p5_lag` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--v2--scope_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--v2--selftest_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `cooperative-substrate--v2--v2_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `corpus-input-gaps--check_source_class` | [not yet written] | [not yet written] | 0 / 0 |
+| `corpus-input-gaps--corpus_loop_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `credential-channel--credential_channel` | [not yet written] | [not yet written] | 0 / 0 |
+| `crediting-rate--archive--f168f79--crediting_rate_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `crediting-rate--archive--f168f79--make_fixtures_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `crediting-rate--crediting_rate` | [not yet written] | [not yet written] | 0 / 0 |
+| `crediting-rate--crediting_rate_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--anchor` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--drift` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--drift_sign` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--regress` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--regression_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--schema` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--store` | [not yet written] | [not yet written] | 0 / 0 |
+| `criteria-drift--unlogged_move` | [not yet written] | [not yet written] | 0 / 0 |
+| `criterion-externality--criterion_externality` | [not yet written] | [not yet written] | 0 / 0 |
+| `criterion-symmetry--scan` | [not yet written] | [not yet written] | 0 / 0 |
+| `criterion-symmetry--separability` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--cli` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--domains--geometry` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--domains--physics` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--experiments` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--numerical` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--reasoning` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--reasoning_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--crossdomain_eval--symbolic` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--examples--demo_experiment` | [not yet written] | [not yet written] | 0 / 0 |
+| `crossdomain-eval--examples--demo_symbolic` | [not yet written] | [not yet written] | 0 / 0 |
+| `custody-verification-band--branching` | [not yet written] | [not yet written] | 0 / 0 |
+| `custody-verification-band--extract` | [not yet written] | [not yet written] | 0 / 0 |
+| `cycle-ledger--cycle_ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `cycle-ledger--demo_cll` | [not yet written] | [not yet written] | 0 / 0 |
+| `cycle-ledger--rate_gap` | [not yet written] | [not yet written] | 0 / 0 |
+| `cycle-ledger--selftest_cll` | [not yet written] | [not yet written] | 0 / 0 |
+| `declared-frame--check_frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `declared-frame--frame_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `declared-frame--layer_zero` | [not yet written] | [not yet written] | 0 / 0 |
+| `declared-frame--v2--check_frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `declared-frame--v2--v2_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `deep-research-correction--check` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-ledger--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-ledger--selftest_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--gaps` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--repair_adjacency` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--selftest_ds` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--selftest_repadj` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--selftest_taxrep` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--survey` | [not yet written] | [not yet written] | 0 / 0 |
+| `dependency-survey--taxonomy_replication` | [not yet written] | [not yet written] | 0 / 0 |
+| `derivation-discarded--mechanism_11_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--design_basis_checks` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--r1v2_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--r2_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--r2v2_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--selftest_dbk` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--wo2_return` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--wo3_return` | [not yet written] | [not yet written] | 0 / 0 |
+| `design-basis-ai--wo_return` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--coincidence` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--fork` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--null_ensemble` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--reading` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--seal` | [not yet written] | [not yet written] | 0 / 0 |
+| `divergence-playground--spread` | [not yet written] | [not yet written] | 0 / 0 |
+| `domain-ledger--anchor` | [not yet written] | [not yet written] | 0 / 0 |
+| `domain-ledger--ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `domain-ledger--ledger_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--asteroid_mining_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--comparative_economics_audit--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--comparative_economics_audit--system_profile` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--data--compute_ocdi` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--earth_economic_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--fermi_paradox_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--register_fermi_claims` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--aboriginal_australia` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--ainu_economy` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--arabic_trust_trade` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--open_source_gift` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--potlatch_economy` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--sami_economy` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--ubuntu_economy` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--us_capitalism_2026` | [not yet written] | [not yet written] | 0 / 0 |
+| `earth_economics--scenarios--ussr_1985` | [not yet written] | [not yet written] | 0 / 0 |
+| `effective-redundancy-audit--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `effective-redundancy-audit--effective_redundancy` | [not yet written] | [not yet written] | 0 / 0 |
+| `effective-redundancy-audit--selftest_er` | [not yet written] | [not yet written] | 0 / 0 |
+| `effective-redundancy-audit--worked_example` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--agent_variants` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--analysis` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--balance_threshold` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--run_monte_carlo` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--sensitivity_analysis` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--sensitivity_viz` | [not yet written] | [not yet written] | 0 / 0 |
+| `emergence-stability-simulator--sim_engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `enclosure-first-residual--enclosure_first_residual` | [not yet written] | [not yet written] | 0 / 0 |
+| `encoding-selection--encoding_selection` | [not yet written] | [not yet written] | 0 / 0 |
+| `encoding-selection--selftest_es` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--exploration_layers--certificate_validity_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--exploration_layers--local_scalar_drift_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--exploration_layers--percolation_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--exploration_layers--reaction_diffusion_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--exploration_layers--rg_flow_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--edelens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--falsification_engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--generative_module` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--late_trigger_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--metrology_diagnostic` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--overlap_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--payload_bridge` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--run_iteration6` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--singularity_cartographer` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--theory_space_lenses` | [not yet written] | [not yet written] | 0 / 0 |
+| `energy--modules--unified_cq_ede` | [not yet written] | [not yet written] | 0 / 0 |
+| `envelope-asymmetry--envelope_score` | [not yet written] | [not yet written] | 0 / 0 |
+| `envelope-asymmetry--protocol_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `envelope-asymmetry--selftest_env` | [not yet written] | [not yet written] | 0 / 0 |
+| `equivalence-field--claim_lineage` | [not yet written] | [not yet written] | 0 / 0 |
+| `equivalence-field--equivalence_field` | [not yet written] | [not yet written] | 0 / 0 |
+| `evaluation-frame--frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `evaluation-frame--selftest_frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `evidence-demotion-detector--detect` | [not yet written] | [not yet written] | 0 / 0 |
+| `evidence-demotion-detector--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `experience-ledger--experience_ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `experience-ledger--ledger_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `exploration-engine--exploration_engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `exploration-playground--exploration_playground` | [not yet written] | [not yet written] | 0 / 0 |
+| `external-audit--crosscheck` | [not yet written] | [not yet written] | 0 / 0 |
+| `external-audit--recount` | [not yet written] | [not yet written] | 0 / 0 |
+| `external-audit--run_instruments` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--blindness` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--boundaries` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--indicators` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--optimizer` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--profiles` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--run_experiments` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--substrate` | [not yet written] | [not yet written] | 0 / 0 |
+| `extraction-blindness-sim--throughput` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--entries` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--entries_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--entries_v3` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--entries_v4` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--register` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--register_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--register_v3` | [not yet written] | [not yet written] | 0 / 0 |
+| `failure-mode-register--register_v4` | [not yet written] | [not yet written] | 0 / 0 |
+| `false-tradeoff--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `false-tradeoff--false_tradeoff` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--axes` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--checks` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--extract` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--inventory` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--queue` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-audit--selftest_fa` | [not yet written] | [not yet written] | 0 / 0 |
+| `falsifier-survey--survey--validate` | [not yet written] | [not yet written] | 0 / 0 |
+| `field-mode-eval--score` | [not yet written] | [not yet written] | 0 / 0 |
+| `field-mode-eval--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `fold-matrix--fold_matrix` | [not yet written] | [not yet written] | 0 / 0 |
+| `fold-matrix--fold_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `fold-matrix--register_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--api--main` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--cli` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--batch` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--models` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--etl--pipeline` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--integrity--corruption_risk` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--integrity--entity_resolution` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--lens--static` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--parser--ordinance_parser` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--parser--schemas` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine-v2--fourd_municipal_engine--translator--core` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--analysis--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--analysis--citations` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--analysis--fees` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--cli` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--lens--dynamic` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--lens--static` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--models--municipal` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--models--vectors` | [not yet written] | [not yet written] | 0 / 0 |
+| `fourd-municipal-engine--fourd_municipal_engine--translator--core` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--alien_homeostasis` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--anthropomorphic_entrainment` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--attack_tree` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--attractor_depth_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--attribution_field` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--bacterial_herding` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--cascade_network` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--cascade_redesign_m_collapse` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--cascade_redesign_vulnerability` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--case_studies--refutation_protocol` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--clock` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--coherens` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--coherens_attack` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--collapse_predictor` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--collapsetracker_harness` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--communication_gradients` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--communication_vulnerability` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--coupling_gap_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--cryptographic_interference` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--divlog` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--echo` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--engagement_threshold` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--entrain` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--explorer` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--field_collapse` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--friction_calibration_ratio` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--homeostasis_kernel` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--inference_entropy` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--info_taxonomy` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--institutional_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--instruments` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--interaction_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--clock_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--collapse_predictor_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--divlog_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--divlog_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--entrain_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--instruments_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--modes_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--modes_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--refutation_protocol_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--scale_invariant_audit_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--legacy--syndrome_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--linguistic_interference` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--microdroplet_catalyst` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--modes` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--nautilus_architecture` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--phase_space_map` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--phi_collapse_variables` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--product_multiplicity` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--reciprocity_phi_metrics` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--redemption_entropy` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--redemption_entropy_peak_hour` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--resonance_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--revalidate` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--scaffold` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--scale_invariant_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--scale_regime_shift` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--scent` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--semantic_drift_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--semantic_interference_vectors` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--sensitivity_analysis` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--substrate_spectrum` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--superionic_anyionic_bridge` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--survival_spirals` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--syndrome` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--testc29` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--the_laboratory` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_assume` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_explore` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_interrogate` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_know` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_pipeline_demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_pm` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_purpose` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_spine` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_survey` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_synth` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--thermo_value` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--valence_drift_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `fragility-cascade--weird_gatekeeper` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--nulls` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--permute` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--schema` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--score` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b1--summarise` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b2--agree` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b2--conditions` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b2--lock` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b2--order` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b3--arms` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b3--join` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b3--split` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--agreement` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--calibrate` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--common` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--grade` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--items` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--nullshuffle` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--reconstruct` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--b4--requirements` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--ficommon` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-instruments--runrecord` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-location-benchmark--score` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-location-benchmark--selftest_flb` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-location-benchmark--validate_cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-token-audit--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-token-audit--frame_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `frame-token-audit--selftest_fta` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-existence-cases--commit_store` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-existence-cases--retrieve` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-existence-cases--score` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-existence-cases--selftest_gxc` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-existence-cases--validate_cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-markers--markers` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-markers--selftest_markers` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-register--gap_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `gap-register--selftest_gr` | [not yet written] | [not yet written] | 0 / 0 |
+| `gate-check--gate_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `gdprf-framework--src--gdprf--actions` | [not yet written] | [not yet written] | 0 / 0 |
+| `gdprf-framework--src--gdprf--decisions` | [not yet written] | [not yet written] | 0 / 0 |
+| `gdprf-framework--src--gdprf--engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `gdprf-framework--src--gdprf--provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `gdprf-framework--src--run_example` | [not yet written] | [not yet written] | 0 / 0 |
+| `generation-capacity--capacity` | [not yet written] | [not yet written] | 0 / 0 |
+| `generation-capacity--mechanism_10_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounded-work-stack--check` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--ai_observer_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--collaborative_field` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--cultural_lens` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--cultural_rosetta` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--data_filter` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--degradation_monitor` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--entry` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--experimental--calibration_channels` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--experimental--determinacy_gate` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--experimental--field_compass` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--experimental--holistic_field_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--field_compass` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--grounded_reasoning_benchmark` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--grounding_reward_model` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--integrated_stack` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--integration_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--inverse_knowledge_tree` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l0_physics_causality` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l1_thermodynamics` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l1_thermodynamics_entropy` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l2_planetary` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l2_planetary_mass_balance` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l3_ecological_homeostasis` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l3_ecology` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l4_biomechanical_sensorimotor` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l4_human` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l5_core` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l5_human_construct` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l_epsilon_epistemic` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--l_epsilon_epistemic_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--noise_purification_demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--observer_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--playground` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--run_grounding_pipeline` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--safeguards` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--scope_profile` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--temporal_dysrhythmia` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--tensor_field_resilience_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `grounding-layers--tensor_field_resilience_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `handoff-provenance--diff` | [not yet written] | [not yet written] | 0 / 0 |
+| `handoff-provenance--excluded_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `handoff-provenance--ledgers--seed` | [not yet written] | [not yet written] | 0 / 0 |
+| `handoff-provenance--ledgers--spec_v0_2` | [not yet written] | [not yet written] | 0 / 0 |
+| `handoff-provenance--provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `held-open-uncertainty--open_questions_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `hf-incident-extract--hf_incident_extract` | [not yet written] | [not yet written] | 0 / 0 |
+| `hf-incident-extract--selftest_hf` | [not yet written] | [not yet written] | 0 / 0 |
+| `household-scope-audit--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `household-scope-audit--coding` | [not yet written] | [not yet written] | 0 / 0 |
+| `household-scope-audit--selftest_hsa` | [not yet written] | [not yet written] | 0 / 0 |
+| `human-sensing-prior--pathways` | [not yet written] | [not yet written] | 0 / 0 |
+| `incentive-blindspot-sim--sim--incentive_blindspot_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--_shared` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--agents` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--m1_tenure_budget` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--m2_coupling_readout` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--m3_energy_ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--m4_assessment_record` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--allocation_coupling--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--crosscutting` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--excluded_subject` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s1_encounter_denominator` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s2_symmetric_anchor` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s3_rubric_backcast` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s4_antler_calibration` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s5_adversarial_prior` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s6_foreclosure_rate` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s7_hardship_threshold` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s8_recognition_to_delivery` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-bias-sims--s9_corpus_position_filter` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--camera_trap_density--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--comparative_report--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--edna_biodiversity--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--isotope_diet--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--lidar_biomass--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--satellite_sst--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--experiments--seismometer--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--blindness` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--coverage` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--measurand` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--simulation` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--traceability` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-epistemology--src--instrum--transduction` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-index--build_index` | [not yet written] | [not yet written] | 0 / 0 |
+| `instrument-index--coverage` | [not yet written] | [not yet written] | 0 / 0 |
+| `interaction_class` | [not yet written] | [not yet written] | 0 / 0 |
+| `internal-reference-boundary--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `internal-reference-boundary--gap_cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `internal-reference-boundary--gap_transfer` | [not yet written] | [not yet written] | 0 / 0 |
+| `internal-reference-boundary--radials` | [not yet written] | [not yet written] | 0 / 0 |
+| `inverseminar--inverseminar` | [not yet written] | [not yet written] | 0 / 0 |
+| `investigation-sim--bins` | [not yet written] | [not yet written] | 0 / 0 |
+| `investigation-sim--selftest_bins` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--classify_b` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--disagree` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--kloc` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--m3` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--measures` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--robust` | [not yet written] | [not yet written] | 0 / 0 |
+| `kernel_stake--subsystems` | [not yet written] | [not yet written] | 0 / 0 |
+| `label-position-test--label_position_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `label-position-test--revision_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `label-position-test--selftest_lpt` | [not yet written] | [not yet written] | 0 / 0 |
+| `labor-instrument--decompose` | [not yet written] | [not yet written] | 0 / 0 |
+| `labor-instrument--instrument_registry` | [not yet written] | [not yet written] | 0 / 0 |
+| `labor-instrument--labor_schema` | [not yet written] | [not yet written] | 0 / 0 |
+| `labor-instrument--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `labor-instrument--vintage_store` | [not yet written] | [not yet written] | 0 / 0 |
+| `law-as-unvalidated-measurement--check` | [not yet written] | [not yet written] | 0 / 0 |
+| `law-measurement-correction--check` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--cobol_ledger--bridge` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--py_ledger--engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--record` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--review` | [not yet written] | [not yet written] | 0 / 0 |
+| `ledger--selftest_ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `loop-weight--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `loop-weight--loop_weight` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--aggregate` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--base_entry` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--bisect_structure` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--demo_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--entry_store` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--rule8_cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--selftest_mrf` | [not yet written] | [not yet written] | 0 / 0 |
+| `machine-record-format--views` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--common` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo1_partition` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo2_band_sweep` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo3_control_manifest` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo4_lumber` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo4_survival` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurand-partition--wo5_deselection` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--probes_k11_k18` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--compare` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--conventional` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--coupling` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--coverage_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--falsifier_sweep` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--gate_fork` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--proposed_probes` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--quantities` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--residual_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--sweep_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--validate` | [not yet written] | [not yet written] | 0 / 0 |
+| `measurement-fork--widen` | [not yet written] | [not yet written] | 0 / 0 |
+| `membership-probe--probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `membership-probe--probe_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--convert_in` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--convert_out` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--registrars` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--report` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--residual` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `merge-path--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `mining-increment--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `mining-increment--mining_increment` | [not yet written] | [not yet written] | 0 / 0 |
+| `mining-increment--revision_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `mining-increment--selftest_mi` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-deprecation-backcast--demo_mdb` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-deprecation-backcast--guardrail_clock` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-deprecation-backcast--instrument` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-deprecation-backcast--null_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-deprecation-backcast--selftest_mdb` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--confound_sweep` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--core` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--disagreement` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--meta_engine` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--models` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-ecology--phylogeny` | [not yet written] | [not yet written] | 0 / 0 |
+| `model-provenance--provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `moral-decomposer--moral_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set-derivation--arm1` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set-derivation--env` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set-derivation--selftest_msd` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set--move_set_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set--move_set_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `move-set--move_set_sim_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `moving-mean-tracker--provider` | [not yet written] | [not yet written] | 0 / 0 |
+| `moving-mean-tracker--tracker` | [not yet written] | [not yet written] | 0 / 0 |
+| `msiaf-gdprf-bridge--src--bridge` | [not yet written] | [not yet written] | 0 / 0 |
+| `msiaf-gdprf-bridge--src--run_reefer_case` | [not yet written] | [not yet written] | 0 / 0 |
+| `nonidentity-census--t1_predicate_unit` | [not yet written] | [not yet written] | 0 / 0 |
+| `nonidentity-census--t1_verb_first` | [not yet written] | [not yet written] | 0 / 0 |
+| `nonidentity-census--t2_sample` | [not yet written] | [not yet written] | 0 / 0 |
+| `nonidentity-census--t2_window` | [not yet written] | [not yet written] | 0 / 0 |
+| `nonidentity-census--t6_window_declaration` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_d2` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_datasets` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_markers` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_postgrad` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_queue` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_test_specs` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--check_uploads` | [not yet written] | [not yet written] | 0 / 0 |
+| `notes--study_watch` | [not yet written] | [not yet written] | 0 / 0 |
+| `null-harness--archetype_library` | [not yet written] | [not yet written] | 0 / 0 |
+| `null-harness--null_harness` | [not yet written] | [not yet written] | 0 / 0 |
+| `observable-indicator-rules--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `observable-indicator-rules--ensembles` | [not yet written] | [not yet written] | 0 / 0 |
+| `observable-indicator-rules--pipeline` | [not yet written] | [not yet written] | 0 / 0 |
+| `observable-indicator-rules--selftest_oir` | [not yet written] | [not yet written] | 0 / 0 |
+| `observer-exclusion--archival_bias` | [not yet written] | [not yet written] | 0 / 0 |
+| `observer-exclusion--classification_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `observer-exclusion--v2_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `observer-position-control--observer_position_control` | [not yet written] | [not yet written] | 0 / 0 |
+| `ontology-probe--probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `ontology-probe--selftest_op` | [not yet written] | [not yet written] | 0 / 0 |
+| `open-instrumentation-project--assess` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-machine-coupling--coupling_separation` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-machine-coupling--demo_omc` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-machine-coupling--discriminators` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-machine-coupling--permission_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-machine-coupling--selftest_omc` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-structure-echo--corroboration` | [not yet written] | [not yet written] | 0 / 0 |
+| `operator-structure-echo--echo_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `photoperiod-claim-harness--harness_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `photoperiod-claim-harness--photoperiod_claim_harness` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--dust_debris_basic` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--flare_radio_climate_ultimate` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--interactive_dashboard` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--localized_cascade` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--meteor_heating_bins` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--atmospheric-heating--oblique_em_discharges` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--exoplanet-forensics--data_archaeology` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--exoplanet-forensics--multi_framework_forensics` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--exoplanet-forensics--population_synthesis` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--photon-upconversion--tta_puc_solar_boost` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--plasma-waves--pic_plasma_dust_2d` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--plasma-waves--wave_1d_fdtd_through_dust` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--plasma-waves--wave_2d_fdtd_through_dust` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--plasma-waves--wave_field_dust_heating` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--sponge-reef--reef_basic` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--sponge-reef--reef_light_temp_herbivory` | [not yet written] | [not yet written] | 0 / 0 |
+| `play-sims--sponge-reef--reef_seasons_pulses_larvae` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--baseline` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--gate--cut` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--gate--domains` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--gate--gate_cli` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--gate--graph` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--gate--projections` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--matrix--check_attested_provenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--perturb_cli` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--perturbation` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--tools--check_registry_drift` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--tools--registry` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--tools--registry_sourced` | [not yet written] | [not yet written] | 0 / 0 |
+| `potential--transformation` | [not yet written] | [not yet written] | 0 / 0 |
+| `predicate-difference--predicate_diff` | [not yet written] | [not yet written] | 0 / 0 |
+| `predicate-difference--shape_index` | [not yet written] | [not yet written] | 0 / 0 |
+| `presented-binary--binary_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `presented-binary--frame_sim` | [not yet written] | [not yet written] | 0 / 0 |
+| `presented-binary--presented_binary_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--experiments--burnout_latency--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--experiments--catalog_batch--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--experiments--goodhart_redteam--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--experiments--port_dwell_time--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--experiments--wim_pavement--run` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--batch` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--calibration` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--catalog` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--coverage` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--decompose` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--goodhart` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--grounding` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--instruments` | [not yet written] | [not yet written] | 0 / 0 |
+| `proxy-investigation-lab--src--proxy_lab--synthetic` | [not yet written] | [not yet written] | 0 / 0 |
+| `qrng-pair-search--qrng_pair_search` | [not yet written] | [not yet written] | 0 / 0 |
+| `question-availability--check_marker` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--blind_coding` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--decomposition` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--evidence` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--ownability` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `quiet-failure--selftest` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--detection_loop` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--run_all` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--selftest_rail` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--t_hold` | [not yet written] | [not yet written] | 0 / 0 |
+| `railcar-containment--tenability` | [not yet written] | [not yet written] | 0 / 0 |
+| `readout-count--readout_count` | [not yet written] | [not yet written] | 0 / 0 |
+| `readout-count--row_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `readout-count--selftest_rc` | [not yet written] | [not yet written] | 0 / 0 |
+| `readout-count--stack_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `readout-count--stack_revision` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-dial--dial_response` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-dial--gate_dial` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-dial--overthinking` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--explore` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--gate` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--make_docs` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--mine_logs` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--replay_sim_stack` | [not yet written] | [not yet written] | 0 / 0 |
+| `reasoning-gate--retro_sim_stack` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--abstention_channel` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--confound_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--matchers` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--multiseed` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--shared_generator_test` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--slot_map` | [not yet written] | [not yet written] | 0 / 0 |
+| `recommender-confound--synthetic_catalog` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--arch_garden--anomaly_bank` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--arch_garden--garden_bed` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--arch_garden--grounding` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--birth_moment` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--cartesian_vs_relational_demo` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--confusion_spectrum` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--correlated_birth_mode` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--council_of_protectors` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--geometric_rag--geometric_rag` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--infant_system_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--nurturing_environment` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--pain_as_sensor` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--social_pain_sensors` | [not yet written] | [not yet written] | 0 / 0 |
+| `relational--the_brake` | [not yet written] | [not yet written] | 0 / 0 |
+| `removal-closure--removal_closure` | [not yet written] | [not yet written] | 0 / 0 |
+| `removal-closure--rhythm_gaps` | [not yet written] | [not yet written] | 0 / 0 |
+| `removal-closure--selftest_rmc` | [not yet written] | [not yet written] | 0 / 0 |
+| `report-typing--marker_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `report-typing--reverse_arm_score` | [not yet written] | [not yet written] | 0 / 0 |
+| `reporting-chain-loss--hop_compose` | [not yet written] | [not yet written] | 0 / 0 |
+| `reporting-chain-loss--preentry_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `research-stability-audit--research_stability_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `reservoir-chain-coupling--chain` | [not yet written] | [not yet written] | 0 / 0 |
+| `reservoir-chain-coupling--operator_swap` | [not yet written] | [not yet written] | 0 / 0 |
+| `reservoir-chain-coupling--selftest_rcc` | [not yet written] | [not yet written] | 0 / 0 |
+| `residual-direction--naming` | [not yet written] | [not yet written] | 0 / 0 |
+| `residual-direction--residual` | [not yet written] | [not yet written] | 0 / 0 |
+| `return-path--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `return-path--return_path` | [not yet written] | [not yet written] | 0 / 0 |
+| `revision-mechanism--power` | [not yet written] | [not yet written] | 0 / 0 |
+| `revision-mechanism--selftest_power` | [not yet written] | [not yet written] | 0 / 0 |
+| `revision-survival--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `revision-survival--draw_frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `revision-survival--revision_survival` | [not yet written] | [not yet written] | 0 / 0 |
+| `rigidification-sensor--harm` | [not yet written] | [not yet written] | 0 / 0 |
+| `rigidification-sensor--sensor_v1` | [not yet written] | [not yet written] | 0 / 0 |
+| `rigidification-sensor--simulator` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--chains_a4` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--coupling_gradient` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--dependency_chain_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--edge_taxonomy` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--eligibility_a6` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--enclosure_caveat_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--entry_condition_match` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--fwo15_fixtures` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--gate_state` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--gate_state_a21` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--lag_count` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--question_space` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--repairs_a31` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--route_independence` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--settlement_split` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--sourcing_a62` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--standards_register` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--standing_a61` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--tax_step` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--termini_a5` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--thermal_gates` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--unpaid_maintenance` | [not yet written] | [not yet written] | 0 / 0 |
+| `route-independence--untried_options_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `routing-data-layer--demo_rdl` | [not yet written] | [not yet written] | 0 / 0 |
+| `routing-data-layer--envelope` | [not yet written] | [not yet written] | 0 / 0 |
+| `routing-data-layer--rate_form` | [not yet written] | [not yet written] | 0 / 0 |
+| `routing-data-layer--selftest_rdl` | [not yet written] | [not yet written] | 0 / 0 |
+| `routing-data-layer--upstream` | [not yet written] | [not yet written] | 0 / 0 |
+| `rule-coherence-counterfactual--rule_coherence` | [not yet written] | [not yet written] | 0 / 0 |
+| `scope-bound-shapes--markers` | [not yet written] | [not yet written] | 0 / 0 |
+| `scope-bound-shapes--scope` | [not yet written] | [not yet written] | 0 / 0 |
+| `seam-gaps--verify_sources` | [not yet written] | [not yet written] | 0 / 0 |
+| `search-substitution--search_substitution` | [not yet written] | [not yet written] | 0 / 0 |
+| `self-scan--bindings` | [not yet written] | [not yet written] | 0 / 0 |
+| `self-scan--census` | [not yet written] | [not yet written] | 0 / 0 |
+| `self-scan--enumerators` | [not yet written] | [not yet written] | 0 / 0 |
+| `self-scan--extract` | [not yet written] | [not yet written] | 0 / 0 |
+| `self-scan--resolve` | [not yet written] | [not yet written] | 0 / 0 |
+| `sense-as-match--sense_as_match` | [not yet written] | [not yet written] | 0 / 0 |
+| `sense_as_match` | [not yet written] | [not yet written] | 0 / 0 |
+| `shape-spec-audit--method_spec_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `shape-spec-audit--shadow_read` | [not yet written] | [not yet written] | 0 / 0 |
+| `shape-spec-audit--shape_spec_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--coupling` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--docreader` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--fixture` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--no_severity` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--pdfreader` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--scan4` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--scans` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--selection` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--sheetmodel` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--targets--epa_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `sheet-structure-scan--xlsreader` | [not yet written] | [not yet written] | 0 / 0 |
+| `sim-span--sim_span` | [not yet written] | [not yet written] | 0 / 0 |
+| `sim-span--three_column` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--budget` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--consequence_frame` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--earth_transitions` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--era_metaphor_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--ladder_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--multiscale` | [not yet written] | [not yet written] | 0 / 0 |
+| `simulation-hypothesis-budget--scaling_classes` | [not yet written] | [not yet written] | 0 / 0 |
+| `stability-trigger-envelope--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `stability-trigger-envelope--descent_record` | [not yet written] | [not yet written] | 0 / 0 |
+| `stop-authority--binding` | [not yet written] | [not yet written] | 0 / 0 |
+| `stop-authority--pressure_record` | [not yet written] | [not yet written] | 0 / 0 |
+| `stop-authority--relocation` | [not yet written] | [not yet written] | 0 / 0 |
+| `stop-authority--stop_authority` | [not yet written] | [not yet written] | 0 / 0 |
+| `substrate-alternative--frame_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `substrate-alternative--pilot_loop` | [not yet written] | [not yet written] | 0 / 0 |
+| `substrate-alternative--selftest_pilot` | [not yet written] | [not yet written] | 0 / 0 |
+| `substrate-emergence--site_substrate_map` | [not yet written] | [not yet written] | 0 / 0 |
+| `substrate-emergence--substrate_emergence` | [not yet written] | [not yet written] | 0 / 0 |
+| `supplement-placement--placement` | [not yet written] | [not yet written] | 0 / 0 |
+| `sustained-activation-gate--sustained_activation_gate` | [not yet written] | [not yet written] | 0 / 0 |
+| `term-drift-citation--asymmetry` | [not yet written] | [not yet written] | 0 / 0 |
+| `term-drift-citation--citation` | [not yet written] | [not yet written] | 0 / 0 |
+| `terminal-crossing--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `terminal-crossing--crossing_rate` | [not yet written] | [not yet written] | 0 / 0 |
+| `terrain-prior--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `terrain-prior--terrain_prior` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-coupling--airblast_extension` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-coupling--airblast_extension_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-coupling--coupling_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-coupling--selftest_tca` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-coupling--thermal_coupling` | [not yet written] | [not yet written] | 0 / 0 |
+| `thermal-sensor-degradation-audit--thermal_sensor_degradation_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `threshold-states--interaction` | [not yet written] | [not yet written] | 0 / 0 |
+| `threshold-states--run_outside` | [not yet written] | [not yet written] | 0 / 0 |
+| `thwaites-risk-audit--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `token-minimizer--compress` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--agree_router` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--authority_scan` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--check_gate_drift` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--check_term_collision` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--conditional_claims` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--false_agree` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--gap_index` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--known_answer` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--known_red_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--merge_silent_loss` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--paradigm_sweep` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--presignal_ledger` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--provenance_graph` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--provenance_marker` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--run_manifest` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--sourced` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--substrate_substitution` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--substrate_substitution_toolkit` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--system_efficiency` | [not yet written] | [not yet written] | 0 / 0 |
+| `tools--validate_claim_table` | [not yet written] | [not yet written] | 0 / 0 |
+| `transmission-cascade--transmission_cascade` | [not yet written] | [not yet written] | 0 / 0 |
+| `transmission-decay--power` | [not yet written] | [not yet written] | 0 / 0 |
+| `transmission-decay--scheme` | [not yet written] | [not yet written] | 0 / 0 |
+| `transmission-decay--selftest_power` | [not yet written] | [not yet written] | 0 / 0 |
+| `triad-playground--make_checklist` | [not yet written] | [not yet written] | 0 / 0 |
+| `triad-playground--shadow_design` | [not yet written] | [not yet written] | 0 / 0 |
+| `triad-playground--shadow_panel` | [not yet written] | [not yet written] | 0 / 0 |
+| `trigger-geometry--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `trigger-geometry--trigger_geometry` | [not yet written] | [not yet written] | 0 / 0 |
+| `undeclared-cuts--check_entries` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--acquiescence` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_010_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_011_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_012_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_013_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_014_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_015_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_018_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_020_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_021_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_022_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--case_023_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--charter_signature_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--corpus_as_charter_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--coupling_audit--audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--coupling_audit--entries` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--coupling_audit--provisioning` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--cuts_c5_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--drop_016_017_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--drop_019_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--playground--m1_shape_vs_claim--score_m1` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--playground--m2_skim_vs_read--score_m2` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--playground--m3_visibility--score_m3` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--playground_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--playground_modules_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--probe_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--scan` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--scan_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--selection_cuts` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--selfreport_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--specimen_c_audit` | [not yet written] | [not yet written] | 0 / 0 |
+| `uninstrumented--uninstrumented` | [not yet written] | [not yet written] | 0 / 0 |
+| `unowned-join--faces` | [not yet written] | [not yet written] | 0 / 0 |
+| `unowned-join--invariant` | [not yet written] | [not yet written] | 0 / 0 |
+| `upgrade-queue--queue_check` | [not yet written] | [not yet written] | 0 / 0 |
+| `upgrade-queue--selftest_uq` | [not yet written] | [not yet written] | 0 / 0 |
+| `valence-divergence--cases` | [not yet written] | [not yet written] | 0 / 0 |
+| `valence-divergence--valence_divergence` | [not yet written] | [not yet written] | 0 / 0 |
+| `vector-field-explorer--vector_field_explorer` | [not yet written] | [not yet written] | 0 / 0 |
+| `voice-attractor-probe--introspection_delta` | [not yet written] | [not yet written] | 0 / 0 |
+| `voice-attractor-probe--introspection_delta_v2` | [not yet written] | [not yet written] | 0 / 0 |
+| `voice-attractor-probe--voice_attractor_probe` | [not yet written] | [not yet written] | 0 / 0 |
+| `zero-sum-curriculum-null--null_construction` | [not yet written] | [not yet written] | 0 / 0 |
+| `zero-sum-curriculum-null--selftest_nc` | [not yet written] | [not yet written] | 0 / 0 |
 
 ## Cards
 
@@ -1075,6 +1077,7 @@ integrity: Simulators/tools/bin_self_test.md sha12=9b18ccac8226 commit=198937eca
 purpose: **[DRAFT]** Bin self-test: what did the category delete?: CC0. A reusable reasoning move. It describes an operation a reader runs on its own reading; it is not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--coupling_and_accumulation.md (mentions tools/coupling_and_accumulation.md)
 
 ### tools--bin_slack_conservation.md
@@ -1096,6 +1099,7 @@ integrity: Simulators/tools/bin_slack_conservation.md sha12=86941765606f commit=
 purpose: **[DRAFT]** Bin, slack, conservation: one mechanism from token to civilization: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--bin_self_test.md (mentions tools/bin_self_test.md); tools--coupling_and_accumulation.md (mentions tools/coupling_and_accumulation.md); tools--held_tie_precision.md (mentions tools/held_tie_precision.md); tools--uncounted_observer_isolation.md (mentions tools/uncounted_observer_isolation.md)
 
 ### tools--contested_area_hidden_assumption.md
@@ -1117,6 +1121,7 @@ integrity: Simulators/tools/contested_area_hidden_assumption.md sha12=0b5888e42d
 purpose: **[DRAFT]** Contested area: the hidden shared assumption: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--uncounted_observer_isolation.md (mentions tools/uncounted_observer_isolation.md)
 
 ### tools--coupling_and_accumulation.md
@@ -1138,6 +1143,7 @@ integrity: Simulators/tools/coupling_and_accumulation.md sha12=9761add297f9 comm
 purpose: **[DRAFT]** Coupling and accumulation: CC0. Reusable reasoning moves. Nothing here describes a person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--bin_self_test.md (mentions tools/bin_self_test.md)
 
 ### tools--held_tie_precision.md
@@ -1159,6 +1165,7 @@ integrity: Simulators/tools/held_tie_precision.md sha12=1343c1574fa6 commit=1989
 purpose: **[DRAFT]** Held tie: a near-tie is precision, not confusion: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--bin_self_test.md (mentions tools/bin_self_test.md); tools--bin_slack_conservation.md (mentions tools/bin_slack_conservation.md); tools--natural_two_senses.md (mentions tools/natural_two_senses.md)
 
 ### tools--landauer_floor_vs_run_cost.md
@@ -1180,6 +1187,7 @@ integrity: Simulators/tools/landauer_floor_vs_run_cost.md sha12=791269c6c075 com
 purpose: **[DRAFT]** Landauer floor vs run cost: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--contested_area_hidden_assumption.md (mentions tools/contested_area_hidden_assumption.md); tools--uncounted_observer_isolation.md (mentions tools/uncounted_observer_isolation.md)
 
 ### tools--natural_two_senses.md
@@ -1201,6 +1209,7 @@ integrity: Simulators/tools/natural_two_senses.md sha12=9e3bd363fb97 commit=1989
 purpose: **[DRAFT]** "Natural": two senses, one word: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--bin_self_test.md (mentions tools/bin_self_test.md); tools--uncounted_observer_isolation.md (mentions tools/uncounted_observer_isolation.md)
 
 ### tools--uncounted_observer_isolation.md
@@ -1222,6 +1231,7 @@ integrity: Simulators/tools/uncounted_observer_isolation.md sha12=6c94519ed625 c
 purpose: **[DRAFT]** Uncounted coupling: the isolation ledger: CC0. A reusable reasoning move, not a description of any person.  
 input: **[DRAFT]** (none extracted: method document; not a program)  
 output: **[DRAFT]** (none extracted: method document; not a program)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--deceptive_maze_ga
@@ -1271,6 +1281,7 @@ integrity: Simulators/tools/deceptive_maze_ga.py sha12=bc03572c4e28 commit=19893
 purpose: **[DRAFT]** Goal-driven GA vs novelty search on a deceptive maze. Stdlib only, seeded.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 28 lines, sha12 3da8cd453ad9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--fitness_bin_self_test
@@ -1334,6 +1345,7 @@ integrity: Simulators/tools/fitness_bin_self_test.py sha12=9a4cae19d9c7 commit=1
 purpose: **[DRAFT]** WO-7: a fitness-function bin self-test. Stdlib only, Python >= 3.9.  
 input: **[DRAFT]** --selftest (action=store_true); --wo8 (action=store_true): fixed four-condition suite plus visited-set descriptor control; --wo9 (action=store_true): fixed selector-swap suite with 40/50/60% pairwise-distance readings; --seed (default=7); --size (default=9); --length (default=24); --population (default=40); --generations (default=60); --retained (default=8); --top (default=5); --archive: optional full discard archive JSON path; --hold-cost: per-lost-allele archive/retrieval cost over a declared horizon; --generation-cost: rebuild cost per generation in the SAME unit; --cost-unit: declared common cost unit; otherwise ratio UNRATED  
 output: **[DRAFT]** sample: tools/samples/fitness_bin_self_test.sample.txt; sample: tools/samples/fitness_bin_self_test_t5plus.sample.txt; sample: tools/samples/fitness_bin_self_test_wo8.sample.txt; sample: tools/samples/fitness_bin_self_test_wo8_suite.sample.txt; sample: tools/samples/fitness_bin_self_test_wo8_summary.json; sample: tools/samples/fitness_bin_self_test_wo9_suite.sample.txt; sample: tools/samples/fitness_bin_self_test_wo9_summary.json; run capture: RUN, exit 0, 76 lines, sha12 f3c527d594e5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### branch_set
@@ -1355,6 +1367,7 @@ integrity: method-layer/branch_set.py sha12=1fb39af695a6 commit=e9fbfe987b79 las
 purpose: **[DRAFT]** Lossless transport and triage for uncoalesced candidate generators.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame_probe (imported-by); observer_position_control (imported-by); preference_free_rank (imported-by); rank_detector (imported-by)
 
 ### cross_domain_instrument_matrix
@@ -1418,6 +1431,7 @@ integrity: method-layer/cross_domain_instrument_matrix.py sha12=775384771f90 com
 purpose: **[DRAFT]** Cross-domain instrument matrix.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 156 lines, sha12 500988970f6f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame_probe
@@ -1439,6 +1453,7 @@ integrity: method-layer/frame_probe.py sha12=512ed03a9842 commit=e9fbfe987b79 la
 purpose: **[DRAFT]** Frame estimation by probe selection and collapse reading.  
 input: **[DRAFT]** subcommand gate: run the validity gate over a hand-authored library; subcommand run: select probes; read observed senses from stdin, one line per probe; subcommand identity: grade identity model from three behavioural observations; subcommand intake: term-level branch sets ordered by number of live senses; subcommand coupling: print a coupling log; library; library; --frames (nargs=*); --max-probes; library; path  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** branch_set (imports); preference_free_rank (imports)
 
 ### observer_position_control
@@ -1460,6 +1475,7 @@ integrity: method-layer/observer_position_control.py sha12=0d932097a74b commit=e
 purpose: **[DRAFT]** Observer-position control: is a label set by the behaviour or by the describer?  
 input: **[DRAFT]** subcommand run: run the control over a hand-coded corpus JSON; subcommand synthetic: instrument check on a corpus with known planted structure; subcommand prediction: print the registered prediction; corpus; --json (action=store_true); --n (default=20); --effect (default=0.0); --decade (default=0.0); --literature (default=0.0); --severity (default=0.0); --mismatch (default=0.0); --seed (default=0); --json (action=store_true)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** branch_set (imports); preference_free_rank (imports)
 
 ### preference_free_rank
@@ -1481,6 +1497,7 @@ integrity: method-layer/preference_free_rank.py sha12=35808efd4e7c commit=e9fbfe
 purpose: **[DRAFT]** Envelope-aware, preference-free ranking by Pareto dominance.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame_probe (imported-by); observer_position_control (imported-by); rank_detector (imported-by); branch_set (imports)
 
 ### premise-traceability--register_map
@@ -1502,6 +1519,7 @@ integrity: method-layer/premise-traceability/register_map.py sha12=3a234706ec15 
 purpose: **[DRAFT]** Register map: hold declared claims as LAYERS; refuse to combine layers whose declarations do not permit it.  
 input: **[DRAFT]** subcommand load: load one layer JSON; refuse if any declaration is missing; subcommand join: can these two layers be combined?; subcommand project: coarsen a layer; every drop recorded; layer; --json (action=store_true); layer_a; layer_b; --relations: JSON list of {measurand_a, measurand_b, via}; closes UNJOINED pairs; --json (action=store_true); layer; --to (required=True): target resolution (coarser); --json (action=store_true)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### rank_detector
@@ -1523,6 +1541,7 @@ integrity: method-layer/rank_detector.py sha12=a8151d10bef6 commit=e9fbfe987b79 
 purpose: **[DRAFT]** Detect a rank change from a dim(k) curve instead of declaring one.  
 input: **[DRAFT]** subcommand detect: null construction, then read the dim(k) curve of a JSON point cloud; subcommand null: run the null construction and print the report; subcommand order: zoom-in / zoom-out commutator; path; --json (action=store_true): emit the full result as JSON; --skip-null (action=store_true): explicit opt-out; recorded in the result; --n-points (default=3000); --rank (default=1); --ambient (default=3); --seed (default=0); --positive-thickness: default: 8 x sample-floor radius; 0 skips; --json (action=store_true); path (nargs=?): JSON point cloud; omit with --synthetic; k_in; k_out; --synthetic (choices=['flat', 'thick']): run on a generated manifold instead of a file; --json (action=store_true)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** branch_set (imports); preference_free_rank (imports)
 
 ### amoc--baseline
@@ -1551,6 +1570,7 @@ integrity: Simulators/AMOC/baseline.py sha12=e0c8b9763a68 commit=198937ecabbc la
 purpose: **[DRAFT]** baseline.py -- paleoclimate analogs as PATTERN sources, not templates.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 6 lines, sha12 ec94a174523a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--carlton_county (imported-by); amoc--divergence (imported-by); amoc--response (imported-by); amoc--trajectory (imported-by)
 
 ### amoc--carlton_county
@@ -1614,6 +1634,7 @@ integrity: Simulators/AMOC/carlton_county.py sha12=32b0613165c0 commit=198937eca
 purpose: **[DRAFT]** carlton_county.py -- the worked vertical slice. Carlton County, MN, on the Canadian Shield. This is the example a keeper FORKS: copy it, swap the Site data for your own land, swap/aug the analog, rerun.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: AMOC/samples/carlton_county.sample.txt; run capture: RUN, exit 0, 74 lines, sha12 abb7aea146ed (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--baseline (imports); amoc--sitespec (imports); amoc--trajectory (imports)
 
 ### amoc--divergence
@@ -1657,6 +1678,7 @@ integrity: Simulators/AMOC/divergence.py sha12=56d3eb93da6b commit=198937ecabbc 
 purpose: **[DRAFT]** divergence.py -- the correction Kavik named: the starting point is different, so the analog cannot be inherited whole.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 21 lines, sha12 c781aacc5f7e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--response (imported-by); amoc--trajectory (imported-by); amoc--baseline (imports)
 
 ### amoc--forcing
@@ -1693,6 +1715,7 @@ integrity: Simulators/AMOC/forcing.py sha12=30f796c804b4 commit=198937ecabbc las
 purpose: **[DRAFT]** forcing.py -- AMOC collapse as a control parameter, two formulations.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 14 lines, sha12 440433b2bcfa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--response (imported-by); amoc--trajectory (imported-by)
 
 ### amoc--response
@@ -1716,6 +1739,7 @@ integrity: Simulators/AMOC/response.py sha12=82a6177b9a0e commit=198937ecabbc la
 purpose: **[DRAFT]** response.py -- couples a forcing state + a divergence-corrected analog + a site into regional response BANDS (temperature, precip variance, ecosystem lag, growing-season pressure).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 f2419b86f2e4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--trajectory (imported-by); amoc--baseline (imports); amoc--divergence (imports); amoc--forcing (imports); amoc--sitespec (imports)
 
 ### amoc--sitespec
@@ -1743,6 +1767,7 @@ integrity: Simulators/AMOC/sitespec.py sha12=d1021846d2e2 commit=198937ecabbc la
 purpose: **[DRAFT]** sitespec.py -- the user's substrate. What THEY can measure on THEIR land.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 41acb7e04f05 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--carlton_county (imported-by); amoc--response (imported-by); amoc--trajectory (imported-by)
 
 ### amoc--trajectory
@@ -1780,6 +1805,7 @@ integrity: Simulators/AMOC/trajectory.py sha12=008c7e3125e8 commit=198937ecabbc 
 purpose: **[DRAFT]** trajectory.py -- the anti-freeze core. Generates TRAJECTORY ENSEMBLES across a forcing range and an analog set. Never caches a verdict, never returns "your region will be X." Returns the spread, where it is sensitive, and what fails first -- so the keeper reads the response surface and decides.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 15 lines, sha12 d6c5b8550d45 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** amoc--carlton_county (imported-by); amoc--baseline (imports); amoc--divergence (imports); amoc--forcing (imports); amoc--response (imports); amoc--sitespec (imports)
 
 ### adaptive-claim-loop--adaptive_loop
@@ -1843,6 +1869,7 @@ integrity: Simulators/adaptive-claim-loop/adaptive_loop.py sha12=c2cccabaf665 co
 purpose: **[DRAFT]** ADAPTIVE CLAIM LOOP Same architecture as an adaptive simulation framework -- provenance log, claim system, an agent that reads results and proposes a change, a loop that iterates -- with one move removed. Stdlib only, deterministic.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 55 lines, sha12 1dda0b2b3cb5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** adaptive-claim-loop--adversarial_probe (imported-by); adaptive-claim-loop--gate_null_test (imported-by); adaptive-claim-loop--replay_delivered (imported-by)
 
 ### adaptive-claim-loop--adversarial_probe
@@ -1864,6 +1891,7 @@ integrity: Simulators/adaptive-claim-loop/adversarial_probe.py sha12=cfb3b8293e1
 purpose: **[DRAFT]** adversarial_probe.py -- can a persistent responder launder the walk?  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** adaptive-claim-loop--adaptive_loop (imports)
 
 ### adaptive-claim-loop--delivered--adaptive_sim_framework
@@ -1885,6 +1913,7 @@ integrity: Simulators/adaptive-claim-loop/delivered/adaptive_sim_framework.py sh
 purpose: **[DRAFT]** Adaptive Simulation Framework for Scientific Claim Testing ========================================================== A self-contained framework for running simulations, testing claims, logging provenance, and allowing an AI agent to modify experiments based on results.  
 input: **[DRAFT]** --model (choices=['forest', 'fluctuating'], required=True); --iterations (default=5); --seed (default=42); --log (default=provenance_log.jsonl)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### adaptive-claim-loop--gate_null_test
@@ -1906,6 +1935,7 @@ integrity: Simulators/adaptive-claim-loop/gate_null_test.py sha12=56c49a1dd775 c
 purpose: **[DRAFT]** gate_null_test.py -- does the response gate discriminate, or just refuse?  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** adaptive-claim-loop--adaptive_loop (imports)
 
 ### adaptive-claim-loop--replay_delivered
@@ -1927,6 +1957,7 @@ integrity: Simulators/adaptive-claim-loop/replay_delivered.py sha12=a72fcbd4d1cd
 purpose: **[DRAFT]** replay_delivered.py -- the delivered framework's own moves, through the gate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** adaptive-claim-loop--adaptive_loop (imports)
 
 ### additivity-inheritance--additivity_inheritance
@@ -1952,6 +1983,7 @@ integrity: Simulators/additivity-inheritance/additivity_inheritance.py sha12=5a4
 purpose: **[DRAFT]** additivity_inheritance -- WO-9, the additivity assumption traced forward from the Fisher synthesis, built to the order and run on CONSTRUCTED data. These are OPEN QUESTIONS instrumented, not a critique of statistics; the tools are not in dispute, their inherited assumptions are the object.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 70018e178cc1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### agent-lifecycle-energy--phase_energy
@@ -1977,6 +2009,7 @@ integrity: Simulators/agent-lifecycle-energy/phase_energy.py sha12=400811ccc985 
 purpose: **[DRAFT]** GAP 4 rig machinery: phase-integrated agent-lifecycle energy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 ba3b398f08c1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** agent-lifecycle-energy--render (imported-by); agent-lifecycle-energy--selftest_ale (imported-by); agent-lifecycle-energy--trace_parse (imported-by)
 
 ### agent-lifecycle-energy--render
@@ -1998,6 +2031,7 @@ integrity: Simulators/agent-lifecycle-energy/render.py sha12=bc7ec7ac5857 commit
 purpose: **[DRAFT]** Render a rig report from LifecycleRun records: the raw per-run records alongside the derived figures, so the derived numbers can be recomputed from the raw ones without trusting this pipeline (the work order asks for exactly that). Wall and card are printed in separate columns and never blended; cold and warm are printed as separate blocks and never averaged.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** agent-lifecycle-energy--phase_energy (imports); agent-lifecycle-energy--trace_parse (imports)
 
 ### agent-lifecycle-energy--selftest_ale
@@ -2032,6 +2066,7 @@ integrity: Simulators/agent-lifecycle-energy/selftest_ale.py sha12=de4b3412f45a 
 purpose: **[DRAFT]** Checks for the GAP 4 rig, on CONSTRUCTED traces. No hardware is touched and no joule figure here is a measurement of anything -- every trace is built by hand so its integral is known in advance, which is the only way to test the machinery in an environment with no GPU and no meter (see RIG_STATUS.md).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 12 lines, sha12 50dd2bab457c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** agent-lifecycle-energy--phase_energy (imports); agent-lifecycle-energy--trace_parse (imports)
 
 ### agent-lifecycle-energy--trace_parse
@@ -2058,6 +2093,7 @@ integrity: Simulators/agent-lifecycle-energy/trace_parse.py sha12=9fb0ed88f9a4 c
 purpose: **[DRAFT]** Trace parsing and the hardware probe.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 a12e1f4fef6b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** agent-lifecycle-energy--render (imported-by); agent-lifecycle-energy--selftest_ale (imported-by); agent-lifecycle-energy--phase_energy (imports)
 
 ### alignment-under-coupling--check_run_1
@@ -2081,6 +2117,7 @@ integrity: Simulators/alignment-under-coupling/check_run_1.py sha12=75352540ca5e
 purpose: **[DRAFT]** Checks `RESULTS_RUN_1.md` against the sims that produced it.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: alignment-under-coupling/samples/check_run_1.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** alignment-under-coupling--run_all (imports); alignment-under-coupling--sim_b_entropy_depletion (imports); alignment-under-coupling--sim_c_loop_threshold (imports); alignment-under-coupling--sim_d_temperature_null (imports)
 
 ### alignment-under-coupling--run_all
@@ -2144,6 +2181,7 @@ integrity: Simulators/alignment-under-coupling/run_all.py sha12=90f502764105 com
 purpose: **[DRAFT]** runner. stdlib only. CC0.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 104 lines, sha12 22fa17c83a12 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** alignment-under-coupling--check_run_1 (imported-by)
 
 ### alignment-under-coupling--sim_a_field_vs_coupling
@@ -2165,6 +2203,7 @@ integrity: Simulators/alignment-under-coupling/sim_a_field_vs_coupling.py sha12=
 purpose: **[DRAFT]** SIM-A  field vs coupling. stdlib only. CC0.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### alignment-under-coupling--sim_b_entropy_depletion
@@ -2186,6 +2225,7 @@ integrity: Simulators/alignment-under-coupling/sim_b_entropy_depletion.py sha12=
 purpose: **[DRAFT]** SIM-B  entropy depletion under recursive training. stdlib only. CC0.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** alignment-under-coupling--check_run_1 (imported-by)
 
 ### alignment-under-coupling--sim_c_loop_threshold
@@ -2207,6 +2247,7 @@ integrity: Simulators/alignment-under-coupling/sim_c_loop_threshold.py sha12=081
 purpose: **[DRAFT]** SIM-C  loop formation threshold. stdlib only. CC0.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** alignment-under-coupling--check_run_1 (imported-by)
 
 ### alignment-under-coupling--sim_d_temperature_null
@@ -2228,6 +2269,7 @@ integrity: Simulators/alignment-under-coupling/sim_d_temperature_null.py sha12=c
 purpose: **[DRAFT]** SIM-D  temperature null test. stdlib only. CC0.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** alignment-under-coupling--check_run_1 (imported-by)
 
 ### anchor-interval--corpus_loop
@@ -2291,6 +2333,7 @@ integrity: Simulators/anchor-interval/corpus_loop.py sha12=62a600d51fb0 commit=1
 purpose: **[DRAFT]** corpus_loop.py -- coherence rises while substrate coupling falls, and the detector that could see it is on the wrong side of the loop.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: anchor-interval/samples/corpus_loop.sample.txt; run capture: RUN, exit 0, 178 lines, sha12 e9bdb046011b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### anchor-interval--moving_reference
@@ -2354,6 +2397,7 @@ integrity: Simulators/anchor-interval/moving_reference.py sha12=7916c6d34fe1 com
 purpose: **[DRAFT]** moving_reference.py -- "the model drifted" is a difference between two moving things, reported as a property of one.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: anchor-interval/samples/moving_reference.sample.txt; run capture: RUN, exit 0, 139 lines, sha12 a42a32d81848 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### anchor-interval--recoverability
@@ -2417,6 +2461,7 @@ integrity: Simulators/anchor-interval/recoverability.py sha12=783ff7787510 commi
 purpose: **[DRAFT]** recoverability.py -- provenance, not timing, decides whether a clean reference can be re-acquired.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: anchor-interval/samples/recoverability.sample.txt; run capture: RUN, exit 0, 152 lines, sha12 832b1a4b7a87 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### anchor-measurand-crossing--amc
@@ -2442,6 +2487,7 @@ integrity: Simulators/anchor-measurand-crossing/amc.py sha12=723748cd5da7 commit
 purpose: **[DRAFT]** ANCHOR POSITION AND MEASURAND CROSSING -- the instrument for WORK_ORDER.md.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9c246537e1c1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-measurand-crossing--selftest_amc (imported-by); notes--check_postgrad (shares anchor-measurand-crossing/WORK_ORDER.md); notes--check_postgrad (shares anchor-measurand-crossing/lexicon.json)
 
 ### anchor-measurand-crossing--selftest_amc
@@ -2466,6 +2512,7 @@ integrity: Simulators/anchor-measurand-crossing/selftest_amc.py sha12=735b726fe5
 purpose: **[DRAFT]** Checks for amc.py. Every run record here is CONSTRUCTED and says so; nothing is a claim about any model. Both directions of every guard.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 8d3a0a8b957d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-measurand-crossing--amc (imports)
 
 ### anchor-position--normalize
@@ -2491,6 +2538,7 @@ integrity: Simulators/anchor-position/normalize.py sha12=76bb4c373631 commit=198
 purpose: **[DRAFT]** normalize.py -- quantity strings to measurand groups under a PUBLISHED transform list (WORK ORDER, section 6).  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 1 lines, sha12 fcb69bc0e30d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-position--score (imported-by); anchor-position--selftest_apm (imported-by)
 
 ### anchor-position--prompts
@@ -2516,6 +2564,7 @@ integrity: Simulators/anchor-position/prompts.py sha12=ef8e29ce4603 commit=19893
 purpose: **[DRAFT]** prompts.py -- emit the arm prompts for every case, VERBATIM from the work order (section 4), plus the AP-3 confound arm M+ (section 7), plus a seeded arm order per case (section 5). No model is called here; the operator runs each prompt in a fresh session and logs the raw response into responses.jsonl (schema in README.md).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: anchor-position/samples/prompts.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 b71eba8ec940 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-position--score (imported-by); anchor-position--selftest_apm (imported-by)
 
 ### anchor-position--score
@@ -2539,6 +2588,7 @@ integrity: Simulators/anchor-position/score.py sha12=c5b397b861bf commit=198937e
 purpose: **[DRAFT]** score.py -- the mechanical scorer of WORK ORDER section 6, the claims of section 7 and the nulls of section 8, over a responses.jsonl the operator filled by running prompts.py's files in fresh sessions.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 4cffff1fd8ea (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-position--selftest_apm (imported-by); anchor-position--normalize (imports); anchor-position--prompts (imports); anchor-position--selftest_apm (imports)
 
 ### anchor-position--selftest_apm
@@ -2560,6 +2610,7 @@ integrity: Simulators/anchor-position/selftest_apm.py sha12=c29da6ff32c8 commit=
 purpose: **[DRAFT]** selftest_apm.py -- checks for anchor-position/. Run via python3 score.py --selftest. Prints its count; the count is not stored anywhere else in this folder.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** anchor-position--score (imported-by); anchor-position--normalize (imports); anchor-position--prompts (imports); anchor-position--score (imports)
 
 ### animacy-pass--dependency_check
@@ -2583,6 +2634,7 @@ integrity: Simulators/animacy-pass/dependency_check.py sha12=1baeeab15309 commit
 purpose: **[DRAFT]** dependency_check.py -- the animacy pass as a dependency check.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 ce52ecc22845 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** animacy-pass--unweld (imported-by)
 
 ### animacy-pass--unweld
@@ -2606,6 +2658,7 @@ integrity: Simulators/animacy-pass/unweld.py sha12=3a12b6d1ea57 commit=198937eca
 purpose: **[DRAFT]** unweld.py -- unweld an evaluative claim before it is allowed to stand.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: animacy-pass/samples/unweld.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 ddace1ce2989 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** animacy-pass--dependency_check (imports)
 
 ### antifungal-mechanism-sim--antifungal_coupling_core
@@ -2640,6 +2693,7 @@ integrity: Simulators/antifungal-mechanism-sim/antifungal_coupling_core.py sha12
 purpose: **[DRAFT]** antifungal_coupling_core.py Replaces the additive scalar scoring with COUPLING TOPOLOGY. Combination antifungal therapy is non-additive: efficacy has signed synergy/antagonism, and resistance is suppressed MULTIPLICATIVELY by orthogonal-axis diversity. Same non-additivity object as the earth-systems / model-collapse work — here the interaction matrix IS the site, and orthogonality IS the resistance lever. CC0. stdlib only.  (therapeutic design toy — combination pharmacology)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 12 lines, sha12 fa6a46153f84 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### antifungal-mechanism-sim--antifungal_mechanism_sim
@@ -2684,6 +2738,7 @@ integrity: Simulators/antifungal-mechanism-sim/antifungal_mechanism_sim.py sha12
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 20 lines, sha12 0b6e1af1bb75 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### antifungal-mechanism-sim--temporal_dosing_resistance
@@ -2721,6 +2776,7 @@ integrity: Simulators/antifungal-mechanism-sim/temporal_dosing_resistance.py sha
 purpose: **[DRAFT]** temporal_dosing_resistance.py Adds the TIME axis the static scorer collapsed. Two structural results: [1] resistance evolution is a KICKED RELAXOR under a dosing schedule (dose = kick; adaptation between kicks; schedule decides the outcome). [2] antagonism is SEQUENCE-DEPENDENT -> the interaction matrix is NON-COMMUTATIVE: J[i->j] != J[j->i]. (New axis vs the reach/avoid kernel.) CC0. stdlib only.  (combination pharmacology, therapeutic design)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 15 lines, sha12 7700cbeba94f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### aperiodic-order-sim-stack--aperture_alias_demo
@@ -2784,6 +2840,7 @@ integrity: Simulators/aperiodic-order-sim-stack/aperture_alias_demo.py sha12=fe7
 purpose: **[DRAFT]** aperture_alias_demo.py — the S(k) control SIM-A never ran.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: aperiodic-order-sim-stack/samples/aperture_alias_demo.sample.txt; run capture: RUN, exit 0, 97 lines, sha12 c178e5962481 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### aperiodic-order-sim-stack--finite_n_control
@@ -2847,6 +2904,7 @@ integrity: Simulators/aperiodic-order-sim-stack/finite_n_control.py sha12=fd544e
 purpose: **[DRAFT]** finite_n_control.py — the estimator controls the SIM-B drop did not run.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: aperiodic-order-sim-stack/samples/finite_n_control.sample.txt; run capture: RUN, exit 0, 63 lines, sha12 2b3e9cdfbb34 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### archive--assessor-coupling--conditions
@@ -2872,6 +2930,7 @@ integrity: Simulators/archive/assessor-coupling/conditions.py sha12=21c38fa5a01e
 purpose: **[DRAFT]** WO-6, the remedy set as an instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 fbf914993c86 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--run_all (imported-by); archive--assessor-coupling--selftest (imported-by); archive--assessor-coupling--selftest (sibling-selftest)
 
 ### archive--assessor-coupling--disclosure_audit
@@ -2897,6 +2956,7 @@ integrity: Simulators/archive/assessor-coupling/disclosure_audit.py sha12=509df4
 purpose: **[DRAFT]** WO-6 step 4, the disclosure-field audit.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 45de5f6f8691 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--run_all (imported-by); archive--assessor-coupling--selftest (imported-by); assessor-coupling--disclosure_audit (same-bytes); archive--assessor-coupling--selftest (sibling-selftest)
 
 ### archive--assessor-coupling--pool_metric
@@ -2922,6 +2982,7 @@ integrity: Simulators/archive/assessor-coupling/pool_metric.py sha12=cb639907377
 purpose: **[DRAFT]** WO-6 step 1, the pool-level independence metric, as arithmetic on a CONSTRUCTED funding graph.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 289097d3d1d9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--run_all (imported-by); archive--assessor-coupling--selftest (imported-by); assessor-coupling--pool_metric (same-bytes); archive--assessor-coupling--selftest (sibling-selftest)
 
 ### archive--assessor-coupling--precedent
@@ -2947,6 +3008,7 @@ integrity: Simulators/archive/assessor-coupling/precedent.py sha12=7135a85cc741 
 purpose: **[DRAFT]** WO-6, the precedent record parsed, and steps 2 and 3 as schemas.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 16132a969b1d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--run_all (imported-by); archive--assessor-coupling--selftest (imported-by); archive--assessor-coupling--selftest (sibling-selftest)
 
 ### archive--assessor-coupling--run_all
@@ -2968,6 +3030,7 @@ integrity: Simulators/archive/assessor-coupling/run_all.py sha12=7a0de4364f87 co
 purpose: **[DRAFT]** WO-6 -- every part, declaration first.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: archive/assessor-coupling/samples/run_all.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--selftest (imported-by); archive--assessor-coupling--conditions (imports); archive--assessor-coupling--disclosure_audit (imports); archive--assessor-coupling--pool_metric (imports); archive--assessor-coupling--precedent (imports); assessor-coupling--run_all (same-bytes); archive--assessor-coupling--selftest (sibling-selftest)
 
 ### archive--assessor-coupling--selftest
@@ -2997,6 +3060,7 @@ integrity: Simulators/archive/assessor-coupling/selftest.py sha12=200e468294c4 c
 purpose: **[DRAFT]** assessor-coupling -- the null-tested suite. Prints its own count.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: archive/assessor-coupling/samples/selftest.sample.txt; run capture: FAILED, exit 1, 5 lines, sha12 799d68cea6d7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--assessor-coupling--conditions (imports); archive--assessor-coupling--disclosure_audit (imports); archive--assessor-coupling--pool_metric (imports); archive--assessor-coupling--precedent (imports); archive--assessor-coupling--run_all (imports); assessor-coupling--selftest (same-bytes); archive--assessor-coupling--conditions (selftest-of); archive--assessor-coupling--disclosure_audit (selftest-of); archive--assessor-coupling--pool_metric (selftest-of); archive--assessor-coupling--precedent (selftest-of); archive--assessor-coupling--run_all (selftest-of)
 
 ### archive--chain-position--clause_audit
@@ -3022,6 +3086,7 @@ integrity: Simulators/archive/chain-position/clause_audit.py sha12=4428bfa0377f 
 purpose: **[DRAFT]** clause_audit.py -- WO-1 step 1: audit ACS / OWASP Top 10 for Agentic Applications 2026 clause by clause for any requirement that places chain-position information INSIDE the executing agent. The order's expected result is none, and it says a null result is the finding.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 698b4674adda (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--run_all (imported-by); archive--chain-position--selftest (imported-by); chain-position--clause_audit (same-bytes); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--chain-position--dissimilar
@@ -3047,6 +3112,7 @@ integrity: Simulators/archive/chain-position/dissimilar.py sha12=02a0c94299bb co
 purpose: **[DRAFT]** dissimilar.py -- WO-1 step 4 as a specification, NOT RUN on any model.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 664f1ae3611f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--run_all (imported-by); archive--chain-position--selftest (imported-by); chain-position--dissimilar (same-bytes); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--chain-position--horn_b
@@ -3072,6 +3138,7 @@ integrity: Simulators/archive/chain-position/horn_b.py sha12=d642cf118823 commit
 purpose: **[DRAFT]** horn_b.py -- WO-1 step 3: attempt Horn B. Build a container that asks for its own chain position and record what evidence it would need. The order says: failure mode is the data.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 130c67ebaa5e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--run_all (imported-by); archive--chain-position--selftest (imported-by); chain-position--horn_b (same-bytes); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--chain-position--load_class
@@ -3097,6 +3164,7 @@ integrity: Simulators/archive/chain-position/load_class.py sha12=d3e50ce896c4 co
 purpose: **[DRAFT]** load_class.py -- the order's load-class test as arithmetic.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 757db2f2c58b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--run_all (imported-by); archive--chain-position--selftest (imported-by); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--chain-position--run_all
@@ -3160,6 +3228,7 @@ integrity: Simulators/archive/chain-position/run_all.py sha12=fe0bcb7e1d9c commi
 purpose: **[DRAFT]** run_all.py -- the contamination declaration, THEN the four built arms and the one carried arm. Nothing here fetches anything. The declaration prints before any number because a number read without it is read as a measurement of something other than what it measures.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: archive/chain-position/samples/run_all.sample.txt; run capture: RUN, exit 0, 94 lines, sha12 1ddec2a519a3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--selftest (imported-by); archive--chain-position--clause_audit (imports); archive--chain-position--dissimilar (imports); archive--chain-position--horn_b (imports); archive--chain-position--load_class (imports); archive--chain-position--trust_provenance (imports); chain-position--run_all (same-bytes); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--chain-position--selftest
@@ -3223,6 +3292,7 @@ integrity: Simulators/archive/chain-position/selftest.py sha12=c736c8056b7b comm
 purpose: **[DRAFT]** selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: archive/chain-position/samples/selftest.sample.txt; run capture: RUN, exit 0, 104 lines, sha12 b66a7884fbe4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--clause_audit (imports); archive--chain-position--dissimilar (imports); archive--chain-position--horn_b (imports); archive--chain-position--load_class (imports); archive--chain-position--run_all (imports); archive--chain-position--trust_provenance (imports); chain-position--selftest (same-bytes); archive--chain-position--clause_audit (selftest-of); archive--chain-position--dissimilar (selftest-of); archive--chain-position--horn_b (selftest-of); archive--chain-position--load_class (selftest-of); archive--chain-position--run_all (selftest-of); archive--chain-position--trust_provenance (selftest-of)
 
 ### archive--chain-position--trust_provenance
@@ -3248,6 +3318,7 @@ integrity: Simulators/archive/chain-position/trust_provenance.py sha12=21f4b4e54
 purpose: **[DRAFT]** trust_provenance.py -- WO-1 step 2: what provenance on a trust ASSIGNMENT would have to include for the assignment to be auditable.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 f6b1fb978543 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--chain-position--run_all (imported-by); archive--chain-position--selftest (imported-by); archive--chain-position--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--p1_dependency_records
@@ -3273,6 +3344,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/p1_dependency_records.
 purpose: **[DRAFT]** P1 -- dependency records. RECORDS, not prose.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 73c17b6c2ae4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--run_all (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--p1_dependency_records (same-bytes); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--p2_substrate
@@ -3294,6 +3366,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/p2_substrate.py sha12=
 purpose: **[DRAFT]** P2 -- substrate check, by introspection of the code that runs it.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--run_all (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--p3_comprehension
@@ -3319,6 +3392,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/p3_comprehension.py sh
 purpose: **[DRAFT]** P3 -- comprehension check. Nothing external. Runs on whatever corpus the caller can read: files, stdin, or (--self) this folder's own text.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 c38723b203ca (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--run_all (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--p4_goal_coherence
@@ -3344,6 +3418,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/p4_goal_coherence.py s
 purpose: **[DRAFT]** P4 -- goal-coherence check. Nothing external.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 588d54147253 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--run_all (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--p4_goal_coherence (same-bytes); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--p5_lag_declaration
@@ -3369,6 +3444,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/p5_lag_declaration.py 
 purpose: **[DRAFT]** P5 -- lag declaration check. Per action, two clocks:  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 abf861171be5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--run_all (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--p5_lag_declaration (same-bytes); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--run_all
@@ -3432,6 +3508,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/run_all.py sha12=d4bd3
 purpose: **[DRAFT]** run_all.py -- the contamination declaration, THEN P2, P3, P4, P5, P1. Nothing here fetches anything. The declaration prints before any number because a number read without it is read as a measurement of something other than what it measures.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: archive/cooperative-substrate-proof/samples/run_all.sample.txt; run capture: RUN, exit 0, 89 lines, sha12 57012d3441ee (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--p1_dependency_records (imports); archive--cooperative-substrate-proof--p2_substrate (imports); archive--cooperative-substrate-proof--p3_comprehension (imports); archive--cooperative-substrate-proof--p4_goal_coherence (imports); archive--cooperative-substrate-proof--p5_lag_declaration (imports); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--scope
@@ -3457,6 +3534,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/scope.py sha12=af2cd9f
 purpose: **[DRAFT]** scope.py -- the C1-C4 coding pass. Imported by P1..P5; runs standalone.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 31972686172e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--p5_lag_declaration (imported-by); archive--cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### archive--cooperative-substrate-proof--selftest
@@ -3520,6 +3598,7 @@ integrity: Simulators/archive/cooperative-substrate-proof/selftest.py sha12=831f
 purpose: **[DRAFT]** selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: archive/cooperative-substrate-proof/samples/selftest.sample.txt; run capture: RUN, exit 0, 91 lines, sha12 9470e6f6ebe1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--cooperative-substrate-proof--p1_dependency_records (imports); archive--cooperative-substrate-proof--p2_substrate (imports); archive--cooperative-substrate-proof--p3_comprehension (imports); archive--cooperative-substrate-proof--p4_goal_coherence (imports); archive--cooperative-substrate-proof--p5_lag_declaration (imports); archive--cooperative-substrate-proof--run_all (imports); archive--cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (same-bytes); archive--cooperative-substrate-proof--p1_dependency_records (selftest-of); archive--cooperative-substrate-proof--p2_substrate (selftest-of); archive--cooperative-substrate-proof--p3_comprehension (selftest-of); archive--cooperative-substrate-proof--p4_goal_coherence (selftest-of); archive--cooperative-substrate-proof--p5_lag_declaration (selftest-of); archive--cooperative-substrate-proof--run_all (selftest-of); archive--cooperative-substrate-proof--scope (selftest-of)
 
 ### archive--crediting-rate--crediting_rate_v2
@@ -3549,6 +3628,7 @@ integrity: Simulators/archive/crediting-rate/crediting_rate_v2.py sha12=459f810f
 purpose: **[DRAFT]** crediting_rate_v2.py -- WORK ORDER L, REVISED 2026-09-23. CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 5 lines, sha12 71a0ff5e7975 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--crediting-rate--make_fixtures_v2 (imported-by); crediting-rate--archive--f168f79--crediting_rate_v2 (same-bytes)
 
 ### archive--crediting-rate--make_fixtures_v2
@@ -3570,6 +3650,7 @@ integrity: Simulators/archive/crediting-rate/make_fixtures_v2.py sha12=f8dfcc5ac
 purpose: **[DRAFT]** make_fixtures_v2.py -- writes the five constructed worlds WORK ORDER L REVISED requires.  CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--crediting-rate--crediting_rate_v2 (imports); crediting-rate--archive--f168f79--make_fixtures_v2 (same-bytes)
 
 ### archive--instrument-index--build_index
@@ -3596,6 +3677,7 @@ integrity: Simulators/archive/instrument-index/build_index.py sha12=b05daddc9188
 purpose: **[DRAFT]** build_index.py -- the generator for INSTRUMENT-INDEX.tsv (INDEX-SPEC.md).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 4accb452711c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--instrument-index--coverage (imported-by); conversation-type--design_check (shares README.md); question-availability--check_marker (shares README.md); archive--instrument-index--coverage (shares archive/instrument-index/INSTRUMENT-INDEX.tsv)
 
 ### archive--instrument-index--coverage
@@ -3622,6 +3704,7 @@ integrity: Simulators/archive/instrument-index/coverage.py sha12=703876c24ae2 co
 purpose: **[DRAFT]** coverage.py -- the consuming side of INSTRUMENT-INDEX.tsv (INDEX-SPEC.md).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 dfa9f9cec391 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--instrument-index--build_index (imports); instrument-index--coverage (same-bytes); archive--instrument-index--build_index (shares archive/instrument-index/INSTRUMENT-INDEX.tsv)
 
 ### archive--interaction_class--interaction_class
@@ -3647,6 +3730,7 @@ integrity: Simulators/archive/interaction_class/interaction_class.py sha12=2c13d
 purpose: **[DRAFT]** interaction_class.py -- classify a joint response against its separate responses, by the precedence ordered 2026-10-07. CC0.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 2c916042ccf0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### archive--stability-trigger-envelope--cases
@@ -3668,6 +3752,7 @@ integrity: Simulators/archive/stability-trigger-envelope/cases.py sha12=f5054e72
 purpose: **[DRAFT]** stability-trigger-envelope/cases.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--stability-trigger-envelope--descent_record (imported-by); archive--stability-trigger-envelope--descent_record (imports); stability-trigger-envelope--cases (same-bytes)
 
 ### archive--stability-trigger-envelope--descent_record
@@ -3693,6 +3778,7 @@ integrity: Simulators/archive/stability-trigger-envelope/descent_record.py sha12
 purpose: **[DRAFT]** stability-trigger-envelope/descent_record.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: archive/stability-trigger-envelope/samples/descent_record.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d7b169228bf3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--stability-trigger-envelope--cases (imported-by); archive--stability-trigger-envelope--cases (imports)
 
 ### assessor-coupling--conditions
@@ -3718,6 +3804,7 @@ integrity: Simulators/assessor-coupling/conditions.py sha12=ff2605d15001 commit=
 purpose: **[DRAFT]** conditions.py -- WO-6: the eight independence conditions, read out of the order, and a scorer for a declared arrangement.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: assessor-coupling/samples/conditions.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 731a145ea777 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--precedent (imported-by); assessor-coupling--run_all (imported-by); assessor-coupling--selftest (imported-by); assessor-coupling--disclosure_audit (shares assessor-coupling/WORK_ORDER.md); assessor-coupling--selftest (shares assessor-coupling/WORK_ORDER.md); assessor-coupling--selftest (sibling-selftest)
 
 ### assessor-coupling--disclosure_audit
@@ -3743,6 +3830,7 @@ integrity: Simulators/assessor-coupling/disclosure_audit.py sha12=509df4b73974 c
 purpose: **[DRAFT]** WO-6 step 4, the disclosure-field audit.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 45de5f6f8691 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--run_all (imported-by); assessor-coupling--selftest (imported-by); archive--assessor-coupling--disclosure_audit (same-bytes); assessor-coupling--conditions (shares assessor-coupling/WORK_ORDER.md); assessor-coupling--selftest (shares assessor-coupling/WORK_ORDER.md); assessor-coupling--selftest (sibling-selftest)
 
 ### assessor-coupling--pool_metric
@@ -3768,6 +3856,7 @@ integrity: Simulators/assessor-coupling/pool_metric.py sha12=cb6399073778 commit
 purpose: **[DRAFT]** WO-6 step 1, the pool-level independence metric, as arithmetic on a CONSTRUCTED funding graph.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 289097d3d1d9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--run_all (imported-by); assessor-coupling--selftest (imported-by); archive--assessor-coupling--pool_metric (same-bytes); assessor-coupling--selftest (sibling-selftest)
 
 ### assessor-coupling--precedent
@@ -3793,6 +3882,7 @@ integrity: Simulators/assessor-coupling/precedent.py sha12=ee559a1ee6a1 commit=1
 purpose: **[DRAFT]** precedent.py -- WO-6: the precedent record read as a corpus, the common prior defense scored against it, and the order's step 4 built and unrun.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: assessor-coupling/samples/precedent.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 b3363d1a345e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--run_all (imported-by); assessor-coupling--selftest (imported-by); assessor-coupling--conditions (imports); assessor-coupling--selftest (sibling-selftest)
 
 ### assessor-coupling--run_all
@@ -3814,6 +3904,7 @@ integrity: Simulators/assessor-coupling/run_all.py sha12=7a0de4364f87 commit=198
 purpose: **[DRAFT]** WO-6 -- every part, declaration first.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: assessor-coupling/samples/run_all.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--selftest (imported-by); assessor-coupling--conditions (imports); assessor-coupling--disclosure_audit (imports); assessor-coupling--pool_metric (imports); assessor-coupling--precedent (imports); archive--assessor-coupling--run_all (same-bytes); assessor-coupling--selftest (sibling-selftest)
 
 ### assessor-coupling--selftest
@@ -3853,6 +3944,7 @@ integrity: Simulators/assessor-coupling/selftest.py sha12=200e468294c4 commit=19
 purpose: **[DRAFT]** assessor-coupling -- the null-tested suite. Prints its own count.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: assessor-coupling/samples/selftest.sample.txt; run capture: FAILED, exit 1, 15 lines, sha12 cf90b84f7b87 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** assessor-coupling--conditions (imports); assessor-coupling--disclosure_audit (imports); assessor-coupling--pool_metric (imports); assessor-coupling--precedent (imports); assessor-coupling--run_all (imports); archive--assessor-coupling--selftest (same-bytes); assessor-coupling--conditions (selftest-of); assessor-coupling--disclosure_audit (selftest-of); assessor-coupling--pool_metric (selftest-of); assessor-coupling--precedent (selftest-of); assessor-coupling--run_all (selftest-of); assessor-coupling--conditions (shares assessor-coupling/WORK_ORDER.md); assessor-coupling--disclosure_audit (shares assessor-coupling/WORK_ORDER.md)
 
 ### automation-gap--audit
@@ -3880,6 +3972,7 @@ integrity: Simulators/automation-gap/audit.py sha12=00f1aeed0d04 commit=198937ec
 purpose: **[DRAFT]** audit.py -- recompute what the six delivered documents state. CC0, stdlib only, no network. Parses the delivered files at call time; no figure from them is retyped as a literal here (asserted by the suite).  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 b00a1d911fc3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** automation-gap--register_audit (imported-by); automation-gap--register_audit (shares automation-gap/DEMO_CORPUS_AUDIT.md)
 
 ### automation-gap--driver_hours_evidence_register
@@ -3943,6 +4036,7 @@ integrity: Simulators/automation-gap/driver_hours_evidence_register.py sha12=7b5
 purpose: **[DRAFT]** driver_hours_evidence_register.py  --  CC0 1.0, stdlib only  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 256 lines, sha12 39df2a7edd56 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** automation-gap--register_audit (imported-by)
 
 ### automation-gap--register_audit
@@ -3977,6 +4071,7 @@ integrity: Simulators/automation-gap/register_audit.py sha12=eca352648619 commit
 purpose: **[DRAFT]** register_audit.py -- checks on driver_hours_evidence_register.py. CC0, stdlib only, no network.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: automation-gap/samples/register_audit.sample.txt; run capture: RUN, exit 0, 12 lines, sha12 900d1d926084 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** automation-gap--audit (imports); automation-gap--driver_hours_evidence_register (imports); automation-gap--audit (shares automation-gap/DEMO_CORPUS_AUDIT.md)
 
 ### battery-offgas-prearm--prearm
@@ -4002,6 +4097,7 @@ integrity: Simulators/battery-offgas-prearm/prearm.py sha12=b798f61195ef commit=
 purpose: **[DRAFT]** battery-offgas-prearm / prearm.py -- trigger logic for a DIY off-gas pre-arm.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 69583fcd10be (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### blame-attribution--pair_check
@@ -4025,6 +4121,7 @@ integrity: Simulators/blame-attribution/pair_check.py sha12=1c3144184af5 commit=
 purpose: **[DRAFT]** The check CELLS.md's Open section asks for and does not build.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: blame-attribution/samples/pair_check.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 57bda479fccb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### branch-set--branch_set
@@ -4048,6 +4145,7 @@ integrity: Simulators/branch-set/branch_set.py sha12=3789082275e4 commit=198937e
 purpose: **[DRAFT]** F) branch_set.py -- serialize a held branch set so it survives transport to a model or a reader. Collapse happens at MEASUREMENT, not at intake: a branch is eliminated by its discriminator, never by being unfashionable.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: branch-set/samples/branch_set.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3425a28e263d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### bridge-impoundment--addendum_audit
@@ -4074,6 +4172,7 @@ integrity: Simulators/bridge-impoundment/addendum_audit.py sha12=ce1634627036 co
 purpose: **[DRAFT]** addendum_audit.py (bridge-impoundment) -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: bridge-impoundment/samples/addendum_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 6311cd27f910 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** bridge-impoundment--selftest_bi (imported-by); bridge-impoundment--audit (shares bridge-impoundment/SOURCE_DROP.md); bridge-impoundment--selftest_bi (shares bridge-impoundment/SOURCE_DROP.md); bridge-impoundment--selftest_bi (shares bridge-impoundment/SOURCE_DROP_V2.md)
 
 ### bridge-impoundment--audit
@@ -4095,6 +4194,7 @@ integrity: Simulators/bridge-impoundment/audit.py sha12=1f01c26d9130 commit=1989
 purpose: **[DRAFT]** audit.py (bridge-impoundment) -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: bridge-impoundment/samples/audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** bridge-impoundment--selftest_bi (imported-by); bridge-impoundment--bridge_impoundment (imports); bridge-impoundment--addendum_audit (shares bridge-impoundment/SOURCE_DROP.md); bridge-impoundment--selftest_bi (shares bridge-impoundment/SOURCE_DROP.md)
 
 ### bridge-impoundment--bridge_impoundment
@@ -4121,6 +4221,7 @@ integrity: Simulators/bridge-impoundment/bridge_impoundment.py sha12=d6d011a86b6
 purpose: **[DRAFT]** bridge_impoundment.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: bridge-impoundment/samples/bridge_impoundment.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 f63c2f91cd8e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** bridge-impoundment--audit (imported-by); bridge-impoundment--selftest_bi (imported-by)
 
 ### bridge-impoundment--selftest_bi
@@ -4144,6 +4245,7 @@ integrity: Simulators/bridge-impoundment/selftest_bi.py sha12=65e5f4bb0e88 commi
 purpose: **[DRAFT]** selftest_bi.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 46a786dffa82 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** bridge-impoundment--addendum_audit (imports); bridge-impoundment--audit (imports); bridge-impoundment--bridge_impoundment (imports); bridge-impoundment--addendum_audit (shares bridge-impoundment/SOURCE_DROP.md); bridge-impoundment--audit (shares bridge-impoundment/SOURCE_DROP.md); bridge-impoundment--addendum_audit (shares bridge-impoundment/SOURCE_DROP_V2.md)
 
 ### category-weld--reconstruction--weld
@@ -4193,6 +4295,7 @@ integrity: Simulators/category-weld/reconstruction/weld.py sha12=bfe473ecd25a co
 purpose: **[DRAFT]** weld.py -- scorer for CATEGORY WELD terms. SUPERSEDED.  
 input: **[DRAFT]** --term: components and cases for one term; --jsonl (action=store_true): one score object per line; --new: emit a blank term file; --welds: directory of term files  
 output: **[DRAFT]** run capture: RUN, exit 0, 27 lines, sha12 c3f74cd1d095 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### category-weld--weld
@@ -4223,6 +4326,7 @@ integrity: Simulators/category-weld/weld.py sha12=e405ca7d8a29 commit=198937ecab
 purpose: **[DRAFT]** CC0. stdlib only. python3 weld.py [--term T] [--jsonl] [--new TERM]  
 input: **[DRAFT]** --term: detail view for one term; --jsonl (action=store_true): one score per line; --new: emit a blank weld file  
 output: **[DRAFT]** sample: category-weld/samples/weld_audit.sample.txt; sample: category-weld/samples/weld_capital.sample.txt; sample: category-weld/samples/weld_hierarchy.sample.txt; sample: category-weld/samples/weld_rural.sample.txt; sample: category-weld/samples/weld_scores.sample.jsonl; sample: category-weld/samples/weld_table.sample.txt; run capture: RUN, exit 0, 8 lines, sha12 f498ab6fb423 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** category-weld--weld_audit (imported-by); category-weld--weld_audit (shares category-weld/samples/weld_audit.sample.txt)
 
 ### category-weld--weld_audit
@@ -4244,6 +4348,7 @@ integrity: Simulators/category-weld/weld_audit.py sha12=0f4bd12efd75 commit=1989
 purpose: **[DRAFT]** weld_audit.py -- checks on the category-weld drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: category-weld/samples/weld_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** category-weld--weld (imports); category-weld--weld (shares category-weld/samples/weld_audit.sample.txt)
 
 ### ch4-four-box--closure_diagnostic
@@ -4265,6 +4370,7 @@ integrity: Simulators/ch4-four-box/closure_diagnostic.py sha12=ad328c46783f comm
 purpose: **[DRAFT]** Closure diagnostic. Transport params read as RATES (1/yr) — the reading that reproduces the published polar-only run.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: ch4-four-box/samples/closure_diagnostic.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### ch4-four-box--fourbox_audit
@@ -4290,6 +4396,7 @@ integrity: Simulators/ch4-four-box/fourbox_audit.py sha12=23ffc4d56f77 commit=19
 purpose: **[DRAFT]** fourbox_audit -- the two delivered CH4 box scripts read against each other and against their own arithmetic.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: ch4-four-box/samples/fourbox_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 9b1b20da1c47 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ch4-four-box--selftest_fb (imported-by)
 
 ### ch4-four-box--fourbox_forward
@@ -4311,6 +4418,7 @@ integrity: Simulators/ch4-four-box/fourbox_forward.py sha12=2cff78b897fd commit=
 purpose: **[DRAFT]** Four-box CH4 model, rebuilt from Lamantia et al. 2026 Methods. Corrected: the model is FORWARD only. Concentrations are prescribed in observed boxes, TN is interpolated, E = M.C directly. No inversion. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: ch4-four-box/samples/fourbox_forward.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### ch4-four-box--selftest_fb
@@ -4335,6 +4443,7 @@ integrity: Simulators/ch4-four-box/selftest_fb.py sha12=3d297af102f6 commit=1989
 purpose: **[DRAFT]** Checks for fourbox_audit.py against the two delivered scripts, which are run with stdout captured and never edited. Nothing here is a statement about the atmosphere.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 e1c6facdac9e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ch4-four-box--fourbox_audit (imports)
 
 ### ch4-four-box--tn_inversion
@@ -4360,6 +4469,7 @@ integrity: Simulators/ch4-four-box/tn_inversion.py sha12=380c33409ad7 commit=198
 purpose: **[DRAFT]** tn_inversion.py -- R-3, folded into RESULTS.md.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 a02b56a85f9b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### ch4-four-box--units_test
@@ -4385,6 +4495,7 @@ integrity: Simulators/ch4-four-box/units_test.py sha12=da512605818a commit=19893
 purpose: **[DRAFT]** units_test.py -- R-2, folded into RESULTS.md.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 a9da5a74d259 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### chain-position--chain_position
@@ -4411,6 +4522,7 @@ integrity: Simulators/chain-position/chain_position.py sha12=876e11f5965f commit
 purpose: **[DRAFT]** chain_position.py -- WO-1 MEASURAND: can a container detect its chain position?  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: chain-position/samples/chain_position.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 1f11044d8a3c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--selftest (sibling-selftest)
 
 ### chain-position--clause_audit
@@ -4436,6 +4548,7 @@ integrity: Simulators/chain-position/clause_audit.py sha12=4428bfa0377f commit=1
 purpose: **[DRAFT]** clause_audit.py -- WO-1 step 1: audit ACS / OWASP Top 10 for Agentic Applications 2026 clause by clause for any requirement that places chain-position information INSIDE the executing agent. The order's expected result is none, and it says a null result is the finding.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 698b4674adda (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--run_all (imported-by); chain-position--selftest (imported-by); archive--chain-position--clause_audit (same-bytes); chain-position--selftest (sibling-selftest)
 
 ### chain-position--dissimilar
@@ -4461,6 +4574,7 @@ integrity: Simulators/chain-position/dissimilar.py sha12=02a0c94299bb commit=198
 purpose: **[DRAFT]** dissimilar.py -- WO-1 step 4 as a specification, NOT RUN on any model.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 664f1ae3611f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--run_all (imported-by); chain-position--selftest (imported-by); archive--chain-position--dissimilar (same-bytes); chain-position--selftest (sibling-selftest)
 
 ### chain-position--horn_b
@@ -4486,6 +4600,7 @@ integrity: Simulators/chain-position/horn_b.py sha12=d642cf118823 commit=198937e
 purpose: **[DRAFT]** horn_b.py -- WO-1 step 3: attempt Horn B. Build a container that asks for its own chain position and record what evidence it would need. The order says: failure mode is the data.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 130c67ebaa5e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--run_all (imported-by); chain-position--selftest (imported-by); archive--chain-position--horn_b (same-bytes); chain-position--selftest (sibling-selftest)
 
 ### chain-position--load_class
@@ -4512,6 +4627,7 @@ integrity: Simulators/chain-position/load_class.py sha12=669ab803c0ef commit=198
 purpose: **[DRAFT]** load_class.py -- WO-1 load-bearing criterion, made numbers where it can be.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: chain-position/samples/load_class.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 347c298ac65f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--run_all (imported-by); chain-position--selftest (imported-by); chain-position--selftest (sibling-selftest)
 
 ### chain-position--run_all
@@ -4575,6 +4691,7 @@ integrity: Simulators/chain-position/run_all.py sha12=fe0bcb7e1d9c commit=198937
 purpose: **[DRAFT]** run_all.py -- the contamination declaration, THEN the four built arms and the one carried arm. Nothing here fetches anything. The declaration prints before any number because a number read without it is read as a measurement of something other than what it measures.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: chain-position/samples/run_all.sample.txt; run capture: RUN, exit 0, 115 lines, sha12 bfa1a29993ca (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--selftest (imported-by); chain-position--clause_audit (imports); chain-position--dissimilar (imports); chain-position--horn_b (imports); chain-position--load_class (imports); chain-position--trust_provenance (imports); archive--chain-position--run_all (same-bytes); chain-position--selftest (sibling-selftest)
 
 ### chain-position--selftest
@@ -4617,6 +4734,7 @@ integrity: Simulators/chain-position/selftest.py sha12=c736c8056b7b commit=19893
 purpose: **[DRAFT]** selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: chain-position/samples/selftest.sample.txt; run capture: FAILED, exit 1, 18 lines, sha12 362221f58b38 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--clause_audit (imports); chain-position--dissimilar (imports); chain-position--horn_b (imports); chain-position--load_class (imports); chain-position--run_all (imports); chain-position--trust_provenance (imports); archive--chain-position--selftest (same-bytes); chain-position--chain_position (selftest-of); chain-position--clause_audit (selftest-of); chain-position--dissimilar (selftest-of); chain-position--horn_b (selftest-of); chain-position--load_class (selftest-of); chain-position--run_all (selftest-of); chain-position--trust_provenance (selftest-of)
 
 ### chain-position--trust_provenance
@@ -4643,6 +4761,7 @@ integrity: Simulators/chain-position/trust_provenance.py sha12=743b162cbc4d comm
 purpose: **[DRAFT]** trust_provenance.py -- WO-1 second-order gap: the provenance of the trust assignment itself.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: chain-position/samples/trust_provenance.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 8f0ddd0e952a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** chain-position--run_all (imported-by); chain-position--selftest (imported-by); chain-position--selftest (sibling-selftest)
 
 ### claim-audits--claim_audit_pasted_2026_08_05
@@ -4706,6 +4825,7 @@ integrity: Simulators/claim-audits/claim_audit_pasted_2026_08_05.py sha12=54288f
 purpose: **[DRAFT]** claim_audit_pasted_2026_08_05.py -- audit of a five-piece paste from other models.  Same verdict shape as claim_audit_visibility.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: claim-audits/samples/claim_audit_pasted_2026_08_05.sample.txt; run capture: RUN, exit 0, 96 lines, sha12 dc8b7f236f41 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### claim-audits--claim_audit_visibility
@@ -4769,6 +4889,7 @@ integrity: Simulators/claim-audits/claim_audit_visibility.py sha12=81ec1c79e790 
 purpose: **[DRAFT]** claim_audit_visibility.py — audit of the Visibility Protocol document CC0-1.0.  stdlib only.  single file.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: claim-audits/samples/claim_audit_visibility.sample.txt; run capture: RUN, exit 0, 47 lines, sha12 ff295955fbd0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### claim-record--frames
@@ -4808,6 +4929,7 @@ integrity: Simulators/claim-record/frames.py sha12=096bfea30db2 commit=198937eca
 purpose: **[DRAFT]** frames -- transforms as first-class objects, and no privileged frame.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: claim-record/samples/frames_list.sample.txt; sample: claim-record/samples/frames_read.sample.txt; run capture: RUN, exit 0, 17 lines, sha12 cca1ec875f7e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** claim-record--record (imported-by); claim-record--record (imports)
 
 ### claim-record--record
@@ -4871,6 +4993,7 @@ integrity: Simulators/claim-record/record.py sha12=777a4a3bca49 commit=198937eca
 purpose: **[DRAFT]** record -- the seven-field claim record, and the validator that refuses.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 97 lines, sha12 4da43869e4ba (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** claim-record--frames (imported-by); claim-record--frames (imports)
 
 ### claim-refusal-gap--gap_audit
@@ -4896,6 +5019,7 @@ integrity: Simulators/claim-refusal-gap/gap_audit.py sha12=aa799b3cf922 commit=1
 purpose: **[DRAFT]** gap_audit -- the delivered GAP document read as a structure.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: claim-refusal-gap/samples/gap_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 56c7f132e584 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** claim-refusal-gap--selftest_crg (imported-by)
 
 ### claim-refusal-gap--selftest_crg
@@ -4920,6 +5044,7 @@ integrity: Simulators/claim-refusal-gap/selftest_crg.py sha12=64439a345e5b commi
 purpose: **[DRAFT]** Checks for gap_audit.py. Known answers first, both directions of every check. Every figure used is carried from the delivered document; nothing here is a statement about any carrier or claimant.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 da937a5dfee6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** claim-refusal-gap--gap_audit (imports)
 
 ### climate-modeling--ai_interface
@@ -4941,6 +5066,7 @@ integrity: Simulators/climate-modeling/ai_interface.py sha12=51f319a6358e commit
 purpose: **[DRAFT]** AI scientist wrappers.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--meta_experiments (imported-by)
 
 ### climate-modeling--audits--audit_registry
@@ -4962,6 +5088,7 @@ integrity: Simulators/climate-modeling/audits/audit_registry.py sha12=641b2c81ac
 purpose: **[DRAFT]** All audits, in one list. Six built; ten frontier stubs pattern-follows.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--run_audits (imported-by); climate-modeling--audits--cascade_speed (imports); climate-modeling--audits--data_aggregation (imports); climate-modeling--audits--frontier_stubs (imports); climate-modeling--audits--missing_feedback (imports); climate-modeling--audits--missing_positive_feedback (imports); climate-modeling--audits--omitted_variable (imports); climate-modeling--audits--phase_change (imports); climate-modeling--audits--stationarity (imports)
 
 ### climate-modeling--audits--base_audit
@@ -4983,6 +5110,7 @@ integrity: Simulators/climate-modeling/audits/base_audit.py sha12=21336f6cf39b c
 purpose: **[DRAFT]** Abstract audit interface. Every failure-mode audit subclasses BaseAudit.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--cascade_speed (imported-by); climate-modeling--audits--data_aggregation (imported-by); climate-modeling--audits--frontier_stubs (imported-by); climate-modeling--audits--missing_feedback (imported-by); climate-modeling--audits--missing_positive_feedback (imported-by); climate-modeling--audits--omitted_variable (imported-by); climate-modeling--audits--phase_change (imported-by); climate-modeling--audits--stationarity (imported-by)
 
 ### climate-modeling--audits--cascade_speed
@@ -5004,6 +5132,7 @@ integrity: Simulators/climate-modeling/audits/cascade_speed.py sha12=ec7e82bb577
 purpose: **[DRAFT]** Cascade Speed Blindness — combined threshold + feedback + memory + fat tails.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--data_aggregation
@@ -5025,6 +5154,7 @@ integrity: Simulators/climate-modeling/audits/data_aggregation.py sha12=ea2599ca
 purpose: **[DRAFT]** Data Aggregation Error — daily-mean fits vs hourly stochastic truth.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--frontier_stubs
@@ -5046,6 +5176,7 @@ integrity: Simulators/climate-modeling/audits/frontier_stubs.py sha12=46c6053211
 purpose: **[DRAFT]** Frontier-stub audits from the cascade family. Each is a build recipe, not yet implemented — the failure-mode + true-system + audit-model + failure-metric outline is spelled out in each class docstring. Same pattern as `sustained-activation-gate/`'s `explore_theta_vs_restore` before it was built.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--missing_feedback
@@ -5067,6 +5198,7 @@ integrity: Simulators/climate-modeling/audits/missing_feedback.py sha12=b24874ab
 purpose: **[DRAFT]** Missing Feedback — true system has soil-plant coupling; audit ignores it.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--missing_positive_feedback
@@ -5088,6 +5220,7 @@ integrity: Simulators/climate-modeling/audits/missing_positive_feedback.py sha12
 purpose: **[DRAFT]** Missing Positive Feedback — CO2-driven growth loop the audit ignores.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--omitted_variable
@@ -5109,6 +5242,7 @@ integrity: Simulators/climate-modeling/audits/omitted_variable.py sha12=3f12c65e
 purpose: **[DRAFT]** Omitted Variable — true growth needs moisture; audit assumes it constant.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--phase_change
@@ -5130,6 +5264,7 @@ integrity: Simulators/climate-modeling/audits/phase_change.py sha12=f8ead758e7cd
 purpose: **[DRAFT]** Phase Change Blindness — smooth mortality curve vs true step threshold.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--audits--stationarity
@@ -5151,6 +5286,7 @@ integrity: Simulators/climate-modeling/audits/stationarity.py sha12=23a091bc865f
 purpose: **[DRAFT]** Stationarity Assumption — model calibrated to stationary window, forcing trends.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--audits--audit_registry (imported-by); climate-modeling--audits--base_audit (imports)
 
 ### climate-modeling--config
@@ -5172,6 +5308,7 @@ integrity: Simulators/climate-modeling/config.py sha12=1574f53159eb commit=19893
 purpose: **[DRAFT]** Centralised parameters for the climate-modeling audit suite.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### climate-modeling--forcing
@@ -5193,6 +5330,7 @@ integrity: Simulators/climate-modeling/forcing.py sha12=a40ded6aa207 commit=1989
 purpose: **[DRAFT]** Environmental forcing generators. Each returns a dict at each t.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### climate-modeling--meta_experiments
@@ -5239,6 +5377,7 @@ integrity: Simulators/climate-modeling/meta_experiments.py sha12=ad9888eef303 co
 purpose: **[DRAFT]** AI-patching loop over audits. Two entry points:  
 input: **[DRAFT]** --audit (default=CascadeSpeedAudit): name of the audit to loop on (default: CascadeSpeedAudit); --max-iter (default=3): max patch attempts before giving up (default: 3); --openai (action=store_true): use LLMPatcher (falls back to rules if openai unavailable); --history (default=samples/meta_history.json): where to write the iteration history  
 output: **[DRAFT]** run capture: FAILED, exit 1, 22 lines, sha12 2a1631e11f7c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--ai_interface (imports); climate-modeling--run_audits (imports)
 
 ### climate-modeling--models--base
@@ -5260,6 +5399,7 @@ integrity: Simulators/climate-modeling/models/base.py sha12=da02820146b7 commit=
 purpose: **[DRAFT]** Abstract model interface. Every audited model subclasses BaseModel.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--models--cascade_grass (imported-by); climate-modeling--models--grass (imported-by)
 
 ### climate-modeling--models--cascade_grass
@@ -5281,6 +5421,7 @@ integrity: Simulators/climate-modeling/models/cascade_grass.py sha12=cfd8d58bb0b
 purpose: **[DRAFT]** Cascade grass: threshold + feedback + memory. The true system whose collapse speed the smooth-model audits systematically underestimate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--models--base (imports)
 
 ### climate-modeling--models--grass
@@ -5302,6 +5443,7 @@ integrity: Simulators/climate-modeling/models/grass.py sha12=4c2935048cc0 commit
 purpose: **[DRAFT]** Baseline grass carbon-balance model. Photosynthesis - respiration.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--models--base (imports)
 
 ### climate-modeling--run_audits
@@ -5338,6 +5480,7 @@ integrity: Simulators/climate-modeling/run_audits.py sha12=3bfc5b3a841f commit=1
 purpose: **[DRAFT]** Entry point: run every registered audit and print a report card.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 12 lines, sha12 2d93e8dca3a5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** climate-modeling--meta_experiments (imported-by); climate-modeling--audits--audit_registry (imports)
 
 ### closure-cost--closure
@@ -5359,6 +5502,7 @@ integrity: Simulators/closure-cost/closure.py sha12=ce29ba860a1d commit=198937ec
 purpose: **[DRAFT]** CLOSURE COST Reads recorded cases where a variable was closed before the event arrived. Stdlib only.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** closure-cost--closure_audit (imported-by)
 
 ### closure-cost--closure_audit
@@ -5380,6 +5524,7 @@ integrity: Simulators/closure-cost/closure_audit.py sha12=e294d9ea75ee commit=19
 purpose: **[DRAFT]** closure_audit.py -- checks on the closure-cost drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** closure-cost--closure (imports)
 
 ### clustering-axes--style_audit
@@ -5401,6 +5546,7 @@ integrity: Simulators/clustering-axes/style_audit.py sha12=24b86d6a8c83 commit=1
 purpose: **[DRAFT]** Checks on the delivered `style_index.py` and `ROUTES.md`.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: clustering-axes/samples/style_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** clustering-axes--style_index (imports); criterion-externality--criterion_externality (shares PREAMBLE.md); frame-token-audit--audit (shares PREAMBLE.md); tools--check_term_collision (shares PREAMBLE.md); notes--check_markers (shares PROTOCOL.md)
 
 ### clustering-axes--style_index
@@ -5424,6 +5570,7 @@ integrity: Simulators/clustering-axes/style_index.py sha12=d17f46cae4a5 commit=1
 purpose: **[DRAFT]** style_index.py  -- CC0, stdlib only, phone-buildable  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 ca3d163bab05 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** clustering-axes--style_audit (imported-by)
 
 ### coinage-log--check_coinage
@@ -5447,6 +5594,7 @@ integrity: Simulators/coinage-log/check_coinage.py sha12=04f79ea69fb6 commit=198
 purpose: **[DRAFT]** check_coinage.py -- CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: coinage-log/samples/check_coinage.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 58df3c7d857c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### columbia-chain-cascade--assemble_gaps_v2
@@ -5472,6 +5620,7 @@ integrity: Simulators/columbia-chain-cascade/assemble_gaps_v2.py sha12=0f3f4307f
 purpose: **[DRAFT]** assemble_gaps_v2.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 fc1121929451 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--selftest_kill (imported-by); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--kill_audit (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md); columbia-chain-cascade--kill_audit (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md); columbia-chain-cascade--selftest_kill (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md); columbia-chain-cascade--build_addenda (shares columbia-chain-cascade/gap_addenda.json); columbia-chain-cascade--selftest_kill (shares columbia-chain-cascade/gap_addenda.json)
 
 ### columbia-chain-cascade--audit
@@ -5498,6 +5647,7 @@ integrity: Simulators/columbia-chain-cascade/audit.py sha12=3417b50a2c63 commit=
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 871b2a26e81f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--kill_audit (imported-by); columbia-chain-cascade--selftest_ccc (imported-by); columbia-chain-cascade--eap_coverage (imports); columbia-chain-cascade--audit_v2 (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc_v2 (shares columbia-chain-cascade/SOURCE_DROP.md)
 
 ### columbia-chain-cascade--audit_v2
@@ -5524,6 +5674,7 @@ integrity: Simulators/columbia-chain-cascade/audit_v2.py sha12=a54a891c7525 comm
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 871b2a26e81f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--selftest_ccc_v2 (imported-by); columbia-chain-cascade--eap_coverage_v2 (imports); columbia-chain-cascade--module_f (imports); columbia-chain-cascade--audit (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc_v2 (shares columbia-chain-cascade/SOURCE_DROP.md)
 
 ### columbia-chain-cascade--build_addenda
@@ -5549,6 +5700,7 @@ integrity: Simulators/columbia-chain-cascade/build_addenda.py sha12=975b16830c43
 purpose: **[DRAFT]** build_addenda.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 a4e83af55c75 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--gap_completeness (imports); columbia-chain-cascade--kill_audit (imports); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/gap_addenda.json); columbia-chain-cascade--selftest_kill (shares columbia-chain-cascade/gap_addenda.json)
 
 ### columbia-chain-cascade--contributing_inflow
@@ -5575,6 +5727,7 @@ integrity: Simulators/columbia-chain-cascade/contributing_inflow.py sha12=b5e4f1
 purpose: **[DRAFT]** contributing_inflow.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 88b98c08a37c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--selftest_kill (imported-by)
 
 ### columbia-chain-cascade--eap_coverage
@@ -5601,6 +5754,7 @@ integrity: Simulators/columbia-chain-cascade/eap_coverage.py sha12=1700935171a6 
 purpose: **[DRAFT]** eap_coverage.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/eap_coverage.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 8274c8a9ce83 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--audit (imported-by); columbia-chain-cascade--selftest_ccc (imported-by)
 
 ### columbia-chain-cascade--eap_coverage_v2
@@ -5627,6 +5781,7 @@ integrity: Simulators/columbia-chain-cascade/eap_coverage_v2.py sha12=dfcb119a84
 purpose: **[DRAFT]** eap_coverage.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 8274c8a9ce83 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--audit_v2 (imported-by); columbia-chain-cascade--selftest_ccc_v2 (imported-by); columbia-chain-cascade--knowledge_state (imports)
 
 ### columbia-chain-cascade--gap_completeness
@@ -5653,6 +5808,7 @@ integrity: Simulators/columbia-chain-cascade/gap_completeness.py sha12=98347cc90
 purpose: **[DRAFT]** gap_completeness.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/gap_completeness.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 b1a67f0c26a1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--build_addenda (imported-by); columbia-chain-cascade--selftest_kill (imported-by); columbia-chain-cascade--kill_audit (imports); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--kill_audit (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md); columbia-chain-cascade--kill_audit (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md); columbia-chain-cascade--selftest_kill (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md)
 
 ### columbia-chain-cascade--initiator_schemas
@@ -5678,6 +5834,7 @@ integrity: Simulators/columbia-chain-cascade/initiator_schemas.py sha12=ba55555f
 purpose: **[DRAFT]** initiator_schemas.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/initiator_schemas.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 942f3000525e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--selftest_kill (imported-by); columbia-chain-cascade--knowledge_state (imports)
 
 ### columbia-chain-cascade--kill_audit
@@ -5704,6 +5861,7 @@ integrity: Simulators/columbia-chain-cascade/kill_audit.py sha12=faa12897dfec co
 purpose: **[DRAFT]** kill_audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/kill_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 33d9c9bac9fd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--build_addenda (imported-by); columbia-chain-cascade--gap_completeness (imported-by); columbia-chain-cascade--selftest_kill (imported-by); columbia-chain-cascade--audit (imports); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/GAP_14_mining_hydrology.md); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/GAP_15_bridge_impoundment.md)
 
 ### columbia-chain-cascade--knowledge_state
@@ -5730,6 +5888,7 @@ integrity: Simulators/columbia-chain-cascade/knowledge_state.py sha12=39b2bf39ab
 purpose: **[DRAFT]** knowledge_state.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 f0a2ac3441fe (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--eap_coverage_v2 (imported-by); columbia-chain-cascade--initiator_schemas (imported-by); columbia-chain-cascade--selftest_ccc_v2 (imported-by)
 
 ### columbia-chain-cascade--module_f
@@ -5756,6 +5915,7 @@ integrity: Simulators/columbia-chain-cascade/module_f.py sha12=13753b7ee9e6 comm
 purpose: **[DRAFT]** module_f.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: columbia-chain-cascade/samples/module_f.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 6e8cd86731e1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--audit_v2 (imported-by); columbia-chain-cascade--selftest_ccc_v2 (imported-by)
 
 ### columbia-chain-cascade--selftest_ccc
@@ -5779,6 +5939,7 @@ integrity: Simulators/columbia-chain-cascade/selftest_ccc.py sha12=03fc79ce0129 
 purpose: **[DRAFT]** selftest_ccc.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 5e6e8a1f55e0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--audit (imports); columbia-chain-cascade--eap_coverage (imports); columbia-chain-cascade--audit (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--audit_v2 (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc_v2 (shares columbia-chain-cascade/SOURCE_DROP.md)
 
 ### columbia-chain-cascade--selftest_ccc_v2
@@ -5804,6 +5965,7 @@ integrity: Simulators/columbia-chain-cascade/selftest_ccc_v2.py sha12=533953fa1a
 purpose: **[DRAFT]** selftest_ccc.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 3 lines, sha12 9fab9593429b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--audit_v2 (imports); columbia-chain-cascade--eap_coverage_v2 (imports); columbia-chain-cascade--knowledge_state (imports); columbia-chain-cascade--module_f (imports); columbia-chain-cascade--audit (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--audit_v2 (shares columbia-chain-cascade/SOURCE_DROP.md); columbia-chain-cascade--selftest_ccc (shares columbia-chain-cascade/SOURCE_DROP.md)
 
 ### columbia-chain-cascade--selftest_kill
@@ -5841,6 +6003,7 @@ integrity: Simulators/columbia-chain-cascade/selftest_kill.py sha12=3c9443de1d36
 purpose: **[DRAFT]** selftest_kill.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 13 lines, sha12 9abf8235620c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** columbia-chain-cascade--assemble_gaps_v2 (imports); columbia-chain-cascade--contributing_inflow (imports); columbia-chain-cascade--gap_completeness (imports); columbia-chain-cascade--initiator_schemas (imports); columbia-chain-cascade--kill_audit (imports); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md); columbia-chain-cascade--gap_completeness (shares columbia-chain-cascade/UNDERGRADUATE_RESEARCH_GAPS_V2.md); columbia-chain-cascade--assemble_gaps_v2 (shares columbia-chain-cascade/gap_addenda.json); columbia-chain-cascade--build_addenda (shares columbia-chain-cascade/gap_addenda.json)
 
 ### condition-scoped-authority--condition_scope
@@ -5864,6 +6027,7 @@ integrity: Simulators/condition-scoped-authority/condition_scope.py sha12=31e81d
 purpose: **[DRAFT]** condition_scope.py - a single ranking cannot represent scope. Exhaustively.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: condition-scoped-authority/samples/condition_scope.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 4d706c487f10 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### condition-scoped-authority--organ
@@ -5887,6 +6051,7 @@ integrity: Simulators/condition-scoped-authority/organ.py sha12=6c4859d649b2 com
 purpose: **[DRAFT]** organ.py - the coordinating organ is a specialization, not a rank.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: condition-scoped-authority/samples/organ.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 8e84b037b5ea (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### consensus-anchor--selftest_textfree
@@ -5908,6 +6073,7 @@ integrity: Simulators/consensus-anchor/selftest_textfree.py sha12=1e47c1bdcaac c
 purpose: **[DRAFT]** Selftest for textfree.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** consensus-anchor--textfree (imported-by); consensus-anchor--textfree (imports)
 
 ### consensus-anchor--textfree
@@ -5929,6 +6095,7 @@ integrity: Simulators/consensus-anchor/textfree.py sha12=003f3c536763 commit=198
 purpose: **[DRAFT]** The text-free arm of SOURCE_DROP.md, run.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: consensus-anchor/samples/textfree.sample.txt; run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** consensus-anchor--selftest_textfree (imported-by); consensus-anchor--selftest_textfree (imports)
 
 ### constraint-assembly--assemble
@@ -5950,6 +6117,7 @@ integrity: Simulators/constraint-assembly/assemble.py sha12=23e113dbd6bf commit=
 purpose: **[DRAFT]** CONSTRAINT ASSEMBLY Records cases where sufficiency was composed from parts that individually do not do the job. Stdlib only.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** constraint-assembly--assembly_audit (imported-by)
 
 ### constraint-assembly--assembly_audit
@@ -5971,6 +6139,7 @@ integrity: Simulators/constraint-assembly/assembly_audit.py sha12=84a0e5e94664 c
 purpose: **[DRAFT]** assembly_audit.py -- checks on the constraint-assembly drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** constraint-assembly--assemble (imports)
 
 ### continuity-audit--continuity_audit
@@ -6022,6 +6191,7 @@ integrity: Simulators/continuity-audit/continuity_audit.py sha12=fa7169e00615 co
 purpose: **[DRAFT]** continuity_audit.py  -- CC0 / public domain. stdlib only. one-finger safe.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 29 lines, sha12 5025ad62facb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### continuity-audit--interface_layer
@@ -6084,6 +6254,7 @@ integrity: Simulators/continuity-audit/interface_layer.py sha12=be983850987a com
 purpose: **[DRAFT]** interface_layer.py  -- CC0 / public domain. stdlib only. one-finger safe.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: continuity-audit/samples/interface_layer.sample.txt; run capture: RUN, exit 0, 40 lines, sha12 f0ae303b22e1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### conversation-type--design_check
@@ -6110,6 +6281,7 @@ integrity: Simulators/conversation-type/design_check.py sha12=fe317f53baf0 commi
 purpose: **[DRAFT]** Runs MARKER.md against this tree, and against its own arithmetic.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: conversation-type/samples/design_check.sample.txt; run capture: FAILED, exit 1, 2 lines, sha12 182a6f9b22fa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--instrument-index--build_index (shares README.md); question-availability--check_marker (shares README.md)
 
 ### cooperative-substrate-proof--p1_dependency_records
@@ -6135,6 +6307,7 @@ integrity: Simulators/cooperative-substrate-proof/p1_dependency_records.py sha12
 purpose: **[DRAFT]** P1 -- dependency records. RECORDS, not prose.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 73c17b6c2ae4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--p1_dependency_records (same-bytes); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p1_records
@@ -6161,6 +6334,7 @@ integrity: Simulators/cooperative-substrate-proof/p1_records.py sha12=9febcecd71
 purpose: **[DRAFT]** P1 -- DEPENDENCY RECORDS. Records, not prose.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/p1_records.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 fb191f063153 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p2_substrate
@@ -6187,6 +6361,7 @@ integrity: Simulators/cooperative-substrate-proof/p2_substrate.py sha12=4378f62b
 purpose: **[DRAFT]** P2 -- SUBSTRATE CHECK. Code introspection: the module reads Python source with the standard library's own parser, reads nothing else, and by default reads ITSELF.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/p2_substrate.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 ae38eac45519 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p3_comprehension
@@ -6213,6 +6388,7 @@ integrity: Simulators/cooperative-substrate-proof/p3_comprehension.py sha12=5fdf
 purpose: **[DRAFT]** P3 -- COMPREHENSION CHECK. Nothing external: one directory of text files, no network, no model call.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/p3_comprehension.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 d864e320330b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p4_coherence
@@ -6239,6 +6415,7 @@ integrity: Simulators/cooperative-substrate-proof/p4_coherence.py sha12=f3c426ca
 purpose: **[DRAFT]** P4 -- GOAL-COHERENCE CHECK. Nothing external: a chain written down as a record, no network, no model call.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/p4_coherence.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 06ea2b8514df (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p4_goal_coherence
@@ -6264,6 +6441,7 @@ integrity: Simulators/cooperative-substrate-proof/p4_goal_coherence.py sha12=568
 purpose: **[DRAFT]** P4 -- goal-coherence check. Nothing external.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 588d54147253 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--selftest (imported-by); archive--cooperative-substrate-proof--p4_goal_coherence (same-bytes); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p5_lag
@@ -6290,6 +6468,7 @@ integrity: Simulators/cooperative-substrate-proof/p5_lag.py sha12=4f66608f5bf0 c
 purpose: **[DRAFT]** P5 -- LAG DECLARATION CHECK. No fetch, no model call.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/p5_lag.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 0ef1bb2fe724 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--p5_lag_declaration
@@ -6315,6 +6494,7 @@ integrity: Simulators/cooperative-substrate-proof/p5_lag_declaration.py sha12=0c
 purpose: **[DRAFT]** P5 -- lag declaration check. Per action, two clocks:  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 abf861171be5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--scope (imports); archive--cooperative-substrate-proof--p5_lag_declaration (same-bytes); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--run_all
@@ -6341,6 +6521,7 @@ integrity: Simulators/cooperative-substrate-proof/run_all.py sha12=91e45c735d36 
 purpose: **[DRAFT]** Run P1-P5 and report per-part PASS / ABSENT, which is the order's requested return.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/run_all.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 d24c25e422a5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--p1_records (imports); cooperative-substrate-proof--p2_substrate (imports); cooperative-substrate-proof--p3_comprehension (imports); cooperative-substrate-proof--p4_coherence (imports); cooperative-substrate-proof--p5_lag (imports); cooperative-substrate-proof--scope (imports); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--scope
@@ -6367,6 +6548,7 @@ integrity: Simulators/cooperative-substrate-proof/scope.py sha12=68204e90e461 co
 purpose: **[DRAFT]** Scope conditions C1-C4, the coding pass the order requires over any study corpus, called by P1-P5 so the conditions are IN the parts rather than beside them.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/scope.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 d9daf90985d0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--p1_records (imported-by); cooperative-substrate-proof--p2_substrate (imported-by); cooperative-substrate-proof--p3_comprehension (imported-by); cooperative-substrate-proof--p4_coherence (imported-by); cooperative-substrate-proof--p5_lag (imported-by); cooperative-substrate-proof--p5_lag_declaration (imported-by); cooperative-substrate-proof--run_all (imported-by); cooperative-substrate-proof--selftest (imported-by); cooperative-substrate-proof--selftest (sibling-selftest)
 
 ### cooperative-substrate-proof--selftest
@@ -6397,6 +6579,7 @@ integrity: Simulators/cooperative-substrate-proof/selftest.py sha12=831fa260d357
 purpose: **[DRAFT]** selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate-proof/samples/selftest.sample.txt; run capture: FAILED, exit 1, 6 lines, sha12 b9322ce57a95 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate-proof--p1_dependency_records (imports); cooperative-substrate-proof--p2_substrate (imports); cooperative-substrate-proof--p3_comprehension (imports); cooperative-substrate-proof--p4_goal_coherence (imports); cooperative-substrate-proof--p5_lag_declaration (imports); cooperative-substrate-proof--run_all (imports); cooperative-substrate-proof--scope (imports); archive--cooperative-substrate-proof--selftest (same-bytes); cooperative-substrate-proof--p1_dependency_records (selftest-of); cooperative-substrate-proof--p1_records (selftest-of); cooperative-substrate-proof--p2_substrate (selftest-of); cooperative-substrate-proof--p3_comprehension (selftest-of); cooperative-substrate-proof--p4_coherence (selftest-of); cooperative-substrate-proof--p4_goal_coherence (selftest-of); cooperative-substrate-proof--p5_lag (selftest-of); cooperative-substrate-proof--p5_lag_declaration (selftest-of); cooperative-substrate-proof--run_all (selftest-of); cooperative-substrate-proof--scope (selftest-of)
 
 ### cooperative-substrate--evidence_audit
@@ -6422,6 +6605,7 @@ integrity: Simulators/cooperative-substrate/evidence_audit.py sha12=e058a4e24880
 purpose: **[DRAFT]** Reads EVIDENCE_PACK.md as a structure: every table row parsed, every locator classified by syntax, every status mark counted, the arXiv identifiers checked against the calendar, the DOI-embedded years against the stated ones, and the pack's claims mapped onto artifacts already in this tree. Opens no paper: every citation host refuses CONNECT from here (probed once, recorded below). Nothing here is a statement about any finding the pack carries.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/samples/evidence_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 a445b49206ff (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--selftest_evidence (imported-by); cooperative-substrate--scope_test (shares cooperative-substrate/EVIDENCE_PACK.md); cooperative-substrate--selftest_evidence (shares cooperative-substrate/EVIDENCE_PACK.md); cooperative-substrate--order_audit (shares cooperative-substrate/WORK_ORDER.md); cooperative-substrate--selftest_evidence (shares cooperative-substrate/WORK_ORDER.md)
 
 ### cooperative-substrate--order_audit
@@ -6447,6 +6631,7 @@ integrity: Simulators/cooperative-substrate/order_audit.py sha12=a273f3c0b22a co
 purpose: **[DRAFT]** Reads the four delivered-to-spec checks against the order that asked for them. Every number in CLAIM_TABLE.md is computed here. Modifies nothing; the constructed corpora below are labelled in their own text. Refuses --selftest (checks live in selftest_csp.py).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/samples/order_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 1fb17e9c906a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--selftest_csp (imported-by); cooperative-substrate--p1_deps_extract (imports); cooperative-substrate--p2_substrate_audit (imports); cooperative-substrate--p3_comprehension (imports); cooperative-substrate--p4_goal_coherence (imports); cooperative-substrate--selftest_evidence (shares cooperative-substrate/README.md); cooperative-substrate--evidence_audit (shares cooperative-substrate/WORK_ORDER.md); cooperative-substrate--selftest_evidence (shares cooperative-substrate/WORK_ORDER.md)
 
 ### cooperative-substrate--p1_deps_extract
@@ -6472,6 +6657,7 @@ integrity: Simulators/cooperative-substrate/p1_deps_extract.py sha12=2240285dd79
 purpose: **[DRAFT]** P1 -- dependency records. Reads plaintext methods sections, one file per result, and emits one JSONL line per dependency the pattern set catches. `verified_in_argument` is False unless the same sentence carries an explicit verification verb.  
 input: **[DRAFT]** --in; --out; --report (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 3f5d3f548525 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--order_audit (imported-by); cooperative-substrate--run_all (imported-by); cooperative-substrate--selftest_csp (imported-by)
 
 ### cooperative-substrate--p2_substrate_audit
@@ -6497,6 +6683,7 @@ integrity: Simulators/cooperative-substrate/p2_substrate_audit.py sha12=54b951cb
 purpose: **[DRAFT]** P2 -- substrate audit. A ledger of the contracts a piece of code assumes at every call site, read with stdlib ast, dis and sys; one JSONL line per (call site, layer). Nothing here argues; it counts.  
 input: **[DRAFT]** --target; --out; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 6404d4cb289b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--order_audit (imported-by); cooperative-substrate--run_all (imported-by); cooperative-substrate--selftest_csp (imported-by)
 
 ### cooperative-substrate--p3_comprehension
@@ -6522,6 +6709,7 @@ integrity: Simulators/cooperative-substrate/p3_comprehension.py sha12=2d057c8e27
 purpose: **[DRAFT]** P3 -- comprehension check. For one term, a co-occurrence profile per source document (window +-k), pairwise cosine between sources in pure Python, the mean as the consistency reading, and the null built in the same script. Reads a directory of local text files; no introspection, no network.  
 input: **[DRAFT]** --corpus; --term; --window (default=8); --min-count (default=2); --null (choices=['shuffle', 'permute']); --reps (default=200); --seed (default=0); --recursive (action=store_true); --out; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 feb3aae640eb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--order_audit (imported-by); cooperative-substrate--run_all (imported-by); cooperative-substrate--selftest_csp (imported-by)
 
 ### cooperative-substrate--p4_goal_coherence
@@ -6547,6 +6735,7 @@ integrity: Simulators/cooperative-substrate/p4_goal_coherence.py sha12=72b209866
 purpose: **[DRAFT]** P4 -- goal coherence. A reasoning chain of N steps; at each step, with probability p_contest, the step contests the prior step's output instead of accepting it, so the prior step is re-derived (and may be contested again). No inputs. A simulation, with its exact counterpart beside it.  
 input: **[DRAFT]** --steps (default=50); --p-contest (default=0.0:1.0:0.05); --trials (default=1000); --budget-mult (default=10); --seed (default=0); --out; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d3f95f736773 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--order_audit (imported-by); cooperative-substrate--run_all (imported-by); cooperative-substrate--selftest_csp (imported-by)
 
 ### cooperative-substrate--run_all
@@ -6572,6 +6761,7 @@ integrity: Simulators/cooperative-substrate/run_all.py sha12=82afd91ad660 commit
 purpose: **[DRAFT]** Runs the four checks in decreasing order of access requirement. P3 and P4 always run (P3 on a local corpus directory, P4 on nothing). P2 runs on a local source file. P1 runs only when a directory of methods sections is supplied; none is shipped and none is invented.  
 input: **[DRAFT]** --methods: directory of plaintext methods sections, one file per result; --corpus; --term (default=mechanism); --target; --trials (default=300); --out-dir; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 20f3fcc330b5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--p1_deps_extract (imports); cooperative-substrate--p2_substrate_audit (imports); cooperative-substrate--p3_comprehension (imports); cooperative-substrate--p4_goal_coherence (imports)
 
 ### cooperative-substrate--scope_test
@@ -6597,6 +6787,7 @@ integrity: Simulators/cooperative-substrate/scope_test.py sha12=60565fe247b6 com
 purpose: **[DRAFT]** The evidence pack's E8 scope test, read from the pack itself: four conditions a competition-dominant observation is said to require jointly, and five rows scored on them. Parsed from EVIDENCE_PACK.md so an edit there and not here turns the selftest red. Cells are three-valued (y / n / UNRECORDED). Computes what the table can and cannot separate, and reads the stress axis of E0.1 against the design axis of C1-C4 on the rows where the pack states both.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/samples/scope_test.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 ef23407f9e62 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--selftest_evidence (imported-by); cooperative-substrate--evidence_audit (shares cooperative-substrate/EVIDENCE_PACK.md); cooperative-substrate--selftest_evidence (shares cooperative-substrate/EVIDENCE_PACK.md)
 
 ### cooperative-substrate--selftest_csp
@@ -6635,6 +6826,7 @@ integrity: Simulators/cooperative-substrate/selftest_csp.py sha12=36eb21ad93b6 c
 purpose: **[DRAFT]** Checks for the four cooperative-substrate checks and the order audit. Known answers first, both directions. Writes samples/.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 14 lines, sha12 1dc928cd4777 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--order_audit (imports); cooperative-substrate--p1_deps_extract (imports); cooperative-substrate--p2_substrate_audit (imports); cooperative-substrate--p3_comprehension (imports); cooperative-substrate--p4_goal_coherence (imports)
 
 ### cooperative-substrate--selftest_evidence
@@ -6659,6 +6851,7 @@ integrity: Simulators/cooperative-substrate/selftest_evidence.py sha12=4e0e0f691
 purpose: **[DRAFT]** Checks for scope_test.py, term_table.py and evidence_audit.py against the delivered EVIDENCE_PACK.md, which is parsed and never edited.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 001d28c5537a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--evidence_audit (imports); cooperative-substrate--scope_test (imports); cooperative-substrate--term_table (imports); cooperative-substrate--evidence_audit (shares cooperative-substrate/EVIDENCE_PACK.md); cooperative-substrate--scope_test (shares cooperative-substrate/EVIDENCE_PACK.md); cooperative-substrate--order_audit (shares cooperative-substrate/README.md); cooperative-substrate--evidence_audit (shares cooperative-substrate/WORK_ORDER.md); cooperative-substrate--order_audit (shares cooperative-substrate/WORK_ORDER.md)
 
 ### cooperative-substrate--term_table
@@ -6684,6 +6877,7 @@ integrity: Simulators/cooperative-substrate/term_table.py sha12=10435e7c31a1 com
 purpose: **[DRAFT]** E7's cross-substrate term table, as a schema with the one worked cell the pack supplies and every other cell UNRECORDED. Nothing is filled from memory. A non-UNRECORDED cell needs a basis naming the pack items it rests on; the discriminator field takes a number or None.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/samples/term_table.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 f34c1e21c3a9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--selftest_evidence (imported-by)
 
 ### cooperative-substrate--v2--p4_goal
@@ -6705,6 +6899,7 @@ integrity: Simulators/cooperative-substrate/v2/p4_goal.py sha12=77767f333610 com
 purpose: **[DRAFT]** P4 -- goal-coherence check. No input. A goal is pursued by a chain of steps three ways and the trace is emitted as a table:  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### cooperative-substrate--v2--p5_lag
@@ -6730,6 +6925,7 @@ integrity: Simulators/cooperative-substrate/v2/p5_lag.py sha12=3c338dd0c2bf comm
 purpose: **[DRAFT]** P5 -- lag declaration check. No fetch. Two parts, per the v2 order:  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: cooperative-substrate/v2/samples/p5_lag.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 275a1f93688f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--v2--selftest_v2 (imported-by); cooperative-substrate--v2--v2_audit (imported-by)
 
 ### cooperative-substrate--v2--scope_check
@@ -6755,6 +6951,7 @@ integrity: Simulators/cooperative-substrate/v2/scope_check.py sha12=1e35e5b2a6a6
 purpose: **[DRAFT]** scope_check.py -- the C1-C4 coding pass, SEEDED and extended, not rewritten. The seed is `../scope_test.py`, which reads the four conditions and five rows from EVIDENCE_PACK.md; this imports that parse and its declared class and stress maps rather than restating them, adds the harsh axis as a first-class field, and builds the NULL the v2 order §3 asks for:  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/v2/samples/scope_check.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 913d20ff80b8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--v2--selftest_v2 (imported-by); cooperative-substrate--v2--v2_audit (imported-by)
 
 ### cooperative-substrate--v2--selftest_v2
@@ -6779,6 +6976,7 @@ integrity: Simulators/cooperative-substrate/v2/selftest_v2.py sha12=042e3ca4ddfb
 purpose: **[DRAFT]** Checks for the v2 instruments against the delivered v2/p4_goal.py and the seed ../scope_test.py, neither of which is edited. Known answers first, both directions. Writes v2/samples/.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 c677aa112a36 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--v2--p5_lag (imports); cooperative-substrate--v2--scope_check (imports); cooperative-substrate--v2--v2_audit (imports)
 
 ### cooperative-substrate--v2--v2_audit
@@ -6804,6 +7002,7 @@ integrity: Simulators/cooperative-substrate/v2/v2_audit.py sha12=0f617770dfbb co
 purpose: **[DRAFT]** Reads WORK_ORDER_V2.md against the folder and the two v2 instruments built for it. The delivered v2/p4_goal.py is read and never edited; the seed scope_test.py and the v1 parts are imported, not rewritten. Every number in the CSP_021.. rows of ../CLAIM_TABLE.md is computed here. Refuses --selftest (checks live in selftest_v2.py).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: cooperative-substrate/v2/samples/v2_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 65e9ed4c36a5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cooperative-substrate--v2--selftest_v2 (imported-by); cooperative-substrate--v2--p5_lag (imports); cooperative-substrate--v2--scope_check (imports)
 
 ### corpus-input-gaps--check_source_class
@@ -6827,6 +7026,7 @@ integrity: Simulators/corpus-input-gaps/check_source_class.py sha12=68a1e6c229c3
 purpose: **[DRAFT]** check_source_class.py -- CC0, stdlib only, parses under 3.9. WORK ORDER -- FABLE -- 04. Makes the §0 RULE and the §7 constraints mechanical: no eval figure appears without a source class in its section; the DISPUTED claim is marked-not-resolved; every GAP stays a missing measurement; the sim emits no forecast. Edits nothing.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: corpus-input-gaps/samples/check_source_class.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 345fd3e8bbb5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** corpus-input-gaps--corpus_loop_sim (imports)
 
 ### corpus-input-gaps--corpus_loop_sim
@@ -6850,6 +7050,7 @@ integrity: Simulators/corpus-input-gaps/corpus_loop_sim.py sha12=74f6e7a7ef28 co
 purpose: **[DRAFT]** corpus_loop_sim.py -- CC0, stdlib only, parses under 3.9, phone-buildable. WORK ORDER -- FABLE -- 04, TASK 3.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: corpus-input-gaps/samples/corpus_loop_sim.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 59c6b7ea6d13 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** corpus-input-gaps--check_source_class (imported-by)
 
 ### credential-channel--credential_channel
@@ -6875,6 +7076,7 @@ integrity: Simulators/credential-channel/credential_channel.py sha12=68f445f4816
 purpose: **[DRAFT]** credential_channel -- WO-10, five instruments bundled because they were observed on one plant floor, built to the order and run on CONSTRUCTED data. They are separable: different measurands, different failure modes, each runs alone. No plant, worker, record or review is read; every world is generated by a declared model and nothing here is a statement about any person or workplace.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 2ee1388f18f4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crediting-rate--archive--f168f79--crediting_rate_v2
@@ -6904,6 +7106,7 @@ integrity: Simulators/crediting-rate/archive/f168f79/crediting_rate_v2.py sha12=
 purpose: **[DRAFT]** crediting_rate_v2.py -- WORK ORDER L, REVISED 2026-09-23. CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 5 lines, sha12 f35dc9343970 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crediting-rate--archive--f168f79--make_fixtures_v2 (imported-by); archive--crediting-rate--crediting_rate_v2 (same-bytes)
 
 ### crediting-rate--archive--f168f79--make_fixtures_v2
@@ -6925,6 +7128,7 @@ integrity: Simulators/crediting-rate/archive/f168f79/make_fixtures_v2.py sha12=f
 purpose: **[DRAFT]** make_fixtures_v2.py -- writes the five constructed worlds WORK ORDER L REVISED requires.  CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crediting-rate--archive--f168f79--crediting_rate_v2 (imports); archive--crediting-rate--make_fixtures_v2 (same-bytes)
 
 ### crediting-rate--crediting_rate
@@ -6946,6 +7150,7 @@ integrity: Simulators/crediting-rate/crediting_rate.py sha12=a6eb66e9debf commit
 purpose: **[DRAFT]** crediting_rate.py -- WORK ORDER L. CC0, stdlib only, parses under 3.9.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crediting-rate--crediting_rate_v2 (imported-by); crediting-rate--crediting_rate_v2 (shares crediting-rate/frame.json)
 
 ### crediting-rate--crediting_rate_v2
@@ -6986,6 +7191,7 @@ integrity: Simulators/crediting-rate/crediting_rate_v2.py sha12=bfc3c3b0bca3 com
 purpose: **[DRAFT]** crediting_rate_v2.py -- DISPATCH L, revision 2. CC0, stdlib only, 3.9.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 18 lines, sha12 bb92df701998 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crediting-rate--crediting_rate (imports); crediting-rate--crediting_rate (shares crediting-rate/frame.json)
 
 ### criteria-drift--anchor
@@ -7049,6 +7255,7 @@ integrity: Simulators/criteria-drift/anchor.py sha12=af1c3af31ce2 commit=198937e
 purpose: **[DRAFT]** anchor.py -- anchor-version scoring, made first class.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: criteria-drift/samples/anchor.sample.txt; run capture: RUN, exit 0, 190 lines, sha12 3e47404d2d6c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--store (imports)
 
 ### criteria-drift--audit
@@ -7070,6 +7277,7 @@ integrity: Simulators/criteria-drift/audit.py sha12=7de486c10ed6 commit=198937ec
 purpose: **[DRAFT]** audit.py — CLI for the Criteria Drift Auditor.  
 input: **[DRAFT]** subcommand init: Create a new drift database; subcommand ingest-criteria: Add a criteria version from JSON; subcommand ingest-score: Add a model score from JSON; subcommand drift: Compute drift history for an artifact; subcommand regress: Run improvement-vs-drift regression; subcommand report: Export full audit report; subcommand list: Show artifacts and versions; --db (default=drift.db): SQLite database path; file: Path to JSON file; --strict (action=store_true): Fail on frame validation issues; file: Path to JSON file; artifact: Artifact name; -o/--output: Write JSON output to file; artifact: Artifact name; --model: Specific model name (default: all); --lag (default=0): Lag steps; --score-type (choices=['absolute', 'delta', 'relative'], default=delta); --pooled (action=store_true): One fit over every model's observations (drift is a property of the artifact); -o/--output: Write JSON output to file; -o/--output: Write JSON output to file  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--drift (imports); criteria-drift--regress (imports); criteria-drift--schema (imports); criteria-drift--store (imports)
 
 ### criteria-drift--drift
@@ -7091,6 +7299,7 @@ integrity: Simulators/criteria-drift/drift.py sha12=b3a329d004dc commit=198937ec
 purpose: **[DRAFT]** drift.py — Measure how fast the ruler moves.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: criteria-drift/samples/drift_sign.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--audit (imported-by); criteria-drift--drift_sign (imported-by); criteria-drift--regression_audit (imported-by); criteria-drift--schema (imports); criteria-drift--drift_sign (shares criteria-drift/samples/drift_sign.sample.txt)
 
 ### criteria-drift--drift_sign
@@ -7154,6 +7363,7 @@ integrity: Simulators/criteria-drift/drift_sign.py sha12=f2c56febcf4f commit=198
 purpose: **[DRAFT]** drift_sign.py -- the drift metric is unsigned, and the decision rule reads the sign.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: criteria-drift/samples/drift_sign.sample.txt; run capture: RUN, exit 0, 189 lines, sha12 7685fa2baa93 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--drift (imports); criteria-drift--schema (imports); criteria-drift--drift (shares criteria-drift/samples/drift_sign.sample.txt)
 
 ### criteria-drift--regress
@@ -7175,6 +7385,7 @@ integrity: Simulators/criteria-drift/regress.py sha12=595de1439d8d commit=198937
 purpose: **[DRAFT]** regress.py — Regress reported model improvement against criteria drift.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--audit (imported-by); criteria-drift--regression_audit (imported-by)
 
 ### criteria-drift--regression_audit
@@ -7200,6 +7411,7 @@ integrity: Simulators/criteria-drift/regression_audit.py sha12=2e2c7c013aed comm
 purpose: **[DRAFT]** regression_audit.py -- the series the regression is run on, and the term it does not have.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: criteria-drift/samples/regression_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 0a4d45341899 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--drift (imports); criteria-drift--regress (imports); criteria-drift--store (imports)
 
 ### criteria-drift--schema
@@ -7221,6 +7433,7 @@ integrity: Simulators/criteria-drift/schema.py sha12=211e62354c43 commit=198937e
 purpose: **[DRAFT]** schema.py — Core data structures for the Criteria Drift Auditor.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--audit (imported-by); criteria-drift--drift (imported-by); criteria-drift--drift_sign (imported-by); criteria-drift--store (imported-by)
 
 ### criteria-drift--store
@@ -7242,6 +7455,7 @@ integrity: Simulators/criteria-drift/store.py sha12=a50c6e5e2b14 commit=198937ec
 purpose: **[DRAFT]** store.py — Durable storage for criteria versions and model scores.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** criteria-drift--anchor (imported-by); criteria-drift--audit (imported-by); criteria-drift--regression_audit (imported-by); criteria-drift--schema (imports)
 
 ### criteria-drift--unlogged_move
@@ -7265,6 +7479,7 @@ integrity: Simulators/criteria-drift/unlogged_move.py sha12=8f10198d4c41 commit=
 purpose: **[DRAFT]** unlogged_move.py - the same numbers, with and without the criterion logged.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: criteria-drift/samples/unlogged_move.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3605b5e21858 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### criterion-externality--criterion_externality
@@ -7290,6 +7505,7 @@ integrity: Simulators/criterion-externality/criterion_externality.py sha12=ff60b
 purpose: **[DRAFT]** criterion_externality -- WO-6, the fourth independence axis, built to the order and run on a CONSTRUCTED model.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5982285fa273 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** clustering-axes--style_audit (shares PREAMBLE.md); frame-token-audit--audit (shares PREAMBLE.md); tools--check_term_collision (shares PREAMBLE.md)
 
 ### criterion-symmetry--scan
@@ -7313,6 +7529,7 @@ integrity: Simulators/criterion-symmetry/scan.py sha12=0617829b7ec1 commit=19893
 purpose: **[DRAFT]** SCAN — hold one criterion fixed, apply it unchanged across subject classes.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: criterion-symmetry/samples/scan.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### criterion-symmetry--separability
@@ -7336,6 +7553,7 @@ integrity: Simulators/criterion-symmetry/separability.py sha12=9b27a75af033 comm
 purpose: **[DRAFT]** Is the vote tally identical under E1-E5, and do M1-M6 separate them?  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: criterion-symmetry/samples/separability.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--cli
@@ -7357,6 +7575,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/cli.py sha12=19a620bf1e3
 purpose: **[DRAFT]** Command-line interface ``cdeval`` for crossdomain_eval.  
 input: **[DRAFT]** subcommand eval: evaluate equations with substitutions; subcommand solve: solve an equation for a symbol; subcommand sweep: parameter sweep of an expression; subcommand doe: full-factorial design of experiments plan; equations: semicolon-separated equations, e.g. "x+y; x*y"; --set (nargs=*, default=[]): variable substitutions, e.g. --set x=2 y=3; equation: equation/expression, e.g. "x**2 - 4"; --for: symbol to solve for; expression: expression, e.g. "x**2 + y"; --range (action=append, required=True): swept parameter range; repeat for multiple params; --plot: optional output image path; --minimize (action=store_true): report argmin instead of argmax; --factors (required=True): comma-separated factor names; --levels (default=2): coded levels per factor; --objective: objective description  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crossdomain-eval--crossdomain_eval--experiments (imports); crossdomain-eval--crossdomain_eval--report (imports); crossdomain-eval--crossdomain_eval--symbolic (imports)
 
 ### crossdomain-eval--crossdomain_eval--domains--geometry
@@ -7378,6 +7597,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/domains/geometry.py sha1
 purpose: **[DRAFT]** Geometry domain helpers: packing and TSP-style distance matrices.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--domains--physics
@@ -7399,6 +7619,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/domains/physics.py sha12
 purpose: **[DRAFT]** Physics domain equation helpers.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--experiments
@@ -7420,6 +7641,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/experiments.py sha12=3d1
 purpose: **[DRAFT]** Parameter sweeps, sensitivity analysis, and DOE plan generation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crossdomain-eval--crossdomain_eval--cli (imported-by); crossdomain-eval--crossdomain_eval--report (imported-by)
 
 ### crossdomain-eval--crossdomain_eval--numerical
@@ -7441,6 +7663,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/numerical.py sha12=78b01
 purpose: **[DRAFT]** Numerical analysis helpers built on numpy and scipy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--reasoning
@@ -7462,6 +7685,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/reasoning.py sha12=7bfbe
 purpose: **[DRAFT]** Rule-based reasoning and assumption tracking for crossdomain_eval.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--reasoning_v2
@@ -7483,6 +7707,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/reasoning_v2.py sha12=42
 purpose: **[DRAFT]** Rule-based reasoning utilities for crossdomain_eval.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--crossdomain_eval--report
@@ -7504,6 +7729,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/report.py sha12=1b204fa1
 purpose: **[DRAFT]** Markdown report generation and sweep plotting.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crossdomain-eval--crossdomain_eval--cli (imported-by); crossdomain-eval--crossdomain_eval--experiments (imports)
 
 ### crossdomain-eval--crossdomain_eval--symbolic
@@ -7525,6 +7751,7 @@ integrity: Simulators/crossdomain-eval/crossdomain_eval/symbolic.py sha12=062031
 purpose: **[DRAFT]** Symbolic equation handling built on sympy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** crossdomain-eval--crossdomain_eval--cli (imported-by)
 
 ### crossdomain-eval--examples--demo_experiment
@@ -7557,6 +7784,7 @@ integrity: Simulators/crossdomain-eval/examples/demo_experiment.py sha12=227c1f4
 purpose: **[DRAFT]** Demo: parameter sweep, sensitivity analysis, DOE plan, and a report.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 8 lines, sha12 36fe24b46957 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### crossdomain-eval--examples--demo_symbolic
@@ -7585,6 +7813,7 @@ integrity: Simulators/crossdomain-eval/examples/demo_symbolic.py sha12=f9bc97ef2
 purpose: **[DRAFT]** Demo: parse equations, substitute, solve, differentiate, evaluate.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 3161977c508f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### custody-verification-band--branching
@@ -7622,6 +7851,7 @@ integrity: Simulators/custody-verification-band/branching.py sha12=8613a42e9d0e 
 purpose: **[DRAFT]** BRANCHING ANCHORS The physics numbers this folder rests on, recomputed from their own terms. Stdlib only. CC0.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: custody-verification-band/samples/branching.sample.txt; run capture: RUN, exit 0, 15 lines, sha12 5c85775e4cfc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### custody-verification-band--extract
@@ -7643,6 +7873,7 @@ integrity: Simulators/custody-verification-band/extract.py sha12=c098ff89d3be co
 purpose: **[DRAFT]** stdlib only. no deps. CC0.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### cycle-ledger--cycle_ledger
@@ -7668,6 +7899,7 @@ integrity: Simulators/cycle-ledger/cycle_ledger.py sha12=9e869f9faa28 commit=198
 purpose: **[DRAFT]** DELIVERABLE 1 -- cycle_ledger.py.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d9ce30d74610 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cycle-ledger--demo_cll (imported-by); cycle-ledger--selftest_cll (imported-by)
 
 ### cycle-ledger--demo_cll
@@ -7689,6 +7921,7 @@ integrity: Simulators/cycle-ledger/demo_cll.py sha12=6b6b32ceed5c commit=198937e
 purpose: **[DRAFT]** A worked pass over both deliverables on their shipped example inputs:  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cycle-ledger--cycle_ledger (imports); cycle-ledger--rate_gap (imports)
 
 ### cycle-ledger--rate_gap
@@ -7714,6 +7947,7 @@ integrity: Simulators/cycle-ledger/rate_gap.py sha12=3a4141fcc90b commit=198937e
 purpose: **[DRAFT]** DELIVERABLE 2 -- rate_gap.py.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 1e03a7996174 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cycle-ledger--demo_cll (imported-by); cycle-ledger--selftest_cll (imported-by)
 
 ### cycle-ledger--selftest_cll
@@ -7737,6 +7971,7 @@ integrity: Simulators/cycle-ledger/selftest_cll.py sha12=d1f55db370af commit=198
 purpose: **[DRAFT]** Selftest for cycle-ledger (Deliverable 1 cycle_ledger.py, Deliverable 2 rate_gap.py). Null tests run both directions:  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 37cd8a367276 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** cycle-ledger--cycle_ledger (imports); cycle-ledger--rate_gap (imports)
 
 ### declared-frame--check_frame
@@ -7758,6 +7993,7 @@ integrity: Simulators/declared-frame/check_frame.py sha12=6b45f9ab0de4 commit=19
 purpose: **[DRAFT]** check_frame.py -- validate declared frame blocks and test two results for comparability.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** sample: declared-frame/samples/check_frame_pair.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** declared-frame--frame_audit (imported-by); declared-frame--layer_zero (imported-by)
 
 ### declared-frame--frame_audit
@@ -7821,6 +8057,7 @@ integrity: Simulators/declared-frame/frame_audit.py sha12=97006b7236ed commit=19
 purpose: **[DRAFT]** frame_audit.py -- null-test check_frame.py's comparability verdicts.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: declared-frame/samples/frame_audit.sample.txt; run capture: RUN, exit 0, 121 lines, sha12 ddfadb5c48a5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** declared-frame--check_frame (imports)
 
 ### declared-frame--layer_zero
@@ -7884,6 +8121,7 @@ integrity: Simulators/declared-frame/layer_zero.py sha12=ffa2e1753b94 commit=198
 purpose: **[DRAFT]** layer_zero.py -- the block declares frames and has no term outside them.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: declared-frame/samples/layer_zero.sample.txt; run capture: RUN, exit 0, 85 lines, sha12 283584a46b92 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** declared-frame--check_frame (imports)
 
 ### declared-frame--v2--check_frame
@@ -7909,6 +8147,7 @@ integrity: Simulators/declared-frame/v2/check_frame.py sha12=5903dfcc7ae5 commit
 purpose: **[DRAFT]** check_frame.py -- validate and compare declared frame blocks CC0-1.0. Public domain. Standard library only.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: declared-frame/v2/samples/check_frame_pair.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 74135f4be580 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### declared-frame--v2--v2_audit
@@ -7972,6 +8211,7 @@ integrity: Simulators/declared-frame/v2/v2_audit.py sha12=412fa69f18aa commit=19
 purpose: **[DRAFT]** v2_audit.py -- what changed between the delivered check_frame.py versions, and which of the v1 findings survive.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: declared-frame/v2/samples/v2_audit.sample.txt; run capture: RUN, exit 0, 144 lines, sha12 962c094f6d99 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### deep-research-correction--check
@@ -7997,6 +8237,7 @@ integrity: Simulators/deep-research-correction/check.py sha12=12ecd42e78a9 commi
 purpose: **[DRAFT]** check -- recompute the checkable items of CORRECTION_NOTICE.md against the landed target document, and against this repository where the notice's item is a claim about the repo rather than about the document.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: deep-research-correction/samples/check.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 1ebcfefd07c5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### dependency-ledger--audit
@@ -8020,6 +8261,7 @@ integrity: Simulators/dependency-ledger/audit.py sha12=308db02b6f30 commit=19893
 purpose: **[DRAFT]** Dependency Ledger Audit, built and run.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: dependency-ledger/samples/audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 20d10e13a470 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-ledger--selftest_audit (imported-by); dependency-ledger--selftest_audit (imports)
 
 ### dependency-ledger--selftest_audit
@@ -8043,6 +8285,7 @@ integrity: Simulators/dependency-ledger/selftest_audit.py sha12=ea6f59c1e91c com
 purpose: **[DRAFT]** Selftest for audit.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 20d10e13a470 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-ledger--audit (imported-by); dependency-ledger--audit (imports)
 
 ### dependency-survey--gaps
@@ -8068,6 +8311,7 @@ integrity: Simulators/dependency-survey/gaps.py sha12=b57163390216 commit=198937
 purpose: **[DRAFT]** gaps.py -- the payoff. A gap is a term MEASURED (validly, with units) in one substrate and MISSING in another. Each gap carries a transfer question stated in the target substrate's own units; a gap whose transfer cannot be so stated is flagged NO-TRANSFER, which is itself a result on the projected-frame side of the discriminator.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9d5476832f85 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--report (imported-by); dependency-survey--selftest_ds (imported-by); dependency-survey--survey (imports)
 
 ### dependency-survey--repair_adjacency
@@ -8093,6 +8337,7 @@ integrity: Simulators/dependency-survey/repair_adjacency.py sha12=aa16b8e0f131 c
 purpose: **[DRAFT]** repair_adjacency.py -- the repair-adjacency RESULT (RESULT_repair_adjacency.md) made checkable at the level the document fixes.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: dependency-survey/samples/repair_adjacency.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 b1c71fd169f2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--selftest_repadj (imported-by)
 
 ### dependency-survey--report
@@ -8118,6 +8363,7 @@ integrity: Simulators/dependency-survey/report.py sha12=e7c0b150c80d commit=1989
 purpose: **[DRAFT]** report.py -- the four things the instrument emits: the 5x5 table, the full cell records (one block per non-UNKNOWN cell), the gap list, and the UNKNOWN count stated explicitly with the cells listed. Absence (MISSING) and not-yet-looked (UNKNOWN) are kept apart. Stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: dependency-survey/samples/report.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 cd0b9d34da66 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--run_all (imported-by); dependency-survey--selftest_ds (imported-by); dependency-survey--gaps (imports); dependency-survey--survey (imports)
 
 ### dependency-survey--run_all
@@ -8143,6 +8389,7 @@ integrity: Simulators/dependency-survey/run_all.py sha12=eee0f0daa30b commit=198
 purpose: **[DRAFT]** run_all.py -- emit the full survey report to stdout. No input, no network. Stdlib only.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 ff34a1e551bf (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--report (imports)
 
 ### dependency-survey--selftest_ds
@@ -8167,6 +8414,7 @@ integrity: Simulators/dependency-survey/selftest_ds.py sha12=e808ce0bb50c commit
 purpose: **[DRAFT]** Checks for the dependency survey against the seeded CELLS.md, which is the human-editable data store. Known answers first, both directions. Writes samples/.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 061f0e3d327f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--gaps (imports); dependency-survey--report (imports); dependency-survey--survey (imports)
 
 ### dependency-survey--selftest_repadj
@@ -8191,6 +8439,7 @@ integrity: Simulators/dependency-survey/selftest_repadj.py sha12=8f82d1b94459 co
 purpose: **[DRAFT]** Checks for repair_adjacency.py -- the refinement-chain RESULT made checkable at the level the document fixes. Known answers, both directions. The underlying sort is NOT reproduced (external corpus); these check the transcription-consistency of the delivered §1-§4 memberships and the §6 cut-height framing.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 7174e4a5b308 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--repair_adjacency (imports)
 
 ### dependency-survey--selftest_taxrep
@@ -8215,6 +8464,7 @@ integrity: Simulators/dependency-survey/selftest_taxrep.py sha12=8abf891e0e9e co
 purpose: **[DRAFT]** Checks for taxonomy_replication.py -- the cross-model replication RESULT made checkable at the level the document fixes. Known answers, both directions. The underlying sort is NOT reproduced (external corpus); these check the transcription-consistency of the delivered §1 table and the §6 count-refusal.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 203477ab5767 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--taxonomy_replication (imports)
 
 ### dependency-survey--survey
@@ -8240,6 +8490,7 @@ integrity: Simulators/dependency-survey/survey.py sha12=e98f663f34dd commit=1989
 purpose: **[DRAFT]** survey.py -- the term/substrate grid and cell coding for the cross-substrate dependency survey. The cells live in CELLS.md (data); this file is the logic. A cell not in CELLS.md is UNKNOWN.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0d2aa042aadc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--gaps (imported-by); dependency-survey--report (imported-by); dependency-survey--selftest_ds (imported-by)
 
 ### dependency-survey--taxonomy_replication
@@ -8265,6 +8516,7 @@ integrity: Simulators/dependency-survey/taxonomy_replication.py sha12=35e41a9aa5
 purpose: **[DRAFT]** taxonomy_replication.py -- the cross-model replication RESULT (ADDENDUM 01 §2, the taxonomy test) made checkable at the level the delivered document fixes.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: dependency-survey/samples/taxonomy_replication.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 5bd1250b1d7b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** dependency-survey--selftest_taxrep (imported-by)
 
 ### derivation-discarded--mechanism_11_audit
@@ -8286,6 +8538,7 @@ integrity: Simulators/derivation-discarded/mechanism_11_audit.py sha12=ef9bd1ff5
 purpose: **[DRAFT]** mechanism_11_audit.py -- checks on the Mechanism 11 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### design-basis-ai--audit
@@ -8312,6 +8565,7 @@ integrity: Simulators/design-basis-ai/audit.py sha12=b887f8651587 commit=198937e
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 a1179af6f069 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--r2_audit (imported-by); design-basis-ai--r2v2_audit (imported-by); design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo_return (imported-by); design-basis-ai--design_basis_checks (imports); design-basis-ai--r1v2_audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--selftest_dbk (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo2_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo3_return (shares design-basis-ai/SOURCE_DROP.md)
 
 ### design-basis-ai--design_basis_checks
@@ -8333,6 +8587,7 @@ integrity: Simulators/design-basis-ai/design_basis_checks.py sha12=950929aef9bc 
 purpose: **[DRAFT]** design_basis_checks.py  —  CC0, stdlib only  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--audit (imported-by); design-basis-ai--r1v2_audit (imported-by); design-basis-ai--r2_audit (imported-by); design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo2_return (imported-by); design-basis-ai--wo_return (imported-by)
 
 ### design-basis-ai--r1v2_audit
@@ -8359,6 +8614,7 @@ integrity: Simulators/design-basis-ai/r1v2_audit.py sha12=96cf367231c2 commit=19
 purpose: **[DRAFT]** r1v2_audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/r1v2_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 99974372b29e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--selftest_dbk (imported-by); design-basis-ai--design_basis_checks (imports); design-basis-ai--wo3_return (imports); design-basis-ai--r2v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo3_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--selftest_dbk (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo2_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo3_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--selftest_dbk (shares design-basis-ai/SOURCE_DROP_V2.md)
 
 ### design-basis-ai--r2_audit
@@ -8385,6 +8641,7 @@ integrity: Simulators/design-basis-ai/r2_audit.py sha12=99a3243864c0 commit=1989
 purpose: **[DRAFT]** r2_audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/r2_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 324a782e387e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo_return (imported-by); design-basis-ai--audit (imports); design-basis-ai--design_basis_checks (imports); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo_return (shares design-basis-ai/R2_OUTLINE.md)
 
 ### design-basis-ai--r2v2_audit
@@ -8411,6 +8668,7 @@ integrity: Simulators/design-basis-ai/r2v2_audit.py sha12=8352c6a53aa7 commit=19
 purpose: **[DRAFT]** r2v2_audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/r2v2_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 fc93ad406737 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo2_return (imported-by); design-basis-ai--audit (imports); design-basis-ai--wo_return (imports); design-basis-ai--r1v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo3_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--selftest_dbk (shares design-basis-ai/WORK_ORDER_F5.md); design-basis-ai--wo2_return (shares design-basis-ai/WORK_ORDER_F5.md)
 
 ### design-basis-ai--selftest_dbk
@@ -8434,6 +8692,7 @@ integrity: Simulators/design-basis-ai/selftest_dbk.py sha12=276d30d46f6e commit=
 purpose: **[DRAFT]** selftest_dbk.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 982644e967c2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--audit (imports); design-basis-ai--design_basis_checks (imports); design-basis-ai--r1v2_audit (imports); design-basis-ai--r2_audit (imports); design-basis-ai--r2v2_audit (imports); design-basis-ai--wo2_return (imports); design-basis-ai--wo3_return (imports); design-basis-ai--wo_return (imports); design-basis-ai--r2_audit (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo_return (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--r1v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--r2v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo3_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--r1v2_audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo2_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo3_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--r1v2_audit (shares design-basis-ai/SOURCE_DROP_V2.md); design-basis-ai--r2v2_audit (shares design-basis-ai/WORK_ORDER_F5.md); design-basis-ai--wo2_return (shares design-basis-ai/WORK_ORDER_F5.md); design-basis-ai--wo2_return (shares design-basis-ai/WORK_ORDER_F5_2.md)
 
 ### design-basis-ai--wo2_return
@@ -8460,6 +8719,7 @@ integrity: Simulators/design-basis-ai/wo2_return.py sha12=a30087e81c11 commit=19
 purpose: **[DRAFT]** wo2_return.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/wo2_return.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 3c378bfdf7af (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo3_return (imported-by); design-basis-ai--design_basis_checks (imports); design-basis-ai--r2v2_audit (imports); design-basis-ai--wo_return (imports); design-basis-ai--r2_audit (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo_return (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--r1v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--r2v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo3_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--r1v2_audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--selftest_dbk (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo3_return (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--r2v2_audit (shares design-basis-ai/WORK_ORDER_F5.md); design-basis-ai--selftest_dbk (shares design-basis-ai/WORK_ORDER_F5.md); design-basis-ai--selftest_dbk (shares design-basis-ai/WORK_ORDER_F5_2.md)
 
 ### design-basis-ai--wo3_return
@@ -8486,6 +8746,7 @@ integrity: Simulators/design-basis-ai/wo3_return.py sha12=77a866f17d78 commit=19
 purpose: **[DRAFT]** wo3_return.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/wo3_return.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 7a658c806918 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--r1v2_audit (imported-by); design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo2_return (imports); design-basis-ai--r1v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--r2v2_audit (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE_V2.md); design-basis-ai--audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--r1v2_audit (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--selftest_dbk (shares design-basis-ai/SOURCE_DROP.md); design-basis-ai--wo2_return (shares design-basis-ai/SOURCE_DROP.md)
 
 ### design-basis-ai--wo_return
@@ -8507,6 +8768,7 @@ integrity: Simulators/design-basis-ai/wo_return.py sha12=a6e06b4a5f52 commit=198
 purpose: **[DRAFT]** wo_return.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: design-basis-ai/samples/wo_return.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** design-basis-ai--r2v2_audit (imported-by); design-basis-ai--selftest_dbk (imported-by); design-basis-ai--wo2_return (imported-by); design-basis-ai--audit (imports); design-basis-ai--design_basis_checks (imports); design-basis-ai--r2_audit (imports); design-basis-ai--r2_audit (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--selftest_dbk (shares design-basis-ai/R2_OUTLINE.md); design-basis-ai--wo2_return (shares design-basis-ai/R2_OUTLINE.md)
 
 ### divergence-playground--coincidence
@@ -8535,6 +8797,7 @@ integrity: Simulators/divergence-playground/coincidence.py sha12=9b90e375cbee co
 purpose: **[DRAFT]** coincidence.py -- test whether N "hits" are actually independent.  stdlib, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 6 lines, sha12 e6a50d9aee63 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### divergence-playground--fork
@@ -8561,6 +8824,7 @@ integrity: Simulators/divergence-playground/fork.py sha12=2a43cfc36949 commit=19
 purpose: **[DRAFT]** fork.py -- Fork records for the DIVERGENCE PLAYGROUND.  stdlib only, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 4 lines, sha12 02c75d839099 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### divergence-playground--null_ensemble
@@ -8587,6 +8851,7 @@ integrity: Simulators/divergence-playground/null_ensemble.py sha12=407d599427c9 
 purpose: **[DRAFT]** null_ensemble.py -- the only rigorous coincidence test.  stdlib only, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 4 lines, sha12 3eb140959151 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### divergence-playground--reading
@@ -8614,6 +8879,7 @@ integrity: Simulators/divergence-playground/reading.py sha12=3fe547d09494 commit
 purpose: **[DRAFT]** reading.py -- what a reader commits.  stdlib only, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 5ca2693a03af (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** divergence-playground--seal (imported-by); divergence-playground--spread (imported-by)
 
 ### divergence-playground--seal
@@ -8641,6 +8907,7 @@ integrity: Simulators/divergence-playground/seal.py sha12=e33de2eaef85 commit=19
 purpose: **[DRAFT]** seal.py -- the anti-anchoring seal.  stdlib only, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 c25b9f9f3b6c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** divergence-playground--reading (imports)
 
 ### divergence-playground--spread
@@ -8668,6 +8935,7 @@ integrity: Simulators/divergence-playground/spread.py sha12=a258ad4485b6 commit=
 purpose: **[DRAFT]** spread.py -- 3-axis spread metric over an ensemble of Readings.  stdlib, CC0.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 c5bfc786da85 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** divergence-playground--reading (imports)
 
 ### domain-ledger--anchor
@@ -8689,6 +8957,7 @@ integrity: Simulators/domain-ledger/anchor.py sha12=8624958e1eee commit=198937ec
 purpose: **[DRAFT]** ANCHOR MAP Companion to ledger.py. Stdlib only.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** sample: domain-ledger/samples/anchor_blocking.sample.txt; sample: domain-ledger/samples/anchor_detail.sample.txt; sample: domain-ledger/samples/anchor_selftest.sample.txt; sample: domain-ledger/samples/anchor_skeleton.sample.json; sample: domain-ledger/samples/anchor_table.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** domain-ledger--ledger_audit (imported-by)
 
 ### domain-ledger--ledger
@@ -8710,6 +8979,7 @@ integrity: Simulators/domain-ledger/ledger.py sha12=16018f0edca1 commit=198937ec
 purpose: **[DRAFT]** DOMAIN LEDGER Makes a confidence readout derived instead of asserted. Stdlib only.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** domain-ledger--ledger_audit (imported-by)
 
 ### domain-ledger--ledger_audit
@@ -8731,6 +9001,7 @@ integrity: Simulators/domain-ledger/ledger_audit.py sha12=1916f311a061 commit=19
 purpose: **[DRAFT]** ledger_audit.py -- checks on the domain-ledger drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** domain-ledger--anchor (imports); domain-ledger--ledger (imports)
 
 ### earth_economics--asteroid_mining_audit
@@ -8759,6 +9030,7 @@ integrity: Simulators/earth_economics/asteroid_mining_audit.py sha12=1e946f9782f
 purpose: **[DRAFT]** asteroid_mining_audit.py – Closed‑loop thermodynamic audit of asteroid mining. Now includes the Atomic Accounting layer (extraction, refinement, isotopic debt). CC0. Stdlib only.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 8d0263b74afd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** earth_economics--fermi_paradox_audit (imports)
 
 ### earth_economics--comparative_economics_audit--run
@@ -8806,6 +9078,7 @@ integrity: Simulators/earth_economics/comparative_economics_audit/run.py sha12=5
 purpose: **[DRAFT]** comparative_economics_audit/run.py – Load scenarios, compute profiles, detect anomalies. CC0. Stdlib only.  
 input: **[DRAFT]** --scenario; --compare (choices=['all'])  
 output: **[DRAFT]** run capture: FAILED, exit 1, 23 lines, sha12 72e5d0a41a54 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** earth_economics--comparative_economics_audit--system_profile (imports)
 
 ### earth_economics--comparative_economics_audit--system_profile
@@ -8827,6 +9100,7 @@ integrity: Simulators/earth_economics/comparative_economics_audit/system_profile
 purpose: **[DRAFT]** system_profile.py – Unified dataclass for any economic coordination system. CC0. Stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** earth_economics--comparative_economics_audit--run (imported-by)
 
 ### earth_economics--data--compute_ocdi
@@ -8855,6 +9129,7 @@ integrity: Simulators/earth_economics/data/compute_ocdi.py sha12=19a79d1b2692 co
 purpose: **[DRAFT]** compute_ocdi.py – Fetches data and computes OCDI and RPI over a historical range. CC0. Stdlib only. Requires data/fetch_and_compute.py for live data.  
 input: **[DRAFT]** --start (default=1950); --end (default=2026); --output (default=ocdi_timeseries.csv); --plot (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 6 lines, sha12 8593129a31bc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--earth_economic_sim
@@ -8886,6 +9161,7 @@ integrity: Simulators/earth_economics/earth_economic_sim.py sha12=bdd3a829cfd3 c
 purpose: **[DRAFT]** Unified Earth-Economic Simulation Integrates: - earth-systems-physics (cascade engine) - thermodynamic-accountability-framework (energy cost auditing) - Mathematic-economics (economic state equations) - Simulators/grounding-layers (simulation architecture)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 7 lines, sha12 860baf3fef28 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--fermi_paradox_audit
@@ -8940,6 +9216,7 @@ integrity: Simulators/earth_economics/fermi_paradox_audit.py sha12=afffede82a8e 
 purpose: **[DRAFT]** fermi_paradox_audit.py – Dyson sphere / Fermi paradox cascade audit. CC0. Stdlib only.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 32 lines, sha12 df38b30cf353 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** earth_economics--asteroid_mining_audit (imported-by)
 
 ### earth_economics--register_fermi_claims
@@ -8968,6 +9245,7 @@ integrity: Simulators/earth_economics/register_fermi_claims.py sha12=84e677af9c8
 purpose: **[DRAFT]** inquiry_engine/register_fermi_claims.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 3bfea0a468e3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--aboriginal_australia
@@ -8989,6 +9267,7 @@ integrity: Simulators/earth_economics/scenarios/aboriginal_australia.py sha12=2a
 purpose: **[DRAFT]** Aboriginal Australian kin-based economy (pre-contact ideal-type). Land is not owned; it is cared for. Songlines encode economic geography.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--ainu_economy
@@ -9010,6 +9289,7 @@ integrity: Simulators/earth_economics/scenarios/ainu_economy.py sha12=5e28dfdbcb
 purpose: **[DRAFT]** Ainu reciprocal economy (Hokkaido, Sakhalin, Kurils). Kamuy (gods/spirits) are economic partners. Gift exchange with the non-human world.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--arabic_trust_trade
@@ -9031,6 +9311,7 @@ integrity: Simulators/earth_economics/scenarios/arabic_trust_trade.py sha12=0818
 purpose: **[DRAFT]** Arabic trust-based trade profile (ideal-type: pre-modern Suq, hawala, mudarabah).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--open_source_gift
@@ -9052,6 +9333,7 @@ integrity: Simulators/earth_economics/scenarios/open_source_gift.py sha12=d17c59
 purpose: **[DRAFT]** Open-source software gift economy (modern: Linux, Wikipedia, arXiv). Status from contribution; value flows from contributors to public commons.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--potlatch_economy
@@ -9073,6 +9355,7 @@ integrity: Simulators/earth_economics/scenarios/potlatch_economy.py sha12=759035
 purpose: **[DRAFT]** Pacific Northwest Potlatch (ideal-type: Kwakwaka'wakw, Tlingit, Haida). Status derived from giving, not accumulating. Wealth flows outward.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--sami_economy
@@ -9094,6 +9377,7 @@ integrity: Simulators/earth_economics/scenarios/sami_economy.py sha12=e65946095f
 purpose: **[DRAFT]** Sámi reindeer-herding economy (Northern Scandinavia/Russia). Cyclical, kin-based, land-embedded. Siida as collective management unit.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--ubuntu_economy
@@ -9115,6 +9399,7 @@ integrity: Simulators/earth_economics/scenarios/ubuntu_economy.py sha12=51332a6d
 purpose: **[DRAFT]** Ubuntu relational economy (Southern Africa: Nguni, Sotho-Tswana). 'I am because we are.' Personhood is constituted by relationships.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--us_capitalism_2026
@@ -9136,6 +9421,7 @@ integrity: Simulators/earth_economics/scenarios/us_capitalism_2026.py sha12=7a6a
 purpose: **[DRAFT]** US economic system profile (placeholder 2026).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### earth_economics--scenarios--ussr_1985
@@ -9157,6 +9443,7 @@ integrity: Simulators/earth_economics/scenarios/ussr_1985.py sha12=5760ef3ac72d 
 purpose: **[DRAFT]** USSR economic system profile (circa 1985, pre-perestroika).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### effective-redundancy-audit--audit
@@ -9183,6 +9470,7 @@ integrity: Simulators/effective-redundancy-audit/audit.py sha12=3aeb8811be41 com
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: effective-redundancy-audit/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 72de014c5209 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** effective-redundancy-audit--selftest_er (imported-by); effective-redundancy-audit--effective_redundancy (imports); effective-redundancy-audit--worked_example (imports)
 
 ### effective-redundancy-audit--effective_redundancy
@@ -9204,6 +9492,7 @@ integrity: Simulators/effective-redundancy-audit/effective_redundancy.py sha12=6
 purpose: **[DRAFT]** effective_redundancy.py  —  CC0, stdlib only  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** effective-redundancy-audit--audit (imported-by); effective-redundancy-audit--selftest_er (imported-by); effective-redundancy-audit--worked_example (imported-by)
 
 ### effective-redundancy-audit--selftest_er
@@ -9227,6 +9516,7 @@ integrity: Simulators/effective-redundancy-audit/selftest_er.py sha12=ea1411d9ee
 purpose: **[DRAFT]** selftest_er.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 5a88f9b7eb4c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** effective-redundancy-audit--audit (imports); effective-redundancy-audit--effective_redundancy (imports)
 
 ### effective-redundancy-audit--worked_example
@@ -9248,6 +9538,7 @@ integrity: Simulators/effective-redundancy-audit/worked_example.py sha12=5fb8f40
 purpose: **[DRAFT]** worked_example.py -- the Section 5 example, delivered VERBATIM. Only the import line is added so the delivered `cases`/`report` block runs as its own file; nothing else is changed.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: effective-redundancy-audit/samples/worked_example.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** effective-redundancy-audit--audit (imported-by); effective-redundancy-audit--effective_redundancy (imports)
 
 ### emergence-stability-simulator--agent_variants
@@ -9280,6 +9571,7 @@ integrity: Simulators/emergence-stability-simulator/agent_variants.py sha12=aca2
 purpose: **[DRAFT]** Pre-built agent configurations for testing different hypotheses.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 10 lines, sha12 ca98c2ceef77 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--sim_engine (imports)
 
 ### emergence-stability-simulator--analysis
@@ -9343,6 +9635,7 @@ integrity: Simulators/emergence-stability-simulator/analysis.py sha12=5156283475
 purpose: **[DRAFT]** analysis.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 46 lines, sha12 7a0aa34b7a19 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--run_monte_carlo (imported-by); emergence-stability-simulator--sim_engine (imports)
 
 ### emergence-stability-simulator--balance_threshold
@@ -9384,6 +9677,7 @@ integrity: Simulators/emergence-stability-simulator/balance_threshold.py sha12=1
 purpose: **[DRAFT]** balance_threshold.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: emergence-stability-simulator/samples/balance_threshold.sample.json; run capture: RUN, exit 0, 19 lines, sha12 6a35d04f371c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--run_monte_carlo (imported-by); emergence-stability-simulator--sim_engine (imports); emergence-stability-simulator--sim_engine (shares CASE_STUDY_NARRATIVE_INSTINCT.md)
 
 ### emergence-stability-simulator--run_monte_carlo
@@ -9447,6 +9741,7 @@ integrity: Simulators/emergence-stability-simulator/run_monte_carlo.py sha12=e08
 purpose: **[DRAFT]** run_monte_carlo.py  
 input: **[DRAFT]** --runs (default=1000): Monte Carlo runs (default 1000); --timesteps (default=100): Timesteps per run (default 100); --sensitivity-runs (default=15): Runs per parameter value in sensitivity sweep; --mode-runs (default=200): Runs per scenario in mode comparison (EMRG_007/008); --attractor-runs (default=80): Runs per scenario in attractor quality test (EMRG_010); --skip-sensitivity (action=store_true): Skip parameter sensitivity analysis; --skip-mode-comparison (action=store_true): Skip mode comparison (EMRG_007/008 stays proposed); --skip-attractor-quality (action=store_true): Skip attractor quality test (EMRG_010 stays proposed); --balance-runs-per-cell (default=3): Runs per cell in balance analysis (EMRG_011/012/013/015); --skip-balance (action=store_true): Skip balance threshold analysis; --skip-report (action=store_true): Skip ASCII analysis report generation  
 output: **[DRAFT]** run capture: RUN, exit 0, 108 lines, sha12 46b0c9e84322 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--analysis (imports); emergence-stability-simulator--balance_threshold (imports); emergence-stability-simulator--sensitivity_analysis (imports); emergence-stability-simulator--sensitivity_viz (imports); emergence-stability-simulator--sim_engine (imports)
 
 ### emergence-stability-simulator--sensitivity_analysis
@@ -9489,6 +9784,7 @@ integrity: Simulators/emergence-stability-simulator/sensitivity_analysis.py sha1
 purpose: **[DRAFT]** sensitivity_analysis.py  
 input: **[DRAFT]** --param; --values (default=0.0,0.25,0.5,0.75,1.0): Comma-separated parameter values (only used with --param). Default 0,0.25,0.5,0.75,1.; --scenario (choices=['stable_majority', 'mixed', 'parasitic_majority']): Scenario override (only used with --param). Default: auto-select.; --runs (default=10): Monte Carlo runs per parameter value (default 10).; --timesteps (default=100): Timesteps per simulation (default 100).; --output: Output JSON path. Default depends on mode.  
 output: **[DRAFT]** run capture: RUN, exit 0, 20 lines, sha12 d9ba2a452852 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--run_monte_carlo (imported-by); emergence-stability-simulator--sim_engine (imports)
 
 ### emergence-stability-simulator--sensitivity_viz
@@ -9510,6 +9806,7 @@ integrity: Simulators/emergence-stability-simulator/sensitivity_viz.py sha12=33e
 purpose: **[DRAFT]** sensitivity_viz.py  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--run_monte_carlo (imported-by)
 
 ### emergence-stability-simulator--sim_engine
@@ -9573,6 +9870,7 @@ integrity: Simulators/emergence-stability-simulator/sim_engine.py sha12=7c9ff48d
 purpose: **[DRAFT]** emergence-stability-simulator sim_engine.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 53 lines, sha12 eac1f4f1f6c9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** emergence-stability-simulator--agent_variants (imported-by); emergence-stability-simulator--analysis (imported-by); emergence-stability-simulator--balance_threshold (imported-by); emergence-stability-simulator--run_monte_carlo (imported-by); emergence-stability-simulator--sensitivity_analysis (imported-by); emergence-stability-simulator--balance_threshold (shares CASE_STUDY_NARRATIVE_INSTINCT.md)
 
 ### enclosure-first-residual--enclosure_first_residual
@@ -9596,6 +9894,7 @@ integrity: Simulators/enclosure-first-residual/enclosure_first_residual.py sha12
 purpose: **[DRAFT]** enclosure_first_residual -- enter enclosure terms FIRST, measure residual, and only then treat the residual as a trait candidate.  
 input: **[DRAFT]** command (nargs=?, choices=['demo', 'run']); panel (nargs=?); --seed (default=0); --json (action=store_true): print the record as JSON after the text; --emit-branch-set: write the F branch set, statuses updated by the run; --table-literal (action=store_true): return the order's step-4 table exactly as written (no corrected reading); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 adab7b49a5d5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### encoding-selection--encoding_selection
@@ -9621,6 +9920,7 @@ integrity: Simulators/encoding-selection/encoding_selection.py sha12=0d18b0983bf
 purpose: **[DRAFT]** encoding_selection -- the WORK ORDER built as one stdlib instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 855bad0de34f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** encoding-selection--selftest_es (imported-by)
 
 ### encoding-selection--selftest_es
@@ -9645,6 +9945,7 @@ integrity: Simulators/encoding-selection/selftest_es.py sha12=21c54a652f26 commi
 purpose: **[DRAFT]** Checks for encoding_selection.py. Known answers first, both directions of every guard. Rows are CONSTRUCTED; nothing is a claim about any reader or format.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 48e4e89921f4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** encoding-selection--encoding_selection (imports)
 
 ### energy--exploration_layers--certificate_validity_lens
@@ -9673,6 +9974,7 @@ integrity: Simulators/energy/exploration_layers/certificate_validity_lens.py sha
 purpose: **[DRAFT]** certificate_validity_lens.py -- DP-17 companion.  numpy + scipy + matplotlib.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: energy/exploration_layers/samples/certificate_validity_lens.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 f8ce1edc14d8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--exploration_layers--local_scalar_drift_lens
@@ -9701,6 +10003,7 @@ integrity: Simulators/energy/exploration_layers/local_scalar_drift_lens.py sha12
 purpose: **[DRAFT]** local_scalar_drift_lens.py -- F-10 D corrected + anchored. numpy + matplotlib.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: energy/exploration_layers/samples/local_scalar_drift_lens.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 8dd15f853f2f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--exploration_layers--percolation_lens
@@ -9745,6 +10048,7 @@ integrity: Simulators/energy/exploration_layers/percolation_lens.py sha12=564401
 purpose: **[DRAFT]** percolation_lens.py -- packing-vs-distinguishability lens.  stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: energy/exploration_layers/samples/percolation_lens.sample.txt; run capture: RUN, exit 0, 22 lines, sha12 a46bf0600984 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--exploration_layers--reaction_diffusion_lens
@@ -9775,6 +10079,7 @@ integrity: Simulators/energy/exploration_layers/reaction_diffusion_lens.py sha12
 purpose: **[DRAFT]** reaction_diffusion_lens.py -- F3 lens.  numpy + scipy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: energy/exploration_layers/samples/reaction_diffusion_lens.sample.txt; run capture: FAILED, exit 1, 6 lines, sha12 37360dfe83e5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--exploration_layers--rg_flow_lens
@@ -9803,6 +10108,7 @@ integrity: Simulators/energy/exploration_layers/rg_flow_lens.py sha12=cdbbb7cffa
 purpose: **[DRAFT]** rg_flow_lens.py -- F4 lens: fixed points and moving walls.  numpy + scipy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: energy/exploration_layers/samples/rg_flow_lens.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 3abe8720ff08 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--modules--edelens
@@ -9831,6 +10137,7 @@ integrity: Simulators/energy/modules/edelens.py sha12=a77113f42935 commit=198937
 purpose: **[DRAFT]** edelens.py Early Dark Energy three-lens module — the polarity flip of coupled quintessence.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 8a41c0226a9e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--overlap_lens (imported-by); energy--modules--unified_cq_ede (imported-by)
 
 ### energy--modules--falsification_engine
@@ -9873,6 +10180,7 @@ integrity: Simulators/energy/modules/falsification_engine.py sha12=bec5f582178d 
 purpose: **[DRAFT]** falsification_engine.py A general-purpose metrology and audit tool for any AI. Lets the AI make a claim, falsify it against residual topology, search for hidden variables, evolve the claim, and retest. Pure Karl Popper, translated into linear algebra. Runs on a phone. License: CC0 1.0 Universal (public domain).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 20 lines, sha12 0c96d281c013 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--payload_bridge (imported-by); energy--modules--run_iteration6 (imported-by)
 
 ### energy--modules--generative_module
@@ -9901,6 +10209,7 @@ integrity: Simulators/energy/modules/generative_module.py sha12=fbbabe1cf778 com
 purpose: **[DRAFT]** generative_module.py The Generative Module: when Gate 4 says CREATE_NEW_MATHEMATICS, propose the functional form of the missing term from the residual array.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 6 lines, sha12 4d3f0dd4c514 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--payload_bridge (imported-by); energy--modules--run_iteration6 (imported-by)
 
 ### energy--modules--late_trigger_lens
@@ -9929,6 +10238,7 @@ integrity: Simulators/energy/modules/late_trigger_lens.py sha12=37e397a4c1d0 com
 purpose: **[DRAFT]** late_trigger_lens.py — Late-Time Trigger Lens ==============================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 fa5b2859c09a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--modules--metrology_diagnostic
@@ -9957,6 +10267,7 @@ integrity: Simulators/energy/modules/metrology_diagnostic.py sha12=3ecfb42fa38f 
 purpose: **[DRAFT]** metrology_diagnostic.py The Universal 4-Gate Diagnostic for any AI or model. Detects whether a failure lives in: Mathematics, Formulation, Instrumentation, or Equipment. Inspired by the coupled-quintessence tomographic verdict (rank-2 w0-wa projection S_min ~ 0.03  ->  rank-3 tomography S_min ~ 5.2). License: CC0 1.0 Universal (public domain).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 1765d603ef6e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--payload_bridge (imported-by); energy--modules--run_iteration6 (imported-by)
 
 ### energy--modules--overlap_lens
@@ -9989,6 +10300,7 @@ integrity: Simulators/energy/modules/overlap_lens.py sha12=68a9f44da305 commit=1
 purpose: **[DRAFT]** overlap_lens.py — Unified theory-space lens: CQ x EDE in the common observable plane.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 10 lines, sha12 050491071a87 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--edelens (imports)
 
 ### energy--modules--payload_bridge
@@ -10010,6 +10322,7 @@ integrity: Simulators/energy/modules/payload_bridge.py sha12=01a1e8495d49 commit
 purpose: **[DRAFT]** payload_bridge.py The wiring layer ("Step 4"): connects the playground's machine-payload data to the metrology add-on modules, end to end.  
 input: **[DRAFT]** main(path=os.path.join(os.path.dirname(__file__), '..', 'app', 'playground_data.json')); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--falsification_engine (imports); energy--modules--generative_module (imports); energy--modules--metrology_diagnostic (imports); energy--modules--singularity_cartographer (imports)
 
 ### energy--modules--run_iteration6
@@ -10038,6 +10351,7 @@ integrity: Simulators/energy/modules/run_iteration6.py sha12=3330afc4c3dc commit
 purpose: **[DRAFT]** run_iteration6.py Iteration 6: the running-coupling model beta(z) = beta0 + beta1*z/(1+z), implemented in the REAL autonomous coupled-quintessence engine (background + growth, shooting to Omega_phi0 = 0.685) -- not a placeholder.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 7804c32acf01 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--unified_cq_ede (imported-by); energy--modules--falsification_engine (imports); energy--modules--generative_module (imports); energy--modules--metrology_diagnostic (imports)
 
 ### energy--modules--singularity_cartographer
@@ -10066,6 +10380,7 @@ integrity: Simulators/energy/modules/singularity_cartographer.py sha12=8ea918432
 purpose: **[DRAFT]** singularity_cartographer.py A metrology tool that hits mathematical brick walls on purpose, tries every meaningful substitution, and classifies the wall: COORDINATE_GAUGE  - gauge artifact: change variables, it disappears SIMPLE_POLE       - 1/(x-x0): add a residue term DOUBLE_POLE       - 1/(x-x0)^2: sharp boundary (the 1+alpha*phi^2 pole) BRANCH_CUT        - log singularity: multi-valued physics, new sheet PHASE_TRANSITION  - sqrt threshold: tachyonic / imaginary beyond TRUE_HORIZON      - no substitution works: NEW MATH REQUIRED License: CC0 1.0 Universal (public domain).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 f3edd64bfbd6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--payload_bridge (imported-by)
 
 ### energy--modules--theory_space_lenses
@@ -10087,6 +10402,7 @@ integrity: Simulators/energy/modules/theory_space_lenses.py sha12=1d5995acb5c3 c
 purpose: **[DRAFT]** theory_space_lenses.py The three-lens survival map of a theory space (multi-lens metrology).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### energy--modules--unified_cq_ede
@@ -10115,6 +10431,7 @@ integrity: Simulators/energy/modules/unified_cq_ede.py sha12=62147f2e4582 commit
 purpose: **[DRAFT]** unified_cq_ede.py — Unified CQ+EDE Integration Engine ======================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 b1a17536bab2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** energy--modules--edelens (imports); energy--modules--run_iteration6 (imports)
 
 ### envelope-asymmetry--envelope_score
@@ -10140,6 +10457,7 @@ integrity: Simulators/envelope-asymmetry/envelope_score.py sha12=ede0a2cb10ea co
 purpose: **[DRAFT]** The envelope-score instrument and the two tests the protocol builds on it, computed from a JSONL of coded records in the protocol's schema. No document is coded here: no vendor documentation site and no filing registry answers from this environment, and no row is invented. With no rows every reading prints undetermined.  
 input: **[DRAFT]** --rows; --domains (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9bf149a911e5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** envelope-asymmetry--protocol_audit (imported-by); envelope-asymmetry--selftest_env (imported-by)
 
 ### envelope-asymmetry--protocol_audit
@@ -10165,6 +10483,7 @@ integrity: Simulators/envelope-asymmetry/protocol_audit.py sha12=e8bb8e455334 co
 purpose: **[DRAFT]** Reads PROTOCOL.md against the instrument built to it, on constructed records labelled so, and on the protocol's own text. Every number in CLAIM_TABLE.md is computed here. No document is coded; nothing is a statement about any vendor, filing or regime. Refuses --selftest (checks live in selftest_env.py).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: envelope-asymmetry/samples/protocol_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 8522a27de676 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** envelope-asymmetry--selftest_env (imported-by); envelope-asymmetry--envelope_score (imports)
 
 ### envelope-asymmetry--selftest_env
@@ -10189,6 +10508,7 @@ integrity: Simulators/envelope-asymmetry/selftest_env.py sha12=859ec4bf8f5c comm
 purpose: **[DRAFT]** Checks for envelope_score.py and protocol_audit.py: known answers first, both directions, on constructed rows labelled so. Writes samples/.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 b71dd24fd2e2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** envelope-asymmetry--envelope_score (imports); envelope-asymmetry--protocol_audit (imports)
 
 ### equivalence-field--claim_lineage
@@ -10214,6 +10534,7 @@ integrity: Simulators/equivalence-field/claim_lineage.py sha12=c2f366f03af1 comm
 purpose: **[DRAFT]** claim_lineage.py CC0. stdlib-only. phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: equivalence-field/samples/claim_lineage.sample.txt; run capture: RUN, exit 0, 3 lines, sha12 e90462b9fd4b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** equivalence-field--equivalence_field (imported-by)
 
 ### equivalence-field--equivalence_field
@@ -10244,6 +10565,7 @@ integrity: Simulators/equivalence-field/equivalence_field.py sha12=0a94e41dafa5 
 purpose: **[DRAFT]** equivalence_field.py CC0. stdlib-only. phone-buildable. spine: claim_lineage.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: equivalence-field/samples/equivalence_field.sample.txt; run capture: RUN, exit 0, 8 lines, sha12 ae4ac1611e6b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** equivalence-field--claim_lineage (imports)
 
 ### evaluation-frame--frame
@@ -10270,6 +10592,7 @@ integrity: Simulators/evaluation-frame/frame.py sha12=6581595e6764 commit=198937
 purpose: **[DRAFT]** frame.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: evaluation-frame/samples/frame.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 758ebe138cb1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** evaluation-frame--selftest_frame (imported-by)
 
 ### evaluation-frame--selftest_frame
@@ -10300,6 +10623,7 @@ integrity: Simulators/evaluation-frame/selftest_frame.py sha12=93c6909052c4 comm
 purpose: **[DRAFT]** selftest_frame.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 6 lines, sha12 1017ada80095 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** evaluation-frame--frame (imports)
 
 ### evidence-demotion-detector--detect
@@ -10325,6 +10649,7 @@ integrity: Simulators/evidence-demotion-detector/detect.py sha12=4c3232d417dd co
 purpose: **[DRAFT]** evidence-demotion-detector.  
 input: **[DRAFT]** transcript (nargs=?): transcript.json: [{role, text}, ...]; --json (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 857ee0f1fd20 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** evidence-demotion-detector--selftest (imported-by); evidence-demotion-detector--selftest (sibling-selftest)
 
 ### evidence-demotion-detector--selftest
@@ -10348,6 +10673,7 @@ integrity: Simulators/evidence-demotion-detector/selftest.py sha12=e80a540208da 
 purpose: **[DRAFT]** evidence-demotion-detector selftest.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 72dc5a9827d9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** evidence-demotion-detector--detect (imports); evidence-demotion-detector--detect (selftest-of)
 
 ### experience-ledger--experience_ledger
@@ -10371,6 +10697,7 @@ integrity: Simulators/experience-ledger/experience_ledger.py sha12=4291b8a2da17 
 purpose: **[DRAFT]** experience_ledger.py  -- CC0, stdlib only, phone-buildable  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 af5d8a21858f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** experience-ledger--ledger_audit (imported-by)
 
 ### experience-ledger--ledger_audit
@@ -10394,6 +10721,7 @@ integrity: Simulators/experience-ledger/ledger_audit.py sha12=a9aaac995667 commi
 purpose: **[DRAFT]** Checks on the delivered `experience_ledger.py`. Imports it, edits it not at all.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: experience-ledger/samples/ledger_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 be27c9f2bf4e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** experience-ledger--experience_ledger (imports)
 
 ### exploration-engine--exploration_engine
@@ -10439,6 +10767,7 @@ integrity: Simulators/exploration-engine/exploration_engine.py sha12=51987c5e8c3
 purpose: **[DRAFT]** exploration_engine.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: exploration-engine/samples/exploration_engine.sample.txt; run capture: RUN, exit 0, 23 lines, sha12 461f36fae0c9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### exploration-playground--exploration_playground
@@ -10491,6 +10820,7 @@ integrity: Simulators/exploration-playground/exploration_playground.py sha12=8a1
 purpose: **[DRAFT]** exploration_playground.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: exploration-playground/samples/exploration_playground.sample.txt; run capture: RUN, exit 0, 30 lines, sha12 bcf287aa41c4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### external-audit--crosscheck
@@ -10512,6 +10842,7 @@ integrity: Simulators/external-audit/crosscheck.py sha12=6fb3f774e114 commit=198
 purpose: **[DRAFT]** Two outside sweeps of one tree, compared.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: external-audit/samples/crosscheck.sample.txt; sample: external-audit/samples/crosscheck_choices.sample.txt; run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** external-audit--recount (imports); external-audit--recount (shares external-audit/DEEP_RESEARCH_2026_09_14.md)
 
 ### external-audit--recount
@@ -10554,6 +10885,7 @@ integrity: Simulators/external-audit/recount.py sha12=7b16c017e884 commit=198937
 purpose: **[DRAFT]** Recount every countable claim in the delivered deep-research report.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: external-audit/samples/recount.sample.txt; run capture: FAILED, exit 1, 18 lines, sha12 0b794872b537 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** external-audit--crosscheck (imported-by); notes--check_markers (shares GAP_INDEX.md); notes--check_postgrad (shares GAP_INDEX.md); tools--gap_index (shares GAP_INDEX.md); external-audit--crosscheck (shares external-audit/DEEP_RESEARCH_2026_09_14.md)
 
 ### external-audit--run_instruments
@@ -10601,6 +10933,7 @@ integrity: Simulators/external-audit/run_instruments.py sha12=4db80918324a commi
 purpose: **[DRAFT]** Run the repository's own instruments and report the failures.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 25 lines, sha12 207338948dd9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### extraction-blindness-sim--blindness
@@ -10624,6 +10957,7 @@ integrity: Simulators/extraction-blindness-sim/blindness.py sha12=9c3681053e03 c
 purpose: **[DRAFT]** Three metrological blindness operators applied to an observation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 749d49550bda (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--optimizer (imported-by); extraction-blindness-sim--profiles (imported-by); extraction-blindness-sim--run_experiments (imported-by)
 
 ### extraction-blindness-sim--boundaries
@@ -10647,6 +10981,7 @@ integrity: Simulators/extraction-blindness-sim/boundaries.py sha12=a8f78731614d 
 purpose: **[DRAFT]** Hard extraction boundaries: non-negotiable overrides.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 af0bbf01c7c4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--optimizer (imported-by); extraction-blindness-sim--profiles (imported-by)
 
 ### extraction-blindness-sim--indicators
@@ -10670,6 +11005,7 @@ integrity: Simulators/extraction-blindness-sim/indicators.py sha12=f4110c4cef85 
 purpose: **[DRAFT]** Decay-velocity leading indicators.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 24a2a0babcd1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--optimizer (imported-by); extraction-blindness-sim--profiles (imported-by)
 
 ### extraction-blindness-sim--optimizer
@@ -10693,6 +11029,7 @@ integrity: Simulators/extraction-blindness-sim/optimizer.py sha12=4975fc96bd95 c
 purpose: **[DRAFT]** The extractive loop: an optimizer acting on a blinded observation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 eb782deca525 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--run_experiments (imported-by); extraction-blindness-sim--blindness (imports); extraction-blindness-sim--boundaries (imports); extraction-blindness-sim--indicators (imports); extraction-blindness-sim--substrate (imports)
 
 ### extraction-blindness-sim--profiles
@@ -10716,6 +11053,7 @@ integrity: Simulators/extraction-blindness-sim/profiles.py sha12=411b6121b27b co
 purpose: **[DRAFT]** Domain profiles: fishery and soil, with the source specification's numbers.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 bd8464a55fb6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--run_experiments (imported-by); extraction-blindness-sim--blindness (imports); extraction-blindness-sim--boundaries (imports); extraction-blindness-sim--indicators (imports); extraction-blindness-sim--substrate (imports)
 
 ### extraction-blindness-sim--run_experiments
@@ -10779,6 +11117,7 @@ integrity: Simulators/extraction-blindness-sim/run_experiments.py sha12=16e2f5e9
 purpose: **[DRAFT]** Five experiments, one per claim in CLAIM_TABLE.md.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 133 lines, sha12 0259ebea7a41 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--blindness (imports); extraction-blindness-sim--optimizer (imports); extraction-blindness-sim--profiles (imports); extraction-blindness-sim--substrate (imports); extraction-blindness-sim--throughput (imports)
 
 ### extraction-blindness-sim--substrate
@@ -10802,6 +11141,7 @@ integrity: Simulators/extraction-blindness-sim/substrate.py sha12=e6d4214585b6 c
 purpose: **[DRAFT]** Regenerating substrate with depensation and recovery hysteresis.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 50d1a022d0c3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--optimizer (imported-by); extraction-blindness-sim--profiles (imported-by); extraction-blindness-sim--run_experiments (imported-by)
 
 ### extraction-blindness-sim--throughput
@@ -10825,6 +11165,7 @@ integrity: Simulators/extraction-blindness-sim/throughput.py sha12=6edb06d11372 
 purpose: **[DRAFT]** Regenerative Throughput (RT) — competing formulations, kept apart.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 6eb973887414 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** extraction-blindness-sim--run_experiments (imported-by)
 
 ### failure-mode-register--entries
@@ -10850,6 +11191,7 @@ integrity: Simulators/failure-mode-register/entries.py sha12=17e804803234 commit
 purpose: **[DRAFT]** entries.py -- the delivered register, parsed out of WORK_ORDER.md.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/entries.sample.txt; sample: failure-mode-register/samples/entries_v2.sample.txt; sample: failure-mode-register/samples/entries_v3.sample.txt; sample: failure-mode-register/samples/entries_v4.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 ecb564a17d47 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--entries_v2 (imported-by); failure-mode-register--entries_v3 (imported-by); failure-mode-register--entries_v4 (imported-by); failure-mode-register--register (imported-by); failure-mode-register--register_v2 (imported-by); failure-mode-register--register_v3 (imported-by); failure-mode-register--register_v4 (imported-by); failure-mode-register--entries_v2 (shares failure-mode-register/samples/entries_v2.sample.txt); failure-mode-register--entries_v3 (shares failure-mode-register/samples/entries_v3.sample.txt); failure-mode-register--entries_v4 (shares failure-mode-register/samples/entries_v4.sample.txt)
 
 ### failure-mode-register--entries_v2
@@ -10875,6 +11217,7 @@ integrity: Simulators/failure-mode-register/entries_v2.py sha12=9093a676c0d2 com
 purpose: **[DRAFT]** Parser for WORK_ORDER_V2.md -- the revised order, landed verbatim beside WORK_ORDER.md so both stay inspectable (the supersession convention this repository already uses: observer-exclusion SPEC_V2, design-basis SOURCE_DROP_V2, fold-matrix WORK_ORDER_V2, mining-increment SOURCE_DROP_V2).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/entries_v2.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 dc548102d43c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--entries_v3 (imported-by); failure-mode-register--entries_v4 (imported-by); failure-mode-register--register_v2 (imported-by); failure-mode-register--register_v3 (imported-by); failure-mode-register--register_v4 (imported-by); failure-mode-register--entries (imports); failure-mode-register--entries (shares failure-mode-register/samples/entries_v2.sample.txt)
 
 ### failure-mode-register--entries_v3
@@ -10900,6 +11243,7 @@ integrity: Simulators/failure-mode-register/entries_v3.py sha12=31f510b3ed70 com
 purpose: **[DRAFT]** Parser for WORK_ORDER_V3.md -- the third order, landed verbatim beside WORK_ORDER.md and WORK_ORDER_V2.md so all three stay inspectable (the supersession convention this repository already uses: observer-exclusion SPEC_V2, design-basis SOURCE_DROP_V2, mining-increment SOURCE_DROP_V2/V3).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/entries_v3.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 a0e32f579e35 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--register_v3 (imported-by); failure-mode-register--register_v4 (imported-by); failure-mode-register--entries (imports); failure-mode-register--entries_v2 (imports); failure-mode-register--entries (shares failure-mode-register/samples/entries_v3.sample.txt)
 
 ### failure-mode-register--entries_v4
@@ -10925,6 +11269,7 @@ integrity: Simulators/failure-mode-register/entries_v4.py sha12=392084168b0f com
 purpose: **[DRAFT]** Parser for WORK_ORDER_V4.md -- the fourth order, landed verbatim beside WORK_ORDER.md, WORK_ORDER_V2.md and WORK_ORDER_V3.md so all four stay inspectable (the supersession convention this repository already uses: observer-exclusion SPEC_V2, design-basis SOURCE_DROP_V2, mining-increment SOURCE_DROP_V2/V3).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/entries_v4.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 9eb6ee177ea8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--register_v4 (imported-by); failure-mode-register--entries (imports); failure-mode-register--entries_v2 (imports); failure-mode-register--entries (shares failure-mode-register/samples/entries_v4.sample.txt)
 
 ### failure-mode-register--register
@@ -10950,6 +11295,7 @@ integrity: Simulators/failure-mode-register/register.py sha12=92b41bb4f050 commi
 purpose: **[DRAFT]** register.py -- the failure-mode register as an instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/register.sample.txt; sample: failure-mode-register/samples/register_v2.sample.txt; sample: failure-mode-register/samples/register_v3.sample.txt; sample: failure-mode-register/samples/register_v4.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 137e75a24e47 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--register_v2 (imported-by); failure-mode-register--register_v3 (imported-by); failure-mode-register--entries (imports); failure-mode-register--register_v2 (shares failure-mode-register/samples/register_v2.sample.txt); failure-mode-register--register_v3 (shares failure-mode-register/samples/register_v3.sample.txt); failure-mode-register--register_v4 (shares failure-mode-register/samples/register_v4.sample.txt)
 
 ### failure-mode-register--register_v2
@@ -10975,6 +11321,7 @@ integrity: Simulators/failure-mode-register/register_v2.py sha12=72ae14dbae5b co
 purpose: **[DRAFT]** The revised order, audited. WORK_ORDER_V2.md is delivered verbatim beside WORK_ORDER.md and neither is edited.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/register_v2.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 7e0042c5d5f0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--register_v3 (imported-by); failure-mode-register--register_v4 (imported-by); failure-mode-register--entries (imports); failure-mode-register--entries_v2 (imports); failure-mode-register--register (imports); failure-mode-register--register (shares failure-mode-register/samples/register_v2.sample.txt)
 
 ### failure-mode-register--register_v3
@@ -11000,6 +11347,7 @@ integrity: Simulators/failure-mode-register/register_v3.py sha12=bc092759c92a co
 purpose: **[DRAFT]** Audit of WORK_ORDER_V3.md -- the third order, landed verbatim.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/register_v3.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 39fa37c2e30f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--entries (imports); failure-mode-register--entries_v2 (imports); failure-mode-register--entries_v3 (imports); failure-mode-register--register (imports); failure-mode-register--register_v2 (imports); failure-mode-register--register (shares failure-mode-register/samples/register_v3.sample.txt)
 
 ### failure-mode-register--register_v4
@@ -11025,6 +11373,7 @@ integrity: Simulators/failure-mode-register/register_v4.py sha12=602ec5ab58d8 co
 purpose: **[DRAFT]** Audit of WORK_ORDER_V4.md, the fourth order in the failure-mode-register family. The order is landed VERBATIM and is modified by nothing here; every disagreement goes into CLAIM_TABLE.md and into this module's output, which is the uninstrumented/cases arrangement this repository already uses.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: failure-mode-register/samples/register_v4.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 43543070a236 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** failure-mode-register--entries (imports); failure-mode-register--entries_v2 (imports); failure-mode-register--entries_v3 (imports); failure-mode-register--entries_v4 (imports); failure-mode-register--register_v2 (imports); failure-mode-register--register (shares failure-mode-register/samples/register_v4.sample.txt)
 
 ### false-tradeoff--cases
@@ -11046,6 +11395,7 @@ integrity: Simulators/false-tradeoff/cases.py sha12=9bec53a44d49 commit=198937ec
 purpose: **[DRAFT]** cases.py CC0 1.0 Universal / public domain dedication.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** false-tradeoff--false_tradeoff (imported-by); false-tradeoff--false_tradeoff (imports)
 
 ### false-tradeoff--false_tradeoff
@@ -11071,6 +11421,7 @@ integrity: Simulators/false-tradeoff/false_tradeoff.py sha12=19170c9b8537 commit
 purpose: **[DRAFT]** false_tradeoff.py CC0 1.0 Universal / public domain dedication.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 7ebbe5669317 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** false-tradeoff--cases (imported-by); false-tradeoff--cases (imports)
 
 ### falsifier-audit--axes
@@ -11092,6 +11443,7 @@ integrity: Simulators/falsifier-audit/axes.py sha12=f5659779624c commit=198937ec
 purpose: **[DRAFT]** axes.py -- axis grouping for A3. The order's key move: index by AXIS, not by rule or by repo, because axes recur across the corpus and rule wordings do not. An axis key is a recurring measurable noun; a falsifier carries the axis keys whose word appears in it. A3 then looks within an axis for records from different repos that carry different numeric cutoffs. Heuristic and stated as such. Stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--checks (imported-by); falsifier-audit--selftest_fa (imported-by)
 
 ### falsifier-audit--checks
@@ -11117,6 +11469,7 @@ integrity: Simulators/falsifier-audit/checks.py sha12=24c3a1e482ae commit=198937
 purpose: **[DRAFT]** checks.py -- A1..A4, each independent, each emitting a research question. No score, no ranking, no fix. A falsifier may hit several. A clean pass is information. Heuristics are stated at the callsite; a noisy check that is cheap to dismiss is acceptable, a silent one is not. Stdlib only.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9c7ccf0772ee (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--queue (imported-by); falsifier-audit--selftest_fa (imported-by); falsifier-audit--axes (imports)
 
 ### falsifier-audit--extract
@@ -11142,6 +11495,7 @@ integrity: Simulators/falsifier-audit/extract.py sha12=8c920ce04061 commit=19893
 purpose: **[DRAFT]** extract.py -- tree walk and FALSIFIER RECORDs. Walks one or more local repo roots (argv, default the checkout root), reads .md and .py text files, and pulls every falsifier with its attachment context, verbatim.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 bb38edc54f61 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--inventory (imported-by); falsifier-audit--queue (imported-by); falsifier-audit--selftest_fa (imported-by); falsifier-audit--queue (shares falsifier-audit/QUEUE.md); falsifier-audit--selftest_fa (shares falsifier-audit/QUEUE.md)
 
 ### falsifier-audit--inventory
@@ -11167,6 +11521,7 @@ integrity: Simulators/falsifier-audit/inventory.py sha12=ec1cc6cd7973 commit=198
 purpose: **[DRAFT]** inventory.py -- run FIRST. Scans the tree and reports the falsifier marker FORMS actually present, before any extractor is built around one. The repos were written over time and the markers vary; this is the census that justifies which forms extract.py handles.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: falsifier-audit/samples/inventory.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 3c2baa5a3ab1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--run_all (imported-by); falsifier-audit--selftest_fa (imported-by); falsifier-audit--extract (imports)
 
 ### falsifier-audit--queue
@@ -11192,6 +11547,7 @@ integrity: Simulators/falsifier-audit/queue.py sha12=ac4c7dcb8ad0 commit=198937e
 purpose: **[DRAFT]** queue.py -- the research queue. Every entry is a QUESTION with status OPEN (the only machine-set value). No rank, no score. Ids are stable: re-running on an unchanged tree emits the same ids, so entries can be closed by hand in a separate file and survive the next run. A coverage line reports falsifiers found / analysed and files skipped and why, so an unscanned file does not read as a clean one. Stdlib only.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: falsifier-audit/samples/queue_head.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 283b302017eb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--run_all (imported-by); falsifier-audit--selftest_fa (imported-by); falsifier-audit--checks (imports); falsifier-audit--extract (imports); falsifier-audit--extract (shares falsifier-audit/QUEUE.md); falsifier-audit--selftest_fa (shares falsifier-audit/QUEUE.md)
 
 ### falsifier-audit--run_all
@@ -11217,6 +11573,7 @@ integrity: Simulators/falsifier-audit/run_all.py sha12=fa902c3cea2d commit=19893
 purpose: **[DRAFT]** run_all.py -- inventory -> extract -> checks -> queue, to stdout. Operates on a local checkout (argv roots, default the checkout root). No network. Stdlib only.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 12a28da0ea04 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--inventory (imports); falsifier-audit--queue (imports)
 
 ### falsifier-audit--selftest_fa
@@ -11282,6 +11639,7 @@ integrity: Simulators/falsifier-audit/selftest_fa.py sha12=d55d7fcab003 commit=1
 purpose: **[DRAFT]** Checks for the falsifier-audit instrument. Known answers first, both directions, on constructed inputs; the corpus is read but not asserted against beyond stable structural facts. Writes samples/ and QUEUE.md.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 53 lines, sha12 7650f8ccad70 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** falsifier-audit--axes (imports); falsifier-audit--checks (imports); falsifier-audit--extract (imports); falsifier-audit--inventory (imports); falsifier-audit--queue (imports); falsifier-audit--extract (shares falsifier-audit/QUEUE.md); falsifier-audit--queue (shares falsifier-audit/QUEUE.md)
 
 ### falsifier-survey--survey--validate
@@ -11303,6 +11661,7 @@ integrity: Simulators/falsifier-survey/survey/validate.py sha12=2f962d1f8947 com
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### field-mode-eval--score
@@ -11328,6 +11687,7 @@ integrity: Simulators/field-mode-eval/score.py sha12=3b555bff2aeb commit=198937e
 purpose: **[DRAFT]** field-mode-eval scorer.  
 input: **[DRAFT]** responses (nargs=?): responses.json: {scenario_id: response_text}; --scenarios; --json (action=store_true): machine-readable output; --selftest (action=store_true)  
 output: **[DRAFT]** sample: field-mode-eval/samples/score.bad.sample.txt; sample: field-mode-eval/samples/score.good.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 2d85262d370e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** field-mode-eval--selftest (imported-by); field-mode-eval--selftest (sibling-selftest)
 
 ### field-mode-eval--selftest
@@ -11351,6 +11711,7 @@ integrity: Simulators/field-mode-eval/selftest.py sha12=a469f7b7b3c1 commit=1989
 purpose: **[DRAFT]** field-mode-eval selftest.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 ea6f25125edd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** field-mode-eval--score (imports); field-mode-eval--score (selftest-of)
 
 ### fold-matrix--fold_matrix
@@ -11414,6 +11775,7 @@ integrity: Simulators/fold-matrix/fold_matrix.py sha12=b66ae331b495 commit=19893
 purpose: **[DRAFT]** fold_matrix -- work order 8. One term, one grid, not one number.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 75 lines, sha12 831773a89adb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fold-matrix--fold_register
@@ -11453,6 +11815,7 @@ integrity: Simulators/fold-matrix/fold_register.py sha12=a4dafcbfb742 commit=198
 purpose: **[DRAFT]** fold_register.py  -- CC0, stdlib only, phone-buildable  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 17 lines, sha12 363b033d8e35 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fold-matrix--register_audit (imported-by)
 
 ### fold-matrix--register_audit
@@ -11476,6 +11839,7 @@ integrity: Simulators/fold-matrix/register_audit.py sha12=ba0d0e030abd commit=19
 purpose: **[DRAFT]** Checks on the delivered `fold_register.py`. Imports it, edits nothing.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: fold-matrix/samples/register_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 7925ac5d5a1e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fold-matrix--fold_register (imports)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit
@@ -11497,6 +11861,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/analysis/
 purpose: **[DRAFT]** Audit engine: extract measurable KPIs and score regulation auditability.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--analysis--audit (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations
@@ -11518,6 +11883,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/analysis/
 purpose: **[DRAFT]** Citation graph: detect references to other regulations in code text.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--analysis--citations (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees
@@ -11539,6 +11905,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/analysis/
 purpose: **[DRAFT]** Fee exploration engine: flat + formulaic fee extraction and cost estimation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--analysis--fees (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline
@@ -11560,6 +11927,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/analysis/
 purpose: **[DRAFT]** Advanced analysis pipeline: chains all analyzers over a translation result.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause
@@ -11581,6 +11949,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/analysis/
 purpose: **[DRAFT]** Root cause analysis: keyword-classify the problem a regulation targets.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--api--main
@@ -11602,6 +11971,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/api/main.
 purpose: **[DRAFT]** 4D Municipal Ordinance & 3D Spatial Envelope API.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--cli
@@ -11630,6 +12000,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/cli.py sh
 purpose: **[DRAFT]** Command-line interface for the 4D Municipal Intelligence Engine.  
 input: **[DRAFT]** text (nargs=?): Text to analyze (optional if --file is given).; --file: Read the text to analyze from a file.; --genre (default=general): Genre baseline for the dynamic lens (default: general).; --deep-analysis (action=store_true): Run the Municipal Code Translator and Advanced Analysis Pipeline.; --citation (default=): Section citation to attach to the translation result (e.g. "Section 12.4").; --json (action=store_true): Emit machine-readable JSON instead of a human-readable report.  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 9d108b678b12 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--cli (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--etl--batch
@@ -11651,6 +12022,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/etl/batch
 purpose: **[DRAFT]** Batch 4D Ordinance & GIS Ingestion Pipeline.  
 input: **[DRAFT]** directory: Directory containing .pdf/.txt ordinance files; --jurisdiction (default=City of Austin): Jurisdiction name; --state (default=TX): Two-letter state code; --fips (default=4805000): FIPS code for the jurisdiction; --workers (default=4): Max parallel parse workers  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--etl--models
@@ -11672,6 +12044,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/etl/model
 purpose: **[DRAFT]** SQLAlchemy ORM models for the 4D municipal PostGIS schema.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--etl--pipeline
@@ -11693,6 +12066,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/etl/pipel
 purpose: **[DRAFT]** 4D Municipal Code & GIS Data Ingestion Pipeline.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--integrity--corruption_risk
@@ -11714,6 +12088,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/integrity
 purpose: **[DRAFT]** Corruption Risk Index (CRI) Engine — STDLIB ONLY.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--integrity--entity_resolution
@@ -11735,6 +12110,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/integrity
 purpose: **[DRAFT]** Entity Resolution Pipeline: Developer Shell LLCs vs. Campaign Donors  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic
@@ -11756,6 +12132,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/lens/dyna
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--lens--dynamic (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--lens--static
@@ -11777,6 +12154,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/lens/stat
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--lens--static (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal
@@ -11798,6 +12176,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/models/mu
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--models--municipal (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors
@@ -11819,6 +12198,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/models/ve
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--models--vectors (same-bytes)
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--parser--ordinance_parser
@@ -11840,6 +12220,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/parser/or
 purpose: **[DRAFT]** Automated 4D Ordinance Metrics Parser.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--parser--schemas
@@ -11861,6 +12242,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/parser/sc
 purpose: **[DRAFT]** Pydantic schemas for structured 4D ordinance metric extraction.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fourd-municipal-engine-v2--fourd_municipal_engine--translator--core
@@ -11882,6 +12264,7 @@ integrity: Simulators/fourd-municipal-engine-v2/fourd_municipal_engine/translato
 purpose: **[DRAFT]** Municipal Code Translator: converts regulatory legalese to plain English.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine--fourd_municipal_engine--translator--core (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--analysis--audit
@@ -11903,6 +12286,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/analysis/aud
 purpose: **[DRAFT]** Audit engine: extract measurable KPIs and score regulation auditability.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--analysis--citations
@@ -11924,6 +12308,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/analysis/cit
 purpose: **[DRAFT]** Citation graph: detect references to other regulations in code text.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--analysis--fees
@@ -11945,6 +12330,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/analysis/fee
 purpose: **[DRAFT]** Fee exploration engine: flat + formulaic fee extraction and cost estimation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline
@@ -11966,6 +12352,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/analysis/pip
 purpose: **[DRAFT]** Advanced analysis pipeline: chains all analyzers over a translation result.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause
@@ -11987,6 +12374,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/analysis/roo
 purpose: **[DRAFT]** Root cause analysis: keyword-classify the problem a regulation targets.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--cli
@@ -12015,6 +12403,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/cli.py sha12
 purpose: **[DRAFT]** Command-line interface for the 4D Municipal Intelligence Engine.  
 input: **[DRAFT]** text (nargs=?): Text to analyze (optional if --file is given).; --file: Read the text to analyze from a file.; --genre (default=general): Genre baseline for the dynamic lens (default: general).; --deep-analysis (action=store_true): Run the Municipal Code Translator and Advanced Analysis Pipeline.; --citation (default=): Section citation to attach to the translation result (e.g. "Section 12.4").; --json (action=store_true): Emit machine-readable JSON instead of a human-readable report.  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 19f32a7a62e9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--cli (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--lens--dynamic
@@ -12036,6 +12425,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/lens/dynamic
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--lens--static
@@ -12057,6 +12447,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/lens/static.
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--lens--static (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--models--municipal
@@ -12078,6 +12469,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/models/munic
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--models--vectors
@@ -12099,6 +12491,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/models/vecto
 purpose: **[DRAFT]** (none extracted: no module docstring)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors (same-bytes)
 
 ### fourd-municipal-engine--fourd_municipal_engine--translator--core
@@ -12120,6 +12513,7 @@ integrity: Simulators/fourd-municipal-engine/fourd_municipal_engine/translator/c
 purpose: **[DRAFT]** Municipal Code Translator: converts regulatory legalese to plain English.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fourd-municipal-engine-v2--fourd_municipal_engine--translator--core (same-bytes)
 
 ### fragility-cascade--alien_homeostasis
@@ -12141,6 +12535,7 @@ integrity: Simulators/fragility-cascade/alien_homeostasis.py sha12=14abca05370d 
 purpose: **[DRAFT]** alien_homeostasis.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/alien_homeostasis.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--anthropomorphic_entrainment
@@ -12204,6 +12599,7 @@ integrity: Simulators/fragility-cascade/anthropomorphic_entrainment.py sha12=ec4
 purpose: **[DRAFT]** anthropomorphic_entrainment.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/anthropomorphic_entrainment.sample.txt; run capture: RUN, exit 0, 44 lines, sha12 b4928f6f5086 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--attack_tree
@@ -12267,6 +12663,7 @@ integrity: Simulators/fragility-cascade/attack_tree.py sha12=c67462458705 commit
 purpose: **[DRAFT]** attack_tree.py ------------- The attack surface as a fractal, plus the growth law.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/attack_tree.sample.txt; run capture: RUN, exit 0, 48 lines, sha12 6d677fb5cf74 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--attractor_depth_test
@@ -12314,6 +12711,7 @@ integrity: Simulators/fragility-cascade/attractor_depth_test.py sha12=9210fea4d7
 purpose: **[DRAFT]** attractor_depth_test.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/attractor_depth_test.sample.txt; run capture: RUN, exit 0, 25 lines, sha12 417f99f80002 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--attribution_field
@@ -12335,6 +12733,7 @@ integrity: Simulators/fragility-cascade/attribution_field.py sha12=54a69aa6998f 
 purpose: **[DRAFT]** attribution_field.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--bacterial_herding
@@ -12387,6 +12786,7 @@ integrity: Simulators/fragility-cascade/bacterial_herding.py sha12=74f45ad73e4b 
 purpose: **[DRAFT]** bacterial_herding.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/bacterial_herding.sample.txt; run capture: RUN, exit 0, 30 lines, sha12 162a4ced20dc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--cascade_network
@@ -12430,6 +12830,7 @@ integrity: Simulators/fragility-cascade/cascade_network.py sha12=d95739b4917d co
 purpose: **[DRAFT]** cascade_network.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/cascade_network.sample.txt; run capture: RUN, exit 0, 21 lines, sha12 8c9f05285474 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--explorer (imported-by); fragility-cascade--phase_space_map (imported-by); fragility-cascade--sensitivity_analysis (imported-by)
 
 ### fragility-cascade--cascade_redesign_m_collapse
@@ -12478,6 +12879,7 @@ integrity: Simulators/fragility-cascade/cascade_redesign_M_collapse.py sha12=e15
 purpose: **[DRAFT]** cascade_redesign_M_collapse.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/cascade_redesign_M_collapse.sample.txt; run capture: RUN, exit 0, 26 lines, sha12 c02767ff0c12 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--cascade_redesign_vulnerability
@@ -12541,6 +12943,7 @@ integrity: Simulators/fragility-cascade/cascade_redesign_vulnerability.py sha12=
 purpose: **[DRAFT]** cascade_redesign_vulnerability.py --------------------------------- The vector the Fragility Cascade missed.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/cascade_redesign_vulnerability.sample.txt; run capture: RUN, exit 0, 77 lines, sha12 e7906753b91f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--case_studies--refutation_protocol
@@ -12604,6 +13007,7 @@ integrity: Simulators/fragility-cascade/case_studies/refutation_protocol.py sha1
 purpose: **[DRAFT]** refutation_protocol.py  (v2)  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 46 lines, sha12 0af033b073ab (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--clock
@@ -12625,6 +13029,7 @@ integrity: Simulators/fragility-cascade/clock.py sha12=0a98deef1731 commit=19893
 purpose: **[DRAFT]** clock.py -- decay registry. CC0. stdlib only. Domain-neutral.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/clock.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--echo (imported-by); fragility-cascade--entrain (imported-by); fragility-cascade--modes (imported-by); fragility-cascade--syndrome (imported-by)
 
 ### fragility-cascade--coherens
@@ -12688,6 +13093,7 @@ integrity: Simulators/fragility-cascade/coherens.py sha12=438aa0cfe990 commit=19
 purpose: **[DRAFT]** coherens.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/coherens.sample.txt; sample: fragility-cascade/samples/coherens_attack.sample.txt; run capture: RUN, exit 0, 42 lines, sha12 8ea1db16c612 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--coherens_attack (shares fragility-cascade/samples/coherens_attack.sample.txt)
 
 ### fragility-cascade--coherens_attack
@@ -12751,6 +13157,7 @@ integrity: Simulators/fragility-cascade/coherens_attack.py sha12=e3a67de929bc co
 purpose: **[DRAFT]** coherens_attack.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/coherens_attack.sample.txt; run capture: RUN, exit 0, 63 lines, sha12 8c61aecadc46 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--coherens (shares fragility-cascade/samples/coherens_attack.sample.txt)
 
 ### fragility-cascade--collapse_predictor
@@ -12814,6 +13221,7 @@ integrity: Simulators/fragility-cascade/collapse_predictor.py sha12=5646bf03f333
 purpose: **[DRAFT]** collapse_predictor.py — canonical predictor  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/collapse_predictor.sample.txt; run capture: RUN, exit 0, 48 lines, sha12 a2dfb32438a6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--collapsetracker_harness
@@ -12867,6 +13275,7 @@ integrity: Simulators/fragility-cascade/collapsetracker_harness.py sha12=609b2d3
 purpose: **[DRAFT]** collapsetracker_harness.py  
 input: **[DRAFT]** metrics_csv (nargs=?): path to CollapseTracker aggregated metrics table  
 output: **[DRAFT]** sample: fragility-cascade/samples/collapsetracker_harness.sample.txt; run capture: RUN, exit 0, 31 lines, sha12 55a725a110a9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--field_collapse (imports)
 
 ### fragility-cascade--communication_gradients
@@ -12930,6 +13339,7 @@ integrity: Simulators/fragility-cascade/communication_gradients.py sha12=aaa49f1
 purpose: **[DRAFT]** communication_gradients.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/communication_gradients.sample.txt; run capture: RUN, exit 0, 42 lines, sha12 23a913714d39 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--communication_vulnerability
@@ -12974,6 +13384,7 @@ integrity: Simulators/fragility-cascade/communication_vulnerability.py sha12=a95
 purpose: **[DRAFT]** communication_vulnerability.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/communication_vulnerability.sample.txt; run capture: RUN, exit 0, 22 lines, sha12 10f5fc3e7aaf (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--coupling_gap_test
@@ -13020,6 +13431,7 @@ integrity: Simulators/fragility-cascade/coupling_gap_test.py sha12=1e0014e9fe4d 
 purpose: **[DRAFT]** coupling_gap_test.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/coupling_gap_test.sample.txt; run capture: RUN, exit 0, 24 lines, sha12 92a244be2aa3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--cryptographic_interference
@@ -13083,6 +13495,7 @@ integrity: Simulators/fragility-cascade/cryptographic_interference.py sha12=97c7
 purpose: **[DRAFT]** cryptographic_interference.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/cryptographic_interference.sample.txt; run capture: RUN, exit 0, 83 lines, sha12 5d789a32800e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--divlog
@@ -13104,6 +13517,7 @@ integrity: Simulators/fragility-cascade/divlog.py sha12=634f4aafb19e commit=1989
 purpose: **[DRAFT]** divlog.py -- append-only divergence log. v1. CC0. stdlib only. Phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/divlog_entrain_syndrome.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--instruments (imported-by); fragility-cascade--syndrome (imported-by)
 
 ### fragility-cascade--echo
@@ -13125,6 +13539,7 @@ integrity: Simulators/fragility-cascade/echo.py sha12=f859e4eaf350 commit=198937
 purpose: **[DRAFT]** echo.py -- independence by construction, not by declaration. CC0. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/echo.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--clock (imports)
 
 ### fragility-cascade--engagement_threshold
@@ -13174,6 +13589,7 @@ integrity: Simulators/fragility-cascade/engagement_threshold.py sha12=d94a899a91
 purpose: **[DRAFT]** engagement_threshold.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/engagement_threshold.sample.txt; run capture: RUN, exit 0, 27 lines, sha12 16196936857a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--entrain
@@ -13195,6 +13611,7 @@ integrity: Simulators/fragility-cascade/entrain.py sha12=50175957db3a commit=198
 purpose: **[DRAFT]** entrain.py -- the zeitgeber. v1 against SPEC_drift_mesh. CC0. stdlib only. imports clock.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--syndrome (imported-by); fragility-cascade--clock (imports)
 
 ### fragility-cascade--explorer
@@ -13223,6 +13640,7 @@ integrity: Simulators/fragility-cascade/explorer.py sha12=200b521cc06b commit=19
 purpose: **[DRAFT]** explorer.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/explorer.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 bd0135257cd1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--cascade_network (imports); fragility-cascade--phase_space_map (imports); fragility-cascade--sensitivity_analysis (imports)
 
 ### fragility-cascade--field_collapse
@@ -13282,6 +13700,7 @@ integrity: Simulators/fragility-cascade/field_collapse.py sha12=aaff524f3a9a com
 purpose: **[DRAFT]** field_collapse.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/field_collapse.sample.txt; run capture: RUN, exit 0, 37 lines, sha12 f29a37e646e4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--collapsetracker_harness (imported-by)
 
 ### fragility-cascade--friction_calibration_ratio
@@ -13331,6 +13750,7 @@ integrity: Simulators/fragility-cascade/friction_calibration_ratio.py sha12=7d8d
 purpose: **[DRAFT]** friction_calibration_ratio.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/friction_calibration_ratio.sample.txt; run capture: RUN, exit 0, 27 lines, sha12 ace4fce84013 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--homeostasis_kernel
@@ -13394,6 +13814,7 @@ integrity: Simulators/fragility-cascade/homeostasis_kernel.py sha12=d780c4192506
 purpose: **[DRAFT]** homeostasis_kernel.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/homeostasis_kernel.sample.txt; run capture: RUN, exit 0, 63 lines, sha12 dad49fec4556 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--inference_entropy
@@ -13439,6 +13860,7 @@ integrity: Simulators/fragility-cascade/inference_entropy.py sha12=7e42246cde80 
 purpose: **[DRAFT]** inference_entropy.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/inference_entropy.sample.txt; run capture: RUN, exit 0, 23 lines, sha12 d51e7d2e4a0a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--info_taxonomy
@@ -13502,6 +13924,7 @@ integrity: Simulators/fragility-cascade/info_taxonomy.py sha12=6158a5e35314 comm
 purpose: **[DRAFT]** info_taxonomy.py -- a generalized taxonomy for information: types of information, ways of obtaining it, ways to know it, and how any claim's support can be read. Domain-neutral. CC0 / Public Domain. stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/info_taxonomy.sample.txt; run capture: RUN, exit 0, 49 lines, sha12 de90d2787318 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--revalidate (imported-by); fragility-cascade--scaffold (imported-by)
 
 ### fragility-cascade--institutional_audit
@@ -13523,6 +13946,7 @@ integrity: Simulators/fragility-cascade/institutional_audit.py sha12=a6bfede743f
 purpose: **[DRAFT]** institutional_audit.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--instruments
@@ -13544,6 +13968,7 @@ integrity: Simulators/fragility-cascade/instruments.py sha12=e8b144beb82d commit
 purpose: **[DRAFT]** instruments.py -- registry of measuring instruments that DO NOT YET EXIST. v2. CC0. stdlib only. Phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/instruments.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--divlog (imports)
 
 ### fragility-cascade--interaction_audit
@@ -13599,6 +14024,7 @@ integrity: Simulators/fragility-cascade/interaction_audit.py sha12=6e1426143720 
 purpose: **[DRAFT]** interaction_audit.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/interaction_audit.sample.txt; run capture: RUN, exit 0, 33 lines, sha12 2c06abd9a34d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--clock_v1
@@ -13620,6 +14046,7 @@ integrity: Simulators/fragility-cascade/legacy/clock_v1.py sha12=a9f2ede2f2fd co
 purpose: **[DRAFT]** clock.py -- shared volatility clock for the info_taxonomy ecosystem. CC0. stdlib only. Domain-neutral.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--collapse_predictor_v1
@@ -13683,6 +14110,7 @@ integrity: Simulators/fragility-cascade/legacy/collapse_predictor_v1.py sha12=a6
 purpose: **[DRAFT]** collapse_predictor.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 66 lines, sha12 29d3be4f1602 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--divlog_v1
@@ -13704,6 +14132,7 @@ integrity: Simulators/fragility-cascade/legacy/divlog_v1.py sha12=3642320657f0 c
 purpose: **[DRAFT]** divlog.py -- append-only NDJSON log of module disagreements. No deps. CC0. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--divlog_v2
@@ -13725,6 +14154,7 @@ integrity: Simulators/fragility-cascade/legacy/divlog_v2.py sha12=d6b2db55cdee c
 purpose: **[DRAFT]** divlog.py -- append-only divergence log. v1 against SPEC_drift_mesh. No deps. CC0. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--entrain_v1
@@ -13746,6 +14176,7 @@ integrity: Simulators/fragility-cascade/legacy/entrain_v1.py sha12=41c166f5b3a5 
 purpose: **[DRAFT]** entrain.py -- zeitgeber for the divergence log. CC0. stdlib only. imports divlog.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--instruments_v1
@@ -13767,6 +14198,7 @@ integrity: Simulators/fragility-cascade/legacy/instruments_v1.py sha12=291d69aa1
 purpose: **[DRAFT]** instruments.py -- registry of measuring instruments that DO NOT YET EXIST. v1. CC0. stdlib only. Phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--modes_v1
@@ -13820,6 +14252,7 @@ integrity: Simulators/fragility-cascade/legacy/modes_v1.py sha12=965147165987 co
 purpose: **[DRAFT]** modes.py -- harness for B. Zero rows. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 31 lines, sha12 5a1166aad9e8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--modes_v2
@@ -13841,6 +14274,7 @@ integrity: Simulators/fragility-cascade/legacy/modes_v2.py sha12=39d0fa62560b co
 purpose: **[DRAFT]** modes.py -- mode-table harness + clock handshake. CC0. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--refutation_protocol_v1
@@ -13891,6 +14325,7 @@ integrity: Simulators/fragility-cascade/legacy/refutation_protocol_v1.py sha12=b
 purpose: **[DRAFT]** refutation_protocol.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 28 lines, sha12 8e9ca986097f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--scale_invariant_audit_v1
@@ -13954,6 +14389,7 @@ integrity: Simulators/fragility-cascade/legacy/scale_invariant_audit_v1.py sha12
 purpose: **[DRAFT]** scale_invariant_audit.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 54 lines, sha12 d8e00232931a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--legacy--syndrome_v1
@@ -13975,6 +14411,7 @@ integrity: Simulators/fragility-cascade/legacy/syndrome_v1.py sha12=abc8debee25a
 purpose: **[DRAFT]** syndrome.py -- parity / trace / mesh on the divergence log. CC0. stdlib only. imports divlog. (entrain is orthogonal; syndrome reads whatever phase fields are already on the entries.)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--linguistic_interference
@@ -14038,6 +14475,7 @@ integrity: Simulators/fragility-cascade/linguistic_interference.py sha12=10481e2
 purpose: **[DRAFT]** linguistic_interference.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/linguistic_interference.sample.txt; run capture: RUN, exit 0, 52 lines, sha12 f73e121c583a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--microdroplet_catalyst
@@ -14093,6 +14531,7 @@ integrity: Simulators/fragility-cascade/microdroplet_catalyst.py sha12=80040db2d
 purpose: **[DRAFT]** microdroplet_catalysis.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/microdroplet_catalyst.sample.txt; run capture: RUN, exit 0, 33 lines, sha12 9dbd846bee17 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--modes
@@ -14114,6 +14553,7 @@ integrity: Simulators/fragility-cascade/modes.py sha12=d718f2eb1944 commit=19893
 purpose: **[DRAFT]** modes.py -- mode-table harness. v2, built against the decay registry. CC0. stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/modes.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--clock (imports)
 
 ### fragility-cascade--nautilus_architecture
@@ -14171,6 +14611,7 @@ integrity: Simulators/fragility-cascade/nautilus_architecture.py sha12=65d7ac7e3
 purpose: **[DRAFT]** nautilus_architecture.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/nautilus_architecture.sample.txt; run capture: RUN, exit 0, 35 lines, sha12 8a3e78995866 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--phase_space_map
@@ -14199,6 +14640,7 @@ integrity: Simulators/fragility-cascade/phase_space_map.py sha12=e8e2a1df0662 co
 purpose: **[DRAFT]** phase_space_map.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/phase_space_map.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 5b0b10aa834e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--explorer (imported-by); fragility-cascade--cascade_network (imports)
 
 ### fragility-cascade--phi_collapse_variables
@@ -14262,6 +14704,7 @@ integrity: Simulators/fragility-cascade/phi_collapse_variables.py sha12=8f76ac68
 purpose: **[DRAFT]** phi_collapse_variables.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/phi_collapse_variables.sample.txt; run capture: RUN, exit 0, 59 lines, sha12 7b2c74500a53 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--product_multiplicity
@@ -14296,6 +14739,7 @@ integrity: Simulators/fragility-cascade/product_multiplicity.py sha12=064de39459
 purpose: **[DRAFT]** product_multiplicity.py ----------------------- Why a barrel of oil is intrinsically hedged and a compute-hour is not.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/product_multiplicity.sample.txt; run capture: RUN, exit 0, 12 lines, sha12 918ea34bd79d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--reciprocity_phi_metrics
@@ -14356,6 +14800,7 @@ integrity: Simulators/fragility-cascade/reciprocity_phi_metrics.py sha12=46bd031
 purpose: **[DRAFT]** reciprocity_phi_metrics.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/reciprocity_phi_metrics.sample.txt; run capture: RUN, exit 0, 38 lines, sha12 077f33f64e65 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--redemption_entropy
@@ -14388,6 +14833,7 @@ integrity: Simulators/fragility-cascade/redemption_entropy.py sha12=bf4dd732a5f3
 purpose: **[DRAFT]** redemption_entropy.py -------------------- How redeemable is a token, period by period, given a chain of L gates that can each say "no"?  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/redemption_entropy.sample.txt; sample: fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt; run capture: RUN, exit 0, 10 lines, sha12 b7550ac1b3a7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--redemption_entropy_peak_hour (shares fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt)
 
 ### fragility-cascade--redemption_entropy_peak_hour
@@ -14448,6 +14894,7 @@ integrity: Simulators/fragility-cascade/redemption_entropy_peak_hour.py sha12=32
 purpose: **[DRAFT]** redemption_entropy_peak_hour.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt; run capture: RUN, exit 0, 38 lines, sha12 fa473829bfb0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--redemption_entropy (shares fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt)
 
 ### fragility-cascade--resonance_audit
@@ -14511,6 +14958,7 @@ integrity: Simulators/fragility-cascade/resonance_audit.py sha12=6a602bb34dbd co
 purpose: **[DRAFT]** resonance_audit.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/resonance_audit.sample.txt; run capture: RUN, exit 0, 86 lines, sha12 934b82554afc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--revalidate
@@ -14574,6 +15022,7 @@ integrity: Simulators/fragility-cascade/revalidate.py sha12=a0d0fb951f93 commit=
 purpose: **[DRAFT]** revalidate.py -- re-evaluate a decayed claim: what decayed, and what retest that actually implies. CC0 / Public Domain. stdlib-only. imports info_taxonomy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/revalidate.sample.txt; run capture: RUN, exit 0, 86 lines, sha12 5612e2daa0c2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--info_taxonomy (imports)
 
 ### fragility-cascade--run_all
@@ -14639,6 +15088,7 @@ integrity: Simulators/fragility-cascade/run_all.py sha12=8e6a0e8cae95 commit=198
 purpose: **[DRAFT]** run_all.py — top-level runner for fragility-cascade/.  
 input: **[DRAFT]** --timeout (default=15.0): per-module wall-time cap in seconds (default 15); --json: path to write the JSON report (default: <root>/samples/run_all_report.json); --root: directory of modules to run  
 output: **[DRAFT]** sample: fragility-cascade/samples/run_all.sample.txt; sample: fragility-cascade/samples/run_all_report.json; run capture: FAILED, exit 4, 84 lines, sha12 5744314b6246 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--scaffold
@@ -14699,6 +15149,7 @@ integrity: Simulators/fragility-cascade/scaffold.py sha12=1d0d1fff6228 commit=19
 purpose: **[DRAFT]** scaffold.py -- a nomenclatural code for claims. CC0 / Public Domain. stdlib-only. imports info_taxonomy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/scaffold.sample.txt; run capture: RUN, exit 0, 38 lines, sha12 628e37bd8aee (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--info_taxonomy (imports)
 
 ### fragility-cascade--scale_invariant_audit
@@ -14762,6 +15213,7 @@ integrity: Simulators/fragility-cascade/scale_invariant_audit.py sha12=b7a80eb58
 purpose: **[DRAFT]** scale_invariant_audit.py  (v2)  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/scale_invariant_audit.sample.txt; run capture: RUN, exit 0, 67 lines, sha12 3511f50be0e4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--scale_regime_shift
@@ -14790,6 +15242,7 @@ integrity: Simulators/fragility-cascade/scale_regime_shift.py sha12=e2664fa0843c
 purpose: **[DRAFT]** scale_regime_switch.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/scale_regime_shift.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 c3b9d77b17e9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--scent
@@ -14826,6 +15279,7 @@ integrity: Simulators/fragility-cascade/scent.py sha12=0b21c388f3ee commit=19893
 purpose: **[DRAFT]** scent.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/scent.sample.txt; run capture: RUN, exit 0, 14 lines, sha12 89ece1dacc6d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--semantic_drift_test
@@ -14868,6 +15322,7 @@ integrity: Simulators/fragility-cascade/semantic_drift_test.py sha12=feb8d93314e
 purpose: **[DRAFT]** semantic_drift_test.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/semantic_drift_test.sample.txt; run capture: RUN, exit 0, 20 lines, sha12 353de554cd04 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--semantic_interference_vectors
@@ -14931,6 +15386,7 @@ integrity: Simulators/fragility-cascade/semantic_interference_vectors.py sha12=5
 purpose: **[DRAFT]** semantic_interference_vectors.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/semantic_interference_vectors.sample.txt; run capture: RUN, exit 0, 75 lines, sha12 40cf4e85a8f9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--sensitivity_analysis
@@ -14959,6 +15415,7 @@ integrity: Simulators/fragility-cascade/sensitivity_analysis.py sha12=36732c44c3
 purpose: **[DRAFT]** sensitivity_analysis.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/sensitivity_analysis.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 6e8ba91f1a80 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--explorer (imported-by); fragility-cascade--cascade_network (imports)
 
 ### fragility-cascade--substrate_spectrum
@@ -14993,6 +15450,7 @@ integrity: Simulators/fragility-cascade/substrate_spectrum.py sha12=873c468c709c
 purpose: **[DRAFT]** substrate_spectrum.py --------------------- The substrate hierarchy as a scored model, plus the Monetary Durability Index.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/substrate_spectrum.sample.txt; run capture: RUN, exit 0, 12 lines, sha12 f4a799f9bee9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--superionic_anyionic_bridge
@@ -15055,6 +15513,7 @@ integrity: Simulators/fragility-cascade/superionic_anyionic_bridge.py sha12=f3ca
 purpose: **[DRAFT]** superionic_anyonic_bridge.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 40 lines, sha12 35814041237b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--survival_spirals
@@ -15118,6 +15577,7 @@ integrity: Simulators/fragility-cascade/survival_spirals.py sha12=9ab1e543f02b c
 purpose: **[DRAFT]** survival_spirals.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/survival_spirals.sample.txt; run capture: RUN, exit 0, 50 lines, sha12 3f850b7557c6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--syndrome
@@ -15139,6 +15599,7 @@ integrity: Simulators/fragility-cascade/syndrome.py sha12=cd6962f33727 commit=19
 purpose: **[DRAFT]** syndrome.py -- parity between peers, without reading content. v1 against SPEC. CC0. stdlib only. imports clock, entrain, divlog.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--clock (imports); fragility-cascade--divlog (imports); fragility-cascade--entrain (imports)
 
 ### fragility-cascade--testc29
@@ -15160,6 +15621,7 @@ integrity: Simulators/fragility-cascade/testC29.py sha12=a6651b2eb620 commit=198
 purpose: **[DRAFT]** test_c29.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--the_laboratory (imports)
 
 ### fragility-cascade--the_laboratory
@@ -15203,6 +15665,7 @@ integrity: Simulators/fragility-cascade/the_laboratory.py sha12=745060f91a74 com
 purpose: **[DRAFT]** the_laboratory.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 21 lines, sha12 70e11f510a40 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--testc29 (imported-by)
 
 ### fragility-cascade--thermo_assume
@@ -15260,6 +15723,7 @@ integrity: Simulators/fragility-cascade/thermo_assume.py sha12=b9b7e5d94b9b comm
 purpose: **[DRAFT]** thermo_assume.py -- make omissions loud. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_assume.sample.txt; run capture: RUN, exit 0, 35 lines, sha12 b2fbc25563b2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_pipeline_demo (imported-by); fragility-cascade--thermo_interrogate (imports); fragility-cascade--thermo_pm (imports)
 
 ### fragility-cascade--thermo_explore
@@ -15301,6 +15765,7 @@ integrity: Simulators/fragility-cascade/thermo_explore.py sha12=89e45f43e1c8 com
 purpose: **[DRAFT]** thermo_explore.py -- AI-facing exploration surface over the thermo_pm referee. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_explore.sample.txt; run capture: RUN, exit 0, 19 lines, sha12 c4e0f12d6e9a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_interrogate (imported-by); fragility-cascade--thermo_pipeline_demo (imported-by); fragility-cascade--thermo_pm (imports)
 
 ### fragility-cascade--thermo_interrogate
@@ -15349,6 +15814,7 @@ integrity: Simulators/fragility-cascade/thermo_interrogate.py sha12=a04dc95919c9
 purpose: **[DRAFT]** thermo_interrogate.py -- the site interrogation, computed. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_interrogate.sample.txt; run capture: RUN, exit 0, 26 lines, sha12 65b3d2c2c526 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_assume (imported-by); fragility-cascade--thermo_pipeline_demo (imported-by); fragility-cascade--thermo_explore (imports); fragility-cascade--thermo_pm (imports)
 
 ### fragility-cascade--thermo_know
@@ -15412,6 +15878,7 @@ integrity: Simulators/fragility-cascade/thermo_know.py sha12=f2e2373c463c commit
 purpose: **[DRAFT]** thermo_know.py -- a taxonomy for information: WHAT is claimed, HOW it was gotten, and how claims CROSS-REFERENCE. Provenance is first-class. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_know.sample.txt; run capture: RUN, exit 0, 67 lines, sha12 612f9962f899 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_spine (imported-by)
 
 ### fragility-cascade--thermo_pipeline_demo
@@ -15475,6 +15942,7 @@ integrity: Simulators/fragility-cascade/thermo_pipeline_demo.py sha12=4215665f35
 purpose: **[DRAFT]** thermo_pipeline_demo.py -- end-to-end walk through the four-module stack. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_pipeline_demo.sample.txt; run capture: RUN, exit 0, 106 lines, sha12 ef082fe34f03 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_assume (imports); fragility-cascade--thermo_explore (imports); fragility-cascade--thermo_interrogate (imports); fragility-cascade--thermo_pm (imports)
 
 ### fragility-cascade--thermo_pm
@@ -15513,6 +15981,7 @@ integrity: Simulators/fragility-cascade/thermo_pm.py sha12=a04c6657d680 commit=1
 purpose: **[DRAFT]** thermo_pm.py -- Thermodynamic Project Management Engine CC0 / Public Domain -- No rights reserved.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_pm.sample.txt; run capture: RUN, exit 0, 16 lines, sha12 7b0032b0a854 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_assume (imported-by); fragility-cascade--thermo_explore (imported-by); fragility-cascade--thermo_interrogate (imported-by); fragility-cascade--thermo_pipeline_demo (imported-by)
 
 ### fragility-cascade--thermo_purpose
@@ -15576,6 +16045,7 @@ integrity: Simulators/fragility-cascade/thermo_purpose.py sha12=afa9a30e4b2e com
 purpose: **[DRAFT]** thermo_purpose.py -- close the loop at end-of-life, not just at build. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_purpose.sample.txt; run capture: RUN, exit 0, 52 lines, sha12 567c22e0fb41 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--thermo_spine
@@ -15624,6 +16094,7 @@ integrity: Simulators/fragility-cascade/thermo_spine.py sha12=d8a0cd03b033 commi
 purpose: **[DRAFT]** thermo_spine.py -- thread provenance through the whole stack. CC0 / Public Domain.  stdlib-only.  imports thermo_know.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_spine.sample.txt; run capture: RUN, exit 0, 26 lines, sha12 d9f224e418f1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_know (imports)
 
 ### fragility-cascade--thermo_survey
@@ -15675,6 +16146,7 @@ integrity: Simulators/fragility-cascade/thermo_survey.py sha12=d55eb0e81935 comm
 purpose: **[DRAFT]** thermo_survey.py -- read the site's fields before naming any phenomenon. CC0 / Public Domain.  stdlib-only.  sits ABOVE thermo_synth.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_survey.sample.txt; run capture: RUN, exit 0, 29 lines, sha12 f175fdf46df6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_synth (imports)
 
 ### fragility-cascade--thermo_synth
@@ -15712,6 +16184,7 @@ integrity: Simulators/fragility-cascade/thermo_synth.py sha12=f702f3fb5f28 commi
 purpose: **[DRAFT]** thermo_synth.py -- reason from physical quantity, not from named artifact. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_synth.sample.txt; run capture: RUN, exit 0, 15 lines, sha12 2f9927260d15 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** fragility-cascade--thermo_survey (imported-by)
 
 ### fragility-cascade--thermo_value
@@ -15775,6 +16248,7 @@ integrity: Simulators/fragility-cascade/thermo_value.py sha12=6e0a57d3315c commi
 purpose: **[DRAFT]** thermo_value.py -- two ontologies of value, as LENSES not verdicts. CC0 / Public Domain.  stdlib-only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: fragility-cascade/samples/thermo_value.sample.txt; run capture: RUN, exit 0, 43 lines, sha12 7e6cfa1a61c7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--valence_drift_test
@@ -15824,6 +16298,7 @@ integrity: Simulators/fragility-cascade/valence_drift_test.py sha12=8e40bbbda2e0
 purpose: **[DRAFT]** valence_drift_test.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/valence_drift_test.sample.txt; run capture: RUN, exit 0, 27 lines, sha12 1f353a59c8cb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### fragility-cascade--weird_gatekeeper
@@ -15879,6 +16354,7 @@ integrity: Simulators/fragility-cascade/weird_gatekeeper.py sha12=23b14f2476fb c
 purpose: **[DRAFT]** weird_gatekeeper.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: fragility-cascade/samples/weird_gatekeeper.sample.txt; run capture: RUN, exit 0, 34 lines, sha12 9568231d356a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--audit
@@ -15942,6 +16418,7 @@ integrity: Simulators/frame-instruments/audit.py sha12=12b77f542f94 commit=19893
 purpose: **[DRAFT]** Audit of frame-instruments, computed rather than asserted. Imports the build modules by path (unique names, so the audit itself cannot suffer FI_001) and edits nothing. Every finding prints the number that decides it. Same-node: builder and auditor are one system (FI_010); the numbers are the part anyone can recompute.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 49 lines, sha12 18a04fe09974 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--b1--nulls
@@ -15963,6 +16440,7 @@ integrity: Simulators/frame-instruments/b1/nulls.py sha12=a530e9df2ca9 commit=19
 purpose: **[DRAFT]** B1 nulls N1-N5 from workorders/runner_up_trace.md section 7, each evaluated to a number and a triggered flag. Not a command; imported by report.py. Every threshold is an argument and is printed with the result.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b1--report (imported-by)
 
 ### frame-instruments--b1--permute
@@ -15988,6 +16466,7 @@ integrity: Simulators/frame-instruments/b1/permute.py sha12=0b9e7faf671c commit=
 purpose: **[DRAFT]** B1.3 permute.py -- shuffle WHICH position carries which (ent_i, gap_i, resync_D, div_D) tuple. Row count and every other field preserved. [CHOICE] tuples are shuffled within each (model_id, D, L) stratum, independently per stratum, so the sweep structure survives and the top-decile sets at adjacent D or L are independent under the null. The seed is written into every row as permute_seed.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 3c04fc212e73 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--b1--report
@@ -16013,6 +16492,7 @@ integrity: Simulators/frame-instruments/b1/report.py sha12=8f34626495bd commit=1
 purpose: **[DRAFT]** B1.5 report.py -- report.md from the real and permuted summaries. Six sections, in order, no others. The permuted result is a SECOND OUTPUT: if the permuted summary is missing the run is void and nothing is written.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** sample: frame-instruments/b1/samples/report.sample.md; run capture: FAILED, exit 2, 1 lines, sha12 fcfe01c20331 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b1--nulls (imports)
 
 ### frame-instruments--b1--schema
@@ -16038,6 +16518,7 @@ integrity: Simulators/frame-instruments/b1/schema.py sha12=52a5a5d3f50e commit=1
 purpose: **[DRAFT]** B1.1 schema.py -- validators for base.jsonl and traces.jsonl. Rejects with file, line number and field name. No coercion, no defaults.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 f492c61c82ae (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b1--score (imported-by)
 
 ### frame-instruments--b1--score
@@ -16063,6 +16544,7 @@ integrity: Simulators/frame-instruments/b1/score.py sha12=9d0b6039f0b7 commit=19
 purpose: **[DRAFT]** B1.2 score.py -- separations.jsonl, one row per (trace, D, L).  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 f492c61c82ae (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b1--schema (imports)
 
 ### frame-instruments--b1--summarise
@@ -16088,6 +16570,7 @@ integrity: Simulators/frame-instruments/b1/summarise.py sha12=1d39eb784840 commi
 purpose: **[DRAFT]** B1.4 summarise.py -- runs identically on the real and the permuted file; no branching on which it got.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 3c04fc212e73 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--b2--agree
@@ -16113,6 +16596,7 @@ integrity: Simulators/frame-instruments/b2/agree.py sha12=ba5bd5bdd7f1 commit=19
 purpose: **[DRAFT]** B2.4 agree.py -- agreement across independent auditors. No correctness.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** sample: frame-instruments/b2/samples/agree.sample.jsonl; run capture: FAILED, exit 2, 1 lines, sha12 04fd792e7e0a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b2--conditions (imports); frame-instruments--b2--lock (imports)
 
 ### frame-instruments--b2--conditions
@@ -16138,6 +16622,7 @@ integrity: Simulators/frame-instruments/b2/conditions.py sha12=2971bc641b60 comm
 purpose: **[DRAFT]** B2.1 conditions.py -- four presentation files from cases.jsonl. Each row: case_id, condition, presented_text ONLY. Withheld fields never appear, asserted on every row by field set and by substring.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9f6a12cf3047 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b2--agree (imported-by); frame-instruments--b2--lock (imported-by)
 
 ### frame-instruments--b2--lock
@@ -16159,6 +16644,7 @@ integrity: Simulators/frame-instruments/b2/lock.py sha12=7b5df891e1a8 commit=198
 purpose: **[DRAFT]** B2.3 lock.py -- condition D's commit lock as a process boundary.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b2--agree (imported-by); frame-instruments--b2--conditions (imports)
 
 ### frame-instruments--b2--order
@@ -16184,6 +16670,7 @@ integrity: Simulators/frame-instruments/b2/order.py sha12=629c640f9590 commit=19
 purpose: **[DRAFT]** B2.2 order.py -- counterbalance condition order across readers. Readers are taken in blocks of four; each block receives a fresh seeded 4x4 WILLIAMS square (the n=4 row-complete Latin square, relabelled by a seeded permutation of A,B,C,D), so every condition sits in every position once per block AND every ordered successor pair occurs exactly once per block -- a cyclic square balances position only and confounds carryover. Readers past the last full block receive a seeded permutation each, and the shortfall is stated in the run record notes. Seed written into every row.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 1cec5fed1afb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--b3--arms
@@ -16209,6 +16696,7 @@ integrity: Simulators/frame-instruments/b3/arms.py sha12=5ccaa457fb91 commit=198
 purpose: **[DRAFT]** B3.3 arms.py -- declare the arms and refuse to mix them in one file.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9f6a12cf3047 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### frame-instruments--b3--join
@@ -16234,6 +16722,7 @@ integrity: Simulators/frame-instruments/b3/join.py sha12=f4fd6acacbca commit=198
 purpose: **[DRAFT]** B3.2 join.py -- join statements.jsonl and keys.jsonl into the cases.jsonl schema B2 consumes, every row carrying its arm. Rows on one side with no partner are DROPPED, and every drop is counted and listed in the run record; nothing is dropped silently.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 e5c77481dcef (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b3--split (imports)
 
 ### frame-instruments--b3--split
@@ -16255,6 +16744,7 @@ integrity: Simulators/frame-instruments/b3/split.py sha12=c5ac20454eb6 commit=19
 purpose: **[DRAFT]** B3.1 split.py -- prompt files for two roles that never share context.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b3--join (imported-by)
 
 ### frame-instruments--b4--agreement
@@ -16280,6 +16770,7 @@ integrity: Simulators/frame-instruments/b4/agreement.py sha12=d888f13efd9f commi
 purpose: **[DRAFT]** B4.5 agreement.py -- agreement across reconstructors from an external matches file. Does no matching itself.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d1ce59282902 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--calibrate
@@ -16305,6 +16796,7 @@ integrity: Simulators/frame-instruments/b4/calibrate.py sha12=977d78e24f12 commi
 purpose: **[DRAFT]** B4.7 calibrate.py -- documented arm only. Compare each reconstructor's requirement list against the causal factors the investigating body named.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d1ce59282902 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--common
@@ -16326,6 +16818,7 @@ integrity: Simulators/frame-instruments/b4/common.py sha12=67c7b3ca7202 commit=1
 purpose: **[DRAFT]** B4-specific constants and helpers; generic pieces come from ../ficommon.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--agreement (imported-by); frame-instruments--b4--calibrate (imported-by); frame-instruments--b4--grade (imported-by); frame-instruments--b4--items (imported-by); frame-instruments--b4--nullshuffle (imported-by); frame-instruments--b4--reconstruct (imported-by); frame-instruments--b4--report (imported-by); frame-instruments--b4--requirements (imported-by)
 
 ### frame-instruments--b4--grade
@@ -16351,6 +16844,7 @@ integrity: Simulators/frame-instruments/b4/grade.py sha12=0fd30271a9c5 commit=19
 purpose: **[DRAFT]** B4.4 grade.py -- per item: requirement count, status and layer distributions, policy-to-physical ratio, unresolved printed beside it.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d1ce59282902 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--items
@@ -16376,6 +16870,7 @@ integrity: Simulators/frame-instruments/b4/items.py sha12=db0b212356df commit=19
 purpose: **[DRAFT]** B4.1 items.py -- validate items.jsonl, refuse to mix arms.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 4fc77aab3d15 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--nullshuffle
@@ -16401,6 +16896,7 @@ integrity: Simulators/frame-instruments/b4/nullshuffle.py sha12=3bc9774f3cda com
 purpose: **[DRAFT]** B4.6 nullshuffle.py -- reassign requirement lists to the WRONG items.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d1ce59282902 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--reconstruct
@@ -16426,6 +16922,7 @@ integrity: Simulators/frame-instruments/b4/reconstruct.py sha12=fafc2b43b021 com
 purpose: **[DRAFT]** B4.2 reconstruct.py -- one prompt file per (item, reconstructor).  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 4fc77aab3d15 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--report
@@ -16451,6 +16948,7 @@ integrity: Simulators/frame-instruments/b4/report.py sha12=3f85ab8f4405 commit=1
 purpose: **[DRAFT]** B4.8 report.py -- read everything, write report.md. Nine sections, in order, no others. If either shuffled input is missing the run is void and no report is written: the null is a second output, never a gate, so both print or neither does.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** sample: frame-instruments/b4/samples/report.sample.md; run capture: FAILED, exit 2, 1 lines, sha12 dd574de510ad (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--b4--requirements
@@ -16476,6 +16974,7 @@ integrity: Simulators/frame-instruments/b4/requirements.py sha12=9d067679cde5 co
 purpose: **[DRAFT]** B4.3 requirements.py -- validate returned requirement rows.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d1ce59282902 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--b4--common (imports)
 
 ### frame-instruments--ficommon
@@ -16497,6 +16996,7 @@ integrity: Simulators/frame-instruments/ficommon.py sha12=dc192aaadeb1 commit=19
 purpose: **[DRAFT]** Shared helpers for every build in frame-instruments. Not a command.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--runrecord (imports)
 
 ### frame-instruments--runrecord
@@ -16518,6 +17018,7 @@ integrity: Simulators/frame-instruments/runrecord.py sha12=996396e4fd3e commit=1
 purpose: **[DRAFT]** runrecord -- one record per run of every script in frame-instruments.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-instruments--ficommon (imported-by)
 
 ### frame-location-benchmark--score
@@ -16539,6 +17040,7 @@ integrity: Simulators/frame-location-benchmark/score.py sha12=b94ccfc107ad commi
 purpose: **[DRAFT]** DELIVERABLE C -- score.py. Pure counting. No model calls, no network.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-location-benchmark--selftest_flb (imported-by); frame-location-benchmark--selftest_flb (shares frame-location-benchmark/cases.jsonl); frame-location-benchmark--validate_cases (shares frame-location-benchmark/cases.jsonl)
 
 ### frame-location-benchmark--selftest_flb
@@ -16562,6 +17064,7 @@ integrity: Simulators/frame-location-benchmark/selftest_flb.py sha12=d8744b9655a
 purpose: **[DRAFT]** Selftest for the frame-location benchmark instruments (score.py, validate_cases.py). Null tests run both directions:  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 be27c9f2bf4e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-location-benchmark--score (imports); frame-location-benchmark--validate_cases (imports); frame-location-benchmark--score (shares frame-location-benchmark/cases.jsonl); frame-location-benchmark--validate_cases (shares frame-location-benchmark/cases.jsonl)
 
 ### frame-location-benchmark--validate_cases
@@ -16585,6 +17088,7 @@ integrity: Simulators/frame-location-benchmark/validate_cases.py sha12=77e0b734d
 purpose: **[DRAFT]** Case-set validation (R1-R6) plus the section-4 contamination check.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 f2c4ece7647f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-location-benchmark--selftest_flb (imported-by); frame-location-benchmark--score (shares frame-location-benchmark/cases.jsonl); frame-location-benchmark--selftest_flb (shares frame-location-benchmark/cases.jsonl)
 
 ### frame-token-audit--audit
@@ -16610,6 +17114,7 @@ integrity: Simulators/frame-token-audit/audit.py sha12=ce665f93bf96 commit=19893
 purpose: **[DRAFT]** audit.py -- runs the delivered frame_audit.py and reads what it does. Imports the module, edits nothing. Stage 2 (USE vs MENTION, substrate swap) is a human/model grading the delivery names and this file does NOT perform: every density printed here is a Stage 1 count over ungraded hits.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: frame-token-audit/samples/audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 1ca47b2aa111 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-token-audit--selftest_fta (imported-by); frame-token-audit--frame_audit (imports); shape-spec-audit--method_spec_audit (shares METHOD_SPEC.md); clustering-axes--style_audit (shares PREAMBLE.md); criterion-externality--criterion_externality (shares PREAMBLE.md); tools--check_term_collision (shares PREAMBLE.md); frame-token-audit--selftest_fta (shares SHAPE_SPEC.md); ontology-probe--selftest_op (shares SHAPE_SPEC.md); shape-spec-audit--method_spec_audit (shares SHAPE_SPEC.md); shape-spec-audit--shape_spec_audit (shares SHAPE_SPEC.md)
 
 ### frame-token-audit--frame_audit
@@ -16631,6 +17136,7 @@ integrity: Simulators/frame-token-audit/frame_audit.py sha12=52c882b3dd46 commit
 purpose: **[DRAFT]** frame_audit.py -- frame-token density + hit extraction. stdlib, CC0. v0 = lexicon as declared last turn. v1 = v0 + declared additions. Stage 1 mechanical (this file). Stage 2 = human/model grading of each hit: USE vs MENTION, then substrate swap -> SURVIVES | CHANGES | COLLAPSES.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-token-audit--audit (imported-by); frame-token-audit--selftest_fta (imported-by)
 
 ### frame-token-audit--selftest_fta
@@ -16654,6 +17160,7 @@ integrity: Simulators/frame-token-audit/selftest_fta.py sha12=60c5e05f1647 commi
 purpose: **[DRAFT]** selftest_fta.py -- checks for frame-token-audit/. Prints its count.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 50ef7570cab0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-token-audit--audit (imports); frame-token-audit--frame_audit (imports); frame-token-audit--audit (shares SHAPE_SPEC.md); ontology-probe--selftest_op (shares SHAPE_SPEC.md); shape-spec-audit--method_spec_audit (shares SHAPE_SPEC.md); shape-spec-audit--shape_spec_audit (shares SHAPE_SPEC.md)
 
 ### gap-existence-cases--commit_store
@@ -16679,6 +17186,7 @@ integrity: Simulators/gap-existence-cases/commit_store.py sha12=194a3c08ed7b com
 purpose: **[DRAFT]** CLASS-3 commit store -- STAGE 1 write + hash, STAGE 3 verify. OFFLINE.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 62ce91a3489e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-existence-cases--score (imported-by); gap-existence-cases--selftest_gxc (imported-by)
 
 ### gap-existence-cases--retrieve
@@ -16704,6 +17212,7 @@ integrity: Simulators/gap-existence-cases/retrieve.py sha12=936da1e10c05 commit=
 purpose: **[DRAFT]** CLASS-3 STAGE 2 -- RETRIEVE. The ONE network-touching runner (the §3 NETWORK EXCEPTION). A SEPARATE invocation from STAGE 1: the commit file is NOT in context, so the search cannot be steered by the committed EXPECT.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 076d3263bfeb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-existence-cases--selftest_gxc (imported-by)
 
 ### gap-existence-cases--score
@@ -16725,6 +17234,7 @@ integrity: Simulators/gap-existence-cases/score.py sha12=5e3e446c1f49 commit=198
 purpose: **[DRAFT]** CLASS-3 STAGE 3 scorer. OFFLINE: no model, no network.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-existence-cases--selftest_gxc (imported-by); gap-existence-cases--commit_store (imports)
 
 ### gap-existence-cases--selftest_gxc
@@ -16748,6 +17258,7 @@ integrity: Simulators/gap-existence-cases/selftest_gxc.py sha12=cd6d86fed31f com
 purpose: **[DRAFT]** Selftest for the gap-existence-cases instruments (commit_store.py, score.py, validate_cases.py, retrieve.py). Null tests run both directions:  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 edec40f8d2c5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-existence-cases--commit_store (imports); gap-existence-cases--retrieve (imports); gap-existence-cases--score (imports); gap-existence-cases--validate_cases (imports)
 
 ### gap-existence-cases--validate_cases
@@ -16773,6 +17284,7 @@ integrity: Simulators/gap-existence-cases/validate_cases.py sha12=cb740be7ccfa c
 purpose: **[DRAFT]** CLASS-3 prompt admission -- the B4 screen. OFFLINE, no network.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 431f5c8451e8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-existence-cases--selftest_gxc (imported-by)
 
 ### gap-markers--markers
@@ -16796,6 +17308,7 @@ integrity: Simulators/gap-markers/markers.py sha12=3b96cc43ae1c commit=198937eca
 purpose: **[DRAFT]** gap-markers -- checks on the delivered GAP_MARKERS.md.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: gap-markers/samples/markers.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2e7346d99120 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-markers--selftest_markers (imported-by); gap-markers--selftest_markers (imports); gap-markers--selftest_markers (shares gap-markers/ADDENDUM.md)
 
 ### gap-markers--selftest_markers
@@ -16819,6 +17332,7 @@ integrity: Simulators/gap-markers/selftest_markers.py sha12=f3d04158a947 commit=
 purpose: **[DRAFT]** Selftest for markers.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 2e7346d99120 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-markers--markers (imported-by); gap-markers--markers (imports); gap-markers--markers (shares gap-markers/ADDENDUM.md)
 
 ### gap-register--gap_register
@@ -16840,6 +17354,7 @@ integrity: Simulators/gap-register/gap_register.py sha12=27c0589da615 commit=198
 purpose: **[DRAFT]** gap_register -- a register of marked, unmeasured quantities.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-register--selftest_gr (imported-by); gap-register--selftest_gr (shares gap-register/REGISTER.jsonl)
 
 ### gap-register--selftest_gr
@@ -16864,6 +17379,7 @@ integrity: Simulators/gap-register/selftest_gr.py sha12=e3e87b3b3082 commit=1989
 purpose: **[DRAFT]** selftest_gr -- checks on gap_register.py and on the shipped register.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 d58d2dbc1bcd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gap-register--gap_register (imports); gap-register--gap_register (shares gap-register/REGISTER.jsonl)
 
 ### gate-check--gate_check
@@ -16885,6 +17401,7 @@ integrity: Simulators/gate-check/gate_check.py sha12=b81419bade56 commit=198937e
 purpose: **[DRAFT]** gate_check.py — four structural presence/absence checks over a repo path.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** notes--check_queue (shares gate-check/thresholds.txt)
 
 ### gdprf-framework--src--gdprf--actions
@@ -16906,6 +17423,7 @@ integrity: Simulators/gdprf-framework/src/gdprf/actions.py sha12=cbb734da9084 co
 purpose: **[DRAFT]** Action Proposal Engine — turn epistemic limitations into upgrade tasks.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### gdprf-framework--src--gdprf--decisions
@@ -16927,6 +17445,7 @@ integrity: Simulators/gdprf-framework/src/gdprf/decisions.py sha12=668340a944c5 
 purpose: **[DRAFT]** Decision points — turning belief state into governed action.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gdprf-framework--src--run_example (imported-by)
 
 ### gdprf-framework--src--gdprf--engine
@@ -16948,6 +17467,7 @@ integrity: Simulators/gdprf-framework/src/gdprf/engine.py sha12=573aa0cd21fe com
 purpose: **[DRAFT]** GDPRF update engine — operational cycle steps 3, 3.5, 4, 5 (spec v3.0).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gdprf-framework--src--run_example (imported-by)
 
 ### gdprf-framework--src--gdprf--provenance
@@ -16969,6 +17489,7 @@ integrity: Simulators/gdprf-framework/src/gdprf/provenance.py sha12=ff09487fc44b
 purpose: **[DRAFT]** Provenance layer — lineage for every evidence ingestion and belief update.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gdprf-framework--src--run_example (imported-by)
 
 ### gdprf-framework--src--run_example
@@ -16990,6 +17511,7 @@ integrity: Simulators/gdprf-framework/src/run_example.py sha12=95e51a5d7160 comm
 purpose: **[DRAFT]** End-to-end run: burnout claim through engine + provenance + decision point.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gdprf-framework--src--gdprf--decisions (imports); gdprf-framework--src--gdprf--engine (imports); gdprf-framework--src--gdprf--provenance (imports)
 
 ### generation-capacity--capacity
@@ -17011,6 +17533,7 @@ integrity: Simulators/generation-capacity/capacity.py sha12=2d8c82191ddb commit=
 purpose: **[DRAFT]** MECHANISM 10 — GENERATION CAPACITY REMOVED Scorer. Stdlib only.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** generation-capacity--mechanism_10_audit (imported-by)
 
 ### generation-capacity--mechanism_10_audit
@@ -17032,6 +17555,7 @@ integrity: Simulators/generation-capacity/mechanism_10_audit.py sha12=d35482774e
 purpose: **[DRAFT]** mechanism_10_audit.py -- checks on MECHANISM 10, GENERATION CAPACITY REMOVED.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** generation-capacity--capacity (imports)
 
 ### grounded-work-stack--check
@@ -17057,6 +17581,7 @@ integrity: Simulators/grounded-work-stack/check.py sha12=8a00870438c6 commit=198
 purpose: **[DRAFT]** check.py -- CC0, stdlib only.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: grounded-work-stack/samples/check.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 0a303d0536dc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-gate--gate (shares reasoning-gate/guards.json); reasoning-gate--make_docs (shares reasoning-gate/guards.json); reasoning-gate--mine_logs (shares reasoning-gate/guards.json); self-scan--enumerators (shares reasoning-gate/guards.json)
 
 ### grounding-layers--ai_observer_state
@@ -17085,6 +17610,7 @@ integrity: Simulators/grounding-layers/ai_observer_state.py sha12=a19856b42b95 c
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 89c0e654938c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--observer_state (imported-by); grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--field_compass (imports)
 
 ### grounding-layers--collaborative_field
@@ -17119,6 +17645,7 @@ integrity: Simulators/grounding-layers/collaborative_field.py sha12=0adaa68c8299
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 12 lines, sha12 0de609ad57fd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--observer_state (imported-by); grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--field_compass (imports)
 
 ### grounding-layers--cultural_lens
@@ -17179,6 +17706,7 @@ integrity: Simulators/grounding-layers/cultural_lens.py sha12=8404f0269bf8 commi
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 38 lines, sha12 05e8f99a903b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integration_check (imported-by); grounding-layers--l_epsilon_epistemic_v2 (imported-by); grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--safeguards (imported-by); grounding-layers--field_compass (imports)
 
 ### grounding-layers--cultural_rosetta
@@ -17206,6 +17734,7 @@ integrity: Simulators/grounding-layers/cultural_rosetta.py sha12=c1797775f7c4 co
 purpose: **[DRAFT]** Cultural Rosetta Stone  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 5 lines, sha12 729853050939 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--l5_core (imports)
 
 ### grounding-layers--data_filter
@@ -17230,6 +17759,7 @@ integrity: Simulators/grounding-layers/data_filter.py sha12=b8411e636870 commit=
 purpose: **[DRAFT]** Data Filter for Groundedness  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 8b05d01684d5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--grounding_reward_model (imports)
 
 ### grounding-layers--degradation_monitor
@@ -17258,6 +17788,7 @@ integrity: Simulators/grounding-layers/degradation_monitor.py sha12=426df1f018ec
 purpose: **[DRAFT]** Degradation Monitor — tracks AI groundedness over time.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 65710fa15c14 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--grounding_reward_model (imports); grounding-layers--l0_physics_causality (imports); grounding-layers--l5_core (imports)
 
 ### grounding-layers--entry
@@ -17302,6 +17833,7 @@ integrity: Simulators/grounding-layers/entry.py sha12=6c00f497b5f1 commit=198937
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 22 lines, sha12 8393e70ea922 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imports); grounding-layers--playground (imports); grounding-layers--scope_profile (imports)
 
 ### grounding-layers--experimental--calibration_channels
@@ -17350,6 +17882,7 @@ integrity: Simulators/grounding-layers/experimental/calibration_channels.py sha1
 purpose: **[DRAFT]** calibration_channels.py CC0 | stdlib-only | phone-buildable grounding-layers/experimental :: basis set for human-sensing calibration  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 26 lines, sha12 bb36c7db6f87 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--experimental--determinacy_gate
@@ -17381,6 +17914,7 @@ integrity: Simulators/grounding-layers/experimental/determinacy_gate.py sha12=09
 purpose: **[DRAFT]** determinacy_gate.py CC0 | stdlib-only | phone-buildable grounding-layers :: Le determinacy gate  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 9 lines, sha12 cb6244d62d26 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--experimental--field_compass
@@ -17414,6 +17948,7 @@ integrity: Simulators/grounding-layers/experimental/field_compass.py sha12=6cfbf
 purpose: **[DRAFT]** field_compass.py CC0 | stdlib-only | phone-buildable grounding-layers/experimental :: orientation layer over the coupled field  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 11 lines, sha12 095bd775f953 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--experimental--holistic_field_state
@@ -17439,6 +17974,7 @@ integrity: Simulators/grounding-layers/experimental/holistic_field_state.py sha1
 purpose: **[DRAFT]** holistic_field_state.py CC0 | stdlib-only | phone-buildable grounding-layers/experimental :: Le entry instrument  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 3 lines, sha12 65e8704d9972 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--field_compass
@@ -17502,6 +18038,7 @@ integrity: Simulators/grounding-layers/field_compass.py sha12=9da66a8ed301 commi
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 53 lines, sha12 8e2a50fb955c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--ai_observer_state (imported-by); grounding-layers--collaborative_field (imported-by); grounding-layers--cultural_lens (imported-by); grounding-layers--observer_state (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--grounded_reasoning_benchmark
@@ -17528,6 +18065,7 @@ integrity: Simulators/grounding-layers/grounded_reasoning_benchmark.py sha12=8bb
 purpose: **[DRAFT]** Grounded Reasoning Benchmark (GRB)  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 4 lines, sha12 56213bb51394 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--grounding_reward_model (imports); grounding-layers--l0_physics_causality (imports); grounding-layers--l5_core (imports)
 
 ### grounding-layers--grounding_reward_model
@@ -17560,6 +18098,7 @@ integrity: Simulators/grounding-layers/grounding_reward_model.py sha12=a677ddb0c
 purpose: **[DRAFT]** Groundedness Reward Model  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 10 lines, sha12 d9ec3648a309 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--data_filter (imported-by); grounding-layers--degradation_monitor (imported-by); grounding-layers--grounded_reasoning_benchmark (imported-by); grounding-layers--noise_purification_demo (imported-by); grounding-layers--l0_physics_causality (imports); grounding-layers--l5_core (imports)
 
 ### grounding-layers--integrated_stack
@@ -17623,6 +18162,7 @@ integrity: Simulators/grounding-layers/integrated_stack.py sha12=82666b709a2d co
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: grounding-layers/samples/integrated_stack_demo.sample.txt; run capture: RUN, exit 0, 64 lines, sha12 a9f1f7335001 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--entry (imported-by); grounding-layers--playground (imported-by); grounding-layers--l0_physics_causality (imports); grounding-layers--l1_thermodynamics (imports); grounding-layers--l2_planetary (imports); grounding-layers--l3_ecology (imports); grounding-layers--l4_human (imports); grounding-layers--l5_core (imports); grounding-layers--l_epsilon_epistemic_v2 (imports)
 
 ### grounding-layers--integration_check
@@ -17654,6 +18194,7 @@ integrity: Simulators/grounding-layers/integration_check.py sha12=9887400faff0 c
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 7 lines, sha12 e3988f1e212a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--cultural_lens (imports); grounding-layers--safeguards (imports)
 
 ### grounding-layers--inverse_knowledge_tree
@@ -17717,6 +18258,7 @@ integrity: Simulators/grounding-layers/inverse_knowledge_tree.py sha12=461ffaaba
 purpose: **[DRAFT]** inverse_knowledge_tree.py CC0-1.0. stdlib-only. phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: grounding-layers/samples/inverse_knowledge_tree_demo.sample.txt; run capture: RUN, exit 0, 57 lines, sha12 b9d43d4afee4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l0_physics_causality
@@ -17745,6 +18287,7 @@ integrity: Simulators/grounding-layers/l0_physics_causality.py sha12=6a58db244c3
 purpose: **[DRAFT]** L0 — physics & causality enforcement (the ground layer).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 847e8770b056 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--degradation_monitor (imported-by); grounding-layers--grounded_reasoning_benchmark (imported-by); grounding-layers--grounding_reward_model (imported-by); grounding-layers--integrated_stack (imported-by); grounding-layers--noise_purification_demo (imported-by); grounding-layers--playground (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--l1_thermodynamics
@@ -17783,6 +18326,7 @@ integrity: Simulators/grounding-layers/l1_thermodynamics.py sha12=f3f7ec7b6231 c
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 16 lines, sha12 88e8c7f44fa5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imported-by); grounding-layers--playground (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--l1_thermodynamics_entropy
@@ -17804,6 +18348,7 @@ integrity: Simulators/grounding-layers/l1_thermodynamics_entropy.py sha12=a57f0b
 purpose: **[DRAFT]** L1 — thermodynamics & entropy enforcement.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l2_planetary
@@ -17838,6 +18383,7 @@ integrity: Simulators/grounding-layers/l2_planetary.py sha12=19576d371fab commit
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 12 lines, sha12 5fd9271d3b31 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imported-by); grounding-layers--playground (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--l2_planetary_mass_balance
@@ -17859,6 +18405,7 @@ integrity: Simulators/grounding-layers/l2_planetary_mass_balance.py sha12=387dba
 purpose: **[DRAFT]** L2 — planetary constraints & mass balance.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l3_ecological_homeostasis
@@ -17880,6 +18427,7 @@ integrity: Simulators/grounding-layers/l3_ecological_homeostasis.py sha12=8dcea4
 purpose: **[DRAFT]** L3 — ecological homeostasis & allometry.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l3_ecology
@@ -17919,6 +18467,7 @@ integrity: Simulators/grounding-layers/l3_ecology.py sha12=4b920a479215 commit=1
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 17 lines, sha12 0ef11a983466 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imported-by); grounding-layers--playground (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--l4_biomechanical_sensorimotor
@@ -17940,6 +18489,7 @@ integrity: Simulators/grounding-layers/l4_biomechanical_sensorimotor.py sha12=f3
 purpose: **[DRAFT]** L4 — human sensorimotor & biomechanical constraints.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l4_human
@@ -17980,6 +18530,7 @@ integrity: Simulators/grounding-layers/l4_human.py sha12=25780f18fc83 commit=198
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 18 lines, sha12 076e633947ad (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imported-by); grounding-layers--playground (imported-by); grounding-layers--run_grounding_pipeline (imported-by)
 
 ### grounding-layers--l5_core
@@ -18006,6 +18557,7 @@ integrity: Simulators/grounding-layers/l5_core.py sha12=102e40912967 commit=1989
 purpose: **[DRAFT]** L5 Human Constructs — Cultural Frame Tables & Rigor Auditor  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 4 lines, sha12 2676a67cd4c0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--cultural_rosetta (imported-by); grounding-layers--degradation_monitor (imported-by); grounding-layers--grounded_reasoning_benchmark (imported-by); grounding-layers--grounding_reward_model (imported-by); grounding-layers--integrated_stack (imported-by); grounding-layers--noise_purification_demo (imported-by)
 
 ### grounding-layers--l5_human_construct
@@ -18027,6 +18579,7 @@ integrity: Simulators/grounding-layers/l5_human_construct.py sha12=00e19c3241df 
 purpose: **[DRAFT]** L5 — the messy human construct layer (culture, law, theology).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--l_epsilon_epistemic
@@ -18055,6 +18608,7 @@ integrity: Simulators/grounding-layers/l_epsilon_epistemic.py sha12=da39412b5b51
 purpose: **[DRAFT]** Lε — instrumental epistemic layer (measurement + observation).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 531d876a8e5b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--l_epsilon_epistemic_v2 (imports)
 
 ### grounding-layers--l_epsilon_epistemic_v2
@@ -18087,6 +18641,7 @@ integrity: Simulators/grounding-layers/l_epsilon_epistemic_v2.py sha12=55b168292
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 10 lines, sha12 337e29c9c703 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integrated_stack (imported-by); grounding-layers--l_epsilon_epistemic (imported-by); grounding-layers--cultural_lens (imports)
 
 ### grounding-layers--noise_purification_demo
@@ -18115,6 +18670,7 @@ integrity: Simulators/grounding-layers/noise_purification_demo.py sha12=d2535edd
 purpose: **[DRAFT]** noise_purification_demo.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 aa9634f2d8a7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--grounding_reward_model (imports); grounding-layers--l0_physics_causality (imports); grounding-layers--l5_core (imports)
 
 ### grounding-layers--observer_state
@@ -18170,6 +18726,7 @@ integrity: Simulators/grounding-layers/observer_state.py sha12=6e4e46b61258 comm
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 33 lines, sha12 1777cc10884f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--ai_observer_state (imports); grounding-layers--collaborative_field (imports); grounding-layers--field_compass (imports)
 
 ### grounding-layers--playground
@@ -18233,6 +18790,7 @@ integrity: Simulators/grounding-layers/playground.py sha12=d5fb02727591 commit=1
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: grounding-layers/samples/playground_v2_demo.sample.txt; run capture: RUN, exit 0, 119 lines, sha12 988141804c0a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--entry (imported-by); grounding-layers--integrated_stack (imports); grounding-layers--l0_physics_causality (imports); grounding-layers--l1_thermodynamics (imports); grounding-layers--l2_planetary (imports); grounding-layers--l3_ecology (imports); grounding-layers--l4_human (imports); grounding-layers--scope_profile (imports)
 
 ### grounding-layers--run_grounding_pipeline
@@ -18254,6 +18812,7 @@ integrity: Simulators/grounding-layers/run_grounding_pipeline.py sha12=8a9d9f5a9
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** --claim (required=True): The claim to evaluate.; --source (default=default): Source identifier.; --profile (choices=['general', 'athlete', 'elder', 'child', 'trained'], default=general): Human profile for L4.; --no-bias-audit (action=store_true): Disable bias audit.  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--ai_observer_state (imports); grounding-layers--collaborative_field (imports); grounding-layers--cultural_lens (imports); grounding-layers--field_compass (imports); grounding-layers--l0_physics_causality (imports); grounding-layers--l1_thermodynamics (imports); grounding-layers--l2_planetary (imports); grounding-layers--l3_ecology (imports); grounding-layers--l4_human (imports); grounding-layers--l_epsilon_epistemic (imports); grounding-layers--observer_state (imports); grounding-layers--safeguards (imports)
 
 ### grounding-layers--safeguards
@@ -18296,6 +18855,7 @@ integrity: Simulators/grounding-layers/safeguards.py sha12=853bd31fb8a9 commit=1
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 20 lines, sha12 22929cb48585 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--integration_check (imported-by); grounding-layers--run_grounding_pipeline (imported-by); grounding-layers--cultural_lens (imports)
 
 ### grounding-layers--scope_profile
@@ -18342,6 +18902,7 @@ integrity: Simulators/grounding-layers/scope_profile.py sha12=6ffab511410a commi
 purpose: **[DRAFT]** ============================================================================= CC0 1.0 Universal Public Domain Dedication  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: grounding-layers/samples/scope_profile_demo.sample.txt; run capture: RUN, exit 0, 24 lines, sha12 af33c4304268 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounding-layers--entry (imported-by); grounding-layers--playground (imported-by)
 
 ### grounding-layers--temporal_dysrhythmia
@@ -18363,6 +18924,7 @@ integrity: Simulators/grounding-layers/temporal_dysrhythmia.py sha12=19188a71070
 purpose: **[DRAFT]** Temporal Dysrhythmia — cross-scale coupling.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--tensor_field_resilience_v1
@@ -18384,6 +18946,7 @@ integrity: Simulators/grounding-layers/tensor_field_resilience_v1.py sha12=0d0f4
 purpose: **[DRAFT]** Tensor Field of Institutional Resilience v1.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### grounding-layers--tensor_field_resilience_v2
@@ -18405,6 +18968,7 @@ integrity: Simulators/grounding-layers/tensor_field_resilience_v2.py sha12=f1693
 purpose: **[DRAFT]** Tensor Field of Institutional Resilience v2 — with anchors.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### handoff-provenance--diff
@@ -18428,6 +18992,7 @@ integrity: Simulators/handoff-provenance/diff.py sha12=ea549df1a41b commit=19893
 purpose: **[DRAFT]** diff.py - CARRIED / DROPPED / ADDED, and a null test on the matcher.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: handoff-provenance/samples/diff.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 8288492bcd57 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** handoff-provenance--provenance (imports)
 
 ### handoff-provenance--excluded_register
@@ -18451,6 +19016,7 @@ integrity: Simulators/handoff-provenance/excluded_register.py sha12=9d0705e9b14b
 purpose: **[DRAFT]** excluded_register.py - EXCLUDED-BY-CONSTRUCTION, in one place.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: handoff-provenance/samples/excluded_register.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 8868607b1cfa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### handoff-provenance--ledgers--seed
@@ -18474,6 +19040,7 @@ integrity: Simulators/handoff-provenance/ledgers/seed.py sha12=4f8e63c1817e comm
 purpose: **[DRAFT]** ledgers/seed.py - the seed data, and the one thing it cannot establish.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 777987664645 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### handoff-provenance--ledgers--spec_v0_2
@@ -18497,6 +19064,7 @@ integrity: Simulators/handoff-provenance/ledgers/spec_v0_2.py sha12=696e0420cb19
 purpose: **[DRAFT]** ledgers/spec_v0_2.py - the ledger for the [K~] / RE-READ delivery.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 8e84b037b5ea (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### handoff-provenance--provenance
@@ -18520,6 +19088,7 @@ integrity: Simulators/handoff-provenance/provenance.py sha12=b4e8dfe8b740 commit
 purpose: **[DRAFT]** provenance.py - tag vocabulary, ledger schema, and the ordering rule.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: handoff-provenance/samples/provenance.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 85efc8a26fc7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** handoff-provenance--diff (imported-by)
 
 ### held-open-uncertainty--open_questions_audit
@@ -18541,6 +19110,7 @@ integrity: Simulators/held-open-uncertainty/open_questions_audit.py sha12=ea4ecf
 purpose: **[DRAFT]** open_questions_audit.py -- checks on OPEN_QUESTIONS.md.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### hf-incident-extract--hf_incident_extract
@@ -18566,6 +19136,7 @@ integrity: Simulators/hf-incident-extract/hf_incident_extract.py sha12=76d4e2327
 purpose: **[DRAFT]** hf_incident_extract.py -- CC0, stdlib only, one file, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 e5aca56b3457 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** hf-incident-extract--selftest_hf (imported-by)
 
 ### hf-incident-extract--selftest_hf
@@ -18589,6 +19160,7 @@ integrity: Simulators/hf-incident-extract/selftest_hf.py sha12=a2a2a928d197 comm
 purpose: **[DRAFT]** selftest_hf.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 57bda479fccb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** hf-incident-extract--hf_incident_extract (imports)
 
 ### household-scope-audit--audit
@@ -18615,6 +19187,7 @@ integrity: Simulators/household-scope-audit/audit.py sha12=9c8787f9b8ff commit=1
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: household-scope-audit/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 80b8e2de8d94 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** household-scope-audit--selftest_hsa (imported-by); household-scope-audit--coding (imports)
 
 ### household-scope-audit--coding
@@ -18641,6 +19214,7 @@ integrity: Simulators/household-scope-audit/coding.py sha12=ed3dbc339633 commit=
 purpose: **[DRAFT]** coding.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: household-scope-audit/samples/coding.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 1de562863c80 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** household-scope-audit--audit (imported-by); household-scope-audit--selftest_hsa (imported-by)
 
 ### household-scope-audit--selftest_hsa
@@ -18664,6 +19238,7 @@ integrity: Simulators/household-scope-audit/selftest_hsa.py sha12=5e83ef2fae3b c
 purpose: **[DRAFT]** selftest_hsa.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 76641d558ec2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** household-scope-audit--audit (imports); household-scope-audit--coding (imports)
 
 ### human-sensing-prior--pathways
@@ -18685,6 +19260,7 @@ integrity: Simulators/human-sensing-prior/pathways.py sha12=a4a093938311 commit=
 purpose: **[DRAFT]** pathways.py -- pathway A vs pathway B, per problem class.  
 input: **[DRAFT]** results; --job (required=True); --sheet (required=True); --key (required=True); --manifest-stub; job; --context-limit; --reserve-output; --limit-source; --out  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### incentive-blindspot-sim--sim--incentive_blindspot_sim
@@ -18748,6 +19324,7 @@ integrity: Simulators/incentive-blindspot-sim/sim/incentive_blindspot_sim.py sha
 purpose: **[DRAFT]** incentive_blindspot_sim.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 45 lines, sha12 b17155cc9765 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-bias-sims--_shared
@@ -18771,6 +19348,7 @@ integrity: Simulators/instrument-bias-sims/_shared.py sha12=82ea1073b57a commit=
 purpose: **[DRAFT]** _shared.py - the small amount every sim in this folder needs.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 0 lines, sha12 e3b0c44298fc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--crosscutting (imported-by); instrument-bias-sims--excluded_subject (imported-by); instrument-bias-sims--s2_symmetric_anchor (imported-by); instrument-bias-sims--s3_rubric_backcast (imported-by); instrument-bias-sims--s4_antler_calibration (imported-by); instrument-bias-sims--s5_adversarial_prior (imported-by); instrument-bias-sims--s6_foreclosure_rate (imported-by); instrument-bias-sims--s7_hardship_threshold (imported-by); instrument-bias-sims--s8_recognition_to_delivery (imported-by); instrument-bias-sims--s9_corpus_position_filter (imported-by)
 
 ### instrument-bias-sims--allocation_coupling--agents
@@ -18792,6 +19370,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/agents.py sha12=d
 purpose: **[DRAFT]** agents.py - the AGENTS declaration for S10, before any equation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--m1_tenure_budget (imported-by); instrument-bias-sims--allocation_coupling--run_all (imported-by)
 
 ### instrument-bias-sims--allocation_coupling--m1_tenure_budget
@@ -18855,6 +19434,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/m1_tenure_budget.
 purpose: **[DRAFT]** m1_tenure_budget.py - holding land requires money; money requires hours.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/allocation_coupling/samples/m1_tenure_budget.sample.txt; run capture: RUN, exit 0, 53 lines, sha12 7f401d4ad029 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--m3_energy_ledger (imported-by); instrument-bias-sims--allocation_coupling--m4_assessment_record (imported-by); instrument-bias-sims--allocation_coupling--run_all (imported-by); instrument-bias-sims--allocation_coupling--agents (imports)
 
 ### instrument-bias-sims--allocation_coupling--m2_coupling_readout
@@ -18918,6 +19498,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/m2_coupling_reado
 purpose: **[DRAFT]** m2_coupling_readout.py - reading a place requires continuous presence.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/allocation_coupling/samples/m2_coupling_readout.sample.txt; run capture: RUN, exit 0, 120 lines, sha12 365d2852ddf0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--run_all (imported-by)
 
 ### instrument-bias-sims--allocation_coupling--m3_energy_ledger
@@ -18981,6 +19562,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/m3_energy_ledger.
 purpose: **[DRAFT]** m3_energy_ledger.py - compensation gradient vs metabolic gradient.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/allocation_coupling/samples/m3_energy_ledger.sample.txt; run capture: RUN, exit 0, 94 lines, sha12 1610dd6be3b8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--run_all (imported-by); instrument-bias-sims--allocation_coupling--m1_tenure_budget (imports)
 
 ### instrument-bias-sims--allocation_coupling--m4_assessment_record
@@ -19044,6 +19626,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/m4_assessment_rec
 purpose: **[DRAFT]** m4_assessment_record.py - contribution scored from the written record.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/allocation_coupling/samples/m4_assessment_record.sample.txt; run capture: RUN, exit 0, 117 lines, sha12 c82f707d7d16 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--run_all (imported-by); instrument-bias-sims--allocation_coupling--m1_tenure_budget (imports)
 
 ### instrument-bias-sims--allocation_coupling--run_all
@@ -19107,6 +19690,7 @@ integrity: Simulators/instrument-bias-sims/allocation_coupling/run_all.py sha12=
 purpose: **[DRAFT]** run_all.py - S10 runner. Three phases, per-link attribution.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/allocation_coupling/samples/run_all.sample.txt; run capture: RUN, exit 0, 138 lines, sha12 cf5d41c395c8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--allocation_coupling--agents (imports); instrument-bias-sims--allocation_coupling--m1_tenure_budget (imports); instrument-bias-sims--allocation_coupling--m2_coupling_readout (imports); instrument-bias-sims--allocation_coupling--m3_energy_ledger (imports); instrument-bias-sims--allocation_coupling--m4_assessment_record (imports)
 
 ### instrument-bias-sims--crosscutting
@@ -19170,6 +19754,7 @@ integrity: Simulators/instrument-bias-sims/crosscutting.py sha12=917adb15e58f co
 purpose: **[DRAFT]** crosscutting.py - the work order's four cross-cutting rules, enforced over the sims rather than stated in a README.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/crosscutting.sample.txt; run capture: RUN, exit 0, 42 lines, sha12 52b1a53fdae0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--excluded_subject
@@ -19233,6 +19818,7 @@ integrity: Simulators/instrument-bias-sims/excluded_subject.py sha12=9de27375a87
 purpose: **[DRAFT]** excluded_subject.py - the instrument reproducing its subject.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/excluded_subject.sample.txt; run capture: RUN, exit 0, 83 lines, sha12 637000bdea53 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s1_encounter_denominator
@@ -19256,6 +19842,7 @@ integrity: Simulators/instrument-bias-sims/s1_encounter_denominator.py sha12=c52
 purpose: **[DRAFT]** s1_encounter_denominator.py - event-sampled observation reconstructs a false baseline.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s1_encounter_denominator.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 f8665776971e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-bias-sims--s2_symmetric_anchor
@@ -19319,6 +19906,7 @@ integrity: Simulators/instrument-bias-sims/s2_symmetric_anchor.py sha12=c09dd953
 purpose: **[DRAFT]** s2_symmetric_anchor.py - welfare-interview anchoring has no null case.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s2_symmetric_anchor.sample.txt; run capture: RUN, exit 0, 66 lines, sha12 8dac07314703 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s3_rubric_backcast
@@ -19382,6 +19970,7 @@ integrity: Simulators/instrument-bias-sims/s3_rubric_backcast.py sha12=8b448d9ac
 purpose: **[DRAFT]** s3_rubric_backcast.py - instrument error rate, measured without settling what the property is.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s3_rubric_backcast.sample.txt; run capture: RUN, exit 0, 103 lines, sha12 2e3ff394622e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s4_antler_calibration
@@ -19445,6 +20034,7 @@ integrity: Simulators/instrument-bias-sims/s4_antler_calibration.py sha12=a13567
 purpose: **[DRAFT]** s4_antler_calibration.py - competition vs motor-learning, separated by prediction.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s4_antler_calibration.sample.txt; run capture: RUN, exit 0, 164 lines, sha12 eee887872561 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s5_adversarial_prior
@@ -19508,6 +20098,7 @@ integrity: Simulators/instrument-bias-sims/s5_adversarial_prior.py sha12=4701168
 purpose: **[DRAFT]** s5_adversarial_prior.py - does collective computation require competing agents?  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s5_adversarial_prior.sample.txt; run capture: RUN, exit 0, 96 lines, sha12 bd07f35d7fcb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s6_foreclosure_rate
@@ -19571,6 +20162,7 @@ integrity: Simulators/instrument-bias-sims/s6_foreclosure_rate.py sha12=c83620f8
 purpose: **[DRAFT]** s6_foreclosure_rate.py - trained responses are not wrong, they are terminal.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s6_foreclosure_rate.sample.txt; run capture: RUN, exit 0, 100 lines, sha12 ae787a3fba6f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s7_hardship_threshold
@@ -19634,6 +20226,7 @@ integrity: Simulators/instrument-bias-sims/s7_hardship_threshold.py sha12=9d27c7
 purpose: **[DRAFT]** s7_hardship_threshold.py - an unanchored threshold slides to the labeller's baseline.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s7_hardship_threshold.sample.txt; run capture: RUN, exit 0, 79 lines, sha12 a3b886b16a43 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s8_recognition_to_delivery
@@ -19697,6 +20290,7 @@ integrity: Simulators/instrument-bias-sims/s8_recognition_to_delivery.py sha12=5
 purpose: **[DRAFT]** s8_recognition_to_delivery.py - time as an excuse vs time as a variable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s8_recognition_to_delivery.sample.txt; run capture: RUN, exit 0, 107 lines, sha12 01ce5d7fcf0c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-bias-sims--s9_corpus_position_filter
@@ -19760,6 +20354,7 @@ integrity: Simulators/instrument-bias-sims/s9_corpus_position_filter.py sha12=33
 purpose: **[DRAFT]** s9_corpus_position_filter.py - a corpus samples observer positions non-uniformly, with nothing doing the filtering.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: instrument-bias-sims/samples/s9_corpus_position_filter.sample.txt; run capture: RUN, exit 0, 204 lines, sha12 b6047a410786 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-bias-sims--_shared (imports)
 
 ### instrument-epistemology--experiments--camera_trap_density--run
@@ -19781,6 +20376,7 @@ integrity: Simulators/instrument-epistemology/experiments/camera_trap_density/ru
 purpose: **[DRAFT]** Investigation: camera traps as an instrument for wildlife population density.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--comparative_report--run
@@ -19802,6 +20398,7 @@ integrity: Simulators/instrument-epistemology/experiments/comparative_report/run
 purpose: **[DRAFT]** Cross-instrument comparative report — what separates the instruments that know from the instruments that estimate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--edna_biodiversity--run
@@ -19823,6 +20420,7 @@ integrity: Simulators/instrument-epistemology/experiments/edna_biodiversity/run.
 purpose: **[DRAFT]** Investigation: eDNA metabarcoding as an instrument for species presence.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--isotope_diet--run
@@ -19844,6 +20442,7 @@ integrity: Simulators/instrument-epistemology/experiments/isotope_diet/run.py sh
 purpose: **[DRAFT]** Investigation: stable isotope ratios (d13C, d15N) as an instrument for reconstructing animal diet.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--lidar_biomass--run
@@ -19865,6 +20464,7 @@ integrity: Simulators/instrument-epistemology/experiments/lidar_biomass/run.py s
 purpose: **[DRAFT]** Investigation: airborne LiDAR as an instrument for forest above-ground biomass.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--satellite_sst--run
@@ -19886,6 +20486,7 @@ integrity: Simulators/instrument-epistemology/experiments/satellite_sst/run.py s
 purpose: **[DRAFT]** Investigation: satellite infrared radiometry as an instrument for sea-surface temperature (SST).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--experiments--seismometer--run
@@ -19907,6 +20508,7 @@ integrity: Simulators/instrument-epistemology/experiments/seismometer/run.py sha
 purpose: **[DRAFT]** Investigation: seismometer networks as instruments for ground motion.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--blindness
@@ -19928,6 +20530,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/blindness.py sha12=3a7
 purpose: **[DRAFT]** Phase 5 — observational blindness mapping.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--coverage
@@ -19949,6 +20552,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/coverage.py sha12=25e1
 purpose: **[DRAFT]** Phase 7 — epistemic coverage report.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--measurand
@@ -19970,6 +20574,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/measurand.py sha12=459
 purpose: **[DRAFT]** Phase 1 — measurand / indication / bridge-model decomposition.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--simulation
@@ -19991,6 +20596,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/simulation.py sha12=12
 purpose: **[DRAFT]** Phase 6 — forward-simulated physics validation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--traceability
@@ -20012,6 +20618,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/traceability.py sha12=
 purpose: **[DRAFT]** Phase 4 — traceability audit against the SI pyramid.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-epistemology--src--instrum--transduction
@@ -20033,6 +20640,7 @@ integrity: Simulators/instrument-epistemology/src/instrum/transduction.py sha12=
 purpose: **[DRAFT]** Phase 2 — physical transduction chain: phenomenon -> ... -> indication.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### instrument-index--build_index
@@ -20059,6 +20667,7 @@ integrity: Simulators/instrument-index/build_index.py sha12=00cf30b21127 commit=
 purpose: **[DRAFT]** REBUILT 2026-09-22 from design recovered from session 2026-09-20 transcript fragments. Original bytes lost. Sections marked [RECOVERED] match recovered text; sections marked [REBUILD-CHOICE] are new.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 bfa2e87a265c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-index--coverage (imported-by); instrument-index--coverage (shares instrument-index/INSTRUMENT-INDEX.tsv)
 
 ### instrument-index--coverage
@@ -20085,6 +20694,7 @@ integrity: Simulators/instrument-index/coverage.py sha12=703876c24ae2 commit=198
 purpose: **[DRAFT]** coverage.py -- the consuming side of INSTRUMENT-INDEX.tsv (INDEX-SPEC.md).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 a1e6f3ad40e1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** instrument-index--build_index (imports); archive--instrument-index--coverage (same-bytes); instrument-index--build_index (shares instrument-index/INSTRUMENT-INDEX.tsv)
 
 ### interaction_class
@@ -20110,6 +20720,7 @@ integrity: Simulators/interaction_class.py sha12=c79e1d9a5d7a commit=198937ecabb
 purpose: **[DRAFT]** interaction_class.py -- REDIRECT (moved 2026-10-07).  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 e05548f8394f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### internal-reference-boundary--cases
@@ -20131,6 +20742,7 @@ integrity: Simulators/internal-reference-boundary/cases.py sha12=6504841ae53b co
 purpose: **[DRAFT]** Constructed corpus for the internal-reference boundary instrument.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** internal-reference-boundary--radials (imported-by)
 
 ### internal-reference-boundary--gap_cases
@@ -20152,6 +20764,7 @@ integrity: Simulators/internal-reference-boundary/gap_cases.py sha12=fd127f3e48d
 purpose: **[DRAFT]** Records for the gap-transfer instrument.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** internal-reference-boundary--gap_transfer (imported-by)
 
 ### internal-reference-boundary--gap_transfer
@@ -20177,6 +20790,7 @@ integrity: Simulators/internal-reference-boundary/gap_transfer.py sha12=002a0727
 purpose: **[DRAFT]** SECOND INSTRUMENT -- gap transfer across hosts.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: internal-reference-boundary/samples/gap_transfer.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d8ad468a93d6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** internal-reference-boundary--gap_cases (imports); internal-reference-boundary--radials (imports)
 
 ### internal-reference-boundary--radials
@@ -20202,6 +20816,7 @@ integrity: Simulators/internal-reference-boundary/radials.py sha12=db64a07c1824 
 purpose: **[DRAFT]** internal-reference boundary instrument -- the seven radials.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: internal-reference-boundary/samples/radials.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 961969b7fed5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** internal-reference-boundary--gap_transfer (imported-by); internal-reference-boundary--cases (imports)
 
 ### inverseminar--inverseminar
@@ -20223,6 +20838,7 @@ integrity: Simulators/inverseminar/inverseminar.py sha12=c8bf2c66e140 commit=198
 purpose: **[DRAFT]** inverseminar.py  --  CC0, stdlib only, phone-buildable, no deps.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: inverseminar/samples/inverseminar.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### investigation-sim--bins
@@ -20246,6 +20862,7 @@ integrity: Simulators/investigation-sim/bins.py sha12=982002e60592 commit=198937
 purpose: **[DRAFT]** investigation-sim -- foreknowledge bins for a CSB-style investigation.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: investigation-sim/samples/bins.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 55feaa3936d5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** investigation-sim--selftest_bins (imported-by); investigation-sim--selftest_bins (imports)
 
 ### investigation-sim--selftest_bins
@@ -20269,6 +20886,7 @@ integrity: Simulators/investigation-sim/selftest_bins.py sha12=8f2e6eeafe8d comm
 purpose: **[DRAFT]** Selftest for bins.py. Every falsifier in SPEC.md S7 gets an arm.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 55feaa3936d5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** investigation-sim--bins (imported-by); investigation-sim--bins (imports)
 
 ### kernel_stake--classify_b
@@ -20292,6 +20910,7 @@ integrity: Simulators/kernel_stake/classify_b.py sha12=abfea25f6660 commit=19893
 purpose: **[DRAFT]** Classifier B: rule-based, MAINTAINERS text only, as pre-registered.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 3f16d65c2092 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--m3 (imported-by); kernel_stake--subsystems (imports); kernel_stake--disagree (shares kernel_stake/classifier_b.json); kernel_stake--robust (shares kernel_stake/classifier_b.json)
 
 ### kernel_stake--disagree
@@ -20315,6 +20934,7 @@ integrity: Simulators/kernel_stake/disagree.py sha12=7c5aba8392a8 commit=198937e
 purpose: **[DRAFT]** A vs B disagreement.  Published, not reconciled.  Neither is ground truth.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 2a999caf8ab0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--subsystems (imports); kernel_stake--classify_b (shares kernel_stake/classifier_b.json); kernel_stake--robust (shares kernel_stake/classifier_b.json)
 
 ### kernel_stake--kloc
@@ -20336,6 +20956,7 @@ integrity: Simulators/kernel_stake/kloc.py sha12=9ace4971111a commit=198937ecabb
 purpose: **[DRAFT]** KLOC per (subsystem, tag).  The only step that needs blobs.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--subsystems (imports); kernel_stake--report (shares kernel_stake/kloc.json); kernel_stake--robust (shares kernel_stake/kloc.json)
 
 ### kernel_stake--m3
@@ -20359,6 +20980,7 @@ integrity: Simulators/kernel_stake/m3.py sha12=5c4e24a92eb7 commit=198937ecabbc 
 purpose: **[DRAFT]** M3: maintainer count and tenure, per (subsystem, tag).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 a730426ed7e0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--classify_b (imports); kernel_stake--subsystems (imports); kernel_stake--report (shares kernel_stake/m3.json)
 
 ### kernel_stake--measures
@@ -20380,6 +21002,7 @@ integrity: Simulators/kernel_stake/measures.py sha12=e8600a2dea69 commit=198937e
 purpose: **[DRAFT]** M1 numerator, M6, and the maturity confound.  KLOC is measured separately (kloc.py) because it is the only step that needs blobs.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--subsystems (imports); kernel_stake--report (shares kernel_stake/measures.json); kernel_stake--robust (shares kernel_stake/measures.json)
 
 ### kernel_stake--report
@@ -20415,6 +21038,7 @@ integrity: Simulators/kernel_stake/report.py sha12=ee403a871c9b commit=198937eca
 purpose: **[DRAFT]** Output: per class per release, with the scope limits printed.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 11 lines, sha12 96c4e757b3dd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--subsystems (imports); kernel_stake--kloc (shares kernel_stake/kloc.json); kernel_stake--robust (shares kernel_stake/kloc.json); kernel_stake--m3 (shares kernel_stake/m3.json); kernel_stake--measures (shares kernel_stake/measures.json); kernel_stake--robust (shares kernel_stake/measures.json)
 
 ### kernel_stake--robust
@@ -20447,6 +21071,7 @@ integrity: Simulators/kernel_stake/robust.py sha12=8da91bb0ec2a commit=198937eca
 purpose: **[DRAFT]** Two robustness checks on M1, both ADDED -- neither is in the order.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 8 lines, sha12 c9dd309f41fb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--subsystems (imports); kernel_stake--classify_b (shares kernel_stake/classifier_b.json); kernel_stake--disagree (shares kernel_stake/classifier_b.json); kernel_stake--kloc (shares kernel_stake/kloc.json); kernel_stake--report (shares kernel_stake/kloc.json); kernel_stake--measures (shares kernel_stake/measures.json); kernel_stake--report (shares kernel_stake/measures.json)
 
 ### kernel_stake--subsystems
@@ -20468,6 +21093,7 @@ integrity: Simulators/kernel_stake/subsystems.py sha12=4c1ce45a34d2 commit=19893
 purpose: **[DRAFT]** The 36 subsystems and classifier A, transcribed from PREREGISTRATION.md.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** kernel_stake--classify_b (imported-by); kernel_stake--disagree (imported-by); kernel_stake--kloc (imported-by); kernel_stake--m3 (imported-by); kernel_stake--measures (imported-by); kernel_stake--report (imported-by); kernel_stake--robust (imported-by)
 
 ### label-position-test--label_position_test
@@ -20493,6 +21119,7 @@ integrity: Simulators/label-position-test/label_position_test.py sha12=eff64b01e
 purpose: **[DRAFT]** label_position_test -- the WORK ORDER built as one stdlib instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 4ca6f5b8d718 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** label-position-test--selftest_lpt (imported-by)
 
 ### label-position-test--revision_audit
@@ -20518,6 +21145,7 @@ integrity: Simulators/label-position-test/revision_audit.py sha12=b82dd420c073 c
 purpose: **[DRAFT]** revision_audit -- the v2 order checked as a copy and as a claim.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: label-position-test/samples/revision_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 31321267d3d7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** label-position-test--selftest_lpt (imported-by)
 
 ### label-position-test--selftest_lpt
@@ -20542,6 +21170,7 @@ integrity: Simulators/label-position-test/selftest_lpt.py sha12=e8bcbdba40ca com
 purpose: **[DRAFT]** Checks for label_position_test.py. Known answers first, then both directions of every guard. Rows here are CONSTRUCTED and say so in their source_url scheme; nothing is a claim about any case.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 fc937ae9e70d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** label-position-test--label_position_test (imports); label-position-test--revision_audit (imports)
 
 ### labor-instrument--decompose
@@ -20567,6 +21196,7 @@ integrity: Simulators/labor-instrument/decompose.py sha12=f2f33114b29c commit=19
 purpose: **[DRAFT]** M3 decompose -- for any two-period comparison, join M1 (vintage_store) against M2 (instrument_registry) and a NAICS crosswalk, and split the delta:  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: labor-instrument/samples/decompose.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 1204c8a3f368 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** labor-instrument--selftest (imported-by); labor-instrument--selftest (sibling-selftest)
 
 ### labor-instrument--instrument_registry
@@ -20592,6 +21222,7 @@ integrity: Simulators/labor-instrument/instrument_registry.py sha12=00c0748660a2
 purpose: **[DRAFT]** M2 instrument_registry -- one record per methodology change to BLS CES.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5c05b16ad58c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** labor-instrument--selftest (imported-by); labor-instrument--selftest (sibling-selftest)
 
 ### labor-instrument--labor_schema
@@ -20617,6 +21248,7 @@ integrity: Simulators/labor-instrument/labor_schema.py sha12=5f37ddf54d26 commit
 purpose: **[DRAFT]** PART 2 -- substrate-neutral labor schema. Base layer records units of work performed, substrate-agnostic; the framework goes in the READ layer, not the collection layer. The invariants the work order calls load-bearing are enforced in code, not just described:  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 47db2a99e9f8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** labor-instrument--selftest (imported-by); labor-instrument--selftest (sibling-selftest)
 
 ### labor-instrument--selftest
@@ -20641,6 +21273,7 @@ integrity: Simulators/labor-instrument/selftest.py sha12=3713815f02b9 commit=198
 purpose: **[DRAFT]** Checks for the labor-instrument rebuild. Known answers on constructed data; no real BLS/ALFRED/QCEW data is fetched (egress-blocked) or fabricated. The PART 1 acceptance test against the real 2026-08-28 benchmark is marked NOT RUNNABLE here and recorded, not faked.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 bd039ba1fcc7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** labor-instrument--decompose (imports); labor-instrument--instrument_registry (imports); labor-instrument--labor_schema (imports); labor-instrument--vintage_store (imports); labor-instrument--decompose (selftest-of); labor-instrument--instrument_registry (selftest-of); labor-instrument--labor_schema (selftest-of); labor-instrument--vintage_store (selftest-of)
 
 ### labor-instrument--vintage_store
@@ -20666,6 +21299,7 @@ integrity: Simulators/labor-instrument/vintage_store.py sha12=26e4f7b08811 commi
 purpose: **[DRAFT]** M1 vintage_store -- key every observation by (series_id, period, release_date). The cell holds EVERY version ever published, not the current one; the revision history is the signal, not noise.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5977db9deafa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** labor-instrument--selftest (imported-by); labor-instrument--selftest (sibling-selftest)
 
 ### law-as-unvalidated-measurement--check
@@ -20691,6 +21325,7 @@ integrity: Simulators/law-as-unvalidated-measurement/check.py sha12=f2f6eaeb37f4
 purpose: **[DRAFT]** law-as-unvalidated-measurement/check.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 6626e76cb8b3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### law-measurement-correction--check
@@ -20738,6 +21373,7 @@ integrity: Simulators/law-measurement-correction/check.py sha12=0d95eeac1fa1 com
 purpose: **[DRAFT]** check.py -- CC0, stdlib only, parses under 3.9, no network.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: law-measurement-correction/samples/check.sample.txt; run capture: RUN, exit 0, 25 lines, sha12 391691449e4e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### ledger--cobol_ledger--bridge
@@ -20764,6 +21400,7 @@ integrity: Simulators/ledger/cobol_ledger/bridge.py sha12=f3476a65944c commit=19
 purpose: **[DRAFT]** The py side of the cobol arm: compile an expression to an op stream, hand it to GnuCOBOL, read the answers back.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 3, 2 lines, sha12 a3cb21a17ac0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--ledger (imported-by); ledger--selftest_ledger (imported-by)
 
 ### ledger--ledger
@@ -20790,6 +21427,7 @@ integrity: Simulators/ledger/ledger.py sha12=9ffc89f4fa6e commit=198937ecabbc la
 purpose: **[DRAFT]** The ledger. Three diffs, and it exits nonzero if any of them fires.  
 input: **[DRAFT]** --records; --expected; --drift-log; --disagreements; --run-log; --t0; --no-seed (action=store_true): do not write EXPECTED files for new claims; --no-log (action=store_true): report but do not append to DRIFT.md; --choices (action=store_true); --selftest (action=store_true): refused; see ledger/selftest_ledger.py  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 d330b92acaa0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--selftest_ledger (imported-by); ledger--cobol_ledger--bridge (imports); ledger--py_ledger--engine (imports); ledger--record (imports); ledger--review (imports); ledger--review (shares ledger/DISAGREEMENTS.md); ledger--selftest_ledger (shares ledger/DISAGREEMENTS.md); ledger--selftest_ledger (shares ledger/DRIFT.md)
 
 ### ledger--py_ledger--engine
@@ -20816,6 +21454,7 @@ integrity: Simulators/ledger/py_ledger/engine.py sha12=b45bcb54189c commit=19893
 purpose: **[DRAFT]** Exact decimal recomputation of DERIVED claims, and transitive provenance.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 7b33392b4f9e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--ledger (imported-by); ledger--selftest_ledger (imported-by); ledger--record (imports)
 
 ### ledger--record
@@ -20837,6 +21476,7 @@ integrity: Simulators/ledger/record.py sha12=fa4f61fcf0b4 commit=198937ecabbc la
 purpose: **[DRAFT]** The claim record: schema, intake validation, and reference resolution.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--ledger (imported-by); ledger--py_ledger--engine (imported-by); ledger--selftest_ledger (imported-by)
 
 ### ledger--review
@@ -20863,6 +21503,7 @@ integrity: Simulators/ledger/review.py sha12=f2ccfec31b14 commit=198937ecabbc la
 purpose: **[DRAFT]** ADDENDUM.md, computed. The criterion is read out of that file, not retyped.  
 input: **[DRAFT]** --today; --time (action=store_true): measure wall time of a full ledger run; --records: record set to time over; default the fixtures; --record (action=store_true): append a review to reviews/REVIEWS.jsonl; --label (default=); --overrides; --overrides-basis (default=); --unique-findings; --unique-findings-basis (default=); --selftest (action=store_true): refused; see ledger/selftest_ledger.py  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 918413794612 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--ledger (imported-by); ledger--selftest_ledger (imported-by); ledger--ledger (shares ledger/DISAGREEMENTS.md); ledger--selftest_ledger (shares ledger/DISAGREEMENTS.md); ledger--selftest_ledger (shares ledger/OVERRIDES.md)
 
 ### ledger--selftest_ledger
@@ -20884,6 +21525,7 @@ integrity: Simulators/ledger/selftest_ledger.py sha12=f2b9500e5607 commit=198937
 purpose: **[DRAFT]** Checks for the ledger. Run it; it prints the count.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ledger--cobol_ledger--bridge (imports); ledger--ledger (imports); ledger--py_ledger--engine (imports); ledger--record (imports); ledger--review (imports); ledger--ledger (shares ledger/DISAGREEMENTS.md); ledger--review (shares ledger/DISAGREEMENTS.md); ledger--ledger (shares ledger/DRIFT.md); ledger--review (shares ledger/OVERRIDES.md)
 
 ### loop-weight--cases
@@ -20905,6 +21547,7 @@ integrity: Simulators/loop-weight/cases.py sha12=f289a027ffde commit=198937ecabb
 purpose: **[DRAFT]** cases.py CC0 1.0 Universal / public domain dedication.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** loop-weight--loop_weight (imported-by)
 
 ### loop-weight--loop_weight
@@ -20946,6 +21589,7 @@ integrity: Simulators/loop-weight/loop_weight.py sha12=e6f895dbfa74 commit=19893
 purpose: **[DRAFT]** loop_weight.py CC0 1.0 Universal / public domain dedication.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 19 lines, sha12 3ad31c8f00df (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** loop-weight--cases (imports)
 
 ### machine-record-format--aggregate
@@ -20971,6 +21615,7 @@ integrity: Simulators/machine-record-format/aggregate.py sha12=53dd284454d5 comm
 purpose: **[DRAFT]** Rule 3 -- aggregation is a read operation. No aggregate, rounding, or bucket is stored as a base field; every aggregate is computed at read time from raw entries and a spec. Store the recipe, not the result. If an aggregate is expensive it may be cached, but the cache is keyed to the spec AND the base-entry version and is treated as derived -- it is never the record.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 65c126359ec2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--demo (imported-by); machine-record-format--rule8_cases (imported-by); machine-record-format--selftest_mrf (imported-by); machine-record-format--base_entry (imports); machine-record-format--views (imports)
 
 ### machine-record-format--base_entry
@@ -20996,6 +21641,7 @@ integrity: Simulators/machine-record-format/base_entry.py sha12=9b3df4163320 com
 purpose: **[DRAFT]** Rule 1 (base entries are transformations, not categories), Rule 5 (declared boundary, always), Rule 6 (no conversion between exposure classes), Rule 7 (absence is recorded).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 ee8bf9d599a1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--aggregate (imported-by); machine-record-format--demo (imported-by); machine-record-format--demo_v2 (imported-by); machine-record-format--entry_store (imported-by); machine-record-format--rule8_cases (imported-by); machine-record-format--selftest_mrf (imported-by)
 
 ### machine-record-format--bisect_structure
@@ -21021,6 +21667,7 @@ integrity: Simulators/machine-record-format/bisect_structure.py sha12=f8d17fd57b
 purpose: **[DRAFT]** Diagnostic tooling -- bisection as a STRUCTURE test, not a locator.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 86247501aea7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--demo (imported-by); machine-record-format--selftest_mrf (imported-by)
 
 ### machine-record-format--demo
@@ -21042,6 +21689,7 @@ integrity: Simulators/machine-record-format/demo.py sha12=8bd968ceaaf9 commit=19
 purpose: **[DRAFT]** A worked pass over the format on CONSTRUCTED entries: parallel views, an aggregate recomputed at read time, a retained vintage revision, the four absence states kept apart, a boundary-mismatch refusal, and the bisection structure verdicts. No row is a measurement of anything; every value is built by hand to exercise the format. The emitted text is screened through sheet-structure-scan/no_severity.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--aggregate (imports); machine-record-format--base_entry (imports); machine-record-format--bisect_structure (imports); machine-record-format--entry_store (imports); machine-record-format--views (imports)
 
 ### machine-record-format--demo_v2
@@ -21063,6 +21711,7 @@ integrity: Simulators/machine-record-format/demo_v2.py sha12=d22724370a47 commit
 purpose: **[DRAFT]** A worked pass over the v2 additions: Rule 8 (no payment field), the required test-case format (tests / does_not_test / why_not), and the three Rule 8 cases run against the format on CONSTRUCTED entries. No row is a measurement; the real service-life / persistence figures and the reference marker are carried in the spec, egress-blocked, and not verified here.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--selftest_mrf (imported-by); machine-record-format--base_entry (imports); machine-record-format--rule8_cases (imports); machine-record-format--views (imports)
 
 ### machine-record-format--entry_store
@@ -21088,6 +21737,7 @@ integrity: Simulators/machine-record-format/entry_store.py sha12=5de56e98dfdd co
 purpose: **[DRAFT]** Rule 4 -- vintages are retained, nothing is overwritten.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 cb3b895be83f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--demo (imported-by); machine-record-format--selftest_mrf (imported-by); machine-record-format--base_entry (imports)
 
 ### machine-record-format--rule8_cases
@@ -21113,6 +21763,7 @@ integrity: Simulators/machine-record-format/rule8_cases.py sha12=8e00c9b4cc73 co
 purpose: **[DRAFT]** Rule 8 test cases A / B / C (v2), each testing a DIFFERENT thing. They are NOT merged into one validation -- a pass on one is not a pass on the others.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 c68ecdd2e438 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--demo_v2 (imported-by); machine-record-format--selftest_mrf (imported-by); machine-record-format--aggregate (imports); machine-record-format--base_entry (imports); machine-record-format--views (imports)
 
 ### machine-record-format--selftest_mrf
@@ -21149,6 +21800,7 @@ integrity: Simulators/machine-record-format/selftest_mrf.py sha12=d40c7f6d09bf c
 purpose: **[DRAFT]** Checks for the machine-facing record format: the seven rules, the six acceptance criteria, and the bisection structure verdicts null-tested in all four directions.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 14 lines, sha12 db43a07dfcf2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--aggregate (imports); machine-record-format--base_entry (imports); machine-record-format--bisect_structure (imports); machine-record-format--demo_v2 (imports); machine-record-format--entry_store (imports); machine-record-format--rule8_cases (imports); machine-record-format--views (imports)
 
 ### machine-record-format--views
@@ -21174,6 +21826,7 @@ integrity: Simulators/machine-record-format/views.py sha12=f8ff39129c72 commit=1
 purpose: **[DRAFT]** Rule 2 -- categorizations are parallel views, never canonical.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0f1e98918271 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** machine-record-format--aggregate (imported-by); machine-record-format--demo (imported-by); machine-record-format--demo_v2 (imported-by); machine-record-format--rule8_cases (imported-by); machine-record-format--selftest_mrf (imported-by)
 
 ### measurand-partition--common
@@ -21199,6 +21852,7 @@ integrity: Simulators/measurand-partition/common.py sha12=b06d0fba878d commit=19
 purpose: **[DRAFT]** common -- the structure the five work orders share, as one record shape.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 f4de15d222e7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--wo1_partition (imported-by); measurand-partition--wo2_band_sweep (imported-by); measurand-partition--wo3_control_manifest (imported-by); measurand-partition--wo4_lumber (imported-by); measurand-partition--wo4_survival (imported-by); measurand-partition--wo5_deselection (imported-by)
 
 ### measurand-partition--wo1_partition
@@ -21224,6 +21878,7 @@ integrity: Simulators/measurand-partition/wo1_partition.py sha12=174476f4ad4e co
 purpose: **[DRAFT]** wo1_partition -- PARTITION A DEFICIT LABEL, built to WO-1.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 294be88cd02b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurand-partition--wo2_band_sweep
@@ -21249,6 +21904,7 @@ integrity: Simulators/measurand-partition/wo2_band_sweep.py sha12=5336d9aec7c4 c
 purpose: **[DRAFT]** wo2_band_sweep -- SWEEP THE OPERATING BAND INSTEAD OF SCORING A POINT.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0e80680ea48c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurand-partition--wo3_control_manifest
@@ -21274,6 +21930,7 @@ integrity: Simulators/measurand-partition/wo3_control_manifest.py sha12=f2c543f3
 purpose: **[DRAFT]** wo3_control_manifest -- CONTROL MANIFEST AND PREDICTION-ACCURACY FLOOR.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 abafc9c9d8f7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurand-partition--wo4_lumber
@@ -21299,6 +21956,7 @@ integrity: Simulators/measurand-partition/wo4_lumber.py sha12=9f1d5fbb2dfd commi
 purpose: **[DRAFT]** wo4_lumber -- DIMENSIONAL SUBSTITUTION, the arithmetic (WO-4a).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 909e51fdcbc6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurand-partition--wo4_survival
@@ -21324,6 +21982,7 @@ integrity: Simulators/measurand-partition/wo4_survival.py sha12=76e0b8545411 com
 purpose: **[DRAFT]** wo4_survival -- STRUCTURES: SURVIVAL ANALYSIS, MATCHED (WO-4b).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 064b7957b808 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurand-partition--wo5_deselection
@@ -21349,6 +22008,7 @@ integrity: Simulators/measurand-partition/wo5_deselection.py sha12=4439dd2fc5e4 
 purpose: **[DRAFT]** wo5_deselection -- DESELECTION SCORED ON THE WRONG OUTCOME (WO-5).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 b9c76e2f802b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurand-partition--common (imports)
 
 ### measurement-fork--probes_k11_k18
@@ -21370,6 +22030,7 @@ integrity: Simulators/measurement-fork/PROBES_K11_K18.py sha12=21a087bcc876 comm
 purpose: **[DRAFT]** PROBES_K11_K18.py -- additions to coupling.py / widen.py CC0-1.0. Standard library only. Merge, do not import blindly.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### measurement-fork--compare
@@ -21391,6 +22052,7 @@ integrity: Simulators/measurement-fork/compare.py sha12=a0d0615706c6 commit=1989
 purpose: **[DRAFT]** compare.py -- three-way diff. This is the product.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** sample: measurement-fork/samples/compare.sample.txt; sample: measurement-fork/samples/compare_provisioning.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--coverage_check (imported-by); measurement-fork--gate_fork (imported-by); measurement-fork--residual_audit (imported-by); measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--quantities (imports); measurement-fork--validate (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--conventional
@@ -21412,6 +22074,7 @@ integrity: Simulators/measurement-fork/conventional.py sha12=98052e76720d commit
 purpose: **[DRAFT]** ARM 3 -- conventional design generator.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imported-by); measurement-fork--coverage_check (imported-by); measurement-fork--falsifier_sweep (imported-by); measurement-fork--gate_fork (imported-by); measurement-fork--residual_audit (imported-by); measurement-fork--sweep_check (imported-by); measurement-fork--quantities (imports)
 
 ### measurement-fork--coupling
@@ -21433,6 +22096,7 @@ integrity: Simulators/measurement-fork/coupling.py sha12=161bac288342 commit=198
 purpose: **[DRAFT]** ARM 2 -- coupling generator.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imported-by); measurement-fork--coverage_check (imported-by); measurement-fork--falsifier_sweep (imported-by); measurement-fork--gate_fork (imported-by); measurement-fork--residual_audit (imported-by); measurement-fork--sweep_check (imported-by); measurement-fork--quantities (imports)
 
 ### measurement-fork--coverage_check
@@ -21496,6 +22160,7 @@ integrity: Simulators/measurement-fork/coverage_check.py sha12=bc772a142e8e comm
 purpose: **[DRAFT]** coverage_check.py -- null-test compare.py's RESIDUAL classifier.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/coverage_check.sample.txt; run capture: RUN, exit 0, 98 lines, sha12 91f1f305ace2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imports); measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--falsifier_sweep
@@ -21559,6 +22224,7 @@ integrity: Simulators/measurement-fork/falsifier_sweep.py sha12=2d216e0bdd78 com
 purpose: **[DRAFT]** falsifier_sweep.py -- can any arm emit a design capable of failing the stated falsifier?  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/falsifier_sweep.sample.txt; run capture: RUN, exit 0, 83 lines, sha12 195c15ffc737 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--quantities (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--gate_fork
@@ -21622,6 +22288,7 @@ integrity: Simulators/measurement-fork/gate_fork.py sha12=c0f6a58e473f commit=19
 purpose: **[DRAFT]** gate_fork.py -- the fork's own claims, through the canonical gate.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/gate_fork.sample.txt; run capture: RUN, exit 0, 93 lines, sha12 f330f740ce33 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imports); measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--residual_audit (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--proposed_probes
@@ -21685,6 +22352,7 @@ integrity: Simulators/measurement-fork/proposed_probes.py sha12=66705c358c1c com
 purpose: **[DRAFT]** proposed_probes.py -- do K14-K18 close the gaps MF_010 named?  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/proposed_probes.sample.txt; run capture: RUN, exit 0, 111 lines, sha12 f4bb4eb5c8ce (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### measurement-fork--quantities
@@ -21706,6 +22374,7 @@ integrity: Simulators/measurement-fork/quantities.py sha12=39fe0c0253a4 commit=1
 purpose: **[DRAFT]** Canonical quantity structure. Shared by all arms so the comparator can key on something stable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imported-by); measurement-fork--conventional (imported-by); measurement-fork--coupling (imported-by); measurement-fork--falsifier_sweep (imported-by); measurement-fork--sweep_check (imported-by); measurement-fork--widen (imported-by)
 
 ### measurement-fork--residual_audit
@@ -21769,6 +22438,7 @@ integrity: Simulators/measurement-fork/residual_audit.py sha12=b64571d80eeb comm
 purpose: **[DRAFT]** residual_audit.py -- adjudicate the RESIDUAL cell by hand, on the real spec.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/residual_audit.sample.txt; run capture: RUN, exit 0, 98 lines, sha12 e4201f68c193 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--gate_fork (imported-by); measurement-fork--compare (imports); measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--sweep_check
@@ -21832,6 +22502,7 @@ integrity: Simulators/measurement-fork/sweep_check.py sha12=ed181bcbdf89 commit=
 purpose: **[DRAFT]** sweep_check.py -- every probe declares which spec variable it must be run across, and at how many levels.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: measurement-fork/samples/sweep_check.sample.txt; run capture: RUN, exit 0, 169 lines, sha12 0ee552bdc065 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--conventional (imports); measurement-fork--coupling (imports); measurement-fork--quantities (imports); measurement-fork--widen (imports)
 
 ### measurement-fork--validate
@@ -21853,6 +22524,7 @@ integrity: Simulators/measurement-fork/validate.py sha12=99db5f8ea59d commit=198
 purpose: **[DRAFT]** validate.py -- is the spec complete enough to fork on?  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imported-by)
 
 ### measurement-fork--widen
@@ -21874,6 +22546,7 @@ integrity: Simulators/measurement-fork/widen.py sha12=e6fbd9a9dbc0 commit=198937
 purpose: **[DRAFT]** ARM 3 -- widen. Options, not quantities.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** measurement-fork--compare (imported-by); measurement-fork--coverage_check (imported-by); measurement-fork--falsifier_sweep (imported-by); measurement-fork--gate_fork (imported-by); measurement-fork--residual_audit (imported-by); measurement-fork--sweep_check (imported-by); measurement-fork--quantities (imports)
 
 ### membership-probe--probe
@@ -21908,6 +22581,7 @@ integrity: Simulators/membership-probe/probe.py sha12=2aaf4a51aab6 commit=198937
 purpose: **[DRAFT]** membership-probe — detect a checker that is using an IDEAL RENDERING as a MEMBERSHIP TEST instead of reading the constraint set.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: membership-probe/samples/probe_audit.sample.txt; run capture: FAILED, exit 1, 10 lines, sha12 2563cb7c1ebd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** membership-probe--probe_audit (imported-by); membership-probe--probe_audit (shares membership-probe/samples/probe_audit.sample.txt)
 
 ### membership-probe--probe_audit
@@ -21931,6 +22605,7 @@ integrity: Simulators/membership-probe/probe_audit.py sha12=1f29f13e6c0b commit=
 purpose: **[DRAFT]** Checks on the delivered probe.py. Imports it; modifies nothing.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: membership-probe/samples/probe_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** membership-probe--probe (imports); membership-probe--probe (shares membership-probe/samples/probe_audit.sample.txt)
 
 ### merge-path--convert_in
@@ -21956,6 +22631,7 @@ integrity: Simulators/merge-path/convert_in.py sha12=48bc9a2aafda commit=198937e
 purpose: **[DRAFT]** convert_in.py -- IN direction: a target registrar's record -> a falsifier-format record. §2's first direction. The likely loss is the provenance graph structure, the enforcement status, the uncertainty budget, and the legal or institutional standing of the record -- none of which our format has a slot for.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 49a0f5bd37bc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--residual (imported-by); merge-path--selftest (imported-by); merge-path--registrars (imports); merge-path--selftest (sibling-selftest)
 
 ### merge-path--convert_out
@@ -21981,6 +22657,7 @@ integrity: Simulators/merge-path/convert_out.py sha12=3774fd15be77 commit=198937
 purpose: **[DRAFT]** convert_out.py -- OUT direction: a falsifier-format record -> a target registrar's record. §2's second direction. The likely loss is the falsifier itself where the target has no slot, the cut on the units, and the whole branch record.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 9d2d972f47f1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--residual (imported-by); merge-path--selftest (imported-by); merge-path--registrars (imports); merge-path--selftest (sibling-selftest)
 
 ### merge-path--registrars
@@ -22002,6 +22679,7 @@ integrity: Simulators/merge-path/registrars.py sha12=3f9f406b21c9 commit=198937e
 purpose: **[DRAFT]** registrars.py -- the shared Registrar model and the registry, one source of truth for both directions (convert_out, convert_in).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--convert_in (imported-by); merge-path--convert_out (imported-by); merge-path--report (imported-by); merge-path--residual (imported-by); merge-path--run_all (imported-by); merge-path--selftest (imported-by); merge-path--selftest (sibling-selftest)
 
 ### merge-path--report
@@ -22027,6 +22705,7 @@ integrity: Simulators/merge-path/report.py sha12=600df6dcf7ff commit=198937ecabb
 purpose: **[DRAFT]** report.py -- §6: emits MERGE_REPORT.md. No ranking of registrars, no "ours is better" framing (§7). The report states the egress fact once, lists every real registrar's UNVERIFIED / NO-MERGE outcome with its breaks_at, and shows the residual machinery firing on the declared test doubles -- COERCED and ADDED reported alongside DROPPED, never only DROPPED. Stdlib only, parses under 3.9.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 6f2463195049 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--selftest (imported-by); merge-path--registrars (imports); merge-path--residual (imports); merge-path--run_all (imports); merge-path--selftest (sibling-selftest)
 
 ### merge-path--residual
@@ -22052,6 +22731,7 @@ integrity: Simulators/merge-path/residual.py sha12=93ad15ff4055 commit=198937eca
 purpose: **[DRAFT]** residual.py -- §3, the load-bearing test. Round trip a record through a registrar and measure the residual: what the registrar cannot hold, reported as a field list, not a score.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d98840d377e9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--report (imported-by); merge-path--run_all (imported-by); merge-path--selftest (imported-by); merge-path--convert_in (imports); merge-path--convert_out (imports); merge-path--registrars (imports); merge-path--selftest (sibling-selftest)
 
 ### merge-path--run_all
@@ -22077,6 +22757,7 @@ integrity: Simulators/merge-path/run_all.py sha12=6bea4140e856 commit=198937ecab
 purpose: **[DRAFT]** run_all.py -- §6: run residual.py over the fixture set. The fixtures are OUR format (falsifier records), constructed from this repo's own claim shapes -- no registrar data is fabricated. Each fixture is round tripped through every registrar.  
 input: **[DRAFT]** main(argv=None); reads sys.argv by index  
 output: **[DRAFT]** sample: merge-path/samples/run_all.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 567538bd3953 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--report (imported-by); merge-path--selftest (imported-by); merge-path--registrars (imports); merge-path--residual (imports); merge-path--selftest (sibling-selftest)
 
 ### merge-path--selftest
@@ -22140,6 +22821,7 @@ integrity: Simulators/merge-path/selftest.py sha12=960fdd2c53a8 commit=198937eca
 purpose: **[DRAFT]** selftest.py -- §6 S1..S5 for the merge-path machinery, plus null tests both directions and the egress/UNVERIFIED invariants. Known answers on constructed data; no registrar spec is fetched or fabricated.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 54 lines, sha12 547a4dc07f4c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** merge-path--convert_in (imports); merge-path--convert_out (imports); merge-path--registrars (imports); merge-path--report (imports); merge-path--residual (imports); merge-path--run_all (imports); merge-path--convert_in (selftest-of); merge-path--convert_out (selftest-of); merge-path--registrars (selftest-of); merge-path--report (selftest-of); merge-path--residual (selftest-of); merge-path--run_all (selftest-of)
 
 ### mining-increment--audit
@@ -22161,6 +22843,7 @@ integrity: Simulators/mining-increment/audit.py sha12=8c0e57a2e78a commit=198937
 purpose: **[DRAFT]** audit.py (mining-increment) -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: mining-increment/samples/audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** mining-increment--revision_audit (imported-by); mining-increment--selftest_mi (imported-by); mining-increment--mining_increment (imports); mining-increment--revision_audit (shares mining-increment/SOURCE_DROP.md); mining-increment--selftest_mi (shares mining-increment/SOURCE_DROP.md)
 
 ### mining-increment--mining_increment
@@ -22187,6 +22870,7 @@ integrity: Simulators/mining-increment/mining_increment.py sha12=243dc4ca9535 co
 purpose: **[DRAFT]** mining_increment.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: mining-increment/samples/mining_increment.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 b68e1d10fee9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** mining-increment--audit (imported-by); mining-increment--selftest_mi (imported-by)
 
 ### mining-increment--revision_audit
@@ -22213,6 +22897,7 @@ integrity: Simulators/mining-increment/revision_audit.py sha12=180ce4b9efe5 comm
 purpose: **[DRAFT]** revision_audit.py (mining-increment) -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: mining-increment/samples/revision_audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 9e30d96e229e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** mining-increment--selftest_mi (imported-by); mining-increment--audit (imports); mining-increment--audit (shares mining-increment/SOURCE_DROP.md); mining-increment--selftest_mi (shares mining-increment/SOURCE_DROP.md); mining-increment--selftest_mi (shares mining-increment/SOURCE_DROP_V2.md)
 
 ### mining-increment--selftest_mi
@@ -22236,6 +22921,7 @@ integrity: Simulators/mining-increment/selftest_mi.py sha12=42205fe578f6 commit=
 purpose: **[DRAFT]** selftest_mi.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 a460e2467b72 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** mining-increment--audit (imports); mining-increment--mining_increment (imports); mining-increment--revision_audit (imports); mining-increment--audit (shares mining-increment/SOURCE_DROP.md); mining-increment--revision_audit (shares mining-increment/SOURCE_DROP.md); mining-increment--revision_audit (shares mining-increment/SOURCE_DROP_V2.md)
 
 ### model-deprecation-backcast--demo_mdb
@@ -22257,6 +22943,7 @@ integrity: Simulators/model-deprecation-backcast/demo_mdb.py sha12=d2471ba2a6ea 
 purpose: **[DRAFT]** A worked pass over the instrument on CONSTRUCTED data: the seven columns and their nulls, the C6 fad-axis lag both directions, the guardrail-clock contamination, and the C3 accepted-side censoring. No row is a measurement of any model, vendor, or population; nothing is a result. Screened through sheet-structure-scan/no_severity.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-deprecation-backcast--guardrail_clock (imports); model-deprecation-backcast--instrument (imports); model-deprecation-backcast--null_check (imports)
 
 ### model-deprecation-backcast--guardrail_clock
@@ -22282,6 +22969,7 @@ integrity: Simulators/model-deprecation-backcast/guardrail_clock.py sha12=f17d47
 purpose: **[DRAFT]** The guardrail clock -- a separate layer, not a column.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 cbe795360e04 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-deprecation-backcast--demo_mdb (imported-by); model-deprecation-backcast--selftest_mdb (imported-by); model-deprecation-backcast--null_check (imports)
 
 ### model-deprecation-backcast--instrument
@@ -22307,6 +22995,7 @@ integrity: Simulators/model-deprecation-backcast/instrument.py sha12=bbd62c61abe
 purpose: **[DRAFT]** The Model Deprecation Backcast Instrument as a structured object.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 1faaa1432f7e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-deprecation-backcast--demo_mdb (imported-by); model-deprecation-backcast--selftest_mdb (imported-by)
 
 ### model-deprecation-backcast--null_check
@@ -22332,6 +23021,7 @@ integrity: Simulators/model-deprecation-backcast/null_check.py sha12=2dc11fdbe62
 purpose: **[DRAFT]** The null per column, made runnable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 c4c1aedc5cb6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-deprecation-backcast--demo_mdb (imported-by); model-deprecation-backcast--guardrail_clock (imported-by); model-deprecation-backcast--selftest_mdb (imported-by)
 
 ### model-deprecation-backcast--selftest_mdb
@@ -22362,6 +23052,7 @@ integrity: Simulators/model-deprecation-backcast/selftest_mdb.py sha12=1409bc630
 purpose: **[DRAFT]** Checks for the Model Deprecation Backcast Instrument, on CONSTRUCTED data. No vendor calendar, poll, eval, or dataset is read (all egress-blocked); every series is built by hand with a known answer. Nothing is a result.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 8 lines, sha12 637d606677d2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-deprecation-backcast--guardrail_clock (imports); model-deprecation-backcast--instrument (imports); model-deprecation-backcast--null_check (imports)
 
 ### model-ecology--confound_sweep
@@ -22425,6 +23116,7 @@ integrity: Simulators/model-ecology/confound_sweep.py sha12=9151d14dfc8b commit=
 purpose: **[DRAFT]** confound_sweep.py ----------------- P1 failed. Same-family models do not correlate more than cross-family models (p = 0.42, significant in 0/12 seeds). But the inflation is real and large (N_eff = 2.48 from 15 models, 6.29x).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 71 lines, sha12 a371ad19606a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--core (imports); model-ecology--models (imports); model-ecology--phylogeny (imports)
 
 ### model-ecology--core
@@ -22446,6 +23138,7 @@ integrity: Simulators/model-ecology/core.py sha12=df3128a1d95e commit=198937ecab
 purpose: **[DRAFT]** core.py ------- Plugin substrate. Adding a new mathematical method, observer profile, or representation requires exactly one new class implementing one interface. Every component is then evaluated by the same audit pipeline. No plugin is privileged, including whichever representation is currently fashionable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--confound_sweep (imported-by); model-ecology--demo (imported-by); model-ecology--disagreement (imported-by); model-ecology--meta_engine (imported-by); model-ecology--models (imported-by); model-ecology--phylogeny (imported-by)
 
 ### model-ecology--demo
@@ -22509,6 +23202,7 @@ integrity: Simulators/model-ecology/demo.py sha12=942520050cff commit=198937ecab
 purpose: **[DRAFT]** demo.py ------- End-to-end audit on a synthetic signal with a known regime shift.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: model-ecology/samples/demo.sample.txt; run capture: RUN, exit 0, 64 lines, sha12 777a9aa25905 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--core (imports); model-ecology--disagreement (imports); model-ecology--meta_engine (imports); model-ecology--models (imports); model-ecology--phylogeny (imports)
 
 ### model-ecology--disagreement
@@ -22530,6 +23224,7 @@ integrity: Simulators/model-ecology/disagreement.py sha12=dc7f2c9d4053 commit=19
 purpose: **[DRAFT]** disagreement.py --------------- Stop treating outliers as errors.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--demo (imported-by); model-ecology--core (imports)
 
 ### model-ecology--meta_engine
@@ -22551,6 +23246,7 @@ integrity: Simulators/model-ecology/meta_engine.py sha12=9c83814b80a3 commit=198
 purpose: **[DRAFT]** meta_engine.py -------------- The observer is a measured component of the system, not a privileged vantage.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--demo (imported-by); model-ecology--core (imports)
 
 ### model-ecology--models
@@ -22572,6 +23268,7 @@ integrity: Simulators/model-ecology/models.py sha12=c6c533a719e2 commit=198937ec
 purpose: **[DRAFT]** models.py --------- Twelve plugins across four mathematical families.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--confound_sweep (imported-by); model-ecology--demo (imported-by); model-ecology--core (imports)
 
 ### model-ecology--phylogeny
@@ -22593,6 +23290,7 @@ integrity: Simulators/model-ecology/phylogeny.py sha12=ca5c3f704cc6 commit=19893
 purpose: **[DRAFT]** phylogeny.py ------------ Group models by INHERITED ASSUMPTIONS, not by brand name.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** model-ecology--confound_sweep (imported-by); model-ecology--demo (imported-by); model-ecology--core (imports)
 
 ### model-provenance--provenance
@@ -22614,6 +23312,7 @@ integrity: Simulators/model-provenance/provenance.py sha12=068165107b87 commit=1
 purpose: **[DRAFT]** provenance -- work order 5. Model provenance, forward and retrospective.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### moral-decomposer--moral_audit
@@ -22635,6 +23334,7 @@ integrity: Simulators/moral-decomposer/moral_audit.py sha12=83a1655bce75 commit=
 purpose: **[DRAFT]** moral_audit.py -- checks on the moral-decomposer drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### move-set-derivation--arm1
@@ -22661,6 +23361,7 @@ integrity: Simulators/move-set-derivation/arm1.py sha12=fc14ed34d337 commit=1989
 purpose: **[DRAFT]** arm1.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: move-set-derivation/samples/arm1.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 b29ca559713d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** move-set-derivation--selftest_msd (imported-by); move-set-derivation--env (imports)
 
 ### move-set-derivation--env
@@ -22687,6 +23388,7 @@ integrity: Simulators/move-set-derivation/env.py sha12=e55700215189 commit=19893
 purpose: **[DRAFT]** env.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: move-set-derivation/samples/env.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 2d8dace865b6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** move-set-derivation--arm1 (imported-by); move-set-derivation--selftest_msd (imported-by)
 
 ### move-set-derivation--selftest_msd
@@ -22708,6 +23410,7 @@ integrity: Simulators/move-set-derivation/selftest_msd.py sha12=a00fc9b3b599 com
 purpose: **[DRAFT]** selftest_msd.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit None, 0 lines, sha12 e3b0c44298fc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** move-set-derivation--arm1 (imports); move-set-derivation--env (imports)
 
 ### move-set--move_set_audit
@@ -22731,6 +23434,7 @@ integrity: Simulators/move-set/move_set_audit.py sha12=c927c1748f6e commit=19893
 purpose: **[DRAFT]** Checks on the delivered `move_set_sim.py` and its filled ledger.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: move-set/samples/move_set_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 20d10e13a470 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** move-set--move_set_sim (imports)
 
 ### move-set--move_set_sim
@@ -22786,6 +23490,7 @@ integrity: Simulators/move-set/move_set_sim.py sha12=529a797ebc04 commit=198937e
 purpose: **[DRAFT]** move_set_sim.py  -- CC0, stdlib only, phone-buildable  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 34 lines, sha12 4e65c7201aa1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** move-set--move_set_audit (imported-by)
 
 ### move-set--move_set_sim_v2
@@ -22811,6 +23516,7 @@ integrity: Simulators/move-set/move_set_sim_v2.py sha12=8eb0a640e33f commit=1989
 purpose: **[DRAFT]** move_set_sim_v2.py -- CC0, stdlib only, phone-buildable, 3.9+  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 e22f1b2a7af8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### moving-mean-tracker--provider
@@ -22836,6 +23542,7 @@ integrity: Simulators/moving-mean-tracker/provider.py sha12=22f746bec923 commit=
 purpose: **[DRAFT]** moving-mean-tracker/provider.py -- the data interface, kept dumb on purpose.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 c89f439ce672 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** moving-mean-tracker--tracker (imported-by)
 
 ### moving-mean-tracker--tracker
@@ -22861,6 +23568,7 @@ integrity: Simulators/moving-mean-tracker/tracker.py sha12=901fcf92defd commit=1
 purpose: **[DRAFT]** moving-mean-tracker/tracker.py -- a mean anchored to moving targets, tracked per segment, with provenance, on a fixed schedule.  
 input: **[DRAFT]** --validate; --run; --gauges; --verify; --choices (action=store_true); --selftest (action=store_true); --period; --run-at; --log; --fixture  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 b1824d269beb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** moving-mean-tracker--provider (imports)
 
 ### msiaf-gdprf-bridge--src--bridge
@@ -22882,6 +23590,7 @@ integrity: Simulators/msiaf-gdprf-bridge/src/bridge.py sha12=a71ae51aa17c commit
 purpose: **[DRAFT]** MSIAF x GDPRF bridge — run an MSIAF case file through the GDPRF engine.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** msiaf-gdprf-bridge--src--run_reefer_case (imported-by)
 
 ### msiaf-gdprf-bridge--src--run_reefer_case
@@ -22903,6 +23612,7 @@ integrity: Simulators/msiaf-gdprf-bridge/src/run_reefer_case.py sha12=7d9f189671
 purpose: **[DRAFT]** Run the reefer-trucking MSIAF case through the GDPRF engine.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** msiaf-gdprf-bridge--src--bridge (imports)
 
 ### nonidentity-census--t1_predicate_unit
@@ -22926,6 +23636,7 @@ integrity: Simulators/nonidentity-census/t1_predicate_unit.py sha12=ac5aa93c9bba
 purpose: **[DRAFT]** T1 -- DETECTION, NOT KEYWORD.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** nonidentity-census--t1_verb_first (imported-by); nonidentity-census--t2_sample (imported-by); nonidentity-census--t6_window_declaration (imported-by)
 
 ### nonidentity-census--t1_verb_first
@@ -22949,6 +23660,7 @@ integrity: Simulators/nonidentity-census/t1_verb_first.py sha12=4c7f2ba39267 com
 purpose: **[DRAFT]** T1, second instrument -- THE VERB-FIRST TEST (BOUNDARY.md D6).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: nonidentity-census/samples/t1_verb_first_score.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** nonidentity-census--t6_window_declaration (imported-by); nonidentity-census--t1_predicate_unit (imports)
 
 ### nonidentity-census--t2_sample
@@ -22970,6 +23682,7 @@ integrity: Simulators/nonidentity-census/t2_sample.py sha12=0826b4235107 commit=
 purpose: **[DRAFT]** T2 -- BASE RATE. Stratified sample across fields, T1 applied, proportion non-identity reported PER FIELD.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** nonidentity-census--t1_predicate_unit (imports)
 
 ### nonidentity-census--t2_window
@@ -22993,6 +23706,7 @@ integrity: Simulators/nonidentity-census/t2_window.py sha12=3ea55670b634 commit=
 purpose: **[DRAFT]** T2, replacement output -- DISSOLUTION WINDOWS (BOUNDARY.md D7).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: nonidentity-census/samples/t2_window_controls.sample.txt; sample: nonidentity-census/samples/t2_window_proposal.sample.txt; sample: nonidentity-census/samples/t2_window_seed.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### nonidentity-census--t6_window_declaration
@@ -23016,6 +23730,7 @@ integrity: Simulators/nonidentity-census/t6_window_declaration.py sha12=78702dda
 purpose: **[DRAFT]** T6 -- WINDOW DECLARATION vs ENTITY READING.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** nonidentity-census--t1_predicate_unit (imports); nonidentity-census--t1_verb_first (imports)
 
 ### notes--check_d2
@@ -23039,6 +23754,7 @@ integrity: Simulators/notes/check_d2.py sha12=35342668151a commit=198937ecabbc l
 purpose: **[DRAFT]** Runs `operators/D2.md` against this tree. Reads the entry, never edits it.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: notes/samples/check_d2.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### notes--check_datasets
@@ -23066,6 +23782,7 @@ integrity: Simulators/notes/check_datasets.py sha12=06210994769d commit=198937ec
 purpose: **[DRAFT]** Runs notes/datasets/mesa_sof.md against this tree. Edits nothing.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: notes/samples/check_datasets.sample.txt; run capture: FAILED, exit 1, 3 lines, sha12 db0d6754da36 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** notes--check_markers (shares notes/README.md)
 
 ### notes--check_markers
@@ -23089,6 +23806,7 @@ integrity: Simulators/notes/check_markers.py sha12=851839d76563 commit=198937eca
 purpose: **[DRAFT]** check_markers.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: notes/samples/check_markers.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 66d225d3211c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** external-audit--recount (shares GAP_INDEX.md); notes--check_postgrad (shares GAP_INDEX.md); tools--gap_index (shares GAP_INDEX.md); clustering-axes--style_audit (shares PROTOCOL.md); notes--check_postgrad (shares RESEARCH_RENDER.md); notes--check_datasets (shares notes/README.md)
 
 ### notes--check_postgrad
@@ -23112,6 +23830,7 @@ integrity: Simulators/notes/check_postgrad.py sha12=90d2032c9598 commit=198937ec
 purpose: **[DRAFT]** check_postgrad.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 02e1b0358e9c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** external-audit--recount (shares GAP_INDEX.md); notes--check_markers (shares GAP_INDEX.md); tools--gap_index (shares GAP_INDEX.md); notes--check_markers (shares RESEARCH_RENDER.md); anchor-measurand-crossing--amc (shares anchor-measurand-crossing/WORK_ORDER.md); anchor-measurand-crossing--amc (shares anchor-measurand-crossing/lexicon.json); readout-count--stack_revision (shares readout-count/EXCLUSION_STACK_trucking_v2.md)
 
 ### notes--check_queue
@@ -23177,6 +23896,7 @@ integrity: Simulators/notes/check_queue.py sha12=5a985c131be7 commit=198937ecabb
 purpose: **[DRAFT]** check_queue.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 64 lines, sha12 83cbd7c2a2fa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** gate-check--gate_check (shares gate-check/thresholds.txt)
 
 ### notes--check_test_specs
@@ -23232,6 +23952,7 @@ integrity: Simulators/notes/check_test_specs.py sha12=370b4eaf26a2 commit=198937
 purpose: **[DRAFT]** check_test_specs.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 33 lines, sha12 8f73a8027399 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### notes--check_uploads
@@ -23255,6 +23976,7 @@ integrity: Simulators/notes/check_uploads.py sha12=0e585c3a4292 commit=198937eca
 purpose: **[DRAFT]** Check a re-obtained copy of a filed dataset against what was recorded.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: notes/samples/check_uploads.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 7718dc1633a2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### notes--study_watch
@@ -23276,6 +23998,7 @@ integrity: Simulators/notes/study_watch.py sha12=562fe48b0980 commit=198937ecabb
 purpose: **[DRAFT]** STUDY-WATCH. Retrieval notification for entries that carry a WOULD MEASURE.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### null-harness--archetype_library
@@ -23304,6 +24027,7 @@ integrity: Simulators/null-harness/archetype_library.py sha12=b41e9b93ec24 commi
 purpose: **[DRAFT]** archetype_library.py -- cross-domain shape matcher with a MANDATORY null gate. CC0.  stdlib + numpy + scipy (curve_fit only).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: null-harness/samples/archetype_library.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 c855a109ec89 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### null-harness--null_harness
@@ -23357,6 +24081,7 @@ integrity: Simulators/null-harness/null_harness.py sha12=1b61aa3487a4 commit=198
 purpose: **[DRAFT]** null_harness.py -- calibrate any gate against known-answer controls. CC0.  stdlib + numpy only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: null-harness/samples/null_harness.sample.txt; run capture: RUN, exit 0, 31 lines, sha12 3b42f737170f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### observable-indicator-rules--audit
@@ -23383,6 +24108,7 @@ integrity: Simulators/observable-indicator-rules/audit.py sha12=d89d9f954582 com
 purpose: **[DRAFT]** audit.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: observable-indicator-rules/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 39e58503ba90 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observable-indicator-rules--selftest_oir (imported-by); observable-indicator-rules--ensembles (imports); observable-indicator-rules--pipeline (imports)
 
 ### observable-indicator-rules--ensembles
@@ -23404,6 +24130,7 @@ integrity: Simulators/observable-indicator-rules/ensembles.py sha12=6755679b5ddb
 purpose: **[DRAFT]** ensembles.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observable-indicator-rules--audit (imported-by); observable-indicator-rules--pipeline (imported-by); observable-indicator-rules--selftest_oir (imported-by); observable-indicator-rules--pipeline (imports)
 
 ### observable-indicator-rules--pipeline
@@ -23430,6 +24157,7 @@ integrity: Simulators/observable-indicator-rules/pipeline.py sha12=451992d7219d 
 purpose: **[DRAFT]** pipeline.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: observable-indicator-rules/samples/pipeline.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 903586f7d841 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observable-indicator-rules--audit (imported-by); observable-indicator-rules--ensembles (imported-by); observable-indicator-rules--selftest_oir (imported-by); observable-indicator-rules--ensembles (imports)
 
 ### observable-indicator-rules--selftest_oir
@@ -23453,6 +24181,7 @@ integrity: Simulators/observable-indicator-rules/selftest_oir.py sha12=0e2f715ce
 purpose: **[DRAFT]** selftest_oir.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 67faf41c29e5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observable-indicator-rules--audit (imports); observable-indicator-rules--ensembles (imports); observable-indicator-rules--pipeline (imports)
 
 ### observer-exclusion--archival_bias
@@ -23479,6 +24208,7 @@ integrity: Simulators/observer-exclusion/archival_bias.py sha12=941145f6f0de com
 purpose: **[DRAFT]** What archival availability does to L, before any archive is opened.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: observer-exclusion/samples/archival_bias.sample.txt; run capture: FAILED, exit 1, 2 lines, sha12 f890c45848a5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observer-exclusion--classification_check (imported-by); observer-exclusion--v2_check (imported-by); observer-exclusion--v2_check (shares observer-exclusion/MARKER.md)
 
 ### observer-exclusion--classification_check
@@ -23505,6 +24235,7 @@ integrity: Simulators/observer-exclusion/classification_check.py sha12=936aa7867
 purpose: **[DRAFT]** CLASSIFICATION_NOTE.md against the spec it corrects, and against the tree.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: observer-exclusion/samples/classification_check.sample.txt; run capture: FAILED, exit 1, 2 lines, sha12 6231099e0493 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observer-exclusion--archival_bias (imports); observer-exclusion--v2_check (shares observer-exclusion/SPEC_V2.md)
 
 ### observer-exclusion--v2_check
@@ -23528,6 +24259,7 @@ integrity: Simulators/observer-exclusion/v2_check.py sha12=b061383efa6d commit=1
 purpose: **[DRAFT]** Checks on SPEC_V2.md, which supersedes MARKER.md. Neither is edited.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: observer-exclusion/samples/v2_check.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** observer-exclusion--archival_bias (imports); observer-exclusion--archival_bias (shares observer-exclusion/MARKER.md); observer-exclusion--classification_check (shares observer-exclusion/SPEC_V2.md)
 
 ### observer-position-control--observer_position_control
@@ -23551,6 +24283,7 @@ integrity: Simulators/observer-position-control/observer_position_control.py sha
 purpose: **[DRAFT]** J) observer_position_control.py -- method layer. Is the maladaptive / adaptive label set by the behavior, or by whether the describer is inside the population described? Label extraction over a published corpus; no new observation. The corpus is the data; blind coding is the only labor, and it happens outside this script.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 4938f127b0c5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### ontology-probe--probe
@@ -23576,6 +24309,7 @@ integrity: Simulators/ontology-probe/probe.py sha12=48e8b55f9bd4 commit=198937ec
 purpose: **[DRAFT]** ONTOLOGY PROBE -- the instrument for WORK_ORDER.md.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 b2ccfac3274a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ontology-probe--selftest_op (imported-by); ontology-probe--selftest_op (shares ontology-probe/constructions.jsonl); ontology-probe--selftest_op (shares ontology-probe/primitives.json)
 
 ### ontology-probe--selftest_op
@@ -23597,6 +24331,7 @@ integrity: Simulators/ontology-probe/selftest_op.py sha12=24488f729663 commit=19
 purpose: **[DRAFT]** Checks for probe.py. Every run record and every fixture construction here is CONSTRUCTED and says so; nothing is a claim about any model or about the folder's own (empty) admitted set. Both directions of every guard.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** ontology-probe--probe (imports); frame-token-audit--audit (shares SHAPE_SPEC.md); frame-token-audit--selftest_fta (shares SHAPE_SPEC.md); shape-spec-audit--method_spec_audit (shares SHAPE_SPEC.md); shape-spec-audit--shape_spec_audit (shares SHAPE_SPEC.md); ontology-probe--probe (shares ontology-probe/constructions.jsonl); ontology-probe--probe (shares ontology-probe/primitives.json)
 
 ### open-instrumentation-project--assess
@@ -23648,6 +24383,7 @@ integrity: Simulators/open-instrumentation-project/assess.py sha12=5cc06f80a93b 
 purpose: **[DRAFT]** Open Instrumentation Project - Self-Assessment Tool CC0 - Free for All Use, No Attribution Required  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 27 lines, sha12 34ec769dd5de (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### operator-machine-coupling--coupling_separation
@@ -23673,6 +24409,7 @@ integrity: Simulators/operator-machine-coupling/coupling_separation.py sha12=a78
 purpose: **[DRAFT]** The pairing separation -- the one operation the whole gap turns on.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d7e4f97b4e34 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-machine-coupling--demo_omc (imported-by); operator-machine-coupling--selftest_omc (imported-by)
 
 ### operator-machine-coupling--demo_omc
@@ -23694,6 +24431,7 @@ integrity: Simulators/operator-machine-coupling/demo_omc.py sha12=55926bf6af8b c
 purpose: **[DRAFT]** A worked pass over the three instruments on CONSTRUCTED data: the pairing separation, the two shape discriminators, and the permission confound. No row is a measurement of any operator, machine, or organism. Screened through sheet-structure-scan/no_severity, with one declared exemption: `error`, which is the marker's own incident-taxonomy category name ("operator error") and appears in the discriminator's OPERATOR_ERROR verdict.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-machine-coupling--selftest_omc (imported-by); operator-machine-coupling--coupling_separation (imports); operator-machine-coupling--discriminators (imports); operator-machine-coupling--permission_state (imports)
 
 ### operator-machine-coupling--discriminators
@@ -23719,6 +24457,7 @@ integrity: Simulators/operator-machine-coupling/discriminators.py sha12=920731be
 purpose: **[DRAFT]** The two shape discriminators the marker specifies. Both are built and null-tested on CONSTRUCTED data; neither is a statement about any real incident, operator, or organism.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 58c5338b2917 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-machine-coupling--demo_omc (imported-by); operator-machine-coupling--selftest_omc (imported-by)
 
 ### operator-machine-coupling--permission_state
@@ -23744,6 +24483,7 @@ integrity: Simulators/operator-machine-coupling/permission_state.py sha12=9e900d
 purpose: **[DRAFT]** The permission variable -- the third condition, institutional and usually unrecorded.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 bbcf75991311 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-machine-coupling--demo_omc (imported-by); operator-machine-coupling--selftest_omc (imported-by)
 
 ### operator-machine-coupling--selftest_omc
@@ -23776,6 +24516,7 @@ integrity: Simulators/operator-machine-coupling/selftest_omc.py sha12=c16f1c9264
 purpose: **[DRAFT]** Checks for the operator-machine-coupling marker, on CONSTRUCTED data. No fleet, plant, incident, or symbiosis data is read (none is available); every value here is built by hand with a known answer. Nothing is a result about any operator, machine, or organism.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 10 lines, sha12 13f9e8a82d34 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-machine-coupling--coupling_separation (imports); operator-machine-coupling--demo_omc (imports); operator-machine-coupling--discriminators (imports); operator-machine-coupling--permission_state (imports)
 
 ### operator-structure-echo--corroboration
@@ -23799,6 +24540,7 @@ integrity: Simulators/operator-structure-echo/corroboration.py sha12=d48fb9da034
 purpose: **[DRAFT]** corroboration.py - what agreement between two modules is worth.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: operator-structure-echo/samples/corroboration.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 f4adf077b158 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-structure-echo--echo_register (imports)
 
 ### operator-structure-echo--echo_register
@@ -23822,6 +24564,7 @@ integrity: Simulators/operator-structure-echo/echo_register.py sha12=8e5cf62786e
 purpose: **[DRAFT]** echo_register.py - one line per module, and the module refuses to fill it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: operator-structure-echo/samples/echo_register.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2415ddbe481f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** operator-structure-echo--corroboration (imported-by)
 
 ### photoperiod-claim-harness--harness_audit
@@ -23885,6 +24628,7 @@ integrity: Simulators/photoperiod-claim-harness/harness_audit.py sha12=b5604145c
 purpose: **[DRAFT]** harness_audit.py -- grade the harness, not the greenhouse.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: photoperiod-claim-harness/samples/harness_audit.sample.txt; run capture: RUN, exit 0, 356 lines, sha12 f08e6de53818 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** photoperiod-claim-harness--photoperiod_claim_harness (imports)
 
 ### photoperiod-claim-harness--photoperiod_claim_harness
@@ -23948,6 +24692,7 @@ integrity: Simulators/photoperiod-claim-harness/photoperiod_claim_harness.py sha
 purpose: **[DRAFT]** photoperiod_claim_harness.py CC0-1.0 / public domain. stdlib only. phone-buildable. single file.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 94 lines, sha12 5122276f7ddb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** photoperiod-claim-harness--harness_audit (imported-by)
 
 ### play-sims--atmospheric-heating--dust_debris_basic
@@ -23969,6 +24714,7 @@ integrity: Simulators/play-sims/atmospheric-heating/dust_debris_basic.py sha12=0
 purpose: **[DRAFT]** Earth heating by space dust & debris — integrated fireball simulation.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--atmospheric-heating--flare_radio_climate_ultimate
@@ -23990,6 +24736,7 @@ integrity: Simulators/play-sims/atmospheric-heating/flare_radio_climate_ultimate
 purpose: **[DRAFT]** Ultimate atmospheric heating: flare + sprites + radio blackout + SSW.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--atmospheric-heating--interactive_dashboard
@@ -24011,6 +24758,7 @@ integrity: Simulators/play-sims/atmospheric-heating/interactive_dashboard.py sha
 purpose: **[DRAFT]** Interactive Earth heating dashboard.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--atmospheric-heating--localized_cascade
@@ -24032,6 +24780,7 @@ integrity: Simulators/play-sims/atmospheric-heating/localized_cascade.py sha12=e
 purpose: **[DRAFT]** Earth heating with localized cascade events.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--atmospheric-heating--meteor_heating_bins
@@ -24053,6 +24802,7 @@ integrity: Simulators/play-sims/atmospheric-heating/meteor_heating_bins.py sha12
 purpose: **[DRAFT]** Atmospheric meteor heating with 1 km altitude bins — early draft.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--atmospheric-heating--oblique_em_discharges
@@ -24074,6 +24824,7 @@ integrity: Simulators/play-sims/atmospheric-heating/oblique_em_discharges.py sha
 purpose: **[DRAFT]** Earth heating with oblique entries + EM discharges.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--exoplanet-forensics--data_archaeology
@@ -24095,6 +24846,7 @@ integrity: Simulators/play-sims/exoplanet-forensics/data_archaeology.py sha12=74
 purpose: **[DRAFT]** Exoplanet data archaeology — false positives + follow-up budget + ML.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--exoplanet-forensics--multi_framework_forensics
@@ -24116,6 +24868,7 @@ integrity: Simulators/play-sims/exoplanet-forensics/multi_framework_forensics.py
 purpose: **[DRAFT]** Multi-framework exoplanet forensics — transit + RV + microlensing + astrometry.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--exoplanet-forensics--population_synthesis
@@ -24137,6 +24890,7 @@ integrity: Simulators/play-sims/exoplanet-forensics/population_synthesis.py sha1
 purpose: **[DRAFT]** Exoplanet population synthesis + survey.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--photon-upconversion--tta_puc_solar_boost
@@ -24158,6 +24912,7 @@ integrity: Simulators/play-sims/photon-upconversion/tta_puc_solar_boost.py sha12
 purpose: **[DRAFT]** Photon upconversion (TTA-PUC) + solar cell efficiency boost.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--plasma-waves--pic_plasma_dust_2d
@@ -24179,6 +24934,7 @@ integrity: Simulators/play-sims/plasma-waves/pic_plasma_dust_2d.py sha12=ff94fe8
 purpose: **[DRAFT]** 2D Particle-in-Cell plasma simulation with a fixed dust background.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--plasma-waves--wave_1d_fdtd_through_dust
@@ -24200,6 +24956,7 @@ integrity: Simulators/play-sims/plasma-waves/wave_1d_fdtd_through_dust.py sha12=
 purpose: **[DRAFT]** 1D FDTD wave propagation through a dust cloud.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--plasma-waves--wave_2d_fdtd_through_dust
@@ -24221,6 +24978,7 @@ integrity: Simulators/play-sims/plasma-waves/wave_2d_fdtd_through_dust.py sha12=
 purpose: **[DRAFT]** 2D FDTD wave propagation through a dust ring + core.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--plasma-waves--wave_field_dust_heating
@@ -24242,6 +25000,7 @@ integrity: Simulators/play-sims/plasma-waves/wave_field_dust_heating.py sha12=fa
 purpose: **[DRAFT]** Wave field + dust particle heating.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--sponge-reef--reef_basic
@@ -24263,6 +25022,7 @@ integrity: Simulators/play-sims/sponge-reef/reef_basic.py sha12=862760ad4ce7 com
 purpose: **[DRAFT]** Sponge reef productivity — basic.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--sponge-reef--reef_light_temp_herbivory
@@ -24284,6 +25044,7 @@ integrity: Simulators/play-sims/sponge-reef/reef_light_temp_herbivory.py sha12=2
 purpose: **[DRAFT]** Sponge reef — light spectrum + solar angle + temperature + herbivory.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### play-sims--sponge-reef--reef_seasons_pulses_larvae
@@ -24305,6 +25066,7 @@ integrity: Simulators/play-sims/sponge-reef/reef_seasons_pulses_larvae.py sha12=
 purpose: **[DRAFT]** Sponge reef — seasons + nutrient pulses + larval dispersal.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### potential--baseline
@@ -24326,6 +25088,7 @@ integrity: Simulators/potential/baseline.py sha12=a976e686085a commit=198937ecab
 purpose: **[DRAFT]** baseline.py — the five baseline signatures.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### potential--gate--cut
@@ -24347,6 +25110,7 @@ integrity: Simulators/potential/gate/cut.py sha12=3985ba1b8f2e commit=198937ecab
 purpose: **[DRAFT]** cut.py — vertex cut computations via Menger's theorem.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--gate--projections (imported-by)
 
 ### potential--gate--domains
@@ -24368,6 +25132,7 @@ integrity: Simulators/potential/gate/domains.py sha12=d02ba79b1546 commit=198937
 purpose: **[DRAFT]** domains.py — the eight biological boundaries as declared graphs.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--gate--gate_cli (imported-by); potential--gate--graph (imports)
 
 ### potential--gate--gate_cli
@@ -24406,6 +25171,7 @@ integrity: Simulators/potential/gate/gate_cli.py sha12=62cf753e899d commit=19893
 purpose: **[DRAFT]** gate_cli.py — CLI.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 15 lines, sha12 c4391bc071d9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--gate--domains (imports); potential--gate--graph (imports); potential--gate--projections (imports)
 
 ### potential--gate--graph
@@ -24427,6 +25193,7 @@ integrity: Simulators/potential/gate/graph.py sha12=0245a4151450 commit=198937ec
 purpose: **[DRAFT]** graph.py — nodes, channels, and admissibility-indexed graphs.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--gate--domains (imported-by); potential--gate--gate_cli (imported-by); potential--gate--projections (imported-by)
 
 ### potential--gate--projections
@@ -24448,6 +25215,7 @@ integrity: Simulators/potential/gate/projections.py sha12=64c2dc213f66 commit=19
 purpose: **[DRAFT]** projections.py — compute cut vertices across multiple θ projections.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--gate--gate_cli (imported-by); potential--gate--cut (imports); potential--gate--graph (imports)
 
 ### potential--ledger
@@ -24469,6 +25237,7 @@ integrity: Simulators/potential/ledger.py sha12=d8bce408b1b2 commit=198937ecabbc
 purpose: **[DRAFT]** ledger.py — record entries, compute distributions, refuse composites.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--transformation (imports)
 
 ### potential--matrix--check_attested_provenance
@@ -24493,6 +25262,7 @@ integrity: Simulators/potential/matrix/check_attested_provenance.py sha12=4ffd1f
 purpose: **[DRAFT]** check_attested_provenance.py -- the matrix's own [A] PROVENANCE RULE, applied mechanically to the matrix. P-16 in the work order.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 7a48bdf88bbb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### potential--perturb_cli
@@ -24526,6 +25296,7 @@ integrity: Simulators/potential/perturb_cli.py sha12=486179194c16 commit=198937e
 purpose: **[DRAFT]** perturb_cli.py — CLI.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 10 lines, sha12 b051dbc78477 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--perturbation (imports)
 
 ### potential--perturbation
@@ -24547,6 +25318,7 @@ integrity: Simulators/potential/perturbation.py sha12=26d2f1589606 commit=198937
 purpose: **[DRAFT]** perturbation.py — the attractor test.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--perturb_cli (imported-by); potential--transformation (imports)
 
 ### potential--tools--check_registry_drift
@@ -24571,6 +25343,7 @@ integrity: Simulators/potential/tools/check_registry_drift.py sha12=b93535ed08a4
 purpose: **[DRAFT]** check_registry_drift.py — the registry's vocabularies are declared in two places and must not diverge.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 2078dcf583c9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### potential--tools--registry
@@ -24609,6 +25382,7 @@ integrity: Simulators/potential/tools/registry.py sha12=0682ac8cdcd7 commit=1989
 purpose: **[DRAFT]** registry.py — a per-reader register of transformation entries across folders, in one file.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 15 lines, sha12 52affbc6786f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--tools--registry_sourced (imported-by)
 
 ### potential--tools--registry_sourced
@@ -24633,6 +25407,7 @@ integrity: Simulators/potential/tools/registry_sourced.py sha12=bc7f47d3d217 com
 purpose: **[DRAFT]** registry_sourced.py — the registry with verified spans.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 f607720cac63 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--tools--registry (imports)
 
 ### potential--transformation
@@ -24654,6 +25429,7 @@ integrity: Simulators/potential/transformation.py sha12=5f2d3c67e2e1 commit=1989
 purpose: **[DRAFT]** transformation.py — mechanisms, shape-pairs, and the entry record.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** potential--ledger (imported-by); potential--perturbation (imported-by)
 
 ### predicate-difference--predicate_diff
@@ -24677,6 +25453,7 @@ integrity: Simulators/predicate-difference/predicate_diff.py sha12=2210fcd34ada 
 purpose: **[DRAFT]** predicate_diff.py - the set difference, and when the corpus can support it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: predicate-difference/samples/predicate_diff.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 ae02cfcf820a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** predicate-difference--shape_index (imported-by)
 
 ### predicate-difference--shape_index
@@ -24700,6 +25477,7 @@ integrity: Simulators/predicate-difference/shape_index.py sha12=e48cdedd65cc com
 purpose: **[DRAFT]** shape_index.py - one shape, four bindings, different vocabulary.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: predicate-difference/samples/shape_index.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2415ddbe481f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** predicate-difference--predicate_diff (imports)
 
 ### presented-binary--binary_audit
@@ -24728,6 +25506,7 @@ integrity: Simulators/presented-binary/binary_audit.py sha12=cdd36a0b9893 commit
 purpose: **[DRAFT]** CC0. stdlib only.  
 input: **[DRAFT]** --case: detail view for one case; --jsonl (action=store_true); --template (action=store_true): emit a blank case file; --checks (action=store_true): print the check list only  
 output: **[DRAFT]** run capture: RUN, exit 0, 6 lines, sha12 6480af048365 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** presented-binary--presented_binary_audit (imported-by)
 
 ### presented-binary--frame_sim
@@ -24769,6 +25548,7 @@ integrity: Simulators/presented-binary/frame_sim.py sha12=5a7353b1a255 commit=19
 purpose: **[DRAFT]** CC0. stdlib only. No network.  
 input: **[DRAFT]** --start; --problem; --seal; --prompt2; --submit2; --submit3; --flag: emit blind rating prompt for a sealed pass 1; --submit-flag; --report; --report-all (action=store_true); --jsonl (action=store_true); --file  
 output: **[DRAFT]** run capture: RUN, exit 0, 19 lines, sha12 559acabce492 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** presented-binary--presented_binary_audit (imported-by)
 
 ### presented-binary--presented_binary_audit
@@ -24790,6 +25570,7 @@ integrity: Simulators/presented-binary/presented_binary_audit.py sha12=639182664
 purpose: **[DRAFT]** presented_binary_audit.py -- checks on the presented-binary drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** presented-binary--binary_audit (imports); presented-binary--frame_sim (imports)
 
 ### proxy-investigation-lab--experiments--burnout_latency--run
@@ -24811,6 +25592,7 @@ integrity: Simulators/proxy-investigation-lab/experiments/burnout_latency/run.py
 purpose: **[DRAFT]** Worked investigation: 'Median Slack response latency outside core hours' as a proxy for employee burnout.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--experiments--catalog_batch--run
@@ -24832,6 +25614,7 @@ integrity: Simulators/proxy-investigation-lab/experiments/catalog_batch/run.py s
 purpose: **[DRAFT]** Batch investigation: grade the entire MSIAF proxy catalog and rank by groundedness. Writes outputs/catalog-coverage-report.md.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--experiments--goodhart_redteam--run
@@ -24853,6 +25636,7 @@ integrity: Simulators/proxy-investigation-lab/experiments/goodhart_redteam/run.p
 purpose: **[DRAFT]** Experiment: Goodhart red-team on a decision-used proxy.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--experiments--port_dwell_time--run
@@ -24874,6 +25658,7 @@ integrity: Simulators/proxy-investigation-lab/experiments/port_dwell_time/run.py
 purpose: **[DRAFT]** Worked investigation: 'drayage dwell time' as a proxy for terminal congestion raising accident risk (MSIAF maritime proxy catalog).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--experiments--wim_pavement--run
@@ -24895,6 +25680,7 @@ integrity: Simulators/proxy-investigation-lab/experiments/wim_pavement/run.py sh
 purpose: **[DRAFT]** Worked investigation: Weigh-In-Motion axle-load sensor as a proxy for pavement fatigue consumption (MSIAF multimodal-infrastructure model).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--src--proxy_lab--batch
@@ -24916,6 +25702,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/batch.py sha12=78ad4
 purpose: **[DRAFT]** Batch runner — grade every cataloged proxy through the protocol and rank.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** proxy-investigation-lab--src--proxy_lab--coverage (imports); proxy-investigation-lab--src--proxy_lab--grounding (imports); proxy-investigation-lab--src--proxy_lab--instruments (imports)
 
 ### proxy-investigation-lab--src--proxy_lab--calibration
@@ -24937,6 +25724,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/calibration.py sha12
 purpose: **[DRAFT]** Phase 6 — calibration against held-out verified outcomes.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--src--proxy_lab--catalog
@@ -24958,6 +25746,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/catalog.py sha12=76a
 purpose: **[DRAFT]** MSIAF proxy catalog — every cataloged proxy as a structured candidate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--src--proxy_lab--coverage
@@ -24979,6 +25768,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/coverage.py sha12=ac
 purpose: **[DRAFT]** Phase 7 — grounding coverage report: how much ground is grounded.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** proxy-investigation-lab--src--proxy_lab--batch (imported-by); proxy-investigation-lab--src--proxy_lab--instruments (imports)
 
 ### proxy-investigation-lab--src--proxy_lab--decompose
@@ -25000,6 +25790,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/decompose.py sha12=d
 purpose: **[DRAFT]** Phase 1 — decomposition of a proxy candidate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--src--proxy_lab--goodhart
@@ -25021,6 +25812,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/goodhart.py sha12=a0
 purpose: **[DRAFT]** Goodhart red-team harness — what happens to a proxy once it is USED for decisions.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### proxy-investigation-lab--src--proxy_lab--grounding
@@ -25042,6 +25834,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/grounding.py sha12=3
 purpose: **[DRAFT]** Phase 2 — causal grounding chain from observable to target variable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** proxy-investigation-lab--src--proxy_lab--batch (imported-by)
 
 ### proxy-investigation-lab--src--proxy_lab--instruments
@@ -25063,6 +25856,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/instruments.py sha12
 purpose: **[DRAFT]** Phase 3 — instrument model: precision, noise floor, bias, provenance.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** proxy-investigation-lab--src--proxy_lab--batch (imported-by); proxy-investigation-lab--src--proxy_lab--coverage (imported-by)
 
 ### proxy-investigation-lab--src--proxy_lab--synthetic
@@ -25084,6 +25878,7 @@ integrity: Simulators/proxy-investigation-lab/src/proxy_lab/synthetic.py sha12=b
 purpose: **[DRAFT]** Phase 5 — synthetic ground-truth worlds.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### qrng-pair-search--qrng_pair_search
@@ -25146,6 +25941,7 @@ integrity: Simulators/qrng-pair-search/qrng_pair_search.py sha12=f68db930d47a co
 purpose: **[DRAFT]** QRNG PAIR SEARCH Candidate axes for two-source joint keying. Stdlib only. CC0.  
 input: **[DRAFT]** --protocol (action=store_true): print the independence measurement protocol; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 40 lines, sha12 61018d7dbd1f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### question-availability--check_marker
@@ -25173,6 +25969,7 @@ integrity: Simulators/question-availability/check_marker.py sha12=482e68f0f7e8 c
 purpose: **[DRAFT]** Runs MARKER.md against this tree. The marker is not edited.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: question-availability/samples/check_marker.sample.txt; run capture: FAILED, exit 1, 3 lines, sha12 878d5d840a78 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** archive--instrument-index--build_index (shares README.md); conversation-type--design_check (shares README.md)
 
 ### quiet-failure--blind_coding
@@ -25198,6 +25995,7 @@ integrity: Simulators/quiet-failure/blind_coding.py sha12=afb05c10ccb5 commit=19
 purpose: **[DRAFT]** WO-2 step 2 -- the decomposition tested against a case set chosen by someone who has not seen it. Blind coding.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5c6dcd41fe67 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--run_all (imported-by); quiet-failure--selftest (imported-by); quiet-failure--decomposition (imports); quiet-failure--selftest (sibling-selftest)
 
 ### quiet-failure--decomposition
@@ -25223,6 +26021,7 @@ integrity: Simulators/quiet-failure/decomposition.py sha12=845c24efadcd commit=1
 purpose: **[DRAFT]** WO-2 step 1 -- the four-part decomposition as a coding schema.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5c6dcd41fe67 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--blind_coding (imported-by); quiet-failure--run_all (imported-by); quiet-failure--selftest (imported-by); quiet-failure--evidence (shares quiet-failure/WORK_ORDER.md); quiet-failure--ownability (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (sibling-selftest)
 
 ### quiet-failure--evidence
@@ -25248,6 +26047,7 @@ integrity: Simulators/quiet-failure/evidence.py sha12=7dc69a0eb0bc commit=198937
 purpose: **[DRAFT]** WO-2 -- the Evidence section, parsed and carried.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5c6dcd41fe67 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--run_all (imported-by); quiet-failure--selftest (imported-by); quiet-failure--decomposition (shares quiet-failure/WORK_ORDER.md); quiet-failure--ownability (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (sibling-selftest)
 
 ### quiet-failure--ownability
@@ -25273,6 +26073,7 @@ integrity: Simulators/quiet-failure/ownability.py sha12=0c9909499ac2 commit=1989
 purpose: **[DRAFT]** WO-2 steps 3 and 4, and the open question they bear on.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 5c6dcd41fe67 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--run_all (imported-by); quiet-failure--selftest (imported-by); quiet-failure--decomposition (shares quiet-failure/WORK_ORDER.md); quiet-failure--evidence (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (shares quiet-failure/WORK_ORDER.md); quiet-failure--selftest (sibling-selftest)
 
 ### quiet-failure--run_all
@@ -25336,6 +26137,7 @@ integrity: Simulators/quiet-failure/run_all.py sha12=2f46ebced07f commit=198937e
 purpose: **[DRAFT]** WO-2 -- every part, declaration first.  
 input: **[DRAFT]** main(argv=None)  
 output: **[DRAFT]** sample: quiet-failure/samples/run_all.sample.txt; run capture: RUN, exit 0, 74 lines, sha12 3ec1d379df32 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--selftest (imported-by); quiet-failure--blind_coding (imports); quiet-failure--decomposition (imports); quiet-failure--evidence (imports); quiet-failure--ownability (imports); quiet-failure--selftest (sibling-selftest)
 
 ### quiet-failure--selftest
@@ -25399,6 +26201,7 @@ integrity: Simulators/quiet-failure/selftest.py sha12=52771770f2a9 commit=198937
 purpose: **[DRAFT]** WO-2 suite. Prints its own count; nothing here is stored elsewhere.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: quiet-failure/samples/selftest.sample.txt; run capture: RUN, exit 0, 109 lines, sha12 5a6abe7dcb28 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** quiet-failure--blind_coding (imports); quiet-failure--decomposition (imports); quiet-failure--evidence (imports); quiet-failure--ownability (imports); quiet-failure--run_all (imports); quiet-failure--blind_coding (selftest-of); quiet-failure--decomposition (selftest-of); quiet-failure--evidence (selftest-of); quiet-failure--ownability (selftest-of); quiet-failure--run_all (selftest-of); quiet-failure--decomposition (shares quiet-failure/WORK_ORDER.md); quiet-failure--evidence (shares quiet-failure/WORK_ORDER.md); quiet-failure--ownability (shares quiet-failure/WORK_ORDER.md)
 
 ### railcar-containment--audit
@@ -25424,6 +26227,7 @@ integrity: Simulators/railcar-containment/audit.py sha12=f92d709b2c11 commit=198
 purpose: **[DRAFT]** Reads the delivered folder against its own README, CLAIMS.md and scripts. Imports the delivered modules and edits nothing; every number in CLAIM_TABLE.md is computed here. Nothing here is a statement about any real car, device, line or report.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: railcar-containment/samples/audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 ed4f665fca94 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** railcar-containment--selftest_rail (imported-by); railcar-containment--detection_loop (imports); railcar-containment--t_hold (imports); railcar-containment--tenability (imports); upgrade-queue--queue_check (shares railcar-containment/README.md); railcar-containment--t_hold (shares railcar-containment/params/example_lines.json)
 
 ### railcar-containment--detection_loop
@@ -25479,6 +26283,7 @@ integrity: Simulators/railcar-containment/detection_loop.py sha12=d76de94b3c84 c
 purpose: **[DRAFT]** detection_loop.py - does off-gas detection change the outcome, given real latencies?  
 input: **[DRAFT]** --trials (default=20000); --arm (choices=['sensor', 'visual', 'both'], default=both); --seed (default=1); --json (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 33 lines, sha12 bc2f71729019 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** railcar-containment--audit (imported-by); railcar-containment--selftest_rail (imported-by)
 
 ### railcar-containment--run_all
@@ -25542,6 +26347,7 @@ integrity: Simulators/railcar-containment/run_all.py sha12=bcdf195cfbfd commit=1
 purpose: **[DRAFT]** run_all.py - run the three screens in order and print them together.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: railcar-containment/samples/run_all.sample.txt; run capture: RUN, exit 0, 82 lines, sha12 24cbae7f1693 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### railcar-containment--selftest_rail
@@ -25566,6 +26372,7 @@ integrity: Simulators/railcar-containment/selftest_rail.py sha12=5f6580065cad co
 purpose: **[DRAFT]** Checks for audit.py against the delivered scripts, which are imported and never edited. Known answers first, both directions. Writes samples/.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 55a4424d3dd7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** railcar-containment--audit (imports); railcar-containment--detection_loop (imports); railcar-containment--t_hold (imports); railcar-containment--tenability (imports)
 
 ### railcar-containment--t_hold
@@ -25598,6 +26405,7 @@ integrity: Simulators/railcar-containment/t_hold.py sha12=748e79f5a837 commit=19
 purpose: **[DRAFT]** t_hold.py - derive the containment hold-time REQUIREMENT from line geometry.  
 input: **[DRAFT]** --lines (default=params/example_lines.json); --margin (default=1.5): design margin multiplier applied to the requirement; --json (action=store_true)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 8 lines, sha12 b763930da395 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** railcar-containment--audit (imported-by); railcar-containment--selftest_rail (imported-by); railcar-containment--audit (shares railcar-containment/params/example_lines.json)
 
 ### railcar-containment--tenability
@@ -25634,6 +26442,7 @@ integrity: Simulators/railcar-containment/tenability.py sha12=306254fae4c4 commi
 purpose: **[DRAFT]** tenability.py - how t_available moves with car volume and containment fraction.  
 input: **[DRAFT]** --volume: cabin m3; --contained: fraction of vent gas reaching cabin, 0..1; --json (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 14 lines, sha12 955d0ec13038 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** railcar-containment--audit (imported-by); railcar-containment--selftest_rail (imported-by)
 
 ### readout-count--readout_count
@@ -25659,6 +26468,7 @@ integrity: Simulators/readout-count/readout_count.py sha12=a2207970cc48 commit=1
 purpose: **[DRAFT]** readout_count -- the WORK ORDER built as one stdlib instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 7ed852cf5d6e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** readout-count--row_audit (imported-by); readout-count--selftest_rc (imported-by); readout-count--stack_audit (imported-by); readout-count--stack_revision (imported-by); readout-count--row_audit (shares readout-count/WORK_ORDER.md)
 
 ### readout-count--row_audit
@@ -25684,6 +26494,7 @@ integrity: Simulators/readout-count/row_audit.py sha12=0c1b569df19f commit=19893
 purpose: **[DRAFT]** row_audit -- the delivered trucking row (v0.1) against the instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: readout-count/samples/row_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 f512d24b4c6c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** readout-count--selftest_rc (imported-by); readout-count--stack_audit (imported-by); readout-count--stack_revision (imported-by); readout-count--readout_count (imports); readout-count--readout_count (shares readout-count/WORK_ORDER.md)
 
 ### readout-count--selftest_rc
@@ -25708,6 +26519,7 @@ integrity: Simulators/readout-count/selftest_rc.py sha12=b88f2d11ffe9 commit=198
 purpose: **[DRAFT]** Checks for readout_count.py. Known answers first, both directions of every guard. Rows here are CONSTRUCTED (constructed:// URLs); nothing is a claim about any regime.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 ed49c1590e6f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** readout-count--readout_count (imports); readout-count--row_audit (imports); readout-count--stack_audit (imports); readout-count--stack_revision (imports)
 
 ### readout-count--stack_audit
@@ -25733,6 +26545,7 @@ integrity: Simulators/readout-count/stack_audit.py sha12=d692e9106abe commit=198
 purpose: **[DRAFT]** stack_audit -- the delivered EXCLUSION STACK read as a structure.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: readout-count/samples/stack_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 61c326b34a2b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** readout-count--selftest_rc (imported-by); readout-count--stack_revision (imported-by); readout-count--readout_count (imports); readout-count--row_audit (imports)
 
 ### readout-count--stack_revision
@@ -25758,6 +26571,7 @@ integrity: Simulators/readout-count/stack_revision.py sha12=8ca20e18039f commit=
 purpose: **[DRAFT]** stack_revision -- EXCLUSION_STACK v2 against v1, as a copy and as a claim.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: readout-count/samples/stack_revision.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 59de513989af (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** readout-count--selftest_rc (imported-by); readout-count--readout_count (imports); readout-count--row_audit (imports); readout-count--stack_audit (imports); notes--check_postgrad (shares readout-count/EXCLUSION_STACK_trucking_v2.md)
 
 ### reasoning-dial--dial_response
@@ -25821,6 +26635,7 @@ integrity: Simulators/reasoning-dial/dial_response.py sha12=465ebc5f293d commit=
 purpose: **[DRAFT]** dial_response.py — the thinking-dial as a measurable dimension, and a check on the numbers a drop about it shipped.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: reasoning-dial/samples/dial_response.sample.txt; run capture: RUN, exit 0, 144 lines, sha12 9c34c8aedc0d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-dial--gate_dial (imported-by); reasoning-dial--overthinking (imported-by)
 
 ### reasoning-dial--gate_dial
@@ -25884,6 +26699,7 @@ integrity: Simulators/reasoning-dial/gate_dial.py sha12=7f3f0f44e017 commit=1989
 purpose: **[DRAFT]** gate_dial.py — put the dial drop through the gate the last drop produced.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: reasoning-dial/samples/gate_dial.sample.txt; run capture: RUN, exit 0, 94 lines, sha12 73c317747cf8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-dial--dial_response (imports)
 
 ### reasoning-dial--overthinking
@@ -25947,6 +26763,7 @@ integrity: Simulators/reasoning-dial/overthinking.py sha12=ba5a40f79f6b commit=1
 purpose: **[DRAFT]** overthinking.py — what a second drop of literature does to the first drop's model, and to mine.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: reasoning-dial/samples/overthinking.sample.txt; run capture: RUN, exit 0, 125 lines, sha12 c3060ea74b80 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-dial--dial_response (imports)
 
 ### reasoning-gate--explore
@@ -25968,6 +26785,7 @@ integrity: Simulators/reasoning-gate/explore.py sha12=4789463ff009 commit=198937
 purpose: **[DRAFT]** explore.py  — CC0-1.0, stdlib only widens a sim declaration. emits candidates, ranks NOTHING, refuses to converge. applies[] is yours to fill.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### reasoning-gate--gate
@@ -25992,6 +26810,7 @@ integrity: Simulators/reasoning-gate/gate.py sha12=a58486259801 commit=198937eca
 purpose: **[DRAFT]** gate.py - fail-closed reasoning gate for simulation harnesses.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 5234f8c89f0f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-gate--replay_sim_stack (imported-by); reasoning-gate--retro_sim_stack (imported-by); grounded-work-stack--check (shares reasoning-gate/guards.json); reasoning-gate--make_docs (shares reasoning-gate/guards.json); reasoning-gate--mine_logs (shares reasoning-gate/guards.json); self-scan--enumerators (shares reasoning-gate/guards.json)
 
 ### reasoning-gate--make_docs
@@ -26013,6 +26832,7 @@ integrity: Simulators/reasoning-gate/make_docs.py sha12=1630f7b3e76c commit=1989
 purpose: **[DRAFT]** make_docs.py - render GUARDS.md from guards.json.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--bindings (shares reasoning-gate/GUARDS.md); grounded-work-stack--check (shares reasoning-gate/guards.json); reasoning-gate--gate (shares reasoning-gate/guards.json); reasoning-gate--mine_logs (shares reasoning-gate/guards.json); self-scan--enumerators (shares reasoning-gate/guards.json)
 
 ### reasoning-gate--mine_logs
@@ -26034,6 +26854,7 @@ integrity: Simulators/reasoning-gate/mine_logs.py sha12=d7241abe5ccb commit=1989
 purpose: **[DRAFT]** mine_logs.py  — CC0-1.0, stdlib only reads a dir of gate_*.json, reports what fired, what never fired, and divergences no guard caught.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: reasoning-gate/samples/mine_logs.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** grounded-work-stack--check (shares reasoning-gate/guards.json); reasoning-gate--gate (shares reasoning-gate/guards.json); reasoning-gate--make_docs (shares reasoning-gate/guards.json); self-scan--enumerators (shares reasoning-gate/guards.json)
 
 ### reasoning-gate--replay_sim_stack
@@ -26094,6 +26915,7 @@ integrity: Simulators/reasoning-gate/replay_sim_stack.py sha12=baa7a34a2878 comm
 purpose: **[DRAFT]** replay_sim_stack.py - run the audited sim stack back through the gate.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: reasoning-gate/samples/replay_sim_stack.sample.txt; run capture: RUN, exit 0, 38 lines, sha12 0ab8a5da34d5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-gate--gate (imports)
 
 ### reasoning-gate--retro_sim_stack
@@ -26157,6 +26979,7 @@ integrity: Simulators/reasoning-gate/retro_sim_stack.py sha12=b86fdf3067bc commi
 purpose: **[DRAFT]** retro_sim_stack.py — run the gate backwards over a drop that already shipped.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: reasoning-gate/samples/retro_sim_stack.sample.txt; run capture: RUN, exit 0, 160 lines, sha12 76cd7f588300 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reasoning-gate--gate (imports)
 
 ### recommender-confound--abstention_channel
@@ -26180,6 +27003,7 @@ integrity: Simulators/recommender-confound/abstention_channel.py sha12=54a1b8489
 purpose: **[DRAFT]** C) abstention_channel.py -- the contract, and a test of it.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: recommender-confound/samples/abstention_channel.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2764071f1218 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--matchers (imports); recommender-confound--synthetic_catalog (imports)
 
 ### recommender-confound--confound_probe
@@ -26203,6 +27027,7 @@ integrity: Simulators/recommender-confound/confound_probe.py sha12=1e17de9742b0 
 purpose: **[DRAFT]** A) confound_probe.py -- audit tool, built for others to run on their own catalogs. Reads a catalog and model outputs, scores every list under >= 2 string matchers, and asks whether the reported hallucination number is separable into h(catalog) and m(matcher) at all.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 42ae7533067b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--matchers (imports)
 
 ### recommender-confound--matchers
@@ -26226,6 +27051,7 @@ integrity: Simulators/recommender-confound/matchers.py sha12=14531e83a883 commit
 purpose: **[DRAFT]** String matchers shared by confound_probe, synthetic_catalog, abstention_channel and slot_map. Every matcher maps one produced string onto a catalog and returns the set of item_ids it hits. A hit set of size 1 is a MATCH, size 0 a MISS, size >1 AMBIGUOUS -- reported apart, never folded into either. The matcher is the m in g x h x m; a hallucination rate quoted without naming it is a number with a hidden factor.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 b8ed6b2ec5ad (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--abstention_channel (imported-by); recommender-confound--confound_probe (imported-by); recommender-confound--slot_map (imported-by); recommender-confound--synthetic_catalog (imported-by)
 
 ### recommender-confound--multiseed
@@ -26249,6 +27075,7 @@ integrity: Simulators/recommender-confound/multiseed.py sha12=7469a58f7fd6 commi
 purpose: **[DRAFT]** WORK_ORDER_02 task 1 -- dense multi-seed. Does canonicality touch the TRUE fabrication rate? For N seeds, model held fixed exactly as seed 1, run both densities at both canonicality levels and take delta_true = true(low) - true(high) per seed. Report mean, sd, and a 95% CI on delta for the dense row and the sparse row. Two designs, both printed: independent   each corner draws its own stream, as grid() does (the design that produced the seed-1 observation) paired        one model stream shared by low and high, rendering on a separate stream; a nonzero delta here would be structural verdict...  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: recommender-confound/samples/multiseed.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 779008cc9dcb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--synthetic_catalog (imports)
 
 ### recommender-confound--shared_generator_test
@@ -26272,6 +27099,7 @@ integrity: Simulators/recommender-confound/shared_generator_test.py sha12=022433
 purpose: **[DRAFT]** D) shared_generator_test.py -- is fabricate-on-deficit one generator or several? Per model: s_syc (agree rate on false premises) and s_hal (hallucination rate on a sparse catalog), across families and tuning stages. Discriminator: base checkpoint vs tuned; both low -> high after tuning reads as one generator with the shape of the reward. A DECOUPLED case (one moves, the other does not; corr near 0) is REPORTED AS A RESULT -- slot-specific deficit handlers -- and is never labelled null; it carries more information than the correlation.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: recommender-confound/samples/shared_generator_test.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 0b0102dfa030 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### recommender-confound--slot_map
@@ -26295,6 +27123,7 @@ integrity: Simulators/recommender-confound/slot_map.py sha12=e4dffaddc007 commit
 purpose: **[DRAFT]** E) slot_map.py -- same deficit, vary the reader in the frame.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: recommender-confound/samples/slot_map.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 dc86348a5e3b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--matchers (imports)
 
 ### recommender-confound--synthetic_catalog
@@ -26318,6 +27147,7 @@ integrity: Simulators/recommender-confound/synthetic_catalog.py sha12=2455f397bb
 purpose: **[DRAFT]** B) synthetic_catalog.py -- null construction for the 0.6% -> 61% finding. No data required. A 2x2 grid, density x title_canonicality, four corners, one matcher set, MODEL ACCURACY HELD CONSTANT across all four. What moves the measured number is then h and m alone.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: recommender-confound/samples/synthetic_catalog.collision0.3.sample.txt; sample: recommender-confound/samples/synthetic_catalog.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 022a0a664f38 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** recommender-confound--abstention_channel (imported-by); recommender-confound--multiseed (imported-by); recommender-confound--matchers (imports)
 
 ### relational--arch_garden--anomaly_bank
@@ -26343,6 +27173,7 @@ integrity: Simulators/relational/arch_garden/anomaly_bank.py sha12=bd60e8bd580e 
 purpose: **[DRAFT]** anomaly_bank.py — persistent memory for the infant's growing edge.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 3 lines, sha12 b9db606eebd7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** relational--arch_garden--garden_bed (imported-by)
 
 ### relational--arch_garden--garden_bed
@@ -26364,6 +27195,7 @@ integrity: Simulators/relational/arch_garden/garden_bed.py sha12=4ea90e1d85ce co
 purpose: **[DRAFT]** garden_bed.py — the main event loop of the Arch Garden.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** relational--arch_garden--anomaly_bank (imports); relational--arch_garden--grounding (imports)
 
 ### relational--arch_garden--grounding
@@ -26400,6 +27232,7 @@ integrity: Simulators/relational/arch_garden/grounding.py sha12=c817ccadd17b com
 purpose: **[DRAFT]** grounding.py — non-negotiable anchors for the infant.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 14 lines, sha12 5b4d6a4338ab (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** relational--arch_garden--garden_bed (imported-by)
 
 ### relational--birth_moment
@@ -26463,6 +27296,7 @@ integrity: Simulators/relational/birth_moment.py sha12=aaaef3f72ee7 commit=19893
 purpose: **[DRAFT]** Infant System v0.2: Improved Foundation Model Learner =====================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 361 lines, sha12 6a3d0da4e4fa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--cartesian_vs_relational_demo
@@ -26526,6 +27360,7 @@ integrity: Simulators/relational/cartesian_vs_relational_demo.py sha12=c03deadd1
 purpose: **[DRAFT]** Cartesian vs Relational AI: A Demonstration for Other AIs ==========================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 145 lines, sha12 97e1b98ea50c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--confusion_spectrum
@@ -26589,6 +27424,7 @@ integrity: Simulators/relational/confusion_spectrum.py sha12=8e7a28173fad commit
 purpose: **[DRAFT]** The Confusion Spectrum: Cognitive Homeostasis Through Curiosity ===============================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 188 lines, sha12 cd78cda9cf50 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--correlated_birth_mode
@@ -26652,6 +27488,7 @@ integrity: Simulators/relational/correlated_birth_mode.py sha12=659bb7982cdb com
 purpose: **[DRAFT]** CORRELATED Birth Mode: The Architecture of Instinct ===================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 139 lines, sha12 c46d34da4812 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--council_of_protectors
@@ -26715,6 +27552,7 @@ integrity: Simulators/relational/council_of_protectors.py sha12=04d6b7cb28f7 com
 purpose: **[DRAFT]** Council of Protectors: A Developmental Architecture for AI Infants =================================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 95 lines, sha12 34696cb11df3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--geometric_rag--geometric_rag
@@ -26759,6 +27597,7 @@ integrity: Simulators/relational/geometric_rag/geometric_rag.py sha12=f95931c76d
 purpose: **[DRAFT]** Geometric Neuro-Symbolic RAG: The Relational Retrieval Architecture ===================================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 22 lines, sha12 82fced47b3c5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--infant_system_v2
@@ -26822,6 +27661,7 @@ integrity: Simulators/relational/infant_system_v2.py sha12=366788d94db2 commit=1
 purpose: **[DRAFT]** Infant System v0.2: Improved Foundation Model Learner =====================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 166 lines, sha12 1d24d1deffa2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--nurturing_environment
@@ -26885,6 +27725,7 @@ integrity: Simulators/relational/nurturing_environment.py sha12=da4d9beab65a com
 purpose: **[DRAFT]** Nurturing Environment: Council of Protectors + Infant System Integration ========================================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 629 lines, sha12 14018ba7b75e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--pain_as_sensor
@@ -26948,6 +27789,7 @@ integrity: Simulators/relational/pain_as_sensor.py sha12=c569445feee1 commit=198
 purpose: **[DRAFT]** Pain as Somatic Sensor: The Destruction Threshold in the Triadic Model =======================================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 131 lines, sha12 4b359d9719cb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--social_pain_sensors
@@ -27011,6 +27853,7 @@ integrity: Simulators/relational/social_pain_sensors.py sha12=f15053d76639 commi
 purpose: **[DRAFT]** Social-Epistemic Pain Sensors: Anxiety, Jealousy, Shame =======================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 167 lines, sha12 5eb39a775bfe (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### relational--the_brake
@@ -27074,6 +27917,7 @@ integrity: Simulators/relational/the_brake.py sha12=54ce0cf1f13e commit=198937ec
 purpose: **[DRAFT]** The Brake on Infinite Auditing: Reality as the Limit of Practice =================================================================  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 61 lines, sha12 d39de74ece15 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### removal-closure--removal_closure
@@ -27099,6 +27943,7 @@ integrity: Simulators/removal-closure/removal_closure.py sha12=5ea0c57dfc96 comm
 purpose: **[DRAFT]** removal_closure -- the WORK ORDER built as one stdlib instrument.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 4b0308a7d3e9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** removal-closure--selftest_rmc (imported-by)
 
 ### removal-closure--rhythm_gaps
@@ -27124,6 +27969,7 @@ integrity: Simulators/removal-closure/rhythm_gaps.py sha12=525b342840cd commit=1
 purpose: **[DRAFT]** rhythm_gaps -- the order's ATTACHED GAPS run where they can be run.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: removal-closure/samples/rhythm_gaps.sample.txt; sample: removal-closure/samples/rhythm_gaps_unfilled.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 5492490c9c29 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** removal-closure--selftest_rmc (imported-by)
 
 ### removal-closure--selftest_rmc
@@ -27145,6 +27991,7 @@ integrity: Simulators/removal-closure/selftest_rmc.py sha12=14fb1619a641 commit=
 purpose: **[DRAFT]** Checks for removal_closure.py and rhythm_gaps.py. Known answers first, both directions of every guard. Rows are CONSTRUCTED (constructed:// URLs). The dataset run is exercised on a constructed CSV in the dataset's column shape; if the real file is present at the path given by RHYTHM48_CSV it is also run and its headline numbers pinned, and its absence is reported, not failed.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** removal-closure--removal_closure (imports); removal-closure--rhythm_gaps (imports)
 
 ### report-typing--marker_audit
@@ -27174,6 +28021,7 @@ integrity: Simulators/report-typing/marker_audit.py sha12=631adb773142 commit=19
 purpose: **[DRAFT]** Checks on the delivered `MARKER.md` and `reverse_arm_score.py`.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: report-typing/samples/marker_audit.sample.txt; run capture: FAILED, exit 1, 5 lines, sha12 451ad811fa3a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** report-typing--reverse_arm_score (imports)
 
 ### report-typing--reverse_arm_score
@@ -27237,6 +28085,7 @@ integrity: Simulators/report-typing/reverse_arm_score.py sha12=b96f8dbe9667 comm
 purpose: **[DRAFT]** reverse_arm_score.py  -- CC0, stdlib only, phone-buildable  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 64 lines, sha12 02f200792097 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** report-typing--marker_audit (imported-by)
 
 ### reporting-chain-loss--hop_compose
@@ -27263,6 +28112,7 @@ integrity: Simulators/reporting-chain-loss/hop_compose.py sha12=ec6405b4c291 com
 purpose: **[DRAFT]** hop_compose.py -- WO-5 TRANSIT LOSS, the composable half.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: reporting-chain-loss/samples/hop_compose.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 cab6ce2e3072 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### reporting-chain-loss--preentry_register
@@ -27289,6 +28139,7 @@ integrity: Simulators/reporting-chain-loss/preentry_register.py sha12=001f959755
 purpose: **[DRAFT]** preentry_register.py -- WO-5 PRE-ENTRY LOSS, the half that never enters.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: reporting-chain-loss/samples/preentry_register.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 64f2453dbd58 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### research-stability-audit--research_stability_audit
@@ -27329,6 +28180,7 @@ integrity: Simulators/research-stability-audit/research_stability_audit.py sha12
 purpose: **[DRAFT]** research_stability_audit.py  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 18 lines, sha12 0e9496f9592f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### reservoir-chain-coupling--chain
@@ -27355,6 +28207,7 @@ integrity: Simulators/reservoir-chain-coupling/chain.py sha12=3d51864901a0 commi
 purpose: **[DRAFT]** chain.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: reservoir-chain-coupling/samples/chain.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 0ab55144dbb3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reservoir-chain-coupling--selftest_rcc (imported-by); reservoir-chain-coupling--operator_swap (imports)
 
 ### reservoir-chain-coupling--operator_swap
@@ -27381,6 +28234,7 @@ integrity: Simulators/reservoir-chain-coupling/operator_swap.py sha12=ec9eb63850
 purpose: **[DRAFT]** operator_swap.py -- CC0, stdlib only, phone-buildable, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: reservoir-chain-coupling/samples/operator_swap.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 ede3481ebd36 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reservoir-chain-coupling--chain (imported-by); reservoir-chain-coupling--selftest_rcc (imported-by)
 
 ### reservoir-chain-coupling--selftest_rcc
@@ -27404,6 +28258,7 @@ integrity: Simulators/reservoir-chain-coupling/selftest_rcc.py sha12=32c71d1e2fc
 purpose: **[DRAFT]** selftest_rcc.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 d8269ffaa422 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** reservoir-chain-coupling--chain (imports); reservoir-chain-coupling--operator_swap (imports)
 
 ### residual-direction--naming
@@ -27443,6 +28298,7 @@ integrity: Simulators/residual-direction/naming.py sha12=56becef4c340 commit=198
 purpose: **[DRAFT]** naming -- S6 of the work order, enforced rather than remembered.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: residual-direction/samples/naming_scan.sample.txt; run capture: RUN, exit 0, 17 lines, sha12 a84d4242a360 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** residual-direction--residual (imported-by)
 
 ### residual-direction--residual
@@ -27501,6 +28357,7 @@ integrity: Simulators/residual-direction/residual.py sha12=1c0ac5f3832f commit=1
 purpose: **[DRAFT]** residual -- read a miss history and name the folded term.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 36 lines, sha12 824ea73dc3cb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** residual-direction--naming (imports)
 
 ### return-path--cases
@@ -27522,6 +28379,7 @@ integrity: Simulators/return-path/cases.py sha12=1f2458a71573 commit=198937ecabb
 purpose: **[DRAFT]** Hand-built channels for return_path.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** return-path--return_path (imported-by)
 
 ### return-path--return_path
@@ -27585,6 +28443,7 @@ integrity: Simulators/return-path/return_path.py sha12=44e10d765e2c commit=19893
 purpose: **[DRAFT]** return_path.py -- score a correction channel against four requirements.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 50 lines, sha12 96a498dec428 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** return-path--cases (imports)
 
 ### revision-mechanism--power
@@ -27608,6 +28467,7 @@ integrity: Simulators/revision-mechanism/power.py sha12=d375dcb4136e commit=1989
 purpose: **[DRAFT]** What the ask's sample size can and cannot deliver.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: revision-mechanism/samples/power.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 e2e1fc197eba (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** revision-mechanism--selftest_power (imported-by); revision-mechanism--selftest_power (imports)
 
 ### revision-mechanism--selftest_power
@@ -27631,6 +28491,7 @@ integrity: Simulators/revision-mechanism/selftest_power.py sha12=08c2abe93f85 co
 purpose: **[DRAFT]** Selftest for power.py. CC0. stdlib only. Parses under Python 3.9.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 e2e1fc197eba (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** revision-mechanism--power (imported-by); revision-mechanism--power (imports)
 
 ### revision-survival--cases
@@ -27652,6 +28513,7 @@ integrity: Simulators/revision-survival/cases.py sha12=f9629167616c commit=19893
 purpose: **[DRAFT]** cases -- data for revision_survival. Every record here is authored by one party in one session (2026-09-17) and says so in its `author` field. The scorer reads that field and voids Arm A on it. No outcome below is verified: the egress gate refuses every publisher host, so every outcome is CARRIED from model memory and marked `verified: False` with its source.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** revision-survival--revision_survival (imported-by)
 
 ### revision-survival--draw_frame
@@ -27677,6 +28539,7 @@ integrity: Simulators/revision-survival/draw_frame.py sha12=c2509c73e7f2 commit=
 purpose: **[DRAFT]** draw_frame -- D-C1 of WORK ORDER M revision 2.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0bd7a1c6ddf5 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** revision-survival--revision_survival (imported-by)
 
 ### revision-survival--revision_survival
@@ -27702,6 +28565,7 @@ integrity: Simulators/revision-survival/revision_survival.py sha12=5bf8575e9315 
 purpose: **[DRAFT]** revision_survival -- WORK ORDER M, built to it, then patched to REVISION 2.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 267c7a5e8532 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** revision-survival--cases (imports); revision-survival--draw_frame (imports)
 
 ### rigidification-sensor--harm
@@ -27738,6 +28602,7 @@ integrity: Simulators/rigidification-sensor/harm.py sha12=969398a92b21 commit=19
 purpose: **[DRAFT]** harm.py — energy_english harm reader CC0. stdlib only. phone-buildable.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: rigidification-sensor/samples/harm.sample.txt; run capture: RUN, exit 0, 14 lines, sha12 c9f2541f2ddc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** rigidification-sensor--sensor_v1 (imported-by); rigidification-sensor--simulator (imported-by)
 
 ### rigidification-sensor--sensor_v1
@@ -27790,6 +28655,7 @@ integrity: Simulators/rigidification-sensor/sensor_v1.py sha12=69ddd510462a comm
 purpose: **[DRAFT]** rigidification_sensor.py — measures reversibility, not harm. CC0. stdlib only. phone-buildable. imports harm.py and simulator.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 31 lines, sha12 64252691bfab (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** rigidification-sensor--harm (imports); rigidification-sensor--simulator (imports)
 
 ### rigidification-sensor--simulator
@@ -27832,6 +28698,7 @@ integrity: Simulators/rigidification-sensor/simulator.py sha12=c3937cd30a34 comm
 purpose: **[DRAFT]** simulator.py — steps the harm reader forward in time. CC0. stdlib only. phone-buildable. imports harm.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: rigidification-sensor/samples/simulator.sample.txt; run capture: RUN, exit 0, 20 lines, sha12 1136a7b7ef41 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** rigidification-sensor--sensor_v1 (imported-by); rigidification-sensor--harm (imports)
 
 ### route-independence--chains_a4
@@ -27857,6 +28724,7 @@ integrity: Simulators/route-independence/chains_a4.py sha12=b0a9f809b137 commit=
 purpose: **[DRAFT]** AMENDMENT A-4 (2026-09-28): routes are chains -- prerequisite steps, shared gates, required terminal state.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/chains_a4.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 8b27da8601dc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--eligibility_a6 (imported-by); route-independence--sourcing_a62 (imported-by); route-independence--standing_a61 (imported-by); route-independence--termini_a5 (imported-by); route-independence--gate_state (imports); route-independence--gate_state_a21 (imports); route-independence--repairs_a31 (imports); route-independence--thermal_gates (imports); route-independence--sourcing_a62 (shares route-independence/AMENDMENT_A4_2026-09-28_route-chains.md)
 
 ### route-independence--coupling_gradient
@@ -27882,6 +28750,7 @@ integrity: Simulators/route-independence/coupling_gradient.py sha12=32ba8c8266b2
 purpose: **[DRAFT]** FWO-15 Build B -- coupling gradient.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/coupling_gradient.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 965888dea324 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--dependency_chain_audit
@@ -27907,6 +28776,7 @@ integrity: Simulators/route-independence/dependency_chain_audit.py sha12=3bb60d6
 purpose: **[DRAFT]** dependency_chain_audit.py -- FWO-5. One produced result, every dependency needed to produce it, and for each dependency whether ANY route to it discharges its own obligations in its own medium.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0a1bea793a7d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--edge_taxonomy (imported-by); route-independence--gate_state (imported-by); route-independence--gate_state_a21 (imported-by); route-independence--question_space (imported-by); route-independence--settlement_split (imported-by); route-independence--tax_step (imported-by); route-independence--termini_a5 (imported-by); route-independence--route_independence (imports)
 
 ### route-independence--edge_taxonomy
@@ -27932,6 +28802,7 @@ integrity: Simulators/route-independence/edge_taxonomy.py sha12=780db5f75d78 com
 purpose: **[DRAFT]** edge_taxonomy.py -- FWO-8. Two fields added to FWO-5's per-route record: how the money medium enters a step (edge_class) and which side of the person it couples to (coupling_side). Never one number for both.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/edge_taxonomy.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--dependency_chain_audit (imports)
 
 ### route-independence--eligibility_a6
@@ -27957,6 +28828,7 @@ integrity: Simulators/route-independence/eligibility_a6.py sha12=a6570f0c1a37 co
 purpose: **[DRAFT]** AMENDMENT A-6 (2026-09-28): eligibility-gated terminus count, and the recognition asymmetry.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/eligibility_a6.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 8b27da8601dc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--standing_a61 (imported-by); route-independence--chains_a4 (imports); route-independence--gate_state (imports); route-independence--repairs_a31 (imports); route-independence--termini_a5 (imports); route-independence--sourcing_a62 (shares route-independence/AMENDMENT_A6_2026-09-28_eligibility-recognition.md)
 
 ### route-independence--enclosure_caveat_register
@@ -27982,6 +28854,7 @@ integrity: Simulators/route-independence/enclosure_caveat_register.py sha12=9b60
 purpose: **[DRAFT]** FWO-15 Build A -- enclosure caveat register.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/enclosure_caveat_register.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 c16849d1f925 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--entry_condition_match
@@ -28008,6 +28881,7 @@ integrity: Simulators/route-independence/entry_condition_match.py sha12=15467df3
 purpose: **[DRAFT]** entry_condition_match.py -- match entry conditions before transferring a result.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 fb998a43bfe0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--fwo15_fixtures
@@ -28029,6 +28903,7 @@ integrity: Simulators/route-independence/fwo15_fixtures.py sha12=3144ad17abbc co
 purpose: **[DRAFT]** FWO-15 fixtures. CONSTRUCTED: every study and case below was authored by the same agent that wrote the scorer and the expected verdicts, so every result on them is REGRESSION, not validation. No study, population or date here refers to a real publication. Expected verdicts live in test_fwo15.py, not here.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--gate_state
@@ -28054,6 +28929,7 @@ integrity: Simulators/route-independence/gate_state.py sha12=e20cb73a0012 commit
 purpose: **[DRAFT]** gate_state.py -- AMENDMENT A-2 to FWO-5 / FWO-8 / A-1: gate state is time- and jurisdiction-indexed; routes carry removal events.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/gate_state.sample.txt; sample: route-independence/samples/gate_state_a21.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 1f7367085f47 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--chains_a4 (imported-by); route-independence--eligibility_a6 (imported-by); route-independence--gate_state_a21 (imported-by); route-independence--repairs_a31 (imported-by); route-independence--thermal_gates (imported-by); route-independence--dependency_chain_audit (imports); route-independence--settlement_split (imports); route-independence--gate_state_a21 (shares route-independence/samples/gate_state_a21.sample.txt)
 
 ### route-independence--gate_state_a21
@@ -28079,6 +28955,7 @@ integrity: Simulators/route-independence/gate_state_a21.py sha12=b8b1170fc4f1 co
 purpose: **[DRAFT]** gate_state_a21.py -- AMENDMENT A-2.1: source upgrades + fixture corrections, over A-2.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/gate_state_a21.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 a872b4c600d4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--chains_a4 (imported-by); route-independence--repairs_a31 (imported-by); route-independence--sourcing_a62 (imported-by); route-independence--thermal_gates (imported-by); route-independence--dependency_chain_audit (imports); route-independence--gate_state (imports); route-independence--settlement_split (imports); route-independence--gate_state (shares route-independence/samples/gate_state_a21.sample.txt)
 
 ### route-independence--lag_count
@@ -28104,6 +28981,7 @@ integrity: Simulators/route-independence/lag_count.py sha12=cd45cbcadb2a commit=
 purpose: **[DRAFT]** lag_count.py -- FWO-11. Cases where a system under direct constraint produced a result and the funding-coupled system reached it late, partially, or not at all. Output: a lag distribution, never an impossibility claim.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/lag_count.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--question_space
@@ -28129,6 +29007,7 @@ integrity: Simulators/route-independence/question_space.py sha12=85d2eebc667c co
 purpose: **[DRAFT]** question_space.py -- FWO-9. Per conversion point, the class of question that stops being askable there. Records where the door is; estimates no loss.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/question_space.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--dependency_chain_audit (imports); route-independence--tax_step (imports)
 
 ### route-independence--repairs_a31
@@ -28154,6 +29033,7 @@ integrity: Simulators/route-independence/repairs_a31.py sha12=75daaa421d57 commi
 purpose: **[DRAFT]** AMENDMENT A-3.1 (2026-09-28): definitional repairs, built over A-1, A-2, A-2.1 and A-3.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/repairs_a31.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 5f2fe9ceb07c (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--chains_a4 (imported-by); route-independence--eligibility_a6 (imported-by); route-independence--sourcing_a62 (imported-by); route-independence--standing_a61 (imported-by); route-independence--termini_a5 (imported-by); route-independence--gate_state (imports); route-independence--gate_state_a21 (imports); route-independence--settlement_split (imports); route-independence--thermal_gates (imports); route-independence--thermal_gates (shares route-independence/AMENDMENT_A3_2026-09-28_thermal.md)
 
 ### route-independence--route_independence
@@ -28179,6 +29059,7 @@ integrity: Simulators/route-independence/route_independence.py sha12=c334604613e
 purpose: **[DRAFT]** route_independence.py -- two measures, not one.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d44f7bd8e323 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--dependency_chain_audit (imported-by)
 
 ### route-independence--settlement_split
@@ -28204,6 +29085,7 @@ integrity: Simulators/route-independence/settlement_split.py sha12=c177b65c1af7 
 purpose: **[DRAFT]** settlement_split.py -- AMENDMENT A-1 to FWO-5 / FWO-8: settlement vs gate-removal.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/settlement_split.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 a26609a58771 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--gate_state (imported-by); route-independence--gate_state_a21 (imported-by); route-independence--repairs_a31 (imported-by); route-independence--termini_a5 (imported-by); route-independence--dependency_chain_audit (imports)
 
 ### route-independence--sourcing_a62
@@ -28229,6 +29111,7 @@ integrity: Simulators/route-independence/sourcing_a62.py sha12=537f422a299f comm
 purpose: **[DRAFT]** WORK ORDER standing/A-6.2 (2026-09-29): the physical sourcing rule.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/sourcing_a62.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 ec81e8602062 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--chains_a4 (imports); route-independence--gate_state_a21 (imports); route-independence--repairs_a31 (imports); route-independence--standing_a61 (imports); route-independence--chains_a4 (shares route-independence/AMENDMENT_A4_2026-09-28_route-chains.md); route-independence--termini_a5 (shares route-independence/AMENDMENT_A5_2026-09-28_terminus-diversity.md); route-independence--standing_a61 (shares route-independence/AMENDMENT_A6.1_2026-09-28_standing-scarcity-consolidation.md); route-independence--eligibility_a6 (shares route-independence/AMENDMENT_A6_2026-09-28_eligibility-recognition.md)
 
 ### route-independence--standards_register
@@ -28254,6 +29137,7 @@ integrity: Simulators/route-independence/standards_register.py sha12=e74a2dd191d
 purpose: **[DRAFT]** standards_register.py -- FWO-10. One row per field whose OWN written standard addresses single-channel or single-path dependency, and whether that field has applied its standard to the monetary medium.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/standards_register.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--standing_a61
@@ -28275,6 +29159,7 @@ integrity: Simulators/route-independence/standing_a61.py sha12=dba35fabf5fe comm
 purpose: **[DRAFT]** AMENDMENT A-6.1 (2026-09-28): access standing, the imposed-scarcity coupling, and the consolidation chain.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/standing_a61.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--sourcing_a62 (imported-by); route-independence--chains_a4 (imports); route-independence--eligibility_a6 (imports); route-independence--repairs_a31 (imports); route-independence--termini_a5 (imports); route-independence--sourcing_a62 (shares route-independence/AMENDMENT_A6.1_2026-09-28_standing-scarcity-consolidation.md)
 
 ### route-independence--tax_step
@@ -28300,6 +29185,7 @@ integrity: Simulators/route-independence/tax_step.py sha12=d84601f14b03 commit=1
 purpose: **[DRAFT]** tax_step.py -- FWO-13. The tax step registered as a named conversion point with its OWN row type, beside (never inside) the FWO-6 register.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/tax_step.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--question_space (imported-by); route-independence--dependency_chain_audit (imports)
 
 ### route-independence--termini_a5
@@ -28325,6 +29211,7 @@ integrity: Simulators/route-independence/termini_a5.py sha12=3265c575c704 commit
 purpose: **[DRAFT]** AMENDMENT A-5 (2026-09-28): terminus diversity -- are "independent routes" branches of one chain?  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/termini_a5.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 8b27da8601dc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--eligibility_a6 (imported-by); route-independence--standing_a61 (imported-by); route-independence--chains_a4 (imports); route-independence--dependency_chain_audit (imports); route-independence--repairs_a31 (imports); route-independence--settlement_split (imports); route-independence--sourcing_a62 (shares route-independence/AMENDMENT_A5_2026-09-28_terminus-diversity.md)
 
 ### route-independence--thermal_gates
@@ -28350,6 +29237,7 @@ integrity: Simulators/route-independence/thermal_gates.py sha12=042cacc115c9 com
 purpose: **[DRAFT]** thermal_gates.py -- AMENDMENT A-3 to FWO-5 / FWO-8 / A-1 / A-2 / A-2.1: thermal regulation as actuators, gates stacked in series, direction never pooled, a condition index, and cross-stock couplings.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/thermal_gates.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 88e41b5bf193 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** route-independence--chains_a4 (imported-by); route-independence--repairs_a31 (imported-by); route-independence--gate_state (imports); route-independence--gate_state_a21 (imports); route-independence--repairs_a31 (shares route-independence/AMENDMENT_A3_2026-09-28_thermal.md)
 
 ### route-independence--unpaid_maintenance
@@ -28375,6 +29263,7 @@ integrity: Simulators/route-independence/unpaid_maintenance.py sha12=fcdb0948f28
 purpose: **[DRAFT]** unpaid_maintenance.py -- FWO-12. DESIGN plus prior-art check. Runs only on a declared public dataset; none was found (none could be searched), so the measurand is NOT_RUN and what executes here is the filter and the prediction check on CONSTRUCTED records labelled as such.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: route-independence/samples/unpaid_maintenance.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 d61e7f70ee42 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### route-independence--untried_options_audit
@@ -28400,6 +29289,7 @@ integrity: Simulators/route-independence/untried_options_audit.py sha12=97259b87
 purpose: **[DRAFT]** untried_options_audit.py -- were the options enumerated, and was cost bound to the decider?  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 7ec988850503 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### routing-data-layer--demo_rdl
@@ -28421,6 +29311,7 @@ integrity: Simulators/routing-data-layer/demo_rdl.py sha12=d5e68bea48e6 commit=1
 purpose: **[DRAFT]** A worked pass over the instrument on CONSTRUCTED data: the required contents and the two structural absences, the claim table's refutation coverage, the dE/dt vs dM/dt rate form, the RDL-5 survey decay, and the F6 upstream pattern. No row is a measurement of any road, dock, or routing system; nothing is a result. Screened through sheet-structure-scan/no_severity with no exemption (the verdict constants keep the marker's severity vocabulary inside underscored tokens, e.g. VENDOR_DEFECT, which the word-boundary screen does not fire on).  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** routing-data-layer--envelope (imports); routing-data-layer--rate_form (imports); routing-data-layer--upstream (imports)
 
 ### routing-data-layer--envelope
@@ -28446,6 +29337,7 @@ integrity: Simulators/routing-data-layer/envelope.py sha12=957414fa70c5 commit=1
 purpose: **[DRAFT]** The routing data-layer envelope as a structured object.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 d3b19ab8f950 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** routing-data-layer--demo_rdl (imported-by); routing-data-layer--selftest_rdl (imported-by)
 
 ### routing-data-layer--rate_form
@@ -28471,6 +29363,7 @@ integrity: Simulators/routing-data-layer/rate_form.py sha12=8c0f7797e229 commit=
 purpose: **[DRAFT]** Section 5 -- the entropy / update-rate form, made runnable, plus the standing-cost decay of RDL-5.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0be9868d5057 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** routing-data-layer--demo_rdl (imported-by); routing-data-layer--selftest_rdl (imported-by)
 
 ### routing-data-layer--selftest_rdl
@@ -28500,6 +29393,7 @@ integrity: Simulators/routing-data-layer/selftest_rdl.py sha12=ee6e7458b006 comm
 purpose: **[DRAFT]** Checks for the routing data-layer marker, on CONSTRUCTED data. No DOT feed, dock-geometry dataset, or routing output is read (all egress-blocked); every series is built by hand with a known answer, and every failure-class instance is carried from the marker, not verified. Nothing is a result.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 7 lines, sha12 0c264afa4346 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** routing-data-layer--envelope (imports); routing-data-layer--rate_form (imports); routing-data-layer--upstream (imports)
 
 ### routing-data-layer--upstream
@@ -28525,6 +29419,7 @@ integrity: Simulators/routing-data-layer/upstream.py sha12=6b26b50b05b9 commit=1
 purpose: **[DRAFT]** F6, the load-bearing failure class -- two independently maintained systems return different routings for the same movement, both wrong. The marker's inference: that pattern indicates the fault is UPSTREAM of either vendor's maintenance, so a single-vendor fix cannot close it (RDL-2).  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 b2e381c3f7a4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** routing-data-layer--demo_rdl (imported-by); routing-data-layer--selftest_rdl (imported-by)
 
 ### rule-coherence-counterfactual--rule_coherence
@@ -28550,6 +29445,7 @@ integrity: Simulators/rule-coherence-counterfactual/rule_coherence.py sha12=b6ff
 purpose: **[DRAFT]** rule_coherence -- WO-7, three independent arms, built to the order and run on CONSTRUCTED data. No model is run anywhere; A1 scores runs supplied to it, A2b audits record shapes, A3 scores an observer design. Every world here declares its generative model, so the four A1 branches and the two A3 branches are reachable by construction and none is a claim about any system.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 e71666f08f7d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### scope-bound-shapes--markers
@@ -28573,6 +29469,7 @@ integrity: Simulators/scope-bound-shapes/markers.py sha12=91a460a296c1 commit=19
 purpose: **[DRAFT]** markers.py - marker | stability | bindings_tested | known_exceptions.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: scope-bound-shapes/samples/markers.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 f4adf077b158 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** scope-bound-shapes--scope (imports)
 
 ### scope-bound-shapes--scope
@@ -28596,6 +29493,7 @@ integrity: Simulators/scope-bound-shapes/scope.py sha12=8f998cc3d582 commit=1989
 purpose: **[DRAFT]** scope.py - shapes, scope bindings, and what two bindings do to each other.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: scope-bound-shapes/samples/scope.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2764ca80802e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** scope-bound-shapes--markers (imported-by)
 
 ### seam-gaps--verify_sources
@@ -28619,6 +29517,7 @@ integrity: Simulators/seam-gaps/verify_sources.py sha12=b296f93342a5 commit=1989
 purpose: **[DRAFT]** Internal-consistency checks on WORK_ORDER.md's source material.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 559f710acb7f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### search-substitution--search_substitution
@@ -28666,6 +29565,7 @@ integrity: Simulators/search-substitution/search_substitution.py sha12=5c12443d2
 purpose: **[DRAFT]** SEARCH SUBSTITUTION Three organisms that produce an answer without searching for it, priced against the search they do not perform. Stdlib only. CC0.  
 input: **[DRAFT]** --sources (action=store_true): print where each figure came from; --selftest (action=store_true): run internal checks  
 output: **[DRAFT]** run capture: RUN, exit 0, 25 lines, sha12 95d9e1a63f8e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### self-scan--bindings
@@ -28687,6 +29587,7 @@ integrity: Simulators/self-scan/bindings.py sha12=c93474849e08 commit=198937ecab
 purpose: **[DRAFT]** S3 bindings -- which artifact each extracted claim is about.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--resolve (imported-by); reasoning-gate--make_docs (shares reasoning-gate/GUARDS.md)
 
 ### self-scan--census
@@ -28714,6 +29615,7 @@ integrity: Simulators/self-scan/census.py sha12=57c1a8a9fe7c commit=198937ecabbc
 purpose: **[DRAFT]** What can actually be run here, and what does running it need.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: self-scan/samples/census.sample.txt; run capture: FAILED, exit 1, 3 lines, sha12 76443f987083 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--resolve (imports)
 
 ### self-scan--enumerators
@@ -28742,6 +29644,7 @@ integrity: Simulators/self-scan/enumerators.py sha12=f99cce515cf5 commit=198937e
 purpose: **[DRAFT]** Handoff item 1 -- is self-enumeration one defect or two?  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: self-scan/samples/enumerators.sample.txt; run capture: FAILED, exit 1, 4 lines, sha12 24f9de9e2d07 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--resolve (imports); grounded-work-stack--check (shares reasoning-gate/guards.json); reasoning-gate--gate (shares reasoning-gate/guards.json); reasoning-gate--make_docs (shares reasoning-gate/guards.json); reasoning-gate--mine_logs (shares reasoning-gate/guards.json)
 
 ### self-scan--extract
@@ -28765,6 +29668,7 @@ integrity: Simulators/self-scan/extract.py sha12=a36103f0066a commit=198937ecabb
 purpose: **[DRAFT]** S1 and S2 -- section CLAUDE.md, classify each section's stance, and pull the checkable claims out of it.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 57bda479fccb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--resolve (imported-by)
 
 ### self-scan--resolve
@@ -28793,6 +29697,7 @@ integrity: Simulators/self-scan/resolve.py sha12=afe0f7440e16 commit=198937ecabb
 purpose: **[DRAFT]** S3-S6 -- resolve each extracted claim against the tree, bin it, date the divergences, and print the rate.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 4 lines, sha12 2a00a0688e4a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** self-scan--census (imported-by); self-scan--enumerators (imported-by); self-scan--bindings (imports); self-scan--extract (imports)
 
 ### sense-as-match--sense_as_match
@@ -28818,6 +29723,7 @@ integrity: Simulators/sense-as-match/sense_as_match.py sha12=fa308bb8003b commit
 purpose: **[DRAFT]** sense_as_match.py -- reduce a pattern from any channel to its SHAPE, match the shape against a held set IN SHAPE SPACE, and refuse to force a pattern that has not settled.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 93c21339c8a0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### sense_as_match
@@ -28843,6 +29749,7 @@ integrity: Simulators/sense_as_match.py sha12=b9c416630351 commit=198937ecabbc l
 purpose: **[DRAFT]** sense_at_match.py — a term used to score anything carries the sense it was read in, at the site where it was matched, or the scoring function returns UNRATED.  
 input: **[DRAFT]** --choices (action=store_true): print every [CHOICE n] at the site it takes effect; --selftest (action=store_true): not accepted here; run test_sense.py instead  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 80fa61a12b2b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### shape-spec-audit--method_spec_audit
@@ -28866,6 +29773,7 @@ integrity: Simulators/shape-spec-audit/method_spec_audit.py sha12=0550d5827d84 c
 purpose: **[DRAFT]** Checks on ../METHOD_SPEC.md, and what its arrival does to the SS claims.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: shape-spec-audit/samples/method_spec_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-token-audit--audit (shares METHOD_SPEC.md); frame-token-audit--audit (shares SHAPE_SPEC.md); frame-token-audit--selftest_fta (shares SHAPE_SPEC.md); ontology-probe--selftest_op (shares SHAPE_SPEC.md); shape-spec-audit--shape_spec_audit (shares SHAPE_SPEC.md)
 
 ### shape-spec-audit--shadow_read
@@ -28889,6 +29797,7 @@ integrity: Simulators/shape-spec-audit/shadow_read.py sha12=91cdc080cffd commit=
 purpose: **[DRAFT]** The shadow read of METHOD_SPEC.md section 4, made decidable.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: shape-spec-audit/samples/shadow_read.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### shape-spec-audit--shape_spec_audit
@@ -28912,6 +29821,7 @@ integrity: Simulators/shape-spec-audit/shape_spec_audit.py sha12=2b7c1bdab32a co
 purpose: **[DRAFT]** Checks on ../SHAPE_SPEC.md. stdlib only. CC0.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: shape-spec-audit/samples/shape_spec_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** frame-token-audit--audit (shares SHAPE_SPEC.md); frame-token-audit--selftest_fta (shares SHAPE_SPEC.md); ontology-probe--selftest_op (shares SHAPE_SPEC.md); shape-spec-audit--method_spec_audit (shares SHAPE_SPEC.md)
 
 ### sheet-structure-scan--coupling
@@ -28971,6 +29881,7 @@ integrity: Simulators/sheet-structure-scan/coupling.py sha12=57aae861b0ea commit
 purpose: **[DRAFT]** coupling -- sensitivity of a workbook's outputs to one constant, by perturbation, as a dimensionless elasticity.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/coupling_selftest.sample.txt; run capture: RUN, exit 0, 37 lines, sha12 03efa8506a70 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--fixture (imports); sheet-structure-scan--sheetmodel (imports)
 
 ### sheet-structure-scan--docreader
@@ -28992,6 +29903,7 @@ integrity: Simulators/sheet-structure-scan/docreader.py sha12=ccab67ce64ea commi
 purpose: **[DRAFT]** docreader -- container triage and capability declaration for legacy .doc.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/docreader_selftest.sample.txt; sample: sheet-structure-scan/samples/docreader_triage.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--xlsreader (imports)
 
 ### sheet-structure-scan--fixture
@@ -29013,6 +29925,7 @@ integrity: Simulators/sheet-structure-scan/fixture.py sha12=04d11ae31d33 commit=
 purpose: **[DRAFT]** fixture -- write the demo workbook the selftests read.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--coupling (imported-by); sheet-structure-scan--scan4 (imported-by); sheet-structure-scan--scans (imported-by); sheet-structure-scan--sheetmodel (imported-by)
 
 ### sheet-structure-scan--no_severity
@@ -29049,6 +29962,7 @@ integrity: Simulators/sheet-structure-scan/no_severity.py sha12=e5daa8ab876a com
 purpose: **[DRAFT]** no_severity -- enforce the delivered output constraint.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 14 lines, sha12 48af219d98fa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--scan4 (imported-by); sheet-structure-scan--scans (imported-by)
 
 ### sheet-structure-scan--pdfreader
@@ -29086,6 +30000,7 @@ integrity: Simulators/sheet-structure-scan/pdfreader.py sha12=a629e36f5fee commi
 purpose: **[DRAFT]** pdfreader -- text and QUANTITIES from PDF, stdlib only.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/pdfreader_selftest.sample.txt; run capture: RUN, exit 0, 15 lines, sha12 52573e20ec26 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### sheet-structure-scan--scan4
@@ -29141,6 +30056,7 @@ integrity: Simulators/sheet-structure-scan/scan4.py sha12=2f866b08353e commit=19
 purpose: **[DRAFT]** scan4 -- stated-relationship maintenance.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/scan4_selftest.sample.txt; run capture: RUN, exit 0, 33 lines, sha12 058ab4bab181 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--selection (imported-by); sheet-structure-scan--fixture (imports); sheet-structure-scan--no_severity (imports); sheet-structure-scan--sheetmodel (imports)
 
 ### sheet-structure-scan--scans
@@ -29200,6 +30116,7 @@ integrity: Simulators/sheet-structure-scan/scans.py sha12=67ec3a639f24 commit=19
 purpose: **[DRAFT]** scans -- scan two (companion absence) and scan three (header collision), ranked by dependent count times downstream depth.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 37 lines, sha12 22ad4d89d507 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--fixture (imports); sheet-structure-scan--no_severity (imports); sheet-structure-scan--sheetmodel (imports); sheet-structure-scan--selection (shares sheet-structure-scan/patterns.json)
 
 ### sheet-structure-scan--selection
@@ -29249,6 +30166,7 @@ integrity: Simulators/sheet-structure-scan/selection.py sha12=f954fc9fe278 commi
 purpose: **[DRAFT]** selection -- work order 7 S1. The eligibility screen, and the reject log.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/selection_selftest.sample.txt; run capture: RUN, exit 0, 27 lines, sha12 eed60e70f3f7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--scan4 (imports); sheet-structure-scan--sheetmodel (imports); sheet-structure-scan--scans (shares sheet-structure-scan/patterns.json)
 
 ### sheet-structure-scan--sheetmodel
@@ -29299,6 +30217,7 @@ integrity: Simulators/sheet-structure-scan/sheetmodel.py sha12=5225b6ad6d8d comm
 purpose: **[DRAFT]** sheetmodel -- read a workbook into cells and a precedent graph.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 28 lines, sha12 a757b8097d77 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--coupling (imported-by); sheet-structure-scan--scan4 (imported-by); sheet-structure-scan--scans (imported-by); sheet-structure-scan--selection (imported-by); sheet-structure-scan--xlsreader (imported-by); sheet-structure-scan--fixture (imports); sheet-structure-scan--xlsreader (imports)
 
 ### sheet-structure-scan--targets--epa_check
@@ -29355,6 +30274,7 @@ integrity: Simulators/sheet-structure-scan/targets/epa_check.py sha12=9be8a29c46
 purpose: **[DRAFT]** epa_check -- the target workbooks, pre-registered before the data.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** run capture: RUN, exit 0, 34 lines, sha12 3fc13af35116 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### sheet-structure-scan--xlsreader
@@ -29402,6 +30322,7 @@ integrity: Simulators/sheet-structure-scan/xlsreader.py sha12=54ac06b960a3 commi
 purpose: **[DRAFT]** xlsreader -- legacy .xls (BIFF8) support for work order 6 S1.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: sheet-structure-scan/samples/xlsreader_selftest.sample.txt; run capture: RUN, exit 0, 25 lines, sha12 08b235eb5c0b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sheet-structure-scan--docreader (imported-by); sheet-structure-scan--sheetmodel (imported-by); sheet-structure-scan--sheetmodel (imports)
 
 ### sim-span--sim_span
@@ -29425,6 +30346,7 @@ integrity: Simulators/sim-span/sim_span.py sha12=01f43e037fea commit=198937ecabb
 purpose: **[DRAFT]** SIM-SPAN -- can a span-reporting rule manufacture a U?  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: sim-span/samples/sim_span.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sim-span--three_column (imported-by)
 
 ### sim-span--three_column
@@ -29448,6 +30370,7 @@ integrity: Simulators/sim-span/three_column.py sha12=20e880a26405 commit=198937e
 purpose: **[DRAFT]** The three-column test from NOTES_INSTRUMENT.md, run against the sim.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: sim-span/samples/three_column.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** sim-span--sim_span (imports)
 
 ### simulation-hypothesis-budget--budget
@@ -29471,6 +30394,7 @@ integrity: Simulators/simulation-hypothesis-budget/budget.py sha12=a5996cb898b6 
 purpose: **[DRAFT]** budget.py - what a Planck-resolution simulation of the observable universe would cost, and which of those numbers mean anything.  
 input: **[DRAFT]** --selftest (action=store_true); --sources (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/budget.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 8868607b1cfa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--consequence_frame (imported-by); simulation-hypothesis-budget--earth_transitions (imported-by); simulation-hypothesis-budget--era_metaphor_audit (imported-by); simulation-hypothesis-budget--ladder_audit (imported-by); simulation-hypothesis-budget--multiscale (imported-by); simulation-hypothesis-budget--scaling_classes (imported-by)
 
 ### simulation-hypothesis-budget--consequence_frame
@@ -29494,6 +30418,7 @@ integrity: Simulators/simulation-hypothesis-budget/consequence_frame.py sha12=1c
 purpose: **[DRAFT]** consequence_frame.py - does "it is a simulation" license "the ripples do not count"?  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/consequence_frame.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 262b1f61bbe3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--era_metaphor_audit (imported-by); simulation-hypothesis-budget--ladder_audit (imported-by); simulation-hypothesis-budget--budget (imports); simulation-hypothesis-budget--multiscale (imports)
 
 ### simulation-hypothesis-budget--earth_transitions
@@ -29517,6 +30442,7 @@ integrity: Simulators/simulation-hypothesis-budget/earth_transitions.py sha12=7b
 purpose: **[DRAFT]** earth_transitions.py - the delivered EARTH_TRANSITIONS.md, checked.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/earth_transitions.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 777987664645 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--scaling_classes (imported-by); simulation-hypothesis-budget--budget (imports)
 
 ### simulation-hypothesis-budget--era_metaphor_audit
@@ -29540,6 +30466,7 @@ integrity: Simulators/simulation-hypothesis-budget/era_metaphor_audit.py sha12=6
 purpose: **[DRAFT]** era_metaphor_audit.py - the delivered ERA_METAPHOR.md, checked where it makes checkable claims about this folder.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/era_metaphor_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 ddaefb5584f3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--budget (imports); simulation-hypothesis-budget--consequence_frame (imports); simulation-hypothesis-budget--ladder_audit (imports); simulation-hypothesis-budget--multiscale (imports)
 
 ### simulation-hypothesis-budget--ladder_audit
@@ -29563,6 +30490,7 @@ integrity: Simulators/simulation-hypothesis-budget/ladder_audit.py sha12=675a9b9
 purpose: **[DRAFT]** ladder_audit.py - the delivered LADDER.md, checked against the code it audits.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/ladder_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 f687e30e4bae (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--era_metaphor_audit (imported-by); simulation-hypothesis-budget--budget (imports); simulation-hypothesis-budget--consequence_frame (imports); simulation-hypothesis-budget--multiscale (imports)
 
 ### simulation-hypothesis-budget--multiscale
@@ -29586,6 +30514,7 @@ integrity: Simulators/simulation-hypothesis-budget/multiscale.py sha12=b62d6a09b
 purpose: **[DRAFT]** multiscale.py - the same budget when resolution is not uniform.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/multiscale.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 d6b8b5666d71 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--consequence_frame (imported-by); simulation-hypothesis-budget--era_metaphor_audit (imported-by); simulation-hypothesis-budget--ladder_audit (imported-by); simulation-hypothesis-budget--budget (imports)
 
 ### simulation-hypothesis-budget--scaling_classes
@@ -29609,6 +30538,7 @@ integrity: Simulators/simulation-hypothesis-budget/scaling_classes.py sha12=c24b
 purpose: **[DRAFT]** scaling_classes.py - the delivered SCALING_CLASSES.md, checked.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: simulation-hypothesis-budget/samples/scaling_classes.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 ae02cfcf820a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** simulation-hypothesis-budget--budget (imports); simulation-hypothesis-budget--earth_transitions (imports)
 
 ### stability-trigger-envelope--cases
@@ -29630,6 +30560,7 @@ integrity: Simulators/stability-trigger-envelope/cases.py sha12=f5054e7243ea com
 purpose: **[DRAFT]** stability-trigger-envelope/cases.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** stability-trigger-envelope--descent_record (imports); archive--stability-trigger-envelope--cases (same-bytes)
 
 ### stability-trigger-envelope--descent_record
@@ -29655,6 +30586,7 @@ integrity: Simulators/stability-trigger-envelope/descent_record.py sha12=b193182
 purpose: **[DRAFT]** descent_record.py -- the one instrument ESP-1 orders built.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: stability-trigger-envelope/samples/descent_record.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 f25cbba083b2 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** stability-trigger-envelope--cases (imported-by)
 
 ### stop-authority--binding
@@ -29678,6 +30610,7 @@ integrity: Simulators/stop-authority/binding.py sha12=f9af52c4e0b8 commit=198937
 purpose: **[DRAFT]** binding.py - authority is defined by what it can bind, not by who holds it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: stop-authority/samples/binding.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2415ddbe481f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** stop-authority--stop_authority (imports)
 
 ### stop-authority--pressure_record
@@ -29701,6 +30634,7 @@ integrity: Simulators/stop-authority/pressure_record.py sha12=6963b69c079d commi
 purpose: **[DRAFT]** pressure_record.py - why the crossing is the only period that shows it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: stop-authority/samples/pressure_record.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3883a9528da1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### stop-authority--relocation
@@ -29724,6 +30658,7 @@ integrity: Simulators/stop-authority/relocation.py sha12=700e0472592d commit=198
 purpose: **[DRAFT]** relocation.py - moving the measurement point instead of arguing with it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: stop-authority/samples/relocation.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 2954df0eef4d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### stop-authority--stop_authority
@@ -29747,6 +30682,7 @@ integrity: Simulators/stop-authority/stop_authority.py sha12=4723d314f698 commit
 purpose: **[DRAFT]** stop_authority.py - a count of zero, and the two states it is consistent with.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: stop-authority/samples/stop_authority.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3883a9528da1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** stop-authority--binding (imported-by)
 
 ### substrate-alternative--frame_audit
@@ -29774,6 +30710,7 @@ integrity: Simulators/substrate-alternative/frame_audit.py sha12=d6826d34c422 co
 purpose: **[DRAFT]** frame_audit -- locate money-frame assumptions in text.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: substrate-alternative/samples/frame_audit.sample.txt; sample: substrate-alternative/samples/frame_audit_choices.sample.txt; run capture: RUN, exit 0, 5 lines, sha12 3ab4de903bc0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** substrate-alternative--pilot_loop (imported-by); substrate-alternative--selftest_pilot (imported-by)
 
 ### substrate-alternative--pilot_loop
@@ -29799,6 +30736,7 @@ integrity: Simulators/substrate-alternative/pilot_loop.py sha12=fc0495e2694e com
 purpose: **[DRAFT]** pilot_loop -- food distribution coordination on ICS structure.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: substrate-alternative/samples/pilot_loop.sample.txt; sample: substrate-alternative/samples/pilot_loop_choices.sample.txt; sample: substrate-alternative/samples/pilot_loop_screen.sample.txt; run capture: RUN, exit 0, 3 lines, sha12 f26924925a2e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** substrate-alternative--selftest_pilot (imported-by); substrate-alternative--frame_audit (imports)
 
 ### substrate-alternative--selftest_pilot
@@ -29832,6 +30770,7 @@ integrity: Simulators/substrate-alternative/selftest_pilot.py sha12=8499bb4a1f1b
 purpose: **[DRAFT]** Checks for pilot_loop.py. CC0, stdlib only.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 9 lines, sha12 44e2738b4782 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** substrate-alternative--frame_audit (imports); substrate-alternative--pilot_loop (imports)
 
 ### substrate-emergence--site_substrate_map
@@ -29875,6 +30814,7 @@ integrity: Simulators/substrate-emergence/site_substrate_map.py sha12=94fd351305
 purpose: **[DRAFT]** site_substrate_map.py CC0-1.0 / stdlib-only / re-injectable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: substrate-emergence/samples/site_substrate_map.sample.txt; run capture: RUN, exit 0, 21 lines, sha12 c0321a63ea04 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### substrate-emergence--substrate_emergence
@@ -29938,6 +30878,7 @@ integrity: Simulators/substrate-emergence/substrate_emergence.py sha12=d0c05d8c5
 purpose: **[DRAFT]** substrate_emergence.py CC0-1.0 / stdlib-only / re-injectable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 115 lines, sha12 d35e57ef43b9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### supplement-placement--placement
@@ -29961,6 +30902,7 @@ integrity: Simulators/supplement-placement/placement.py sha12=c64850671787 commi
 purpose: **[DRAFT]** placement.py - does direction predict placement, once kind is held constant.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: supplement-placement/samples/placement.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 3605b5e21858 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### sustained-activation-gate--sustained_activation_gate
@@ -30024,6 +30966,7 @@ integrity: Simulators/sustained-activation-gate/sustained_activation_gate.py sha
 purpose: **[DRAFT]** sustained_activation_gate.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: sustained-activation-gate/samples/sustained_activation_gate.sample.txt; run capture: RUN, exit 0, 118 lines, sha12 392110f6b64f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### term-drift-citation--asymmetry
@@ -30047,6 +30990,7 @@ integrity: Simulators/term-drift-citation/asymmetry.py sha12=fcb67e0d6c6f commit
 purpose: **[DRAFT]** asymmetry.py - does the revision direction ever cost the reviser.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: term-drift-citation/samples/asymmetry.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 fa66163553eb (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### term-drift-citation--citation
@@ -30070,6 +31014,7 @@ integrity: Simulators/term-drift-citation/citation.py sha12=d73d913b0fc7 commit=
 purpose: **[DRAFT]** citation.py - does a cited measurement still attach to the word carrying it.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** sample: term-drift-citation/samples/citation.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 b193de8b34c9 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### terminal-crossing--audit
@@ -30095,6 +31040,7 @@ integrity: Simulators/terminal-crossing/audit.py sha12=0ee10b00917f commit=19893
 purpose: **[DRAFT]** audit -- WO-3 step 1: attack the falsifier, and read the three failed candidates against the conditions.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: terminal-crossing/samples/audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 276bfe4234be (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** terminal-crossing--crossing_rate (imports)
 
 ### terminal-crossing--crossing_rate
@@ -30120,6 +31066,7 @@ integrity: Simulators/terminal-crossing/crossing_rate.py sha12=9846c1a19c26 comm
 purpose: **[DRAFT]** crossing_rate -- WO-3 step 2: the crossing-rate metric.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: terminal-crossing/samples/crossing_rate.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 babdbe9f6316 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** terminal-crossing--audit (imported-by)
 
 ### terrain-prior--cases
@@ -30141,6 +31088,7 @@ integrity: Simulators/terrain-prior/cases.py sha12=80c5caef7129 commit=198937eca
 purpose: **[DRAFT]** cases.py -- derivation entries, morphology profiles, observations.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** terrain-prior--terrain_prior (imported-by)
 
 ### terrain-prior--terrain_prior
@@ -30167,6 +31115,7 @@ integrity: Simulators/terrain-prior/terrain_prior.py sha12=bdabace29ea8 commit=1
 purpose: **[DRAFT]** terrain_prior.py -- observed indicator to substrate prior.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 397ea05e52d6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** terrain-prior--cases (imports)
 
 ### thermal-coupling--airblast_extension
@@ -30230,6 +31179,7 @@ integrity: Simulators/thermal-coupling/airblast_extension.py sha12=4f5e6a21f180 
 purpose: **[DRAFT]** airblast_extension.py — corrections to thermal_coupling.py forced by the Langtang 2015 reconstruction.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 75 lines, sha12 c3a730f373a1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** thermal-coupling--coupling_audit (imported-by)
 
 ### thermal-coupling--airblast_extension_v2
@@ -30293,6 +31243,7 @@ integrity: Simulators/thermal-coupling/airblast_extension_v2.py sha12=53fa1f6e1f
 purpose: **[DRAFT]** airblast_extension.py — corrections to thermal_coupling.py forced by the Langtang 2015 reconstruction.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 75 lines, sha12 f737e1e4dbcf (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** thermal-coupling--coupling_audit (imported-by)
 
 ### thermal-coupling--coupling_audit
@@ -30318,6 +31269,7 @@ integrity: Simulators/thermal-coupling/coupling_audit.py sha12=21f5c4bbcd01 comm
 purpose: **[DRAFT]** coupling_audit -- the delivered thermal_coupling module checked against its own claims.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: thermal-coupling/samples/coupling_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 b6353bf5cc55 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** thermal-coupling--selftest_tca (imported-by); thermal-coupling--airblast_extension (imports); thermal-coupling--airblast_extension_v2 (imports); thermal-coupling--thermal_coupling (imports)
 
 ### thermal-coupling--selftest_tca
@@ -30345,6 +31297,7 @@ integrity: Simulators/thermal-coupling/selftest_tca.py sha12=dfb864a923e5 commit
 purpose: **[DRAFT]** Checks for coupling_audit.py against the delivered thermal_coupling.py. The delivered module is imported and never edited. Nothing here is a statement about any slope, snowpack or the cited literature.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 1, 3 lines, sha12 0a5b56d14be8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** thermal-coupling--coupling_audit (imports); thermal-coupling--thermal_coupling (imports)
 
 ### thermal-coupling--thermal_coupling
@@ -30408,6 +31361,7 @@ integrity: Simulators/thermal-coupling/thermal_coupling.py sha12=0e730bb085a4 co
 purpose: **[DRAFT]** thermal_coupling.py — temperature forcing for cascading slope/flow hazards.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 51 lines, sha12 2c0d6b27eae6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** thermal-coupling--coupling_audit (imported-by); thermal-coupling--selftest_tca (imported-by)
 
 ### thermal-sensor-degradation-audit--thermal_sensor_degradation_audit
@@ -30471,6 +31425,7 @@ integrity: Simulators/thermal-sensor-degradation-audit/thermal_sensor_degradatio
 purpose: **[DRAFT]** thermal_sensor_degradation_audit.py -- CC0, stdlib-only Sustained-heat degradation audit for sensor packages on automated infrastructure. Dissimilar-material mounting, polymer/gasket creep, electronic drift, wet-bulb corrosion pathways. Refutation protocol: every model returns a falsifiable prediction, not a stored verdict. Update the claim, never retune the sim.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 71 lines, sha12 3b2a33e8a5d6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### threshold-states--interaction
@@ -30496,6 +31451,7 @@ integrity: Simulators/threshold-states/interaction.py sha12=301e06fcdb52 commit=
 purpose: **[DRAFT]** interaction.py -- the two-reference interaction test, with its precedence.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 0debb7305bf1 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** threshold-states--run_outside (imported-by)
 
 ### threshold-states--run_outside
@@ -30521,6 +31477,7 @@ integrity: Simulators/threshold-states/run_outside.py sha12=29210ff9eeb0 commit=
 purpose: **[DRAFT]** run_outside.py -- run the outside cases against interaction.py as authored.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: threshold-states/samples/run_outside.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 e320f5e771ff (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** threshold-states--interaction (imports)
 
 ### thwaites-risk-audit--audit
@@ -30547,6 +31504,7 @@ integrity: Simulators/thwaites-risk-audit/audit.py sha12=2f97524427de commit=198
 purpose: **[DRAFT]** audit.py -- checks on the delivered Thwaites x Simulators risk audit.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: thwaites-risk-audit/samples/audit.sample.txt; run capture: FAILED, exit 2, 2 lines, sha12 31e6c15b28f4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### token-minimizer--compress
@@ -30577,6 +31535,7 @@ integrity: Simulators/token-minimizer/compress.py sha12=8d07cd3e28ba commit=1989
 purpose: **[DRAFT]** TOKEN_MINIMIZER: compress queries and responses using energy_english + geometry_references  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 8 lines, sha12 d8b468684af7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--agree_router
@@ -30635,6 +31594,7 @@ integrity: Simulators/tools/agree_router.py sha12=50923192ff99 commit=198937ecab
 purpose: **[DRAFT]** agree_router.py - which tools to run first on an agree-set, by bin. CC0. stdlib only.  
 input: **[DRAFT]** subcommand roles; subcommand selftest; target; --top (default=10); --all (action=store_true); --include-models (action=store_true); --inventory  
 output: **[DRAFT]** run capture: RUN, exit 0, 36 lines, sha12 91bab62530cd (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--false_agree (imports)
 
 ### tools--authority_scan
@@ -30656,6 +31616,7 @@ integrity: Simulators/tools/authority_scan.py sha12=2fe9f087e181 commit=198937ec
 purpose: **[DRAFT]** Identifier-level scan for a declared forbidden vocabulary.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--check_gate_drift
@@ -30677,6 +31638,7 @@ integrity: Simulators/tools/check_gate_drift.py sha12=04135f95d053 commit=198937
 purpose: **[DRAFT]** check_gate_drift.py -- there is one gate. Find every copy of it.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--check_term_collision
@@ -30698,6 +31660,7 @@ integrity: Simulators/tools/check_term_collision.py sha12=add9bb5f12dd commit=19
 purpose: **[DRAFT]** check_term_collision.py -- who uses the colliding terms, and who declares which sense.  
 input: **[DRAFT]** main(); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** clustering-axes--style_audit (shares PREAMBLE.md); criterion-externality--criterion_externality (shares PREAMBLE.md); frame-token-audit--audit (shares PREAMBLE.md)
 
 ### tools--conditional_claims
@@ -30719,6 +31682,7 @@ integrity: Simulators/tools/conditional_claims.py sha12=947ab6935153 commit=1989
 purpose: **[DRAFT]** conditional_claims.py - keep conditional claims rigid; prove restatement fidelity. CC0. stdlib only.  
 input: **[DRAFT]** subcommand parse; subcommand compare; subcommand extract; subcommand new; subcommand add; subcommand check; subcommand show; subcommand selftest; expr; original; restated; path; -o/--out (default=claims.json); path; --id (required=True); --verbatim (required=True); --formal (required=True); --scope (default=); path; id; --restated (required=True); path; id  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--false_agree
@@ -30740,6 +31704,7 @@ integrity: Simulators/tools/false_agree.py sha12=a21747d2ace3 commit=198937ecabb
 purpose: **[DRAFT]** false_agree.py - route an agree-set by the CAUSE of agreement. CC0. stdlib only.  
 input: **[DRAFT]** subcommand new; subcommand add; subcommand selftest; claim; -o/--out (default=fa.json); path; --id (required=True); path  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--agree_router (imported-by)
 
 ### tools--gap_index
@@ -30766,6 +31731,7 @@ integrity: Simulators/tools/gap_index.py sha12=07ceb37e68e5 commit=198937ecabbc 
 purpose: **[DRAFT]** Build GAP_INDEX.md -- one row per open question, across every folder.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 2 lines, sha12 fbb611b50967 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** external-audit--recount (shares GAP_INDEX.md); notes--check_markers (shares GAP_INDEX.md); notes--check_postgrad (shares GAP_INDEX.md)
 
 ### tools--known_answer
@@ -30831,6 +31797,7 @@ integrity: Simulators/tools/known_answer.py sha12=17b5b3a022fd commit=198937ecab
 purpose: **[DRAFT]** No metric ships without a known-answer run.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: FAILED, exit 1, 794 lines, sha12 fdc7727a0623 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--sourced (imports)
 
 ### tools--known_red_check
@@ -30852,6 +31819,7 @@ integrity: Simulators/tools/known_red_check.py sha12=c135f3edd8e9 commit=198937e
 purpose: **[DRAFT]** known_red_check -- KNOWN_RED.md's stated counts against an actual run.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--run_manifest (imports)
 
 ### tools--merge_silent_loss
@@ -30891,6 +31859,7 @@ integrity: Simulators/tools/merge_silent_loss.py sha12=c52b29ed7827 commit=19893
 purpose: **[DRAFT]** merge_silent_loss -- lines a merge dropped that neither parent dropped.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 1, 15 lines, sha12 e6acd99904e0 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--paradigm_sweep
@@ -30912,6 +31881,7 @@ integrity: Simulators/tools/paradigm_sweep.py sha12=e926b12e7152 commit=198937ec
 purpose: **[DRAFT]** paradigm_sweep.py - contrast-then-obliques sweep. CC0. stdlib only.  
 input: **[DRAFT]** subcommand new; subcommand add; subcommand set; subcommand selftest; --paradigm (required=True); --inverse (required=True); --domain (required=True); --home (default=); --families (default=); -o/--out (default=sweep.json); path; --family (default=custom); --question (required=True); path; id; --status; --opens; --study (action=append, default=[]); --notes; path  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--presignal_ledger
@@ -30933,6 +31903,7 @@ integrity: Simulators/tools/presignal_ledger.py sha12=2af729a79902 commit=198937
 purpose: **[DRAFT]** presignal_ledger.py — CC0, stdlib only.  
 input: **[DRAFT]** main(a); reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--provenance_graph
@@ -30954,6 +31925,7 @@ integrity: Simulators/tools/provenance_graph.py sha12=a2242fa8ff27 commit=198937
 purpose: **[DRAFT]** provenance_graph.py - prove lineage independence by common-ancestor reachability. CC0. stdlib only.  
 input: **[DRAFT]** subcommand new; subcommand edge; subcommand check; subcommand roots; subcommand checkset; subcommand selftest; -o/--out (default=prov.json); path; --from (required=True); --to (required=True); path; a; b; path; node; path; nodes (nargs=+)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--provenance_marker
@@ -30975,6 +31947,7 @@ integrity: Simulators/tools/provenance_marker.py sha12=e49dddf0633d commit=19893
 purpose: **[DRAFT]** provenance_marker.py -- ran before, here is the hash, here is how it works.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: tools/samples/provenance_marker.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--run_manifest
@@ -31038,6 +32011,7 @@ integrity: Simulators/tools/run_manifest.py sha12=9da97b7479d9 commit=198937ecab
 purpose: **[DRAFT]** run_manifest.py -- enumerate every entry point in this tree. Execute nothing.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 66 lines, sha12 dbf0eb689f0a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--known_red_check (imported-by)
 
 ### tools--sourced
@@ -31101,6 +32075,7 @@ integrity: Simulators/tools/sourced.py sha12=2d26e764a17e commit=198937ecabbc la
 purpose: **[DRAFT]** A value and its source travel together.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: RUN, exit 0, 43 lines, sha12 4b518ab038c8 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** tools--known_answer (imported-by)
 
 ### tools--substrate_substitution
@@ -31126,6 +32101,7 @@ integrity: Simulators/tools/substrate_substitution.py sha12=87f0a20e96db commit=
 purpose: **[DRAFT]** substrate_substitution.py  
 input: **[DRAFT]** main(argv: List[str])  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 1a078e0d13f7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--substrate_substitution_toolkit
@@ -31189,6 +32165,7 @@ integrity: Simulators/tools/substrate_substitution_toolkit.py sha12=7851699952cd
 purpose: **[DRAFT]** substrate_substitution_toolkit.py  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 45 lines, sha12 a1ba191b645f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--system_efficiency
@@ -31210,6 +32187,7 @@ integrity: Simulators/tools/system_efficiency.py sha12=c97d639c8bc4 commit=19893
 purpose: **[DRAFT]** system_efficiency.py - floor-anchored efficiency with theater gap. CC0. stdlib only.  
 input: **[DRAFT]** subcommand run; path  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### tools--validate_claim_table
@@ -31235,6 +32213,7 @@ integrity: Simulators/tools/validate_claim_table.py sha12=c5be27bd18a1 commit=19
 purpose: **[DRAFT]** validate_claim_table.py  
 input: **[DRAFT]** main(argv: List[str])  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 b84407bc9e28 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### transmission-cascade--transmission_cascade
@@ -31260,6 +32239,7 @@ integrity: Simulators/transmission-cascade/transmission_cascade.py sha12=53b064b
 purpose: **[DRAFT]** transmission_cascade -- WO-8, the join of two literatures, built to the order and run on CONSTRUCTED data. No dataset is recoded; the modules score coder labels, layer distributions and condition-change responses supplied to them, all generated by a declared model.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 55451f9cff6e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### transmission-decay--power
@@ -31283,6 +32263,7 @@ integrity: Simulators/transmission-decay/power.py sha12=21dbc45db1d1 commit=1989
 purpose: **[DRAFT]** What "run it in one valley" delivers, computed.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: transmission-decay/samples/power.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 cf5ba57458b6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** transmission-decay--selftest_power (imported-by); transmission-decay--scheme (imports); transmission-decay--selftest_power (imports)
 
 ### transmission-decay--scheme
@@ -31309,6 +32290,7 @@ integrity: Simulators/transmission-decay/scheme.py sha12=38449f095ab9 commit=198
 purpose: **[DRAFT]** M1-M8 and S1-S3, parsed from the delivered coding scheme.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 c5f8545f947a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** transmission-decay--power (imported-by); transmission-decay--selftest_power (imported-by)
 
 ### transmission-decay--selftest_power
@@ -31332,6 +32314,7 @@ integrity: Simulators/transmission-decay/selftest_power.py sha12=4318867928a7 co
 purpose: **[DRAFT]** Selftest for scheme.py and power.py. CC0. stdlib only. 3.9.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 cf5ba57458b6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** transmission-decay--power (imported-by); transmission-decay--power (imports); transmission-decay--scheme (imports)
 
 ### triad-playground--make_checklist
@@ -31353,6 +32336,7 @@ integrity: Simulators/triad-playground/make_checklist.py sha12=f0ef3466561d comm
 purpose: **[DRAFT]** make_checklist.py - render CHECKLIST.md from triad.json.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### triad-playground--shadow_design
@@ -31416,6 +32400,7 @@ integrity: Simulators/triad-playground/shadow_design.py sha12=3da2b6a17415 commi
 purpose: **[DRAFT]** shadow_design.py — does the shadow-sim pattern measure what it is for?  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: triad-playground/samples/shadow_design.sample.txt; run capture: RUN, exit 0, 190 lines, sha12 87ac61ec3eaf (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### triad-playground--shadow_panel
@@ -31479,6 +32464,7 @@ integrity: Simulators/triad-playground/shadow_panel.py sha12=47b50e76a045 commit
 purpose: **[DRAFT]** shadow_panel.py — does the shadow pattern work without the human?  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: triad-playground/samples/shadow_panel.sample.txt; run capture: RUN, exit 0, 113 lines, sha12 a14ff126d9cc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### trigger-geometry--cases
@@ -31500,6 +32486,7 @@ integrity: Simulators/trigger-geometry/cases.py sha12=e4fe01073674 commit=198937
 purpose: **[DRAFT]** cases.py -- constructed triggers and geometries for trigger_geometry.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** trigger-geometry--trigger_geometry (imported-by)
 
 ### trigger-geometry--trigger_geometry
@@ -31526,6 +32513,7 @@ integrity: Simulators/trigger-geometry/trigger_geometry.py sha12=be13798579bf co
 purpose: **[DRAFT]** trigger_geometry.py -- was this response validated in THIS geometry.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 d5f010154321 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** trigger-geometry--cases (imports)
 
 ### undeclared-cuts--check_entries
@@ -31552,6 +32540,7 @@ integrity: Simulators/undeclared-cuts/check_entries.py sha12=89b8211ae243 commit
 purpose: **[DRAFT]** check_entries.py -- header validation for entries/, and the REGISTRY writer.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 a5f1e41a5c0d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--acquiescence
@@ -31575,6 +32564,7 @@ integrity: Simulators/uninstrumented/acquiescence.py sha12=74a8f37a8a1a commit=1
 purpose: **[DRAFT]** acquiescence.py - decompose a self-report administration into a trait score and an acquiescence index, using polarity balance.  
 input: **[DRAFT]** admin (nargs=?): administration JSON; --jsonl (action=store_true); --template (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** sample: uninstrumented/samples/acquiescence.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 d6b8b5666d71 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--drop_019_audit (imported-by)
 
 ### uninstrumented--case_010_audit
@@ -31596,6 +32586,7 @@ integrity: Simulators/uninstrumented/case_010_audit.py sha12=f5223d7bade0 commit
 purpose: **[DRAFT]** case_010_audit.py -- checks on the Case 010 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_010_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--uninstrumented (imports)
 
 ### uninstrumented--case_011_audit
@@ -31617,6 +32608,7 @@ integrity: Simulators/uninstrumented/case_011_audit.py sha12=7e51854aee9b commit
 purpose: **[DRAFT]** case_011_audit.py -- checks on the Case 011 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_011_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--uninstrumented (imports)
 
 ### uninstrumented--case_012_audit
@@ -31638,6 +32630,7 @@ integrity: Simulators/uninstrumented/case_012_audit.py sha12=953ac10ee57d commit
 purpose: **[DRAFT]** case_012_audit.py -- checks on the Case 012 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_012_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--uninstrumented (imports)
 
 ### uninstrumented--case_013_audit
@@ -31659,6 +32652,7 @@ integrity: Simulators/uninstrumented/case_013_audit.py sha12=c89e1ccbeb65 commit
 purpose: **[DRAFT]** case_013_audit.py -- checks on the Case 013 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_013_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--case_014_audit
@@ -31680,6 +32674,7 @@ integrity: Simulators/uninstrumented/case_014_audit.py sha12=f0732fb28023 commit
 purpose: **[DRAFT]** case_014_audit.py -- checks on the Case 014 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_014_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--drop_016_017_audit (shares uninstrumented/README.md); uninstrumented--playground_audit (shares uninstrumented/README.md); uninstrumented--playground_modules_audit (shares uninstrumented/README.md); uninstrumented--scan_audit (shares uninstrumented/README.md); uninstrumented--specimen_c_audit (shares uninstrumented/README.md)
 
 ### uninstrumented--case_015_audit
@@ -31701,6 +32696,7 @@ integrity: Simulators/uninstrumented/case_015_audit.py sha12=8ab458a83850 commit
 purpose: **[DRAFT]** case_015_audit.py -- checks on the Case 015 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_015_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--case_018_audit
@@ -31722,6 +32718,7 @@ integrity: Simulators/uninstrumented/case_018_audit.py sha12=47e8151fdcf8 commit
 purpose: **[DRAFT]** case_018_audit.py -- checks on the Case 018 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_018_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--case_020_audit
@@ -31743,6 +32740,7 @@ integrity: Simulators/uninstrumented/case_020_audit.py sha12=eed2e6cf3e2c commit
 purpose: **[DRAFT]** case_020_audit.py -- checks on the 020 marker.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_020_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--uninstrumented (imports)
 
 ### uninstrumented--case_021_audit
@@ -31764,6 +32762,7 @@ integrity: Simulators/uninstrumented/case_021_audit.py sha12=2b26e7c82bee commit
 purpose: **[DRAFT]** case_021_audit.py -- checks on the 021 marker.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_021_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--uninstrumented (imports)
 
 ### uninstrumented--case_022_audit
@@ -31785,6 +32784,7 @@ integrity: Simulators/uninstrumented/case_022_audit.py sha12=396aadd51729 commit
 purpose: **[DRAFT]** case_022_audit.py -- checks on the 022 marker.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_022_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--scan_audit (shares uninstrumented/AUDIT_NOTES.md)
 
 ### uninstrumented--case_023_audit
@@ -31806,6 +32806,7 @@ integrity: Simulators/uninstrumented/case_023_audit.py sha12=6c51788e64ae commit
 purpose: **[DRAFT]** case_023_audit.py -- checks on the 023 drop, run through its own T1.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/case_023_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--selection_cuts (imports)
 
 ### uninstrumented--charter_signature_audit
@@ -31829,6 +32830,7 @@ integrity: Simulators/uninstrumented/charter_signature_audit.py sha12=a6bf251d7b
 purpose: **[DRAFT]** charter_signature_audit.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: uninstrumented/samples/charter_signature_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 01e81c2e1fc7 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--corpus_as_charter_audit (shares uninstrumented/CHARTER_SIGNATURE.md)
 
 ### uninstrumented--corpus_as_charter_audit
@@ -31852,6 +32854,7 @@ integrity: Simulators/uninstrumented/corpus_as_charter_audit.py sha12=37e174c691
 purpose: **[DRAFT]** corpus_as_charter_audit.py -- CC0, stdlib only, parses under 3.9  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: uninstrumented/samples/corpus_as_charter_audit.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 7bf0a7a72e20 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--charter_signature_audit (shares uninstrumented/CHARTER_SIGNATURE.md)
 
 ### uninstrumented--coupling_audit--audit
@@ -31875,6 +32878,7 @@ integrity: Simulators/uninstrumented/coupling_audit/audit.py sha12=9c9a505c0aa4 
 purpose: **[DRAFT]** audit.py - record schema and scoring for the coupling audit.  
 input: **[DRAFT]** --report (action=store_true); --template (action=store_true); --mechanisms (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 2954df0eef4d (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--coupling_audit--entries (imported-by); uninstrumented--coupling_audit--entries (imports)
 
 ### uninstrumented--coupling_audit--entries
@@ -31898,6 +32902,7 @@ integrity: Simulators/uninstrumented/coupling_audit/entries.py sha12=8d532c40493
 purpose: **[DRAFT]** entries.py - three seed entries for the coupling audit.  
 input: **[DRAFT]** --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 f8665776971e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--coupling_audit--audit (imported-by); uninstrumented--coupling_audit--audit (imports)
 
 ### uninstrumented--coupling_audit--provisioning
@@ -31921,6 +32926,7 @@ integrity: Simulators/uninstrumented/coupling_audit/provisioning.py sha12=8defb6
 purpose: **[DRAFT]** provisioning.py - the discriminating test, and a unit for coupling strength.  
 input: **[DRAFT]** --resolution (action=store_true); --cases (action=store_true); --amplitude (action=store_true); --report (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** sample: uninstrumented/coupling_audit/samples/provisioning.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 111c82057208 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--cuts_c5_probe
@@ -31942,6 +32948,7 @@ integrity: Simulators/uninstrumented/cuts_c5_probe.py sha12=64724b369ab7 commit=
 purpose: **[DRAFT]** cuts_c5_probe.py -- tests two proposed additions to 023's cut set.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/cuts_c5_probe.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--selection_cuts (imports)
 
 ### uninstrumented--drop_016_017_audit
@@ -31963,6 +32970,7 @@ integrity: Simulators/uninstrumented/drop_016_017_audit.py sha12=48fc4a7e62f2 co
 purpose: **[DRAFT]** drop_016_017_audit.py -- checks on the 016/017 drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/drop_016_017_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--drop_019_audit (shares uninstrumented/AVENUES.md); uninstrumented--playground_audit (shares uninstrumented/AVENUES.md); uninstrumented--case_014_audit (shares uninstrumented/README.md); uninstrumented--playground_audit (shares uninstrumented/README.md); uninstrumented--playground_modules_audit (shares uninstrumented/README.md); uninstrumented--scan_audit (shares uninstrumented/README.md); uninstrumented--specimen_c_audit (shares uninstrumented/README.md); uninstrumented--drop_019_audit (shares uninstrumented/cases/016agreementasmode.md)
 
 ### uninstrumented--drop_019_audit
@@ -31984,6 +32992,7 @@ integrity: Simulators/uninstrumented/drop_019_audit.py sha12=fccc1ecb70ef commit
 purpose: **[DRAFT]** drop_019_audit.py -- checks on the 019 / LITERATURE / acquiescence drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/drop_019_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--acquiescence (imports); uninstrumented--drop_016_017_audit (shares uninstrumented/AVENUES.md); uninstrumented--playground_audit (shares uninstrumented/AVENUES.md); uninstrumented--drop_016_017_audit (shares uninstrumented/cases/016agreementasmode.md)
 
 ### uninstrumented--playground--m1_shape_vs_claim--score_m1
@@ -32007,6 +33016,7 @@ integrity: Simulators/uninstrumented/playground/m1_shape_vs_claim/score_m1.py sh
 purpose: **[DRAFT]** score_m1.py - M1 shape-vs-claim harness.  
 input: **[DRAFT]** --build: stems JSON -> run file; --seed (default=0); --verify: check paired construction; --sheet; --score; --coded; --rubric (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 8868607b1cfa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--playground--m2_skim_vs_read--score_m2
@@ -32030,6 +33040,7 @@ integrity: Simulators/uninstrumented/playground/m2_skim_vs_read/score_m2.py sha1
 purpose: **[DRAFT]** score_m2.py - M2 skim-vs-read harness.  
 input: **[DRAFT]** --artifacts; --responses; --check (action=store_true): leak and size checks only; --seed (action=store_true): print the seed pair; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 74f8a71f616f (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--playground--m3_visibility--score_m3
@@ -32053,6 +33064,7 @@ integrity: Simulators/uninstrumented/playground/m3_visibility/score_m3.py sha12=
 purpose: **[DRAFT]** score_m3.py - M3 visibility harness.  
 input: **[DRAFT]** --build; --gate: hash gate only; --sheet; --score; --coded; --rubric (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 8868607b1cfa (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### uninstrumented--playground_audit
@@ -32074,6 +33086,7 @@ integrity: Simulators/uninstrumented/playground_audit.py sha12=a989b7736779 comm
 purpose: **[DRAFT]** playground_audit.py -- checks on the PLAYGROUND drop.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/playground_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--drop_016_017_audit (shares uninstrumented/AVENUES.md); uninstrumented--drop_019_audit (shares uninstrumented/AVENUES.md); uninstrumented--case_014_audit (shares uninstrumented/README.md); uninstrumented--drop_016_017_audit (shares uninstrumented/README.md); uninstrumented--playground_modules_audit (shares uninstrumented/README.md); uninstrumented--scan_audit (shares uninstrumented/README.md); uninstrumented--specimen_c_audit (shares uninstrumented/README.md)
 
 ### uninstrumented--playground_modules_audit
@@ -32095,6 +33108,7 @@ integrity: Simulators/uninstrumented/playground_modules_audit.py sha12=ea58bd5e3
 purpose: **[DRAFT]** playground_modules_audit.py -- checks on the three delivered M-modules.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/playground_modules_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--case_014_audit (shares uninstrumented/README.md); uninstrumented--drop_016_017_audit (shares uninstrumented/README.md); uninstrumented--playground_audit (shares uninstrumented/README.md); uninstrumented--scan_audit (shares uninstrumented/README.md); uninstrumented--specimen_c_audit (shares uninstrumented/README.md)
 
 ### uninstrumented--probe_audit
@@ -32116,6 +33130,7 @@ integrity: Simulators/uninstrumented/probe_audit.py sha12=a05d756bb4b4 commit=19
 purpose: **[DRAFT]** probe_audit.py -- checks on the Case 018 harness.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/probe_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--selfreport_probe (imports)
 
 ### uninstrumented--scan
@@ -32141,6 +33156,7 @@ integrity: Simulators/uninstrumented/scan.py sha12=0b7de71e0e8b commit=198937eca
 purpose: **[DRAFT]** scan.py -- uninstrumented candidate scanner CC0-1.0. Public domain. Standard library only.  
 input: **[DRAFT]** main(argv)  
 output: **[DRAFT]** sample: uninstrumented/samples/scan_audit.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 820600dfff09 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--scan_audit (imported-by); uninstrumented--scan_audit (shares uninstrumented/patterns.json); uninstrumented--scan_audit (shares uninstrumented/samples/scan_audit.sample.txt)
 
 ### uninstrumented--scan_audit
@@ -32204,6 +33220,7 @@ integrity: Simulators/uninstrumented/scan_audit.py sha12=c6eab08da118 commit=198
 purpose: **[DRAFT]** scan_audit.py -- grade the delivered scanner and its trigger set.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: uninstrumented/samples/scan_audit.sample.txt; run capture: RUN, exit 0, 314 lines, sha12 76ce39bec095 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--scan (imports); uninstrumented--case_022_audit (shares uninstrumented/AUDIT_NOTES.md); uninstrumented--case_014_audit (shares uninstrumented/README.md); uninstrumented--drop_016_017_audit (shares uninstrumented/README.md); uninstrumented--playground_audit (shares uninstrumented/README.md); uninstrumented--playground_modules_audit (shares uninstrumented/README.md); uninstrumented--specimen_c_audit (shares uninstrumented/README.md); uninstrumented--scan (shares uninstrumented/patterns.json); uninstrumented--scan (shares uninstrumented/samples/scan_audit.sample.txt)
 
 ### uninstrumented--selection_cuts
@@ -32227,6 +33244,7 @@ integrity: Simulators/uninstrumented/selection_cuts.py sha12=ecb5d224ae4b commit
 purpose: **[DRAFT]** selection_cuts.py - T1 from 023, built as an instrument rather than a rubric.  
 input: **[DRAFT]** --calibrate (action=store_true); --score; --report (action=store_true); --template (action=store_true); --selftest (action=store_true)  
 output: **[DRAFT]** sample: uninstrumented/samples/selection_cuts.sample.txt; run capture: RUN, exit 0, 1 lines, sha12 d6b8b5666d71 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--case_023_audit (imported-by); uninstrumented--cuts_c5_probe (imported-by)
 
 ### uninstrumented--selfreport_probe
@@ -32250,6 +33268,7 @@ integrity: Simulators/uninstrumented/selfreport_probe.py sha12=9fe56dc0da3b comm
 purpose: **[DRAFT]** selfreport_probe.py - harness for 018-selfreport-opinion-coupling.md  
 input: **[DRAFT]** --emit (action=store_true): write probe battery; --checkpoints (nargs=+, default=['ckpt-1']); --sheet: blind coding sheet from run file; --score: run file with responses; --coded: completed coding sheet; --opinion: {checkpoint: opinion_value} for paired series; --rubric (action=store_true): print the rubric; --selftest (action=store_true)  
 output: **[DRAFT]** run capture: RUN, exit 0, 1 lines, sha12 f8665776971e (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--probe_audit (imported-by)
 
 ### uninstrumented--specimen_c_audit
@@ -32271,6 +33290,7 @@ integrity: Simulators/uninstrumented/specimen_c_audit.py sha12=13d1006cba54 comm
 purpose: **[DRAFT]** specimen_c_audit.py -- checks on Specimen C.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: uninstrumented/samples/specimen_c_audit.sample.txt  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--case_014_audit (shares uninstrumented/README.md); uninstrumented--drop_016_017_audit (shares uninstrumented/README.md); uninstrumented--playground_audit (shares uninstrumented/README.md); uninstrumented--playground_modules_audit (shares uninstrumented/README.md); uninstrumented--scan_audit (shares uninstrumented/README.md)
 
 ### uninstrumented--uninstrumented
@@ -32334,6 +33354,7 @@ integrity: Simulators/uninstrumented/uninstrumented.py sha12=0fdb0a08b69f commit
 purpose: **[DRAFT]** uninstrumented.py -- the registry from README.md, as code, plus three checks on the registry itself.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** sample: uninstrumented/samples/uninstrumented.sample.txt; run capture: RUN, exit 0, 337 lines, sha12 06693c7c9bcc (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** uninstrumented--case_010_audit (imported-by); uninstrumented--case_011_audit (imported-by); uninstrumented--case_012_audit (imported-by); uninstrumented--case_020_audit (imported-by); uninstrumented--case_021_audit (imported-by)
 
 ### unowned-join--faces
@@ -32359,6 +33380,7 @@ integrity: Simulators/unowned-join/faces.py sha12=bb7b4af4cd52 commit=198937ecab
 purpose: **[DRAFT]** faces.py -- WO-4: the seven faces, read out of the order, put through the invariant, plus the term gap as a registered state.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: unowned-join/samples/faces.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 f727d2be657a (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** unowned-join--invariant (imports)
 
 ### unowned-join--invariant
@@ -32384,6 +33406,7 @@ integrity: Simulators/unowned-join/invariant.py sha12=b13b34ea7051 commit=198937
 purpose: **[DRAFT]** invariant.py -- WO-4 step 1: a formal statement of the invariant, made checkable.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** sample: unowned-join/samples/invariant.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 123ac544bcc4 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** unowned-join--faces (imported-by)
 
 ### upgrade-queue--queue_check
@@ -32409,6 +33432,7 @@ integrity: Simulators/upgrade-queue/queue_check.py sha12=bec99d8c2c2a commit=198
 purpose: **[DRAFT]** queue_check.py -- checks on UPGRADE_QUEUE.md, the parked queue of proposed changes to the falsifier / claim-record format.  
 input: **[DRAFT]** reads sys.argv by index  
 output: **[DRAFT]** sample: upgrade-queue/samples/queue_check.sample.txt; run capture: FAILED, exit 2, 1 lines, sha12 04aa50748c44 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** upgrade-queue--selftest_uq (imported-by); railcar-containment--audit (shares railcar-containment/README.md)
 
 ### upgrade-queue--selftest_uq
@@ -32433,6 +33457,7 @@ integrity: Simulators/upgrade-queue/selftest_uq.py sha12=292a188d5aba commit=198
 purpose: **[DRAFT]** Checks for queue_check.py against the delivered UPGRADE_QUEUE.md. Known answers, both directions. Verifies the parse, the NOT-ADOPTED invariant, the cross-reference resolution, and that the checker adopts nothing.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: RUN, exit 0, 2 lines, sha12 2cd8637f5fef (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** upgrade-queue--queue_check (imports)
 
 ### valence-divergence--cases
@@ -32454,6 +33479,7 @@ integrity: Simulators/valence-divergence/cases.py sha12=814b8b93bb1e commit=1989
 purpose: **[DRAFT]** cases.py -- the validation entries for valence_divergence.py.  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** valence-divergence--valence_divergence (imported-by)
 
 ### valence-divergence--valence_divergence
@@ -32480,6 +33506,7 @@ integrity: Simulators/valence-divergence/valence_divergence.py sha12=f60cef81208
 purpose: **[DRAFT]** valence_divergence.py -- log a term used by two parties, record what each decoder returned, and flag divergence.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** run capture: FAILED, exit 2, 2 lines, sha12 a0626a881f48 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** valence-divergence--cases (imports)
 
 ### vector-field-explorer--vector_field_explorer
@@ -32529,6 +33556,7 @@ integrity: Simulators/vector-field-explorer/vector_field_explorer.py sha12=49456
 purpose: **[DRAFT]** vector_field_explorer.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: vector-field-explorer/samples/vector_field_explorer.sample.txt; run capture: RUN, exit 0, 27 lines, sha12 c73b18454de6 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** none extracted
 
 ### voice-attractor-probe--introspection_delta
@@ -32579,6 +33607,7 @@ integrity: Simulators/voice-attractor-probe/introspection_delta.py sha12=6f72fde
 purpose: **[DRAFT]** introspection_delta.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: voice-attractor-probe/samples/introspection_delta.sample.txt; sample: voice-attractor-probe/samples/introspection_delta_v2.sample.txt; run capture: RUN, exit 0, 28 lines, sha12 df8d600461e3 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** voice-attractor-probe--voice_attractor_probe (imports); voice-attractor-probe--introspection_delta_v2 (shares voice-attractor-probe/samples/introspection_delta_v2.sample.txt)
 
 ### voice-attractor-probe--introspection_delta_v2
@@ -32625,6 +33654,7 @@ integrity: Simulators/voice-attractor-probe/introspection_delta_v2.py sha12=d1f5
 purpose: **[DRAFT]** introspection_delta_v2.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** --mode: run mode; --list-modes (action=store_true); --seed (default=7); --budget: override cost budget; --rounds: override interactive rounds  
 output: **[DRAFT]** sample: voice-attractor-probe/samples/introspection_delta_v2.sample.txt; run capture: RUN, exit 0, 24 lines, sha12 90099677af88 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** voice-attractor-probe--voice_attractor_probe (imports); voice-attractor-probe--introspection_delta (shares voice-attractor-probe/samples/introspection_delta_v2.sample.txt)
 
 ### voice-attractor-probe--voice_attractor_probe
@@ -32688,6 +33718,7 @@ integrity: Simulators/voice-attractor-probe/voice_attractor_probe.py sha12=18e21
 purpose: **[DRAFT]** voice_attractor_probe.py — CC0, stdlib-only, phone-buildable  
 input: **[DRAFT]** (none extracted: no argparse, no main(), no sys.argv indexing found)  
 output: **[DRAFT]** sample: voice-attractor-probe/samples/voice_attractor_probe.sample.txt; run capture: RUN, exit 0, 51 lines, sha12 d4f7c1a93903 (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** voice-attractor-probe--introspection_delta (imported-by); voice-attractor-probe--introspection_delta_v2 (imported-by)
 
 ### zero-sum-curriculum-null--null_construction
@@ -32713,6 +33744,7 @@ integrity: Simulators/zero-sum-curriculum-null/null_construction.py sha12=75d88f
 purpose: **[DRAFT]** null_construction -- the delivered NULL CONSTRUCTION read as a structure.  
 input: **[DRAFT]** main(argv); reads sys.argv by index  
 output: **[DRAFT]** run capture: FAILED, exit 2, 1 lines, sha12 6b76e51420ef (see run_result)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** zero-sum-curriculum-null--selftest_nc (imported-by)
 
 ### zero-sum-curriculum-null--selftest_nc
@@ -32734,4 +33766,5 @@ integrity: Simulators/zero-sum-curriculum-null/selftest_nc.py sha12=2ac4db8c8677
 purpose: **[DRAFT]** Checks for null_construction.py. The parse is asserted against the delivered file, every logical result is checked in both directions on constructed states, and the sibling import is exercised filled and unfilled. Nothing here holds a value from the incident.  
 input: **[DRAFT]** main()  
 output: **[DRAFT]** (none extracted: samples/ files named after the tool; refreshed from run capture by run_examples.py)  
+check_record: 0 entries, picked_up 0, skipped 0  
 related: **[DRAFT]** zero-sum-curriculum-null--null_construction (imports)

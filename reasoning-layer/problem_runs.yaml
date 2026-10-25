@@ -1,0 +1,6 @@
+# Problem runs.  One entry per run: {id, problem, date}.  For every run listed here,
+# EVERY card carries a check_record entry {run, checked: yes, result: picked_up | skipped,
+# because, date}.  validate.py fails a run where any card is missing or checked: no,
+# and a skip with an empty because (unrecorded skip = E3, defaulted slot).
+# generate.py creates this file once and never edits it.
+runs: []
