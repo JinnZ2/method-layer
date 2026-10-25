@@ -1,0 +1,100 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: potential--gate--gate_cli
+kind: program
+tool: Simulators/potential/gate/gate_cli.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: gate_cli.py — CLI.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 15 lines, sha12 c4391bc071d9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 potential/gate/gate_cli.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |
+    gate_cli.py — CLI.
+
+    Usage:
+      python3 gate_cli.py list
+          Print the domain names.
+
+      python3 gate_cli.py show <domain>
+          Print the graph's channels.
+
+      python3 gate_cli.py project <domain>
+          Print cut-vertex report across the declared admissibilities.
+
+      python3 gate_cli.py all
+          Print the projection report for every domain.
+  date: 2026-10-24
+  command: python3 potential/gate/gate_cli.py
+  sha12: 62cf753e899d
+  exit_code: 2
+  output_lines: 15
+  output_sha12: c4391bc071d9
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: potential--gate--domains
+      via: imports
+    - id: potential--gate--graph
+      via: imports
+    - id: potential--gate--projections
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: potential/gate/gate_cli.py
+    sha12: 62cf753e899d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-28
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 78cd7ce5f4b9
+    related: 4248647abdc2
+    right_read: 32bbe99c703a
+    run: 8cb137f4dbfa
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

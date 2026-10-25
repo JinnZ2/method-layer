@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sustained-activation-gate--sustained_activation_gate
+kind: program
+tool: Simulators/sustained-activation-gate/sustained_activation_gate.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: sustained_activation_gate.py — CC0, stdlib-only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: sustained-activation-gate/samples/sustained_activation_gate.sample.txt"
+    - "run capture: RUN, exit 0, 118 lines, sha12 392110f6b64f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sustained-activation-gate/sustained_activation_gate.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    interpretation: ANALOGY_GRADE — St. Jude / Neuron 2026-07-09 (C1→vlPAG). Suggestive, unsettled.
+    (field=epinephrine drive from C1 (RVLM) neurons, order_param=vlPAG sustained occupancy (stress-circuit 'on' fraction))
+
+    program              lock_dur  peak_h base_swing  released  base_ok
+    --------------------------------------------------------------------
+    brief_spike                 0     1.2      0.000     False     True
+    sustained_drive           129     1.2      0.000     False     True
+    drive_then_inhibit         49     1.5      0.000      True     True
+
+    structural claims tested (physics, not biology):
+      brief spike relaxes on its own:      True
+      sustained drive locks (hysteresis):  True
+      targeted inhibition releases lock:   True
+      release spares baseline:             True
+
+    If real C1→vlPAG data contradicts any row, update the INTERPRETATION
+    labels — the physics rows stand regardless.
+
+    SEPARABILITY EXPLORATION (leak sweep)
+      leak lock_dur  base_min    drag  verdict
+    --------------------------------------------------
+     0.000      129     1.000   0.000  SEPARABLE
+     0.010      129     0.904   0.096  LEAKING
+     0.020      129     0.809   0.191  LEAKING
+     0.030      129     0.713   0.287  LEAKING
+     0.040      129     0.618   0.382  LEAKING
+     0.050      129     0.522   0.478  CORRUPTED
+     0.060      129     0.427   0.573  CORRUPTED
+     0.070      129     0.331   0.669  CORRUPTED
+     0.080      129     0.235   0.765  CORRUPTED
+     0.090      129     0.140   0.860  CORRUPTED
+     0.100      129     0.044   0.956  CORRUPTED
+     0.110      129     0.000   1.000  CORRUPTED
+     0.120      129     0.000   1.000  CORRUPTED
+     0.130      129     0.000   1.000  CORRUPTED
+     0.140      129     0.000   1.000  CORRUPTED
+     0.150      129     0.000   1.000  CORRUPTED
+     0.160      129     0.000   1.000  CORRUPTED
+     0.170      129     0.000   1.000  CORRUPTED
+     0.180      129     0.000   1.000  CORRUPTED
+    [... 78 more lines]
+  date: 2026-10-24
+  command: python3 sustained-activation-gate/sustained_activation_gate.py
+  sha12: ed864fc7f472
+  exit_code: 0
+  output_lines: 118
+  output_sha12: 392110f6b64f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sustained-activation-gate/sustained_activation_gate.py
+    sha12: ed864fc7f472
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 1e2a8671ba43
+    pick_up_when: 32bbe99c703a
+    purpose: e40a46008cca
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 1661b3190101
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

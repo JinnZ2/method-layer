@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: anchor-interval--corpus_loop
+kind: program
+tool: Simulators/anchor-interval/corpus_loop.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: corpus_loop.py -- coherence rises while substrate coupling falls, and the detector that could see it is on the wrong side of the loop.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: anchor-interval/samples/corpus_loop.sample.txt"
+    - "run capture: RUN, exit 0, 178 lines, sha12 e9bdb046011b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 anchor-interval/corpus_loop.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nCORPUS LOOP: COHERENCE UP, COUPLING DOWN\nsubstrate = 240 values the system did not author; seed 20260816\n\n========================================================================\n1  coherence and coupling separate\n========================================================================\n  lam = 0.12   initial corpus bias = 0.35   240 items, 24 gens\n\n  gen   coupling err     D1 coherence     D2 corpus shift\n  --------------------------------------------------------------\n  0     0.3604           0.0677           0.05203\n  4     0.3861           0.0574           0.01537\n  8     0.3945           0.0539           0.00902\n  12    0.4021           0.0517           0.00607\n  16    0.4070           0.0500           0.00475\n  20    0.4115           0.0489           0.00420\n  23    0.4141           0.0481           0.00353\n\n  coupling  0.3604 -> 0.4141   WORSE   (needs the substrate)\n  D1        0.0677 -> 0.0481   BETTER   (computable inside)\n  D2        0.05203 -> 0.00353  QUIETER   (computable inside)\n\n  Both statistics computable without the substrate improve or go\n  quiet. The one that needs an unauthored reference degrades.\n\n  Control, lam = 0 (fit is the identity on the corpus mean):\n    coupling  0.3557 -> 0.3620   drift +0.0063\n    the loop is a fixed point and the separation does not appear.\n    So the effect is carried by lam, not by feedback alone.\n\n========================================================================\n2  model-vs-corpus consistency: CONSTANT_SILENT, structurally\n========================================================================\n  detector D1: fire when the model departs from the corpus it was\n  fitted to. The cheapest available check, and the one a system\n  can always run on itself.\n\n  gen   D1               coupling err\n  ----------------------------------------\n[... 138 more lines]"
+  date: 2026-10-24
+  command: python3 anchor-interval/corpus_loop.py
+  sha12: 62a600d51fb0
+  exit_code: 0
+  output_lines: 178
+  output_sha12: e9bdb046011b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: anchor-interval/corpus_loop.py
+    sha12: 62a600d51fb0
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: ee8047daa9d4
+    pick_up_when: 32bbe99c703a
+    purpose: bd529a5923b4
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2a6e0b6e18b0
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

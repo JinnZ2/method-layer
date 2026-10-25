@@ -1,0 +1,105 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: quiet-failure--selftest
+kind: program
+tool: Simulators/quiet-failure/selftest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: WO-2 suite. Prints its own count; nothing here is stored elsewhere.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: quiet-failure/samples/selftest.sample.txt"
+    - "run capture: RUN, exit 0, 109 lines, sha12 5a6abe7dcb28 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 quiet-failure/selftest.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n== decomposition: parts parsed, classes reachable, absent kept from unsearched\n  ok    four parts parsed from the order\n  ok    a retyped copy holding three parts raises\n  ok    signalled, reported, unassigned -> SIGNALLED_UNJOINED\n  ok    join ASSIGNED -> SIGNALLED_JOINED (counter-case to part 3)\n  ok    signal ABSENT (searched) -> GENUINELY_UNSIGNALLED\n  ok    reported ABSENT -> REPORTED_NOWHERE, part 1 does not hold\n  ok    a missing signal_present reads UNSEARCHED -> NOT_EVALUABLE naming it, never ABSENT\n  ok    UNSEARCHED join -> NOT_EVALUABLE naming join_assigned\n  ok    ABSENT and UNSEARCHED on one field give different classes\n  ok    a value outside the vocabulary is MALFORMED\n  ok    non-dict is MALFORMED\n  ok    every class in CLASSES is reachable\n  ok    holder_count: int kept, missing UNDECLARED, bool MALFORMED, negative MALFORMED\n  ok    lead_time: a number with no unit is UNDECLARED, with a unit it is kept\n  ok    separation SEPARATES on the constructed corpus built to\n  ok    separation DOES_NOT_SEPARATE when a SUDDEN case is unsignalled\n  ok    separation NOT_EVALUABLE when the signal axis has one level (CONSTANT_FIRES guard)\n  ok    separation on an empty corpus is NOT_EVALUABLE, not a verdict\n  ok    NOT_EVALUABLE and MALFORMED cases are skipped and counted, not tabled\n  ok    an undeclared description is skipped and counted apart\n  ok    separation carries its rule and [CHOICE 1]\n  ok    base_rate REFUSES on any corpus, naming the frame and what lifts it\n  ok    base_rate divides nothing (AST: no Div in it)\n  ok    four cases parsed from the order, CARRIED\n  ok    case names parsed: SILVER BRIDGE, COLUMBIA, TACOMA NARROWS, QUIET FAILURE CLASS\n  ok    a text without the Cases section raises\n  ok    four codings, every one declares saw_decomposition True\n  ok    every basis span slices a non-empty phrase out of its own case body\n  ok    every coded signal/join field with a value carries a basis span\n  ok    the order's anchor case codes REPORTED_NOWHERE from its own sentence: part 1 does not hold on it\n  ok    the anchor's described_as is UNDECLARED: 'in under a minute' is an event duration, not a description\n  ok    the second case codes SIGNALLED_UNJOINED\n  ok    the third and fourth cases are NOT_EVALUABLE on the order's text\n  ok    holder count and lead time UNDECLARED on all four (the order states none)\n  ok    separation on the order's own cases is NOT_EVALUABLE: one signal level\n  ok    EGRESS carries a measured timestamp, four refused hosts and the control\n\n== evidence: parsed, carried, the flat reading split by clause\n[... 69 more lines]"
+  date: 2026-10-24
+  command: python3 quiet-failure/selftest.py
+  sha12: 52771770f2a9
+  exit_code: 0
+  output_lines: 109
+  output_sha12: 5a6abe7dcb28
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: quiet-failure--blind_coding
+      via: imports
+    - id: quiet-failure--decomposition
+      via: imports
+    - id: quiet-failure--evidence
+      via: imports
+    - id: quiet-failure--ownability
+      via: imports
+    - id: quiet-failure--run_all
+      via: imports
+    - id: quiet-failure--blind_coding
+      via: selftest-of
+    - id: quiet-failure--decomposition
+      via: selftest-of
+    - id: quiet-failure--evidence
+      via: selftest-of
+    - id: quiet-failure--ownability
+      via: selftest-of
+    - id: quiet-failure--run_all
+      via: selftest-of
+    - id: quiet-failure--decomposition
+      via: shares quiet-failure/WORK_ORDER.md
+    - id: quiet-failure--evidence
+      via: shares quiet-failure/WORK_ORDER.md
+    - id: quiet-failure--ownability
+      via: shares quiet-failure/WORK_ORDER.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: quiet-failure/selftest.py
+    sha12: 52771770f2a9
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-20
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: f222e9f66277
+    pick_up_when: 32bbe99c703a
+    purpose: f9a688a9399c
+    related: d7ab9563345a
+    right_read: 32bbe99c703a
+    run: 27222d1cc45e
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--selection_cuts
+kind: program
+tool: Simulators/uninstrumented/selection_cuts.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: selection_cuts.py - T1 from 023, built as an instrument rather than a rubric.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--calibrate (action=store_true)"
+    - "--score"
+    - "--report (action=store_true)"
+    - "--template (action=store_true)"
+    - "--selftest (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: uninstrumented/samples/selection_cuts.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 d6b8b5666d71 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 uninstrumented/selection_cuts.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: 13/13 checks passed
+  date: 2026-10-24
+  command: python3 uninstrumented/selection_cuts.py --selftest
+  sha12: ecb5d224ae4b
+  exit_code: 0
+  output_lines: 1
+  output_sha12: d6b8b5666d71
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--case_023_audit
+      via: imported-by
+    - id: uninstrumented--cuts_c5_probe
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/selection_cuts.py
+    sha12: ecb5d224ae4b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: c8a19853b5ac
+    output: 22b7ba1cd267
+    pick_up_when: 32bbe99c703a
+    purpose: 22def32df058
+    related: 7b822a0ec3ae
+    right_read: 32bbe99c703a
+    run: b55df9cde450
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

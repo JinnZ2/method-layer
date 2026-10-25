@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: return-path--return_path
+kind: program
+tool: Simulators/return-path/return_path.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: return_path.py -- score a correction channel against four requirements.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 50 lines, sha12 96a498dec428 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 return-path/return_path.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CHOICES -- decisions the order leaves open, taken here:
+      [CHOICE 1] grade takes a third value INTAKE_INCOMPLETE, with `missing` and `invalid` lists, and `failed`/`flags` are None rather than [] when no check ran. The order names INTAKE_INCOMPLETE as a return and gives the grade field two values; [] would say 'four checks ran, none fired'.
+      [CHOICE 2] `ratio_state` is emitted beside `ratio`. A ratio of None has three causes -- not computed, zero build_on_time, absent intake -- and the number cannot carry which.
+      [CHOICE 3] `time_unit` is carried into the output. The order's return holds neither time and the ratio is dimensionless, so without the unit no output can be read back against its own intake.
+      [CHOICE 4] F_RATIO is NOT emitted into `flags`. Its own definition is 'always reported as a number', so as a flag it fires on every channel and separates nothing; its home is the `ratio` field the return already declares.
+      [CHOICE 5] scope_note == '' is a supplied value; scope_note absent is not. An empty note is a submitter who wrote nothing there, which is a different state from a submitter who did not answer.
+      [CHOICE 6] a present-but-unusable field (out of vocabulary, negative time, non-integer encoding count) lands in `invalid`, not in `missing`. Both return INTAKE_INCOMPLETE. Absent and present-and-wrong are different states and the order names only the first.
+      [CHOICE 7] `encoder_position` is one field and `signal_encodings` may be 2 or more. Where the encoders differ the field names the FIRST one, because the order's rationale is about the first re-encoding. The cost is that F_FAST_SIDE_ENCODER is only as good as that choice: a slow-side first encoder  [...]
+
+    SCHEMA ADDITIONS beyond the order's stated return: grade: INTAKE_INCOMPLETE, missing, invalid, ratio_state, time_unit
+
+    channel                     grade                failed                                              flags                  ratio
+    ---------------------------------------------------------------------------------------------------------------------------------------
+    A_physical_consequence      RETURN_PATH_GRADED   (none)                                              (none)                 0
+    B_incident_reporting        NOT_A_RETURN_PATH    C1_RECEIPT                                          (none)                 0.01111
+    B_report_written            NOT_A_RETURN_PATH    C1_RECEIPT, C2_SIGNAL                               (none)                 0.01111
+    C_publication_loop          NOT_A_RETURN_PATH    C1_RECEIPT, C2_SIGNAL, C3_LATENCY                   (none)                 6
+    D_field_report_written      NOT_A_RETURN_PATH    C1_RECEIPT, C2_SIGNAL, C3_LATENCY, C4_CONSTRUCTION  (none)                 20
+    D_field_no_report           NOT_A_RETURN_PATH    C1_RECEIPT, C3_LATENCY, C4_CONSTRUCTION             (none)                 20
+    D_no_channel                INTAKE_INCOMPLETE    --                                                  --                     --
+        missing: ['latency']
+        invalid: (none)
+    E_fast_side_writes          NOT_A_RETURN_PATH    C2_SIGNAL                                           FAST_SIDE_ENCODER      0.01
+    F_receipt_unspecified       NOT_A_RETURN_PATH    C1_RECEIPT                                          UNSPECIFIED_RECEIPT    0
+    G_build_on_time_absent      INTAKE_INCOMPLETE    --                                                  --                     --
+        missing: ['build_on_time']
+        invalid: (none)
+    H_build_on_time_zero        NOT_A_RETURN_PATH    C3_LATENCY                                          (none)                 --
+        ratio: UNDEFINED_ZERO_BUILD_ON_TIME
+    I_receipt_out_of_vocabulary INTAKE_INCOMPLETE    --                                                  --                     --
+        missing: (none)
+        invalid: ["receipt: not one of ('MANDATORY', 'ELECTIVE', 'UNSPECIFIED')"]
+    J_encoder_none_above_zero   INTAKE_INCOMPLETE    --                                                  --                     --
+        missing: (none)
+        invalid: ['encoder_position: NONE is valid only when signal_encodings == 0']
+
+    The set is the output. failed=None means no check ran (intake); failed=[] means four ran and none fired.
+    F_RATIO is not in the flags column: see CHOICE 4.
+
+    independence: flip one check's fields, does only that check move?
+    [... 10 more lines]
+  date: 2026-10-24
+  command: python3 return-path/return_path.py
+  sha12: 44e10d765e2c
+  exit_code: 0
+  output_lines: 50
+  output_sha12: 96a498dec428
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: return-path--cases
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: return-path/return_path.py
+    sha12: 44e10d765e2c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 3f2bd265767b
+    related: 2499d7575caa
+    right_read: 32bbe99c703a
+    run: 40eb5fdbe0e1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

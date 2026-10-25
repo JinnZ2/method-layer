@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--legacy--scale_invariant_audit_v1
+kind: program
+tool: Simulators/fragility-cascade/legacy/scale_invariant_audit_v1.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: scale_invariant_audit.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 54 lines, sha12 d8e00232931a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/legacy/scale_invariant_audit_v1.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n============================================================\nNAUTILUS PRINCIPLE — Scale-Invariant Recursion Audit\n============================================================\nA stable recursive system preserves its fractal dimension.\nCollapse = dimensional degradation (D_n → 0) or explosion (D_n → ∞).\n------------------------------------------------------------\n\n============================================================\nNAUTILUS AUDIT: Nautilus Shell\n============================================================\nInitial fractal dimension D0  : 1.618\nCurrent fractal dimension D_n : 1.618 (gen 100)\nDeviation ΔD                 : 0.000\nStability Index              : 1.000\nCollapse Risk                : 0.000\nStatus: ✅ STABLE (self-similar scaling preserved)\n\n============================================================\nNAUTILUS AUDIT: AI Model (Gen 5)\n============================================================\nInitial fractal dimension D0  : 2.000\nCurrent fractal dimension D_n : 1.200 (gen 5)\nDeviation ΔD                 : 0.800\nStability Index              : 0.600\nCollapse Risk                : 0.400\nStatus: ✅ STABLE (self-similar scaling preserved)\n\n============================================================\nNAUTILUS AUDIT: AI Model (Gen 20)\n============================================================\nInitial fractal dimension D0  : 2.000\nCurrent fractal dimension D_n : 0.300 (gen 20)\nDeviation ΔD                 : 1.700\nStability Index              : 0.150\nCollapse Risk                : 0.850\nStatus: ⚠️ COLLAPSE PATH (fractal dimension degrading)\n\n============================================================\nNAUTILUS AUDIT: Barrel of Oil (Physical)\n[... 14 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/legacy/scale_invariant_audit_v1.py
+  sha12: 0493acbb3e5d
+  exit_code: 0
+  output_lines: 54
+  output_sha12: d8e00232931a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/legacy/scale_invariant_audit_v1.py
+    sha12: 0493acbb3e5d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 072cc43843b1
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 03ab345f1687
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,103 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: kernel_stake--report
+kind: program
+tool: Simulators/kernel_stake/report.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Output: per class per release, with the scope limits printed."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 11 lines, sha12 96c4e757b3dd (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 kernel_stake/report.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-mhtfbbps/kernel_stake/report.py", line 139, in <module>
+        main()
+        ~~~~^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-mhtfbbps/kernel_stake/report.py", line 50, in main
+        meas, kloc, m3 = load()
+                         ~~~~^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-mhtfbbps/kernel_stake/report.py", line 23, in load
+        return (json.load(open("measures.json")),
+                          ~~~~^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: 'measures.json'
+  date: 2026-10-24
+  command: python3 kernel_stake/report.py
+  sha12: ee403a871c9b
+  exit_code: 1
+  output_lines: 11
+  output_sha12: 96c4e757b3dd
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: kernel_stake--subsystems
+      via: imports
+    - id: kernel_stake--kloc
+      via: shares kernel_stake/kloc.json
+    - id: kernel_stake--robust
+      via: shares kernel_stake/kloc.json
+    - id: kernel_stake--m3
+      via: shares kernel_stake/m3.json
+    - id: kernel_stake--measures
+      via: shares kernel_stake/measures.json
+    - id: kernel_stake--robust
+      via: shares kernel_stake/measures.json
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: kernel_stake/report.py
+    sha12: ee403a871c9b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f08d8afced4d
+    related: e02df10f32f0
+    right_read: 32bbe99c703a
+    run: 1ecf54460942
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

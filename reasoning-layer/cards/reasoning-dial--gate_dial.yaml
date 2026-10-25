@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: reasoning-dial--gate_dial
+kind: program
+tool: Simulators/reasoning-dial/gate_dial.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: gate_dial.py — put the dial drop through the gate the last drop produced.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: reasoning-dial/samples/gate_dial.sample.txt"
+    - "run capture: RUN, exit 0, 94 lines, sha12 73c317747cf8 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 reasoning-dial/gate_dial.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================================
+    THE DIAL DROP, THROUGH THE GATE THE LAST DROP PRODUCED
+    ==========================================================================
+    gate: /tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-ub23hhz_/reasoning-gate
+
+    ==========================================================================
+    DIAL-KNEE   the knee locations
+    ==========================================================================
+      DENIED at pre().
+
+      [G-RES] resolution not declared or instrument coarser than feature: output is not admissible | shoulder-to-shoulder ambiguity vs the knee shift being read: instrument 3.55579 x margin 2 > feature 2.98526
+
+      The rule can land on either curvature extremum, so it
+      localises the knee no better than the 3.56 log-units between
+      them -- a factor of 35x in tokens. The shift it is being
+      used to detect is 2.99 log-units. The ambiguity is larger
+      than the effect before the margin is applied at all.
+
+      Note what did NOT catch this. G-FIT asks for a discrimination
+      argument and gets a sentence; it cannot check whether the
+      statistic actually names one point. The ambiguity only became
+      a denial once it was written as two numbers for G-RES. See
+      README 'Where the gate did not help'.
+
+    ==========================================================================
+    DIAL-GRAD   the gradient and cross-gradient
+    ==========================================================================
+
+    GATE DIAL-GRAD
+      expected : dQ/d(log B) at fixed budget peaks at intermediate D_r, so the cross-gradient changes sign there
+      observed : gradient peaks at D_r = 3.00 with an interior sign change in the cross-gradient, as predicted
+      diverged : no
+      control  : trivial limit                run
+      control  : saturated limit              run
+      resolve  : finite-difference step vs D_r scale ok
+      generator-level (no physical claim permitted): peak_D_r, peak_gradient
+      claim    : [supported] dQ/d(log B) at fixed budget peaks at intermediate difficulty, so the cross-gradient has an interior zero
+      claim    : [qualified] a reasoning model gains most from extra thinking on intermediate-difficulty problems
+                 ^ physical scope claim resting on generator-level support: peak_D_r, peak_gradient
+      finding  : [G-LAYER] untagged quantity: cannot be recorded
+    [... 54 more lines]
+  date: 2026-10-24
+  command: python3 reasoning-dial/gate_dial.py
+  sha12: 7f3f0f44e017
+  exit_code: 0
+  output_lines: 94
+  output_sha12: 73c317747cf8
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: reasoning-dial--dial_response
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: reasoning-dial/gate_dial.py
+    sha12: 7f3f0f44e017
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 97a075f740f6
+    pick_up_when: 32bbe99c703a
+    purpose: 20aea650672a
+    related: 9b03913bf83c
+    right_read: 32bbe99c703a
+    run: 78ae4e902d07
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

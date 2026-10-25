@@ -1,0 +1,116 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--deceptive_maze_ga
+kind: program
+tool: Simulators/tools/deceptive_maze_ga.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Goal-driven GA vs novelty search on a deceptive maze. Stdlib only, seeded.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 28 lines, sha12 3da8cd453ad9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 tools/deceptive_maze_ga.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |
+    params POP=100 GENS=150 L=60 MUT=0.05 TOUR=3 ELITE=2 K=15 ARCH+=3 seeds=10
+
+    --- objective ---
+     seed 0: solved_gen=None  entropy start=1.98 end=1.64 bits/locus  half-entropy gen=None
+     seed 1: solved_gen=None  entropy start=1.98 end=1.58 bits/locus  half-entropy gen=None
+     seed 2: solved_gen=None  entropy start=1.98 end=1.63 bits/locus  half-entropy gen=None
+     seed 3: solved_gen=117  entropy start=1.98 end=1.22 bits/locus  half-entropy gen=None
+     seed 4: solved_gen=None  entropy start=1.98 end=1.65 bits/locus  half-entropy gen=None
+     seed 5: solved_gen=None  entropy start=1.98 end=1.58 bits/locus  half-entropy gen=None
+     seed 6: solved_gen=None  entropy start=1.97 end=1.59 bits/locus  half-entropy gen=None
+     seed 7: solved_gen=None  entropy start=1.98 end=1.61 bits/locus  half-entropy gen=None
+     seed 8: solved_gen=None  entropy start=1.98 end=1.55 bits/locus  half-entropy gen=None
+     seed 9: solved_gen=None  entropy start=1.98 end=1.60 bits/locus  half-entropy gen=None
+     => solved 1/10   median solve gen=117
+
+    --- novelty ---
+     seed 0: solved_gen=58  entropy start=1.98 end=1.51 bits/locus  half-entropy gen=None
+     seed 1: solved_gen=25  entropy start=1.98 end=1.47 bits/locus  half-entropy gen=None
+     seed 2: solved_gen=28  entropy start=1.98 end=1.48 bits/locus  half-entropy gen=None
+     seed 3: solved_gen=28  entropy start=1.98 end=1.49 bits/locus  half-entropy gen=None
+     seed 4: solved_gen=13  entropy start=1.98 end=1.62 bits/locus  half-entropy gen=None
+     seed 5: solved_gen=53  entropy start=1.98 end=1.51 bits/locus  half-entropy gen=None
+     seed 6: solved_gen=25  entropy start=1.97 end=1.49 bits/locus  half-entropy gen=None
+     seed 7: solved_gen=49  entropy start=1.98 end=1.37 bits/locus  half-entropy gen=None
+     seed 8: solved_gen=45  entropy start=1.98 end=1.64 bits/locus  half-entropy gen=None
+     seed 9: solved_gen=8  entropy start=1.98 end=1.71 bits/locus  half-entropy gen=None
+     => solved 10/10   median solve gen=28
+  date: 2026-10-24
+  command: python3 tools/deceptive_maze_ga.py
+  sha12: bc03572c4e28
+  exit_code: 0
+  output_lines: 28
+  output_sha12: 3da8cd453ad9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - tests/test_deceptive_maze_ga.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: tools/deceptive_maze_ga.py
+    sha12: bc03572c4e28
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-14
+    layer3_row: new
+    last_commit: 198937ecabbc7e32851b00758e5736e320609910
+    snapshot_bytes: MATCH
+  - repo: method-layer
+    path: tools/deceptive_maze_ga.py
+    sha12: bc03572c4e28
+    commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    last_change: 2026-10-14
+    layer3_row: new
+    last_commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 7af35d29e0cf
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2457d90d0300
+    selftest: 02d068e9f0b2
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

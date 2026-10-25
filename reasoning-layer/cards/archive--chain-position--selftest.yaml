@@ -1,0 +1,146 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: archive--chain-position--selftest
+kind: program
+tool: Simulators/archive/chain-position/selftest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: archive/chain-position/samples/selftest.sample.txt"
+    - "run capture: RUN, exit 0, 104 lines, sha12 b66a7884fbe4 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 archive/chain-position/selftest.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    clause_audit: step 1 over the carried summary
+      ok    run state NOT_RUN_ON_STANDARD (no STANDARD-sourced clause)
+      ok    carried summary: 5 clauses, 0 inside agent, 5 gateway
+      ok    planted AGENT clause -> inside_agent 1 (branch reachable)
+      ok    planted BOTH counts inside
+      ok    UNDECLARED counted apart, never as gateway
+      ok    STANDARD-sourced clause flips run state
+      ok    empty -> EMPTY with None counts
+      ok    value outside vocabulary -> MALFORMED, typed
+      ok    clause text reaches no check (blanked text, same counts)
+      ok    EGRESS record names both standard hosts and a control
+      ok    clause_audit imports no network module
+    trust_provenance: step 2 specification
+      ok    full constructed record -> AUDITABLE at depth 0
+      ok    planted absence of subject -> UNAUDITABLE naming it
+      ok    planted absence of score -> UNAUDITABLE naming it
+      ok    planted absence of scorer -> UNAUDITABLE naming it
+      ok    planted absence of inputs -> UNAUDITABLE naming it
+      ok    planted absence of method -> UNAUDITABLE naming it
+      ok    planted absence of position -> UNAUDITABLE naming it
+      ok    planted absence of t_scored -> UNAUDITABLE naming it
+      ok    planted absence of authorization -> UNAUDITABLE naming it
+      ok    planted absence of scorer_provenance -> UNAUDITABLE naming it
+      ok    UNDECLARED sentinel -> DECLARED_UNAUDITABLE, kept apart from ABSENT
+      ok    missing sub-field (scale) -> ABSENT on score
+      ok    empty inputs list -> ABSENT
+      ok    scorer_provenance as a full record -> AUDITABLE at depth 1
+      ok    inner absence propagates as UNAUDITABLE
+      ok    chain past depth cap without root -> CHAIN_UNTERMINATED
+      ok    repeated provenance node -> CHAIN_CYCLE
+      ok    non-dict -> MALFORMED
+      ok    scores_payload_only True on payload-only inputs
+      ok    scores_payload_only False when a prior score is read
+      ok    scores_payload_only None when unreadable
+      ok    constructed set -> NO_COMMON_OBJECT, common {score, method}
+      ok    three full records -> COMMON_OBJECT (branch reachable)
+      ok    empty set -> EMPTY, missing = whole spec
+      ok    every constructed record declares itself CONSTRUCTED
+    horn_b: step 3, the container asks
+      ok    STANDALONE -> UNDETERMINED_FROM_INSIDE, all four UNOBTAINABLE
+    [... 64 more lines]
+  date: 2026-10-24
+  command: python3 archive/chain-position/selftest.py
+  sha12: c736c8056b7b
+  exit_code: 0
+  output_lines: 104
+  output_sha12: b66a7884fbe4
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: archive--chain-position--clause_audit
+      via: imports
+    - id: archive--chain-position--dissimilar
+      via: imports
+    - id: archive--chain-position--horn_b
+      via: imports
+    - id: archive--chain-position--load_class
+      via: imports
+    - id: archive--chain-position--run_all
+      via: imports
+    - id: archive--chain-position--trust_provenance
+      via: imports
+    - id: chain-position--selftest
+      via: same-bytes
+    - id: archive--chain-position--clause_audit
+      via: selftest-of
+    - id: archive--chain-position--dissimilar
+      via: selftest-of
+    - id: archive--chain-position--horn_b
+      via: selftest-of
+    - id: archive--chain-position--load_class
+      via: selftest-of
+    - id: archive--chain-position--run_all
+      via: selftest-of
+    - id: archive--chain-position--trust_provenance
+      via: selftest-of
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: archive/chain-position/selftest.py
+    sha12: c736c8056b7b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: f0fa8e68ce91
+    pick_up_when: 32bbe99c703a
+    purpose: e4986494016c
+    related: 402addb727d5
+    right_read: 32bbe99c703a
+    run: 356ca3679dd6
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

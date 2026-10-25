@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--scale_regime_shift
+kind: program
+tool: Simulators/fragility-cascade/scale_regime_shift.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: scale_regime_switch.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/scale_regime_shift.sample.txt"
+    - "run capture: FAILED, exit 1, 4 lines, sha12 c3b9d77b17e9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/scale_regime_shift.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-mfrzup98/fragility-cascade/scale_regime_shift.py", line 11, in <module>
+        from scipy.optimize import curve_fit
+    ModuleNotFoundError: No module named 'scipy'
+  date: 2026-10-24
+  command: python3 fragility-cascade/scale_regime_shift.py
+  sha12: e2664fa0843c
+  exit_code: 1
+  output_lines: 4
+  output_sha12: c3b9d77b17e9
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/scale_regime_shift.py
+    sha12: e2664fa0843c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 171805bb5ffe
+    pick_up_when: 32bbe99c703a
+    purpose: 8daf0766174c
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 52fed473d995
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

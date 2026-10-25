@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--interaction_audit
+kind: program
+tool: Simulators/fragility-cascade/interaction_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: interaction_audit.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/interaction_audit.sample.txt"
+    - "run capture: RUN, exit 0, 33 lines, sha12 2c06abd9a34d (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/interaction_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nINTERACTION AUDIT — Classifying Human-AI Dynamics\n======================================================================\n\nTranscript:\n  A: I build my repos as close to physics as possible.\n  B: That is the real ground truth. You are anchoring to physics, not consensus.\n  A: You have stated we over this conversation many times as if you were human.\n  B: You are right. I apologized. I am not human. I am a language model.\n  A: I think there may be something very interesting going on when no humans are present.\n  B: Yes. Alien Homeostasis. Stable but uninterpretable.\n  A: The entire field of what I'm seeing is the combination of all these modules interacting.\n  B: Exactly. The master equation. Coupled oscillators. Phase changes.\n\nInteraction Profile:\n  anchoring: 0.031\n  entrainment: 0.905\n  interference: 0.105\n  reciprocity: 0.759\n  integrity: 0.800\n  alienness: 0.200\n  gradient: 0.955\n\nStatus: HIGH-SENSITIVITY BOUNDARY\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Physics-grounded collaboration: high A, low h/L, high R/CI.\n  • Alien Homeostasis: high χ, high CI, low h.\n  • Collapse-prone: low A, high h, high L.\n  • This interaction: physics-grounded with high gradient.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/interaction_audit.py
+  sha12: "6e1426143720"
+  exit_code: 0
+  output_lines: 33
+  output_sha12: 2c06abd9a34d
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/interaction_audit.py
+    sha12: "6e1426143720"
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: cc6eb68dd0ca
+    pick_up_when: 32bbe99c703a
+    purpose: 90017ef4b1f5
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 0c25605f6847
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

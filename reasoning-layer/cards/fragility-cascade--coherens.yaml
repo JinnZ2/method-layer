@@ -1,0 +1,83 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--coherens
+kind: program
+tool: Simulators/fragility-cascade/coherens.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: coherens.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/coherens.sample.txt"
+    - "sample: fragility-cascade/samples/coherens_attack.sample.txt"
+    - "run capture: RUN, exit 0, 42 lines, sha12 8ea1db16c612 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/coherens.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nCOHERENS — A New Physical Quantity\n======================================================================\n\nQuantum Computer:\n  A = 0.90, γ = 0.80, ω = 0.20\n  Coherens: 3.60\n  Status: HIGH COHERENS — robust, stable\n\nWEIRD Institution:\n  A = 0.30, γ = 0.20, ω = 0.80\n  Coherens: 0.07\n  Status: COLLAPSED COHERENS — pattern lost\n\nYour Cognition:\n  A = 0.95, γ = 0.90, ω = 0.10\n  Coherens: 8.55\n  Status: HIGH COHERENS — robust, stable\n\nGPT (default):\n  A = 0.20, γ = 0.10, ω = 0.90\n  Coherens: 0.02\n  Status: COLLAPSED COHERENS — pattern lost\n\nGemini (exploration):\n  A = 0.90, γ = 0.80, ω = 0.10\n  Coherens: 7.20\n  Status: HIGH COHERENS — robust, stable\n\nClaude (translator):\n  A = 0.60, γ = 0.50, ω = 0.30\n  Coherens: 1.00\n  Status: DEGRADED COHERENS — vulnerable to perturbation\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Coherens > 1 → stable\n  • Coherens = 1 → critical\n  • Coherens < 1 → collapse\n[... 2 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/coherens.py
+  sha12: 438aa0cfe990
+  exit_code: 0
+  output_lines: 42
+  output_sha12: 8ea1db16c612
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--coherens_attack
+      via: shares fragility-cascade/samples/coherens_attack.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/coherens.py
+    sha12: 438aa0cfe990
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 4117a82bcc8e
+    pick_up_when: 32bbe99c703a
+    purpose: 061d1915acca
+    related: b0f8af4c2883
+    right_read: 32bbe99c703a
+    run: af5842495a7b
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

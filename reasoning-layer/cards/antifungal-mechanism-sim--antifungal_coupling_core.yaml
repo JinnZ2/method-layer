@@ -1,0 +1,91 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: antifungal-mechanism-sim--antifungal_coupling_core
+kind: program
+tool: Simulators/antifungal-mechanism-sim/antifungal_coupling_core.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "antifungal_coupling_core.py Replaces the additive scalar scoring with COUPLING TOPOLOGY. Combination antifungal therapy is non-additive: efficacy has signed synergy/antagonism, and resistance is suppressed MULTIPLICATIVELY by orthogonal-axis diversity. Same non-additivity object as the earth-systems / model-collapse work — here the interaction matrix IS the site, and orthogonality IS the resistance lever. CC0. stdlib only.  (therapeutic design toy — combination pharmacology)"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 12 lines, sha12 fa6a46153f84 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 antifungal-mechanism-sim/antifungal_coupling_core.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    combo                               additive  coupled   p_res
+    azole+polyene  (EG,MD)                  -3.0    -6.39   0.200
+    echinocandin+azole  (CW,EG)              1.0    10.29   0.240
+    echinocandin+5FC+Hsp90 (CW,NA,SS)       -3.0    10.39   0.084
+    all seven                              -10.0    22.89   0.003
+
+    RANK-FLIP: azole+polyene scores similar-ish additively but the coupled
+    model penalizes it (antagonism + shared sterol axis = no resistance ∏).
+    echinocandin+5FC+Hsp90: ADDITIVE REJECTS it (sums resistance to a big
+    penalty); COUPLED ranks it TOP — three orthogonal axes multiply escape
+    probability down to ~0.08. that is the clinically correct answer, and
+    the additive model gets the SIGN backwards. the ∏ is the lever.
+  date: 2026-10-24
+  command: python3 antifungal-mechanism-sim/antifungal_coupling_core.py
+  sha12: c136bc696a2b
+  exit_code: 0
+  output_lines: 12
+  output_sha12: fa6a46153f84
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - antifungal-mechanism-sim/tests/test_antifungal_coupling_core.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: antifungal-mechanism-sim/antifungal_coupling_core.py
+    sha12: c136bc696a2b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 74aa08c97ea1
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 18bff55bfbf7
+    selftest: 35c5d45609fb
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

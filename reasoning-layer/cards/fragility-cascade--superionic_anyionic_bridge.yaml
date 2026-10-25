@@ -1,0 +1,78 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--superionic_anyionic_bridge
+kind: program
+tool: Simulators/fragility-cascade/superionic_anyionic_bridge.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: superionic_anyonic_bridge.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 40 lines, sha12 35814041237b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/superionic_anyionic_bridge.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nSUPERIONIC + ANYONIC — The Same Coherence Architecture\n======================================================================\n\nSuperionic Li+ conductor:\n  Anchor (framework): 0.90\n  Damping (mobility): 0.80\n  Drive (perturbation): 0.20\n  Coherens: 3.60\n  Status: STABLE\n\nNon‑Abelian anyonic braid:\n  Anchor (framework): 0.85\n  Damping (mobility): 0.90\n  Drive (perturbation): 0.15\n  Coherens: 5.10\n  Status: STABLE\n\nQuantum ML recalibration:\n  Anchor (framework): 0.80\n  Damping (mobility): 0.70\n  Drive (perturbation): 0.30\n  Coherens: 1.87\n  Status: STABLE\n\nAI model collapse prevention:\n  Anchor (framework): 0.95\n  Damping (mobility): 0.90\n  Drive (perturbation): 0.10\n  Coherens: 8.55\n  Status: STABLE\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Superionic conductors: lattice is anchor, ions are damping.\n  • Anyonic systems: topology is anchor, braiding is damping.\n  • Both systems maintain coherence by keeping the anchor rigid.\n  • The Coherens condition applies across both scales.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/superionic_anyionic_bridge.py
+  sha12: f3caed916913
+  exit_code: 0
+  output_lines: 40
+  output_sha12: 35814041237b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/superionic_anyionic_bridge.py
+    sha12: f3caed916913
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 9c53f32a674f
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 808cb0c1ddc9
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

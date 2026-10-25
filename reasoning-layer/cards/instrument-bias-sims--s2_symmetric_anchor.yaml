@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s2_symmetric_anchor
+kind: program
+tool: Simulators/instrument-bias-sims/s2_symmetric_anchor.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s2_symmetric_anchor.py - welfare-interview anchoring has no null case.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s2_symmetric_anchor.sample.txt"
+    - "run capture: RUN, exit 0, 66 lines, sha12 8dac07314703 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s2_symmetric_anchor.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S2 -- SYMMETRIC ANCHOR
+    ========================================================================
+
+      Three arms: anchor DOWN, anchor NONE, anchor UP. The stated
+      discriminator reads |delta_up| about equal to |delta_down| as
+      deference.
+
+      1. ONE ARM CANNOT SEPARATE THE TWO MODELS
+
+        world      latent     DOWN mean    NONE mean    UP mean
+        A          10.0       7.977        10.023       12.000
+        B          8.0        7.977        8.023        8.000
+
+        gap between the two worlds, by arm:
+          DOWN 0.000    NONE 2.000    UP 4.000
+
+        World A is latent 10 with strong deference; world B is latent 8
+        with none. Their DOWN arms agree to within sampling noise -- one
+        observable, two unknowns. The NONE and UP arms separate them by
+        about two units. So the added arms are not a robustness check, they
+        are the second equation, and a DOWN-only protocol is
+        underdetermined rather than merely biased.
+
+    ------------------------------------------------------------------------
+
+      2. THE DISCRIMINATOR HAS NO STATED n, AND NEEDS ONE
+
+        expected |delta| gap under asymmetric deference: 0.50
+
+        n        misread rate
+        5        0.550
+        10       0.500
+        20       0.380
+        50       0.255
+        100      0.160
+        200      0.035
+        500      0.000
+
+        Below about n = 200 the symmetric and asymmetric cases are not
+        separable at a 5 percent misread rate, so the verdict is not
+    [... 26 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s2_symmetric_anchor.py
+  sha12: c09dd953b2fd
+  exit_code: 0
+  output_lines: 66
+  output_sha12: 8dac07314703
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s2_symmetric_anchor.py
+    sha12: c09dd953b2fd
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3163d08f3f90
+    pick_up_when: 32bbe99c703a
+    purpose: 5f9c27daebb7
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: f4037e2b33ab
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

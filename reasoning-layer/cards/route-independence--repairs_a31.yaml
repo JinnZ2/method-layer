@@ -1,0 +1,103 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: route-independence--repairs_a31
+kind: program
+tool: Simulators/route-independence/repairs_a31.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "AMENDMENT A-3.1 (2026-09-28): definitional repairs, built over A-1, A-2, A-2.1 and A-3."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: route-independence/samples/repairs_a31.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 5f2fe9ceb07c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 route-independence/repairs_a31.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: "library module; run: python3 route-independence/test_repairs_a31.py"
+  date: 2026-10-24
+  command: python3 route-independence/repairs_a31.py --selftest
+  sha12: 75daaa421d57
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 5f2fe9ceb07c
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: route-independence--chains_a4
+      via: imported-by
+    - id: route-independence--eligibility_a6
+      via: imported-by
+    - id: route-independence--sourcing_a62
+      via: imported-by
+    - id: route-independence--standing_a61
+      via: imported-by
+    - id: route-independence--termini_a5
+      via: imported-by
+    - id: route-independence--gate_state
+      via: imports
+    - id: route-independence--gate_state_a21
+      via: imports
+    - id: route-independence--settlement_split
+      via: imports
+    - id: route-independence--thermal_gates
+      via: imports
+    - id: route-independence--thermal_gates
+      via: shares route-independence/AMENDMENT_A3_2026-09-28_thermal.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - route-independence/test_repairs_a31.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: route-independence/repairs_a31.py
+    sha12: 75daaa421d57
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-28
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 0083814f33e9
+    pick_up_when: 32bbe99c703a
+    purpose: 6cdd000a2904
+    related: 477cdf0beccf
+    right_read: 32bbe99c703a
+    run: d0c6314df0c0
+    selftest: e7940e683f95
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--legacy--collapse_predictor_v1
+kind: program
+tool: Simulators/fragility-cascade/legacy/collapse_predictor_v1.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: collapse_predictor.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 66 lines, sha12 29d3be4f1602 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/legacy/collapse_predictor_v1.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nUNIFIED COLLAPSE PREDICTOR — Demo\n======================================================================\n\n--- Stable ---\nStatus        : COLLAPSE\nIntegrity     : 0.700\nResonance R   : 0.340\nInterference L: 300.953\nR_reciprocity : 1.000\nα_scaling     : 1.458\nP_kernel      : 0.088\nFlags:\n  - Damping ratio γ/ω < 1.0 → resonance\n  - Kernel projection P < 0.7 → drift chaos\n  - Kernel drift: P=0.088 (<0.7)\n  - λ drift → kernel decoupling\n  - Semantic s-axis projection > 0.1 → entropy collapse\n  - α drift → variance collapse\n  - δ drift → reciprocity skew\n  - s accumulation → entropy collapse\n  - γ attenuation → resonance\n\n--- Repetitive (α<1) ---\nStatus        : WARNING\nIntegrity     : 0.400\nResonance R   : 0.340\nInterference L: 0.293\nR_reciprocity : 1.000\nα_scaling     : 0.920\nP_kernel      : 0.110\nFlags:\n  - Damping ratio γ/ω < 1.0 → resonance\n  - Scaling factor α < 1.0 → mode collapse\n  - Kernel drift: P=0.110 (<0.7)\n  - Kernel projection P < 0.7 → drift chaos\n  - α drift → variance collapse\n  - δ drift → reciprocity skew\n  - Scaling drift: α=0.920 (φ=1.618)\n[... 26 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/legacy/collapse_predictor_v1.py
+  sha12: a66cd9f1c7a4
+  exit_code: 0
+  output_lines: 66
+  output_sha12: 29d3be4f1602
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/legacy/collapse_predictor_v1.py
+    sha12: a66cd9f1c7a4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ead35a8734b3
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: d6b11c0a648c
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

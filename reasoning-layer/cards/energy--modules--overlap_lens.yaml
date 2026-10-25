@@ -1,0 +1,81 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: energy--modules--overlap_lens
+kind: program
+tool: Simulators/energy/modules/overlap_lens.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "overlap_lens.py — Unified theory-space lens: CQ x EDE in the common observable plane."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 10 lines, sha12 050491071a87 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 energy/modules/overlap_lens.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "  [stand-in EDE grid: No module named 'scipy']\nCQ manifold: 30 pts | EDE manifold: 40 pts [STAND-IN (not physical)]\n\nCLOSEST PAIR: D = 0.17 sigma\n  CQ : lam=0.7, beta=+0.05  (s8=0.822, H0=67.4)\n  EDE: log10zc=4.00, f=0.01  (s8=0.821, H0=67.6)\nAMBIGUITY: 11/40 EDE points within 1 sigma of CQ manifold\nAMBIGUITY: 19/40 EDE points within 2 sigma of CQ manifold\n\nHOLOGRAPHIC CANCELLATION: 0 composite pairs with sigma8 ~ LCDM and H0 > 68.5"
+  date: 2026-10-24
+  command: python3 energy/modules/overlap_lens.py
+  sha12: 68a9f44da305
+  exit_code: 0
+  output_lines: 10
+  output_sha12: 050491071a87
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: energy--modules--edelens
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: energy/modules/overlap_lens.py
+    sha12: 68a9f44da305
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f38f81a86b93
+    related: c4962f3aa213
+    right_read: 32bbe99c703a
+    run: 815fa5d52237
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

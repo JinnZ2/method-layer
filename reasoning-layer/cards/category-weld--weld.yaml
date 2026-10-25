@@ -1,0 +1,100 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: category-weld--weld
+kind: program
+tool: Simulators/category-weld/weld.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: CC0. stdlib only. python3 weld.py [--term T] [--jsonl] [--new TERM]
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--term: detail view for one term"
+    - "--jsonl (action=store_true): one score per line"
+    - "--new: emit a blank weld file"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: category-weld/samples/weld_audit.sample.txt"
+    - "sample: category-weld/samples/weld_capital.sample.txt"
+    - "sample: category-weld/samples/weld_hierarchy.sample.txt"
+    - "sample: category-weld/samples/weld_rural.sample.txt"
+    - "sample: category-weld/samples/weld_scores.sample.jsonl"
+    - "sample: category-weld/samples/weld_table.sample.txt"
+    - "run capture: RUN, exit 0, 8 lines, sha12 f498ab6fb423 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 category-weld/weld.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    term                comp  cases  quant  spread   bias
+    --------------------------------------------------
+    capital             5     4      0      --       --
+    hierarchy           5     5      0      --       --
+    rural               4     4      0      --       --
+
+    spread/bias read only from cases with paired before+after
+    readings. '--' means no case is quantified yet.
+  date: 2026-10-24
+  command: python3 category-weld/weld.py
+  sha12: e405ca7d8a29
+  exit_code: 0
+  output_lines: 8
+  output_sha12: f498ab6fb423
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: category-weld--weld_audit
+      via: imported-by
+    - id: category-weld--weld_audit
+      via: shares category-weld/samples/weld_audit.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - category-weld/test_weld.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: category-weld/weld.py
+    sha12: e405ca7d8a29
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: ca9cdcd735ce
+    output: 2b59fcfe3cb1
+    pick_up_when: 32bbe99c703a
+    purpose: df7941bb864f
+    related: a6564ca25bd6
+    right_read: 32bbe99c703a
+    run: fbe8e17306f7
+    selftest: 456abba5994c
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

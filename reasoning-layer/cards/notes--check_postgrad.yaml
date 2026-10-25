@@ -1,0 +1,93 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: notes--check_postgrad
+kind: program
+tool: Simulators/notes/check_postgrad.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: check_postgrad.py -- CC0, stdlib only, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 1 lines, sha12 02e1b0358e9c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 notes/check_postgrad.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "check_postgrad selftest: 35 checks OK"
+  date: 2026-10-24
+  command: python3 notes/check_postgrad.py --selftest
+  sha12: 90d2032c9598
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 02e1b0358e9c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: external-audit--recount
+      via: shares GAP_INDEX.md
+    - id: notes--check_markers
+      via: shares GAP_INDEX.md
+    - id: tools--gap_index
+      via: shares GAP_INDEX.md
+    - id: notes--check_markers
+      via: shares RESEARCH_RENDER.md
+    - id: anchor-measurand-crossing--amc
+      via: shares anchor-measurand-crossing/WORK_ORDER.md
+    - id: anchor-measurand-crossing--amc
+      via: shares anchor-measurand-crossing/lexicon.json
+    - id: readout-count--stack_revision
+      via: shares readout-count/EXCLUSION_STACK_trucking_v2.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: notes/check_postgrad.py
+    sha12: 90d2032c9598
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 4c35f88f8c91
+    related: e44d8b2bad6f
+    right_read: 32bbe99c703a
+    run: dcc7fcf950f3
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

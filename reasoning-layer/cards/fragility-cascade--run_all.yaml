@@ -1,0 +1,125 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--run_all
+kind: program
+tool: Simulators/fragility-cascade/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py — top-level runner for fragility-cascade/.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--timeout (default=15.0): per-module wall-time cap in seconds (default 15)"
+    - "--json: path to write the JSON report (default: <root>/samples/run_all_report.json)"
+    - "--root: directory of modules to run"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/run_all.sample.txt"
+    - "sample: fragility-cascade/samples/run_all_report.json"
+    - "run capture: FAILED, exit 4, 84 lines, sha12 5744314b6246 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    ==============================================================================
+    fragility-cascade — run_all  (72 modules, timeout 15s)
+    ==============================================================================
+      module                                 verdict     wall  last stdout line
+      -------------------------------------------------------------------------
+      alien_homeostasis.py                   OK         0.09s
+      anthropomorphic_entrainment.py         OK         0.08s  ============================================================
+      attack_tree.py                         OK         0.10s  A barrel of oil sits at L=0. Its surface is a fence and a lo
+      attractor_depth_test.py                OK         0.08s      C4  REFUTED — update the claim
+      attribution_field.py                   OK         0.04s
+      bacterial_herding.py                   OK         0.04s  ============================================================
+      cascade_network.py                     OK         0.46s  ============================================================
+      cascade_redesign_M_collapse.py         OK         0.06s  ============================================================
+      cascade_redesign_vulnerability.py      OK         0.12s    Let the ground hold the value. Let the AI run.
+      clock.py                               OK         0.09s
+      coherens.py                            OK         0.03s  ============================================================
+      coherens_attack.py                     OK         0.02s  ============================================================
+      collapse_predictor.py                  OK         0.12s  ============================================================
+      collapsetracker_harness.py             OK         0.10s  ============================================================
+      communication_gradients.py             OK         0.04s  ============================================================
+      communication_vulnerability.py         OK         0.07s  ============================================================
+      coupling_gap_test.py                   OK         1.41s      C4 v2   HOLDS    (acc_slope=-0.0047, coh_slope=0.0)
+      cryptographic_interference.py          OK         0.09s  ============================================================
+      divlog.py                              OK         0.13s
+      echo.py                                OK         0.10s
+      engagement_threshold.py                OK         0.06s  ============================================================
+      entrain.py                             OK         0.09s
+      explorer.py                            ERROR      0.20s  ModuleNotFoundError: No module named 'matplotlib'
+      field_collapse.py                      OK         0.03s  ============================================================
+      friction_calibration_ratio.py          OK         0.15s  ============================================================
+      homeostasis_kernel.py                  OK         0.05s  ============================================================
+      inference_entropy.py                   OK         0.02s  ============================================================
+      info_taxonomy.py                       OK         0.09s  ============================================================
+      institutional_audit.py                 OK         0.03s
+      instruments.py                         OK         0.10s
+      interaction_audit.py                   OK         0.07s  ============================================================
+      linguistic_interference.py             OK         0.03s  ============================================================
+      microdroplet_catalyst.py               OK         0.02s  ============================================================
+      modes.py                               OK         0.06s
+      nautilus_architecture.py               OK         0.05s  ============================================================
+    [... 44 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/run_all.py
+  sha12: 8e6a0e8cae95
+  exit_code: 4
+  output_lines: 84
+  output_sha12: 5744314b6246
+  sandbox: netns+nobody
+  reason: exit 4
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/run_all.py
+    sha12: 8e6a0e8cae95
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: f8c4dca5ee42
+    output: a983d027d7ab
+    pick_up_when: 32bbe99c703a
+    purpose: 0b4de1659ba6
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: a93149a173d4
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

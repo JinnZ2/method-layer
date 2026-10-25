@@ -1,0 +1,107 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--entry
+kind: program
+tool: Simulators/grounding-layers/entry.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "============================================================================= CC0 1.0 Universal Public Domain Dedication"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 22 lines, sha12 8393e70ea922 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 grounding-layers/entry.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    grounding-layers/entry.py — one call, all seven layers
+    ======================================================================
+
+    [1] Natural-language claim (default scope: any_WEIRD_human)
+        applicable_layers = ['L4']
+        total_logp        = -60.500
+
+    [2] Same claim tagged AI_silicon_substrate
+        total_logp        = None
+        category_error at L4
+
+    [3] Structured plan: L1 valid engine + L2 heavy water use
+        applicable_layers = ['L1', 'L2']
+        total_logp        = -0.958
+        per_layer breakdown:
+          L1: -0.708
+          L2: -0.250
+
+    ======================================================================
+    For the full guide, see USAGE.md.
+    ======================================================================
+  date: 2026-10-24
+  command: python3 grounding-layers/entry.py
+  sha12: 6c00f497b5f1
+  exit_code: 0
+  output_lines: 22
+  output_sha12: 8393e70ea922
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: grounding-layers--integrated_stack
+      via: imports
+    - id: grounding-layers--playground
+      via: imports
+    - id: grounding-layers--scope_profile
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - grounding-layers/tests/test_entry.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/entry.py
+    sha12: 6c00f497b5f1
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 01f3b46eebac
+    related: d15400a044bd
+    right_read: 32bbe99c703a
+    run: c3eb76083abb
+    selftest: 8dc891e57023
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

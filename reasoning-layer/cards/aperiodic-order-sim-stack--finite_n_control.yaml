@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: aperiodic-order-sim-stack--finite_n_control
+kind: program
+tool: Simulators/aperiodic-order-sim-stack/finite_n_control.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: finite_n_control.py — the estimator controls the SIM-B drop did not run.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: aperiodic-order-sim-stack/samples/finite_n_control.sample.txt"
+    - "run capture: RUN, exit 0, 63 lines, sha12 2b3e9cdfbb34 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 aperiodic-order-sim-stack/finite_n_control.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==========================================================================
+    FINITE-N CONTROL FOR SIM-B
+    ==========================================================================
+    How much D_f does the estimator move between 12,000 and 1,024
+    points, on sets whose true dimension does not depend on N?
+
+    Poisson (space-filling)   true D_f = 2.0000   ladder = base 2
+      N = 12,000   D_f = 1.936   r2 = 0.9997   6 live scales
+      N =  1,024   D_f = 1.799   r2 = 0.9969   5 live scales
+      finite-N shift (dense - sparse) = +0.137
+
+    Line (1D sanity check)   true D_f = 1.0000   ladder = base 2
+      N = 12,000   D_f = 0.951   r2 = 0.9990   13 live scales
+      N =  1,024   D_f = 0.901   r2 = 0.9977   10 live scales
+      finite-N shift (dense - sparse) = +0.050
+
+    Cantor dust   true D_f = 1.2619   ladder = base 2
+      N = 12,000   D_f = 1.304   r2 = 0.9942   9 live scales
+      N =  1,024   D_f = 1.326   r2 = 0.9952   6 live scales
+      finite-N shift (dense - sparse) = -0.021
+
+    Cantor dust   true D_f = 1.2619   ladder = base 3
+      N = 12,000   D_f = 1.189   r2 = 0.9993   6 live scales
+      N =  1,024   D_f = 1.144   r2 = 0.9948   5 live scales
+      finite-N shift (dense - sparse) = +0.045
+
+    ==========================================================================
+    READING
+    ==========================================================================
+      SIM-B reported  |D_f(AB) - D_f(Cascade)|  = 0.334
+      SIM-B baseline  |D_f(AB) - D_f(Poisson)|  = 0.021   (matched-N)
+
+      Artifact 1 — unmatched sample size. Largest shift across the
+      three known-truth probes when N drops 12x: 0.137
+        Poisson +0.137   Line +0.050   dust(base2) -0.021   dust(base3) +0.045
+
+      Artifact 2 — box-ladder commensurability. The same 12,000-point
+      Cantor dust, same estimator, only the ladder ratio changed:
+        base 2 (incommensurate) D_f = 1.304   error +0.042
+        base 3 (commensurate)   D_f = 1.189   error -0.073
+    [... 23 more lines]
+  date: 2026-10-24
+  command: python3 aperiodic-order-sim-stack/finite_n_control.py
+  sha12: fd544e700d3a
+  exit_code: 0
+  output_lines: 63
+  output_sha12: 2b3e9cdfbb34
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: aperiodic-order-sim-stack/finite_n_control.py
+    sha12: fd544e700d3a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 614cb20876a4
+    pick_up_when: 32bbe99c703a
+    purpose: e30c3335f6e1
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 45fcbb6d5764
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

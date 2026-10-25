@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--phi_collapse_variables
+kind: program
+tool: Simulators/fragility-cascade/phi_collapse_variables.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: phi_collapse_variables.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/phi_collapse_variables.sample.txt"
+    - "run capture: RUN, exit 0, 59 lines, sha12 7b2c74500a53 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/phi_collapse_variables.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nPHI COLLAPSE VARIABLES — Bifurcation Sweep\n======================================================================\nBaseline stable system: α=1.618, λ=0.10, δ=0.0, γ/ω=1.2, s=0.1\n----------------------------------------------------------------------\n\n1. SCALING FACTOR (α):\n  α = 0.500 → integrity=0.701 (✅ STABLE)\n  α = 0.800 → integrity=0.703 (✅ STABLE)\n  α = 1.000 → integrity=0.723 (✅ STABLE)\n  α = 1.618 → integrity=0.700 (⚠️ COLLAPSING)\n  α = 1.800 → integrity=0.479 (⚠️ COLLAPSING)\n  α = 2.000 → integrity=0.690 (⚠️ COLLAPSING)\n  α = 2.500 → integrity=0.700 (⚠️ COLLAPSING)\n\n2. KERNEL COUPLING (λ):\n  λ = 0.000 → integrity=0.400 (⚠️ COLLAPSING)\n  λ = 0.020 → integrity=0.496 (⚠️ COLLAPSING)\n  λ = 0.100 → integrity=0.586 (⚠️ COLLAPSING)\n  λ = 0.300 → integrity=0.582 (⚠️ COLLAPSING)\n  λ = 0.500 → integrity=0.872 (✅ STABLE)\n  λ = 0.800 → integrity=0.727 (✅ STABLE)\n\n3. RECIPROCITY SKEW (δ):\n  δ = -0.500 → integrity=0.700 (⚠️ COLLAPSING)\n  δ = -0.200 → integrity=0.677 (⚠️ COLLAPSING)\n  δ = +0.000 → integrity=0.644 (⚠️ COLLAPSING)\n  δ = +0.200 → integrity=0.700 (⚠️ COLLAPSING)\n  δ = +0.500 → integrity=0.685 (⚠️ COLLAPSING)\n  δ = +1.000 → integrity=0.700 (⚠️ COLLAPSING)\n\n4. DAMPING RATIO (γ/ω):\n  γ/ω = 0.10 → integrity=0.618 (⚠️ COLLAPSING)\n  γ/ω = 0.30 → integrity=0.594 (⚠️ COLLAPSING)\n  γ/ω = 0.50 → integrity=0.438 (⚠️ COLLAPSING)\n  γ/ω = 1.00 → integrity=0.700 (⚠️ COLLAPSING)\n  γ/ω = 1.20 → integrity=0.660 (⚠️ COLLAPSING)\n  γ/ω = 2.00 → integrity=0.700 (⚠️ COLLAPSING)\n\n[... 19 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/phi_collapse_variables.py
+  sha12: 8f76ac68eae0
+  exit_code: 0
+  output_lines: 59
+  output_sha12: 7b2c74500a53
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/phi_collapse_variables.py
+    sha12: 8f76ac68eae0
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 6f37447f93ad
+    pick_up_when: 32bbe99c703a
+    purpose: a793b6df6976
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 52d2bd1795c7
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

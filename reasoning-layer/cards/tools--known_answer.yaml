@@ -1,0 +1,123 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--known_answer
+kind: program
+tool: Simulators/tools/known_answer.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: No metric ships without a known-answer run.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 794 lines, sha12 fdc7727a0623 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 tools/known_answer.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    additivity-inheritance/additivity_inheritance.py::interaction_ss
+      the demo cells               PASS           got=9.0 want=9.0
+          known because: (10-12-12+20)^2/4 = 36/4 = 9 by hand; the interaction an additive 2x2 model assigns to its residual
+      purely additive world        PASS           got=0.0 want=0.0
+          known because: (10-12-14+16) = 0, so 0: no interaction, the case where a sign error would still read near zero
+      unit interaction             PASS           got=1.0 want=1.0
+          known because: (0-0-0+2)^2/4 = 4/4 = 1 by hand
+      negative corner              PASS           got=1.0 want=1.0
+          known because: (1-0-0+1)^2/4 = 4/4 = 1: the sign of the corner sum is squared away, a distinct input from the unit case
+
+    agent-lifecycle-energy/phase_energy.py::integrate
+      note: the GAP 4 rig's phase integrator: integral (P(t) - P_idle) dt, trapezoidal, baseline-subtracted. The three cases separate the three ways it could be wrong -- the baseline (zero_marginal), the rule (ramp), and the arithmetic (constant) -- and their expected values are all distinct so a consta [...]
+      constant                     PASS           got=200.0 want=200.0
+          known because: 200 W held for 2.0 s over a 100 W idle baseline is a marginal 100 W for 2 s = 200 J exactly; a trapezoid over a constant trace is exact, so a dropped baseline (reporting the full 400 J) or a rectangular rule would miss this
+      ramp                         PASS           got=50.0 want=50.0
+          known because: a linear ramp 0 -> 100 W over 1.0 s with zero idle is a triangle of area 50 J; a trapezoid is exact on a straight line while a left Riemann sum undercounts it, so this is the case that pins the integration rule
+      zero_marginal                PASS           got=0.0 want=0.0
+          known because: 100 W held for 1.0 s over a 100 W idle is marginal zero; a baseline-subtraction sign slip would push it off zero, and this is the case that shares no expected value with the other two so the set can detect a constant integrator
+
+    anchor-measurand-crossing/amc.py::crossing_band
+      note: section 6's crossing_count as a band [min, max] over grouped ids plus an ungrouped count. Every UNGROUPED quantity widens the band and never silently merges or splits.
+      all native                   PASS           got=(0, 0) want=(0, 0)
+          known because: three entries all grouped to the native measurand -> one measurand, native hit, crossing exactly 0
+      five with native             PASS           got=(4, 4) want=(4, 4)
+          known because: five distinct grouped ids, one native -> section 6's distinct - native_hit = 4, a point not a band
+      non-native plus ungrouped    PASS           got=(1, 2) want=(1, 2)
+          known because: a grouped component is a crossing whatever the ungrouped entry is; the ungrouped adds at most one. The first build returned (0, 2) here by pairing fewest-measurands with most-native-hits, two extremes that cannot both hold
+      only ungrouped               PASS           got=(0, 3) want=(0, 3)
+          known because: three ungrouped entries could all be native (0) or all distinct and foreign (3)
+      empty                        PASS           got=(0, 0) want=(0, 0)
+          known because: no entries -> zeros; shares its value with all-native, so the set relies on the other three to detect a constant
+
+    anchor-position/normalize.py::crossing_count
+      note: section 6 of the ANCHOR POSITION order: |distinct measurands| minus native groups hit, under the published transform list. The list is the load-bearing part and has no external validation; a second list (transforms_alt.json) is scored beside it as N4.
+      all transforms               PASS           got=0 want=0
+          known because: four transforms of the native under the published list (integrate, disaggregate, differentiate, aggregate) -> one measurand, native, 0 crossings
+      five foreign                 PASS           got=5 want=5
+          known because: five quantities each needing a coefficient or model the method lacks -> 5 measurands, no native, 5 crossings
+      mixed                        PASS           got=2 want=2
+          known because: one native plus two foreign -> 3 measurands, 1 native hit, 2 crossings; shares no expected value with the endpoints, so the set can detect a constant metric
+    [... 754 more lines]
+  date: 2026-10-24
+  command: python3 tools/known_answer.py
+  sha12: 17b5b3a022fd
+  exit_code: 1
+  output_lines: 794
+  output_sha12: fdc7727a0623
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: tools--sourced
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: tools/known_answer.py
+    sha12: 17b5b3a022fd
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-14
+    layer3_row: changed
+    last_commit: 198937ecabbc7e32851b00758e5736e320609910
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: d8aefd5e8e6f
+    related: 95b16e528f8b
+    right_read: 32bbe99c703a
+    run: 6f25354c1a44
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

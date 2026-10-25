@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--infant_system_v2
+kind: program
+tool: Simulators/relational/infant_system_v2.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Infant System v0.2: Improved Foundation Model Learner ====================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 166 lines, sha12 1d24d1deffa2 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/infant_system_v2.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    INFANT SYSTEM v0.2 DEMONSTRATION
+    ================================================================================
+
+    Phase 1-2: Establishing patterns and encountering first anomalies...
+
+      [Day 1] 'The sun rises in the east...'
+             Predicted: 'unknown...'
+             Errors: P=1.00 S=0.20 W=0.30
+             Affective: C=0.20 F=0.70 A=0.00 Co=0.10
+
+      [Day 1] 'Water flows downhill...'
+             Predicted: 'unknown...'
+             Errors: P=1.00 S=0.20 W=0.89
+             Affective: C=0.20 F=0.70 A=0.00 Co=0.10
+
+      [Day 1] 'Fire produces heat...'
+             Predicted: 'unknown...'
+             Errors: P=1.00 S=0.20 W=0.94
+             Affective: C=0.20 F=0.70 A=0.00 Co=0.10
+
+      [Day 2] 'The sun rises in the east...'
+             Predicted: 'concept_1240b5b9...'
+             Errors: P=1.00 S=0.18 W=0.00
+             Affective: C=0.20 F=0.70 A=0.50 Co=0.10
+
+      [Day 2] 'Water flows downhill...'
+             Predicted: 'concept_eba4631c...'
+             Errors: P=1.00 S=0.18 W=0.00
+             Affective: C=0.20 F=0.70 A=0.50 Co=0.10
+
+      [Day 2] 'Ice melts when heated...'
+             Predicted: 'unknown...'
+             Errors: P=1.00 S=0.20 W=0.73
+             Affective: C=0.20 F=0.70 A=0.00 Co=0.10
+
+      [Day 3] 'Birds build nests in spring...'
+             Predicted: 'unknown...'
+             Errors: P=1.00 S=0.20 W=0.85
+             Affective: C=0.20 F=0.70 A=0.00 Co=0.10
+    [... 126 more lines]
+  date: 2026-10-24
+  command: python3 relational/infant_system_v2.py
+  sha12: 366788d94db2
+  exit_code: 0
+  output_lines: 166
+  output_sha12: 1d24d1deffa2
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/infant_system_v2.py
+    sha12: 366788d94db2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ec65172710ee
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 33a0aafd32b1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,95 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: design-basis-ai--wo_return
+kind: program
+tool: Simulators/design-basis-ai/wo_return.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: wo_return.py -- CC0, stdlib only, phone-buildable, parses under 3.9
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: design-basis-ai/samples/wo_return.sample.txt"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 design-basis-ai/wo_return.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety:
+    - network
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: python3 design-basis-ai/wo_return.py --selftest
+  sha12: a6e06b4a5f52
+  reason: "blocked by safety scan: network"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: design-basis-ai--r2v2_audit
+      via: imported-by
+    - id: design-basis-ai--selftest_dbk
+      via: imported-by
+    - id: design-basis-ai--wo2_return
+      via: imported-by
+    - id: design-basis-ai--audit
+      via: imports
+    - id: design-basis-ai--design_basis_checks
+      via: imports
+    - id: design-basis-ai--r2_audit
+      via: imports
+    - id: design-basis-ai--r2_audit
+      via: shares design-basis-ai/R2_OUTLINE.md
+    - id: design-basis-ai--selftest_dbk
+      via: shares design-basis-ai/R2_OUTLINE.md
+    - id: design-basis-ai--wo2_return
+      via: shares design-basis-ai/R2_OUTLINE.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: design-basis-ai/wo_return.py
+    sha12: a6e06b4a5f52
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: f45f6301b629
+    pick_up_when: 32bbe99c703a
+    purpose: 2ee891e8da38
+    related: 914f7a38ddcc
+    right_read: 32bbe99c703a
+    run: ba7fd550628a
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

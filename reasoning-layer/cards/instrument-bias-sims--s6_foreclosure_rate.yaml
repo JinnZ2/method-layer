@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s6_foreclosure_rate
+kind: program
+tool: Simulators/instrument-bias-sims/s6_foreclosure_rate.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s6_foreclosure_rate.py - trained responses are not wrong, they are terminal.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s6_foreclosure_rate.sample.txt"
+    - "run capture: RUN, exit 0, 100 lines, sha12 ae787a3fba6f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s6_foreclosure_rate.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S6 -- FORECLOSURE RATE
+    ========================================================================
+
+      0. WHAT IS AND IS NOT HERE
+
+        targets_named                  3
+        targets_with_a_corpus          0
+        responses_scored_here          0
+
+        classification step: HUMAN JUDGEMENT, not implemented and not
+        implementable from text alone in this module
+
+    ------------------------------------------------------------------------
+
+      1. THE DIAGNOSTIC, GRADED ON KNOWN INPUTS
+
+        known filter  -> misgraded as tracking  0.005
+        known tracker -> graded tracking        1.000
+        grade                                   OK
+
+        The diagnostic fires in both directions on inputs it was not shown,
+        which is the minimum a diagnostic has to do before it is pointed at
+        anything real. It has not been pointed at anything real.
+
+    ------------------------------------------------------------------------
+
+      2. HOW MUCH DESIGN IT NEEDS
+
+        levels    n       tpr      fpr      grade
+        2         20      1.00     0.39     OK
+        2         50      1.00     0.05     OK
+        2         200     1.00     0.00     OK
+        3         20      1.00     0.60     NO_DISCRIMINATION
+        3         50      1.00     0.11     OK
+        3         200     1.00     0.00     OK
+        5         20      1.00     0.91     NO_DISCRIMINATION
+        5         50      1.00     0.40     OK
+        5         200     1.00     0.00     OK
+        9         20      1.00     1.00     CONSTANT_FIRES
+        9         50      1.00     0.76     NO_DISCRIMINATION
+    [... 60 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s6_foreclosure_rate.py
+  sha12: c83620f8ec16
+  exit_code: 0
+  output_lines: 100
+  output_sha12: ae787a3fba6f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s6_foreclosure_rate.py
+    sha12: c83620f8ec16
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: a052847c9d4a
+    pick_up_when: 32bbe99c703a
+    purpose: 7ae3a3418541
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: 38dfb6c9b606
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

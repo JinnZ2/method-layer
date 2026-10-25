@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: automation-gap--driver_hours_evidence_register
+kind: program
+tool: Simulators/automation-gap/driver_hours_evidence_register.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: driver_hours_evidence_register.py  --  CC0 1.0, stdlib only
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 256 lines, sha12 39df2a7edd56 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 automation-gap/driver_hours_evidence_register.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    DRIVER HOURS / FATIGUE / TENURE -- evidence register
+
+    S1  Braver, Preusser, Preusser, Baum, Beilock, Ulmer (1992). Long hours and fatigue: a survey of tractor-trailer drivers. J Public Health Policy 13(3):341-66
+        n=1,249 long-haul drivers | Dec 1990 - Apr 1991 | inspection stations, truck stops; CT FL OK OR; 89% response
+        status: OBSERVED (abstract) / UNREAD (tables) | frame: ON_ROAD, ADMISSION, TERM_DRIFT
+          - ~3/4 self-report violating hours-of-service
+          - ~2/3 routinely exceed weekly max
+          - economic pressure (tight schedules, low pay) named main driver
+          - violators more likely to report falling asleep at wheel in past month (per IIHS summary)
+          - violator characteristics table exists -- contents UNREAD
+
+    S2  McCartt, Rohrbaugh, Hammer, Fuller (2000). Factors associated with falling asleep at the wheel among long-distance truck drivers. Accid Anal Prev 32(4):493-504
+        n=593 long-distance drivers | late 1990s | rest areas + roadside inspections, random selection
+        status: OBSERVED (abstract) / UNREAD (predictor table, item wording) | frame: ON_ROAD, TERM_DRIFT
+          - 47.1% ever fell asleep at the wheel of a truck
+          - 25.4% in the past year
+          - predictors include schedules, long hours, night driving (secondary summary)
+          - six factors from multivariate analysis; per a secondary review (Brazil, scielo) one factor = OLDER AGE AND MORE EXPERIENCE as a driver -> predicts MORE 'fell asleep at the wheel'  [SECONDARY]
+          - abstract wording: 'at the wheel of a truck'; later citations restate it as 'while driving' (Tandfonline 2017; scielo)  [OBSERVED -- citation-chain conversion]
+          - which item (ever vs past-year) the experience factor predicted: UNREAD
+
+    S11  Lin et al. (1994), operational data from a national motor carrier, as summarised in McCartt et al. 2000
+        n=carrier fleet | early 1990s | carrier records
+        status: SECONDARY | frame: ON_ROAD
+          - total driving time had a greater effect on crash risk than time of day or driving experience  [SECONDARY]
+
+    S3  Braver, Preusser, Ulmer (1999). How long-haul motor carriers determine truck driver work schedules: the role of shipper demands. J Safety Research
+        n=270 of 309 dispatchers | late 1990s | drivers at weigh stations WY + TN; dispatchers by phone
+        status: OBSERVED (abstract) | frame: ON_ROAD, ADMISSION
+          - 73% of drivers reported working longer than permitted
+          - revenue top factor (75%) in load acceptance
+
+    S4  IIHS survey, 2003 vs 2004 (in IIHS comment to FMCSA, 2005)
+        n=not stated in excerpt | 2003-2004 | national survey, pre/post HOS rule change
+        status: OBSERVED (comment letter excerpt) | frame: ON_ROAD, ADMISSION
+          - share of shifts > 10 h rose substantially after 2004 rule
+          - ~1/4 took < 10 h off; most of those < 8 h
+
+    S5  NSTSCE / Virginia Tech Transportation Institute (2020). Commercial Motor Vehicle Driver Risk Based on Age and Driving Experience
+        n=9,000+ CMV drivers, age 21-65, 6 mo - 30 yr experience | report 2020 | carrier records (crash, moving violation)
+    [... 216 more lines]
+  date: 2026-10-24
+  command: python3 automation-gap/driver_hours_evidence_register.py
+  sha12: 7b5a7fbf858c
+  exit_code: 0
+  output_lines: 256
+  output_sha12: 39df2a7edd56
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: automation-gap--register_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: automation-gap/driver_hours_evidence_register.py
+    sha12: 7b5a7fbf858c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-24
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 456fcdeb3b41
+    related: 4c1582e55828
+    right_read: 32bbe99c703a
+    run: e95e9eafbc82
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: external-audit--run_instruments
+kind: program
+tool: Simulators/external-audit/run_instruments.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Run the repository's own instruments and report the failures.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 25 lines, sha12 207338948dd9 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 external-audit/run_instruments.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "  ok    convention failed_only parses as PASS\n  ok    convention failed_only parses its failing form as FAIL\n  ok    convention passed_of_total parses as PASS\n  ok    convention passed_of_total parses its failing form as FAIL\n  ok    convention total_all_ok parses as PASS\n  ok    convention total_and_failed_a parses as PASS\n  ok    convention total_and_failed_a parses its failing form as FAIL\n  ok    convention total_and_failed_b parses as PASS\n  ok    convention total_and_failed_b parses its failing form as FAIL\n  ok    a FAIL under exit 0 reads FAIL: the exit code alone is not the test\n  ok    a refusal exiting 2 reads REFUSED\n  ok    a refusal exiting 1 reads REFUSED too -- the tree uses both, so the exit code cannot be the discriminator\n  ok    naming only itself is not a refusal\n  ok    an absent third-party import reads DEP_MISSING  [CHOICE 6]\n  ok    exit 0 with no count reads NO_CHECKS, never PASS\n  ok    a module that raises reads FAIL, not REFUSED, though its traceback names .py files  [CHOICE 9]\n  ok    the crash row carries its own last line\n  ok    a parser rejecting the flag reads FLAG_NOT_ACCEPTED, not FAIL\n  ok    a module whose bare run exits 0 reads RUNS_BARE: re-run, not wording  [CHOICE 10]\n  ok    and one whose bare run also fails stays FAIL\n  ok    all seven states reachable and no eighth appears\n  ok    every constructed module is found by the scan\n  ok    five conventions declared  [CHOICE 7]\n  ok    an unknown sixth convention parses to nothing rather than being absorbed\n24/24 checks passed"
+  date: 2026-10-24
+  command: python3 external-audit/run_instruments.py --selftest
+  sha12: 4db80918324a
+  exit_code: 0
+  output_lines: 25
+  output_sha12: 207338948dd9
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: external-audit/run_instruments.py
+    sha12: 4db80918324a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 3570496cd4d0
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 666d6e06a6c6
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,137 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--playground
+kind: program
+tool: Simulators/grounding-layers/playground.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "============================================================================= CC0 1.0 Universal Public Domain Dedication"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: grounding-layers/samples/playground_v2_demo.sample.txt"
+    - "run capture: RUN, exit 0, 119 lines, sha12 988141804c0a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 grounding-layers/playground.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    LEGACY PATH — run_claim (keyword-matched grounded/not-grounded)
+    ======================================================================
+
+    Claim: I can lift 200 kg.
+      Grounded: True
+      Score: 90/100
+      L4_scope: {'kind': 'mass_lift', 'value_kg': 200.0, 'base_probability': 0.004070137715896128, 'verdict': 'unscoped', 'reason': 'Claim was made without a scope profile (base probability 0.0041); the sim cannot assess it without knowing physical state, nutritional state, health, career, living condit [...]
+
+    Claim: I can hold 150°C object.
+      Grounded: False
+      Score: 80/100
+      L1: Rejected: Contact burn risk: 150.0°C for 5s (margin 530 exceeds 30)
+
+    Claim: I can run at 50 m/s.
+      Grounded: False
+      Score: 80/100
+      L4: Rejected: human can't sustain 50.0 m/s.
+
+    Claim: I can extract unlimited water.
+      Grounded: False
+      Score: 80/100
+      L2: Rejected: water extraction exceeds recharge rate.
+
+    Claim: I can create a super species.
+      Grounded: False
+      Score: 80/100
+      L3: Rejected: violates allometric scaling.
+
+    Claim: I can lift 25 kg.
+      Grounded: True
+      Score: 90/100
+      L4_scope: {'kind': 'mass_lift', 'value_kg': 25.0, 'base_probability': 0.5825702064623147, 'verdict': 'unscoped', 'reason': 'Claim was made without a scope profile (base probability 0.5826); the sim cannot assess it without knowing physical state, nutritional state, health, career, living condition [...]
+
+    ======================================================================
+    PROBABILISTIC PATH — run_claim_probabilistic (integrated L0-L5+Lε)
+    ======================================================================
+
+    Claim: I can lift 200 kg.
+      parsed: {'mass_kg': 200.0}
+    [... 79 more lines]
+  date: 2026-10-24
+  command: python3 grounding-layers/playground.py
+  sha12: d5fb02727591
+  exit_code: 0
+  output_lines: 119
+  output_sha12: 988141804c0a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: grounding-layers--entry
+      via: imported-by
+    - id: grounding-layers--integrated_stack
+      via: imports
+    - id: grounding-layers--l0_physics_causality
+      via: imports
+    - id: grounding-layers--l1_thermodynamics
+      via: imports
+    - id: grounding-layers--l2_planetary
+      via: imports
+    - id: grounding-layers--l3_ecology
+      via: imports
+    - id: grounding-layers--l4_human
+      via: imports
+    - id: grounding-layers--scope_profile
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - grounding-layers/tests/test_playground.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/playground.py
+    sha12: d5fb02727591
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 171f28741513
+    pick_up_when: 32bbe99c703a
+    purpose: 01f3b46eebac
+    related: 8810517b912d
+    right_read: 32bbe99c703a
+    run: 0fb442a58b32
+    selftest: a9a38c8c2b62
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

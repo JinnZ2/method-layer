@@ -1,0 +1,106 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: assessor-coupling--selftest
+kind: program
+tool: Simulators/assessor-coupling/selftest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: assessor-coupling -- the null-tested suite. Prints its own count.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: assessor-coupling/samples/selftest.sample.txt"
+    - "run capture: FAILED, exit 1, 15 lines, sha12 cf90b84f7b87 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 assessor-coupling/selftest.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: FAILED
+  captured: "\nconditions: the eight, parsed, scored, never composed\n  FAIL  eight conditions parsed from the order\n  FAIL  condition 6 is PERSONAL LIABILITY ON THE ASSESSOR\n  ok    every condition but 8 carries a gloss line\nTraceback (most recent call last):\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-q614lewf/assessor-coupling/selftest.py\", line 43, in <module>\n    cd.conditions(short)\n    ~~~~~~~~~~~~~^^^^^^^\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-q614lewf/assessor-coupling/conditions.py\", line 81, in conditions\n    txt = order_text(path)\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-q614lewf/assessor-coupling/conditions.py\", line 72, in order_text\n    with open(path, encoding=\"utf-8\") as fh:\n         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: [Errno 36] File name too long: '# WO-6 — Assessor–assessed coupling as a recurrent known failure mode\\n\\nCC0. Instrument, not an argument. Status tags: OBSERVED / DERIVED / PROPOSED.\\nCompanion to WO-1 (load-bearing criterion) and WO-4 (the shape).\\n\\nNOT ABOUT ANY NAMED ORGANIZATION. The o [...]"
+  date: 2026-10-24
+  command: python3 assessor-coupling/selftest.py
+  sha12: 200e468294c4
+  exit_code: 1
+  output_lines: 15
+  output_sha12: cf90b84f7b87
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: assessor-coupling--conditions
+      via: imports
+    - id: assessor-coupling--disclosure_audit
+      via: imports
+    - id: assessor-coupling--pool_metric
+      via: imports
+    - id: assessor-coupling--precedent
+      via: imports
+    - id: assessor-coupling--run_all
+      via: imports
+    - id: archive--assessor-coupling--selftest
+      via: same-bytes
+    - id: assessor-coupling--conditions
+      via: selftest-of
+    - id: assessor-coupling--disclosure_audit
+      via: selftest-of
+    - id: assessor-coupling--pool_metric
+      via: selftest-of
+    - id: assessor-coupling--precedent
+      via: selftest-of
+    - id: assessor-coupling--run_all
+      via: selftest-of
+    - id: assessor-coupling--conditions
+      via: shares assessor-coupling/WORK_ORDER.md
+    - id: assessor-coupling--disclosure_audit
+      via: shares assessor-coupling/WORK_ORDER.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: assessor-coupling/selftest.py
+    sha12: 200e468294c4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-19
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 882ab4337443
+    pick_up_when: 32bbe99c703a
+    purpose: 4929c78d1fdb
+    related: 7399d5489f8c
+    right_read: 32bbe99c703a
+    run: 0d2acddec797
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

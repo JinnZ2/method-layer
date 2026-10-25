@@ -1,0 +1,110 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: category-weld--reconstruction--weld
+kind: program
+tool: Simulators/category-weld/reconstruction/weld.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: weld.py -- scorer for CATEGORY WELD terms. SUPERSEDED.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--term: components and cases for one term"
+    - "--jsonl (action=store_true): one score object per line"
+    - "--new: emit a blank term file"
+    - "--welds: directory of term files"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 27 lines, sha12 c3f74cd1d095 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 category-weld/reconstruction/weld.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CATEGORY WELD -- 3 term(s)
+
+      term        comp  case  quan  max_spread    bias
+      --------------------------------------------------
+      capital        5     4     0          --      --
+      hierarchy      5     5     0          --      --
+      rural          4     4     0          --      --
+
+      quan = cases with two or more components carrying a usable
+      before/after pair. max_spread and bias read only those.
+
+      capital: bias withheld -- 0 directional observation(s), minimum 2
+      capital / intermediated-title: no spread -- fewer than two quantified components
+      capital / socialized-downside: no spread -- fewer than two quantified components
+      capital / subsidy-without-behaviour-change: no spread -- fewer than two quantified components
+      capital / input-supply-uncompensated: no spread -- fewer than two quantified components
+      hierarchy: bias withheld -- 0 directional observation(s), minimum 2
+      hierarchy / environment-ordered-dominance: no spread -- fewer than two quantified components
+      hierarchy / volunteer-fire-crew: no spread -- fewer than two quantified components
+      hierarchy / credentialed-fire-service: no spread -- fewer than two quantified components
+      hierarchy / surgical-team-drift: no spread -- fewer than two quantified components
+      hierarchy / naturalness-argument: no spread -- fewer than two quantified components
+      rural: bias withheld -- 0 directional observation(s), minimum 2
+      rural / industrial-consolidation: no spread -- fewer than two quantified components
+      rural / no-alternate-check: no spread -- fewer than two quantified components
+      rural / employment-concentration: no spread -- fewer than two quantified components
+      rural / service-withdrawal: no spread -- fewer than two quantified components
+  date: 2026-10-24
+  command: python3 category-weld/reconstruction/weld.py
+  sha12: bfe473ecd25a
+  exit_code: 0
+  output_lines: 27
+  output_sha12: c3f74cd1d095
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - category-weld/reconstruction/test_weld.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: category-weld/reconstruction/weld.py
+    sha12: bfe473ecd25a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 7bf9e61fddb4
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 49f8fb9c60c5
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 14be1a490247
+    selftest: 3cd5ef933278
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

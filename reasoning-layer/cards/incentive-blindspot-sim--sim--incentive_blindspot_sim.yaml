@@ -1,0 +1,121 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: incentive-blindspot-sim--sim--incentive_blindspot_sim
+kind: program
+tool: Simulators/incentive-blindspot-sim/sim/incentive_blindspot_sim.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: incentive_blindspot_sim.py
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 45 lines, sha12 b17155cc9765 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 incentive-blindspot-sim/sim/incentive_blindspot_sim.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    incentive_blindspot_sim  --  trajectory toward self-inflicted failure
+    weights are frozen estimates; the coupling topology is the claim.
+
+    === credentialed_closed ===
+      t |  gates (C/M/F) + visibility   | blind/conf  | claimed-fail prob
+      0 | C=0.75 M=0.70 F=0.70 V=0.25 | B=0.05 X=0.40 | P_fail=0.118
+     10 | C=0.70 M=0.63 F=0.66 V=0.06 | B=0.66 X=0.75 | P_fail=0.809
+     20 | C=0.72 M=0.61 F=0.67 V=0.04 | B=1.00 X=0.93 | P_fail=0.918
+     30 | C=0.73 M=0.60 F=0.69 V=0.04 | B=1.00 X=0.96 | P_fail=0.918
+     40 | C=0.74 M=0.60 F=0.70 V=0.03 | B=1.00 X=0.97 | P_fail=0.918
+     50 | C=0.74 M=0.59 F=0.70 V=0.03 | B=1.00 X=0.97 | P_fail=0.918
+     60 | C=0.74 M=0.59 F=0.71 V=0.03 | B=1.00 X=0.97 | P_fail=0.918
+
+    === distributed_open ===
+      t |  gates (C/M/F) + visibility   | blind/conf  | claimed-fail prob
+      0 | C=0.20 M=0.20 F=0.25 V=0.70 | B=0.05 X=0.20 | P_fail=0.118
+     10 | C=0.26 M=0.21 F=0.28 V=0.66 | B=0.15 X=0.26 | P_fail=0.312
+     20 | C=0.32 M=0.24 F=0.32 V=0.65 | B=0.18 X=0.30 | P_fail=0.361
+     30 | C=0.37 M=0.26 F=0.36 V=0.65 | B=0.19 X=0.31 | P_fail=0.373
+     40 | C=0.41 M=0.27 F=0.38 V=0.65 | B=0.19 X=0.32 | P_fail=0.376
+     50 | C=0.44 M=0.29 F=0.40 V=0.65 | B=0.19 X=0.32 | P_fail=0.377
+     60 | C=0.45 M=0.30 F=0.41 V=0.65 | B=0.19 X=0.32 | P_fail=0.377
+
+    === closed_with_transparency ===
+      t |  gates (C/M/F) + visibility   | blind/conf  | claimed-fail prob
+      0 | C=0.75 M=0.70 F=0.70 V=0.25 | B=0.05 X=0.40 | P_fail=0.118
+     10 | C=0.69 M=0.62 F=0.64 V=0.51 | B=0.45 X=0.51 | P_fail=0.672
+     20 | C=0.65 M=0.56 F=0.61 V=0.54 | B=0.51 X=0.50 | P_fail=0.718
+     30 | C=0.63 M=0.52 F=0.59 V=0.55 | B=0.51 X=0.50 | P_fail=0.723
+     40 | C=0.62 M=0.49 F=0.58 V=0.55 | B=0.51 X=0.50 | P_fail=0.724
+     50 | C=0.61 M=0.47 F=0.57 V=0.55 | B=0.51 X=0.50 | P_fail=0.724
+     60 | C=0.61 M=0.46 F=0.56 V=0.55 | B=0.51 X=0.50 | P_fail=0.724
+
+    === FALSIFIABLE CLAIMS (REFUTATION_PROTOCOL active) ===
+      [SUPPORTED] CLAIM_BS_001  closed P_fail > open P_fail
+                  -> closed above open for t>=10; final gap=0.540
+      [SUPPORTED] CLAIM_BS_002  gated complexity raises blind spots
+                  -> final B: complexity_off=0.855 -> on=1.000
+      [SUPPORTED] CLAIM_BS_003  false confidence tracks hidden error
+                  -> cov(X,B)=0.03927
+    [... 5 more lines]
+  date: 2026-10-24
+  command: python3 incentive-blindspot-sim/sim/incentive_blindspot_sim.py
+  sha12: 6a4c6b5038e8
+  exit_code: 0
+  output_lines: 45
+  output_sha12: b17155cc9765
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - incentive-blindspot-sim/sim/tests/test_incentive_blindspot_sim.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: incentive-blindspot-sim/sim/incentive_blindspot_sim.py
+    sha12: 6a4c6b5038e8
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ce33aefc7762
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 24b859d267ba
+    selftest: 8dc6a372fbb7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

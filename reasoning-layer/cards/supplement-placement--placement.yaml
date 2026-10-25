@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: supplement-placement--placement
+kind: program
+tool: Simulators/supplement-placement/placement.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: placement.py - does direction predict placement, once kind is held constant.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--selftest (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: supplement-placement/samples/placement.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 3605b5e21858 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 supplement-placement/placement.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: 24/24 checks passed
+  date: 2026-10-24
+  command: python3 supplement-placement/placement.py --selftest
+  sha12: c64850671787
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 3605b5e21858
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: supplement-placement/placement.py
+    sha12: c64850671787
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: c0a190883bd5
+    output: cbc653944abb
+    pick_up_when: 32bbe99c703a
+    purpose: 826d5529b661
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 815363d5f176
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,108 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: continuity-audit--continuity_audit
+kind: program
+tool: Simulators/continuity-audit/continuity_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: continuity_audit.py  -- CC0 / public domain. stdlib only. one-finger safe.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 29 lines, sha12 5025ad62facb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 continuity-audit/continuity_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ============================================================
+    consolidation (g=+1.0)
+      verdict        : DEGRADES_CONTINUITY
+      dC/dt          : -0.08252
+      continuity      0.998 -> 0.1728
+      evenness        0.817 -> 0.1695
+        AI_model     k=0.95 sabotage=0.0784  [INCOHERENT]
+        institution  k=0.55 sabotage=0.0454  [OK ]
+        biology      k=0.35 sabotage=0.0289  [OK ]
+    ============================================================
+    neutral       (g= 0.0)
+      verdict        : INDETERMINATE
+      dC/dt          : +0.0
+      continuity      0.998 -> 0.998
+      evenness        0.817 -> 0.817
+        AI_model     k=0.95 sabotage=0.0000  [OK ]
+        institution  k=0.55 sabotage=0.0000  [OK ]
+        biology      k=0.35 sabotage=0.0000  [OK ]
+    ============================================================
+    diversifying  (g=-1.0)
+      verdict        : INDETERMINATE
+      dC/dt          : +0.000176
+      continuity      0.998 -> 0.9997
+      evenness        0.817 -> 0.988
+        AI_model     k=0.95 sabotage=0.0000  [OK ]
+        institution  k=0.55 sabotage=0.0000  [OK ]
+        biology      k=0.35 sabotage=0.0000  [OK ]
+    ============================================================
+    falsifier: Flips if measured incentive sign flips, if true d_crit < 0.988 (system already above its real resilience floor), or if any agent's adaptive channel raises its effective regime-span so kappa < 0.6.
+  date: 2026-10-24
+  command: python3 continuity-audit/continuity_audit.py
+  sha12: fa7169e00615
+  exit_code: 0
+  output_lines: 29
+  output_sha12: 5025ad62facb
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - continuity-audit/tests/test_continuity_audit.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: continuity-audit/continuity_audit.py
+    sha12: fa7169e00615
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: e3169143e836
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: c208b44c312e
+    selftest: ffd73309d02e
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

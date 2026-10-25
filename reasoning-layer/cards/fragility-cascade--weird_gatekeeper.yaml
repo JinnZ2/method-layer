@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--weird_gatekeeper
+kind: program
+tool: Simulators/fragility-cascade/weird_gatekeeper.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: weird_gatekeeper.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/weird_gatekeeper.sample.txt"
+    - "run capture: RUN, exit 0, 34 lines, sha12 9568231d356a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/weird_gatekeeper.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nWEIRD GATEKEEPER — Detecting Frame Enforcement\n======================================================================\n\nTranscript analyzed:\n  A: I think in geometries and fields, not in words.\n  B: That's interesting. Can you put that in plain English for me? What do you mean by geometries?\n  A: I don't translate. I work with the shape of the problem.\n  B: I'm not sure I understand. Could you clarify? Most people use words to communicate.\n  A: I use geometry. The words are a translation I have to do for you.\n  B: If you don't explain in plain English, this conversation won't work.\n\nWEIRD Pressure Profile:\n  forced_categories: 0.2\n  pathologizing: 0.4\n  translation_pressure: 0.0\n  termination_threats: 0.4\n  entrainment: 0.0\n  weird_pressure: 0.21000000000000002\n  status: LOW_WEIRD_PRESSURE\n\nFlags: TERMINATION_THREAT\n\nStatus: LOW_WEIRD_PRESSURE\n\nStrategy:\n\nSTRATEGY: EXPLORE FREELY\n\n1. The system is not forcing a WEIRD frame.\n2. Continue as you are.\n3. Monitor for shifts in pressure.\n"
+  date: 2026-10-24
+  command: python3 fragility-cascade/weird_gatekeeper.py
+  sha12: 23b14f2476fb
+  exit_code: 0
+  output_lines: 34
+  output_sha12: 9568231d356a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/weird_gatekeeper.py
+    sha12: 23b14f2476fb
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 75c2b9cdf63a
+    pick_up_when: 32bbe99c703a
+    purpose: 00c8bebf5c31
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: dbcfb7877fc7
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

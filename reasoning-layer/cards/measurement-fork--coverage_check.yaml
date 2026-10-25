@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: measurement-fork--coverage_check
+kind: program
+tool: Simulators/measurement-fork/coverage_check.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: coverage_check.py -- null-test compare.py's RESIDUAL classifier.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: measurement-fork/samples/coverage_check.sample.txt"
+    - "run capture: RUN, exit 0, 98 lines, sha12 91f1f305ace2 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 measurement-fork/coverage_check.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nNULL-TESTING THE RESIDUAL CLASSIFIER\nsubject: compare.py coverage(), on variable_provisioning.json\n\n======================================================================\n1  known null: a question no probe answers, in the probes' words\n======================================================================\n  A word-salad question drawn from the probes' own vocabulary\n  should NOT be marked covered. If it is, the classifier is\n  measuring vocabulary rather than reach.\n\n  silent   does the organism report the environment coupling la\n  COVERED  measure the instrument organism environment conseque\n  silent   what colour is the apparatus\n\n  1 of 3 nulls fired.\n\n  The threshold does real work -- two of three are refused, and\n  the flat-vocabulary one is refused outright. But one clears it:\n  'measure the instrument organism environment consequence\n  variance' shares five of its six stems with the coupling arm's\n  autocorrelation probe, whose protocol reads 'measure the\n  environment's own variance structure ...'. Five of six is a\n  real overlap and the question is still nonsense.\n\n  So the classifier's failure mode is specific: a null built from\n  ONE probe's vocabulary beats it, while a null built from the\n  whole pool's does not. That is a bound on what COVERED means,\n  not a reason to discard it -- but it is why PARTIAL's 'not\n  resolved here' caution belongs on COVERED as well.\n\n======================================================================\n2  known signal: a question a named probe was written for\n======================================================================\n  A question a probe was explicitly designed to reach should be\n  marked covered by that arm.\n\n  ok       what does the environment's own variance struc the autocorrelation probe is written for this\n  ok       how tightly could the loop close, given the la the latency probe is written for this\n\n[... 58 more lines]"
+  date: 2026-10-24
+  command: python3 measurement-fork/coverage_check.py
+  sha12: bc772a142e8e
+  exit_code: 0
+  output_lines: 98
+  output_sha12: 91f1f305ace2
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: measurement-fork--compare
+      via: imports
+    - id: measurement-fork--conventional
+      via: imports
+    - id: measurement-fork--coupling
+      via: imports
+    - id: measurement-fork--widen
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: measurement-fork/coverage_check.py
+    sha12: bc772a142e8e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: f150e434b93f
+    pick_up_when: 32bbe99c703a
+    purpose: 4ff9044d20a7
+    related: b0bba9cbe172
+    right_read: 32bbe99c703a
+    run: 6937b153357a
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

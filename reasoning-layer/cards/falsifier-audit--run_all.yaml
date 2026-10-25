@@ -1,0 +1,85 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: falsifier-audit--run_all
+kind: program
+tool: Simulators/falsifier-audit/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py -- inventory -> extract -> checks -> queue, to stdout. Operates on a local checkout (argv roots, default the checkout root). No network. Stdlib only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv=None)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 12a28da0ea04 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 falsifier-audit/run_all.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: run_all has no selftest; run selftest_fa.py
+  date: 2026-10-24
+  command: python3 falsifier-audit/run_all.py --selftest
+  sha12: fa902c3cea2d
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 12a28da0ea04
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: falsifier-audit--inventory
+      via: imports
+    - id: falsifier-audit--queue
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: falsifier-audit/run_all.py
+    sha12: fa902c3cea2d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 4b5654e67935
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 9f6340f332e1
+    related: 7e40480fac37
+    right_read: 32bbe99c703a
+    run: e290792d31d0
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

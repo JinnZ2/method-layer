@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--run_grounding_pipeline
+kind: program
+tool: Simulators/grounding-layers/run_grounding_pipeline.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "============================================================================= CC0 1.0 Universal Public Domain Dedication"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--claim (required=True): The claim to evaluate."
+    - "--source (default=default): Source identifier."
+    - "--profile (choices=['general', 'athlete', 'elder', 'child', 'trained'], default=general): Human profile for L4."
+    - "--no-bias-audit (action=store_true): Disable bias audit."
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value: []
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: null
+  basis: needs arguments the source does not supply an example for
+  safety: []
+run_result:
+  status: UNRUN
+  captured: ""
+  date: ""
+  command: null
+  sha12: 8a9d9f5a9db9
+  reason: "no safe run command identified: needs arguments the source does not supply an example for"
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: grounding-layers--ai_observer_state
+      via: imports
+    - id: grounding-layers--collaborative_field
+      via: imports
+    - id: grounding-layers--cultural_lens
+      via: imports
+    - id: grounding-layers--field_compass
+      via: imports
+    - id: grounding-layers--l0_physics_causality
+      via: imports
+    - id: grounding-layers--l1_thermodynamics
+      via: imports
+    - id: grounding-layers--l2_planetary
+      via: imports
+    - id: grounding-layers--l3_ecology
+      via: imports
+    - id: grounding-layers--l4_human
+      via: imports
+    - id: grounding-layers--l_epsilon_epistemic
+      via: imports
+    - id: grounding-layers--observer_state
+      via: imports
+    - id: grounding-layers--safeguards
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/run_grounding_pipeline.py
+    sha12: 8a9d9f5a9db9
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 3f8d7abe0167
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 01f3b46eebac
+    related: 65073f64ade0
+    right_read: 32bbe99c703a
+    run: 8eeb0416bce5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

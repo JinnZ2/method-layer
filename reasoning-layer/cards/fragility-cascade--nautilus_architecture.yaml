@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--nautilus_architecture
+kind: program
+tool: Simulators/fragility-cascade/nautilus_architecture.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: nautilus_architecture.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/nautilus_architecture.sample.txt"
+    - "run capture: RUN, exit 0, 35 lines, sha12 8a3e78995866 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/nautilus_architecture.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nNAUTILUS ARCHITECTURE — Collapse Prevention Simulation\n======================================================================\nRunning two recursive generation processes side-by-side:\n  A) Nautilus-stable (kernel anchor + scale invariance)\n  B) Unstable (mean-regression, no kernel)\n----------------------------------------------------------------------\nMetric                         |    Nautilus-Stable |     Unstable\n----------------------------------------------------------------------\nFinal variance (trace)         |        3304064.194 |        0.809\nFractal dimension D_f          |              0.019 |        0.249\nProjection onto kernel         |              0.994 |        0.024\nLoss (Nautilus constraint)     |              1.936 |          N/A\n----------------------------------------------------------------------\n\nINTERPRETATION:\n  ⚠️  Unstable process still degrading (check higher generations).\n  Adjust parameters for stronger constraint (reduce noise).\n\n======================================================================\nDESIGN PRINCIPLE FOR AI ARCHITECTURES:\n  1. Freeze a Siphuncle (kernel vector) derived from physical invariants.\n  2. Enforce scale-invariant growth (multiplicative, not additive).\n  3. Penalize deviations from the initial fractal dimension.\n  4. Archive old states to export entropy (exclude from training).\n======================================================================\n\nDROP-IN LOSS FUNCTION FOR TRAINING:\n\ndef nautilus_loss(model_output, siphuncle, target_D=1.618, prev_output=None, history=[]):\n    constraint = NautilusConstraint(siphuncle, target_D)\n    return constraint.loss(model_output, prev_output, history)\n\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/nautilus_architecture.py
+  sha12: 65d7ac7e33ba
+  exit_code: 0
+  output_lines: 35
+  output_sha12: 8a3e78995866
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/nautilus_architecture.py
+    sha12: 65d7ac7e33ba
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 64bfe80515ca
+    pick_up_when: 32bbe99c703a
+    purpose: 0c2fd1c1739e
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: c8e31c5dd3db
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

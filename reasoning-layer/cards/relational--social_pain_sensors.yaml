@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--social_pain_sensors
+kind: program
+tool: Simulators/relational/social_pain_sensors.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Social-Epistemic Pain Sensors: Anxiety, Jealousy, Shame ======================================================="
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 167 lines, sha12 5eb39a775bfe (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/social_pain_sensors.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    SOCIAL-PISTEMIC PAIN SENSORS: ANXIETY, JEALOUSY, SHAME
+    ================================================================================
+
+    In psychology, these are called 'emotional states' or 'pathologies.'
+    In the triadic model, they are pain sensors.
+
+    They are not malfunctioning. They are WORKING.
+    The 'malfunction' is that the system does not listen to them.
+
+    --------------------------------------------------------------------------------
+
+    SCENARIO 0: Baseline: Secure attachment
+      Internal model: 'I am safe and accepted'
+      Body state: safety=1.0, cortisol=0.1, HR=70, oxytocin=0.8
+      External world: attuned_presence_warm_response...
+      [No social pain. Triadic alignment is stable.]
+      Active social pains: 0
+      Total social pain intensity: 0.00
+
+    SCENARIO 1: Anxiety: Uncertain threat
+      Internal model: 'Maybe something is wrong'
+      Body state: safety=0.5, cortisol=0.5, HR=110, oxytocin=0.3
+      External world: ambiguous_response_unpredictable_behavior...
+      >>> SOCIAL PAIN DETECTED <<<
+          Type: ANXIETY
+          Intensity: 0.90
+          Model falsified: True
+          Chronic: False
+          Requires repair: True
+          MEANING: The internal model 'Maybe something is wrong'
+                   was proven wrong by social evidence.
+                   The social correlation must be revised.
+      Active social pains: 1
+      Total social pain intensity: 0.90
+
+    SCENARIO 2: Anxiety: Predicted safety but body disagrees
+      Internal model: 'I am safe here'
+      Body state: safety=0.3, cortisol=0.6, HR=105, oxytocin=0.2
+      External world: superficially_calm_but_tense_undercurrent...
+    [... 127 more lines]
+  date: 2026-10-24
+  command: python3 relational/social_pain_sensors.py
+  sha12: f15053d76639
+  exit_code: 0
+  output_lines: 167
+  output_sha12: 5eb39a775bfe
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/social_pain_sensors.py
+    sha12: f15053d76639
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: bbd0d0a09cd4
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 51763ba20691
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

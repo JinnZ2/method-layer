@@ -1,0 +1,87 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: criterion-externality--criterion_externality
+kind: program
+tool: Simulators/criterion-externality/criterion_externality.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: criterion_externality -- WO-6, the fourth independence axis, built to the order and run on a CONSTRUCTED model.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 5982285fa273 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 criterion-externality/criterion_externality.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: criterion_externality.py carries no selftest; run python3 test_criterion.py
+  date: 2026-10-24
+  command: python3 criterion-externality/criterion_externality.py --selftest
+  sha12: ff60b7ed961c
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 5982285fa273
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: clustering-axes--style_audit
+      via: shares PREAMBLE.md
+    - id: frame-token-audit--audit
+      via: shares PREAMBLE.md
+    - id: tools--check_term_collision
+      via: shares PREAMBLE.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: criterion-externality/criterion_externality.py
+    sha12: ff60b7ed961c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-19
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: bfaf915e7844
+    related: 3f61944b7636
+    right_read: 32bbe99c703a
+    run: fbcd20a3291a
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

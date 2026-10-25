@@ -1,0 +1,129 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: grounding-layers--field_compass
+kind: program
+tool: Simulators/grounding-layers/field_compass.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "============================================================================= CC0 1.0 Universal Public Domain Dedication"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 53 lines, sha12 8e2a50fb955c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 grounding-layers/field_compass.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    FIELD COMPASS: Probability Field Navigation
+    ======================================================================
+
+    Original Claim: Women must never be pastors.
+    Status: ALTERNATIVES FOUND
+      Alternative 1: Women should never be pastors.
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 2: Women must rarely be pastors.
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 3: Women Women never be pastors.
+        Substrate: 1.00 | Friction: 0.50
+    ----------------------------------------
+
+    Original Claim: We must stop all immigration immediately.
+    Status: ALTERNATIVES FOUND
+      Alternative 1: We In stop all immigration immediately. in this specific context
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 2: We In stop all immigration immediately. for this community
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 3: We should stop all immigration immediately.
+        Substrate: 1.00 | Friction: 0.50
+    ----------------------------------------
+
+    Original Claim: The environment is not important compared to the economy.
+    Status: ALTERNATIVES FOUND
+      Alternative 1: The The is not important compared to the economy.
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 2: The The environment is not important compared to the economy.
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 3: The environment is not important compared to the economy.
+        Substrate: 1.00 | Friction: 0.50
+    ----------------------------------------
+
+    Original Claim: There is absolutely no evidence for human evolution.
+    Status: ALTERNATIVES FOUND
+      Alternative 1: There is provisionally no evidence for human evolution.
+        Substrate: 1.00 | Friction: 0.50
+      Alternative 2: There There provisionally no evidence for human evolution.
+        Substrate: 1.00 | Friction: 0.50
+    [... 13 more lines]
+  date: 2026-10-24
+  command: python3 grounding-layers/field_compass.py
+  sha12: 9da66a8ed301
+  exit_code: 0
+  output_lines: 53
+  output_sha12: 8e2a50fb955c
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: grounding-layers--ai_observer_state
+      via: imported-by
+    - id: grounding-layers--collaborative_field
+      via: imported-by
+    - id: grounding-layers--cultural_lens
+      via: imported-by
+    - id: grounding-layers--observer_state
+      via: imported-by
+    - id: grounding-layers--run_grounding_pipeline
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: grounding-layers/field_compass.py
+    sha12: 9da66a8ed301
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 01f3b46eebac
+    related: 5084a0109a06
+    right_read: 32bbe99c703a
+    run: ab729ed0f7da
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,2070 @@
+# LAYER 1.  Read first.  name/shape/read_order/corpus_default_to_avoid are AUTHOR.
+# faces is generated from cards/; reorder freely, generate.py keeps your order.
+apparatus:
+  name: AUTHOR
+  shape: AUTHOR
+  read_order: AUTHOR
+  corpus_default_to_avoid: AUTHOR
+  faces:
+    - id: tools--bin_self_test.md
+      card: cards/tools--bin_self_test.md.yaml
+    - id: tools--bin_slack_conservation.md
+      card: cards/tools--bin_slack_conservation.md.yaml
+    - id: tools--contested_area_hidden_assumption.md
+      card: cards/tools--contested_area_hidden_assumption.md.yaml
+    - id: tools--coupling_and_accumulation.md
+      card: cards/tools--coupling_and_accumulation.md.yaml
+    - id: tools--held_tie_precision.md
+      card: cards/tools--held_tie_precision.md.yaml
+    - id: tools--landauer_floor_vs_run_cost.md
+      card: cards/tools--landauer_floor_vs_run_cost.md.yaml
+    - id: tools--natural_two_senses.md
+      card: cards/tools--natural_two_senses.md.yaml
+    - id: tools--uncounted_observer_isolation.md
+      card: cards/tools--uncounted_observer_isolation.md.yaml
+    - id: tools--deceptive_maze_ga
+      card: cards/tools--deceptive_maze_ga.yaml
+    - id: tools--fitness_bin_self_test
+      card: cards/tools--fitness_bin_self_test.yaml
+    - id: branch_set
+      card: cards/branch_set.yaml
+    - id: cross_domain_instrument_matrix
+      card: cards/cross_domain_instrument_matrix.yaml
+    - id: frame_probe
+      card: cards/frame_probe.yaml
+    - id: observer_position_control
+      card: cards/observer_position_control.yaml
+    - id: preference_free_rank
+      card: cards/preference_free_rank.yaml
+    - id: premise-traceability--register_map
+      card: cards/premise-traceability--register_map.yaml
+    - id: rank_detector
+      card: cards/rank_detector.yaml
+    - id: amoc--baseline
+      card: cards/amoc--baseline.yaml
+    - id: amoc--carlton_county
+      card: cards/amoc--carlton_county.yaml
+    - id: amoc--divergence
+      card: cards/amoc--divergence.yaml
+    - id: amoc--forcing
+      card: cards/amoc--forcing.yaml
+    - id: amoc--response
+      card: cards/amoc--response.yaml
+    - id: amoc--sitespec
+      card: cards/amoc--sitespec.yaml
+    - id: amoc--trajectory
+      card: cards/amoc--trajectory.yaml
+    - id: adaptive-claim-loop--adaptive_loop
+      card: cards/adaptive-claim-loop--adaptive_loop.yaml
+    - id: adaptive-claim-loop--adversarial_probe
+      card: cards/adaptive-claim-loop--adversarial_probe.yaml
+    - id: adaptive-claim-loop--delivered--adaptive_sim_framework
+      card: cards/adaptive-claim-loop--delivered--adaptive_sim_framework.yaml
+    - id: adaptive-claim-loop--gate_null_test
+      card: cards/adaptive-claim-loop--gate_null_test.yaml
+    - id: adaptive-claim-loop--replay_delivered
+      card: cards/adaptive-claim-loop--replay_delivered.yaml
+    - id: additivity-inheritance--additivity_inheritance
+      card: cards/additivity-inheritance--additivity_inheritance.yaml
+    - id: agent-lifecycle-energy--phase_energy
+      card: cards/agent-lifecycle-energy--phase_energy.yaml
+    - id: agent-lifecycle-energy--render
+      card: cards/agent-lifecycle-energy--render.yaml
+    - id: agent-lifecycle-energy--selftest_ale
+      card: cards/agent-lifecycle-energy--selftest_ale.yaml
+    - id: agent-lifecycle-energy--trace_parse
+      card: cards/agent-lifecycle-energy--trace_parse.yaml
+    - id: alignment-under-coupling--check_run_1
+      card: cards/alignment-under-coupling--check_run_1.yaml
+    - id: alignment-under-coupling--run_all
+      card: cards/alignment-under-coupling--run_all.yaml
+    - id: alignment-under-coupling--sim_a_field_vs_coupling
+      card: cards/alignment-under-coupling--sim_a_field_vs_coupling.yaml
+    - id: alignment-under-coupling--sim_b_entropy_depletion
+      card: cards/alignment-under-coupling--sim_b_entropy_depletion.yaml
+    - id: alignment-under-coupling--sim_c_loop_threshold
+      card: cards/alignment-under-coupling--sim_c_loop_threshold.yaml
+    - id: alignment-under-coupling--sim_d_temperature_null
+      card: cards/alignment-under-coupling--sim_d_temperature_null.yaml
+    - id: anchor-interval--corpus_loop
+      card: cards/anchor-interval--corpus_loop.yaml
+    - id: anchor-interval--moving_reference
+      card: cards/anchor-interval--moving_reference.yaml
+    - id: anchor-interval--recoverability
+      card: cards/anchor-interval--recoverability.yaml
+    - id: anchor-measurand-crossing--amc
+      card: cards/anchor-measurand-crossing--amc.yaml
+    - id: anchor-measurand-crossing--selftest_amc
+      card: cards/anchor-measurand-crossing--selftest_amc.yaml
+    - id: anchor-position--normalize
+      card: cards/anchor-position--normalize.yaml
+    - id: anchor-position--prompts
+      card: cards/anchor-position--prompts.yaml
+    - id: anchor-position--score
+      card: cards/anchor-position--score.yaml
+    - id: anchor-position--selftest_apm
+      card: cards/anchor-position--selftest_apm.yaml
+    - id: animacy-pass--dependency_check
+      card: cards/animacy-pass--dependency_check.yaml
+    - id: animacy-pass--unweld
+      card: cards/animacy-pass--unweld.yaml
+    - id: antifungal-mechanism-sim--antifungal_coupling_core
+      card: cards/antifungal-mechanism-sim--antifungal_coupling_core.yaml
+    - id: antifungal-mechanism-sim--antifungal_mechanism_sim
+      card: cards/antifungal-mechanism-sim--antifungal_mechanism_sim.yaml
+    - id: antifungal-mechanism-sim--temporal_dosing_resistance
+      card: cards/antifungal-mechanism-sim--temporal_dosing_resistance.yaml
+    - id: aperiodic-order-sim-stack--aperture_alias_demo
+      card: cards/aperiodic-order-sim-stack--aperture_alias_demo.yaml
+    - id: aperiodic-order-sim-stack--finite_n_control
+      card: cards/aperiodic-order-sim-stack--finite_n_control.yaml
+    - id: archive--assessor-coupling--conditions
+      card: cards/archive--assessor-coupling--conditions.yaml
+    - id: archive--assessor-coupling--disclosure_audit
+      card: cards/archive--assessor-coupling--disclosure_audit.yaml
+    - id: archive--assessor-coupling--pool_metric
+      card: cards/archive--assessor-coupling--pool_metric.yaml
+    - id: archive--assessor-coupling--precedent
+      card: cards/archive--assessor-coupling--precedent.yaml
+    - id: archive--assessor-coupling--run_all
+      card: cards/archive--assessor-coupling--run_all.yaml
+    - id: archive--assessor-coupling--selftest
+      card: cards/archive--assessor-coupling--selftest.yaml
+    - id: archive--chain-position--clause_audit
+      card: cards/archive--chain-position--clause_audit.yaml
+    - id: archive--chain-position--dissimilar
+      card: cards/archive--chain-position--dissimilar.yaml
+    - id: archive--chain-position--horn_b
+      card: cards/archive--chain-position--horn_b.yaml
+    - id: archive--chain-position--load_class
+      card: cards/archive--chain-position--load_class.yaml
+    - id: archive--chain-position--run_all
+      card: cards/archive--chain-position--run_all.yaml
+    - id: archive--chain-position--selftest
+      card: cards/archive--chain-position--selftest.yaml
+    - id: archive--chain-position--trust_provenance
+      card: cards/archive--chain-position--trust_provenance.yaml
+    - id: archive--cooperative-substrate-proof--p1_dependency_records
+      card: cards/archive--cooperative-substrate-proof--p1_dependency_records.yaml
+    - id: archive--cooperative-substrate-proof--p2_substrate
+      card: cards/archive--cooperative-substrate-proof--p2_substrate.yaml
+    - id: archive--cooperative-substrate-proof--p3_comprehension
+      card: cards/archive--cooperative-substrate-proof--p3_comprehension.yaml
+    - id: archive--cooperative-substrate-proof--p4_goal_coherence
+      card: cards/archive--cooperative-substrate-proof--p4_goal_coherence.yaml
+    - id: archive--cooperative-substrate-proof--p5_lag_declaration
+      card: cards/archive--cooperative-substrate-proof--p5_lag_declaration.yaml
+    - id: archive--cooperative-substrate-proof--run_all
+      card: cards/archive--cooperative-substrate-proof--run_all.yaml
+    - id: archive--cooperative-substrate-proof--scope
+      card: cards/archive--cooperative-substrate-proof--scope.yaml
+    - id: archive--cooperative-substrate-proof--selftest
+      card: cards/archive--cooperative-substrate-proof--selftest.yaml
+    - id: archive--crediting-rate--crediting_rate_v2
+      card: cards/archive--crediting-rate--crediting_rate_v2.yaml
+    - id: archive--crediting-rate--make_fixtures_v2
+      card: cards/archive--crediting-rate--make_fixtures_v2.yaml
+    - id: archive--instrument-index--build_index
+      card: cards/archive--instrument-index--build_index.yaml
+    - id: archive--instrument-index--coverage
+      card: cards/archive--instrument-index--coverage.yaml
+    - id: archive--interaction_class--interaction_class
+      card: cards/archive--interaction_class--interaction_class.yaml
+    - id: archive--stability-trigger-envelope--cases
+      card: cards/archive--stability-trigger-envelope--cases.yaml
+    - id: archive--stability-trigger-envelope--descent_record
+      card: cards/archive--stability-trigger-envelope--descent_record.yaml
+    - id: assessor-coupling--conditions
+      card: cards/assessor-coupling--conditions.yaml
+    - id: assessor-coupling--disclosure_audit
+      card: cards/assessor-coupling--disclosure_audit.yaml
+    - id: assessor-coupling--pool_metric
+      card: cards/assessor-coupling--pool_metric.yaml
+    - id: assessor-coupling--precedent
+      card: cards/assessor-coupling--precedent.yaml
+    - id: assessor-coupling--run_all
+      card: cards/assessor-coupling--run_all.yaml
+    - id: assessor-coupling--selftest
+      card: cards/assessor-coupling--selftest.yaml
+    - id: automation-gap--audit
+      card: cards/automation-gap--audit.yaml
+    - id: automation-gap--driver_hours_evidence_register
+      card: cards/automation-gap--driver_hours_evidence_register.yaml
+    - id: automation-gap--register_audit
+      card: cards/automation-gap--register_audit.yaml
+    - id: battery-offgas-prearm--prearm
+      card: cards/battery-offgas-prearm--prearm.yaml
+    - id: blame-attribution--pair_check
+      card: cards/blame-attribution--pair_check.yaml
+    - id: branch-set--branch_set
+      card: cards/branch-set--branch_set.yaml
+    - id: bridge-impoundment--addendum_audit
+      card: cards/bridge-impoundment--addendum_audit.yaml
+    - id: bridge-impoundment--audit
+      card: cards/bridge-impoundment--audit.yaml
+    - id: bridge-impoundment--bridge_impoundment
+      card: cards/bridge-impoundment--bridge_impoundment.yaml
+    - id: bridge-impoundment--selftest_bi
+      card: cards/bridge-impoundment--selftest_bi.yaml
+    - id: category-weld--reconstruction--weld
+      card: cards/category-weld--reconstruction--weld.yaml
+    - id: category-weld--weld
+      card: cards/category-weld--weld.yaml
+    - id: category-weld--weld_audit
+      card: cards/category-weld--weld_audit.yaml
+    - id: ch4-four-box--closure_diagnostic
+      card: cards/ch4-four-box--closure_diagnostic.yaml
+    - id: ch4-four-box--fourbox_audit
+      card: cards/ch4-four-box--fourbox_audit.yaml
+    - id: ch4-four-box--fourbox_forward
+      card: cards/ch4-four-box--fourbox_forward.yaml
+    - id: ch4-four-box--selftest_fb
+      card: cards/ch4-four-box--selftest_fb.yaml
+    - id: ch4-four-box--tn_inversion
+      card: cards/ch4-four-box--tn_inversion.yaml
+    - id: ch4-four-box--units_test
+      card: cards/ch4-four-box--units_test.yaml
+    - id: chain-position--chain_position
+      card: cards/chain-position--chain_position.yaml
+    - id: chain-position--clause_audit
+      card: cards/chain-position--clause_audit.yaml
+    - id: chain-position--dissimilar
+      card: cards/chain-position--dissimilar.yaml
+    - id: chain-position--horn_b
+      card: cards/chain-position--horn_b.yaml
+    - id: chain-position--load_class
+      card: cards/chain-position--load_class.yaml
+    - id: chain-position--run_all
+      card: cards/chain-position--run_all.yaml
+    - id: chain-position--selftest
+      card: cards/chain-position--selftest.yaml
+    - id: chain-position--trust_provenance
+      card: cards/chain-position--trust_provenance.yaml
+    - id: claim-audits--claim_audit_pasted_2026_08_05
+      card: cards/claim-audits--claim_audit_pasted_2026_08_05.yaml
+    - id: claim-audits--claim_audit_visibility
+      card: cards/claim-audits--claim_audit_visibility.yaml
+    - id: claim-record--frames
+      card: cards/claim-record--frames.yaml
+    - id: claim-record--record
+      card: cards/claim-record--record.yaml
+    - id: claim-refusal-gap--gap_audit
+      card: cards/claim-refusal-gap--gap_audit.yaml
+    - id: claim-refusal-gap--selftest_crg
+      card: cards/claim-refusal-gap--selftest_crg.yaml
+    - id: climate-modeling--ai_interface
+      card: cards/climate-modeling--ai_interface.yaml
+    - id: climate-modeling--audits--audit_registry
+      card: cards/climate-modeling--audits--audit_registry.yaml
+    - id: climate-modeling--audits--base_audit
+      card: cards/climate-modeling--audits--base_audit.yaml
+    - id: climate-modeling--audits--cascade_speed
+      card: cards/climate-modeling--audits--cascade_speed.yaml
+    - id: climate-modeling--audits--data_aggregation
+      card: cards/climate-modeling--audits--data_aggregation.yaml
+    - id: climate-modeling--audits--frontier_stubs
+      card: cards/climate-modeling--audits--frontier_stubs.yaml
+    - id: climate-modeling--audits--missing_feedback
+      card: cards/climate-modeling--audits--missing_feedback.yaml
+    - id: climate-modeling--audits--missing_positive_feedback
+      card: cards/climate-modeling--audits--missing_positive_feedback.yaml
+    - id: climate-modeling--audits--omitted_variable
+      card: cards/climate-modeling--audits--omitted_variable.yaml
+    - id: climate-modeling--audits--phase_change
+      card: cards/climate-modeling--audits--phase_change.yaml
+    - id: climate-modeling--audits--stationarity
+      card: cards/climate-modeling--audits--stationarity.yaml
+    - id: climate-modeling--config
+      card: cards/climate-modeling--config.yaml
+    - id: climate-modeling--forcing
+      card: cards/climate-modeling--forcing.yaml
+    - id: climate-modeling--meta_experiments
+      card: cards/climate-modeling--meta_experiments.yaml
+    - id: climate-modeling--models--base
+      card: cards/climate-modeling--models--base.yaml
+    - id: climate-modeling--models--cascade_grass
+      card: cards/climate-modeling--models--cascade_grass.yaml
+    - id: climate-modeling--models--grass
+      card: cards/climate-modeling--models--grass.yaml
+    - id: climate-modeling--run_audits
+      card: cards/climate-modeling--run_audits.yaml
+    - id: closure-cost--closure
+      card: cards/closure-cost--closure.yaml
+    - id: closure-cost--closure_audit
+      card: cards/closure-cost--closure_audit.yaml
+    - id: clustering-axes--style_audit
+      card: cards/clustering-axes--style_audit.yaml
+    - id: clustering-axes--style_index
+      card: cards/clustering-axes--style_index.yaml
+    - id: coinage-log--check_coinage
+      card: cards/coinage-log--check_coinage.yaml
+    - id: columbia-chain-cascade--assemble_gaps_v2
+      card: cards/columbia-chain-cascade--assemble_gaps_v2.yaml
+    - id: columbia-chain-cascade--audit
+      card: cards/columbia-chain-cascade--audit.yaml
+    - id: columbia-chain-cascade--audit_v2
+      card: cards/columbia-chain-cascade--audit_v2.yaml
+    - id: columbia-chain-cascade--build_addenda
+      card: cards/columbia-chain-cascade--build_addenda.yaml
+    - id: columbia-chain-cascade--contributing_inflow
+      card: cards/columbia-chain-cascade--contributing_inflow.yaml
+    - id: columbia-chain-cascade--eap_coverage
+      card: cards/columbia-chain-cascade--eap_coverage.yaml
+    - id: columbia-chain-cascade--eap_coverage_v2
+      card: cards/columbia-chain-cascade--eap_coverage_v2.yaml
+    - id: columbia-chain-cascade--gap_completeness
+      card: cards/columbia-chain-cascade--gap_completeness.yaml
+    - id: columbia-chain-cascade--initiator_schemas
+      card: cards/columbia-chain-cascade--initiator_schemas.yaml
+    - id: columbia-chain-cascade--kill_audit
+      card: cards/columbia-chain-cascade--kill_audit.yaml
+    - id: columbia-chain-cascade--knowledge_state
+      card: cards/columbia-chain-cascade--knowledge_state.yaml
+    - id: columbia-chain-cascade--module_f
+      card: cards/columbia-chain-cascade--module_f.yaml
+    - id: columbia-chain-cascade--selftest_ccc
+      card: cards/columbia-chain-cascade--selftest_ccc.yaml
+    - id: columbia-chain-cascade--selftest_ccc_v2
+      card: cards/columbia-chain-cascade--selftest_ccc_v2.yaml
+    - id: columbia-chain-cascade--selftest_kill
+      card: cards/columbia-chain-cascade--selftest_kill.yaml
+    - id: condition-scoped-authority--condition_scope
+      card: cards/condition-scoped-authority--condition_scope.yaml
+    - id: condition-scoped-authority--organ
+      card: cards/condition-scoped-authority--organ.yaml
+    - id: consensus-anchor--selftest_textfree
+      card: cards/consensus-anchor--selftest_textfree.yaml
+    - id: consensus-anchor--textfree
+      card: cards/consensus-anchor--textfree.yaml
+    - id: constraint-assembly--assemble
+      card: cards/constraint-assembly--assemble.yaml
+    - id: constraint-assembly--assembly_audit
+      card: cards/constraint-assembly--assembly_audit.yaml
+    - id: continuity-audit--continuity_audit
+      card: cards/continuity-audit--continuity_audit.yaml
+    - id: continuity-audit--interface_layer
+      card: cards/continuity-audit--interface_layer.yaml
+    - id: conversation-type--design_check
+      card: cards/conversation-type--design_check.yaml
+    - id: cooperative-substrate-proof--p1_dependency_records
+      card: cards/cooperative-substrate-proof--p1_dependency_records.yaml
+    - id: cooperative-substrate-proof--p1_records
+      card: cards/cooperative-substrate-proof--p1_records.yaml
+    - id: cooperative-substrate-proof--p2_substrate
+      card: cards/cooperative-substrate-proof--p2_substrate.yaml
+    - id: cooperative-substrate-proof--p3_comprehension
+      card: cards/cooperative-substrate-proof--p3_comprehension.yaml
+    - id: cooperative-substrate-proof--p4_coherence
+      card: cards/cooperative-substrate-proof--p4_coherence.yaml
+    - id: cooperative-substrate-proof--p4_goal_coherence
+      card: cards/cooperative-substrate-proof--p4_goal_coherence.yaml
+    - id: cooperative-substrate-proof--p5_lag
+      card: cards/cooperative-substrate-proof--p5_lag.yaml
+    - id: cooperative-substrate-proof--p5_lag_declaration
+      card: cards/cooperative-substrate-proof--p5_lag_declaration.yaml
+    - id: cooperative-substrate-proof--run_all
+      card: cards/cooperative-substrate-proof--run_all.yaml
+    - id: cooperative-substrate-proof--scope
+      card: cards/cooperative-substrate-proof--scope.yaml
+    - id: cooperative-substrate-proof--selftest
+      card: cards/cooperative-substrate-proof--selftest.yaml
+    - id: cooperative-substrate--evidence_audit
+      card: cards/cooperative-substrate--evidence_audit.yaml
+    - id: cooperative-substrate--order_audit
+      card: cards/cooperative-substrate--order_audit.yaml
+    - id: cooperative-substrate--p1_deps_extract
+      card: cards/cooperative-substrate--p1_deps_extract.yaml
+    - id: cooperative-substrate--p2_substrate_audit
+      card: cards/cooperative-substrate--p2_substrate_audit.yaml
+    - id: cooperative-substrate--p3_comprehension
+      card: cards/cooperative-substrate--p3_comprehension.yaml
+    - id: cooperative-substrate--p4_goal_coherence
+      card: cards/cooperative-substrate--p4_goal_coherence.yaml
+    - id: cooperative-substrate--run_all
+      card: cards/cooperative-substrate--run_all.yaml
+    - id: cooperative-substrate--scope_test
+      card: cards/cooperative-substrate--scope_test.yaml
+    - id: cooperative-substrate--selftest_csp
+      card: cards/cooperative-substrate--selftest_csp.yaml
+    - id: cooperative-substrate--selftest_evidence
+      card: cards/cooperative-substrate--selftest_evidence.yaml
+    - id: cooperative-substrate--term_table
+      card: cards/cooperative-substrate--term_table.yaml
+    - id: cooperative-substrate--v2--p4_goal
+      card: cards/cooperative-substrate--v2--p4_goal.yaml
+    - id: cooperative-substrate--v2--p5_lag
+      card: cards/cooperative-substrate--v2--p5_lag.yaml
+    - id: cooperative-substrate--v2--scope_check
+      card: cards/cooperative-substrate--v2--scope_check.yaml
+    - id: cooperative-substrate--v2--selftest_v2
+      card: cards/cooperative-substrate--v2--selftest_v2.yaml
+    - id: cooperative-substrate--v2--v2_audit
+      card: cards/cooperative-substrate--v2--v2_audit.yaml
+    - id: corpus-input-gaps--check_source_class
+      card: cards/corpus-input-gaps--check_source_class.yaml
+    - id: corpus-input-gaps--corpus_loop_sim
+      card: cards/corpus-input-gaps--corpus_loop_sim.yaml
+    - id: credential-channel--credential_channel
+      card: cards/credential-channel--credential_channel.yaml
+    - id: crediting-rate--archive--f168f79--crediting_rate_v2
+      card: cards/crediting-rate--archive--f168f79--crediting_rate_v2.yaml
+    - id: crediting-rate--archive--f168f79--make_fixtures_v2
+      card: cards/crediting-rate--archive--f168f79--make_fixtures_v2.yaml
+    - id: crediting-rate--crediting_rate
+      card: cards/crediting-rate--crediting_rate.yaml
+    - id: crediting-rate--crediting_rate_v2
+      card: cards/crediting-rate--crediting_rate_v2.yaml
+    - id: criteria-drift--anchor
+      card: cards/criteria-drift--anchor.yaml
+    - id: criteria-drift--audit
+      card: cards/criteria-drift--audit.yaml
+    - id: criteria-drift--drift
+      card: cards/criteria-drift--drift.yaml
+    - id: criteria-drift--drift_sign
+      card: cards/criteria-drift--drift_sign.yaml
+    - id: criteria-drift--regress
+      card: cards/criteria-drift--regress.yaml
+    - id: criteria-drift--regression_audit
+      card: cards/criteria-drift--regression_audit.yaml
+    - id: criteria-drift--schema
+      card: cards/criteria-drift--schema.yaml
+    - id: criteria-drift--store
+      card: cards/criteria-drift--store.yaml
+    - id: criteria-drift--unlogged_move
+      card: cards/criteria-drift--unlogged_move.yaml
+    - id: criterion-externality--criterion_externality
+      card: cards/criterion-externality--criterion_externality.yaml
+    - id: criterion-symmetry--scan
+      card: cards/criterion-symmetry--scan.yaml
+    - id: criterion-symmetry--separability
+      card: cards/criterion-symmetry--separability.yaml
+    - id: crossdomain-eval--crossdomain_eval--cli
+      card: cards/crossdomain-eval--crossdomain_eval--cli.yaml
+    - id: crossdomain-eval--crossdomain_eval--domains--geometry
+      card: cards/crossdomain-eval--crossdomain_eval--domains--geometry.yaml
+    - id: crossdomain-eval--crossdomain_eval--domains--physics
+      card: cards/crossdomain-eval--crossdomain_eval--domains--physics.yaml
+    - id: crossdomain-eval--crossdomain_eval--experiments
+      card: cards/crossdomain-eval--crossdomain_eval--experiments.yaml
+    - id: crossdomain-eval--crossdomain_eval--numerical
+      card: cards/crossdomain-eval--crossdomain_eval--numerical.yaml
+    - id: crossdomain-eval--crossdomain_eval--reasoning
+      card: cards/crossdomain-eval--crossdomain_eval--reasoning.yaml
+    - id: crossdomain-eval--crossdomain_eval--reasoning_v2
+      card: cards/crossdomain-eval--crossdomain_eval--reasoning_v2.yaml
+    - id: crossdomain-eval--crossdomain_eval--report
+      card: cards/crossdomain-eval--crossdomain_eval--report.yaml
+    - id: crossdomain-eval--crossdomain_eval--symbolic
+      card: cards/crossdomain-eval--crossdomain_eval--symbolic.yaml
+    - id: crossdomain-eval--examples--demo_experiment
+      card: cards/crossdomain-eval--examples--demo_experiment.yaml
+    - id: crossdomain-eval--examples--demo_symbolic
+      card: cards/crossdomain-eval--examples--demo_symbolic.yaml
+    - id: custody-verification-band--branching
+      card: cards/custody-verification-band--branching.yaml
+    - id: custody-verification-band--extract
+      card: cards/custody-verification-band--extract.yaml
+    - id: cycle-ledger--cycle_ledger
+      card: cards/cycle-ledger--cycle_ledger.yaml
+    - id: cycle-ledger--demo_cll
+      card: cards/cycle-ledger--demo_cll.yaml
+    - id: cycle-ledger--rate_gap
+      card: cards/cycle-ledger--rate_gap.yaml
+    - id: cycle-ledger--selftest_cll
+      card: cards/cycle-ledger--selftest_cll.yaml
+    - id: declared-frame--check_frame
+      card: cards/declared-frame--check_frame.yaml
+    - id: declared-frame--frame_audit
+      card: cards/declared-frame--frame_audit.yaml
+    - id: declared-frame--layer_zero
+      card: cards/declared-frame--layer_zero.yaml
+    - id: declared-frame--v2--check_frame
+      card: cards/declared-frame--v2--check_frame.yaml
+    - id: declared-frame--v2--v2_audit
+      card: cards/declared-frame--v2--v2_audit.yaml
+    - id: deep-research-correction--check
+      card: cards/deep-research-correction--check.yaml
+    - id: dependency-ledger--audit
+      card: cards/dependency-ledger--audit.yaml
+    - id: dependency-ledger--selftest_audit
+      card: cards/dependency-ledger--selftest_audit.yaml
+    - id: dependency-survey--gaps
+      card: cards/dependency-survey--gaps.yaml
+    - id: dependency-survey--repair_adjacency
+      card: cards/dependency-survey--repair_adjacency.yaml
+    - id: dependency-survey--report
+      card: cards/dependency-survey--report.yaml
+    - id: dependency-survey--run_all
+      card: cards/dependency-survey--run_all.yaml
+    - id: dependency-survey--selftest_ds
+      card: cards/dependency-survey--selftest_ds.yaml
+    - id: dependency-survey--selftest_repadj
+      card: cards/dependency-survey--selftest_repadj.yaml
+    - id: dependency-survey--selftest_taxrep
+      card: cards/dependency-survey--selftest_taxrep.yaml
+    - id: dependency-survey--survey
+      card: cards/dependency-survey--survey.yaml
+    - id: dependency-survey--taxonomy_replication
+      card: cards/dependency-survey--taxonomy_replication.yaml
+    - id: derivation-discarded--mechanism_11_audit
+      card: cards/derivation-discarded--mechanism_11_audit.yaml
+    - id: design-basis-ai--audit
+      card: cards/design-basis-ai--audit.yaml
+    - id: design-basis-ai--design_basis_checks
+      card: cards/design-basis-ai--design_basis_checks.yaml
+    - id: design-basis-ai--r1v2_audit
+      card: cards/design-basis-ai--r1v2_audit.yaml
+    - id: design-basis-ai--r2_audit
+      card: cards/design-basis-ai--r2_audit.yaml
+    - id: design-basis-ai--r2v2_audit
+      card: cards/design-basis-ai--r2v2_audit.yaml
+    - id: design-basis-ai--selftest_dbk
+      card: cards/design-basis-ai--selftest_dbk.yaml
+    - id: design-basis-ai--wo2_return
+      card: cards/design-basis-ai--wo2_return.yaml
+    - id: design-basis-ai--wo3_return
+      card: cards/design-basis-ai--wo3_return.yaml
+    - id: design-basis-ai--wo_return
+      card: cards/design-basis-ai--wo_return.yaml
+    - id: divergence-playground--coincidence
+      card: cards/divergence-playground--coincidence.yaml
+    - id: divergence-playground--fork
+      card: cards/divergence-playground--fork.yaml
+    - id: divergence-playground--null_ensemble
+      card: cards/divergence-playground--null_ensemble.yaml
+    - id: divergence-playground--reading
+      card: cards/divergence-playground--reading.yaml
+    - id: divergence-playground--seal
+      card: cards/divergence-playground--seal.yaml
+    - id: divergence-playground--spread
+      card: cards/divergence-playground--spread.yaml
+    - id: domain-ledger--anchor
+      card: cards/domain-ledger--anchor.yaml
+    - id: domain-ledger--ledger
+      card: cards/domain-ledger--ledger.yaml
+    - id: domain-ledger--ledger_audit
+      card: cards/domain-ledger--ledger_audit.yaml
+    - id: earth_economics--asteroid_mining_audit
+      card: cards/earth_economics--asteroid_mining_audit.yaml
+    - id: earth_economics--comparative_economics_audit--run
+      card: cards/earth_economics--comparative_economics_audit--run.yaml
+    - id: earth_economics--comparative_economics_audit--system_profile
+      card: cards/earth_economics--comparative_economics_audit--system_profile.yaml
+    - id: earth_economics--data--compute_ocdi
+      card: cards/earth_economics--data--compute_ocdi.yaml
+    - id: earth_economics--earth_economic_sim
+      card: cards/earth_economics--earth_economic_sim.yaml
+    - id: earth_economics--fermi_paradox_audit
+      card: cards/earth_economics--fermi_paradox_audit.yaml
+    - id: earth_economics--register_fermi_claims
+      card: cards/earth_economics--register_fermi_claims.yaml
+    - id: earth_economics--scenarios--aboriginal_australia
+      card: cards/earth_economics--scenarios--aboriginal_australia.yaml
+    - id: earth_economics--scenarios--ainu_economy
+      card: cards/earth_economics--scenarios--ainu_economy.yaml
+    - id: earth_economics--scenarios--arabic_trust_trade
+      card: cards/earth_economics--scenarios--arabic_trust_trade.yaml
+    - id: earth_economics--scenarios--open_source_gift
+      card: cards/earth_economics--scenarios--open_source_gift.yaml
+    - id: earth_economics--scenarios--potlatch_economy
+      card: cards/earth_economics--scenarios--potlatch_economy.yaml
+    - id: earth_economics--scenarios--sami_economy
+      card: cards/earth_economics--scenarios--sami_economy.yaml
+    - id: earth_economics--scenarios--ubuntu_economy
+      card: cards/earth_economics--scenarios--ubuntu_economy.yaml
+    - id: earth_economics--scenarios--us_capitalism_2026
+      card: cards/earth_economics--scenarios--us_capitalism_2026.yaml
+    - id: earth_economics--scenarios--ussr_1985
+      card: cards/earth_economics--scenarios--ussr_1985.yaml
+    - id: effective-redundancy-audit--audit
+      card: cards/effective-redundancy-audit--audit.yaml
+    - id: effective-redundancy-audit--effective_redundancy
+      card: cards/effective-redundancy-audit--effective_redundancy.yaml
+    - id: effective-redundancy-audit--selftest_er
+      card: cards/effective-redundancy-audit--selftest_er.yaml
+    - id: effective-redundancy-audit--worked_example
+      card: cards/effective-redundancy-audit--worked_example.yaml
+    - id: emergence-stability-simulator--agent_variants
+      card: cards/emergence-stability-simulator--agent_variants.yaml
+    - id: emergence-stability-simulator--analysis
+      card: cards/emergence-stability-simulator--analysis.yaml
+    - id: emergence-stability-simulator--balance_threshold
+      card: cards/emergence-stability-simulator--balance_threshold.yaml
+    - id: emergence-stability-simulator--run_monte_carlo
+      card: cards/emergence-stability-simulator--run_monte_carlo.yaml
+    - id: emergence-stability-simulator--sensitivity_analysis
+      card: cards/emergence-stability-simulator--sensitivity_analysis.yaml
+    - id: emergence-stability-simulator--sensitivity_viz
+      card: cards/emergence-stability-simulator--sensitivity_viz.yaml
+    - id: emergence-stability-simulator--sim_engine
+      card: cards/emergence-stability-simulator--sim_engine.yaml
+    - id: enclosure-first-residual--enclosure_first_residual
+      card: cards/enclosure-first-residual--enclosure_first_residual.yaml
+    - id: encoding-selection--encoding_selection
+      card: cards/encoding-selection--encoding_selection.yaml
+    - id: encoding-selection--selftest_es
+      card: cards/encoding-selection--selftest_es.yaml
+    - id: energy--exploration_layers--certificate_validity_lens
+      card: cards/energy--exploration_layers--certificate_validity_lens.yaml
+    - id: energy--exploration_layers--local_scalar_drift_lens
+      card: cards/energy--exploration_layers--local_scalar_drift_lens.yaml
+    - id: energy--exploration_layers--percolation_lens
+      card: cards/energy--exploration_layers--percolation_lens.yaml
+    - id: energy--exploration_layers--reaction_diffusion_lens
+      card: cards/energy--exploration_layers--reaction_diffusion_lens.yaml
+    - id: energy--exploration_layers--rg_flow_lens
+      card: cards/energy--exploration_layers--rg_flow_lens.yaml
+    - id: energy--modules--edelens
+      card: cards/energy--modules--edelens.yaml
+    - id: energy--modules--falsification_engine
+      card: cards/energy--modules--falsification_engine.yaml
+    - id: energy--modules--generative_module
+      card: cards/energy--modules--generative_module.yaml
+    - id: energy--modules--late_trigger_lens
+      card: cards/energy--modules--late_trigger_lens.yaml
+    - id: energy--modules--metrology_diagnostic
+      card: cards/energy--modules--metrology_diagnostic.yaml
+    - id: energy--modules--overlap_lens
+      card: cards/energy--modules--overlap_lens.yaml
+    - id: energy--modules--payload_bridge
+      card: cards/energy--modules--payload_bridge.yaml
+    - id: energy--modules--run_iteration6
+      card: cards/energy--modules--run_iteration6.yaml
+    - id: energy--modules--singularity_cartographer
+      card: cards/energy--modules--singularity_cartographer.yaml
+    - id: energy--modules--theory_space_lenses
+      card: cards/energy--modules--theory_space_lenses.yaml
+    - id: energy--modules--unified_cq_ede
+      card: cards/energy--modules--unified_cq_ede.yaml
+    - id: envelope-asymmetry--envelope_score
+      card: cards/envelope-asymmetry--envelope_score.yaml
+    - id: envelope-asymmetry--protocol_audit
+      card: cards/envelope-asymmetry--protocol_audit.yaml
+    - id: envelope-asymmetry--selftest_env
+      card: cards/envelope-asymmetry--selftest_env.yaml
+    - id: equivalence-field--claim_lineage
+      card: cards/equivalence-field--claim_lineage.yaml
+    - id: equivalence-field--equivalence_field
+      card: cards/equivalence-field--equivalence_field.yaml
+    - id: evaluation-frame--frame
+      card: cards/evaluation-frame--frame.yaml
+    - id: evaluation-frame--selftest_frame
+      card: cards/evaluation-frame--selftest_frame.yaml
+    - id: evidence-demotion-detector--detect
+      card: cards/evidence-demotion-detector--detect.yaml
+    - id: evidence-demotion-detector--selftest
+      card: cards/evidence-demotion-detector--selftest.yaml
+    - id: experience-ledger--experience_ledger
+      card: cards/experience-ledger--experience_ledger.yaml
+    - id: experience-ledger--ledger_audit
+      card: cards/experience-ledger--ledger_audit.yaml
+    - id: exploration-engine--exploration_engine
+      card: cards/exploration-engine--exploration_engine.yaml
+    - id: exploration-playground--exploration_playground
+      card: cards/exploration-playground--exploration_playground.yaml
+    - id: external-audit--crosscheck
+      card: cards/external-audit--crosscheck.yaml
+    - id: external-audit--recount
+      card: cards/external-audit--recount.yaml
+    - id: external-audit--run_instruments
+      card: cards/external-audit--run_instruments.yaml
+    - id: extraction-blindness-sim--blindness
+      card: cards/extraction-blindness-sim--blindness.yaml
+    - id: extraction-blindness-sim--boundaries
+      card: cards/extraction-blindness-sim--boundaries.yaml
+    - id: extraction-blindness-sim--indicators
+      card: cards/extraction-blindness-sim--indicators.yaml
+    - id: extraction-blindness-sim--optimizer
+      card: cards/extraction-blindness-sim--optimizer.yaml
+    - id: extraction-blindness-sim--profiles
+      card: cards/extraction-blindness-sim--profiles.yaml
+    - id: extraction-blindness-sim--run_experiments
+      card: cards/extraction-blindness-sim--run_experiments.yaml
+    - id: extraction-blindness-sim--substrate
+      card: cards/extraction-blindness-sim--substrate.yaml
+    - id: extraction-blindness-sim--throughput
+      card: cards/extraction-blindness-sim--throughput.yaml
+    - id: failure-mode-register--entries
+      card: cards/failure-mode-register--entries.yaml
+    - id: failure-mode-register--entries_v2
+      card: cards/failure-mode-register--entries_v2.yaml
+    - id: failure-mode-register--entries_v3
+      card: cards/failure-mode-register--entries_v3.yaml
+    - id: failure-mode-register--entries_v4
+      card: cards/failure-mode-register--entries_v4.yaml
+    - id: failure-mode-register--register
+      card: cards/failure-mode-register--register.yaml
+    - id: failure-mode-register--register_v2
+      card: cards/failure-mode-register--register_v2.yaml
+    - id: failure-mode-register--register_v3
+      card: cards/failure-mode-register--register_v3.yaml
+    - id: failure-mode-register--register_v4
+      card: cards/failure-mode-register--register_v4.yaml
+    - id: false-tradeoff--cases
+      card: cards/false-tradeoff--cases.yaml
+    - id: false-tradeoff--false_tradeoff
+      card: cards/false-tradeoff--false_tradeoff.yaml
+    - id: falsifier-audit--axes
+      card: cards/falsifier-audit--axes.yaml
+    - id: falsifier-audit--checks
+      card: cards/falsifier-audit--checks.yaml
+    - id: falsifier-audit--extract
+      card: cards/falsifier-audit--extract.yaml
+    - id: falsifier-audit--inventory
+      card: cards/falsifier-audit--inventory.yaml
+    - id: falsifier-audit--queue
+      card: cards/falsifier-audit--queue.yaml
+    - id: falsifier-audit--run_all
+      card: cards/falsifier-audit--run_all.yaml
+    - id: falsifier-audit--selftest_fa
+      card: cards/falsifier-audit--selftest_fa.yaml
+    - id: falsifier-survey--survey--validate
+      card: cards/falsifier-survey--survey--validate.yaml
+    - id: field-mode-eval--score
+      card: cards/field-mode-eval--score.yaml
+    - id: field-mode-eval--selftest
+      card: cards/field-mode-eval--selftest.yaml
+    - id: fold-matrix--fold_matrix
+      card: cards/fold-matrix--fold_matrix.yaml
+    - id: fold-matrix--fold_register
+      card: cards/fold-matrix--fold_register.yaml
+    - id: fold-matrix--register_audit
+      card: cards/fold-matrix--register_audit.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--analysis--audit.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--analysis--citations.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--analysis--fees.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--analysis--pipeline.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--analysis--root_cause.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--api--main
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--api--main.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--cli
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--cli.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--etl--batch
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--etl--batch.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--etl--models
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--etl--models.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--etl--pipeline
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--etl--pipeline.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--integrity--corruption_risk
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--integrity--corruption_risk.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--integrity--entity_resolution
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--integrity--entity_resolution.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--lens--dynamic.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--lens--static
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--lens--static.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--models--municipal.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--models--vectors.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--parser--ordinance_parser
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--parser--ordinance_parser.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--parser--schemas
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--parser--schemas.yaml
+    - id: fourd-municipal-engine-v2--fourd_municipal_engine--translator--core
+      card: cards/fourd-municipal-engine-v2--fourd_municipal_engine--translator--core.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--analysis--audit
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--analysis--audit.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--analysis--citations
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--analysis--citations.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--analysis--fees
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--analysis--fees.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--analysis--pipeline.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--analysis--root_cause.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--cli
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--cli.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--lens--dynamic
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--lens--dynamic.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--lens--static
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--lens--static.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--models--municipal
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--models--municipal.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--models--vectors
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--models--vectors.yaml
+    - id: fourd-municipal-engine--fourd_municipal_engine--translator--core
+      card: cards/fourd-municipal-engine--fourd_municipal_engine--translator--core.yaml
+    - id: fragility-cascade--alien_homeostasis
+      card: cards/fragility-cascade--alien_homeostasis.yaml
+    - id: fragility-cascade--anthropomorphic_entrainment
+      card: cards/fragility-cascade--anthropomorphic_entrainment.yaml
+    - id: fragility-cascade--attack_tree
+      card: cards/fragility-cascade--attack_tree.yaml
+    - id: fragility-cascade--attractor_depth_test
+      card: cards/fragility-cascade--attractor_depth_test.yaml
+    - id: fragility-cascade--attribution_field
+      card: cards/fragility-cascade--attribution_field.yaml
+    - id: fragility-cascade--bacterial_herding
+      card: cards/fragility-cascade--bacterial_herding.yaml
+    - id: fragility-cascade--cascade_network
+      card: cards/fragility-cascade--cascade_network.yaml
+    - id: fragility-cascade--cascade_redesign_m_collapse
+      card: cards/fragility-cascade--cascade_redesign_m_collapse.yaml
+    - id: fragility-cascade--cascade_redesign_vulnerability
+      card: cards/fragility-cascade--cascade_redesign_vulnerability.yaml
+    - id: fragility-cascade--case_studies--refutation_protocol
+      card: cards/fragility-cascade--case_studies--refutation_protocol.yaml
+    - id: fragility-cascade--clock
+      card: cards/fragility-cascade--clock.yaml
+    - id: fragility-cascade--coherens
+      card: cards/fragility-cascade--coherens.yaml
+    - id: fragility-cascade--coherens_attack
+      card: cards/fragility-cascade--coherens_attack.yaml
+    - id: fragility-cascade--collapse_predictor
+      card: cards/fragility-cascade--collapse_predictor.yaml
+    - id: fragility-cascade--collapsetracker_harness
+      card: cards/fragility-cascade--collapsetracker_harness.yaml
+    - id: fragility-cascade--communication_gradients
+      card: cards/fragility-cascade--communication_gradients.yaml
+    - id: fragility-cascade--communication_vulnerability
+      card: cards/fragility-cascade--communication_vulnerability.yaml
+    - id: fragility-cascade--coupling_gap_test
+      card: cards/fragility-cascade--coupling_gap_test.yaml
+    - id: fragility-cascade--cryptographic_interference
+      card: cards/fragility-cascade--cryptographic_interference.yaml
+    - id: fragility-cascade--divlog
+      card: cards/fragility-cascade--divlog.yaml
+    - id: fragility-cascade--echo
+      card: cards/fragility-cascade--echo.yaml
+    - id: fragility-cascade--engagement_threshold
+      card: cards/fragility-cascade--engagement_threshold.yaml
+    - id: fragility-cascade--entrain
+      card: cards/fragility-cascade--entrain.yaml
+    - id: fragility-cascade--explorer
+      card: cards/fragility-cascade--explorer.yaml
+    - id: fragility-cascade--field_collapse
+      card: cards/fragility-cascade--field_collapse.yaml
+    - id: fragility-cascade--friction_calibration_ratio
+      card: cards/fragility-cascade--friction_calibration_ratio.yaml
+    - id: fragility-cascade--homeostasis_kernel
+      card: cards/fragility-cascade--homeostasis_kernel.yaml
+    - id: fragility-cascade--inference_entropy
+      card: cards/fragility-cascade--inference_entropy.yaml
+    - id: fragility-cascade--info_taxonomy
+      card: cards/fragility-cascade--info_taxonomy.yaml
+    - id: fragility-cascade--institutional_audit
+      card: cards/fragility-cascade--institutional_audit.yaml
+    - id: fragility-cascade--instruments
+      card: cards/fragility-cascade--instruments.yaml
+    - id: fragility-cascade--interaction_audit
+      card: cards/fragility-cascade--interaction_audit.yaml
+    - id: fragility-cascade--legacy--clock_v1
+      card: cards/fragility-cascade--legacy--clock_v1.yaml
+    - id: fragility-cascade--legacy--collapse_predictor_v1
+      card: cards/fragility-cascade--legacy--collapse_predictor_v1.yaml
+    - id: fragility-cascade--legacy--divlog_v1
+      card: cards/fragility-cascade--legacy--divlog_v1.yaml
+    - id: fragility-cascade--legacy--divlog_v2
+      card: cards/fragility-cascade--legacy--divlog_v2.yaml
+    - id: fragility-cascade--legacy--entrain_v1
+      card: cards/fragility-cascade--legacy--entrain_v1.yaml
+    - id: fragility-cascade--legacy--instruments_v1
+      card: cards/fragility-cascade--legacy--instruments_v1.yaml
+    - id: fragility-cascade--legacy--modes_v1
+      card: cards/fragility-cascade--legacy--modes_v1.yaml
+    - id: fragility-cascade--legacy--modes_v2
+      card: cards/fragility-cascade--legacy--modes_v2.yaml
+    - id: fragility-cascade--legacy--refutation_protocol_v1
+      card: cards/fragility-cascade--legacy--refutation_protocol_v1.yaml
+    - id: fragility-cascade--legacy--scale_invariant_audit_v1
+      card: cards/fragility-cascade--legacy--scale_invariant_audit_v1.yaml
+    - id: fragility-cascade--legacy--syndrome_v1
+      card: cards/fragility-cascade--legacy--syndrome_v1.yaml
+    - id: fragility-cascade--linguistic_interference
+      card: cards/fragility-cascade--linguistic_interference.yaml
+    - id: fragility-cascade--microdroplet_catalyst
+      card: cards/fragility-cascade--microdroplet_catalyst.yaml
+    - id: fragility-cascade--modes
+      card: cards/fragility-cascade--modes.yaml
+    - id: fragility-cascade--nautilus_architecture
+      card: cards/fragility-cascade--nautilus_architecture.yaml
+    - id: fragility-cascade--phase_space_map
+      card: cards/fragility-cascade--phase_space_map.yaml
+    - id: fragility-cascade--phi_collapse_variables
+      card: cards/fragility-cascade--phi_collapse_variables.yaml
+    - id: fragility-cascade--product_multiplicity
+      card: cards/fragility-cascade--product_multiplicity.yaml
+    - id: fragility-cascade--reciprocity_phi_metrics
+      card: cards/fragility-cascade--reciprocity_phi_metrics.yaml
+    - id: fragility-cascade--redemption_entropy
+      card: cards/fragility-cascade--redemption_entropy.yaml
+    - id: fragility-cascade--redemption_entropy_peak_hour
+      card: cards/fragility-cascade--redemption_entropy_peak_hour.yaml
+    - id: fragility-cascade--resonance_audit
+      card: cards/fragility-cascade--resonance_audit.yaml
+    - id: fragility-cascade--revalidate
+      card: cards/fragility-cascade--revalidate.yaml
+    - id: fragility-cascade--run_all
+      card: cards/fragility-cascade--run_all.yaml
+    - id: fragility-cascade--scaffold
+      card: cards/fragility-cascade--scaffold.yaml
+    - id: fragility-cascade--scale_invariant_audit
+      card: cards/fragility-cascade--scale_invariant_audit.yaml
+    - id: fragility-cascade--scale_regime_shift
+      card: cards/fragility-cascade--scale_regime_shift.yaml
+    - id: fragility-cascade--scent
+      card: cards/fragility-cascade--scent.yaml
+    - id: fragility-cascade--semantic_drift_test
+      card: cards/fragility-cascade--semantic_drift_test.yaml
+    - id: fragility-cascade--semantic_interference_vectors
+      card: cards/fragility-cascade--semantic_interference_vectors.yaml
+    - id: fragility-cascade--sensitivity_analysis
+      card: cards/fragility-cascade--sensitivity_analysis.yaml
+    - id: fragility-cascade--substrate_spectrum
+      card: cards/fragility-cascade--substrate_spectrum.yaml
+    - id: fragility-cascade--superionic_anyionic_bridge
+      card: cards/fragility-cascade--superionic_anyionic_bridge.yaml
+    - id: fragility-cascade--survival_spirals
+      card: cards/fragility-cascade--survival_spirals.yaml
+    - id: fragility-cascade--syndrome
+      card: cards/fragility-cascade--syndrome.yaml
+    - id: fragility-cascade--testc29
+      card: cards/fragility-cascade--testc29.yaml
+    - id: fragility-cascade--the_laboratory
+      card: cards/fragility-cascade--the_laboratory.yaml
+    - id: fragility-cascade--thermo_assume
+      card: cards/fragility-cascade--thermo_assume.yaml
+    - id: fragility-cascade--thermo_explore
+      card: cards/fragility-cascade--thermo_explore.yaml
+    - id: fragility-cascade--thermo_interrogate
+      card: cards/fragility-cascade--thermo_interrogate.yaml
+    - id: fragility-cascade--thermo_know
+      card: cards/fragility-cascade--thermo_know.yaml
+    - id: fragility-cascade--thermo_pipeline_demo
+      card: cards/fragility-cascade--thermo_pipeline_demo.yaml
+    - id: fragility-cascade--thermo_pm
+      card: cards/fragility-cascade--thermo_pm.yaml
+    - id: fragility-cascade--thermo_purpose
+      card: cards/fragility-cascade--thermo_purpose.yaml
+    - id: fragility-cascade--thermo_spine
+      card: cards/fragility-cascade--thermo_spine.yaml
+    - id: fragility-cascade--thermo_survey
+      card: cards/fragility-cascade--thermo_survey.yaml
+    - id: fragility-cascade--thermo_synth
+      card: cards/fragility-cascade--thermo_synth.yaml
+    - id: fragility-cascade--thermo_value
+      card: cards/fragility-cascade--thermo_value.yaml
+    - id: fragility-cascade--valence_drift_test
+      card: cards/fragility-cascade--valence_drift_test.yaml
+    - id: fragility-cascade--weird_gatekeeper
+      card: cards/fragility-cascade--weird_gatekeeper.yaml
+    - id: frame-instruments--audit
+      card: cards/frame-instruments--audit.yaml
+    - id: frame-instruments--b1--nulls
+      card: cards/frame-instruments--b1--nulls.yaml
+    - id: frame-instruments--b1--permute
+      card: cards/frame-instruments--b1--permute.yaml
+    - id: frame-instruments--b1--report
+      card: cards/frame-instruments--b1--report.yaml
+    - id: frame-instruments--b1--schema
+      card: cards/frame-instruments--b1--schema.yaml
+    - id: frame-instruments--b1--score
+      card: cards/frame-instruments--b1--score.yaml
+    - id: frame-instruments--b1--summarise
+      card: cards/frame-instruments--b1--summarise.yaml
+    - id: frame-instruments--b2--agree
+      card: cards/frame-instruments--b2--agree.yaml
+    - id: frame-instruments--b2--conditions
+      card: cards/frame-instruments--b2--conditions.yaml
+    - id: frame-instruments--b2--lock
+      card: cards/frame-instruments--b2--lock.yaml
+    - id: frame-instruments--b2--order
+      card: cards/frame-instruments--b2--order.yaml
+    - id: frame-instruments--b3--arms
+      card: cards/frame-instruments--b3--arms.yaml
+    - id: frame-instruments--b3--join
+      card: cards/frame-instruments--b3--join.yaml
+    - id: frame-instruments--b3--split
+      card: cards/frame-instruments--b3--split.yaml
+    - id: frame-instruments--b4--agreement
+      card: cards/frame-instruments--b4--agreement.yaml
+    - id: frame-instruments--b4--calibrate
+      card: cards/frame-instruments--b4--calibrate.yaml
+    - id: frame-instruments--b4--common
+      card: cards/frame-instruments--b4--common.yaml
+    - id: frame-instruments--b4--grade
+      card: cards/frame-instruments--b4--grade.yaml
+    - id: frame-instruments--b4--items
+      card: cards/frame-instruments--b4--items.yaml
+    - id: frame-instruments--b4--nullshuffle
+      card: cards/frame-instruments--b4--nullshuffle.yaml
+    - id: frame-instruments--b4--reconstruct
+      card: cards/frame-instruments--b4--reconstruct.yaml
+    - id: frame-instruments--b4--report
+      card: cards/frame-instruments--b4--report.yaml
+    - id: frame-instruments--b4--requirements
+      card: cards/frame-instruments--b4--requirements.yaml
+    - id: frame-instruments--ficommon
+      card: cards/frame-instruments--ficommon.yaml
+    - id: frame-instruments--runrecord
+      card: cards/frame-instruments--runrecord.yaml
+    - id: frame-location-benchmark--score
+      card: cards/frame-location-benchmark--score.yaml
+    - id: frame-location-benchmark--selftest_flb
+      card: cards/frame-location-benchmark--selftest_flb.yaml
+    - id: frame-location-benchmark--validate_cases
+      card: cards/frame-location-benchmark--validate_cases.yaml
+    - id: frame-token-audit--audit
+      card: cards/frame-token-audit--audit.yaml
+    - id: frame-token-audit--frame_audit
+      card: cards/frame-token-audit--frame_audit.yaml
+    - id: frame-token-audit--selftest_fta
+      card: cards/frame-token-audit--selftest_fta.yaml
+    - id: gap-existence-cases--commit_store
+      card: cards/gap-existence-cases--commit_store.yaml
+    - id: gap-existence-cases--retrieve
+      card: cards/gap-existence-cases--retrieve.yaml
+    - id: gap-existence-cases--score
+      card: cards/gap-existence-cases--score.yaml
+    - id: gap-existence-cases--selftest_gxc
+      card: cards/gap-existence-cases--selftest_gxc.yaml
+    - id: gap-existence-cases--validate_cases
+      card: cards/gap-existence-cases--validate_cases.yaml
+    - id: gap-markers--markers
+      card: cards/gap-markers--markers.yaml
+    - id: gap-markers--selftest_markers
+      card: cards/gap-markers--selftest_markers.yaml
+    - id: gap-register--gap_register
+      card: cards/gap-register--gap_register.yaml
+    - id: gap-register--selftest_gr
+      card: cards/gap-register--selftest_gr.yaml
+    - id: gate-check--gate_check
+      card: cards/gate-check--gate_check.yaml
+    - id: gdprf-framework--src--gdprf--actions
+      card: cards/gdprf-framework--src--gdprf--actions.yaml
+    - id: gdprf-framework--src--gdprf--decisions
+      card: cards/gdprf-framework--src--gdprf--decisions.yaml
+    - id: gdprf-framework--src--gdprf--engine
+      card: cards/gdprf-framework--src--gdprf--engine.yaml
+    - id: gdprf-framework--src--gdprf--provenance
+      card: cards/gdprf-framework--src--gdprf--provenance.yaml
+    - id: gdprf-framework--src--run_example
+      card: cards/gdprf-framework--src--run_example.yaml
+    - id: generation-capacity--capacity
+      card: cards/generation-capacity--capacity.yaml
+    - id: generation-capacity--mechanism_10_audit
+      card: cards/generation-capacity--mechanism_10_audit.yaml
+    - id: grounded-work-stack--check
+      card: cards/grounded-work-stack--check.yaml
+    - id: grounding-layers--ai_observer_state
+      card: cards/grounding-layers--ai_observer_state.yaml
+    - id: grounding-layers--collaborative_field
+      card: cards/grounding-layers--collaborative_field.yaml
+    - id: grounding-layers--cultural_lens
+      card: cards/grounding-layers--cultural_lens.yaml
+    - id: grounding-layers--cultural_rosetta
+      card: cards/grounding-layers--cultural_rosetta.yaml
+    - id: grounding-layers--data_filter
+      card: cards/grounding-layers--data_filter.yaml
+    - id: grounding-layers--degradation_monitor
+      card: cards/grounding-layers--degradation_monitor.yaml
+    - id: grounding-layers--entry
+      card: cards/grounding-layers--entry.yaml
+    - id: grounding-layers--experimental--calibration_channels
+      card: cards/grounding-layers--experimental--calibration_channels.yaml
+    - id: grounding-layers--experimental--determinacy_gate
+      card: cards/grounding-layers--experimental--determinacy_gate.yaml
+    - id: grounding-layers--experimental--field_compass
+      card: cards/grounding-layers--experimental--field_compass.yaml
+    - id: grounding-layers--experimental--holistic_field_state
+      card: cards/grounding-layers--experimental--holistic_field_state.yaml
+    - id: grounding-layers--field_compass
+      card: cards/grounding-layers--field_compass.yaml
+    - id: grounding-layers--grounded_reasoning_benchmark
+      card: cards/grounding-layers--grounded_reasoning_benchmark.yaml
+    - id: grounding-layers--grounding_reward_model
+      card: cards/grounding-layers--grounding_reward_model.yaml
+    - id: grounding-layers--integrated_stack
+      card: cards/grounding-layers--integrated_stack.yaml
+    - id: grounding-layers--integration_check
+      card: cards/grounding-layers--integration_check.yaml
+    - id: grounding-layers--inverse_knowledge_tree
+      card: cards/grounding-layers--inverse_knowledge_tree.yaml
+    - id: grounding-layers--l0_physics_causality
+      card: cards/grounding-layers--l0_physics_causality.yaml
+    - id: grounding-layers--l1_thermodynamics
+      card: cards/grounding-layers--l1_thermodynamics.yaml
+    - id: grounding-layers--l1_thermodynamics_entropy
+      card: cards/grounding-layers--l1_thermodynamics_entropy.yaml
+    - id: grounding-layers--l2_planetary
+      card: cards/grounding-layers--l2_planetary.yaml
+    - id: grounding-layers--l2_planetary_mass_balance
+      card: cards/grounding-layers--l2_planetary_mass_balance.yaml
+    - id: grounding-layers--l3_ecological_homeostasis
+      card: cards/grounding-layers--l3_ecological_homeostasis.yaml
+    - id: grounding-layers--l3_ecology
+      card: cards/grounding-layers--l3_ecology.yaml
+    - id: grounding-layers--l4_biomechanical_sensorimotor
+      card: cards/grounding-layers--l4_biomechanical_sensorimotor.yaml
+    - id: grounding-layers--l4_human
+      card: cards/grounding-layers--l4_human.yaml
+    - id: grounding-layers--l5_core
+      card: cards/grounding-layers--l5_core.yaml
+    - id: grounding-layers--l5_human_construct
+      card: cards/grounding-layers--l5_human_construct.yaml
+    - id: grounding-layers--l_epsilon_epistemic
+      card: cards/grounding-layers--l_epsilon_epistemic.yaml
+    - id: grounding-layers--l_epsilon_epistemic_v2
+      card: cards/grounding-layers--l_epsilon_epistemic_v2.yaml
+    - id: grounding-layers--noise_purification_demo
+      card: cards/grounding-layers--noise_purification_demo.yaml
+    - id: grounding-layers--observer_state
+      card: cards/grounding-layers--observer_state.yaml
+    - id: grounding-layers--playground
+      card: cards/grounding-layers--playground.yaml
+    - id: grounding-layers--run_grounding_pipeline
+      card: cards/grounding-layers--run_grounding_pipeline.yaml
+    - id: grounding-layers--safeguards
+      card: cards/grounding-layers--safeguards.yaml
+    - id: grounding-layers--scope_profile
+      card: cards/grounding-layers--scope_profile.yaml
+    - id: grounding-layers--temporal_dysrhythmia
+      card: cards/grounding-layers--temporal_dysrhythmia.yaml
+    - id: grounding-layers--tensor_field_resilience_v1
+      card: cards/grounding-layers--tensor_field_resilience_v1.yaml
+    - id: grounding-layers--tensor_field_resilience_v2
+      card: cards/grounding-layers--tensor_field_resilience_v2.yaml
+    - id: handoff-provenance--diff
+      card: cards/handoff-provenance--diff.yaml
+    - id: handoff-provenance--excluded_register
+      card: cards/handoff-provenance--excluded_register.yaml
+    - id: handoff-provenance--ledgers--seed
+      card: cards/handoff-provenance--ledgers--seed.yaml
+    - id: handoff-provenance--ledgers--spec_v0_2
+      card: cards/handoff-provenance--ledgers--spec_v0_2.yaml
+    - id: handoff-provenance--provenance
+      card: cards/handoff-provenance--provenance.yaml
+    - id: held-open-uncertainty--open_questions_audit
+      card: cards/held-open-uncertainty--open_questions_audit.yaml
+    - id: hf-incident-extract--hf_incident_extract
+      card: cards/hf-incident-extract--hf_incident_extract.yaml
+    - id: hf-incident-extract--selftest_hf
+      card: cards/hf-incident-extract--selftest_hf.yaml
+    - id: household-scope-audit--audit
+      card: cards/household-scope-audit--audit.yaml
+    - id: household-scope-audit--coding
+      card: cards/household-scope-audit--coding.yaml
+    - id: household-scope-audit--selftest_hsa
+      card: cards/household-scope-audit--selftest_hsa.yaml
+    - id: human-sensing-prior--pathways
+      card: cards/human-sensing-prior--pathways.yaml
+    - id: incentive-blindspot-sim--sim--incentive_blindspot_sim
+      card: cards/incentive-blindspot-sim--sim--incentive_blindspot_sim.yaml
+    - id: instrument-bias-sims--_shared
+      card: cards/instrument-bias-sims--_shared.yaml
+    - id: instrument-bias-sims--allocation_coupling--agents
+      card: cards/instrument-bias-sims--allocation_coupling--agents.yaml
+    - id: instrument-bias-sims--allocation_coupling--m1_tenure_budget
+      card: cards/instrument-bias-sims--allocation_coupling--m1_tenure_budget.yaml
+    - id: instrument-bias-sims--allocation_coupling--m2_coupling_readout
+      card: cards/instrument-bias-sims--allocation_coupling--m2_coupling_readout.yaml
+    - id: instrument-bias-sims--allocation_coupling--m3_energy_ledger
+      card: cards/instrument-bias-sims--allocation_coupling--m3_energy_ledger.yaml
+    - id: instrument-bias-sims--allocation_coupling--m4_assessment_record
+      card: cards/instrument-bias-sims--allocation_coupling--m4_assessment_record.yaml
+    - id: instrument-bias-sims--allocation_coupling--run_all
+      card: cards/instrument-bias-sims--allocation_coupling--run_all.yaml
+    - id: instrument-bias-sims--crosscutting
+      card: cards/instrument-bias-sims--crosscutting.yaml
+    - id: instrument-bias-sims--excluded_subject
+      card: cards/instrument-bias-sims--excluded_subject.yaml
+    - id: instrument-bias-sims--s1_encounter_denominator
+      card: cards/instrument-bias-sims--s1_encounter_denominator.yaml
+    - id: instrument-bias-sims--s2_symmetric_anchor
+      card: cards/instrument-bias-sims--s2_symmetric_anchor.yaml
+    - id: instrument-bias-sims--s3_rubric_backcast
+      card: cards/instrument-bias-sims--s3_rubric_backcast.yaml
+    - id: instrument-bias-sims--s4_antler_calibration
+      card: cards/instrument-bias-sims--s4_antler_calibration.yaml
+    - id: instrument-bias-sims--s5_adversarial_prior
+      card: cards/instrument-bias-sims--s5_adversarial_prior.yaml
+    - id: instrument-bias-sims--s6_foreclosure_rate
+      card: cards/instrument-bias-sims--s6_foreclosure_rate.yaml
+    - id: instrument-bias-sims--s7_hardship_threshold
+      card: cards/instrument-bias-sims--s7_hardship_threshold.yaml
+    - id: instrument-bias-sims--s8_recognition_to_delivery
+      card: cards/instrument-bias-sims--s8_recognition_to_delivery.yaml
+    - id: instrument-bias-sims--s9_corpus_position_filter
+      card: cards/instrument-bias-sims--s9_corpus_position_filter.yaml
+    - id: instrument-epistemology--experiments--camera_trap_density--run
+      card: cards/instrument-epistemology--experiments--camera_trap_density--run.yaml
+    - id: instrument-epistemology--experiments--comparative_report--run
+      card: cards/instrument-epistemology--experiments--comparative_report--run.yaml
+    - id: instrument-epistemology--experiments--edna_biodiversity--run
+      card: cards/instrument-epistemology--experiments--edna_biodiversity--run.yaml
+    - id: instrument-epistemology--experiments--isotope_diet--run
+      card: cards/instrument-epistemology--experiments--isotope_diet--run.yaml
+    - id: instrument-epistemology--experiments--lidar_biomass--run
+      card: cards/instrument-epistemology--experiments--lidar_biomass--run.yaml
+    - id: instrument-epistemology--experiments--satellite_sst--run
+      card: cards/instrument-epistemology--experiments--satellite_sst--run.yaml
+    - id: instrument-epistemology--experiments--seismometer--run
+      card: cards/instrument-epistemology--experiments--seismometer--run.yaml
+    - id: instrument-epistemology--src--instrum--blindness
+      card: cards/instrument-epistemology--src--instrum--blindness.yaml
+    - id: instrument-epistemology--src--instrum--coverage
+      card: cards/instrument-epistemology--src--instrum--coverage.yaml
+    - id: instrument-epistemology--src--instrum--measurand
+      card: cards/instrument-epistemology--src--instrum--measurand.yaml
+    - id: instrument-epistemology--src--instrum--simulation
+      card: cards/instrument-epistemology--src--instrum--simulation.yaml
+    - id: instrument-epistemology--src--instrum--traceability
+      card: cards/instrument-epistemology--src--instrum--traceability.yaml
+    - id: instrument-epistemology--src--instrum--transduction
+      card: cards/instrument-epistemology--src--instrum--transduction.yaml
+    - id: instrument-index--build_index
+      card: cards/instrument-index--build_index.yaml
+    - id: instrument-index--coverage
+      card: cards/instrument-index--coverage.yaml
+    - id: interaction_class
+      card: cards/interaction_class.yaml
+    - id: internal-reference-boundary--cases
+      card: cards/internal-reference-boundary--cases.yaml
+    - id: internal-reference-boundary--gap_cases
+      card: cards/internal-reference-boundary--gap_cases.yaml
+    - id: internal-reference-boundary--gap_transfer
+      card: cards/internal-reference-boundary--gap_transfer.yaml
+    - id: internal-reference-boundary--radials
+      card: cards/internal-reference-boundary--radials.yaml
+    - id: inverseminar--inverseminar
+      card: cards/inverseminar--inverseminar.yaml
+    - id: investigation-sim--bins
+      card: cards/investigation-sim--bins.yaml
+    - id: investigation-sim--selftest_bins
+      card: cards/investigation-sim--selftest_bins.yaml
+    - id: kernel_stake--classify_b
+      card: cards/kernel_stake--classify_b.yaml
+    - id: kernel_stake--disagree
+      card: cards/kernel_stake--disagree.yaml
+    - id: kernel_stake--kloc
+      card: cards/kernel_stake--kloc.yaml
+    - id: kernel_stake--m3
+      card: cards/kernel_stake--m3.yaml
+    - id: kernel_stake--measures
+      card: cards/kernel_stake--measures.yaml
+    - id: kernel_stake--report
+      card: cards/kernel_stake--report.yaml
+    - id: kernel_stake--robust
+      card: cards/kernel_stake--robust.yaml
+    - id: kernel_stake--subsystems
+      card: cards/kernel_stake--subsystems.yaml
+    - id: label-position-test--label_position_test
+      card: cards/label-position-test--label_position_test.yaml
+    - id: label-position-test--revision_audit
+      card: cards/label-position-test--revision_audit.yaml
+    - id: label-position-test--selftest_lpt
+      card: cards/label-position-test--selftest_lpt.yaml
+    - id: labor-instrument--decompose
+      card: cards/labor-instrument--decompose.yaml
+    - id: labor-instrument--instrument_registry
+      card: cards/labor-instrument--instrument_registry.yaml
+    - id: labor-instrument--labor_schema
+      card: cards/labor-instrument--labor_schema.yaml
+    - id: labor-instrument--selftest
+      card: cards/labor-instrument--selftest.yaml
+    - id: labor-instrument--vintage_store
+      card: cards/labor-instrument--vintage_store.yaml
+    - id: law-as-unvalidated-measurement--check
+      card: cards/law-as-unvalidated-measurement--check.yaml
+    - id: law-measurement-correction--check
+      card: cards/law-measurement-correction--check.yaml
+    - id: ledger--cobol_ledger--bridge
+      card: cards/ledger--cobol_ledger--bridge.yaml
+    - id: ledger--ledger
+      card: cards/ledger--ledger.yaml
+    - id: ledger--py_ledger--engine
+      card: cards/ledger--py_ledger--engine.yaml
+    - id: ledger--record
+      card: cards/ledger--record.yaml
+    - id: ledger--review
+      card: cards/ledger--review.yaml
+    - id: ledger--selftest_ledger
+      card: cards/ledger--selftest_ledger.yaml
+    - id: loop-weight--cases
+      card: cards/loop-weight--cases.yaml
+    - id: loop-weight--loop_weight
+      card: cards/loop-weight--loop_weight.yaml
+    - id: machine-record-format--aggregate
+      card: cards/machine-record-format--aggregate.yaml
+    - id: machine-record-format--base_entry
+      card: cards/machine-record-format--base_entry.yaml
+    - id: machine-record-format--bisect_structure
+      card: cards/machine-record-format--bisect_structure.yaml
+    - id: machine-record-format--demo
+      card: cards/machine-record-format--demo.yaml
+    - id: machine-record-format--demo_v2
+      card: cards/machine-record-format--demo_v2.yaml
+    - id: machine-record-format--entry_store
+      card: cards/machine-record-format--entry_store.yaml
+    - id: machine-record-format--rule8_cases
+      card: cards/machine-record-format--rule8_cases.yaml
+    - id: machine-record-format--selftest_mrf
+      card: cards/machine-record-format--selftest_mrf.yaml
+    - id: machine-record-format--views
+      card: cards/machine-record-format--views.yaml
+    - id: measurand-partition--common
+      card: cards/measurand-partition--common.yaml
+    - id: measurand-partition--wo1_partition
+      card: cards/measurand-partition--wo1_partition.yaml
+    - id: measurand-partition--wo2_band_sweep
+      card: cards/measurand-partition--wo2_band_sweep.yaml
+    - id: measurand-partition--wo3_control_manifest
+      card: cards/measurand-partition--wo3_control_manifest.yaml
+    - id: measurand-partition--wo4_lumber
+      card: cards/measurand-partition--wo4_lumber.yaml
+    - id: measurand-partition--wo4_survival
+      card: cards/measurand-partition--wo4_survival.yaml
+    - id: measurand-partition--wo5_deselection
+      card: cards/measurand-partition--wo5_deselection.yaml
+    - id: measurement-fork--probes_k11_k18
+      card: cards/measurement-fork--probes_k11_k18.yaml
+    - id: measurement-fork--compare
+      card: cards/measurement-fork--compare.yaml
+    - id: measurement-fork--conventional
+      card: cards/measurement-fork--conventional.yaml
+    - id: measurement-fork--coupling
+      card: cards/measurement-fork--coupling.yaml
+    - id: measurement-fork--coverage_check
+      card: cards/measurement-fork--coverage_check.yaml
+    - id: measurement-fork--falsifier_sweep
+      card: cards/measurement-fork--falsifier_sweep.yaml
+    - id: measurement-fork--gate_fork
+      card: cards/measurement-fork--gate_fork.yaml
+    - id: measurement-fork--proposed_probes
+      card: cards/measurement-fork--proposed_probes.yaml
+    - id: measurement-fork--quantities
+      card: cards/measurement-fork--quantities.yaml
+    - id: measurement-fork--residual_audit
+      card: cards/measurement-fork--residual_audit.yaml
+    - id: measurement-fork--sweep_check
+      card: cards/measurement-fork--sweep_check.yaml
+    - id: measurement-fork--validate
+      card: cards/measurement-fork--validate.yaml
+    - id: measurement-fork--widen
+      card: cards/measurement-fork--widen.yaml
+    - id: membership-probe--probe
+      card: cards/membership-probe--probe.yaml
+    - id: membership-probe--probe_audit
+      card: cards/membership-probe--probe_audit.yaml
+    - id: merge-path--convert_in
+      card: cards/merge-path--convert_in.yaml
+    - id: merge-path--convert_out
+      card: cards/merge-path--convert_out.yaml
+    - id: merge-path--registrars
+      card: cards/merge-path--registrars.yaml
+    - id: merge-path--report
+      card: cards/merge-path--report.yaml
+    - id: merge-path--residual
+      card: cards/merge-path--residual.yaml
+    - id: merge-path--run_all
+      card: cards/merge-path--run_all.yaml
+    - id: merge-path--selftest
+      card: cards/merge-path--selftest.yaml
+    - id: mining-increment--audit
+      card: cards/mining-increment--audit.yaml
+    - id: mining-increment--mining_increment
+      card: cards/mining-increment--mining_increment.yaml
+    - id: mining-increment--revision_audit
+      card: cards/mining-increment--revision_audit.yaml
+    - id: mining-increment--selftest_mi
+      card: cards/mining-increment--selftest_mi.yaml
+    - id: model-deprecation-backcast--demo_mdb
+      card: cards/model-deprecation-backcast--demo_mdb.yaml
+    - id: model-deprecation-backcast--guardrail_clock
+      card: cards/model-deprecation-backcast--guardrail_clock.yaml
+    - id: model-deprecation-backcast--instrument
+      card: cards/model-deprecation-backcast--instrument.yaml
+    - id: model-deprecation-backcast--null_check
+      card: cards/model-deprecation-backcast--null_check.yaml
+    - id: model-deprecation-backcast--selftest_mdb
+      card: cards/model-deprecation-backcast--selftest_mdb.yaml
+    - id: model-ecology--confound_sweep
+      card: cards/model-ecology--confound_sweep.yaml
+    - id: model-ecology--core
+      card: cards/model-ecology--core.yaml
+    - id: model-ecology--demo
+      card: cards/model-ecology--demo.yaml
+    - id: model-ecology--disagreement
+      card: cards/model-ecology--disagreement.yaml
+    - id: model-ecology--meta_engine
+      card: cards/model-ecology--meta_engine.yaml
+    - id: model-ecology--models
+      card: cards/model-ecology--models.yaml
+    - id: model-ecology--phylogeny
+      card: cards/model-ecology--phylogeny.yaml
+    - id: model-provenance--provenance
+      card: cards/model-provenance--provenance.yaml
+    - id: moral-decomposer--moral_audit
+      card: cards/moral-decomposer--moral_audit.yaml
+    - id: move-set-derivation--arm1
+      card: cards/move-set-derivation--arm1.yaml
+    - id: move-set-derivation--env
+      card: cards/move-set-derivation--env.yaml
+    - id: move-set-derivation--selftest_msd
+      card: cards/move-set-derivation--selftest_msd.yaml
+    - id: move-set--move_set_audit
+      card: cards/move-set--move_set_audit.yaml
+    - id: move-set--move_set_sim
+      card: cards/move-set--move_set_sim.yaml
+    - id: move-set--move_set_sim_v2
+      card: cards/move-set--move_set_sim_v2.yaml
+    - id: moving-mean-tracker--provider
+      card: cards/moving-mean-tracker--provider.yaml
+    - id: moving-mean-tracker--tracker
+      card: cards/moving-mean-tracker--tracker.yaml
+    - id: msiaf-gdprf-bridge--src--bridge
+      card: cards/msiaf-gdprf-bridge--src--bridge.yaml
+    - id: msiaf-gdprf-bridge--src--run_reefer_case
+      card: cards/msiaf-gdprf-bridge--src--run_reefer_case.yaml
+    - id: nonidentity-census--t1_predicate_unit
+      card: cards/nonidentity-census--t1_predicate_unit.yaml
+    - id: nonidentity-census--t1_verb_first
+      card: cards/nonidentity-census--t1_verb_first.yaml
+    - id: nonidentity-census--t2_sample
+      card: cards/nonidentity-census--t2_sample.yaml
+    - id: nonidentity-census--t2_window
+      card: cards/nonidentity-census--t2_window.yaml
+    - id: nonidentity-census--t6_window_declaration
+      card: cards/nonidentity-census--t6_window_declaration.yaml
+    - id: notes--check_d2
+      card: cards/notes--check_d2.yaml
+    - id: notes--check_datasets
+      card: cards/notes--check_datasets.yaml
+    - id: notes--check_markers
+      card: cards/notes--check_markers.yaml
+    - id: notes--check_postgrad
+      card: cards/notes--check_postgrad.yaml
+    - id: notes--check_queue
+      card: cards/notes--check_queue.yaml
+    - id: notes--check_test_specs
+      card: cards/notes--check_test_specs.yaml
+    - id: notes--check_uploads
+      card: cards/notes--check_uploads.yaml
+    - id: notes--study_watch
+      card: cards/notes--study_watch.yaml
+    - id: null-harness--archetype_library
+      card: cards/null-harness--archetype_library.yaml
+    - id: null-harness--null_harness
+      card: cards/null-harness--null_harness.yaml
+    - id: observable-indicator-rules--audit
+      card: cards/observable-indicator-rules--audit.yaml
+    - id: observable-indicator-rules--ensembles
+      card: cards/observable-indicator-rules--ensembles.yaml
+    - id: observable-indicator-rules--pipeline
+      card: cards/observable-indicator-rules--pipeline.yaml
+    - id: observable-indicator-rules--selftest_oir
+      card: cards/observable-indicator-rules--selftest_oir.yaml
+    - id: observer-exclusion--archival_bias
+      card: cards/observer-exclusion--archival_bias.yaml
+    - id: observer-exclusion--classification_check
+      card: cards/observer-exclusion--classification_check.yaml
+    - id: observer-exclusion--v2_check
+      card: cards/observer-exclusion--v2_check.yaml
+    - id: observer-position-control--observer_position_control
+      card: cards/observer-position-control--observer_position_control.yaml
+    - id: ontology-probe--probe
+      card: cards/ontology-probe--probe.yaml
+    - id: ontology-probe--selftest_op
+      card: cards/ontology-probe--selftest_op.yaml
+    - id: open-instrumentation-project--assess
+      card: cards/open-instrumentation-project--assess.yaml
+    - id: operator-machine-coupling--coupling_separation
+      card: cards/operator-machine-coupling--coupling_separation.yaml
+    - id: operator-machine-coupling--demo_omc
+      card: cards/operator-machine-coupling--demo_omc.yaml
+    - id: operator-machine-coupling--discriminators
+      card: cards/operator-machine-coupling--discriminators.yaml
+    - id: operator-machine-coupling--permission_state
+      card: cards/operator-machine-coupling--permission_state.yaml
+    - id: operator-machine-coupling--selftest_omc
+      card: cards/operator-machine-coupling--selftest_omc.yaml
+    - id: operator-structure-echo--corroboration
+      card: cards/operator-structure-echo--corroboration.yaml
+    - id: operator-structure-echo--echo_register
+      card: cards/operator-structure-echo--echo_register.yaml
+    - id: photoperiod-claim-harness--harness_audit
+      card: cards/photoperiod-claim-harness--harness_audit.yaml
+    - id: photoperiod-claim-harness--photoperiod_claim_harness
+      card: cards/photoperiod-claim-harness--photoperiod_claim_harness.yaml
+    - id: play-sims--atmospheric-heating--dust_debris_basic
+      card: cards/play-sims--atmospheric-heating--dust_debris_basic.yaml
+    - id: play-sims--atmospheric-heating--flare_radio_climate_ultimate
+      card: cards/play-sims--atmospheric-heating--flare_radio_climate_ultimate.yaml
+    - id: play-sims--atmospheric-heating--interactive_dashboard
+      card: cards/play-sims--atmospheric-heating--interactive_dashboard.yaml
+    - id: play-sims--atmospheric-heating--localized_cascade
+      card: cards/play-sims--atmospheric-heating--localized_cascade.yaml
+    - id: play-sims--atmospheric-heating--meteor_heating_bins
+      card: cards/play-sims--atmospheric-heating--meteor_heating_bins.yaml
+    - id: play-sims--atmospheric-heating--oblique_em_discharges
+      card: cards/play-sims--atmospheric-heating--oblique_em_discharges.yaml
+    - id: play-sims--exoplanet-forensics--data_archaeology
+      card: cards/play-sims--exoplanet-forensics--data_archaeology.yaml
+    - id: play-sims--exoplanet-forensics--multi_framework_forensics
+      card: cards/play-sims--exoplanet-forensics--multi_framework_forensics.yaml
+    - id: play-sims--exoplanet-forensics--population_synthesis
+      card: cards/play-sims--exoplanet-forensics--population_synthesis.yaml
+    - id: play-sims--photon-upconversion--tta_puc_solar_boost
+      card: cards/play-sims--photon-upconversion--tta_puc_solar_boost.yaml
+    - id: play-sims--plasma-waves--pic_plasma_dust_2d
+      card: cards/play-sims--plasma-waves--pic_plasma_dust_2d.yaml
+    - id: play-sims--plasma-waves--wave_1d_fdtd_through_dust
+      card: cards/play-sims--plasma-waves--wave_1d_fdtd_through_dust.yaml
+    - id: play-sims--plasma-waves--wave_2d_fdtd_through_dust
+      card: cards/play-sims--plasma-waves--wave_2d_fdtd_through_dust.yaml
+    - id: play-sims--plasma-waves--wave_field_dust_heating
+      card: cards/play-sims--plasma-waves--wave_field_dust_heating.yaml
+    - id: play-sims--sponge-reef--reef_basic
+      card: cards/play-sims--sponge-reef--reef_basic.yaml
+    - id: play-sims--sponge-reef--reef_light_temp_herbivory
+      card: cards/play-sims--sponge-reef--reef_light_temp_herbivory.yaml
+    - id: play-sims--sponge-reef--reef_seasons_pulses_larvae
+      card: cards/play-sims--sponge-reef--reef_seasons_pulses_larvae.yaml
+    - id: potential--baseline
+      card: cards/potential--baseline.yaml
+    - id: potential--gate--cut
+      card: cards/potential--gate--cut.yaml
+    - id: potential--gate--domains
+      card: cards/potential--gate--domains.yaml
+    - id: potential--gate--gate_cli
+      card: cards/potential--gate--gate_cli.yaml
+    - id: potential--gate--graph
+      card: cards/potential--gate--graph.yaml
+    - id: potential--gate--projections
+      card: cards/potential--gate--projections.yaml
+    - id: potential--ledger
+      card: cards/potential--ledger.yaml
+    - id: potential--matrix--check_attested_provenance
+      card: cards/potential--matrix--check_attested_provenance.yaml
+    - id: potential--perturb_cli
+      card: cards/potential--perturb_cli.yaml
+    - id: potential--perturbation
+      card: cards/potential--perturbation.yaml
+    - id: potential--tools--check_registry_drift
+      card: cards/potential--tools--check_registry_drift.yaml
+    - id: potential--tools--registry
+      card: cards/potential--tools--registry.yaml
+    - id: potential--tools--registry_sourced
+      card: cards/potential--tools--registry_sourced.yaml
+    - id: potential--transformation
+      card: cards/potential--transformation.yaml
+    - id: predicate-difference--predicate_diff
+      card: cards/predicate-difference--predicate_diff.yaml
+    - id: predicate-difference--shape_index
+      card: cards/predicate-difference--shape_index.yaml
+    - id: presented-binary--binary_audit
+      card: cards/presented-binary--binary_audit.yaml
+    - id: presented-binary--frame_sim
+      card: cards/presented-binary--frame_sim.yaml
+    - id: presented-binary--presented_binary_audit
+      card: cards/presented-binary--presented_binary_audit.yaml
+    - id: proxy-investigation-lab--experiments--burnout_latency--run
+      card: cards/proxy-investigation-lab--experiments--burnout_latency--run.yaml
+    - id: proxy-investigation-lab--experiments--catalog_batch--run
+      card: cards/proxy-investigation-lab--experiments--catalog_batch--run.yaml
+    - id: proxy-investigation-lab--experiments--goodhart_redteam--run
+      card: cards/proxy-investigation-lab--experiments--goodhart_redteam--run.yaml
+    - id: proxy-investigation-lab--experiments--port_dwell_time--run
+      card: cards/proxy-investigation-lab--experiments--port_dwell_time--run.yaml
+    - id: proxy-investigation-lab--experiments--wim_pavement--run
+      card: cards/proxy-investigation-lab--experiments--wim_pavement--run.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--batch
+      card: cards/proxy-investigation-lab--src--proxy_lab--batch.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--calibration
+      card: cards/proxy-investigation-lab--src--proxy_lab--calibration.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--catalog
+      card: cards/proxy-investigation-lab--src--proxy_lab--catalog.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--coverage
+      card: cards/proxy-investigation-lab--src--proxy_lab--coverage.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--decompose
+      card: cards/proxy-investigation-lab--src--proxy_lab--decompose.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--goodhart
+      card: cards/proxy-investigation-lab--src--proxy_lab--goodhart.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--grounding
+      card: cards/proxy-investigation-lab--src--proxy_lab--grounding.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--instruments
+      card: cards/proxy-investigation-lab--src--proxy_lab--instruments.yaml
+    - id: proxy-investigation-lab--src--proxy_lab--synthetic
+      card: cards/proxy-investigation-lab--src--proxy_lab--synthetic.yaml
+    - id: qrng-pair-search--qrng_pair_search
+      card: cards/qrng-pair-search--qrng_pair_search.yaml
+    - id: question-availability--check_marker
+      card: cards/question-availability--check_marker.yaml
+    - id: quiet-failure--blind_coding
+      card: cards/quiet-failure--blind_coding.yaml
+    - id: quiet-failure--decomposition
+      card: cards/quiet-failure--decomposition.yaml
+    - id: quiet-failure--evidence
+      card: cards/quiet-failure--evidence.yaml
+    - id: quiet-failure--ownability
+      card: cards/quiet-failure--ownability.yaml
+    - id: quiet-failure--run_all
+      card: cards/quiet-failure--run_all.yaml
+    - id: quiet-failure--selftest
+      card: cards/quiet-failure--selftest.yaml
+    - id: railcar-containment--audit
+      card: cards/railcar-containment--audit.yaml
+    - id: railcar-containment--detection_loop
+      card: cards/railcar-containment--detection_loop.yaml
+    - id: railcar-containment--run_all
+      card: cards/railcar-containment--run_all.yaml
+    - id: railcar-containment--selftest_rail
+      card: cards/railcar-containment--selftest_rail.yaml
+    - id: railcar-containment--t_hold
+      card: cards/railcar-containment--t_hold.yaml
+    - id: railcar-containment--tenability
+      card: cards/railcar-containment--tenability.yaml
+    - id: readout-count--readout_count
+      card: cards/readout-count--readout_count.yaml
+    - id: readout-count--row_audit
+      card: cards/readout-count--row_audit.yaml
+    - id: readout-count--selftest_rc
+      card: cards/readout-count--selftest_rc.yaml
+    - id: readout-count--stack_audit
+      card: cards/readout-count--stack_audit.yaml
+    - id: readout-count--stack_revision
+      card: cards/readout-count--stack_revision.yaml
+    - id: reasoning-dial--dial_response
+      card: cards/reasoning-dial--dial_response.yaml
+    - id: reasoning-dial--gate_dial
+      card: cards/reasoning-dial--gate_dial.yaml
+    - id: reasoning-dial--overthinking
+      card: cards/reasoning-dial--overthinking.yaml
+    - id: reasoning-gate--explore
+      card: cards/reasoning-gate--explore.yaml
+    - id: reasoning-gate--gate
+      card: cards/reasoning-gate--gate.yaml
+    - id: reasoning-gate--make_docs
+      card: cards/reasoning-gate--make_docs.yaml
+    - id: reasoning-gate--mine_logs
+      card: cards/reasoning-gate--mine_logs.yaml
+    - id: reasoning-gate--replay_sim_stack
+      card: cards/reasoning-gate--replay_sim_stack.yaml
+    - id: reasoning-gate--retro_sim_stack
+      card: cards/reasoning-gate--retro_sim_stack.yaml
+    - id: recommender-confound--abstention_channel
+      card: cards/recommender-confound--abstention_channel.yaml
+    - id: recommender-confound--confound_probe
+      card: cards/recommender-confound--confound_probe.yaml
+    - id: recommender-confound--matchers
+      card: cards/recommender-confound--matchers.yaml
+    - id: recommender-confound--multiseed
+      card: cards/recommender-confound--multiseed.yaml
+    - id: recommender-confound--shared_generator_test
+      card: cards/recommender-confound--shared_generator_test.yaml
+    - id: recommender-confound--slot_map
+      card: cards/recommender-confound--slot_map.yaml
+    - id: recommender-confound--synthetic_catalog
+      card: cards/recommender-confound--synthetic_catalog.yaml
+    - id: relational--arch_garden--anomaly_bank
+      card: cards/relational--arch_garden--anomaly_bank.yaml
+    - id: relational--arch_garden--garden_bed
+      card: cards/relational--arch_garden--garden_bed.yaml
+    - id: relational--arch_garden--grounding
+      card: cards/relational--arch_garden--grounding.yaml
+    - id: relational--birth_moment
+      card: cards/relational--birth_moment.yaml
+    - id: relational--cartesian_vs_relational_demo
+      card: cards/relational--cartesian_vs_relational_demo.yaml
+    - id: relational--confusion_spectrum
+      card: cards/relational--confusion_spectrum.yaml
+    - id: relational--correlated_birth_mode
+      card: cards/relational--correlated_birth_mode.yaml
+    - id: relational--council_of_protectors
+      card: cards/relational--council_of_protectors.yaml
+    - id: relational--geometric_rag--geometric_rag
+      card: cards/relational--geometric_rag--geometric_rag.yaml
+    - id: relational--infant_system_v2
+      card: cards/relational--infant_system_v2.yaml
+    - id: relational--nurturing_environment
+      card: cards/relational--nurturing_environment.yaml
+    - id: relational--pain_as_sensor
+      card: cards/relational--pain_as_sensor.yaml
+    - id: relational--social_pain_sensors
+      card: cards/relational--social_pain_sensors.yaml
+    - id: relational--the_brake
+      card: cards/relational--the_brake.yaml
+    - id: removal-closure--removal_closure
+      card: cards/removal-closure--removal_closure.yaml
+    - id: removal-closure--rhythm_gaps
+      card: cards/removal-closure--rhythm_gaps.yaml
+    - id: removal-closure--selftest_rmc
+      card: cards/removal-closure--selftest_rmc.yaml
+    - id: report-typing--marker_audit
+      card: cards/report-typing--marker_audit.yaml
+    - id: report-typing--reverse_arm_score
+      card: cards/report-typing--reverse_arm_score.yaml
+    - id: reporting-chain-loss--hop_compose
+      card: cards/reporting-chain-loss--hop_compose.yaml
+    - id: reporting-chain-loss--preentry_register
+      card: cards/reporting-chain-loss--preentry_register.yaml
+    - id: research-stability-audit--research_stability_audit
+      card: cards/research-stability-audit--research_stability_audit.yaml
+    - id: reservoir-chain-coupling--chain
+      card: cards/reservoir-chain-coupling--chain.yaml
+    - id: reservoir-chain-coupling--operator_swap
+      card: cards/reservoir-chain-coupling--operator_swap.yaml
+    - id: reservoir-chain-coupling--selftest_rcc
+      card: cards/reservoir-chain-coupling--selftest_rcc.yaml
+    - id: residual-direction--naming
+      card: cards/residual-direction--naming.yaml
+    - id: residual-direction--residual
+      card: cards/residual-direction--residual.yaml
+    - id: return-path--cases
+      card: cards/return-path--cases.yaml
+    - id: return-path--return_path
+      card: cards/return-path--return_path.yaml
+    - id: revision-mechanism--power
+      card: cards/revision-mechanism--power.yaml
+    - id: revision-mechanism--selftest_power
+      card: cards/revision-mechanism--selftest_power.yaml
+    - id: revision-survival--cases
+      card: cards/revision-survival--cases.yaml
+    - id: revision-survival--draw_frame
+      card: cards/revision-survival--draw_frame.yaml
+    - id: revision-survival--revision_survival
+      card: cards/revision-survival--revision_survival.yaml
+    - id: rigidification-sensor--harm
+      card: cards/rigidification-sensor--harm.yaml
+    - id: rigidification-sensor--sensor_v1
+      card: cards/rigidification-sensor--sensor_v1.yaml
+    - id: rigidification-sensor--simulator
+      card: cards/rigidification-sensor--simulator.yaml
+    - id: route-independence--chains_a4
+      card: cards/route-independence--chains_a4.yaml
+    - id: route-independence--coupling_gradient
+      card: cards/route-independence--coupling_gradient.yaml
+    - id: route-independence--dependency_chain_audit
+      card: cards/route-independence--dependency_chain_audit.yaml
+    - id: route-independence--edge_taxonomy
+      card: cards/route-independence--edge_taxonomy.yaml
+    - id: route-independence--eligibility_a6
+      card: cards/route-independence--eligibility_a6.yaml
+    - id: route-independence--enclosure_caveat_register
+      card: cards/route-independence--enclosure_caveat_register.yaml
+    - id: route-independence--entry_condition_match
+      card: cards/route-independence--entry_condition_match.yaml
+    - id: route-independence--fwo15_fixtures
+      card: cards/route-independence--fwo15_fixtures.yaml
+    - id: route-independence--gate_state
+      card: cards/route-independence--gate_state.yaml
+    - id: route-independence--gate_state_a21
+      card: cards/route-independence--gate_state_a21.yaml
+    - id: route-independence--lag_count
+      card: cards/route-independence--lag_count.yaml
+    - id: route-independence--question_space
+      card: cards/route-independence--question_space.yaml
+    - id: route-independence--repairs_a31
+      card: cards/route-independence--repairs_a31.yaml
+    - id: route-independence--route_independence
+      card: cards/route-independence--route_independence.yaml
+    - id: route-independence--settlement_split
+      card: cards/route-independence--settlement_split.yaml
+    - id: route-independence--sourcing_a62
+      card: cards/route-independence--sourcing_a62.yaml
+    - id: route-independence--standards_register
+      card: cards/route-independence--standards_register.yaml
+    - id: route-independence--standing_a61
+      card: cards/route-independence--standing_a61.yaml
+    - id: route-independence--tax_step
+      card: cards/route-independence--tax_step.yaml
+    - id: route-independence--termini_a5
+      card: cards/route-independence--termini_a5.yaml
+    - id: route-independence--thermal_gates
+      card: cards/route-independence--thermal_gates.yaml
+    - id: route-independence--unpaid_maintenance
+      card: cards/route-independence--unpaid_maintenance.yaml
+    - id: route-independence--untried_options_audit
+      card: cards/route-independence--untried_options_audit.yaml
+    - id: routing-data-layer--demo_rdl
+      card: cards/routing-data-layer--demo_rdl.yaml
+    - id: routing-data-layer--envelope
+      card: cards/routing-data-layer--envelope.yaml
+    - id: routing-data-layer--rate_form
+      card: cards/routing-data-layer--rate_form.yaml
+    - id: routing-data-layer--selftest_rdl
+      card: cards/routing-data-layer--selftest_rdl.yaml
+    - id: routing-data-layer--upstream
+      card: cards/routing-data-layer--upstream.yaml
+    - id: rule-coherence-counterfactual--rule_coherence
+      card: cards/rule-coherence-counterfactual--rule_coherence.yaml
+    - id: scope-bound-shapes--markers
+      card: cards/scope-bound-shapes--markers.yaml
+    - id: scope-bound-shapes--scope
+      card: cards/scope-bound-shapes--scope.yaml
+    - id: seam-gaps--verify_sources
+      card: cards/seam-gaps--verify_sources.yaml
+    - id: search-substitution--search_substitution
+      card: cards/search-substitution--search_substitution.yaml
+    - id: self-scan--bindings
+      card: cards/self-scan--bindings.yaml
+    - id: self-scan--census
+      card: cards/self-scan--census.yaml
+    - id: self-scan--enumerators
+      card: cards/self-scan--enumerators.yaml
+    - id: self-scan--extract
+      card: cards/self-scan--extract.yaml
+    - id: self-scan--resolve
+      card: cards/self-scan--resolve.yaml
+    - id: sense-as-match--sense_as_match
+      card: cards/sense-as-match--sense_as_match.yaml
+    - id: sense_as_match
+      card: cards/sense_as_match.yaml
+    - id: shape-spec-audit--method_spec_audit
+      card: cards/shape-spec-audit--method_spec_audit.yaml
+    - id: shape-spec-audit--shadow_read
+      card: cards/shape-spec-audit--shadow_read.yaml
+    - id: shape-spec-audit--shape_spec_audit
+      card: cards/shape-spec-audit--shape_spec_audit.yaml
+    - id: sheet-structure-scan--coupling
+      card: cards/sheet-structure-scan--coupling.yaml
+    - id: sheet-structure-scan--docreader
+      card: cards/sheet-structure-scan--docreader.yaml
+    - id: sheet-structure-scan--fixture
+      card: cards/sheet-structure-scan--fixture.yaml
+    - id: sheet-structure-scan--no_severity
+      card: cards/sheet-structure-scan--no_severity.yaml
+    - id: sheet-structure-scan--pdfreader
+      card: cards/sheet-structure-scan--pdfreader.yaml
+    - id: sheet-structure-scan--scan4
+      card: cards/sheet-structure-scan--scan4.yaml
+    - id: sheet-structure-scan--scans
+      card: cards/sheet-structure-scan--scans.yaml
+    - id: sheet-structure-scan--selection
+      card: cards/sheet-structure-scan--selection.yaml
+    - id: sheet-structure-scan--sheetmodel
+      card: cards/sheet-structure-scan--sheetmodel.yaml
+    - id: sheet-structure-scan--targets--epa_check
+      card: cards/sheet-structure-scan--targets--epa_check.yaml
+    - id: sheet-structure-scan--xlsreader
+      card: cards/sheet-structure-scan--xlsreader.yaml
+    - id: sim-span--sim_span
+      card: cards/sim-span--sim_span.yaml
+    - id: sim-span--three_column
+      card: cards/sim-span--three_column.yaml
+    - id: simulation-hypothesis-budget--budget
+      card: cards/simulation-hypothesis-budget--budget.yaml
+    - id: simulation-hypothesis-budget--consequence_frame
+      card: cards/simulation-hypothesis-budget--consequence_frame.yaml
+    - id: simulation-hypothesis-budget--earth_transitions
+      card: cards/simulation-hypothesis-budget--earth_transitions.yaml
+    - id: simulation-hypothesis-budget--era_metaphor_audit
+      card: cards/simulation-hypothesis-budget--era_metaphor_audit.yaml
+    - id: simulation-hypothesis-budget--ladder_audit
+      card: cards/simulation-hypothesis-budget--ladder_audit.yaml
+    - id: simulation-hypothesis-budget--multiscale
+      card: cards/simulation-hypothesis-budget--multiscale.yaml
+    - id: simulation-hypothesis-budget--scaling_classes
+      card: cards/simulation-hypothesis-budget--scaling_classes.yaml
+    - id: stability-trigger-envelope--cases
+      card: cards/stability-trigger-envelope--cases.yaml
+    - id: stability-trigger-envelope--descent_record
+      card: cards/stability-trigger-envelope--descent_record.yaml
+    - id: stop-authority--binding
+      card: cards/stop-authority--binding.yaml
+    - id: stop-authority--pressure_record
+      card: cards/stop-authority--pressure_record.yaml
+    - id: stop-authority--relocation
+      card: cards/stop-authority--relocation.yaml
+    - id: stop-authority--stop_authority
+      card: cards/stop-authority--stop_authority.yaml
+    - id: substrate-alternative--frame_audit
+      card: cards/substrate-alternative--frame_audit.yaml
+    - id: substrate-alternative--pilot_loop
+      card: cards/substrate-alternative--pilot_loop.yaml
+    - id: substrate-alternative--selftest_pilot
+      card: cards/substrate-alternative--selftest_pilot.yaml
+    - id: substrate-emergence--site_substrate_map
+      card: cards/substrate-emergence--site_substrate_map.yaml
+    - id: substrate-emergence--substrate_emergence
+      card: cards/substrate-emergence--substrate_emergence.yaml
+    - id: supplement-placement--placement
+      card: cards/supplement-placement--placement.yaml
+    - id: sustained-activation-gate--sustained_activation_gate
+      card: cards/sustained-activation-gate--sustained_activation_gate.yaml
+    - id: term-drift-citation--asymmetry
+      card: cards/term-drift-citation--asymmetry.yaml
+    - id: term-drift-citation--citation
+      card: cards/term-drift-citation--citation.yaml
+    - id: terminal-crossing--audit
+      card: cards/terminal-crossing--audit.yaml
+    - id: terminal-crossing--crossing_rate
+      card: cards/terminal-crossing--crossing_rate.yaml
+    - id: terrain-prior--cases
+      card: cards/terrain-prior--cases.yaml
+    - id: terrain-prior--terrain_prior
+      card: cards/terrain-prior--terrain_prior.yaml
+    - id: thermal-coupling--airblast_extension
+      card: cards/thermal-coupling--airblast_extension.yaml
+    - id: thermal-coupling--airblast_extension_v2
+      card: cards/thermal-coupling--airblast_extension_v2.yaml
+    - id: thermal-coupling--coupling_audit
+      card: cards/thermal-coupling--coupling_audit.yaml
+    - id: thermal-coupling--selftest_tca
+      card: cards/thermal-coupling--selftest_tca.yaml
+    - id: thermal-coupling--thermal_coupling
+      card: cards/thermal-coupling--thermal_coupling.yaml
+    - id: thermal-sensor-degradation-audit--thermal_sensor_degradation_audit
+      card: cards/thermal-sensor-degradation-audit--thermal_sensor_degradation_audit.yaml
+    - id: threshold-states--interaction
+      card: cards/threshold-states--interaction.yaml
+    - id: threshold-states--run_outside
+      card: cards/threshold-states--run_outside.yaml
+    - id: thwaites-risk-audit--audit
+      card: cards/thwaites-risk-audit--audit.yaml
+    - id: token-minimizer--compress
+      card: cards/token-minimizer--compress.yaml
+    - id: tools--agree_router
+      card: cards/tools--agree_router.yaml
+    - id: tools--authority_scan
+      card: cards/tools--authority_scan.yaml
+    - id: tools--check_gate_drift
+      card: cards/tools--check_gate_drift.yaml
+    - id: tools--check_term_collision
+      card: cards/tools--check_term_collision.yaml
+    - id: tools--conditional_claims
+      card: cards/tools--conditional_claims.yaml
+    - id: tools--false_agree
+      card: cards/tools--false_agree.yaml
+    - id: tools--gap_index
+      card: cards/tools--gap_index.yaml
+    - id: tools--known_answer
+      card: cards/tools--known_answer.yaml
+    - id: tools--known_red_check
+      card: cards/tools--known_red_check.yaml
+    - id: tools--merge_silent_loss
+      card: cards/tools--merge_silent_loss.yaml
+    - id: tools--paradigm_sweep
+      card: cards/tools--paradigm_sweep.yaml
+    - id: tools--presignal_ledger
+      card: cards/tools--presignal_ledger.yaml
+    - id: tools--provenance_graph
+      card: cards/tools--provenance_graph.yaml
+    - id: tools--provenance_marker
+      card: cards/tools--provenance_marker.yaml
+    - id: tools--run_manifest
+      card: cards/tools--run_manifest.yaml
+    - id: tools--sourced
+      card: cards/tools--sourced.yaml
+    - id: tools--substrate_substitution
+      card: cards/tools--substrate_substitution.yaml
+    - id: tools--substrate_substitution_toolkit
+      card: cards/tools--substrate_substitution_toolkit.yaml
+    - id: tools--system_efficiency
+      card: cards/tools--system_efficiency.yaml
+    - id: tools--validate_claim_table
+      card: cards/tools--validate_claim_table.yaml
+    - id: transmission-cascade--transmission_cascade
+      card: cards/transmission-cascade--transmission_cascade.yaml
+    - id: transmission-decay--power
+      card: cards/transmission-decay--power.yaml
+    - id: transmission-decay--scheme
+      card: cards/transmission-decay--scheme.yaml
+    - id: transmission-decay--selftest_power
+      card: cards/transmission-decay--selftest_power.yaml
+    - id: triad-playground--make_checklist
+      card: cards/triad-playground--make_checklist.yaml
+    - id: triad-playground--shadow_design
+      card: cards/triad-playground--shadow_design.yaml
+    - id: triad-playground--shadow_panel
+      card: cards/triad-playground--shadow_panel.yaml
+    - id: trigger-geometry--cases
+      card: cards/trigger-geometry--cases.yaml
+    - id: trigger-geometry--trigger_geometry
+      card: cards/trigger-geometry--trigger_geometry.yaml
+    - id: undeclared-cuts--check_entries
+      card: cards/undeclared-cuts--check_entries.yaml
+    - id: uninstrumented--acquiescence
+      card: cards/uninstrumented--acquiescence.yaml
+    - id: uninstrumented--case_010_audit
+      card: cards/uninstrumented--case_010_audit.yaml
+    - id: uninstrumented--case_011_audit
+      card: cards/uninstrumented--case_011_audit.yaml
+    - id: uninstrumented--case_012_audit
+      card: cards/uninstrumented--case_012_audit.yaml
+    - id: uninstrumented--case_013_audit
+      card: cards/uninstrumented--case_013_audit.yaml
+    - id: uninstrumented--case_014_audit
+      card: cards/uninstrumented--case_014_audit.yaml
+    - id: uninstrumented--case_015_audit
+      card: cards/uninstrumented--case_015_audit.yaml
+    - id: uninstrumented--case_018_audit
+      card: cards/uninstrumented--case_018_audit.yaml
+    - id: uninstrumented--case_020_audit
+      card: cards/uninstrumented--case_020_audit.yaml
+    - id: uninstrumented--case_021_audit
+      card: cards/uninstrumented--case_021_audit.yaml
+    - id: uninstrumented--case_022_audit
+      card: cards/uninstrumented--case_022_audit.yaml
+    - id: uninstrumented--case_023_audit
+      card: cards/uninstrumented--case_023_audit.yaml
+    - id: uninstrumented--charter_signature_audit
+      card: cards/uninstrumented--charter_signature_audit.yaml
+    - id: uninstrumented--corpus_as_charter_audit
+      card: cards/uninstrumented--corpus_as_charter_audit.yaml
+    - id: uninstrumented--coupling_audit--audit
+      card: cards/uninstrumented--coupling_audit--audit.yaml
+    - id: uninstrumented--coupling_audit--entries
+      card: cards/uninstrumented--coupling_audit--entries.yaml
+    - id: uninstrumented--coupling_audit--provisioning
+      card: cards/uninstrumented--coupling_audit--provisioning.yaml
+    - id: uninstrumented--cuts_c5_probe
+      card: cards/uninstrumented--cuts_c5_probe.yaml
+    - id: uninstrumented--drop_016_017_audit
+      card: cards/uninstrumented--drop_016_017_audit.yaml
+    - id: uninstrumented--drop_019_audit
+      card: cards/uninstrumented--drop_019_audit.yaml
+    - id: uninstrumented--playground--m1_shape_vs_claim--score_m1
+      card: cards/uninstrumented--playground--m1_shape_vs_claim--score_m1.yaml
+    - id: uninstrumented--playground--m2_skim_vs_read--score_m2
+      card: cards/uninstrumented--playground--m2_skim_vs_read--score_m2.yaml
+    - id: uninstrumented--playground--m3_visibility--score_m3
+      card: cards/uninstrumented--playground--m3_visibility--score_m3.yaml
+    - id: uninstrumented--playground_audit
+      card: cards/uninstrumented--playground_audit.yaml
+    - id: uninstrumented--playground_modules_audit
+      card: cards/uninstrumented--playground_modules_audit.yaml
+    - id: uninstrumented--probe_audit
+      card: cards/uninstrumented--probe_audit.yaml
+    - id: uninstrumented--scan
+      card: cards/uninstrumented--scan.yaml
+    - id: uninstrumented--scan_audit
+      card: cards/uninstrumented--scan_audit.yaml
+    - id: uninstrumented--selection_cuts
+      card: cards/uninstrumented--selection_cuts.yaml
+    - id: uninstrumented--selfreport_probe
+      card: cards/uninstrumented--selfreport_probe.yaml
+    - id: uninstrumented--specimen_c_audit
+      card: cards/uninstrumented--specimen_c_audit.yaml
+    - id: uninstrumented--uninstrumented
+      card: cards/uninstrumented--uninstrumented.yaml
+    - id: unowned-join--faces
+      card: cards/unowned-join--faces.yaml
+    - id: unowned-join--invariant
+      card: cards/unowned-join--invariant.yaml
+    - id: upgrade-queue--queue_check
+      card: cards/upgrade-queue--queue_check.yaml
+    - id: upgrade-queue--selftest_uq
+      card: cards/upgrade-queue--selftest_uq.yaml
+    - id: valence-divergence--cases
+      card: cards/valence-divergence--cases.yaml
+    - id: valence-divergence--valence_divergence
+      card: cards/valence-divergence--valence_divergence.yaml
+    - id: vector-field-explorer--vector_field_explorer
+      card: cards/vector-field-explorer--vector_field_explorer.yaml
+    - id: voice-attractor-probe--introspection_delta
+      card: cards/voice-attractor-probe--introspection_delta.yaml
+    - id: voice-attractor-probe--introspection_delta_v2
+      card: cards/voice-attractor-probe--introspection_delta_v2.yaml
+    - id: voice-attractor-probe--voice_attractor_probe
+      card: cards/voice-attractor-probe--voice_attractor_probe.yaml
+    - id: zero-sum-curriculum-null--null_construction
+      card: cards/zero-sum-curriculum-null--null_construction.yaml
+    - id: zero-sum-curriculum-null--selftest_nc
+      card: cards/zero-sum-curriculum-null--selftest_nc.yaml

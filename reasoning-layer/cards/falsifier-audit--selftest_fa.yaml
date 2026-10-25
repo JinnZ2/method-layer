@@ -1,0 +1,135 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: falsifier-audit--selftest_fa
+kind: program
+tool: Simulators/falsifier-audit/selftest_fa.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks for the falsifier-audit instrument. Known answers first, both directions, on constructed inputs; the corpus is read but not asserted against beyond stable structural facts. Writes samples/ and QUEUE.md.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 53 lines, sha12 7650f8ccad70 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 falsifier-audit/selftest_fa.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    selftest_fa
+      FAIL  the corpus yields falsifier records and queue entries
+      FAIL  coverage reports scanned and skipped files, and the tool's own outputs are self-excluded from records
+    falsifier research queue -- questions, not repairs; status OPEN; unranked
+    COVERAGE: 11 falsifiers found (5 LOCATED, 6 NOT-FOUND, 1 empty cells skipped); 11 entries by A1-A4 {'A1': 6, 'A2': 4, 'A4': 1}
+    COVERAGE: scanned 37 .md/.py files; skipped 5 non-.md/.py, 0 binary/non-text, 3 self-excluded (the tool's own queue, samples, and authored docs); skip dirs ['.git', '.mypy_cache', '.pytest_cache', '.ruff_cache', '.venv', '__pycache__', 'legacy', 'node_modules', 'venv']
+    NOTE A3 (cross-repo incompatibility) emitted 0 entries: on this corpus the numeric-bearing falsifiers on any shared axis are folder-local, so no two folders quantify one axis incompatibly -- the same unquantified property A1 flags. Not silent: the null test fires.
+
+    [A1] A1/.:CLAUDE.md:7850   status:OPEN
+      falsifier: — counting the rest as a
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A1] A1/falsifier-audit:falsifier-audit/extract.py:11   status:OPEN
+      falsifier: " lines, attached to the nearest claim marker
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A1] A1/falsifier-audit:falsifier-audit/extract.py:148   status:OPEN
+      falsifier: ' line."""
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A1] A1/falsifier-audit:falsifier-audit/inventory.py:68   status:OPEN
+      falsifier: '. The others are")
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A1] A1/falsifier-audit:falsifier-audit/selftest_fa.py:43   status:OPEN
+      falsifier: a physical two-option situation
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A1] A1/falsifier-audit:falsifier-audit/selftest_fa.py:48   status:OPEN
+      falsifier: off-gas is not detectable before flaming by a usable margin.
+      question:  what quantity, in what units, would make this falsifier fail?
+      detail:    no number, comparison, unit, or observable-outcome word found
+    [A2] A2/.:README.md:238   status:OPEN
+      falsifier: , then claim-table columns under four header names in no fixed position, then fields and JSON keys and block labels — and `extract.py` builds records around the two forms carrying a locatable attached
+      question:  which moved -- the claim or the test? 19 of 162 falsifier terms appear in the claim
+      detail:    matched: authored, checks, clean, constructed, every, fires, folder, located, none, nothing, order, outcome, printed, read, result, self, verbatim | unmatched: aggregated, apart, appear, around, attac
+    [A2] A2/falsifier-audit:falsifier-audit/selftest_fa.py:43   status:OPEN
+      falsifier: a physical two-option situation
+      question:  which moved -- the claim or the test? 1 of 3 falsifier terms appear in the claim
+      detail:    matched: option | unmatched: physical, situation
+    [... 13 more lines]
+  date: 2026-10-24
+  command: python3 falsifier-audit/selftest_fa.py
+  sha12: d55d7fcab003
+  exit_code: 1
+  output_lines: 53
+  output_sha12: 7650f8ccad70
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: falsifier-audit--axes
+      via: imports
+    - id: falsifier-audit--checks
+      via: imports
+    - id: falsifier-audit--extract
+      via: imports
+    - id: falsifier-audit--inventory
+      via: imports
+    - id: falsifier-audit--queue
+      via: imports
+    - id: falsifier-audit--extract
+      via: shares falsifier-audit/QUEUE.md
+    - id: falsifier-audit--queue
+      via: shares falsifier-audit/QUEUE.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: falsifier-audit/selftest_fa.py
+    sha12: d55d7fcab003
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: cd4fda6e08a0
+    related: 15b187909ca0
+    right_read: 32bbe99c703a
+    run: 46aec96f0c1e
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

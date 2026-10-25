@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: measurement-fork--sweep_check
+kind: program
+tool: Simulators/measurement-fork/sweep_check.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: sweep_check.py -- every probe declares which spec variable it must be run across, and at how many levels.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: measurement-fork/samples/sweep_check.sample.txt"
+    - "run capture: RUN, exit 0, 169 lines, sha12 0ee552bdc065 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 measurement-fork/sweep_check.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nSWEEP: WHICH VARIABLE, AT HOW MANY LEVELS\nsubject: the delivered arms and the newly specified K11-K16\n\n========================================================================\n1  the delivered probes against the new rule\n========================================================================\n  34 probes emitted by the three arms, 17 of them measuring\n  (the widen arm emits design-directed options, not quantities --\n  MF_008 / MF_016 -- so the rule does not apply to it)\n\n  carrying a `sweep` declaration: 17 of 17  (16 swept, 1 point)\n\n  BEFORE THE REPAIR this read 0 of 17, and not because seventeen\n  probes were written badly. quantities.probe() had six fields --\n      arm  id  quantity  protocol  reads  blind_to\n  and `sweep` was not among them, so the rule was not expressible\n  in the schema the arms were written against. One schema gap,\n  not seventeen oversights.\n\n  MF_017 repaired. The field defaults to the spec's regime\n  variable, refuses fewer than 2 levels, and requires a stated\n  reason when a probe declares sweep=None:\n      C07  present-day administration by design. The instrument reads one moment; running it across the regime variable would be a different probe, not this one swept.\n\n  Why it is load-bearing rather than tidy: the spec's own\n  falsifiers are statements about a gradient.\n\n      regime variable declared in the spec: provisioning level\n      open question: confidence accuracy gap\n      open question: act consequence latency\n      open question: response magnitude per perturbation size\n\n  A probe run at one setting of the control parameter cannot\n  participate in a claim about a gradient. So the missing field\n  and MF_010's unreachable falsifier are one gap seen twice.\n\n========================================================================\n2  the newly specified probes against the same rule\n========================================================================\n[... 129 more lines]"
+  date: 2026-10-24
+  command: python3 measurement-fork/sweep_check.py
+  sha12: ed181bcbdf89
+  exit_code: 0
+  output_lines: 169
+  output_sha12: 0ee552bdc065
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: measurement-fork--conventional
+      via: imports
+    - id: measurement-fork--coupling
+      via: imports
+    - id: measurement-fork--quantities
+      via: imports
+    - id: measurement-fork--widen
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: measurement-fork/sweep_check.py
+    sha12: ed181bcbdf89
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: f077e199ded2
+    pick_up_when: 32bbe99c703a
+    purpose: 537e77589d00
+    related: "1070780053e9"
+    right_read: 32bbe99c703a
+    run: b260bef87f10
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

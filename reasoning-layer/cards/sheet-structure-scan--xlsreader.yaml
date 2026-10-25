@@ -1,0 +1,111 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--xlsreader
+kind: program
+tool: Simulators/sheet-structure-scan/xlsreader.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: xlsreader -- legacy .xls (BIFF8) support for work order 6 S1.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: sheet-structure-scan/samples/xlsreader_selftest.sample.txt"
+    - "run capture: RUN, exit 0, 25 lines, sha12 08b235eb5c0b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/xlsreader.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    xlsreader selftest
+      RK integer                                               PASS got=100.0 want=100.0
+      RK integer / 100                                         PASS got=1.0 want=1.0
+      RK negative integer                                      PASS got=-5.0 want=-5.0
+      RK float                                                 PASS got=1.25 want=1.25
+      address is 1-based in both axes                          PASS got='A1' want='A1'
+      column carries past Z                                    PASS got='AA1' want='AA1'
+      a local ref decodes                                      PASS got=([('S', 'A1')], True) want=([('S', 'A1')], True)
+      an area expands to its cells                             PASS got=[('S', 'A1'), ('S', 'A2')] want=[('S', 'A1'), ('S', 'A2')]
+      an unknown token truncates and SAYS so                   PASS got=([], False) want=([], False)
+      an operator does not stop the walk                       PASS got=([('S', 'A1'), ('S', 'A2')], True) want=([('S', 'A1'), ('S', 'A2')], True)
+      a relative ref resolves against its base                 PASS got=(10, 6) want=(10, 6)
+      a negative column delta is a signed byte                 PASS got=(11, 5) want=(11, 5)
+      an absolute row inside a relative ref stays absolute     PASS got=(3, 6) want=(3, 6)
+      a relative AREA decodes rather than being walked past    PASS got=[('S', 'G10'), ('S', 'G11')] want=[('S', 'G10'), ('S', 'G11')]
+      and with no base it says the walk is partial             PASS got=False want=False
+      a 3d ref with no xti map is dropped, not misattributed   PASS got=[] want=[]
+      and resolves with one                                    PASS got=[('T', 'A1')] want=[('T', 'A1')]
+      epoch                                                    PASS got='1970-01-01' want='1970-01-01'
+      a leap day is not skipped                                PASS got='2038-01-01' want='2038-01-01'
+      the target's created date                                PASS got='2008-06-04' want='2008-06-04'
+      2016-05-02 round trip                                    PASS got='2016-05-02' want='2016-05-02'
+      formula text is declared unavailable for xls             PASS got=False want=False
+      and precedents are declared available                    PASS got=True want=True
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/xlsreader.py --selftest
+  sha12: 54ac06b960a3
+  exit_code: 0
+  output_lines: 25
+  output_sha12: 08b235eb5c0b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: sheet-structure-scan--docreader
+      via: imported-by
+    - id: sheet-structure-scan--sheetmodel
+      via: imported-by
+    - id: sheet-structure-scan--sheetmodel
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/xlsreader.py
+    sha12: 54ac06b960a3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 2070dc856481
+    pick_up_when: 32bbe99c703a
+    purpose: 52311fcc679a
+    related: f2a0b44b4eab
+    right_read: 32bbe99c703a
+    run: 5514e2be2169
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

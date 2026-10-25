@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: cross_domain_instrument_matrix
+kind: program
+tool: method-layer/cross_domain_instrument_matrix.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Cross-domain instrument matrix.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 156 lines, sha12 500988970f6f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 cross_domain_instrument_matrix.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    Coverage
+      coverage: 5 modules on disk; 0 with zero rows; 0 not mapped to an instrument name; 5 unrowed cells (not-yet-looked-at, not unmeasured)
+      branch_set                   -> BranchSet
+      frame_probe                  -> frame_probe
+      observer_position_control    -> observer_position_control
+      preference_free_rank         -> preference_free_rank
+      rank_detector                -> rank_detector
+      norow: metrology::measurement system characterization [R]
+      norow: metrology::measurement system characterization [D]
+      norow: metrology::measurement system characterization [P]
+      norow: metrology::metrological traceability chain [T]
+      norow: metrology::metrological traceability chain [V]
+
+    Cross-domain instrument matrix
+
+    Legend:
+      covered       = explicitly represented/measured
+      partial       = some relevant structure, incomplete interface
+      unmeasured    = not established by this instrument
+      contradictory = evidence does not agree
+      norow         = no record in this cell; not yet looked at
+      *             = collision: records in this cell disagree; see collisions()
+
+    aviation safety::safety management / compliance reporting: R=covered D=partial P=covered T=partial V=covered
+    information geometry::coarse-graining / distinguishability analysis: R=covered D=covered P=unmeasured T=covered V=partial
+    method-layer::BranchSet: R=covered D=covered P=partial T=partial V=covered
+    method-layer::frame_probe: R=covered D=covered P=partial T=partial V=covered
+    method-layer::observer_position_control: R=covered D=partial P=partial T=partial V=partial
+    method-layer::preference_free_rank: R=covered D=covered P=partial T=partial V=covered
+    method-layer::rank_detector: R=covered D=covered P=partial T=covered V=covered
+    metrology::measurement system characterization: R=norow D=norow P=norow T=partial V=covered
+    metrology::metrological traceability chain: R=covered D=covered P=covered T=norow V=norow
+    provenance modeling::W3C PROV: R=covered D=unmeasured P=covered T=covered V=unmeasured
+    software testing::metamorphic testing: R=covered D=covered P=partial T=covered V=covered
+    software testing::test oracle: R=covered D=covered P=partial T=partial V=covered
+    systems engineering::requirements verification matrix: R=covered D=covered P=covered T=partial V=covered
+
+    Collisions: 0
+
+    Contradiction scan
+    [... 116 more lines]
+  date: 2026-10-24
+  command: python3 cross_domain_instrument_matrix.py
+  sha12: 775384771f90
+  exit_code: 0
+  output_lines: 156
+  output_sha12: 500988970f6f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: method-layer
+    path: cross_domain_instrument_matrix.py
+    sha12: 775384771f90
+    commit: e9fbfe987b7972f086b362eb23312f8788a995db
+    last_change: 2026-09-08
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: bf5240edf837
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f4be9d240c7a
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

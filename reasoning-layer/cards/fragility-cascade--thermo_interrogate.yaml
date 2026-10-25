@@ -1,0 +1,113 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_interrogate
+kind: program
+tool: Simulators/fragility-cascade/thermo_interrogate.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermo_interrogate.py -- the site interrogation, computed. CC0 / Public Domain.  stdlib-only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_interrogate.sample.txt"
+    - "run capture: RUN, exit 0, 26 lines, sha12 65b3d2c2c526 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_interrogate.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ==============================================================
+    SITE INTERROGATION
+    ==============================================================
+
+    1. what does the land offer?
+         local_stone               20000 kg
+         clay                      10000 kg
+         human_labor              500000 J
+         waste_heat                    0 J
+         soil_bearing           adequate  (reading)
+         buildable from site alone: ['lay_stone_pad']
+
+    2/3. what does the code say?  how old is it?
+         footing_min_500mm: 52y old (enacted 1974)
+            basis: none declared
+            site already meets its stated intent (soil_bearing:adequate) -- mandate is convention, not physics
+
+    5. what external energy is required?
+         physics_optimal             0 J          0 kg
+         code_constrained            0 J          0 kg
+
+    4. waste / unoptimized by not aligning with thermodynamics
+         external energy the code adds over physics: 0 J
+         external matter the code adds over physics: 0 kg
+         extra waste heat: 0 J
+    ==============================================================
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_interrogate.py
+  sha12: a04dc95919c9
+  exit_code: 0
+  output_lines: 26
+  output_sha12: 65b3d2c2c526
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--thermo_assume
+      via: imported-by
+    - id: fragility-cascade--thermo_pipeline_demo
+      via: imported-by
+    - id: fragility-cascade--thermo_explore
+      via: imports
+    - id: fragility-cascade--thermo_pm
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_interrogate.py
+    sha12: a04dc95919c9
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 5d4b674eb300
+    pick_up_when: 32bbe99c703a
+    purpose: d5baab5e9565
+    related: 9e7fb9cf493b
+    right_read: 32bbe99c703a
+    run: 366c2601833f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

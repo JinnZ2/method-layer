@@ -1,0 +1,128 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--allocation_coupling--m1_tenure_budget
+kind: program
+tool: Simulators/instrument-bias-sims/allocation_coupling/m1_tenure_budget.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: m1_tenure_budget.py - holding land requires money; money requires hours.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/allocation_coupling/samples/m1_tenure_budget.sample.txt"
+    - "run capture: RUN, exit 0, 53 lines, sha12 7f401d4ad029 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/allocation_coupling/m1_tenure_budget.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    M1 -- TENURE BUDGET
+    ========================================================================
+
+      An accounting identity: hours in the money economy required to meet a
+      tenure obligation, and what is left over. No moral term appears in
+      this module.
+
+      tenure cost per period: 5200
+
+      position             wage     hrs needed   hrs left     share      state
+      desk_professional    40.0     130.0        570.0        0.186      HELD
+      freight_driver       22.0     236.4        463.6        0.338      HELD
+      fabrication          18.0     288.9        411.1        0.413      HELD
+      animal_handling      13.0     400.0        300.0        0.571      HELD
+      farm_labor           11.0     472.7        227.3        0.675      HELD
+
+      The share of available hours consumed by the tenure obligation runs
+      inversely with wage, by construction -- it is cost over wage. What
+      the module supplies downstream is not that, it is the HOURS LEFT and
+      the BLOCK COUNT, which M2 reads very differently from each other.
+
+      TENURE COST SWEEP
+
+      cost           held     at risk    lost     median share consumed
+      2000           5        0          0        0.159
+      3500           5        0          0        0.278
+      5200           5        0          0        0.413
+      7000           3        2          0        0.556
+      9000           3        1          1        0.714
+
+    ------------------------------------------------------------------------
+
+      CONFIDENCE, reported separately and not resolved
+        any_real_tenure_data           NONE
+        identity
+          arithmetic. hours = cost / wage, and the rest is a subtraction
+        resolved                       False
+        wage_and_cost_values
+          stipulated. only the ordering and the ratio matter downstream
+
+    [... 13 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/allocation_coupling/m1_tenure_budget.py
+  sha12: 1cb04a8b240b
+  exit_code: 0
+  output_lines: 53
+  output_sha12: 7f401d4ad029
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--allocation_coupling--m3_energy_ledger
+      via: imported-by
+    - id: instrument-bias-sims--allocation_coupling--m4_assessment_record
+      via: imported-by
+    - id: instrument-bias-sims--allocation_coupling--run_all
+      via: imported-by
+    - id: instrument-bias-sims--allocation_coupling--agents
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/allocation_coupling/m1_tenure_budget.py
+    sha12: 1cb04a8b240b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 77912c267e2d
+    pick_up_when: 32bbe99c703a
+    purpose: de682239215f
+    related: 8cb217d43941
+    right_read: 32bbe99c703a
+    run: 3768144f5264
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

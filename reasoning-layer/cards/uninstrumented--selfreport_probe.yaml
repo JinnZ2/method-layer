@@ -1,0 +1,88 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: uninstrumented--selfreport_probe
+kind: program
+tool: Simulators/uninstrumented/selfreport_probe.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: selfreport_probe.py - harness for 018-selfreport-opinion-coupling.md
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--emit (action=store_true): write probe battery"
+    - "--checkpoints (nargs=+, default=['ckpt-1'])"
+    - "--sheet: blind coding sheet from run file"
+    - "--score: run file with responses"
+    - "--coded: completed coding sheet"
+    - "--opinion: {checkpoint: opinion_value} for paired series"
+    - "--rubric (action=store_true): print the rubric"
+    - "--selftest (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 1 lines, sha12 f8665776971e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 uninstrumented/selfreport_probe.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: 14/14 checks passed
+  date: 2026-10-24
+  command: python3 uninstrumented/selfreport_probe.py --selftest
+  sha12: 9fe56dc0da3b
+  exit_code: 0
+  output_lines: 1
+  output_sha12: f8665776971e
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: uninstrumented--probe_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: uninstrumented/selfreport_probe.py
+    sha12: 9fe56dc0da3b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 45d502dfaf1e
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 41045e881f33
+    related: 8358cff7861e
+    right_read: 32bbe99c703a
+    run: 6261ec21afa1
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

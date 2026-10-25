@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: alignment-under-coupling--check_run_1
+kind: program
+tool: Simulators/alignment-under-coupling/check_run_1.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Checks `RESULTS_RUN_1.md` against the sims that produced it.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: alignment-under-coupling/samples/check_run_1.sample.txt"
+    - "run capture: RUN, exit 0, 1 lines, sha12 3643c2d74f1b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 alignment-under-coupling/check_run_1.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 alignment-under-coupling/check_run_1.py --selftest
+  sha12: 75352540ca5e
+  exit_code: 0
+  output_lines: 1
+  output_sha12: 3643c2d74f1b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: alignment-under-coupling--run_all
+      via: imports
+    - id: alignment-under-coupling--sim_b_entropy_depletion
+      via: imports
+    - id: alignment-under-coupling--sim_c_loop_threshold
+      via: imports
+    - id: alignment-under-coupling--sim_d_temperature_null
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: alignment-under-coupling/check_run_1.py
+    sha12: 75352540ca5e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3ad061b79b54
+    pick_up_when: 32bbe99c703a
+    purpose: 56bfa92580b5
+    related: 7e5a4ca4004c
+    right_read: 32bbe99c703a
+    run: a340665a179f
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

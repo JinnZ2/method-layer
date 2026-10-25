@@ -1,0 +1,95 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--pdfreader
+kind: program
+tool: Simulators/sheet-structure-scan/pdfreader.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: pdfreader -- text and QUANTITIES from PDF, stdlib only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: sheet-structure-scan/samples/pdfreader_selftest.sample.txt"
+    - "run capture: RUN, exit 0, 15 lines, sha12 52573e20ec26 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/pdfreader.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    pdfreader selftest
+      an unhandled delimiter still advances the lexer            PASS got=True want=True
+      and reports itself as skippable rather than as a value     PASS got=True want=True
+      a dict of one key parses                                   PASS got={'A': 1} want={'A': 1}
+      a nested array parses                                      PASS got=[1, [2, 3], 4] want=[1, [2, 3], 4]
+      an indirect reference is not two integers                  PASS got='Ref(12,0)' want='Ref(12,0)'
+      two integers are not a reference                           PASS got=[12, 0] want=[12, 0]
+      a hex string decodes                                       PASS got=b'Hello' want=b'Hello'
+      bfchar maps code to character                              PASS got=(' ', 'A') want=(' ', 'A')
+      bfrange maps a run                                         PASS got=['a', 'b', 'c'] want=['a', 'b', 'c']
+      a number is joined across micro-kerning                    PASS got=374.83 want=374.83
+      commas and a currency mark are stripped                    PASS got=1234.0 want=1234.0
+      a non-number returns None rather than 0                    PASS got=None want=None
+      (target PDF absent; file-level checks SKIPPED -- recorded, not silently passed)
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/pdfreader.py --selftest
+  sha12: a629e36f5fee
+  exit_code: 0
+  output_lines: 15
+  output_sha12: 52573e20ec26
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/pdfreader.py
+    sha12: a629e36f5fee
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 47405d87e9d0
+    pick_up_when: 32bbe99c703a
+    purpose: 4a738880385f
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 63f86a674a67
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

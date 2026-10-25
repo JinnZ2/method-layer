@@ -1,0 +1,94 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: antifungal-mechanism-sim--temporal_dosing_resistance
+kind: program
+tool: Simulators/antifungal-mechanism-sim/temporal_dosing_resistance.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "temporal_dosing_resistance.py Adds the TIME axis the static scorer collapsed. Two structural results: [1] resistance evolution is a KICKED RELAXOR under a dosing schedule (dose = kick; adaptation between kicks; schedule decides the outcome). [2] antagonism is SEQUENCE-DEPENDENT -> the interaction matrix is NON-COMMUTATIVE: J[i->j] != J[j->i]. (New axis vs the reach/avoid kernel.) CC0. stdlib only.  (combination pharmacology, therapeutic design)"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 15 lines, sha12 7700cbeba94f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 antifungal-mechanism-sim/temporal_dosing_resistance.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    [1] resistance vs dosing schedule (dose = kick):
+    schedule             final_pop   R_frac  outcome
+    simultaneous               461    1.000  survives
+    sequential mono          65749    1.000  survives
+    fast cycling             10938    1.000  survives
+      simultaneous suppresses (escape needs both mutations ~mu^2);
+      sequential mono breeds RAB stepwise (each block sweeps a single-R).
+
+      with collateral sensitivity (RA hypersensitive to B):
+      fast cycling -> final_pop 9352  survives
+
+    [2] sequence-dependent antagonism (non-commutative J):
+      azole -> polyene : kill = 9.4   (ergosterol depleted first, polyene blunted)
+      polyene -> azole : kill = 15.0   (polyene binds first, then azole)
+      J[azole->polyene] != J[polyene->azole]  -> matrix is NON-COMMUTATIVE
+  date: 2026-10-24
+  command: python3 antifungal-mechanism-sim/temporal_dosing_resistance.py
+  sha12: 15be1cda3425
+  exit_code: 0
+  output_lines: 15
+  output_sha12: 7700cbeba94f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - antifungal-mechanism-sim/tests/test_temporal_dosing_resistance.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: antifungal-mechanism-sim/temporal_dosing_resistance.py
+    sha12: 15be1cda3425
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 0bf822a1300f
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: c3b092d6e44c
+    selftest: 65bbe7c0071b
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

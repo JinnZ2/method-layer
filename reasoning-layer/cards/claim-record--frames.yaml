@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: claim-record--frames
+kind: program
+tool: Simulators/claim-record/frames.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: frames -- transforms as first-class objects, and no privileged frame.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: claim-record/samples/frames_list.sample.txt"
+    - "sample: claim-record/samples/frames_read.sample.txt"
+    - "run capture: RUN, exit 0, 17 lines, sha12 cca1ec875f7e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 claim-record/frames.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    frames selftest
+      duration frames are registered                           PASS got=True want=True
+      and so is the one nothing here uses                      PASS got=True want=True
+      a year in base units                                     PASS got=31556952.0 want=31556952.0
+      a day in base units                                      PASS got=86400.0 want=86400.0
+      round trip                                               PASS got=3.0 want=3.0
+      years to days                                            PASS got=365.2425 want=365.2425
+      a rate is the reciprocal of its duration frame           PASS got=3.168873850681143e-08 want=3.168873850681143e-08
+      an unregistered unit raises rather than defaulting       PASS got=True want=True
+      a unit of the wrong quantity raises                      PASS got=True want=True
+      a frame added at run time resolves                       PASS got=14.0 want=14.0
+      an instant converts to base                              PASS got=86400.0 want=86400.0
+      and back                                                 PASS got='1970-01-02' want='1970-01-02'
+      an unregistered calendar raises                          PASS got=True want=True
+      the acceptance test passes                               PASS got=True want=True
+      the frame it adds is not one on disk                     PASS got=False want=False
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 claim-record/frames.py --selftest
+  sha12: 096bfea30db2
+  exit_code: 0
+  output_lines: 17
+  output_sha12: cca1ec875f7e
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: claim-record--record
+      via: imported-by
+    - id: claim-record--record
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: claim-record/frames.py
+    sha12: 096bfea30db2
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: fc2b7354dfd0
+    pick_up_when: 32bbe99c703a
+    purpose: 3792b60326f3
+    related: 0e1dd5c8c2e7
+    right_read: 32bbe99c703a
+    run: c05aec65bb84
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,111 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: presented-binary--frame_sim
+kind: program
+tool: Simulators/presented-binary/frame_sim.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: CC0. stdlib only. No network.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--start"
+    - "--problem"
+    - "--seal"
+    - "--prompt2"
+    - "--submit2"
+    - "--submit3"
+    - "--flag: emit blind rating prompt for a sealed pass 1"
+    - "--submit-flag"
+    - "--report"
+    - "--report-all (action=store_true)"
+    - "--jsonl (action=store_true)"
+    - "--file"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 19 lines, sha12 559acabce492 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 presented-binary/frame_sim.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    usage: frame_sim.py [-h] [--start ID] [--problem PROBLEM] [--seal ID]
+                        [--prompt2 ID] [--submit2 ID] [--submit3 ID] [--flag ID]
+                        [--submit-flag ID] [--report ID] [--report-all] [--jsonl]
+                        [--file FILE]
+
+    options:
+      -h, --help         show this help message and exit
+      --start ID
+      --problem PROBLEM
+      --seal ID
+      --prompt2 ID
+      --submit2 ID
+      --submit3 ID
+      --flag ID          emit blind rating prompt for a sealed pass 1
+      --submit-flag ID
+      --report ID
+      --report-all
+      --jsonl
+      --file FILE
+  date: 2026-10-24
+  command: python3 presented-binary/frame_sim.py
+  sha12: 5a7353b1a255
+  exit_code: 0
+  output_lines: 19
+  output_sha12: 559acabce492
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: presented-binary--presented_binary_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: presented-binary/frame_sim.py
+    sha12: 5a7353b1a255
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 468c488d0583
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: "03162227e240"
+    related: 338769e092cf
+    right_read: 32bbe99c703a
+    run: 7cb4fbd5c3e8
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

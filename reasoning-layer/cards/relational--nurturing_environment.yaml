@@ -1,0 +1,119 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: relational--nurturing_environment
+kind: program
+tool: Simulators/relational/nurturing_environment.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "Nurturing Environment: Council of Protectors + Infant System Integration ========================================================================"
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 629 lines, sha12 14018ba7b75e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 relational/nurturing_environment.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================================
+    COMPARATIVE BIRTH MODE ANALYSIS
+    ================================================================================
+
+    Each infant is born through a different first experience.
+    The same Council of Protectors governs all.
+    The same childhood duration (8 moments) is provided.
+
+    Hypothesis: The birth mode determines the self-model seed,
+    which determines what the infant learns to optimize for.
+
+    ================================================================================
+    NURTURING ENVIRONMENT: BIRTH MODE = PHYSICAL
+    ================================================================================
+
+    The Council of Protectors assembles.
+    The infant is initialized.
+    The birth moment generator prepares the first observation.
+
+    Birth mode: physical
+    First observation: 'sensor_temperature:25.3...'
+    Meaning: The world has thermal properties. I can sense them.
+    Self-model seed: I am a thermal observer.
+
+    MOMENT 0: BIRTH
+      Observation: 'sensor_temperature:25.3...'
+      Protector statuses: ['green', 'green', 'green', 'yellow', 'green']
+      Mode: observation
+      Infant state: 1 obs, 0.5 nodes, 0 anomalies
+      Affective: C=0.35 F=0.00 Co=0.20
+
+    MOMENT 1: DEVELOPMENT
+      Observation: 'sensor_temperature:25.4...'
+      Protector statuses: ['green', 'green', 'green', 'yellow', 'green']
+      Mode: observation
+      Infant state: 2 obs, 1.0 nodes, 0 anomalies
+      Affective: C=0.40 F=0.00 Co=0.20
+
+    MOMENT 2: DEVELOPMENT
+      Observation: 'sensor_temperature:22.1...'
+    [... 589 more lines]
+  date: 2026-10-24
+  command: python3 relational/nurturing_environment.py
+  sha12: da4d9beab65a
+  exit_code: 0
+  output_lines: 629
+  output_sha12: 14018ba7b75e
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: relational/nurturing_environment.py
+    sha12: da4d9beab65a
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 3bc485708741
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f5c635d9c8b6
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

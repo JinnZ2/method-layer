@@ -1,0 +1,84 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: reasoning-dial--dial_response
+kind: program
+tool: Simulators/reasoning-dial/dial_response.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: dial_response.py — the thinking-dial as a measurable dimension, and a check on the numbers a drop about it shipped.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: reasoning-dial/samples/dial_response.sample.txt"
+    - "run capture: RUN, exit 0, 144 lines, sha12 9c34c8aedc0d (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 reasoning-dial/dial_response.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nTHE THINKING DIAL AS A DIMENSION\nA study of a proposed measurement. No reasoning model was run.\nEvery quantity below is generator- or instrument-level.\n\n==========================================================================\n1  the delivered table against its own prose\n==========================================================================\n  Prose: 'For an easy problem the knee is early and the gradient is\n  steep. For a hard problem the knee is later and the gradient is\n  shallower.'\n\n  problem                     D_r   knee (tok)   gradient\n  Easy (pattern match)        0.5           26       0.21\n  Medium (multi-step)         2.0          910       0.06\n  Hard (novel mechanism)      4.0           66       0.12\n\n  knee increasing with D_r, as the prose requires?  False   [26, 910, 66]\n  gradient decreasing with D_r, as the prose requires?  False   [0.21, 0.06, 0.12]\n\n  Neither. The hard problem's knee is 14x EARLIER than the medium\n  problem's, and its gradient is twice as steep. The table and the\n  sentence above it describe opposite behaviours.\n\n==========================================================================\n2  a monotone model gives a monotone knee\n==========================================================================\n  Q(B) logistic in ln B, with mu and s both increasing in D_r --\n  the parameterisation the prose describes.\n\n  problem                     D_r knee_sat (tok)   grad there\n  Easy (pattern match)        0.5           76.3       0.2469\n  Medium (multi-step)         2.0          716.0       0.1235\n  Hard (novel mechanism)      4.0        14170.1       0.0741\n\n  monotone increasing knee?    True\n  monotone decreasing gradient? True\n\n  So the prose is self-consistent and implementable. Whatever\n  produced the delivered table, it was not this.\n[... 104 more lines]"
+  date: 2026-10-24
+  command: python3 reasoning-dial/dial_response.py
+  sha12: 465ebc5f293d
+  exit_code: 0
+  output_lines: 144
+  output_sha12: 9c34c8aedc0d
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: reasoning-dial--gate_dial
+      via: imported-by
+    - id: reasoning-dial--overthinking
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: reasoning-dial/dial_response.py
+    sha12: 465ebc5f293d
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: f914c2b62d86
+    pick_up_when: 32bbe99c703a
+    purpose: 39d97071363a
+    related: dc3b43853a1a
+    right_read: 32bbe99c703a
+    run: 93e95b7d509d
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,404 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reasoning-layer/card.schema.json",
+  "title": "reasoning-layer card",
+  "description": "LAYER 2. One card per layer-3 program (plus the eight shared tools/*.md method documents). AUTHOR fields hold the literal string AUTHOR until Kavik writes them. GENERATED fields are {mark: DRAFT, value, basis} until replaced by a plain value. validate.py honours: type, enum, const, required, properties, additionalProperties, items, minItems, pattern, anyOf, $ref (#/$defs only). check_record: one entry per card per problem run listed in problem_runs.yaml; written by whoever performs the run, never by generate.py.",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "tool",
+    "face_of",
+    "purpose",
+    "forces_step",
+    "pick_up_when",
+    "skip_when",
+    "input",
+    "output",
+    "run",
+    "run_result",
+    "wrong_read",
+    "right_read",
+    "related",
+    "check_record",
+    "status",
+    "integrity",
+    "_provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9._-]+(--[a-z0-9._-]+)*(@(sim|ml))?$"
+    },
+    "kind": {
+      "enum": [
+        "program",
+        "method_document"
+      ]
+    },
+    "tool": {
+      "type": "string",
+      "pattern": "^(Simulators|method-layer)/.+"
+    },
+    "face_of": {
+      "$ref": "#/$defs/author"
+    },
+    "forces_step": {
+      "$ref": "#/$defs/author"
+    },
+    "pick_up_when": {
+      "$ref": "#/$defs/author"
+    },
+    "skip_when": {
+      "$ref": "#/$defs/author"
+    },
+    "wrong_read": {
+      "$ref": "#/$defs/author"
+    },
+    "right_read": {
+      "$ref": "#/$defs/author"
+    },
+    "purpose": {
+      "$ref": "#/$defs/generated"
+    },
+    "input": {
+      "$ref": "#/$defs/generated"
+    },
+    "output": {
+      "$ref": "#/$defs/generated"
+    },
+    "selftest": {
+      "$ref": "#/$defs/generated"
+    },
+    "related": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "mark",
+            "value",
+            "basis"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "mark": {
+              "const": "DRAFT"
+            },
+            "basis": {
+              "type": "string"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/related_item"
+              }
+            }
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "$ref": "#/$defs/related_item"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "run": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "mark",
+            "value",
+            "basis",
+            "safety"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "mark": {
+              "const": "DRAFT"
+            },
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "basis": {
+              "type": "string"
+            },
+            "safety": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "deletes-files",
+                  "network",
+                  "credentials"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      ]
+    },
+    "run_result": {
+      "type": "object",
+      "required": [
+        "status",
+        "captured",
+        "date"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "RUN",
+            "UNRUN",
+            "FAILED"
+          ]
+        },
+        "captured": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "command": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha12": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exit_code": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "output_lines": {
+          "type": "integer"
+        },
+        "output_sha12": {
+          "type": "string"
+        },
+        "sandbox": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "RUN",
+        "UNRUN",
+        "PROPOSED"
+      ]
+    },
+    "integrity": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "repo",
+          "path",
+          "sha12",
+          "commit",
+          "last_change"
+        ],
+        "properties": {
+          "repo": {
+            "enum": [
+              "Simulators",
+              "method-layer"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha12": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{12}$"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "last_change": {
+            "type": "string"
+          },
+          "last_commit": {
+            "type": "string"
+          },
+          "layer3_row": {
+            "enum": [
+              "historical",
+              "new",
+              "changed"
+            ]
+          },
+          "snapshot_bytes": {
+            "enum": [
+              "MATCH",
+              "MISMATCH",
+              "ABSENT",
+              "NOT_CHECKED"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "_provenance": {
+      "type": "object",
+      "required": [
+        "generator",
+        "written"
+      ],
+      "properties": {
+        "generator": {
+          "type": "string"
+        },
+        "layer3_txt_sha256": {
+          "type": "string"
+        },
+        "written": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "check_record": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "run",
+          "checked",
+          "result",
+          "because",
+          "date"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "run": {
+            "type": "string"
+          },
+          "checked": {
+            "enum": [
+              "yes",
+              "no"
+            ]
+          },
+          "result": {
+            "anyOf": [
+              {
+                "enum": [
+                  "picked_up",
+                  "skipped"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "because": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "author": {
+      "description": "Kavik's field. The literal AUTHOR until written; any string or list of strings after.",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "generated": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "mark",
+            "value",
+            "basis"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "mark": {
+              "const": "DRAFT"
+            },
+            "basis": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": [
+            "string",
+            "array",
+            "object",
+            "null"
+          ]
+        }
+      ]
+    },
+    "related_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "via"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "via": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

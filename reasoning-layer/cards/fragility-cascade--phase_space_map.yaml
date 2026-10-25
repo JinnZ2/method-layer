@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--phase_space_map
+kind: program
+tool: Simulators/fragility-cascade/phase_space_map.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: phase_space_map.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/phase_space_map.sample.txt"
+    - "run capture: FAILED, exit 1, 4 lines, sha12 5b0b10aa834e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/phase_space_map.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-hblc55sk/fragility-cascade/phase_space_map.py", line 12, in <module>
+        import matplotlib.pyplot as plt
+    ModuleNotFoundError: No module named 'matplotlib'
+  date: 2026-10-24
+  command: python3 fragility-cascade/phase_space_map.py
+  sha12: e8e2a1df0662
+  exit_code: 1
+  output_lines: 4
+  output_sha12: 5b0b10aa834e
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--explorer
+      via: imported-by
+    - id: fragility-cascade--cascade_network
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/phase_space_map.py
+    sha12: e8e2a1df0662
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 39b35aee7101
+    pick_up_when: 32bbe99c703a
+    purpose: 7dc8ee6c7e68
+    related: 6f733d49c9f1
+    right_read: 32bbe99c703a
+    run: 6dc204132425
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

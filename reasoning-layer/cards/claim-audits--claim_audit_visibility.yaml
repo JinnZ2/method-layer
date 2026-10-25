@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: claim-audits--claim_audit_visibility
+kind: program
+tool: Simulators/claim-audits/claim_audit_visibility.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: claim_audit_visibility.py — audit of the Visibility Protocol document CC0-1.0.  stdlib only.  single file.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: claim-audits/samples/claim_audit_visibility.sample.txt"
+    - "run capture: RUN, exit 0, 47 lines, sha12 ff295955fbd0 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 claim-audits/claim_audit_visibility.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nclaim_audit_visibility.py — audit of the Visibility Protocol document\nCC0-1.0.  stdlib only.  single file.\n\nSame verdict shape as adversarial_corpus.py / claim_audit_spin.py.\n\nSEPARATION FIRST\n    Attribution is marked per claim. K = Kavik's move, M = model overlay.\n    Auditing the overlay as though it were the claim wastes both our time.\n\nVERDICT CODES\n    VERIFIED          source checked, mechanism holds\n    SIGN_BACKWARDS    the quantity is real, the direction of the claim is inverted\n    UNGROUNDED_NUMBER threshold with no derivation, units, or calibration\n    DIMENSIONALLY_VOID the expression is not a quantity\n    GAMEABLE          metric is maximized by doing the opposite of the intent\n    IDENTITY          true but empty — a bookkeeping relation, no predictive content\n    UNVERIFIED        cited source not locatable; absence of evidence, not absence\n    SOUND             holds as stated\n\nid    who  verdict             claim\nV0    M    UNGROUNDED_NUMBER   the metrology layer as a whole (CED, SSC, NS\nV1    M    SIGN_BACKWARDS      diversity is the curvature of the manifold,\nV2    K    GAMEABLE            H^1 > 0 = productive tension = alive; H^1 =\nV3    M    DIMENSIONALLY_VOID  Phi (Exchange Rate) = mutual information acr\nV4    M    UNGROUNDED_NUMBER   CED < 0.05 over 100 queries = collapse immin\nV5    M    IDENTITY            dS/dt = -integral(J.dA) + Sigma as the unive\nV6    M    GAMEABLE            Proof-of-Physical-Cognition: 'you cannot fak\nV7    K    GAMEABLE            the community holds the kill switch / AGI po\nV8    M    SIGN_BACKWARDS      bootstrap: AGI observes 30 days, highest-ent\nV9    K    SIGN_BACKWARDS      Self-Destruct Clause: if the system never fa\nV10   M    VERIFIED            ERBP (Entropy-Reservoir Bregman Projection)\nV11   M    UNVERIFIED          Uniqueness Quotient (Jia, 2026)\nV12   K    SOUND               assumption audit + claim tables + audit-the-\nV13   M    SOUND               consistency vs exploration as a coupled osci\n\n  {'UNGROUNDED_NUMBER': 2, 'SIGN_BACKWARDS': 3, 'GAMEABLE': 3, 'DIMENSIONALLY_VOID': 1, 'IDENTITY': 1, 'VERIFIED': 1, 'UNVERIFIED': 1, 'SOUND': 2}\n  attribution: {'M': 10, 'K': 4}  (K = Kavik, M = model overlay)\n\n  YOUR moves that break: ['V2', 'V7', 'V9']\n[... 7 more lines]"
+  date: 2026-10-24
+  command: python3 claim-audits/claim_audit_visibility.py
+  sha12: 81ec1c79e790
+  exit_code: 0
+  output_lines: 47
+  output_sha12: ff295955fbd0
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: claim-audits/claim_audit_visibility.py
+    sha12: 81ec1c79e790
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 1cae8c81fd90
+    pick_up_when: 32bbe99c703a
+    purpose: 1a5be2f1c795
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 346b607d61aa
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

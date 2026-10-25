@@ -1,0 +1,96 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: route-independence--termini_a5
+kind: program
+tool: Simulators/route-independence/termini_a5.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "AMENDMENT A-5 (2026-09-28): terminus diversity -- are \"independent routes\" branches of one chain?"
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: route-independence/samples/termini_a5.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 8b27da8601dc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 route-independence/termini_a5.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: "library module; run: python3 route-independence/test_chains_a456.py"
+  date: 2026-10-24
+  command: python3 route-independence/termini_a5.py --selftest
+  sha12: 3265c575c704
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 8b27da8601dc
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: route-independence--eligibility_a6
+      via: imported-by
+    - id: route-independence--standing_a61
+      via: imported-by
+    - id: route-independence--chains_a4
+      via: imports
+    - id: route-independence--dependency_chain_audit
+      via: imports
+    - id: route-independence--repairs_a31
+      via: imports
+    - id: route-independence--settlement_split
+      via: imports
+    - id: route-independence--sourcing_a62
+      via: shares route-independence/AMENDMENT_A5_2026-09-28_terminus-diversity.md
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: route-independence/termini_a5.py
+    sha12: 3265c575c704
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-28
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 266ba6d1a2de
+    pick_up_when: 32bbe99c703a
+    purpose: fcb6bdbe7a10
+    related: b6752724c84b
+    right_read: 32bbe99c703a
+    run: a8c8ef7b503e
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

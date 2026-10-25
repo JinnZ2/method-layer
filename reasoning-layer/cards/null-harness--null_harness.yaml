@@ -1,0 +1,110 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: null-harness--null_harness
+kind: program
+tool: Simulators/null-harness/null_harness.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: null_harness.py -- calibrate any gate against known-answer controls. CC0.  stdlib + numpy only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: null-harness/samples/null_harness.sample.txt"
+    - "run capture: RUN, exit 0, 31 lines, sha12 3b42f737170f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 null-harness/null_harness.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ok _t_always_false_is_constant_silent
+    ok _t_always_true_is_constant_fires
+    ok _t_fisher_smin_gate
+    ok _t_real_gate_z2_detector
+    ok _t_sweep_finds_threshold
+    all pass
+
+    ==============================================================================
+    null_harness demo -- calibrating gates against known-answer controls
+    ==============================================================================
+
+    (skipping M2 Gate 1 demo -- energy/modules not importable)
+    gate                              FP      TP     min_amp   verdict
+    ------------------------------------------------------------------
+    always_true_gate               1.000   1.000         n/a   CONSTANT_FIRES  (always says yes; not a gate)
+    always_false_gate              0.000   0.000         n/a   CONSTANT_SILENT (never says yes; not a gate)
+    z2_ols_3sigma                  0.004   1.000         0.2   OK
+    fisher_smin<0.05               0.000   1.000         n/a   OK
+
+    Reading:
+      * always_true / always_false are the two trivial-fail shapes
+        the harness must catch.
+      * z2_ols_3sigma is a proper gate: low FP, high TP, min_amp
+        names the smallest z^2 amplitude it detects at TP ≥ 0.5.
+      * fisher_smin<0.05 discriminates identity from degenerate.
+      * M2_Gate1_EQUIPMENT_NOISE: predicted (from static reading)
+        to be CONSTANT_SILENT because for equal-size halves,
+        res_coarse = mean(mean|first|, mean|second|) equals
+        res_fine = mean|all| by construction, so ratio ≡ 1.
+        The harness verifies the prediction empirically -- if it
+        fires at 0.0 on both controls it is not a gate.
+  date: 2026-10-24
+  command: python3 null-harness/null_harness.py
+  sha12: 1b61aa3487a4
+  exit_code: 0
+  output_lines: 31
+  output_sha12: 3b42f737170f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: null-harness/null_harness.py
+    sha12: 1b61aa3487a4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: bed6f5c891fd
+    pick_up_when: 32bbe99c703a
+    purpose: d7c9a9d6debc
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 668120b13298
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

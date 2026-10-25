@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--legacy--refutation_protocol_v1
+kind: program
+tool: Simulators/fragility-cascade/legacy/refutation_protocol_v1.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: refutation_protocol.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 28 lines, sha12 8e9ca986097f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/legacy/refutation_protocol_v1.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nREFUTATION PROTOCOL — C29 Refutation Loop\n======================================================================\nClaim: The economy requires constant, infinite growth to be healthy/stable.\n  A (anchoring)  = 0.90\n  γ (entropy)    = 0.95\n  ω (drive)      = 0.80\n  Coherens (C)   = 1.069\n  Verdict        : ENTROPIC INVERSION — violates thermodynamics\n  Reasoning      : The claim assumes infinite output from a finite system. This is physically impossible.\n  Recommendation : CORRECT — the claim is a thermodynamic impossibility. Redirect the conversation to first principles.\n\n----------------------------------------------------------------------\nAdditional claims ready for audit:\n  - 'Debt is necessary for economic growth.'\n  - 'AI is a neutral tool that can be used for good or ill.'\n  - 'Technology will solve the climate crisis.'\n  - 'GDP is the best measure of societal well‑being.'\n  - 'Markets are self‑correcting.'\n\n======================================================================\nDESIGN PRINCIPLE:\n  • Any claim can be audited using the same protocol.\n  • The verdict is provisional; refutation is a loop, not a one‑time pass.\n  • Sovereign calibration gives a clear action recommendation.\n  • The door is open for anyone to run this protocol on any claim.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/legacy/refutation_protocol_v1.py
+  sha12: b3ac045c97b4
+  exit_code: 0
+  output_lines: 28
+  output_sha12: 8e9ca986097f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/legacy/refutation_protocol_v1.py
+    sha12: b3ac045c97b4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 6c5cd617c3e6
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2cc06bc624d1
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

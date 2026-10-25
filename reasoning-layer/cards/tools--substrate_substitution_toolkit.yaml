@@ -1,0 +1,79 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: tools--substrate_substitution_toolkit
+kind: program
+tool: Simulators/tools/substrate_substitution_toolkit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: substrate_substitution_toolkit.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 45 lines, sha12 a1ba191b645f (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 tools/substrate_substitution_toolkit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nEVALUATING CLAIM:\n  'Narrative scale_builders amplify substrate survival under disruption.'\n============================================================\n\nPURE_CONSUMER:\n  Substitution:  grass / grasshoppers\n  Transformed:   Narrative scale_builders amplify grass survival under disruption.\n  Reality:       Grasshoppers consume grass. Grass survives without grasshoppers.\n\nCOMMENSAL:\n  Substitution:  whale / remora fish\n  Transformed:   Narrative scale_builders amplify whale survival under disruption.\n  Reality:       Remoras attach to whales for transport. Whales unaffected. Remoras gain reach.\n\nSYMBIOTIC:\n  Substitution:  plant roots / mycorrhizal fungi\n  Transformed:   Narrative scale_builders amplify plant roots survival under disruption.\n  Reality:       Plants give fungi carbon; fungi give plants water and minerals. Both benefit.\n\nREACH_AMPLIFIER:\n  Substitution:  oak tree / acorn-burying squirrel\n  Transformed:   Narrative scale_builders amplify oak tree survival under disruption.\n  Reality:       Squirrels bury acorns far from the parent tree, forgetting some. Trees gain reach.\n\nPARASITIC:\n  Substitution:  host plant / dodder vine\n  Transformed:   Narrative scale_builders amplify host plant survival under disruption.\n  Reality:       Dodder attaches to plants and extracts nutrients. Often kills host.\n\nMUTUALISTIC_SCALE:\n  Substitution:  forest / mycorrhizal network\n  Transformed:   Narrative scale_builders amplify forest survival under disruption.\n  Reality:       Fungal networks connect trees across forest, enabling nutrient sharing, communication, defense signaling.\n\nCASCADING_DYNAMICS:\n  Substitution:  snowshoe hare / lynx\n  Transformed:   Narrative scale_builders amplify snowshoe hare survival under disruption.\n  Reality:       10-year cycles. Lynx booms when hares abundant, crashes when hares decline.\n\n[... 5 more lines]"
+  date: 2026-10-24
+  command: python3 tools/substrate_substitution_toolkit.py
+  sha12: 7851699952cd
+  exit_code: 0
+  output_lines: 45
+  output_sha12: a1ba191b645f
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - tests/test_substrate_substitution_toolkit.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: tools/substrate_substitution_toolkit.py
+    sha12: 7851699952cd
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 8c505b5c78ec
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: d9d1f505ea6a
+    selftest: 6d2b29854e45
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

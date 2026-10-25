@@ -1,0 +1,130 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--allocation_coupling--run_all
+kind: program
+tool: Simulators/instrument-bias-sims/allocation_coupling/run_all.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: run_all.py - S10 runner. Three phases, per-link attribution.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/allocation_coupling/samples/run_all.sample.txt"
+    - "run capture: RUN, exit 0, 138 lines, sha12 cf5d41c395c8 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/allocation_coupling/run_all.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S10 -- ALLOCATION COUPLING (runner)
+    ========================================================================
+
+      AGENTS -- declared before any equation
+
+        holder               works, earns, holds or loses tenure, may observe
+        assessor             scores contribution from available record
+        land                 state changes on a slow clock, readable only by continuous presence
+        not_representable    [BLANK]
+
+        the blank, enumerated (5 parties):
+          prior holders
+            tenure history is a scalar in M1; who held before and under
+            what terms is not represented
+          co-resident household members
+            hours_available is per holder. Anyone whose labour frees or
+            consumes those hours has no term
+          the party setting tenure_cost
+            tenure_cost is an exogenous constant. Nothing in the model
+            determines it, so no incentive running through it can be read
+          non-holders present on the land
+            presence is derived from tenure in M1, so continuous observers
+            without tenure cannot exist in this model at all
+          the land's other couplings
+            land state is a single slow variable. Watershed, neighbours and
+            weather enter only through it
+
+        the spec asked for the blank to be listed explicitly rather than
+        left empty. Five parties are named; the fourth is load-bearing,
+        because deriving presence from tenure makes a continuous observer
+        without tenure unrepresentable, and that is the position most
+        likely to hold the knowledge the model is about
+
+    ------------------------------------------------------------------------
+
+      PHASE 1 -- modules independent, fixed inputs
+
+      position             M1 hrs left  M2 obs       M4 assessed  M3 kcal
+      desk_professional    570.0        1.88         1.74         2018
+      freight_driver       463.6        1.88         0.72         2518
+    [... 98 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/allocation_coupling/run_all.py
+  sha12: ac8d8d31c586
+  exit_code: 0
+  output_lines: 138
+  output_sha12: cf5d41c395c8
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--allocation_coupling--agents
+      via: imports
+    - id: instrument-bias-sims--allocation_coupling--m1_tenure_budget
+      via: imports
+    - id: instrument-bias-sims--allocation_coupling--m2_coupling_readout
+      via: imports
+    - id: instrument-bias-sims--allocation_coupling--m3_energy_ledger
+      via: imports
+    - id: instrument-bias-sims--allocation_coupling--m4_assessment_record
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/allocation_coupling/run_all.py
+    sha12: ac8d8d31c586
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: a90ba73b25e0
+    pick_up_when: 32bbe99c703a
+    purpose: 4114eb448b85
+    related: 925eff5652de
+    right_read: 32bbe99c703a
+    run: 9b1c20b5da30
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--reciprocity_phi_metrics
+kind: program
+tool: Simulators/fragility-cascade/reciprocity_phi_metrics.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: reciprocity_phi_metrics.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/reciprocity_phi_metrics.sample.txt"
+    - "run capture: RUN, exit 0, 38 lines, sha12 077f33f64e65 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/reciprocity_phi_metrics.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nRECIPROCITY-PHI AUDIT — Core Integrity Early Warning System\n======================================================================\nStable core requires:\n  - Reciprocity R ≈ 1.0 (symmetric influence)\n  - Scaling α ≈ φ (1.618)\n  - Kernel projection P ≥ 0.7\n----------------------------------------------------------------------\nSTABLE HISTORY:\n  R: 1.0\n  R_ok: True\n  alpha: 1.4645713239874742\n  alpha_ok: True\n  P: 0.413631213000218\n  P_ok: False\n  integrity: 0.7\n  status: WARNING — Core degrading\n  Flags: Kernel drift: P=0.414 (<0.7)\n\nUNSTABLE HISTORY:\n  R: 1.0\n  R_ok: True\n  alpha: 0.8525969939761655\n  alpha_ok: False\n  P: 0.06265945580368913\n  P_ok: False\n  integrity: 0.4\n  status: ⚠️ COLLAPSE IMMINENT — Core broken\n  Flags: Scaling drift: α=0.853 (φ=1.618), Kernel drift: P=0.063 (<0.7)\n\n======================================================================\nEARLY WARNING SIGNALS (before variance collapses):\n  1. R deviates from 1.0 → asymmetry emerges\n  2. α drifts away from φ → scaling loses self-similarity\n  3. P drops below 0.7 → the core is lost\n  When all three occur, collapse is inevitable.\n======================================================================"
+  date: 2026-10-24
+  command: python3 fragility-cascade/reciprocity_phi_metrics.py
+  sha12: 46bd0313956c
+  exit_code: 0
+  output_lines: 38
+  output_sha12: 077f33f64e65
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/reciprocity_phi_metrics.py
+    sha12: 46bd0313956c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 6ea464cb15e4
+    pick_up_when: 32bbe99c703a
+    purpose: 0c0713544129
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 7e72e3da0c85
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

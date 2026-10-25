@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: open-instrumentation-project--assess
+kind: program
+tool: Simulators/open-instrumentation-project/assess.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: Open Instrumentation Project - Self-Assessment Tool CC0 - Free for All Use, No Attribution Required
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 27 lines, sha12 34ec769dd5de (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 open-instrumentation-project/assess.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: "\nOpen Instrumentation Project -- Self-Assessment Tool\n   CC0 -- Free for All Use, No Attribution Required\n\n\n============================================================\nOpen Instrumentation Project - Self-Assessment\n============================================================\n\nThis tool helps you assess institutional health in your context.\nYour answers are private and never leave your machine.\n\n\n--- S1: Epistemic Exit Velocity ---\n  Where do young people (13-25) in your context get their daily information?\n  Threshold: >60% non-institutional for 6+ months suggests epistemic exit\n\n  Q1: What percentage of young people in your context use institutional sources (school, library, credentialed courses) for their primary daily information?\n  Your answer: Traceback (most recent call last):\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-qgo29d40/open-instrumentation-project/assess.py\", line 303, in <module>\n    main()\n    ~~~~^^\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-qgo29d40/open-instrumentation-project/assess.py\", line 273, in main\n    results = run_assessment()\n  File \"/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-qgo29d40/open-instrumentation-project/assess.py\", line 157, in run_assessment\n    answer = input(f\"  Q{i}: {q}\\n  Your answer: \")\nEOFError: EOF when reading a line"
+  date: 2026-10-24
+  command: python3 open-instrumentation-project/assess.py
+  sha12: 5cc06f80a93b
+  exit_code: 1
+  output_lines: 27
+  output_sha12: 34ec769dd5de
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: open-instrumentation-project/assess.py
+    sha12: 5cc06f80a93b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 94e89626ff4a
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 950a8197c3e7
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

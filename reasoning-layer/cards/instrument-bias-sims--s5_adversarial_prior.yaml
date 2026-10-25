@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--s5_adversarial_prior
+kind: program
+tool: Simulators/instrument-bias-sims/s5_adversarial_prior.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: s5_adversarial_prior.py - does collective computation require competing agents?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/s5_adversarial_prior.sample.txt"
+    - "run capture: RUN, exit 0, 96 lines, sha12 bd07f35d7fcb (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/s5_adversarial_prior.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    S5 -- ADVERSARIAL PRIOR
+    ========================================================================
+
+      1. ONE SUBSTRATE, TWO READOUTS
+
+        generative terms: demand, shared resource
+        (no conflict term and no interest term appear in it)
+
+        CONFLICT     parameter interest asymmetry     value 0.0213
+                     units with stronger interests captured more
+        ALLOCATION   parameter constraint tightness   value 0.0213
+                     units received what the constraint permitted
+
+        same number: True   residual difference: 0.0e+00
+
+        Both readouts return the same number and the same residual. The
+        disagreement is entirely in the noun attached to the parameter.
+
+    ------------------------------------------------------------------------
+
+      2. WHAT WOULD SEPARATE THEM, AND WHETHER IT IS REPORTED
+
+        observable                                     separates  usually reported
+        outcome under removal of the shared constraint yes        no
+        outcome when units are genetically identical   yes        no
+        uptake distribution shape                      no         yes
+        total resource captured                        no         yes
+        response to a resource pulse                   no         yes
+
+        separate: 2 of 5.  separate AND usually reported: 0
+
+        the observables that separate the two readouts are the ones
+        requiring an intervention -- remove the constraint, or hold the
+        genome fixed. The observables usually reported are the ones both
+        readouts predict identically
+
+    ------------------------------------------------------------------------
+
+      3. THE CRITERION AUDIT -- and it runs against the framing
+
+    [... 56 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/s5_adversarial_prior.py
+  sha12: 4701168f8f90
+  exit_code: 0
+  output_lines: 96
+  output_sha12: bd07f35d7fcb
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/s5_adversarial_prior.py
+    sha12: 4701168f8f90
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 18aacd9362b5
+    pick_up_when: 32bbe99c703a
+    purpose: 8e4a0b0f6875
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: fc333461722c
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

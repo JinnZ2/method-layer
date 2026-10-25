@@ -1,0 +1,83 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: zero-sum-curriculum-null--null_construction
+kind: program
+tool: Simulators/zero-sum-curriculum-null/null_construction.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: null_construction -- the delivered NULL CONSTRUCTION read as a structure.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 6b76e51420ef (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 zero-sum-curriculum-null/null_construction.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: null_construction.py has no checks of its own; they live in selftest_nc.py.
+  date: 2026-10-24
+  command: python3 zero-sum-curriculum-null/null_construction.py --selftest
+  sha12: 75d88fd9762f
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 6b76e51420ef
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: zero-sum-curriculum-null--selftest_nc
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: zero-sum-curriculum-null/null_construction.py
+    sha12: 75d88fd9762f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 1757d4e5229b
+    related: fa925950fa28
+    right_read: 32bbe99c703a
+    run: c9608bb8e3c2
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

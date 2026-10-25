@@ -1,0 +1,83 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: measurand-partition--wo2_band_sweep
+kind: program
+tool: Simulators/measurand-partition/wo2_band_sweep.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: wo2_band_sweep -- SWEEP THE OPERATING BAND INSTEAD OF SCORING A POINT.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 2, 1 lines, sha12 0e80680ea48c (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 measurand-partition/wo2_band_sweep.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: wo2_band_sweep.py carries no selftest; run python3 test_partition.py
+  date: 2026-10-24
+  command: python3 measurand-partition/wo2_band_sweep.py --selftest
+  sha12: 5336d9aec7c4
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 0e80680ea48c
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: measurand-partition--common
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: measurand-partition/wo2_band_sweep.py
+    sha12: 5336d9aec7c4
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-18
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 9d496ea84843
+    related: b089419a6464
+    right_read: 32bbe99c703a
+    run: a57d89018544
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

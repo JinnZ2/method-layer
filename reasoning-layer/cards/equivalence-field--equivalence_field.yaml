@@ -1,0 +1,89 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: equivalence-field--equivalence_field
+kind: program
+tool: Simulators/equivalence-field/equivalence_field.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "equivalence_field.py CC0. stdlib-only. phone-buildable. spine: claim_lineage.py"
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: equivalence-field/samples/equivalence_field.sample.txt"
+    - "run capture: RUN, exit 0, 8 lines, sha12 ae4ac1611e6b (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 equivalence-field/equivalence_field.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    == honest reading ==
+    gradient_field: {'capital_per_node': -0.0328, 'ownership_concentration': 1.1111, 'people_per_space': 1.0769}
+    exposed_asymmetry: {'ownership_concentration': 1.1111, 'people_per_space': 1.0769}
+    oddness: True
+    == threat reading (propaganda shape) ==
+    oddness: False
+    breaks (where actor-label does the work): ['capital_per_node', 'ownership_concentration', 'people_per_space']
+    seeded claims: ['E1', 'E2', 'E3']
+  date: 2026-10-24
+  command: python3 equivalence-field/equivalence_field.py
+  sha12: 0a94e41dafa5
+  exit_code: 0
+  output_lines: 8
+  output_sha12: ae4ac1611e6b
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: equivalence-field--claim_lineage
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: equivalence-field/equivalence_field.py
+    sha12: 0a94e41dafa5
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 1a3ebb5474aa
+    pick_up_when: 32bbe99c703a
+    purpose: 1989b5d0c80e
+    related: b12daa2b0de6
+    right_read: 32bbe99c703a
+    run: a9a931fb7a84
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

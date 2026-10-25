@@ -1,0 +1,86 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: enclosure-first-residual--enclosure_first_residual
+kind: program
+tool: Simulators/enclosure-first-residual/enclosure_first_residual.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: enclosure_first_residual -- enter enclosure terms FIRST, measure residual, and only then treat the residual as a trait candidate.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - command (nargs=?, choices=['demo', 'run'])
+    - panel (nargs=?)
+    - "--seed (default=0)"
+    - "--json (action=store_true): print the record as JSON after the text"
+    - "--emit-branch-set: write the F branch set, statuses updated by the run"
+    - "--table-literal (action=store_true): return the order's step-4 table exactly as written (no corrected reading)"
+    - "--selftest (action=store_true)"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 1 lines, sha12 adab7b49a5d5 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 enclosure-first-residual/enclosure_first_residual.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "selftest: PASS (0 checks failed)  method-layer=present"
+  date: 2026-10-24
+  command: python3 enclosure-first-residual/enclosure_first_residual.py --selftest
+  sha12: 2f1737b1a11b
+  exit_code: 0
+  output_lines: 1
+  output_sha12: adab7b49a5d5
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - enclosure-first-residual/tests/test_enclosure_first_residual.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: enclosure-first-residual/enclosure_first_residual.py
+    sha12: 2f1737b1a11b
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-23
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: e1fe8f2f8b48
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 2dbd7a5a62e6
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 136427671a44
+    selftest: a88d50fd8b81
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

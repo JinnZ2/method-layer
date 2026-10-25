@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: cooperative-substrate-proof--selftest
+kind: program
+tool: Simulators/cooperative-substrate-proof/selftest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: cooperative-substrate-proof/samples/selftest.sample.txt"
+    - "run capture: FAILED, exit 1, 6 lines, sha12 b9322ce57a95 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 cooperative-substrate-proof/selftest.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    scope: C1-C4 coding pass
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-qozx5prc/cooperative-substrate-proof/selftest.py", line 40, in <module>
+        check("all PRESENT -> ADMISSIBLE", scope.code_case(ok)["state"] == "ADMISSIBLE")
+                                           ^^^^^^^^^^^^^^^
+    AttributeError: module 'scope' has no attribute 'code_case'
+  date: 2026-10-24
+  command: python3 cooperative-substrate-proof/selftest.py
+  sha12: 831fa260d357
+  exit_code: 1
+  output_lines: 6
+  output_sha12: b9322ce57a95
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: cooperative-substrate-proof--p1_dependency_records
+      via: imports
+    - id: cooperative-substrate-proof--p2_substrate
+      via: imports
+    - id: cooperative-substrate-proof--p3_comprehension
+      via: imports
+    - id: cooperative-substrate-proof--p4_goal_coherence
+      via: imports
+    - id: cooperative-substrate-proof--p5_lag_declaration
+      via: imports
+    - id: cooperative-substrate-proof--run_all
+      via: imports
+    - id: cooperative-substrate-proof--scope
+      via: imports
+    - id: archive--cooperative-substrate-proof--selftest
+      via: same-bytes
+    - id: cooperative-substrate-proof--p1_dependency_records
+      via: selftest-of
+    - id: cooperative-substrate-proof--p1_records
+      via: selftest-of
+    - id: cooperative-substrate-proof--p2_substrate
+      via: selftest-of
+    - id: cooperative-substrate-proof--p3_comprehension
+      via: selftest-of
+    - id: cooperative-substrate-proof--p4_coherence
+      via: selftest-of
+    - id: cooperative-substrate-proof--p4_goal_coherence
+      via: selftest-of
+    - id: cooperative-substrate-proof--p5_lag
+      via: selftest-of
+    - id: cooperative-substrate-proof--p5_lag_declaration
+      via: selftest-of
+    - id: cooperative-substrate-proof--run_all
+      via: selftest-of
+    - id: cooperative-substrate-proof--scope
+      via: selftest-of
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: cooperative-substrate-proof/selftest.py
+    sha12: 831fa260d357
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-19
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: c90169e96d82
+    pick_up_when: 32bbe99c703a
+    purpose: e4986494016c
+    related: 04321f45e6bb
+    right_read: 32bbe99c703a
+    run: 0837ebd7f8e0
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

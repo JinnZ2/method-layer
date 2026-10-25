@@ -1,0 +1,106 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: earth_economics--comparative_economics_audit--run
+kind: program
+tool: Simulators/earth_economics/comparative_economics_audit/run.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: comparative_economics_audit/run.py – Load scenarios, compute profiles, detect anomalies. CC0. Stdlib only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--scenario"
+    - "--compare (choices=['all'])"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: FAILED, exit 1, 23 lines, sha12 72e5d0a41a54 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 earth_economics/comparative_economics_audit/run.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: FAILED
+  captured: |-
+    Traceback (most recent call last):
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-69s1y_x4/earth_economics/comparative_economics_audit/run.py", line 105, in <module>
+        main()
+        ~~~~^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-69s1y_x4/earth_economics/comparative_economics_audit/run.py", line 102, in main
+        compare_all()
+        ~~~~~~~~~~~^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-69s1y_x4/earth_economics/comparative_economics_audit/run.py", line 38, in compare_all
+        profiles = {name: load_scenario(name) for name in scenarios}
+                          ~~~~~~~~~~~~~^^^^^^
+      File "/tmp/reasoning-layer-run-d_hf8xh5/homes/rl-run-69s1y_x4/earth_economics/comparative_economics_audit/run.py", line 24, in load_scenario
+        mod = importlib.import_module(f"scenarios.{name}")
+      File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+        return _bootstrap._gcd_import(name[level:], package, level)
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "<frozen importlib._bootstrap>", line 1404, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1369, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 1312, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+      File "<frozen importlib._bootstrap>", line 1404, in _gcd_import
+      File "<frozen importlib._bootstrap>", line 1369, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 1333, in _find_and_load_unlocked
+    ModuleNotFoundError: No module named 'scenarios'
+  date: 2026-10-24
+  command: python3 earth_economics/comparative_economics_audit/run.py
+  sha12: 52cde5b3dc66
+  exit_code: 1
+  output_lines: 23
+  output_sha12: 72e5d0a41a54
+  sandbox: netns+nobody
+  reason: exit 1
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: earth_economics--comparative_economics_audit--system_profile
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: earth_economics/comparative_economics_audit/run.py
+    sha12: 52cde5b3dc66
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 3fd2fbbf0c58
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 38dd00d477ef
+    related: 5d1145190573
+    right_read: 32bbe99c703a
+    run: 4db9fa78b8ee
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

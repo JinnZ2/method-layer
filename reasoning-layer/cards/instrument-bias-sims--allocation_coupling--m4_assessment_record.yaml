@@ -1,0 +1,124 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--allocation_coupling--m4_assessment_record
+kind: program
+tool: Simulators/instrument-bias-sims/allocation_coupling/m4_assessment_record.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: m4_assessment_record.py - contribution scored from the written record.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/allocation_coupling/samples/m4_assessment_record.sample.txt"
+    - "run capture: RUN, exit 0, 117 lines, sha12 c82f707d7d16 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/allocation_coupling/m4_assessment_record.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    M4 -- ASSESSMENT RECORD
+    ========================================================================
+
+      writing_probability is imported from S9, not re-derived. The assessor
+      reads a record, not a place.
+
+      position             generated    p(write)       recorded       ratio
+      desk_professional    40.0         0.9298         37.19          0.9298
+      freight_driver       90.0         0.3823         34.40          0.3823
+      fabrication          95.0         0.3705         35.20          0.3705
+      animal_handling      120.0        0.1809         21.71          0.1809
+      farm_labor           130.0        0.1483         19.28          0.1483
+
+      B1 -- IS THE ANTI-CORRELATION MEASURED OR TYPED IN?
+
+        p_write reads the same inputs as generation : False
+        high-generation positions                   : animal_handling, farm_labor
+        of those, also high p_write                 : NONE
+        max p_write among them                      : 0.181
+        verdict                                     : CONSTRAINT, not a correlation
+
+        p_write is a function of supply assumption, station distance and
+        reward. Generation is a function of wage and block count. Different
+        inputs, so this is not the S4 rank-dictionary defect -- but both
+        dictionaries were hand-assigned in one ordering, so no row is high
+        on both and the anti-correlation was assembled rather than measured
+
+    ------------------------------------------------------------------------
+
+      correlation with generated observations : -0.853
+      correlation with writing probability    : +0.771
+      correlation, generation vs writing prob  : -0.987
+      the returned gradient: INVERTS generation
+      generation and writing separable here    : False
+
+      The positions generating the MOST observations are assessed LOWEST.
+      That is stronger than the spec's prediction: not a merit gradient
+      that is really a writing-time gradient, but an INVERTED merit
+      gradient. The assessor is doing nothing wrong on its own terms -- it
+      reads the record it has.
+    [... 77 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/allocation_coupling/m4_assessment_record.py
+  sha12: 20a36ff51f3e
+  exit_code: 0
+  output_lines: 117
+  output_sha12: c82f707d7d16
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--allocation_coupling--run_all
+      via: imported-by
+    - id: instrument-bias-sims--allocation_coupling--m1_tenure_budget
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/allocation_coupling/m4_assessment_record.py
+    sha12: 20a36ff51f3e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: ed2eab466f34
+    pick_up_when: 32bbe99c703a
+    purpose: 014eef3dedc0
+    related: 080906e3b6bf
+    right_read: 32bbe99c703a
+    run: 1742d0a6fbba
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

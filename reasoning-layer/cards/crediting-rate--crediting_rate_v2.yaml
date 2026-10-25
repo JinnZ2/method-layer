@@ -1,0 +1,102 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: crediting-rate--crediting_rate_v2
+kind: program
+tool: Simulators/crediting-rate/crediting_rate_v2.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: crediting_rate_v2.py -- DISPATCH L, revision 2. CC0, stdlib only, 3.9.
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 18 lines, sha12 bb92df701998 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 crediting-rate/crediting_rate_v2.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    -- F1..F5: the planted faults fire
+    -- the second frame-asymmetry reading, which the order implies and does not state
+    -- absent is not false, and absent is not zero
+    -- position is UNDEFINED, never a midpoint, when the outer bins do not separate
+    -- outer_gap distinguishes an empty bin from a measured zero
+    -- the blind moved to the item name, and it is a file rule
+    -- ambiguous is a bin and never an assignment
+    -- the sentence splitter, and the direction of its failure
+    -- the alias list is the one judgement inside the mechanical measure
+    -- nulls and gates are reachable in both directions
+    -- the path-length control, the second null with more than one stratum
+    -- the splitter failure is measured, and it lands on one antiquity band
+    -- the return set is closed and every member is reachable here
+    -- the frame is a parameter and an undeclared one blocks
+    -- determinism
+    -- the prediction file gates the run
+
+    crediting_rate_v2 selftest: checks: 55   failed: 0
+  date: 2026-10-24
+  command: python3 crediting-rate/crediting_rate_v2.py --selftest
+  sha12: bfc3c3b0bca3
+  exit_code: 0
+  output_lines: 18
+  output_sha12: bb92df701998
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: crediting-rate--crediting_rate
+      via: imports
+    - id: crediting-rate--crediting_rate
+      via: shares crediting-rate/frame.json
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: crediting-rate/crediting_rate_v2.py
+    sha12: bfc3c3b0bca3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-10-05
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: bed661dd0257
+    related: 895aa018bc9d
+    right_read: 32bbe99c703a
+    run: 5b4d751e9d1f
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

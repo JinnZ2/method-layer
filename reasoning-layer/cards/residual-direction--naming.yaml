@@ -1,0 +1,99 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: residual-direction--naming
+kind: program
+tool: Simulators/residual-direction/naming.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: naming -- S6 of the work order, enforced rather than remembered.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - reads sys.argv by index
+  basis: sys.argv subscript in source
+output:
+  mark: DRAFT
+  value:
+    - "sample: residual-direction/samples/naming_scan.sample.txt"
+    - "run capture: RUN, exit 0, 17 lines, sha12 a84d4242a360 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 residual-direction/naming.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    naming selftest
+      the phrase with ' ' is caught                              PASS got=False want=False
+      the phrase with '-' is caught                              PASS got=False want=False
+      the phrase with '_' is caught                              PASS got=False want=False
+      the -ed form is caught                                     PASS got=False want=False
+      the de- form is caught                                     PASS got=False want=False
+      'residual adjustment' passes                               PASS got=True want=True
+      'adjusted / unadjusted' passes                             PASS got=True want=True
+      the field names S5 requires pass                           PASS got=True want=True
+      the bare word 'correction' passes                          PASS got=True want=True
+      the bare word for a lean passes                            PASS got=True want=True
+      'biases' is not the phrase                                 PASS got=True want=True
+      'incorrect' is not the phrase                              PASS got=True want=True
+      the tool is clean, with the specification excluded         PASS got=[] want=[]
+      and the specification is the ONLY file that fires without it PASS got=['WORK_ORDER.md'] want=['WORK_ORDER.md']
+      this file was itself scanned and is not exempt             PASS got=False want=False
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 residual-direction/naming.py --selftest
+  sha12: 56becef4c340
+  exit_code: 0
+  output_lines: 17
+  output_sha12: a84d4242a360
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: residual-direction--residual
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: residual-direction/naming.py
+    sha12: 56becef4c340
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: b1cf2e3a2063
+    output: 59b768f26dfb
+    pick_up_when: 32bbe99c703a
+    purpose: 935037d881d3
+    related: ffc9dd9c3d35
+    right_read: 32bbe99c703a
+    run: 6097ba7b5abc
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

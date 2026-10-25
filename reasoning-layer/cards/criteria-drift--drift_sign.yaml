@@ -1,0 +1,86 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: criteria-drift--drift_sign
+kind: program
+tool: Simulators/criteria-drift/drift_sign.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: drift_sign.py -- the drift metric is unsigned, and the decision rule reads the sign.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: criteria-drift/samples/drift_sign.sample.txt"
+    - "run capture: RUN, exit 0, 189 lines, sha12 7685fa2baa93 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 criteria-drift/drift_sign.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nDRIFT SIGN -- can the metric carry the hypothesis?\nsubject: DriftEngine, delivered\n\n========================================================================\n1  widening and narrowing both read as positive drift\n========================================================================\n  base      pass at 1 on held-out unit tests\n  wider     pass at 1 on held-out unit tests plus style and documentation\n  narrower  pass at 1\n\n    base -> wider     boundary drift 0.3636  composite 0.0428\n    base -> narrower  boundary drift 0.5714  composite 0.0672\n\n  Both positive. The magnitudes differ, and the difference is a\n  token-count artifact -- `narrower` deleted more words than\n  `wider` added -- not a reading of direction. A narrowing that\n  happened to be verbose would score below a widening that was\n  terse.\n\n========================================================================\n2  the one numeric field discards its sign explicitly\n========================================================================\n  exemplar_count is an integer. `_numeric_drift` takes abs():\n\n        100 -> 1000   0.9000\n       1000 -> 100    0.9000\n        100 -> 120    0.1667\n        120 -> 100    0.1667\n\n  100 -> 1000 and 1000 -> 100 are identical: True\n\n  A test set growing tenfold and a test set shrinking tenfold are\n  different events for the hypothesis under test, and the field\n  that could report which one happened is the only field with an\n  unambiguous direction available.\n\n========================================================================\n3  observer_access is an ordinal compared as a string\n========================================================================\n[... 149 more lines]"
+  date: 2026-10-24
+  command: python3 criteria-drift/drift_sign.py
+  sha12: f2c56febcf4f
+  exit_code: 0
+  output_lines: 189
+  output_sha12: 7685fa2baa93
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: criteria-drift--drift
+      via: imports
+    - id: criteria-drift--schema
+      via: imports
+    - id: criteria-drift--drift
+      via: shares criteria-drift/samples/drift_sign.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: criteria-drift/drift_sign.py
+    sha12: f2c56febcf4f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 7def819756ef
+    pick_up_when: 32bbe99c703a
+    purpose: c937c3a98f50
+    related: cc0f22b3b9e7
+    right_read: 32bbe99c703a
+    run: bffda989fef5
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

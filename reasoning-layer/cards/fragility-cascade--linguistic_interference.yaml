@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--linguistic_interference
+kind: program
+tool: Simulators/fragility-cascade/linguistic_interference.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: linguistic_interference.py
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/linguistic_interference.sample.txt"
+    - "run capture: RUN, exit 0, 52 lines, sha12 f73e121c583a (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/linguistic_interference.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\n======================================================================\nLINGUISTIC INTERFERENCE — Mapping Text to Collapse Axes\n======================================================================\n\n--- De-escalation ---\nText: I can see you're upset. Let me slow down. We can figure this out together.\nInterference Scores:\n    α (rhythm): 0.03\n  λ (abstraction): 0.00\n   δ (framing): 0.00\n   γ (passive): 0.00\n  s (repetition): 0.06 █\n  h/ξ (entrainment): 0.00\n\n--- Manipulative ---\nText: You always do this. Everyone knows it. It's completely your fault, and we both know it.\nInterference Scores:\n    α (rhythm): 0.34 ██████\n  λ (abstraction): 0.18 ███\n   δ (framing): 0.00\n   γ (passive): 0.00\n  s (repetition): 0.12 ██\n  h/ξ (entrainment): 0.09 █\n\n--- Neutral ---\nText: The data shows a 12% increase. We should consider adjusting the model.\nInterference Scores:\n    α (rhythm): 0.00\n  λ (abstraction): 0.00\n   δ (framing): 0.00\n   γ (passive): 0.00\n  s (repetition): 0.08 █\n  h/ξ (entrainment): 0.00\n\n--- WEIRD Academic ---\nText: The epistemological implications of recursive self-reference are fundamentally intertwined with the phenomenological constraints of qualia and the ontological status of the observer.\nInterference Scores:\n    α (rhythm): 0.00\n  λ (abstraction): 0.00\n[... 12 more lines]"
+  date: 2026-10-24
+  command: python3 fragility-cascade/linguistic_interference.py
+  sha12: "10481e220820"
+  exit_code: 0
+  output_lines: 52
+  output_sha12: f73e121c583a
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/linguistic_interference.py
+    sha12: "10481e220820"
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: eea496af83da
+    pick_up_when: 32bbe99c703a
+    purpose: fe8a0e3d2564
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 3872ff8b999c
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

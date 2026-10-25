@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: search-substitution--search_substitution
+kind: program
+tool: Simulators/search-substitution/search_substitution.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: SEARCH SUBSTITUTION Three organisms that produce an answer without searching for it, priced against the search they do not perform. Stdlib only. CC0.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - "--sources (action=store_true): print where each figure came from"
+    - "--selftest (action=store_true): run internal checks"
+  basis: argparse calls in source
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 25 lines, sha12 95d9e1a63f8e (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 search-substitution/search_substitution.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: "  ok    2**k crosses at 399\n  ok    3**k crosses at 252\n  ok    N**2 crosses at 1e60\n  ok    N**3 crosses at 1e40\n  ok    crossover is the FIRST integer over the ceiling\n  ok    3**k crossover is tight\n  ok    base must exceed 1\n  ok    steiner DP is 3**k\n  ok    steiner DP at 36 terminals exceeds 1e17\n  ok    occupancy carries no terminal term\n  ok    occupancy rejects a zero arena\n  ok    search recovery averages (sites+1)/2 per cache\n  ok    memory recovery is one probe per cache\n  ok    memory beats search at these magnitudes\n  ok    ledger is caches times bits\n  ok    100 mm gives ~68 us offset\n  ok    offset and range invert\n  ok    range scales linearly with offset\n  ok    grid cells grow as the cube of resolution\n  ok    grid rejects a zero resolution\n  ok    every source carries a citation\n  ok    species caveat is carried in the sources\n  ok    platypus range is flagged as a model\n\nselftest 23/23"
+  date: 2026-10-24
+  command: python3 search-substitution/search_substitution.py --selftest
+  sha12: 5c12443d20ef
+  exit_code: 0
+  output_lines: 25
+  output_sha12: 95d9e1a63f8e
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: search-substitution/search_substitution.py
+    sha12: 5c12443d20ef
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 4e5a4c95f96a
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 066c4382642a
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 57cab753bf39
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

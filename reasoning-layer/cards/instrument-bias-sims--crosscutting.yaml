@@ -1,0 +1,122 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: instrument-bias-sims--crosscutting
+kind: program
+tool: Simulators/instrument-bias-sims/crosscutting.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: crosscutting.py - the work order's four cross-cutting rules, enforced over the sims rather than stated in a README.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: instrument-bias-sims/samples/crosscutting.sample.txt"
+    - "run capture: RUN, exit 0, 42 lines, sha12 52b1a53fdae0 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 instrument-bias-sims/crosscutting.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    CROSS-CUTTING RULES, ENFORCED
+    ========================================================================
+
+      module                           r1 data  r2 out   r3 readouts r5 signed
+      s1_encounter_denominator         pass     pass     pass        pass
+      s2_symmetric_anchor              pass     pass     pass        pass
+      s3_rubric_backcast               pass     pass     pass        pass
+      s4_antler_calibration            pass     pass     pass        pass
+      s5_adversarial_prior             pass     pass     pass        pass
+      s6_foreclosure_rate              pass     pass     pass        pass
+      s7_hardship_threshold            pass     pass     pass        pass
+      s8_recognition_to_delivery       pass     pass     pass        pass
+      s9_corpus_position_filter        pass     pass     pass        pass
+      m1_tenure_budget                 pass     pass     pass        pass
+      m2_coupling_readout              pass     pass     pass        pass
+      m3_energy_ledger                 pass     pass     pass        pass
+      m4_assessment_record             pass     pass     pass        pass
+      run_all                          pass     pass     pass        pass
+      excluded_subject                 pass     pass     pass        pass
+
+      r4 README: pass
+      all rules pass: True
+
+      s7_hardship_threshold uses graded terms: incentive direction, cost asymmetry, steers, aggregate steers
+      excluded_subject uses graded terms: cost asymmetry
+
+    ------------------------------------------------------------------------
+
+      THE CHECKER, NULL-TESTED ON A PLANTED VIOLATION
+        planted_moral_caught             True
+        planted_intent_caught            True
+        planted_confidence_caught        True
+        planted_abs_comparison_caught    True
+
+        a keyword scan is stepped around by any paraphrase. A PASS on rules
+        1 and 2 means no listed token was found, not that the rule holds
+
+        A rule stated in a README and never checked is a rule that drifts.
+        Rules 1 and 2 are scanned, which is a floor. Rules 3 and 4 are
+        structural and are actually enforced: a module without a separate
+    [... 2 more lines]
+  date: 2026-10-24
+  command: python3 instrument-bias-sims/crosscutting.py
+  sha12: 917adb15e58f
+  exit_code: 0
+  output_lines: 42
+  output_sha12: 52b1a53fdae0
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: instrument-bias-sims--_shared
+      via: imports
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: instrument-bias-sims/crosscutting.py
+    sha12: 917adb15e58f
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3c72bf760c40
+    pick_up_when: 32bbe99c703a
+    purpose: 10979307522e
+    related: 5b2bcb6530bb
+    right_read: 32bbe99c703a
+    run: 32c780816840
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

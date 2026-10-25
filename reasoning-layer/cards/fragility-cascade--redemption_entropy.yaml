@@ -1,0 +1,92 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--redemption_entropy
+kind: program
+tool: Simulators/fragility-cascade/redemption_entropy.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: redemption_entropy.py -------------------- How redeemable is a token, period by period, given a chain of L gates that can each say "no"?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/redemption_entropy.sample.txt"
+    - "sample: fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt"
+    - "run capture: RUN, exit 0, 10 lines, sha12 b7550ac1b3a7 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/redemption_entropy.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    chain              L   indep   common  blackout%
+    ----------------------------------------------------
+    oil (possession)   1   0.999   0.999      0.1
+    compute_token      4   0.960   0.815     18.5
+    ai_token           6   0.886   0.602     39.8
+    resource_token    11   0.800   0.482     51.8
+
+    Read the gap between indep and common: that column is the lie in every
+    '99.9% uptime' promise. Independence is the marketing model. Correlation
+    is the physics. A barrel in your hand has L=1 and no shared shock.
+  date: 2026-10-24
+  command: python3 fragility-cascade/redemption_entropy.py
+  sha12: bf4dd732a5f3
+  exit_code: 0
+  output_lines: 10
+  output_sha12: b7550ac1b3a7
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: fragility-cascade--redemption_entropy_peak_hour
+      via: shares fragility-cascade/samples/redemption_entropy_peak_hour.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/redemption_entropy.py
+    sha12: bf4dd732a5f3
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 9958120ae0b5
+    pick_up_when: 32bbe99c703a
+    purpose: f7b9e263c345
+    related: 00e470461cac
+    right_read: 32bbe99c703a
+    run: 5ac2e2f52b7d
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

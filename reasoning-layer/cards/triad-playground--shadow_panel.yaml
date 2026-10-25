@@ -1,0 +1,80 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: triad-playground--shadow_panel
+kind: program
+tool: Simulators/triad-playground/shadow_panel.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: shadow_panel.py — does the shadow pattern work without the human?
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: triad-playground/samples/shadow_panel.sample.txt"
+    - "run capture: RUN, exit 0, 113 lines, sha12 a14ff126d9cc (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 triad-playground/shadow_panel.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: "\nSHADOW PANELS: WITH OR WITHOUT THE HUMAN\nA study of a proposed protocol. No shadow panel was run.\n\n==========================================================================\n1  what each panel composition buys\n==========================================================================\n  N_eff       independent shadows the panel actually contains\n  false-pass  P(shadows agree | panel mean is wrong by > tolerance)\n              -- the rate of confident wrong answers\n\n  panel                                      k   N_eff    spread  false-pass\n  v1 required: human + AI-low + AI-high      3    1.61     1.346       38.2%\n  v1 full: + human_degraded                  4    1.72     1.577       25.1%\n  v1 minus the human                         2    1.14     0.565       84.2%\n  no human, 4 shadows, one model             4    1.22     1.027       50.2%\n  no human, 3 model families                 3    1.93     1.596       26.8%\n  no human, 4 model families                 4    2.18     1.938       12.4%\n  human + 3 model families                   4    2.16     1.929       12.7%\n\n  Reading the table:\n\n  v1's required panel has k = 3 and N_eff = 1.61. Two of its three\n  shadows are one model at two thinking budgets, which share a\n  family bias and are close to one shadow wearing two hats.\n\n  DROP THE HUMAN and it collapses: N_eff 1.61 -> 1.14, false-pass\n  38.2% -> 84.2%. A panel that hands back a confident wrong\n  answer 84 times in a hundred is not a check.\n\n  REPLACE the human with three distinct model families and it is\n  STRONGER than v1's original: N_eff 2.18 vs 1.61, false-pass\n  12.4% vs 38.2%.\n\n  Adding the human back on top of that buys -0.02 in N_eff and\n  +0.3 points of false-pass -- inside the noise of this estimate.\n\n==========================================================================\n2  so: with or without the human?\n==========================================================================\n[... 73 more lines]"
+  date: 2026-10-24
+  command: python3 triad-playground/shadow_panel.py
+  sha12: 47b50e76a045
+  exit_code: 0
+  output_lines: 113
+  output_sha12: a14ff126d9cc
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: triad-playground/shadow_panel.py
+    sha12: 47b50e76a045
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 7250fde5b204
+    pick_up_when: 32bbe99c703a
+    purpose: 018f3d121479
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2fef9086f7d7
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

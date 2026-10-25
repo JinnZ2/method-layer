@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: thermal-sensor-degradation-audit--thermal_sensor_degradation_audit
+kind: program
+tool: Simulators/thermal-sensor-degradation-audit/thermal_sensor_degradation_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "thermal_sensor_degradation_audit.py -- CC0, stdlib-only Sustained-heat degradation audit for sensor packages on automated infrastructure. Dissimilar-material mounting, polymer/gasket creep, electronic drift, wet-bulb corrosion pathways. Refutation protocol: every model returns a falsifiable prediction, not a stored verdict. Update the claim, never retune the sim."
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 71 lines, sha12 3b2a33e8a5d6 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 thermal-sensor-degradation-audit/thermal_sensor_degradation_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    {
+     "air_c": 43.3,
+     "wet_bulb_c": 32.6,
+     "surface_c_full_sun": 105.4,
+     "human_limit_hit": true,
+     "maintenance_deferred": true,
+     "human_limit_note": "wet bulb >31C = severe human risk; field maintenance window closes",
+     "pairs": [
+      {
+       "pair": [
+        "aluminum_6061",
+        "abs_plastic"
+       ],
+       "d_cte_1e6K": 66.4,
+       "microstrain": 5671.0,
+       "displacement_um": 850.6,
+       "flag": "RED",
+       "falsify": "measure fastener torque loss and fretting wear on this joint after 30 thermal cycles; GREEN pairs should show <5% torque loss"
+      },
+      {
+       "pair": [
+        "steel_1018",
+        "nylon_66"
+       ],
+       "d_cte_1e6K": 68.3,
+       "microstrain": 5833.0,
+       "displacement_um": 583.3,
+       "flag": "RED",
+       "falsify": "measure fastener torque loss and fretting wear on this joint after 30 thermal cycles; GREEN pairs should show <5% torque loss"
+      },
+      {
+       "pair": [
+        "concrete",
+        "steel_1018"
+       ],
+       "d_cte_1e6K": 1.7,
+       "microstrain": 145.0,
+       "displacement_um": 43.6,
+       "flag": "GREEN",
+       "falsify": "measure fastener torque loss and fretting wear on this joint after 30 thermal cycles; GREEN pairs should show <5% torque loss"
+    [... 31 more lines]
+  date: 2026-10-24
+  command: python3 thermal-sensor-degradation-audit/thermal_sensor_degradation_audit.py
+  sha12: f1ece3562e3c
+  exit_code: 0
+  output_lines: 71
+  output_sha12: 3b2a33e8a5d6
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling:
+      - thermal-sensor-degradation-audit/tests/test_thermal_sensor_degradation_audit.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: thermal-sensor-degradation-audit/thermal_sensor_degradation_audit.py
+    sha12: f1ece3562e3c
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: f35d4a89b864
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: 2b923c4f97ba
+    selftest: 0151c5aaf77c
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

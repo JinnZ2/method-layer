@@ -1,0 +1,98 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: failure-mode-register--register
+kind: program
+tool: Simulators/failure-mode-register/register.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: register.py -- the failure-mode register as an instrument.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: failure-mode-register/samples/register.sample.txt"
+    - "sample: failure-mode-register/samples/register_v2.sample.txt"
+    - "sample: failure-mode-register/samples/register_v3.sample.txt"
+    - "sample: failure-mode-register/samples/register_v4.sample.txt"
+    - "run capture: FAILED, exit 2, 1 lines, sha12 137e75a24e47 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 failure-mode-register/register.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: FAILED
+  captured: "register.py is the instrument. The checks live in test_register.py; run: python3 test_register.py"
+  date: 2026-10-24
+  command: python3 failure-mode-register/register.py --selftest
+  sha12: 92b41bb4f050
+  exit_code: 2
+  output_lines: 1
+  output_sha12: 137e75a24e47
+  sandbox: netns+nobody
+  reason: exit 2
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: failure-mode-register--register_v2
+      via: imported-by
+    - id: failure-mode-register--register_v3
+      via: imported-by
+    - id: failure-mode-register--entries
+      via: imports
+    - id: failure-mode-register--register_v2
+      via: shares failure-mode-register/samples/register_v2.sample.txt
+    - id: failure-mode-register--register_v3
+      via: shares failure-mode-register/samples/register_v3.sample.txt
+    - id: failure-mode-register--register_v4
+      via: shares failure-mode-register/samples/register_v4.sample.txt
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling:
+      - failure-mode-register/test_register.py
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: UNRUN
+integrity:
+  - repo: Simulators
+    path: failure-mode-register/register.py
+    sha12: 92b41bb4f050
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 457df7db8289
+    pick_up_when: 32bbe99c703a
+    purpose: b90814dc8795
+    related: 59b0cad90190
+    right_read: 32bbe99c703a
+    run: a3dadb36a0a5
+    selftest: 70edebb6524e
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

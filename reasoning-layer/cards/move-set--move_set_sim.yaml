@@ -1,0 +1,114 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: move-set--move_set_sim
+kind: program
+tool: Simulators/move-set/move_set_sim.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: move_set_sim.py  -- CC0, stdlib only, phone-buildable
+  basis: leading comment block
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 34 lines, sha12 4e65c7201aa1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 move-set/move_set_sim.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |
+    None
+    M1_provenance    [artifact ships a number]
+                     Where did this number come from? Name the instrument, the population it was taken over, and the last time it was taken.
+
+    M2_substitution  [artifact uses a term in a slot where a quantity belongs]
+                     What is this term standing in for? Resolve it downward to the deepest quantity THIS artifact set computes, and upward to the highest goal it states in an artifact.
+
+    M3_relation_held [artifact asserts a relationship between two things]
+                     Is this relationship still held by anything measured, or was it asserted once at adoption and carried since? Sign and magnitude.
+
+    M4_perturb       [artifact reports an aggregate]
+                     Move one input. What in the reported output moves, and by how much? What stays flat that should not?
+
+    M5_self_report   [artifact is produced by a process with a stated purpose]
+                     If this instrument were failing at its stated purpose, would this artifact look any different? Name the value that would change.
+
+    M6a_sequence_gap [record set is enumerable -- numbered, dated, or serial]
+                     Enumerate the set. Which members are missing, and does the artifact anywhere acknowledge that they are missing?
+
+    M6b_interval_unaccounted [artifact has a time axis]
+                     Lay the records on the axis. Which intervals have no record claiming them? Distinguish nothing-happened from not-recorded.
+
+    M6c_negative_space [artifact set has internal regularity]
+                     Given everything else present, what SHOULD be here and is not? Argue from the set's own structure, not from outside expectation.
+
+    M6d_required_unfiled [a stated process mandates a record]
+                     What does the process require to exist? Is it filed? An unfiled mandatory record and a filed one are different findings from the same rule.
+
+    M6e_orphan_link  [two entities in the artifact are connected]
+                     What connects these, and does any record state the reason? The absence here is the absence of the connecting record, not of the connection.
+
+    M6f_no_denominator [artifact reports or invites a share, rate, or ratio]
+                     What is the base? If the denominator was never collected, the share does not exist -- it is not zero and not unknown.
+  date: 2026-10-24
+  command: python3 move-set/move_set_sim.py
+  sha12: 529a797ebc04
+  exit_code: 0
+  output_lines: 34
+  output_sha12: 4e65c7201aa1
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: move-set--move_set_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: move-set/move_set_sim.py
+    sha12: 529a797ebc04
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 151340d8e5ff
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: ce2758c4fa0b
+    related: c144281856d5
+    right_read: 32bbe99c703a
+    run: 92860586b74a
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

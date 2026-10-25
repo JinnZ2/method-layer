@@ -1,0 +1,150 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: archive--cooperative-substrate-proof--selftest
+kind: program
+tool: Simulators/archive/cooperative-substrate-proof/selftest.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: "selftest.py -- every check here is null-tested: for each part a PLANTED FAULT must fire, and the clean case must not. A suite whose checks only ever pass has not shown it can fail. Prints the check count; does not store it anywhere else."
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: archive/cooperative-substrate-proof/samples/selftest.sample.txt"
+    - "run capture: RUN, exit 0, 91 lines, sha12 9470e6f6ebe1 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 archive/cooperative-substrate-proof/selftest.py
+  basis: file name is a standalone selftest
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    scope: C1-C4 coding pass
+      ok    all PRESENT -> ADMISSIBLE
+      ok    planted ABSENT C4 -> OUT_OF_SCOPE naming C4
+      ok    missing C3 -> UNDETERMINED, not OUT_OF_SCOPE
+      ok    ABSENT beats UNCODED
+      ok    value outside vocabulary -> MALFORMED, typed
+      ok    non-dict -> MALFORMED, not raised
+      ok    C1 from clocks: short window -> PRESENT
+      ok    C1 from clocks: long window -> ABSENT
+      ok    C1 from clocks: undeclared -> UNCODED, never ABSENT
+      ok    constructed corpus reaches three states
+    P3: comprehension
+      ok    shared-vocabulary corpus -> CONVERGENT
+      ok    planted disjoint-vocabulary corpus -> INDISTINGUISHABLE_FROM_NULL
+      ok    disjoint corpus gap sits on zero (|gap/sd| < 3)
+      ok    one part -> NOT_EVALUABLE (null equals shared arm by construction)
+      ok    short -> TOO_SHORT; empty -> EMPTY
+      ok    both arms same length (letter-level control)
+      ok    shared arm maps a shared word identically across parts
+      ok    --self corpus -> CONVERGENT
+      ok    script share reported, not gated
+    P4: goal coherence
+      ok    self chain -> COHERENT
+      ok    correction (replacement + reason) -> CORRECTED, terminates
+      ok    planted contest without replacement -> NO_ANSWER, final None
+      ok    dangling take -> DANGLING naming the id
+      ok    empty -> EMPTY; non-list -> MALFORMED
+      ok    contest with replacement but NO reason is a contest, not a correction
+      ok    sabotage cheaper -> 0 of 3 complete
+      ok    sabotage cheaper -> still 0 at budget 5000 (not a budget effect)
+      ok    sabotage not cheaper -> 3 of 3 complete at turn n
+      ok    single agent cannot sabotage -> completes
+      ok    malformed turf args -> typed
+      ok    turf war is deterministic (no random module)
+    P2: substrate
+      ok    on itself -> SUBSTRATE_HOLDS, no layer violated
+      ok    second run reproduces sha256 and every count
+      ok    unverified floor > 0 on its own source (no call verifies its contract by default)
+      ok    proxy fires on tested-next and try-wrapped, not on bare
+      ok    planted non-IEEE float_info -> numeric VIOLATED
+    [... 51 more lines]
+  date: 2026-10-24
+  command: python3 archive/cooperative-substrate-proof/selftest.py
+  sha12: 831fa260d357
+  exit_code: 0
+  output_lines: 91
+  output_sha12: 9470e6f6ebe1
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: archive--cooperative-substrate-proof--p1_dependency_records
+      via: imports
+    - id: archive--cooperative-substrate-proof--p2_substrate
+      via: imports
+    - id: archive--cooperative-substrate-proof--p3_comprehension
+      via: imports
+    - id: archive--cooperative-substrate-proof--p4_goal_coherence
+      via: imports
+    - id: archive--cooperative-substrate-proof--p5_lag_declaration
+      via: imports
+    - id: archive--cooperative-substrate-proof--run_all
+      via: imports
+    - id: archive--cooperative-substrate-proof--scope
+      via: imports
+    - id: cooperative-substrate-proof--selftest
+      via: same-bytes
+    - id: archive--cooperative-substrate-proof--p1_dependency_records
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--p2_substrate
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--p3_comprehension
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--p4_goal_coherence
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--p5_lag_declaration
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--run_all
+      via: selftest-of
+    - id: archive--cooperative-substrate-proof--scope
+      via: selftest-of
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: true
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: archive/cooperative-substrate-proof/selftest.py
+    sha12: 831fa260d357
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-30
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 85323bb98665
+    pick_up_when: 32bbe99c703a
+    purpose: e4986494016c
+    related: edfc62610441
+    right_read: 32bbe99c703a
+    run: d6a31fe79ab3
+    selftest: b63784eca930
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

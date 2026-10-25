@@ -1,0 +1,120 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: fragility-cascade--thermo_purpose
+kind: program
+tool: Simulators/fragility-cascade/thermo_purpose.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: thermo_purpose.py -- close the loop at end-of-life, not just at build. CC0 / Public Domain.  stdlib-only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value: []
+  basis: no argparse, no main(), no sys.argv indexing found
+output:
+  mark: DRAFT
+  value:
+    - "sample: fragility-cascade/samples/thermo_purpose.sample.txt"
+    - "run capture: RUN, exit 0, 52 lines, sha12 567c22e0fb41 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 fragility-cascade/thermo_purpose.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ================================================================
+    LIFECYCLE CLOSE -- seasonal_shelter  (serves 0.5yr, return window 1yr)
+    ================================================================
+        earth        800.00  to_ground  degraded as intended; ground takes earth directly
+        fiber         40.00  to_ground  degraded as intended; ground takes fiber directly
+
+      site_delta (mass not back): 0.00 kg  [objective -> 0]
+      QUANTITY  PASS   returned 840.0 / borrowed 840.0 kg
+      FORM      PASS   harm debt 0.0 kg (form nothing takes)
+      TIMING    PASS   held 0.0 kg unrouted within 1 yr
+
+      VERDICT: feeds the earth without harm
+    ================================================================
+    ================================================================
+    LIFECYCLE CLOSE -- star_guide_college  (serves 1000yr, return window 1000yr)
+    ================================================================
+        mineral_dust  5000.00  to_ground  degraded as intended; ground takes mineral_dust directly
+        stone      12000.00  to_ground  degraded as intended; ground takes stone directly
+
+      site_delta (mass not back): 0.00 kg  [objective -> 0]
+      QUANTITY  PASS   returned 17000.0 / borrowed 17000.0 kg
+      FORM      PASS   harm debt 0.0 kg (form nothing takes)
+      TIMING    PASS   held 0.0 kg unrouted within 1000 yr
+
+      VERDICT: feeds the earth without harm
+    ================================================================
+    ================================================================
+    LIFECYCLE CLOSE -- migration_lodge  (serves 15yr, return window 2yr)
+    ================================================================
+        timber      3000.00  converted  burn: serves warming need; yields ash for ground that needs ash
+        heat        3000.00  to_need    warms tribe -- work done in the return
+        ash          150.00  to_need    from burn; meets current need for ash
+
+      site_delta (mass not back): 2700.00 kg  [objective -> 0]
+      QUANTITY  FAIL   returned 300.0 / borrowed 3000.0 kg
+      FORM      PASS   harm debt 0.0 kg (form nothing takes)
+      TIMING    PASS   held 0.0 kg unrouted within 2 yr
+
+      VERDICT: return does not close
+    ================================================================
+    [... 12 more lines]
+  date: 2026-10-24
+  command: python3 fragility-cascade/thermo_purpose.py
+  sha12: afa9a30e4b2e
+  exit_code: 0
+  output_lines: 52
+  output_sha12: 567c22e0fb41
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value: []
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: fragility-cascade/thermo_purpose.py
+    sha12: afa9a30e4b2e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: d952a9f814ab
+    output: 89ab0636837a
+    pick_up_when: 32bbe99c703a
+    purpose: 794f4ee084ce
+    related: 70a909c4632e
+    right_read: 32bbe99c703a
+    run: f485dd734673
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

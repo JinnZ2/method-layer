@@ -1,0 +1,113 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: earth_economics--fermi_paradox_audit
+kind: program
+tool: Simulators/earth_economics/fermi_paradox_audit.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: fermi_paradox_audit.py – Dyson sphere / Fermi paradox cascade audit. CC0. Stdlib only.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main()
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "run capture: RUN, exit 0, 32 lines, sha12 df38b30cf353 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 earth_economics/fermi_paradox_audit.py
+  basis: __main__ guard; no positional/required args, no sys.argv indexing
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    ======================================================================
+    FERMI PARADOX / DYSON SPHERE AUDIT
+    ======================================================================
+
+    Thesis: A Dyson sphere is a self-terminating trajectory.
+    Advanced civilizations that understand the constraint stack
+    choose not to expand beyond their scale ceiling.
+
+    Scenario 1: Aggressive expansion (expansion_rate = 0.10)
+      Verdict: SELF_TERMINATING
+      Final EROI: 1.24
+      Extinction probability: 0.95
+      Regime shifts: 1
+      Blow-up detected at years: [2027.0, 2028.0]
+
+    Scenario 2: Quiet survivor (expansion_rate = 0.01)
+      Verdict: SELF_TERMINATING
+      Final EROI: 1.43
+      Extinction probability: 0.95
+      Regime shifts: 1
+
+    --- COMPARATIVE FRAMEWORK CONNECTION ---
+
+    Indigenous economic systems (Aboriginal, Ainu, Sámi, Ubuntu, Potlatch)
+    score deeply negative on OCDI and RPI. They already solved the Fermi
+    paradox: they detected the scale ceiling and chose to stay below it.
+    Their ontologies encode the constraint stack in relational terms.
+
+    The Dyson sphere is not a sign of advancement. It is a sign of a
+    civilization that did not read the equations. The quiet ones survived.
+
+    Falsifier: Find a civilization that has completed a Dyson sphere and reports EROI > 1 over full lifecycle, accounting for full-stack energy costs, cascade risk from higher-order interactions, and complexity overhead.
+  date: 2026-10-24
+  command: python3 earth_economics/fermi_paradox_audit.py
+  sha12: afffede82a8e
+  exit_code: 0
+  output_lines: 32
+  output_sha12: df38b30cf353
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: earth_economics--asteroid_mining_audit
+      via: imported-by
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: false
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: earth_economics/fermi_paradox_audit.py
+    sha12: afffede82a8e
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 71f7bd7153e3
+    output: 3da82201e7a2
+    pick_up_when: 32bbe99c703a
+    purpose: 08d531b3a89d
+    related: c10d26c6684c
+    right_read: 32bbe99c703a
+    run: 01794ace814f
+    selftest: 5f51c10c9da4
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a

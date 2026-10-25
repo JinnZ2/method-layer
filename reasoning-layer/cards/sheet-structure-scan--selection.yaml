@@ -1,0 +1,114 @@
+# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
+# replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
+# integrity comes from layer 3; run_result and status come from run_examples.py.
+id: sheet-structure-scan--selection
+kind: program
+tool: Simulators/sheet-structure-scan/selection.py
+face_of: AUTHOR
+purpose:
+  mark: DRAFT
+  value: selection -- work order 7 S1. The eligibility screen, and the reject log.
+  basis: first paragraph of module docstring
+forces_step: AUTHOR
+pick_up_when: AUTHOR
+skip_when: AUTHOR
+input:
+  mark: DRAFT
+  value:
+    - main(argv)
+    - reads sys.argv by index
+  basis: main() signature
+output:
+  mark: DRAFT
+  value:
+    - "sample: sheet-structure-scan/samples/selection_selftest.sample.txt"
+    - "run capture: RUN, exit 0, 27 lines, sha12 eed60e70f3f7 (see run_result)"
+  basis: samples/ files named after the tool; refreshed from run capture by run_examples.py
+run:
+  mark: DRAFT
+  value: python3 sheet-structure-scan/selection.py --selftest
+  basis: "--selftest is an argparse flag or compared against argv"
+  safety: []
+run_result:
+  status: RUN
+  captured: |-
+    selection selftest
+      the UNFCCC sentence reads retrospective                    PASS got='RETROSPECTIVE' want='RETROSPECTIVE'
+      the LGO sentence reads prospective                         PASS got='PROSPECTIVE' want='PROSPECTIVE'
+      a second LGO sentence reads prospective                    PASS got='PROSPECTIVE' want='PROSPECTIVE'
+      a heading is neither                                       PASS got='NEITHER' want='NEITHER'
+      a definition is neither                                    PASS got='NEITHER' want='NEITHER'
+      an empty cell is neither                                   PASS got='NEITHER' want='NEITHER'
+      a retrospective note over external operands is still retro PASS got='RETROSPECTIVE' want='RETROSPECTIVE'
+      and a form field over in-file names is still prospective   PASS got='PROSPECTIVE' want='PROSPECTIVE'
+      a sentence with both markers resolves retrospective        PASS got='RETROSPECTIVE' want='RETROSPECTIVE'
+      agreeing candidates report no independence                 PASS got=False want=False
+      one disagreeing candidate reports it                       PASS got=True want=True
+      and the off-diagonal is counted, not just flagged          PASS got=2 want=2
+      a file no reader opens still records every criterion       PASS got=['a_ships_values', 'b_retrospective', 'c_resolvable', 'd_date_separated', 'e_different_body', 'read'] want=['a_ships_values', 'b_retrospective', 'c_resolvable', 'd_date_separated', 'e_different_body', 'read']
+      and the reader-dependent ones read not-evaluated, not failed PASS got=[None, None, None, None] want=[None, None, None, None]
+      the read criterion itself is a fail, not a not-evaluated   PASS got=False want=False
+      (e) is still evaluated, since it takes no reader           PASS got=True want=True
+      not-evaluated is not eligible either                       PASS got=False want=False
+      and the shape note says the verdict is about fit, not contents PASS got=True want=True
+      independence skips a candidate with unevaluated criteria   PASS got=0 want=0
+      4 retro against 9 prospective flips with the rule          PASS got=('RETROSPECTIVE', 'PROSPECTIVE') want=('RETROSPECTIVE', 'PROSPECTIVE')
+      and the flip is reported, not left to be noticed           PASS got=True want=True
+      a clear majority does not flip                             PASS got=False want=False
+      and neither does a zero                                    PASS got=False want=False
+      criteria are all recorded                                  PASS got=['a_ships_values', 'b_retrospective', 'c_resolvable', 'd_date_separated', 'e_different_body', 'read'] want=['a_ships_values', 'b_retrospective', 'c_resolvable', 'd_date_separated', 'e_different_body', 'read']
+      no identity metadata is read anywhere in this module       PASS got=[] want=[]
+    SELFTEST PASS (0 checks failed)
+  date: 2026-10-24
+  command: python3 sheet-structure-scan/selection.py --selftest
+  sha12: f954fc9fe278
+  exit_code: 0
+  output_lines: 27
+  output_sha12: eed60e70f3f7
+  sandbox: netns+nobody
+wrong_read: AUTHOR
+right_read: AUTHOR
+related:
+  mark: DRAFT
+  value:
+    - id: sheet-structure-scan--scan4
+      via: imports
+    - id: sheet-structure-scan--sheetmodel
+      via: imports
+    - id: sheet-structure-scan--scans
+      via: shares sheet-structure-scan/patterns.json
+  basis: imports, imported-by, shared/sample files, sibling selftests, same bytes
+selftest:
+  mark: DRAFT
+  value:
+    in_file: true
+    sibling: []
+    is_selftest: false
+  basis: selftest flag/function in source; selftest.py / test_<stem>.py beside it
+check_record: []
+status: RUN
+integrity:
+  - repo: Simulators
+    path: sheet-structure-scan/selection.py
+    sha12: f954fc9fe278
+    commit: 198937ecabbc7e32851b00758e5736e320609910
+    last_change: 2026-09-14
+    layer3_row: historical
+    snapshot_bytes: MATCH
+_provenance:
+  generator: reasoning-layer/generate.py
+  layer3_txt_sha256: ba0d8df4df8afc5b9df35ab6f35ecd804946407553d577560fffb795d620e2aa
+  written:
+    face_of: 32bbe99c703a
+    forces_step: 32bbe99c703a
+    input: 80a479475fbc
+    output: 85f7b355d2f3
+    pick_up_when: 32bbe99c703a
+    purpose: b0d65fcd4aa3
+    related: 3f4a757ac34f
+    right_read: 32bbe99c703a
+    run: b4ba704cd497
+    selftest: 45157b3866c7
+    skip_when: 32bbe99c703a
+    wrong_read: 32bbe99c703a
