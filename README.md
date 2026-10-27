@@ -189,6 +189,15 @@ python3 frame_probe.py intake library.json
 python3 frame_probe.py coupling coupling_record.json
 ```
 
+### `gap_instruments.py`
+
+`gap_instruments.py` is evidence notation for coordination systems, physical limits, discrepancies and abstentions. Every evidence field carries a status (MEASURED / ESTIMATED / UNKNOWN / GAP), a source, a unit and an uncertainty. MEASURED and ESTIMATED require a source. `validate()` returns the unresolved lines and assigns no verdict. An axis that was never recorded counts as NOT_RECORDED, which is kept apart from GAP. An unknown count is `None`, never 0. It is the Simulators `gap-instruments/` instrument reshaped to this repository's conventions: str Enums, frozen records and `to_dict` / `from_dict`. It ships without that instrument's PROPOSED example instances. `tools/gap_instruments.py` is a byte copy of the Simulators working copy.
+
+```sh
+python3 gap_instruments.py --claim "..."     # five-axis question template; no text -> exit 2
+python3 tools/gap_instruments.py --selftest  # the Simulators form
+```
+
 ### `observer_position_control.py`
 
 `observer_position_control.py` asks whether the maladaptive / adaptive label is set by the behaviour described or by whether the describer stands inside the population described. It is label extraction over a published corpus, not new observation, and the module ships **no corpus and no source list**: coding records are hand-authored input, coded blind. A synthetic corpus generator with planted structure exists only to check the arithmetic.
