@@ -1,3 +1,10 @@
+# INSTRUMENT: branch_set
+# INPUT: DECISION|CATEGORY-SET
+# CATCHES: eliminated candidates dropped from the record; gap triage read from prose
+# RUN-COST: LINEAR (author-estimate)
+# STATUS: DERIVED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """Lossless transport and triage for uncoalesced candidate generators.
 
 This module deliberately contains no simulation code and uses only the Python

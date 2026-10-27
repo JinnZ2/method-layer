@@ -1,3 +1,10 @@
+# INSTRUMENT: observer_position_control
+# INPUT: CORPUS
+# CATCHES: a label tracking the describer's position rather than the behaviour
+# RUN-COST: CORPUS (author-estimate)
+# STATUS: PROPOSED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """Observer-position control: is a label set by the behaviour or by the describer?
 
 QUESTION

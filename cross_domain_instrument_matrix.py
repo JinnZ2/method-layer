@@ -1,3 +1,10 @@
+# INSTRUMENT: cross_domain_instrument_matrix
+# INPUT: CATEGORY-SET
+# CATCHES: an interface question one tradition answers and another does not name
+# RUN-COST: TRIVIAL (author-estimate)
+# STATUS: PROPOSED
+# GATE: UNRUN
+# (index header, read by Simulators/instrument-index/build_index.py)
 """
 Cross-domain instrument matrix.
 
