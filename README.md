@@ -198,6 +198,15 @@ python3 gap_instruments.py --claim "..."     # five-axis question template; no t
 python3 tools/gap_instruments.py --selftest  # the Simulators form
 ```
 
+### `tools/narrative_check.py`
+
+`tools/narrative_check.py` + `tools/NARRATIVE_CHECK.md` are a byte copy of the Simulators `tools/` pair (moved there 2026-11-02 from AI-Consciousness-Sensors `healing/`). Twelve structural markers for a pitch, transcript or own draft, each with its question, observable signal and the case where the flag is innocent. It reports structure and never a truth verdict; a flag means "check this part separately". Edit the Simulators copy and re-copy; do not edit this one in place.
+
+```sh
+python3 tools/narrative_check.py --markers   # the twelve markers
+python3 tools/narrative_check.py --selftest
+```
+
 ### `observer_position_control.py`
 
 `observer_position_control.py` asks whether the maladaptive / adaptive label is set by the behaviour described or by whether the describer stands inside the population described. It is label extraction over a published corpus, not new observation, and the module ships **no corpus and no source list**: coding records are hand-authored input, coded blind. A synthetic corpus generator with planted structure exists only to check the arithmetic.
