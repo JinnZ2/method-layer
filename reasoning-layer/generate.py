@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# DESIGN BASIS (requested by repo owner):
+#   property: provenance carried with values (source, locator, hash,
+#             derivation)
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Build or refresh the reasoning-layer card skeletons from both repositories.
 
 CC0.  Standard library only (plus the ``git`` executable to read snapshots).

@@ -5,6 +5,12 @@
 # STATUS: DERIVED
 # GATE: UNRUN
 # (index header, read by Simulators/instrument-index/build_index.py)
+
+# DESIGN BASIS (requested by repo owner):
+#   property: refuses malformed or unsupported input rather than defaulting
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Lossless transport and triage for uncoalesced candidate generators.
 
 This module deliberately contains no simulation code and uses only the Python

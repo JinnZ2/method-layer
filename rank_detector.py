@@ -7,6 +7,12 @@
 # (index header, read by Simulators/instrument-index/build_index.py; GATE PASSED here
 #  means the module's own null construction with a positive control, not the
 #  Simulators known-answer registry)
+
+# DESIGN BASIS (requested by repo owner):
+#   property: refuses malformed or unsupported input rather than defaulting
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Detect a rank change from a dim(k) curve instead of declaring one.
 
 PROBLEM

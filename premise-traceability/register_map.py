@@ -5,6 +5,12 @@
 # STATUS: DERIVED
 # GATE: UNRUN
 # (index header, read by Simulators/instrument-index/build_index.py)
+
+# DESIGN BASIS (requested by repo owner):
+#   property: refuses malformed or unsupported input rather than defaulting
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Register map: hold declared claims as LAYERS; refuse to combine layers whose
 declarations do not permit it.
 

@@ -5,6 +5,16 @@
 # STATUS: DERIVED
 # GATE: UNRUN
 # (index header, read by Simulators/instrument-index/build_index.py)
+
+# DESIGN BASIS (requested by repo owner):
+#   property: explicit status states for absent / unknown / not-run values
+#   reason:   "Keep **found**, **out of scope** and **unresolved** apart.
+#             They are different outcomes." (quoted from
+#             READ_ME_THIS_WAY.md section 4)
+#   property: refuses malformed or unsupported input rather than defaulting
+#   reason:   UNSTATED -- ask owner
+#   attribute style judgments to this requirement,
+#   not to the authoring model.
 """Frame estimation by probe selection and collapse reading.
 
 Partition (load-bearing)::
