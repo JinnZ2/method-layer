@@ -94,3 +94,15 @@ self-audit.md runs this instrument on the register itself. That audit
 is itself an instrument and has its own assumptions. It is not run on
 itself. That is a DECLARED BOUNDARY, not a completed check — the next
 layer is UNMEASURED, not clean.
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): register_map
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- can these two measurements be combined
+- join refusal for mismatched datasets
+- silent coarsening of data
+- commensurability check
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Register map: hold declared claims as LAYERS; refuse to combine layers whose declarations do not permit it."
+- breaks when: "This tool does NOT rank, judge truth, or infer."

@@ -1,5 +1,7 @@
 > Before reading or editing anything here, read READ_ME_THIS_WAY.md.
 > Mismatches, dead ends and odd names in this repo are kept on purpose.
+> Looking for a tool by what's going wrong?
+> See TOOL_FINDER: https://github.com/JinnZ2/Simulators/blob/main/TOOL_FINDER/TOOL_FINDER.md
 
 # method-layer
 
@@ -347,3 +349,36 @@ python3 -m unittest discover -s tests -v
 ## License
 
 [CC0 1.0 Universal](LICENSE). No attribution is required.
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): frame_probe
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- estimate which frame a reader is using
+- probe selection for frame
+- frame collapse reading
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Frame estimation by probe selection and collapse reading."
+- breaks when: "This module contains no probe generator."
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): observer_position_control
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- label depends on who describes
+- insider vs outsider describer
+- pathologising label by describer position
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Observer-position control: is a label set by the behaviour or by the describer?"
+- breaks when: "This module ships NO corpus and NO source list"
+
+## Finds-by (ALIAS_PROPOSED, 2026-11-09): rank_detector
+Note 2026-11-09: added by WORK ORDER TOOL FINDER part 1; aliases derived from this
+tool's stated scope only. Index: Simulators `TOOL_FINDER/TOOL_FINDER.md`.
+
+- real new dimension vs resolution artifact
+- null construction before reading
+- intrinsic dimension vs scale
+- avoided term: AVOIDED_TERM_UNSTATED
+- measures: "Detect a rank change from a dim(k) curve instead of declaring one."
+- breaks when: NO_STATED_LIMITS
