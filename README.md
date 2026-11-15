@@ -203,6 +203,24 @@ python3 gap_instruments.py --claim "..."     # five-axis question template; no t
 python3 tools/gap_instruments.py --selftest  # the Simulators form
 ```
 
+### `de_weld.py`
+
+`de_weld.py` splits an evaluative term, in the sentence it is used in, into declared axes: descriptive, moral, quality, abundance, aesthetic, harm, and other (an unnamed slot stays void). Each axis carries a claim, a scope (who, where, when, use), evidence and a status (OBSERVED / DERIVED / PROPOSED). The caller declares the axes; the tool reads only those declarations and never the term string, so there is no word list.
+
+- The term class is derived, not assigned. It is thin (evaluative claims only), thick (a descriptive claim and an evaluative one), descriptive, value-associated (descriptive, with a valuation from context), or unclassified (nothing declared). Each class comes with a `rule` string.
+- Every pair of axes is reported. The relation is independent, coupled or conflicting where declared. A pair that was not declared reads `undeclared`, never independent.
+- Residue records what is contested as of a date and whether it needs science, engineering or audit.
+- A thin term used in a judgment flags `ungrounded_evaluation`. If the record does not say whether the term was used in a judgment, nothing is flagged and the rule says so.
+- Whether the descriptive claim cites evidence is reported separately, as PRESENT, VOID or NO_DESCRIPTIVE_CLAIM.
+- The record keeps every slot and lists the void ones.
+
+`de_weld_seeds.py` holds five CONSTRUCTED seed cases. They are model-authored readings, all PROPOSED, with invented sentences and no cited evidence: "good weapon", "artist", "efficient", "neutral" and "safe".
+
+```sh
+python3 de_weld.py seeds         # render the five seeds
+python3 de_weld.py input.json    # Input record(s) -> DeWeld record(s) as JSON
+```
+
 ### `tools/narrative_check.py`
 
 `tools/narrative_check.py` + `tools/NARRATIVE_CHECK.md` are a byte copy of the Simulators `tools/` pair (moved there 2026-11-02 from AI-Consciousness-Sensors `healing/`). Twelve structural markers for a pitch, transcript or own draft, each with its question, observable signal and the case where the flag is innocent. It reports structure and never a truth verdict; a flag means "check this part separately". Edit the Simulators copy and re-copy; do not edit this one in place.
