@@ -21,7 +21,7 @@ effective rows {repo: {path: Row}}  --is_program()-->  program set
    |                                 --CORE_DOCS------>  8 shared method documents
    v
 LAYER 2  cards/<id>.yaml    fields: GENERATED = {mark: DRAFT, value, basis}
-   |                                AUTHOR    = literal "AUTHOR" until Kavik writes it
+   |                                AUTHOR    = literal "AUTHOR" until JinnZ2 writes it
    v
 LAYER 1  APPARATUS.yaml     faces generated; name/shape/read_order/... AUTHOR
    |

@@ -156,6 +156,6 @@ cwd for runs         the repository root of the snapshot tree (paths in run are 
 ## Out of scope here
 
 - Section 9 evaluation harness: PROPOSED, not built (it needs cards with AUTHOR
-  fields written, plus Kavik's problems and rubric).
+  fields written, plus JinnZ2's problems and rubric).
 - Files added to either main branch after the layer-3 snapshot have no card
   until the inventory records them.
