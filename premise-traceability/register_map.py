@@ -8,7 +8,9 @@
 
 # DESIGN BASIS (requested by repo owner):
 #   property: refuses malformed or unsupported input rather than defaulting
-#   reason:   UNSTATED -- ask owner
+#   reason:   "a layer will not load without projection and datum, blank is
+#             a value, and a map that coarsens silently is the failure
+#             mode." (quoted from this file)
 #   attribute style judgments to this requirement,
 #   not to the authoring model.
 """Register map: hold declared claims as LAYERS; refuse to combine layers whose

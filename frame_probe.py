@@ -12,7 +12,10 @@
 #             They are different outcomes." (quoted from
 #             READ_ME_THIS_WAY.md section 4)
 #   property: refuses malformed or unsupported input rather than defaulting
-#   reason:   UNSTATED -- ask owner
+#   reason:   "A model that writes its own probes reads its own frame back
+#             and calls it a finding, so ``Probe`` refuses any author kind
+#             other than ``human`` and nothing here can mint a probe
+#             record." (quoted from this file)
 #   attribute style judgments to this requirement,
 #   not to the authoring model.
 """Frame estimation by probe selection and collapse reading.
