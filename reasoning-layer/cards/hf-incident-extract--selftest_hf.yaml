@@ -1,4 +1,4 @@
-# Reasoning-layer card.  Fields reading AUTHOR are Kavik's to write.
+# Reasoning-layer card.  Fields reading AUTHOR are JinnZ2's to write.
 # Fields with mark: DRAFT were extracted by generate.py and are refreshed on rerun;
 # replace a DRAFT mapping with a plain value to confirm it and stop the refresh.
 # integrity comes from layer 3; run_result and status come from run_examples.py.
